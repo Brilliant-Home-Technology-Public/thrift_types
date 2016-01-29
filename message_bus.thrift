@@ -1,3 +1,7 @@
+struct PeripheralMetadata {
+  1: string name  
+}
+
 struct Variable {
   1: string name
   2: string value
