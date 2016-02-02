@@ -27,3 +27,7 @@ struct PeripheralSubscriptionNotification {
 struct DeviceSubscriptionNotification {
   1: Device updated_device
 }
+
+struct Devices{
+  1: list<Device> devices
+}
