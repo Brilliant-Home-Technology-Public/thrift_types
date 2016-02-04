@@ -31,9 +31,3 @@ struct DeviceSubscriptionNotification {
 struct Devices {
   1: list<Device> devices
 }
-
-struct Response {
-  1: bool success
-  2: optional string error_code
-  3: optional string serialized_data
-}
