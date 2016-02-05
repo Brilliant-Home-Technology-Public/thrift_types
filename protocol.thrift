@@ -5,7 +5,8 @@ const string MSG_TYPE_NOTIF = "notif"
 
 enum StatusCode {
   NO_ERROR = 0,
-  BAD_ARGS = 1
+  BAD_ARGS = 1,
+  TIMEOUT = 2
 }
 
 struct StatusResponse {
