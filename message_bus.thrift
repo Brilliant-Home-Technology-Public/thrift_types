@@ -19,12 +19,7 @@ struct Device {
   2: map<string, Peripheral> peripherals
 }
 
-struct PeripheralSubscriptionNotification {
-  1: string device_name
-  2: Peripheral updated_peripheral
-}
-
-struct DeviceSubscriptionNotification {
+struct SubscriptionNotification {
   1: Device updated_device
 }
 
