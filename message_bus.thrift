@@ -1,12 +1,15 @@
-struct PeripheralMetadata {
-  1: string name  
-}
+const string IDENTIFIER = "message_bus"
 
 struct Variable {
   1: string name
   2: string value
   3: i64 timestamp
   4: bool externally_settable
+}
+
+struct PeripheralMetadata {
+  1: string name 
+  2: map<string, Variable> variables
 }
 
 struct Peripheral {
