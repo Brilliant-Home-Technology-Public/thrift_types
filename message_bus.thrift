@@ -8,7 +8,7 @@ struct Variable {
 }
 
 struct PeripheralMetadata {
-  1: string name 
+  1: string name
   2: map<string, Variable> variables
 }
 
