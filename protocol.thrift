@@ -7,9 +7,9 @@ enum StatusCode {
   NO_ERROR = 0,
   TIMEOUT = 1,
   GENERAL_ERROR = 2,
-  KEY_ERROR = 3,
-  PERMISSION_ERROR = 4,
-  BAD_ARGS_ERROR = 5,
+  BAD_ARGS_ERROR = 3,
+  DOES_NOT_EXIST_ERROR = 4,
+  PERMISSION_ERROR = 5,
 }
 
 struct StatusResponse {
