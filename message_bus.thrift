@@ -58,4 +58,6 @@ service MessageBusPeerService {
       2: string device_name,
       3: string peripheral_name,
   )
+  
+  void metadata(1: PeripheralMetadata metadata)
 }
