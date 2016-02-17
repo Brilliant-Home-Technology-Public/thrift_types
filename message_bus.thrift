@@ -31,7 +31,19 @@ struct Devices {
   1: list<Device> devices
 }
 
-service MessageBusPeerService {
+service PeripheralService {
+
+  void set_variable_request(
+      1: string device_name,
+      2: string peripheral_name,
+      3: string variable_name,
+      4: string value,
+  )
+
+  void handle_notification(1: SubscriptionNotification subscription_notif)
+}
+
+service MessageBusService {
 
   Devices get_all()
   Device get_device(1: string device_name)
