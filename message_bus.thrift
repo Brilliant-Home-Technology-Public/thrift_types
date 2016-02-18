@@ -40,7 +40,7 @@ service PeripheralService {
       4: string value,
   )
 
-  void handle_notification(1: SubscriptionNotification subscription_notif)
+  void handle_notification(1: SubscriptionNotification notification)
 }
 
 service MessageBusService {
