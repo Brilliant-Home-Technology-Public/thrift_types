@@ -31,9 +31,13 @@ struct Devices {
   1: list<Device> devices
 }
 
+struct SetVariableResponse {
+  1: i64 timestamp
+}
+
 service PeripheralService {
 
-  void set_variable_request(
+  SetVariableResponse set_variable_request(
       1: string device_name,
       2: string peripheral_name,
       3: string variable_name,
@@ -49,13 +53,13 @@ service MessageBusService {
   Device get_device(1: string device_name)
   Peripheral get_peripheral(1: string device_name, 2: string peripheral_name)
 
-  void set_variable(
+  SetVariableResponse set_variable(
       1: string device_name,
       2: string peripheral_name,
       3: string variable_name,
       4: string value,
   )
-  void set_variable_request(
+  SetVariableResponse set_variable_request(
       1: string device_name,
       2: string peripheral_name,
       3: string variable_name,
