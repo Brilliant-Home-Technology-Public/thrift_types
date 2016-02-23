@@ -7,6 +7,7 @@ const string MSG_TYPE_NOTIF = "notif"
 enum MessageType {
   REQUEST = 0,
   RESPONSE = 1,
+  HELLO = 2,
 }
 
 enum StatusCode {
@@ -17,7 +18,6 @@ enum StatusCode {
   DOES_NOT_EXIST_ERROR = 4,
   PERMISSION_ERROR = 5,
 }
-
 
 
 struct StatusResponse {
@@ -35,10 +35,14 @@ struct Response {
   2: string result_serialized /* IE: serialized message_bus.ResponseResult */
 }
 
+struct Hello {
+  1: string name
+}
 
 union MessageBodyUnion {
-  1: Request request,
+  1: Request request
   2: Response response
+  3: Hello hello
 }
 
 struct Message {
