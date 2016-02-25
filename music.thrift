@@ -1,3 +1,5 @@
+namespace py thrift_types.music
+
 struct MusicTrack {
   2: string title
   3: string artist

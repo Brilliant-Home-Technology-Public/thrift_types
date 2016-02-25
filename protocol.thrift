@@ -1,3 +1,5 @@
+namespace py thrift_types.protocol
+
 const string DELIMITER = " "
 const string MSG_TYPE_REQ = "req"
 const string MSG_TYPE_RESP = "resp"

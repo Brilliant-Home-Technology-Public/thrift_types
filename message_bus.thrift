@@ -1,3 +1,5 @@
+namespace py thrift_types.message_bus
+
 const string IDENTIFIER = "message_bus"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 
