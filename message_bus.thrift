@@ -15,6 +15,10 @@ struct PeripheralMetadata {
   2: map<string, Variable> variables
 }
 
+struct MessageBusMetadata {
+  1: string device_name
+}
+
 struct Peripheral {
   1: string name
   2: map<string, Variable> variables
@@ -77,5 +81,5 @@ service MessageBusService {
       3: string peripheral_name,
   )
 
-  void metadata(1: PeripheralMetadata metadata)
+  MessageBusMetadata metadata(1: PeripheralMetadata metadata)
 }
