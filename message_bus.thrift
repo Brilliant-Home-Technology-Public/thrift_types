@@ -10,12 +10,12 @@ struct Variable {
   4: bool externally_settable
 }
 
-struct PeripheralMetadata {
+struct PeripheralRegistration {
   1: string name
   2: map<string, Variable> variables
 }
 
-struct MessageBusMetadata {
+struct MessageBusRegistration {
   1: string device_name
 }
 
@@ -81,5 +81,5 @@ service MessageBusService {
       3: string peripheral_name,
   )
 
-  MessageBusMetadata metadata(1: PeripheralMetadata metadata)
+  MessageBusRegistration register_peripheral(1: PeripheralRegistration registration)
 }
