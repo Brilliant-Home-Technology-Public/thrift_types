@@ -1,5 +1,6 @@
 SOURCES := $(shell find . -name '*.thrift')
-THRIFT_COMPILER = ./../thirdparty-binaries/pre-built/osx/thrift/bin/thrift
+PLATFORM := $(shell ./../thirdparty-binaries/tools/platform_name.sh)
+THRIFT_COMPILER = ./../thirdparty-binaries/pre-built/$(PLATFORM)/thrift/bin/thrift
 TWO_TO_THREE = 2to3
 OUTPUT_DIR = ../site-packages/
 CFLAGS = -out $(OUTPUT_DIR) --gen py
