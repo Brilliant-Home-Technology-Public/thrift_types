@@ -5,6 +5,13 @@ struct SimpleStruct {
   1: string field1
 }
 
+struct ComplexStruct {
+  1: string str_field
+  2: SimpleStruct struct_field
+  3: list<i64> list_field
+  4: map<string, i64> map_field
+}
+
 service TestService {
   void method_with_no_args()
   void method_with_primitive_args(1: string arg1, 2: i32 arg2)
