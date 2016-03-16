@@ -5,6 +5,11 @@ const string MSG_TYPE_REQ = "req"
 const string MSG_TYPE_RESP = "resp"
 const string MSG_TYPE_NOTIF = "notif"
 
+enum Platform {
+  UNKNOWN = 0
+  RASPBERRY_PI = 1
+  BEAGLEBONE_BLACK = 2
+}
 
 enum MessageType {
   REQUEST = 0,
