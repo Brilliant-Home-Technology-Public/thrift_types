@@ -1,11 +1,11 @@
 namespace py thrift_types.discovery
 
-struct Switch {
+struct DeviceInterface {
   1: string name
   2: string ip_address
   3: i32 port
 }
 
-struct Switches {
-  1: list<Switch> discovered_switches
+struct DeviceInterfaces {
+  1: list<DeviceInterface> device_interfaces
 }
