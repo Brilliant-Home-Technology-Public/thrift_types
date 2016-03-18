@@ -42,7 +42,6 @@ struct SubscriptionNotification {
 
 struct Devices {
   1: list<Device> devices
-  2: map<string, DeviceStatus> device_statuses
 }
 
 struct SetVariableResponse {
