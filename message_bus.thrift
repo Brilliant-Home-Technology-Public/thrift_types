@@ -3,11 +3,6 @@ namespace py thrift_types.message_bus
 const string IDENTIFIER = "message_bus"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 
-enum DeviceStatus {
-  ONLINE = 0,
-  OFFLINE = 1,
-}
-
 struct Variable {
   1: string name
   2: string value
@@ -37,7 +32,6 @@ struct Device {
 
 struct SubscriptionNotification {
   1: Device updated_device
-  2: DeviceStatus device_status
 }
 
 struct Devices {
@@ -79,8 +73,6 @@ service MessageBusService {
       4: string value,
   )
   void set_device(1: Device device)
-  void set_device_status(1: string device_name, 2: DeviceStatus device_status)
-  void replace_device(1: Device device)
 
   void subscribe_all(1: string subscriber_name)
   void subscribe_device(1: string subscriber_name, 2: string device_name)
