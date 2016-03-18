@@ -2,6 +2,15 @@ namespace py thrift_types.remote_bridge
 
 include "message_bus.thrift"
 
+enum DeviceStatus {
+  ONLINE = 0,
+  OFFLINE = 1
+}
+
+struct DeviceStatuses {
+  1: map<string, DeviceStatus> device_status_by_name
+}
+
 service RemoteBridgeService {
   message_bus.SetVariableResponse forward_set_variable_request(
       1: string device_name,
