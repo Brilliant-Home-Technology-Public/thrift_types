@@ -4,7 +4,8 @@ include "message_bus.thrift"
 
 enum DeviceStatus {
   ONLINE = 0,
-  OFFLINE = 1
+  OFFLINE = 1,
+  PENDING = 2,
 }
 
 struct DeviceStatuses {
