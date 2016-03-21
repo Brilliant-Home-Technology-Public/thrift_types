@@ -5,6 +5,7 @@ const string MSG_TYPE_REQ = "req"
 const string MSG_TYPE_RESP = "resp"
 const string MSG_TYPE_NOTIF = "notif"
 
+
 enum MessageType {
   REQUEST = 0,
   RESPONSE = 1,
