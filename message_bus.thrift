@@ -72,6 +72,12 @@ service MessageBusService {
       3: string variable_name,
       4: string value,
   )
+  void override_variable(
+      1: string device_name,
+      2: string peripheral_name,
+      3: string variable_name,
+      4: string value
+  )
   void set_device(1: Device device)
 
   void subscribe_all(1: string subscriber_name)
