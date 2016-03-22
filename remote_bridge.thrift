@@ -18,6 +18,11 @@ struct KnownRemoteDevices {
   1: list<RemoteDevice> known_remote_devices
 }
 
+struct Pong {
+  1: i64 last_update_timestamp
+  2: i64 current_time
+}
+
 service RemoteBridgeService {
   message_bus.SetVariableResponse forward_set_variable_request(
       1: string device_name,
@@ -29,4 +34,6 @@ service RemoteBridgeService {
   void forward_notification(
       1: message_bus.SubscriptionNotification notification,
   )
+
+  Pong ping()
 }
