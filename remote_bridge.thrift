@@ -8,8 +8,14 @@ enum DeviceStatus {
   PENDING = 2,
 }
 
-struct DeviceStatuses {
-  1: map<string, DeviceStatus> device_status_by_name
+struct RemoteDevice {
+  1: string name
+  2: string address
+  3: DeviceStatus device_status
+}
+
+struct KnownRemoteDevices {
+  1: list<RemoteDevice> known_remote_devices
 }
 
 service RemoteBridgeService {
