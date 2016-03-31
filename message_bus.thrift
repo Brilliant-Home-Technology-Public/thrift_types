@@ -44,11 +44,10 @@ struct SetVariableResponse {
 
 service PeripheralService {
 
-  SetVariableResponse set_variable_request(
+  SetVariableResponse set_variables_request(
       1: string device_name,
       2: string peripheral_name,
-      3: string variable_name,
-      4: string value,
+      3: map<string, string> variables,
   )
 
   void handle_notification(1: SubscriptionNotification notification)
