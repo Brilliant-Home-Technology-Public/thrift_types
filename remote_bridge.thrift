@@ -24,11 +24,10 @@ struct Pong {
 }
 
 service RemoteBridgeService {
-  message_bus.SetVariableResponse forward_set_variable_request(
+  message_bus.SetVariableResponse forward_set_variables_request(
       1: string device_name,
       2: string peripheral_name,
-      3: string variable_name,
-      4: string value,
+      3: map<string, string> variables,
   )
 
   void forward_notification(
