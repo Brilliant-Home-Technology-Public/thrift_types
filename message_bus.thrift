@@ -32,6 +32,7 @@ struct Device {
 
 struct SubscriptionNotification {
   1: Device updated_device
+  2: i64 timestamp
 }
 
 struct Devices {
