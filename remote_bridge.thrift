@@ -12,6 +12,7 @@ struct RemoteDevice {
   1: string name
   2: string address
   3: DeviceStatus device_status
+  4: bool always_connect
 }
 
 struct KnownRemoteDevices {
