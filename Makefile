@@ -25,6 +25,11 @@ ifneq ($(CPP_OUTPUT_DIR),)
 	BOOST_INCLUDE = ../thirdparty-binaries/pre-built/current_platform/boost/include/
 endif
 
+# Objective C specific
+ifneq ($(OBJC_OUTPUT_DIR),)
+	OBJC_CFLAGS = -out ../$(OBJC_OUTPUT_DIR) --gen cocoa
+endif
+
 all: build_cpp thrift
 
 thrift: $(SOURCES)
@@ -36,6 +41,9 @@ ifneq ($(PY_OUTPUT_DIR),)
 endif
 ifneq ($(CPP_OUTPUT_DIR),)
 	$(THRIFT_COMPILER) $(CPP_CFLAGS) $@
+endif
+ifneq ($(OBJC_OUTPUT_DIR),)
+	$(THRIFT_COMPILER) $(OBJC_CFLAGS) $@
 endif
 
 output_dirs:
