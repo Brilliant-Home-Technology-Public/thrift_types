@@ -9,7 +9,7 @@ THRIFT_COMPILER = ./../thirdparty-binaries/pre-built/$(PLATFORM)/thrift/bin/thri
 # Python specific
 ifneq ($(PY_OUTPUT_DIR),)
 	PY_CFLAGS = -out ../$(PY_OUTPUT_DIR) --gen py
-	TWO_TO_THREE = 2to3
+	TWO_TO_THREE = python -m lib2to3
 	TTTFLAGS = --write
 endif
 
