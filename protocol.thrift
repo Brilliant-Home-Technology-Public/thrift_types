@@ -20,7 +20,6 @@ enum StatusCode {
   DOES_NOT_EXIST_ERROR = 4,
   PERMISSION_ERROR = 5,
   CONNECTION_ERROR = 6,
-  TIMEOUT_ERROR = 7,
 }
 
 
