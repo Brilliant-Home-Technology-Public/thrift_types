@@ -17,7 +17,8 @@ struct PeripheralRegistration {
 
 struct MessageBusRegistration {
   1: string device_name
-  2: map<string, Variable> current_variable_states
+  2: string home_id
+  3: map<string, Variable> current_variable_states
 }
 
 struct Peripheral {
