@@ -2,6 +2,7 @@ namespace py thrift_types.message_bus
 
 const string IDENTIFIER = "message_bus"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
+const string SMARTTHINGS_IDENTIFIER = "smartthings"
 
 struct Variable {
   1: string name
@@ -13,6 +14,7 @@ struct Variable {
 struct PeripheralRegistration {
   1: string name
   2: map<string, Variable> variables
+  3: optional string virtual_device_name // If this peripheral belongs to a virtual device
 }
 
 struct MessageBusRegistration {
@@ -29,6 +31,10 @@ struct Peripheral {
 struct Device {
   1: string name
   2: map<string, Peripheral> peripherals
+}
+
+struct VirtualDeviceRegistration {
+  1: Device device
 }
 
 struct SubscriptionNotification {
@@ -82,4 +88,7 @@ service MessageBusService {
   )
 
   MessageBusRegistration register_peripheral(1: PeripheralRegistration registration)
+
+  MessageBusRegistration register_virtual_device(1: VirtualDeviceRegistration registration)
+
 }
