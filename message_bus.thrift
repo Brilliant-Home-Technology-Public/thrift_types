@@ -3,6 +3,7 @@ namespace py thrift_types.message_bus
 const string IDENTIFIER = "message_bus"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
+const string WINK_IDENTIFIER = "wink"
 
 struct Variable {
   1: string name
