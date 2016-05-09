@@ -40,6 +40,7 @@ struct Response {
 
 struct Hello {
   1: string name
+  2: string domain
 }
 
 union MessageBodyUnion {
