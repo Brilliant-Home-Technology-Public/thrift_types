@@ -5,6 +5,18 @@ const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
 const string WINK_IDENTIFIER = "wink"
 
+enum PeripheralType {
+  LIGHT = 0,
+  LOCK = 1,
+  DOORBELL = 2,
+  MUSIC = 3,
+  THERMOSTAT = 4,
+  MOTION_SENSOR = 5,
+  CONTROL = 6,
+  DISCOVERY = 7,
+  STATUS = 8,
+}
+
 struct Variable {
   1: string name
   2: string value
