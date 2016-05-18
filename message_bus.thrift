@@ -15,6 +15,7 @@ enum PeripheralType {
   CONTROL = 6,
   DISCOVERY = 7,
   STATUS = 8,
+  REMOTE_BRIDGE = 9,
 }
 
 struct Variable {
@@ -28,6 +29,7 @@ struct PeripheralRegistration {
   1: string name
   2: map<string, Variable> variables
   3: optional string virtual_device_name // If this peripheral belongs to a virtual device
+  4: PeripheralType peripheral_type
 }
 
 struct MessageBusRegistration {
@@ -39,6 +41,7 @@ struct MessageBusRegistration {
 struct Peripheral {
   1: string name
   2: map<string, Variable> variables
+  3: PeripheralType peripheral_type
 }
 
 struct Device {
