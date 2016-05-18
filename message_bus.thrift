@@ -61,6 +61,7 @@ struct Devices {
 
 struct SetVariableResponse {
   1: i64 timestamp
+  2: map<string, string> updated_variables
 }
 
 service PeripheralService {
