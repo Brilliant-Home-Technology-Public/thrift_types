@@ -4,6 +4,7 @@ const string IDENTIFIER = "message_bus"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
 const string WINK_IDENTIFIER = "wink"
+const string HUE_BRIDGE_IDENTIFIER = "hue_bridge"
 
 enum PeripheralType {
   LIGHT = 0,
