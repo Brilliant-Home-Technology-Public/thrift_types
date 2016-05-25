@@ -17,6 +17,7 @@ enum PeripheralType {
   DISCOVERY = 7,
   STATUS = 8,
   REMOTE_BRIDGE = 9,
+  OBJECT_STORE = 10,
 }
 
 struct Variable {
