@@ -31,12 +31,12 @@ struct Variable {
 struct PeripheralRegistration {
   1: string name
   2: map<string, Variable> variables
-  3: optional string virtual_device_name // If this peripheral belongs to a virtual device
+  3: optional string virtual_device_id // If this peripheral belongs to a virtual device
   4: PeripheralType peripheral_type
 }
 
 struct MessageBusRegistration {
-  1: string device_name
+  1: string device_id
   2: string home_id
   3: map<string, Variable> current_variable_states
 }
@@ -48,7 +48,7 @@ struct Peripheral {
 }
 
 struct Device {
-  1: string name
+  1: string id
   2: map<string, Peripheral> peripherals
 }
 
@@ -73,7 +73,7 @@ struct SetVariableResponse {
 service PeripheralService {
 
   SetVariableResponse set_variables_request(
-      1: string device_name,
+      1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
   )
@@ -84,26 +84,26 @@ service PeripheralService {
 service MessageBusService {
 
   Devices get_all()
-  Device get_device(1: string device_name)
-  Peripheral get_peripheral(1: string device_name, 2: string peripheral_name)
+  Device get_device(1: string device_id)
+  Peripheral get_peripheral(1: string device_id, 2: string peripheral_name)
 
   SetVariableResponse set_variables(
-      1: string device_name,
+      1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
   )
   SetVariableResponse set_variables_request(
-      1: string device_name,
+      1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
   )
   void set_device(1: Device device)
 
   void subscribe_all(1: string subscriber_name)
-  void subscribe_device(1: string subscriber_name, 2: string device_name)
+  void subscribe_device(1: string subscriber_name, 2: string device_id)
   void subscribe_peripheral(
       1: string subscriber_name,
-      2: string device_name,
+      2: string device_id,
       3: string peripheral_name,
   )
 

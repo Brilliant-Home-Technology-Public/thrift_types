@@ -9,7 +9,7 @@ enum DeviceStatus {
 }
 
 struct RemoteDevice {
-  1: string name
+  1: string device_id
   2: string address
   3: DeviceStatus device_status
   4: bool always_connect
@@ -26,7 +26,7 @@ struct Pong {
 
 service RemoteBridgeService {
   message_bus.SetVariableResponse forward_set_variables_request(
-      1: string device_name,
+      1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
   )
