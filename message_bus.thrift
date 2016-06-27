@@ -19,6 +19,7 @@ enum PeripheralType {
   REMOTE_BRIDGE = 9,
   OBJECT_STORE = 10,
   AV_STREAMER = 11,
+  UI = 12,
 }
 
 struct Variable {
