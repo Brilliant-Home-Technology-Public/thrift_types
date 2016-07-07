@@ -20,6 +20,7 @@ enum PeripheralType {
   OBJECT_STORE = 10,
   AV_STREAMER = 11,
   UI = 12,
+  VOICE = 13,
 }
 
 struct Variable {
