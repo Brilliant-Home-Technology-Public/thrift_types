@@ -21,3 +21,12 @@ struct MusicPlayer {
 struct MusicPlayers {
   1: list<MusicPlayer> players
 }
+
+struct Playlist {
+  1: string title
+  2: string uri
+}
+
+struct Playlists {
+  1: list<Playlist> playlists
+}
