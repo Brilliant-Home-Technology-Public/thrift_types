@@ -22,6 +22,7 @@ enum PeripheralType {
   UI = 12,
   VOICE = 13,
   SCENE_CONFIGURATION = 14,
+  ART = 15,
 }
 
 struct Variable {
