@@ -16,6 +16,8 @@ struct PlayQueue {
 struct MusicPlayer {
   1: string ip_address
   2: string zone_name
+  3: string serial_number
+  4: string zone_icon
 }
 
 struct MusicPlayers {
