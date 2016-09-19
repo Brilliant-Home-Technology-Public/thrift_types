@@ -102,6 +102,7 @@ service MessageBusService {
       1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
+      4: map<string, i64> last_set_timestamps,
   )
   void set_device(1: Device device)
 
