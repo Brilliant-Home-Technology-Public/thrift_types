@@ -81,6 +81,7 @@ service PeripheralService {
       1: string device_id,
       2: string peripheral_name,
       3: map<string, string> variables,
+      4: map<string, i64> last_set_timestamps,
   )
 
   void handle_notification(1: SubscriptionNotification notification)
