@@ -93,10 +93,10 @@ service MessageBusService {
   Device get_device(1: string device_id)
   Peripheral get_peripheral(1: string device_id, 2: string peripheral_name)
 
-  SetVariableResponse set_variables(
+  SetVariableResponse set_updated_variables(
       1: string device_id,
       2: string peripheral_name,
-      3: map<string, string> variables,
+      3: map<string, Variable> variables,
   )
   SetVariableResponse set_variables_request(
       1: string device_id,
