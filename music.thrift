@@ -18,6 +18,8 @@ struct MusicPlayer {
   2: string zone_name
   3: string serial_number
   4: string zone_icon
+  5: string hardware_version
+  6: i64 volume
 }
 
 struct MusicPlayers {
