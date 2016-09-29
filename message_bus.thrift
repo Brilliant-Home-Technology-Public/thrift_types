@@ -5,6 +5,8 @@ const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
 const string WINK_IDENTIFIER = "wink"
 const string HUE_BRIDGE_IDENTIFIER = "hue_bridge"
+// Smartthings client id is a public id that all Brilliant requests use
+const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
 
 enum PeripheralType {
   LIGHT = 0,
