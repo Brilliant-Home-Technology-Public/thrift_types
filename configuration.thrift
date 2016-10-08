@@ -17,3 +17,8 @@ struct ArtLibraryConfig {
   2: bool enabled
   3: list<string> disabled_art_pieces
 }
+
+enum ArtDisplayFrequency {
+  ALL_THE_TIME = 0,
+  ON_MOTION_DETECTED = 1,
+}
