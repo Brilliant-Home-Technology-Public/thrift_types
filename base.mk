@@ -1,8 +1,8 @@
 # General
 THRIFT_DIR ?= thrift_types
 SOURCES := $(shell cd $(CURDIR)/$(THRIFT_DIR); find . -type f -name '*.thrift')
-PLATFORM := $(shell $(CURDIR)/thirdparty-binaries/tools/platform_name.sh)
-THRIFT_COMPILER = $(CURDIR)/thirdparty-binaries/pre-built/$(PLATFORM)/thrift/bin/thrift
+BUILD_PLATFORM := $(shell $(CURDIR)/thirdparty-binaries/tools/platform_name.sh)
+THRIFT_COMPILER = $(CURDIR)/thirdparty-binaries/pre-built/$(BUILD_PLATFORM)/thrift/bin/thrift
 PY_OUTPUT_DIR ?= $(CURDIR)/site-packages/$(THRIFT_DIR)
 CPP_OUTPUT_DIR ?= $(CURDIR)/main_app/$(THRIFT_DIR)
 OBJC_OUTPUT_DIR ?= $(CURDIR)/ios_app/DemoApp/DemoApp/$(THRIFT_DIR)
