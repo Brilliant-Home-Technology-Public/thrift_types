@@ -8,6 +8,7 @@ const string HUE_BRIDGE_IDENTIFIER = "hue_bridge"
 const string SONOS_IDENTIFIER = "sonos"
 // Smartthings client id is a public id that all Brilliant requests use
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
+const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 
 enum PeripheralType {
   LIGHT = 0,
