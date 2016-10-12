@@ -4,6 +4,7 @@ namespace py thrift_types.configuration
 struct ArtPiece {
   1: string id
   2: string url
+  3: string content_type
 }
 
 struct ArtLibrary {
