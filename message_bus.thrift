@@ -51,6 +51,7 @@ struct PeripheralRegistration {
   2: map<string, Variable> variables
   3: optional string virtual_device_id // If this peripheral belongs to a virtual device
   4: PeripheralType peripheral_type
+  5: optional string dynamic_variable_prefix
 }
 
 struct MessageBusRegistration {
@@ -63,6 +64,7 @@ struct Peripheral {
   1: string name
   2: map<string, Variable> variables
   3: PeripheralType peripheral_type
+  4: optional string dynamic_variable_prefix
 }
 
 struct Device {
