@@ -73,4 +73,5 @@ struct Scene {
   6: optional list<DayOfWeek> daysEnabled
   7: optional i64 starting_date_range
   8: optional i64 ending_date_range
+  9: string icon_url
 }
