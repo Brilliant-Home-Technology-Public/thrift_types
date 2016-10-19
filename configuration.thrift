@@ -46,3 +46,31 @@ struct ProcessConfigs {
   1: list<ProcessConfig> configs
 }
 
+enum DayOfWeek {
+  MONDAY = 0,
+  TUESDAY = 1,
+  WEDNESDAY = 2,
+  THURSDAY = 3,
+  FRIDAY = 4,
+  SATURDAY = 5,
+  SUNDAY = 6,
+}
+
+struct SceneAction {
+  1: string id
+  2: string device_id
+  3: string peripheral_name
+  4: string variable_name
+  5: string variable_value
+}
+
+struct Scene {
+  1: string id
+  2: string title
+  3: list<SceneAction> actions
+  4: bool timer_enabled
+  5: optional i64 trigger_time
+  6: optional list<DayOfWeek> daysEnabled
+  7: optional i64 starting_date_range
+  8: optional i64 ending_date_range
+}
