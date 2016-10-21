@@ -37,6 +37,7 @@ enum PeripheralType {
   SONOS_CONFIGURATION = 23,
   WINK_CONFIGURATION = 24,
   HUE_BRIDGE_CONFIGURATION = 25,
+  HOME_CONFIGURATION = 26,
 }
 
 struct Variable {
