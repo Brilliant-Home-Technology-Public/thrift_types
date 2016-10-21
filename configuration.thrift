@@ -46,7 +46,6 @@ struct ProcessConfigs {
   1: list<ProcessConfig> configs
 }
 
-<<<<<<< 6fbbd7655f5dc7e9c8412c86989c6886a748137b
 enum DayOfWeek {
   MONDAY = 0,
   TUESDAY = 1,
@@ -76,7 +75,7 @@ struct Scene {
   8: optional i64 ending_date_range
   9: string icon_url
 }
-=======
+
 // Home Configuration
 
 struct Room {
@@ -87,4 +86,3 @@ struct Rooms {
   1: map<string, Room> rooms
 }
 
->>>>>>> adding room configuration objects
