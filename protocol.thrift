@@ -41,6 +41,7 @@ struct Response {
 struct Hello {
   1: string name
   2: string domain
+  3: list<string> aliases
 }
 
 union MessageBodyUnion {
