@@ -60,8 +60,7 @@ struct SceneAction {
   1: string id
   2: string device_id
   3: string peripheral_name
-  4: string variable_name
-  5: string variable_value
+  4: map<string, string> variables
 }
 
 struct Scene {
