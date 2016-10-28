@@ -11,7 +11,7 @@ const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 
 enum PeripheralType {
-  LIGHT = 0,
+  UNKNOWN = 0,
   LOCK = 1,
   DOORBELL = 2,
   MUSIC = 3,
@@ -38,6 +38,7 @@ enum PeripheralType {
   WINK_CONFIGURATION = 24,
   HUE_BRIDGE_CONFIGURATION = 25,
   HOME_CONFIGURATION = 26,
+  LIGHT = 27,
 }
 
 struct Variable {
