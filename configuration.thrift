@@ -47,13 +47,46 @@ struct ProcessConfigs {
 }
 
 enum DayOfWeek {
-  MONDAY = 0,
-  TUESDAY = 1,
-  WEDNESDAY = 2,
-  THURSDAY = 3,
-  FRIDAY = 4,
-  SATURDAY = 5,
-  SUNDAY = 6,
+  SUNDAY = 0,
+  MONDAY = 1,
+  TUESDAY = 2,
+  WEDNESDAY = 3,
+  THURSDAY = 4,
+  FRIDAY = 5,
+  SATURDAY = 6,
+}
+
+enum Month {
+  JAN = 1,
+  FEB = 2,
+  MAR = 3,
+  APR = 4,
+  MAY = 5,
+  JUN = 6,
+  JUL = 7,
+  AUG = 8,
+  SEP = 9,
+  OCT = 10,
+  NOV = 11,
+  DEC = 12,
+}
+
+struct CalendarDay {
+  1: i32 day_of_month // 1 indexed
+  2: Month month // 1 indexed
+  3: i32 year
+}
+
+struct WeeklyRecurringTime {
+  1: optional list<DayOfWeek> days
+  2: optional i32 seconds_from_midnight
+  3: optional CalendarDay start_day // Inclusive, if none specified starts right meow
+  4: optional CalendarDay end_day // Inclusive, if none specified continues forever
+}
+
+struct Trigger {
+  1: bool enabled
+  2: WeeklyRecurringTime time_trigger
 }
 
 struct SceneAction {
@@ -66,13 +99,9 @@ struct SceneAction {
 struct Scene {
   1: string id
   2: string title
-  3: list<SceneAction> actions
-  4: bool timer_enabled
-  5: optional i64 trigger_time
-  6: optional list<DayOfWeek> daysEnabled
-  7: optional i64 starting_date_range
-  8: optional i64 ending_date_range
-  9: string icon_url
+  3: string icon_url
+  4: list<SceneAction> actions
+  5: Trigger trigger
 }
 
 // Home Configuration
