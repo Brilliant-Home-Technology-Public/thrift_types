@@ -89,11 +89,20 @@ struct Trigger {
   2: WeeklyRecurringTime time_trigger
 }
 
+struct SceneMultiAction {
+  1: string id
+  2: bool enabled
+  3: list<string> rooms
+  4: message_bus.PeripheralType peripheral_type
+  5: map<string, string> variables
+}
+
 struct SceneAction {
   1: string id
-  2: string device_id
-  3: string peripheral_name
-  4: map<string, string> variables
+  2: bool enabled
+  3: string device_id
+  4: string peripheral_name
+  5: map<string, string> variables
 }
 
 struct Scene {
@@ -101,7 +110,8 @@ struct Scene {
   2: string title
   3: string icon_url
   4: list<SceneAction> actions
-  5: Trigger trigger
+  5: list<SceneMultiAction> multiActions
+  6: Trigger trigger
 }
 
 // Home Configuration
