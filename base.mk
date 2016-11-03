@@ -10,11 +10,11 @@ OBJC_OUTPUT_DIR ?= $(CURDIR)/ios_app/DemoApp/DemoApp/$(THRIFT_DIR)
 # Python specific
 PY_OUTPUT_DIR_DUMMY_TARGET := $(PY_OUTPUT_DIR)/.dummy_target
 PY_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(PY_OUTPUT_DIR)/%.py_dummy_target)
-# The python thrift compiler automatically creates a thrift_types subdirectory even when we 
+# The python thrift compiler automatically creates a thrift_types subdirectory even when we
 # override the output directory with -out
 PY_CFLAGS = -out $(dir $(PY_OUTPUT_DIR)) --gen py
 TWO_TO_THREE = python -m lib2to3
-TTTFLAGS = --write --no-diffs
+TTTFLAGS = --write --no-diffs --nobackups
 # C++ specific
 CPP_OUTPUT_DIR_DUMMY_TARGET := $(CPP_OUTPUT_DIR)/.dummy_target
 CPP_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(CPP_OUTPUT_DIR)/%.cpp_dummy_target)
