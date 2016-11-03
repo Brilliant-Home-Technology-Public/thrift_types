@@ -34,6 +34,7 @@ struct PeripheralInfo {
   3: message_bus.PeripheralType peripheral_type
   // The device id the thirdparty has provided
   4: string thirdparty_device_id
+  5: string configuration_peripheral_id
 }
 
 struct ProcessConfig {
