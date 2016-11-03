@@ -40,6 +40,7 @@ enum PeripheralType {
   HUE_BRIDGE_CONFIGURATION = 25,
   HOME_CONFIGURATION = 26,
   LIGHT = 27,
+  SCENE_EXECUTION = 28,
 }
 
 struct Variable {
