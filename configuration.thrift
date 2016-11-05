@@ -111,7 +111,7 @@ struct Scene {
   2: string title
   3: string icon_url
   4: list<SceneAction> actions
-  5: list<SceneMultiAction> multiActions
+  5: list<SceneMultiAction> multi_actions
   6: Trigger trigger
 }
 
