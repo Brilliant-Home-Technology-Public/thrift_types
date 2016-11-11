@@ -41,6 +41,7 @@ enum PeripheralType {
   HOME_CONFIGURATION = 26,
   LIGHT = 27,
   SCENE_EXECUTION = 28,
+  WIFI = 29,
 }
 
 struct Variable {

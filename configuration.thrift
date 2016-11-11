@@ -125,3 +125,8 @@ struct Rooms {
   1: map<string, Room> rooms
 }
 
+// Wifi
+struct WifiCredentials {
+  1: string network_name
+  2: string passphrase
+}
