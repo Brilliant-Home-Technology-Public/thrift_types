@@ -95,6 +95,11 @@ struct SetVariableResponse {
   3: map<string, Variable> deleted_variables
 }
 
+struct DeviceAttributes {
+  1: string home_id
+  2: string my_device_id
+}
+
 service PeripheralService {
 
   SetVariableResponse set_variables_request(
@@ -108,6 +113,8 @@ service PeripheralService {
 }
 
 service MessageBusService {
+
+  DeviceAttributes get_attributes()
 
   Devices get_all()
   Device get_device(1: string device_id)
