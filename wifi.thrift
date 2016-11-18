@@ -1,5 +1,12 @@
 namespace py thrift_types.wifi
 
+enum AssociationStatusType {
+  UNKNOWN = 0,
+  SUCCESS = 1,
+  ERROR_GENERIC = 2,
+  ERROR_INVALID_KEY = 3,
+}
+
 enum SecurityType {
   UNKNOWN = 0,
   NONE = 1,
@@ -7,7 +14,7 @@ enum SecurityType {
   PRESHARED_KEY = 3,
 }
 
-enum StatusType {
+enum NetworkStatusType {
   UNKNOWN = 0,
   IDLE = 1,
   ASSOCIATING = 2,
@@ -27,8 +34,8 @@ struct Network {
   1: string name
   2: SecurityType security
   3: byte signal_strength
-  4: IPv4AddressInfo ipv4_address_info
-  5: StatusType status
+  4: optional IPv4AddressInfo ipv4_address_info
+  5: NetworkStatusType status
 }
 
 struct AvailableNetworks {
