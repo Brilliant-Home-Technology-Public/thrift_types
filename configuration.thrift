@@ -118,7 +118,8 @@ struct Scene {
 // Home Configuration
 
 struct Room {
-  1: string name
+  1: string id
+  2: string name
 }
 
 struct Rooms {
