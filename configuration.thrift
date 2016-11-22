@@ -2,11 +2,18 @@ namespace py thrift_types.configuration
 
 include "message_bus.thrift"
 
+struct MediaContent {
+  1: string url
+  2: string content_type
+  // TODO include dimensions?
+}
+
 // Art Configuration
 struct ArtPiece {
   1: string id
-  2: string url
-  3: string content_type
+  2: optional string url // DEPRECATED, use primary instead
+  3: optional string content_type // DEPRECATED use primary instead
+  4: optional MediaContent primary
 }
 
 struct ArtLibrary {
