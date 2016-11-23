@@ -14,6 +14,7 @@ struct ArtPiece {
   2: optional string url // DEPRECATED, use primary instead
   3: optional string content_type // DEPRECATED use primary instead
   4: optional MediaContent primary
+  5: optional list<MediaContent> previews
 }
 
 struct ArtLibrary {
