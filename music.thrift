@@ -31,6 +31,7 @@ struct Playlist {
   2: string uri
   3: string description
   4: string album_art
+  5: string metadata
 }
 
 struct Playlists {
