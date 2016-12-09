@@ -13,6 +13,13 @@ const string SCENE_EXECUTION_IDENTIFIER = "scene_execution_peripheral"
 const string ALEXA_VOICE_IDENTIFIER = "voice_peripheral"
 const string WIFI_IDENTIFIER = "wifi_peripheral"
 const string DISCOVERY_IDENTIFIER = "discovery_peripheral"
+const string OBJECT_STORE_IDENTIFIER = "object_store_peripheral"
+const string ART_IDENTIFIER = "art_identifier"
+const string ART_CONFIG_IDENTIFIER = "art_config_peripheral"
+const string DEVICE_CONFIG_IDENTIFIER = "device_config_peripheral"
+const string HARDWARE_CONFIG_IDENTIFIER = "hardware_config_peripheral"
+const string LIGHT_CONFIG_IDENTIFIER = "light_config_peripheral"
+const string MOTION_DETECTION_IDENTIFIER = "motion_detection_config_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
