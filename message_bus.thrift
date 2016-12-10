@@ -20,6 +20,12 @@ const string DEVICE_CONFIG_IDENTIFIER = "device_config_peripheral"
 const string HARDWARE_CONFIG_IDENTIFIER = "hardware_config_peripheral"
 const string LIGHT_CONFIG_IDENTIFIER = "light_config_peripheral"
 const string MOTION_DETECTION_IDENTIFIER = "motion_detection_config_peripheral"
+const string SCENE_CONFIG_IDENTIFIER = "scene_configuration"
+const string SMARTTHINGS_CONFIG_IDENTIFIER = "smartthings_configuration"
+const string SONOS_CONFIG_IDENTIFIER = "sonos_configuration"
+const string VOICE_CONFIG_IDENTIFIER = "voice_configuration"
+const string HOME_CONFIG_IDENTIFIER = "home_configuration"
+const string REMOTE_BRIDGE_IDENTIFIER = "remote_bridge"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
