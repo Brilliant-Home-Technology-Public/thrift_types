@@ -65,6 +65,11 @@ enum PeripheralType {
   WIFI = 29,
 }
 
+enum PeripheralStatus {
+  OFFLINE = 0,
+  ONLINE = 1,
+}
+
 struct Variable {
   1: string name
   2: string value
@@ -91,6 +96,7 @@ struct Peripheral {
   2: map<string, Variable> variables
   3: PeripheralType peripheral_type
   4: optional string dynamic_variable_prefix
+  5: PeripheralStatus status
 }
 
 struct Device {
