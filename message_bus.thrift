@@ -3,6 +3,7 @@ namespace py thrift_types.message_bus
 const string IDENTIFIER = "message_bus"
 
 const string ALEXA_VOICE_IDENTIFIER = "voice_peripheral"
+const string ANALYTICS_IDENTIFIER = "analytics_peripheral"
 const string ART_CONFIG_IDENTIFIER = "art_config_peripheral"
 const string ART_IDENTIFIER = "art_peripheral"
 const string DEVICE_CONFIG_IDENTIFIER = "device_config_peripheral"
