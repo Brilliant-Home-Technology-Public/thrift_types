@@ -66,6 +66,7 @@ enum PeripheralType {
   LIGHT = 27,
   SCENE_EXECUTION = 28,
   WIFI = 29,
+  ANALYTICS = 30,
 }
 
 enum PeripheralStatus {
