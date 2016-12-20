@@ -31,7 +31,7 @@ struct ArtLibraryConfig {
 
 enum ArtDisplayFrequency {
   ALL_THE_TIME = 0,
-  ON_MOTION_DETECTED = 1,
+  SPECIFIC_HOURS = 1,
 }
 
 // Thirdparty Device Configurations
