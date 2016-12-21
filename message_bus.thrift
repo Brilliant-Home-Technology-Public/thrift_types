@@ -28,6 +28,7 @@ const string SONOS_IDENTIFIER = "sonos"
 const string VOICE_CONFIG_IDENTIFIER = "voice_configuration"
 const string WIFI_IDENTIFIER = "wifi_peripheral"
 const string WINK_IDENTIFIER = "wink"
+const string SWITCH_UI_IDENTIFIER = "switch_ui"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
