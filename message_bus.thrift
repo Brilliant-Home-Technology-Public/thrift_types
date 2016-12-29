@@ -71,8 +71,9 @@ enum PeripheralType {
 }
 
 enum PeripheralStatus {
-  OFFLINE = 0,
-  ONLINE = 1,
+  OFFLINE = 0, // Process does not exist for message bus to connect to
+  ONLINE = 1, // Connected to message bus
+  DISCONNECTED = 2, // Process connected to mb but cannot connect to necessary resource
 }
 
 struct Variable {
@@ -172,6 +173,12 @@ service MessageBusService {
       1: string subscriber_name,
       2: string device_id,
       3: string peripheral_name,
+  )
+
+  void update_peripheral_status(
+      1: string device_id,
+      2: string peripheral_name,
+      3: PeripheralStatus status,
   )
 
   MessageBusRegistration register_peripheral(1: PeripheralRegistration registration)
