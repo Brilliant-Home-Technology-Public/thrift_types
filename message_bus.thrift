@@ -19,6 +19,8 @@ const string MOTION_DETECTION_IDENTIFIER = "motion_detection_config_peripheral"
 const string OBJECT_STORE_IDENTIFIER = "object_store_peripheral"
 const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string REMOTE_BRIDGE_IDENTIFIER = "remote_bridge"
+const string RING_IDENTIFIER = "ring_peripheral"
+const string RING_CONFIG_IDENTIFIER = "ring_configuration"
 const string SCENE_CONFIG_IDENTIFIER = "scene_configuration"
 const string SCENE_EXECUTION_IDENTIFIER = "scene_execution_peripheral"
 const string SMARTTHINGS_CONFIG_IDENTIFIER = "smartthings_configuration"
@@ -31,6 +33,7 @@ const string WINK_IDENTIFIER = "wink"
 const string SWITCH_UI_IDENTIFIER = "switch_ui"
 
 // Smartthings client id is a public id that all Brilliant requests use
+const string RING_CLIENT_ID = "brilliant_test"
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
@@ -68,6 +71,7 @@ enum PeripheralType {
   SCENE_EXECUTION = 28,
   WIFI = 29,
   ANALYTICS = 30,
+  RING_CONFIGURATION = 31,
 }
 
 enum PeripheralStatus {
