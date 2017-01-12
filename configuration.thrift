@@ -87,8 +87,8 @@ struct CalendarDay {
 }
 
 struct WeeklyRecurringTime {
-  1: optional list<DayOfWeek> days
-  2: optional i32 seconds_from_midnight
+  1: list<DayOfWeek> days = []
+  2: i32 seconds_from_midnight = 0
   3: optional CalendarDay start_day // Inclusive, if none specified starts right meow
   4: optional CalendarDay end_day // Inclusive, if none specified continues forever
 }
