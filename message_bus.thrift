@@ -35,6 +35,7 @@ const string SWITCH_UI_IDENTIFIER = "switch_ui"
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
+const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
