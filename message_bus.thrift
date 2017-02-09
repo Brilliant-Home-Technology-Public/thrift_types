@@ -94,6 +94,7 @@ struct PeripheralRegistration {
   3: optional string virtual_device_id // If this peripheral belongs to a virtual device
   4: PeripheralType peripheral_type
   5: optional string dynamic_variable_prefix
+  6: optional PeripheralStatus peripheral_status
 }
 
 struct MessageBusRegistration {
