@@ -31,10 +31,12 @@ const string VOICE_CONFIG_IDENTIFIER = "voice_configuration"
 const string WIFI_IDENTIFIER = "wifi_peripheral"
 const string WINK_IDENTIFIER = "wink"
 const string SWITCH_UI_IDENTIFIER = "switch_ui"
+const string NEST_CONFIG_IDENTIFIER = "nest_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
+const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
 const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
@@ -73,6 +75,7 @@ enum PeripheralType {
   WIFI = 29,
   ANALYTICS = 30,
   RING_CONFIGURATION = 31,
+  NEST_CONFIGURATION = 32,
 }
 
 enum PeripheralStatus {
