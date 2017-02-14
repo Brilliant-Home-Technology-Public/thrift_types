@@ -32,6 +32,7 @@ const string WIFI_IDENTIFIER = "wifi_peripheral"
 const string WINK_IDENTIFIER = "wink"
 const string SWITCH_UI_IDENTIFIER = "switch_ui"
 const string NEST_CONFIG_IDENTIFIER = "nest_configuration"
+const string NEST_IDENTIFIER = "nest"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
