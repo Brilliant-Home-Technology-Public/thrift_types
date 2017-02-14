@@ -86,6 +86,26 @@ struct CalendarDay {
   3: i32 year
 }
 
+// Execution
+
+struct ExecutionState {
+  1: i64 last_execution_timestamp
+}
+
+struct DailyTimeRange {
+  1: i32 start_seconds_from_midnight = 0 // Inclusive
+  2: i32 end_seconds_from_midnight = 0 // Inclusive
+}
+
+struct ExecutionTimeRange {
+  1: optional CalendarDay start_day // Inclusive, if none specified starts right meow
+  2: optional CalendarDay end_day // Inclusive, if none specified continues forever
+  3: list<DayOfWeek> valid_days_of_week = []
+  4: list<DailyTimeRange> valid_time_ranges = []
+}
+
+// Scenes
+
 struct WeeklyRecurringTime {
   1: list<DayOfWeek> days = []
   2: i32 seconds_from_midnight = 0
@@ -96,6 +116,7 @@ struct WeeklyRecurringTime {
 struct Trigger {
   1: bool enabled
   2: WeeklyRecurringTime time_trigger
+  3: ExecutionTimeRange time_range
 }
 
 struct SceneMultiAction {
