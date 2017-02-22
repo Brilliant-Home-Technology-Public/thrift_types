@@ -34,11 +34,13 @@ const string SWITCH_UI_IDENTIFIER = "switch_ui"
 const string NEST_CONFIG_IDENTIFIER = "nest_configuration"
 const string NEST_IDENTIFIER = "nest"
 const string EXECUTION_IDENTIFIER = "execution_peripheral"
+const string HONEYWELL_CONFIG_IDENTIFIER = "honeywell_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
 const string SMARTTHINGS_CLIENT_ID = "fe8580b0-00e7-4119-a12a-d988e1dca3f3"
 const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
+const string HONEYWELL_CLIENT_ID = "hqO3pG8w2vCLowWWdKT3IANyvw4PrGqu"
 const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
@@ -79,6 +81,7 @@ enum PeripheralType {
   RING_CONFIGURATION = 31,
   NEST_CONFIGURATION = 32,
   EXECUTION = 33,
+  HONEYWELL_CONFIGURATION = 34,
 }
 
 enum PeripheralStatus {
