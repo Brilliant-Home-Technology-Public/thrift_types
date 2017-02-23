@@ -35,6 +35,7 @@ const string NEST_CONFIG_IDENTIFIER = "nest_configuration"
 const string NEST_IDENTIFIER = "nest"
 const string EXECUTION_IDENTIFIER = "execution_peripheral"
 const string HONEYWELL_CONFIG_IDENTIFIER = "honeywell_configuration"
+const string HONEYWELL_IDENTIFIER = "honeywell"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
