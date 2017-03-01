@@ -143,10 +143,16 @@ struct Devices {
   1: list<Device> devices
 }
 
+struct ModifiedVariable {
+  1: string variable_name
+  2: optional Variable variable # If the variable has been deleted, this will be None
+}
+
 struct SetVariableResponse {
   1: i64 timestamp
   2: map<string, Variable> updated_variables
   3: map<string, Variable> deleted_variables
+  4: list<ModifiedVariable> modified_variables = []
 }
 
 struct DeviceAttributes {
