@@ -88,8 +88,15 @@ struct CalendarDay {
 
 // Execution
 
+struct ExecutedSetVariableRequest {
+  1: message_bus.SetVariableResponse set_variable_response
+  2: string device_id
+  3: string peripheral_name
+}
+
 struct ExecutionState {
-  1: i64 last_execution_timestamp
+  1: i64 last_execution_timestamp = 0
+  2: list<ExecutedSetVariableRequest> executed_set_variable_requests
 }
 
 struct DailyTimeRange {
