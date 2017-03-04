@@ -7,6 +7,7 @@ const string ANALYTICS_IDENTIFIER = "analytics_peripheral"
 const string ART_CONFIG_IDENTIFIER = "art_config_peripheral"
 const string ART_IDENTIFIER = "art_peripheral"
 const string DEVICE_CONFIG_IDENTIFIER = "device_config_peripheral"
+const string DEVICE_AUTH_CONFIG_IDENTIFIER = "device_authorization_configuration"
 const string DEVICE_STATUS_IDENTIFIER = "device_status_peripheral"
 const string DISCOVERY_IDENTIFIER = "discovery_peripheral"
 const string FACEPLATE_IDENTIFIER = "faceplate_peripheral"
@@ -87,6 +88,7 @@ enum PeripheralType {
   EXECUTION = 33,
   HONEYWELL_CONFIGURATION = 34,
   ECOBEE_CONFIGURATION = 35,
+  DEVICE_AUTHORIZATION_CONFIGURATION = 36,
 }
 
 enum PeripheralStatus {

@@ -167,3 +167,16 @@ struct WifiCredentials {
   1: string network_name
   2: string passphrase
 }
+
+
+// Device Authorization
+enum DeviceAuthorizationStatus {
+  PENDING = 1
+  ACCEPTED = 2
+  REJECTED = 3
+}
+
+struct DeviceAuthorizationRequest {
+  1: DeviceAuthorizationStatus status
+  2: string device_id
+}
