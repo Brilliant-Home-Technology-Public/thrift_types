@@ -1,4 +1,4 @@
-Alexanamespace py thrift_types.voice
+namespace py thrift_types.voice
 
 enum AlexaStatus {
   // This defines the voice recognition state machine
