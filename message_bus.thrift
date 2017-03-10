@@ -158,6 +158,10 @@ struct DeviceAttributes {
   2: string my_device_id
 }
 
+struct HomeConfigurationUpdatedResponse {
+  1: map<string, list<string>> deleted_peripherals
+}
+
 service PeripheralService {
 
   SetVariableResponse set_variables_request(
