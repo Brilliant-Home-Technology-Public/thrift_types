@@ -56,3 +56,12 @@ struct Message {
   3: MessageBodyUnion body_union
 }
 
+struct TLSInfo {
+  1: string peer_common_name
+  2: bool is_validated
+}
+
+struct RequestContext {
+  1: Hello peer_hello
+  2: optional TLSInfo tls_info
+}
