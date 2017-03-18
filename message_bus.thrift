@@ -39,6 +39,7 @@ const string HONEYWELL_CONFIG_IDENTIFIER = "honeywell_configuration"
 const string HONEYWELL_IDENTIFIER = "honeywell"
 const string ECOBEE_CONFIG_IDENTIFIER = "ecobee_configuration"
 const string ECOBEE_IDENTIFIER = "ecobee"
+const string BOOTSTRAP_IDENTIFIER = "boostrap"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -89,6 +90,7 @@ enum PeripheralType {
   HONEYWELL_CONFIGURATION = 34,
   ECOBEE_CONFIGURATION = 35,
   DEVICE_AUTHORIZATION_CONFIGURATION = 36,
+  BOOTSTRAP = 37,
 }
 
 enum PeripheralStatus {
