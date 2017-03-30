@@ -166,6 +166,11 @@ struct HomeConfigurationUpdatedResponse {
   1: map<string, list<string>> deleted_peripherals
 }
 
+enum InitializationTarget {
+  MESSAGE_BUS_INITIALIZED = 1
+  NETWORK_ONLINE = 2
+}
+
 service PeripheralService {
 
   SetVariableResponse set_variables_request(
