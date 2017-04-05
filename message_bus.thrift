@@ -52,6 +52,8 @@ const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
 
+const string UNASSIGNED_HOME_ID = "0"
+
 enum PeripheralType {
   UNKNOWN = 0,
   LOCK = 1,
