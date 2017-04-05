@@ -145,6 +145,7 @@ struct SubscriptionNotification {
 
 struct Devices {
   1: list<Device> devices
+  2: string home_id
 }
 
 struct ModifiedVariable {
