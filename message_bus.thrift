@@ -185,6 +185,8 @@ service PeripheralService {
   )
 
   void handle_notification(1: SubscriptionNotification notification)
+
+  void handle_home_id_updated(1: string new_home_id)
 }
 
 service MessageBusService {
@@ -226,4 +228,5 @@ service MessageBusService {
 
   MessageBusRegistration register_virtual_device(1: VirtualDeviceRegistration registration)
 
+  void set_home_id(1: string home_id)
 }
