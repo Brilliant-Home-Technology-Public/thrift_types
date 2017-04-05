@@ -170,6 +170,7 @@ struct HomeConfigurationUpdatedResponse {
 enum InitializationTarget {
   MESSAGE_BUS_INITIALIZED = 1
   NETWORK_ONLINE = 2
+  HOME_ID_ASSIGNED = 3
 }
 
 service PeripheralService {
