@@ -45,16 +45,6 @@ struct PeripheralInfo {
   5: string configuration_peripheral_id
 }
 
-struct ProcessConfig {
-  1: string process_name
-  2: string production_module
-  3: PeripheralInfo peripheral_info
-}
-
-struct ProcessConfigs {
-  1: list<ProcessConfig> configs
-}
-
 enum DayOfWeek {
   SUNDAY = 0,
   MONDAY = 1,
