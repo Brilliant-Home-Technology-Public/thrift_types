@@ -43,6 +43,7 @@ struct PeripheralInfo {
   // The device id the thirdparty has provided
   4: string thirdparty_device_id
   5: string configuration_peripheral_id
+  6: optional map<string, string> configuration_variables
 }
 
 enum DayOfWeek {
