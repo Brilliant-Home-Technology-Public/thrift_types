@@ -44,7 +44,7 @@ const string BOOTSTRAP_IDENTIFIER = "boostrap"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
-const string SMARTTHINGS_CLIENT_ID = "5c978daf-e7c8-420a-8587-0a9475b6a3c0"
+const string SMARTTHINGS_CLIENT_ID = "dc72b5c4-eafd-43bf-8f52-a68580c9281a"
 const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
 const string HONEYWELL_CLIENT_ID = "hqO3pG8w2vCLowWWdKT3IANyvw4PrGqu"
 const string ECOBEE_CLIENT_ID = "p5QCDGdiJOHp7oRknVXzwpDEkeTRYTVy"
