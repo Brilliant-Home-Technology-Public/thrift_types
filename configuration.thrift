@@ -34,6 +34,15 @@ enum ArtDisplayFrequency {
   SPECIFIC_HOURS = 1,
 }
 
+struct HueBridgeCredential {
+  1: string ip_address
+  2: string username
+}
+
+struct HueBridgeCredentials {
+  1: map<string, HueBridgeCredential> credentials
+}
+
 // Thirdparty Device Configurations
 
 struct PeripheralInfo {
