@@ -41,6 +41,8 @@ const string HONEYWELL_IDENTIFIER = "honeywell"
 const string ECOBEE_CONFIG_IDENTIFIER = "ecobee_configuration"
 const string ECOBEE_IDENTIFIER = "ecobee"
 const string BOOTSTRAP_IDENTIFIER = "boostrap"
+const string ALMOND_CONFIG_IDENTIFIER = "almond_configuration"
+const string ALMOND_IDENTIFIER = "almond"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
