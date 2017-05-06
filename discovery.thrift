@@ -11,9 +11,10 @@ struct DeviceInterfaces {
 }
 
 enum ThirdpartyDeviceType {
-	UNKNOWN = 0,
-	SONOS = 1,
-	PHILIPS_HUE = 2,
+  UNKNOWN = 0,
+  SONOS = 1,
+  PHILIPS_HUE = 2,
+  ALMOND = 3,
 }
 
 struct ThirdpartyDeviceInterface {
@@ -23,6 +24,6 @@ struct ThirdpartyDeviceInterface {
 }
 
 struct ThirdpartyDeviceInterfaces {
-	1: list<ThirdpartyDeviceInterface> device_interfaces
+  1: list<ThirdpartyDeviceInterface> device_interfaces
 }
 
