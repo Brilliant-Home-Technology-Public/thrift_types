@@ -113,6 +113,7 @@ struct ExecutionTimeRange {
 
 // Scenes
 
+# WeeklyRecurrigTime is deprecated. We are trying to move toward ExecutionTimeRange instead.
 struct WeeklyRecurringTime {
   1: list<DayOfWeek> days = []
   2: i32 seconds_from_midnight = 0
