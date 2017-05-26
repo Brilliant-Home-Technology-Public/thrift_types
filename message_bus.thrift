@@ -107,8 +107,8 @@ enum PeripheralStatus {
 
 struct Variable {
   1: string name
-  2: string value
-  3: i64 timestamp
+  2: optional string value
+  3: optional i64 timestamp
   4: bool externally_settable
 }
 
