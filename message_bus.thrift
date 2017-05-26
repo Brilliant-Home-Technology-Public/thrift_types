@@ -214,10 +214,15 @@ service MessageBusService {
   )
   void set_device(1: Device device)
 
-  void subscribe_all(1: string subscriber_name)
-  void subscribe_device(1: string subscriber_name, 2: string device_id)
+  void subscribe_all(
+      # 1: string subscriber_name - DEPRECATED
+  )
+  void subscribe_device(
+      # 1: string subscriber_name - DEPRECATED
+      2: string device_id
+  )
   void subscribe_peripheral(
-      1: string subscriber_name,
+      # 1: string subscriber_name - DEPRECATED
       2: string device_id,
       3: string peripheral_name,
   )
