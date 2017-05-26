@@ -23,13 +23,17 @@ CPP_CFLAGS = -out $(CPP_OUTPUT_DIR) --gen cpp
 OBJC_OUTPUT_DIR_DUMMY_TARGET := $(OBJC_OUTPUT_DIR)/.dummy_target
 OBJC_CFLAGS = -out $(OBJC_OUTPUT_DIR) --gen cocoa
 OBJC_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(OBJC_OUTPUT_DIR)/%.objc_dummy_target)
+# Swift specific
+SWIFT_OUTPUT_DIR_DUMMY_TARGET := $(SWIFT_OUTPUT_DIR)/.dummy_target
+SWIFT_CFLAGS = -out $(SWIFT_OUTPUT_DIR) --gen swift
+SWIFT_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(SWIFT_OUTPUT_DIR)/%.swift_dummy_target)
 
 # Disabling builtin rules to make make faster
 MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
 
 clean:
-	rm -rf $(PY_OUTPUT_DIR) $(CPP_OUTPUT_DIR) $(OBJC_OUTPUT_DIR)
+	rm -rf $(PY_OUTPUT_DIR) $(CPP_OUTPUT_DIR) $(OBJC_OUTPUT_DIR) $(SWIFT_OUTPUT_DIR)/*
 
 py_gen: $(PY_DUMMY_TARGETS)
 	@echo Finished making py sources
@@ -40,7 +44,10 @@ cpp_gen: $(CPP_DUMMY_TARGETS)
 objc_gen: $(OBJC_DUMMY_TARGETS)
 	@echo Finished making objective-c sources
 
-$(PY_OUTPUT_DIR_DUMMY_TARGET) $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(OBJC_OUTPUT_DIR_DUMMY_TARGET):
+swift_gen: $(SWIFT_DUMMY_TARGETS)
+	@echo Finished making swift sources
+
+$(PY_OUTPUT_DIR_DUMMY_TARGET) $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(OBJC_OUTPUT_DIR_DUMMY_TARGET) $(SWIFT_OUTPUT_DIR_DUMMY_TARGET):
 	mkdir -p $(dir $@)
 	touch $@
 
@@ -60,4 +67,9 @@ $(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DU
 # Objective-C
 $(OBJC_OUTPUT_DIR)/%.objc_dummy_target: $(THRIFT_DIR)/%.thrift $(OBJC_OUTPUT_DIR_DUMMY_TARGET)
 	$(THRIFT_COMPILER) $(OBJC_CFLAGS) $<
+	@touch $@
+
+# Swift
+$(SWIFT_OUTPUT_DIR)/%.swift_dummy_target: $(THRIFT_DIR)/%.thrift $(SWIFT_OUTPUT_DIR_DUMMY_TARGET)
+	$(THRIFT_COMPILER) $(SWIFT_CFLAGS) $<
 	@touch $@
