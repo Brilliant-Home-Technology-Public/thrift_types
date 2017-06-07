@@ -2,8 +2,10 @@ namespace py thrift_types.discovery
 
 struct DeviceInterface {
   1: string device_id
-  2: string ip_address
-  3: i32 port
+  2: string ip_address # Remote bridge ip address
+  3: i32 port # Remote bridge port
+  4: string object_store_host
+  5: i32 object_store_port
 }
 
 struct DeviceInterfaces {
