@@ -15,6 +15,7 @@ enum ThirdpartyDeviceType {
   SONOS = 1,
   PHILIPS_HUE = 2,
   ALMOND = 3,
+  WEMO = 4,
 }
 
 struct ThirdpartyDeviceInterface {
