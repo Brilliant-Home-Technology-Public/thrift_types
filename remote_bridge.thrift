@@ -10,7 +10,7 @@ enum DeviceStatus {
 
 struct RemoteDevice {
   1: string device_id
-  2: string address
+  # 2: string address - DEPRECATED
   3: DeviceStatus device_status
   4: bool always_connect
 }
