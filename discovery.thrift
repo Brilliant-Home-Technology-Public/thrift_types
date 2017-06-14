@@ -1,5 +1,8 @@
 namespace py thrift_types.discovery
 
+const string WEMO_DIMMER_MODEL_NAME = "Dimmer"
+const string WEMO_INSIGHT_MODEL_NAME = "Insight"
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
