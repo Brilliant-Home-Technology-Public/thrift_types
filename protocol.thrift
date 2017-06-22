@@ -12,6 +12,11 @@ enum MessageType {
   HELLO = 2,
 }
 
+enum SerializationProtocol {
+  NONE = 0,
+  BASE64_THRIFT_BINARY = 1,
+}
+
 enum StatusCode {
   NO_ERROR = 0,
   TIMEOUT = 1,
