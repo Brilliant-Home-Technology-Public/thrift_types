@@ -191,9 +191,9 @@ service PeripheralService {
       4: map<string, i64> last_set_timestamps,
   )
 
-  void handle_notification(1: SubscriptionNotification notification)
+  oneway void handle_notification(1: SubscriptionNotification notification)
 
-  void handle_home_id_updated(1: string new_home_id)
+  oneway void handle_home_id_updated(1: string new_home_id)
 }
 
 service MessageBusService {
