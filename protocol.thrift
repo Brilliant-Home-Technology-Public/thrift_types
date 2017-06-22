@@ -36,6 +36,7 @@ struct StatusResponse {
 struct Request {
   1: string command,
   2: string args_serialized
+  3: bool is_oneway = false
 }
 
 struct Response {

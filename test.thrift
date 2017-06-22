@@ -18,4 +18,5 @@ service TestService {
   void method_with_struct_arg(1: SimpleStruct arg1)
   i32 method_returning_primitive()
   SimpleStruct method_returning_struct()
+  oneway void oneway_method()
 }
