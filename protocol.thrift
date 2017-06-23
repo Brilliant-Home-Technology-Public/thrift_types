@@ -70,4 +70,5 @@ struct TLSInfo {
 struct RequestContext {
   1: Hello peer_hello
   2: optional TLSInfo tls_info
+  3: SerializationProtocol serialization_protocol
 }
