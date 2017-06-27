@@ -1,8 +1,5 @@
 namespace py thrift_types.voice
 
-
-const i32 DEFAULT_SNOWBOY_WAKEWORD_SENSITIVITY = 38
-
 enum AlexaStatus {
   // This defines the voice recognition state machine
   //
