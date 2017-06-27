@@ -124,7 +124,7 @@ struct WeeklyRecurringTime {
 struct Trigger {
   1: bool enabled
   2: WeeklyRecurringTime time_trigger
-  3: ExecutionTimeRange time_range
+  3: optional ExecutionTimeRange time_range
 }
 
 struct SceneMultiAction {

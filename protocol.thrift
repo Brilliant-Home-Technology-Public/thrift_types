@@ -35,7 +35,7 @@ struct Request {
 
 struct Response {
   1: StatusResponse status,
-  2: string result_serialized /* IE: serialized message_bus.ResponseResult */
+  2: optional string result_serialized /* IE: serialized message_bus.ResponseResult */
 }
 
 struct Hello {
