@@ -2,7 +2,11 @@ namespace py thrift_types.discovery
 
 const string WEMO_DIMMER_MODEL_NAME = "Dimmer"
 const string WEMO_INSIGHT_MODEL_NAME = "Insight"
-const string WEMO_MINI_MODEL_NAME = "Socket"
+// The Wemo Smart Plug and Mini Smart Plug broadcast with the same name for discovery
+// we need to call another API once the peripheral is setup to get the real model name
+const string WEMO_SOCKET_MODEL_NAME = "Switch"
+const string WEMO_MINI_SOCKET_MODEL_NAME = "Mini"
+const string WEMO_SOCKET_MODEL_NAME_FOR_DISCOVERY = "Socket"
 // The Wemo Switch device name has different casing between discovery and their XML API :(
 const string WEMO_SWITCH_MODEL_NAME = "LightSwitch"
 const string WEMO_SWITCH_MODEL_NAME_FOR_DISCOVERY = "Lightswitch"
