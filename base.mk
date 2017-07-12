@@ -19,7 +19,7 @@ TTTFLAGS = --write --no-diffs --nobackups
 # C++ specific
 CPP_OUTPUT_DIR_DUMMY_TARGET := $(CPP_OUTPUT_DIR)/.dummy_target
 CPP_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(CPP_OUTPUT_DIR)/%.cpp_dummy_target)
-CPP_CFLAGS = -out $(CPP_OUTPUT_DIR) --gen cpp
+CPP_CFLAGS = --gen cpp:include_prefix
 # Objective-C specific
 OBJC_OUTPUT_DIR_DUMMY_TARGET := $(OBJC_OUTPUT_DIR)/.dummy_target
 OBJC_CFLAGS = -out $(OBJC_OUTPUT_DIR) --gen cocoa
@@ -41,6 +41,7 @@ py_gen: $(PY_DUMMY_TARGETS)
 
 cpp_gen: $(CPP_DUMMY_TARGETS)
 	@echo Finished making cpp sources
+	$(THRIFT_DIR)/fix_cpp_imports.sh $(CPP_OUTPUT_DIR)
 
 objc_gen: $(OBJC_DUMMY_TARGETS)
 	@echo Finished making objective-c sources
@@ -62,7 +63,8 @@ $(PY_OUTPUT_DIR)/%.py_dummy_target: $(THRIFT_DIR)/%.thrift $(PY_OUTPUT_DIR_DUMMY
 # CPP
 $(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DUMMY_TARGET)
 	@echo Making cpp source for $<
-	$(THRIFT_COMPILER) $(CPP_CFLAGS) $<
+	mkdir -p $(CPP_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<))
+	$(THRIFT_COMPILER) $(CPP_CFLAGS) -out $(CPP_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<)) $<
 	@touch $@
 
 # Objective-C
