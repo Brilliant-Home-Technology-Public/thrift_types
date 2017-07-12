@@ -56,7 +56,7 @@ $(PY_OUTPUT_DIR_DUMMY_TARGET) $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(OBJC_OUTPUT_DIR_D
 $(PY_OUTPUT_DIR)/%.py_dummy_target: $(THRIFT_DIR)/%.thrift $(PY_OUTPUT_DIR_DUMMY_TARGET)
 	@echo Making python source for $<
 	$(THRIFT_COMPILER) $(PY_CFLAGS) $<
-	$(TWO_TO_THREE) $(TTTFLAGS) $(PY_OUTPUT_DIR)/$(notdir $(basename $<))
+	$(TWO_TO_THREE) $(TTTFLAGS) $(PY_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(basename $<))
 	@touch $@
 
 # CPP
