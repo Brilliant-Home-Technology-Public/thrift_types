@@ -21,7 +21,7 @@ CPP_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(CPP_OUTPUT_DIR)/%.cpp_dummy_target)
 CPP_CFLAGS = --gen cpp:include_prefix
 # Swift specific
 SWIFT_OUTPUT_DIR_DUMMY_TARGET := $(SWIFT_OUTPUT_DIR)/.dummy_target
-SWIFT_CFLAGS = -out $(SWIFT_OUTPUT_DIR) --gen swift
+SWIFT_CFLAGS = --gen swift
 SWIFT_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(SWIFT_OUTPUT_DIR)/%.swift_dummy_target)
 
 # Disabling builtin rules to make make faster
@@ -61,5 +61,7 @@ $(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DU
 
 # Swift
 $(SWIFT_OUTPUT_DIR)/%.swift_dummy_target: $(THRIFT_DIR)/%.thrift $(SWIFT_OUTPUT_DIR_DUMMY_TARGET)
-	$(THRIFT_COMPILER) $(SWIFT_CFLAGS) $<
+	@echo Making swift source for $<
+	mkdir -p $(SWIFT_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<))
+	$(THRIFT_COMPILER) $(SWIFT_CFLAGS) -out $(SWIFT_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<)) $<
 	@touch $@
