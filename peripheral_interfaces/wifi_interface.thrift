@@ -14,6 +14,7 @@ struct WifiPeripheralInterface {
 const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'WifiPeripheralInterface',
   'peripheral_type': message_bus.PeripheralType.WIFI,
-  'dynamic_variable_prefix': 'wifi:'
+  'dynamic_variable_prefix': 'wifi:',
+  'dynamic_variable_ttype': 'configuration.WifiCredentials'
 }
 
