@@ -9,6 +9,7 @@ struct DiscoveryPeripheralInterface {
   2: discovery.ThirdpartyDeviceInterfaces available_upnp_services
   3: bool discovery_mode_on
   4: bool discovery_mode_available
+  5: discovery.ThirdpartyDeviceInterfaces available_thirdparty_services
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
