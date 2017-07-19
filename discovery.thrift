@@ -11,6 +11,8 @@ const string WEMO_SOCKET_MODEL_NAME_FOR_DISCOVERY = "Socket"
 const string WEMO_SWITCH_MODEL_NAME = "LightSwitch"
 const string WEMO_SWITCH_MODEL_NAME_FOR_DISCOVERY = "Lightswitch"
 
+const string DEVICE_PROVISIONING_MDNS_SERVICE_TYPE = "_init-brilliant._tcp.local."
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
