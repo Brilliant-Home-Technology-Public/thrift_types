@@ -172,12 +172,22 @@ struct WifiCredentials {
 
 // Device Authorization
 enum DeviceAuthorizationStatus {
-  PENDING = 1
-  ACCEPTED = 2
-  REJECTED = 3
+  KNOCKED = 1  // Awaiting user confirmation to proceed
+  READY = 2 // Can accept a commitment/secret
+  ACCEPTED = 3
+  REJECTED = 4 // Soft failure; can reset and try again
+  BANNED = 5 // Hard failure; this device cannot reset
 }
 
-struct DeviceAuthorizationRequest {
+struct DeviceAuthorizationState {
   1: DeviceAuthorizationStatus status
   2: string device_id
+  3: string device_certificate_fingerprint
+  4: optional string display_name
+  5: i32 authentication_code
+  6: string server_commitment_secret
+  // Following two fields are populated once commitment received from new device
+  7: optional string client_authentication_commitment
+  8: optional string committed_device_id
+  9: i16 num_attempts
 }
