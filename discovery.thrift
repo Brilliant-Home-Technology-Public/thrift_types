@@ -31,6 +31,7 @@ enum ThirdpartyDeviceType {
   PHILIPS_HUE = 2,
   ALMOND = 3,
   WEMO = 4,
+  BOSE_ST = 5,
 }
 
 enum DiscoveryType {
