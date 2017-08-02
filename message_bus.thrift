@@ -100,7 +100,7 @@ enum PeripheralType {
   BOOTSTRAP = 37,
   ALMOND_CONFIGURATION = 38,
   WEMO_CONFIGURATION = 39,
-  SOCKET = 40,
+  OUTLET = 40,
 }
 
 enum PeripheralStatus {
