@@ -65,6 +65,7 @@ struct Message {
 struct TLSInfo {
   1: string peer_common_name
   2: bool is_validated
+  3: string peer_certificate_fingerprint // Base64-encoded sha256 hash
 }
 
 struct RequestContext {
