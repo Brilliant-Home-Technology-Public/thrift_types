@@ -45,6 +45,7 @@ const string ALMOND_CONFIG_IDENTIFIER = "almond_configuration"
 const string ALMOND_IDENTIFIER = "almond"
 const string WEMO_CONFIG_IDENTIFIER = "wemo_configuration"
 const string WEMO_IDENTIFIER = "wemo"
+const string OAUTH_CONFIG_IDENTIFIER = "oauth_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -102,6 +103,7 @@ enum PeripheralType {
   ALMOND_CONFIGURATION = 38,
   WEMO_CONFIGURATION = 39,
   OUTLET = 40,
+  OAUTH_CONFIGURATION = 41,
 }
 
 enum PeripheralStatus {

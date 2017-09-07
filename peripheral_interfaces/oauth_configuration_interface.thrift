@@ -1,0 +1,15 @@
+namespace py thrift_types.peripheral_interfaces.oauth_configuration_interface
+
+include "../message_bus.thrift"
+include "peripheral_interface.thrift"
+
+
+struct OAuthConfigurationPeripheralInterface {
+}
+
+const peripheral_interface.PeripheralInterface peripheral = {
+  'peripheral_interface_name': 'OAuthConfigurationPeripheralInterface',
+  'peripheral_type': message_bus.PeripheralType.OAUTH_CONFIGURATION,
+  'dynamic_variable_prefix': 'oauth_config:',
+  'dynamic_variable_ttype': 'configuration.OAuthConfiguration'
+}

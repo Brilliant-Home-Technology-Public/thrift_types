@@ -191,3 +191,12 @@ struct DeviceAuthorizationState {
   8: optional string committed_device_id
   9: i16 num_attempts
 }
+
+struct OAuthConfiguration {
+  1: string client_name
+  // Used to either encrypt or sign access tokens and authorization grants sent to a client
+  2: string secret
+  // A one-time use code granted to a client, to be exchanged for access and refresh token
+  3: string authorization_grant_code
+}
+
