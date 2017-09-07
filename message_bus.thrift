@@ -56,6 +56,7 @@ const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
+const string CLOUD_VIRTUAL_DEVICE = "cloud"
 
 const string UNASSIGNED_HOME_ID = "0"
 
