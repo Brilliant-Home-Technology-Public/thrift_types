@@ -188,7 +188,6 @@ struct DeviceAuthorizationState {
   6: string server_commitment_secret
   // Following two fields are populated once commitment received from new device
   7: optional string client_authentication_commitment
-  8: optional string committed_device_id
   9: i16 num_attempts
 }
 
