@@ -219,7 +219,8 @@ service MessageBusService {
       3: map<string, string> variables,
       4: map<string, i64> last_set_timestamps,
   )
-  void set_device(1: Device device)
+
+  void handle_notification(1: SubscriptionNotification notification)
 
   void subscribe_all(
       # 1: string subscriber_name - DEPRECATED
