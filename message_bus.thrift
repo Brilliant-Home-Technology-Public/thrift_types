@@ -213,6 +213,7 @@ service MessageBusService {
       1: string device_id,
       2: string peripheral_name,
       3: map<string, Variable> variables,
+      4: optional list<string> deleted_variables,
   )
   SetVariableResponse set_variables_request(
       1: string device_id,
