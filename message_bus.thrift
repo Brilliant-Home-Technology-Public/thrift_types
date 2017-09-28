@@ -140,6 +140,7 @@ struct Peripheral {
   3: PeripheralType peripheral_type
   4: optional string dynamic_variable_prefix
   5: PeripheralStatus status
+  6: optional i64 timestamp
 }
 
 struct Device {
