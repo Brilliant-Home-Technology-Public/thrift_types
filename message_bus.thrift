@@ -153,6 +153,21 @@ struct VirtualDeviceRegistration {
   2: optional bool use_reported_peripherals
 }
 
+struct ModifiedVariable {
+  1: string variable_name
+  2: optional Variable variable # If the variable has been deleted, this will be None
+}
+
+struct ModifiedPeripheral {
+  1: string peripheral_id
+  2: bool deleted
+  3: optional list<ModifiedVariable> modified_variables
+  4: optional PeripheralStatus status
+  5: optional PeripheralType peripheral_type
+  6: optional string dynamic_variable_prefix
+  7: i64 timestamp
+}
+
 struct SubscriptionNotification {
   1: Device updated_device
   2: i64 timestamp
@@ -161,11 +176,6 @@ struct SubscriptionNotification {
 struct Devices {
   1: list<Device> devices
   2: string home_id
-}
-
-struct ModifiedVariable {
-  1: string variable_name
-  2: optional Variable variable # If the variable has been deleted, this will be None
 }
 
 struct SetVariableResponse {
