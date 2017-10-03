@@ -10,3 +10,13 @@ enum BootstrapStatus {
   COMPLETED = 6,
   AUTHENTICATION_FAILED = 7,
 }
+
+struct AvailableHome {
+  1: string home_id
+  2: optional string home_name
+  3: i32 num_detected_devices
+}
+
+struct AvailableHomes {
+  1: list<AvailableHome> homes
+}
