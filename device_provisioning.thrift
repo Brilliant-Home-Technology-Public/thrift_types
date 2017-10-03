@@ -5,11 +5,13 @@ include "configuration.thrift"
 const string DEVICE_PROVISIONING_SERVICE_UUID = "6b11c0d6-e1fa-4a78-8a29-bbd7a156ed9a" // Randomly generated
 
 enum AuthenticationStatus {
+  UNKNOWN = 0
   PENDING = 1
   COMMITTED = 2
   ACCEPTED = 3
   REJECTED = 4
   THROTTLED = 5
+  BUSY = 6
 }
 
 struct PeekHomeResponse {
