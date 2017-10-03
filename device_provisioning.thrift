@@ -12,6 +12,11 @@ enum AuthenticationStatus {
   THROTTLED = 5
 }
 
+struct PeekHomeResponse {
+  1: string home_id
+  2: optional string home_name
+}
+
 struct JoinHomeResponse {
   1: AuthenticationStatus authentication_status
   // Following fields only filled out if device is authorized
@@ -35,6 +40,8 @@ struct CommitAuthenticationResponse {
 
 
 service DeviceProvisioningService {
+
+  PeekHomeResponse peek_home()
 
   KnockOnHomeResponse knock_on_home(
       1: string client_device_id,
