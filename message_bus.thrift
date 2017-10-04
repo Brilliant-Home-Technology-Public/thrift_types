@@ -60,6 +60,7 @@ const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
 const string CLOUD_VIRTUAL_DEVICE = "cloud"
 
 const string UNASSIGNED_HOME_ID = "0"
+const string UNASSIGNED_DEVICE_ID = "0"
 
 enum PeripheralType {
   UNKNOWN = 0,
