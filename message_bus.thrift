@@ -166,6 +166,7 @@ struct ModifiedPeripheral {
   5: optional PeripheralType peripheral_type
   6: optional string dynamic_variable_prefix
   7: i64 timestamp
+  8: optional i64 prior_timestamp
 }
 
 struct SubscriptionNotification {
