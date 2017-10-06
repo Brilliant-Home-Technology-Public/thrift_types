@@ -221,6 +221,11 @@ service MessageBusService {
   Device get_device(1: string device_id)
   Peripheral get_peripheral(1: string device_id, 2: string peripheral_name)
 
+  void delete_peripheral(
+      1: string device_id,
+      2: string peripheral_id,
+  )
+
   SetVariableResponse set_updated_variables(
       1: string device_id,
       2: string peripheral_name,
