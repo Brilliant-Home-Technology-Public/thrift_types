@@ -150,7 +150,6 @@ struct Device {
 
 struct VirtualDeviceRegistration {
   1: Device device
-  2: optional bool use_reported_peripherals
 }
 
 struct ModifiedVariable {
