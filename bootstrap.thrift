@@ -1,5 +1,7 @@
 namespace py thrift_types.bootstrap
 
+const string AUTHENTICATION_TOKEN_HEADER = "X-Brilliant-Auth-Token"
+
 enum BootstrapStatus {
   IDLE = 0,
   SCANNING = 1,
