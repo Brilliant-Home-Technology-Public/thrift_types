@@ -21,6 +21,7 @@ struct DeviceInterface {
   3: optional i32 port # Remote bridge port
   4: optional string object_store_host
   5: optional i32 object_store_port
+  6: optional i32 provisioning_port
 }
 
 struct DeviceInterfaces {
