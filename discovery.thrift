@@ -18,10 +18,9 @@ const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
-  3: i32 port # Remote bridge port
+  3: optional i32 port # Remote bridge port
   4: optional string object_store_host
   5: optional i32 object_store_port
-  6: optional i32 provisioning_port
 }
 
 struct DeviceInterfaces {
