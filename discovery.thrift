@@ -1,4 +1,5 @@
 namespace py thrift_types.discovery
+namespace java thrift_types.discovery
 
 const string WEMO_DIMMER_MODEL_NAME = "Dimmer"
 const string WEMO_INSIGHT_MODEL_NAME = "Insight"

@@ -1,4 +1,5 @@
 namespace py thrift_types.test
+namespace java thrift_types.test
 /* This really should be somewhere else */
 
 struct SimpleStruct {

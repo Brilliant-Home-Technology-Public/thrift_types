@@ -1,4 +1,5 @@
 namespace py thrift_types.voice
+namespace java thrift_types.voice
 
 enum AlexaStatus {
   // This defines the voice recognition state machine

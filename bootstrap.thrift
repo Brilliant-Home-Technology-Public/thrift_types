@@ -1,4 +1,5 @@
 namespace py thrift_types.bootstrap
+namespace java thrift_types.bootstrap
 
 const string AUTHENTICATION_TOKEN_HEADER = "X-Brilliant-Auth-Token"
 

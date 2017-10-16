@@ -1,4 +1,5 @@
 namespace py thrift_types.peripheral_interfaces.remote_bridge_interface
+namespace java thrift_types.peripheral_interfaces.remote_bridge_interface
 
 include "../remote_bridge.thrift"
 include "../message_bus.thrift"

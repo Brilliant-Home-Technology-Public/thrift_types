@@ -1,4 +1,5 @@
 namespace py thrift_types.peripheral_interfaces.light_interface
+namespace java thrift_types.peripheral_interfaces.light_interface
 
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"

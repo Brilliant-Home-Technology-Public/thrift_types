@@ -1,4 +1,5 @@
 namespace py thrift_types.protocol
+namespace java thrift_types.protocol
 
 const string DELIMITER = " "
 const string MSG_TYPE_REQ = "req"

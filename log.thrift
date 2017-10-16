@@ -1,4 +1,5 @@
 namespace py thrift_types.log
+namespace java thrift_types.log
 
 /*
  * IMPORTANT NOTE:

@@ -1,4 +1,5 @@
 namespace py thrift_types.message_bus
+namespace java thrift_types.message_bus
 
 const string IDENTIFIER = "message_bus"
 

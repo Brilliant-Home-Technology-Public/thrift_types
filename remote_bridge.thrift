@@ -1,4 +1,5 @@
 namespace py thrift_types.remote_bridge
+namespace java thrift_types.remote_bridge
 
 include "message_bus.thrift"
 

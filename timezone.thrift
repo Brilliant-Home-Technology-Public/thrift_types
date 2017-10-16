@@ -1,4 +1,5 @@
 namespace py thrift_types.timezone
+namespace java thrift_types.timezone
 
 struct Timezone {
   1: string name //IANA time zone database name, should work for pytz and QTimeZone

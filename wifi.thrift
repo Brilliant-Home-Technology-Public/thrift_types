@@ -1,4 +1,5 @@
 namespace py thrift_types.wifi
+namespace java thrift_types.wifi
 
 enum AssociationStatusType {
   UNKNOWN = 0,

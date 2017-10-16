@@ -1,4 +1,5 @@
 namespace py thrift_types.peripheral_interfaces.discovery_interface
+namespace java thrift_types.peripheral_interfaces.discovery_interface
 
 include "../discovery.thrift"
 include "../message_bus.thrift"

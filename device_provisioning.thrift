@@ -1,4 +1,5 @@
 namespace py thrift_types.device_provisioning
+namespace java thrift_types.device_provisioning
 
 include "configuration.thrift"
 

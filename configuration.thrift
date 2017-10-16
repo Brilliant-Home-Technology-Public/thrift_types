@@ -1,4 +1,5 @@
 namespace py thrift_types.configuration
+namespace java thrift_types.configuration
 
 include "message_bus.thrift"
 

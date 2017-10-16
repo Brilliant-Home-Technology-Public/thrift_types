@@ -1,4 +1,5 @@
 namespace py thrift_types.peripheral_interfaces.home_configuration_interface
+namespace java thrift_types.peripheral_interfaces.home_configuration_interface
 
 include "../configuration.thrift"
 include "../message_bus.thrift"

@@ -1,4 +1,5 @@
 namespace py thrift_types.music
+namespace java thrift_types.music
 
 struct MusicTrack {
   2: string title
