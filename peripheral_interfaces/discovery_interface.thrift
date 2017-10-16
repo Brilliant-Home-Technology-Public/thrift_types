@@ -6,10 +6,9 @@ include "peripheral_interface.thrift"
 
 struct DiscoveryPeripheralInterface {
   1: discovery.DeviceInterfaces available_services
-  2: discovery.ThirdpartyDeviceInterfaces available_upnp_services
-  3: bool discovery_mode_on
-  4: bool discovery_mode_available
-  5: discovery.ThirdpartyDeviceInterfaces available_thirdparty_services
+  2: bool discovery_mode_on
+  3: bool discovery_mode_available
+  4: discovery.ThirdpartyDeviceInterfaces available_thirdparty_services
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
