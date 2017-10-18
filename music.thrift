@@ -13,19 +13,6 @@ struct PlayQueue {
   1: list<MusicTrack> tracks
 }
 
-struct MusicPlayer {
-  1: string ip_address
-  2: string zone_name
-  3: string serial_number
-  4: string zone_icon
-  5: string hardware_version
-  6: i64 volume
-}
-
-struct MusicPlayers {
-  1: list<MusicPlayer> players
-}
-
 struct Playlist {
   1: string title
   2: string uri
