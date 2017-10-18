@@ -13,7 +13,7 @@ PY_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(PY_OUTPUT_DIR)/%.py_dummy_target)
 # The python thrift compiler automatically creates a thrift_types subdirectory even when we
 # override the output directory with -out
 PY_CFLAGS = -out $(dir $(PY_OUTPUT_DIR)) --gen py
-TWO_TO_THREE = python -m lib2to3
+TWO_TO_THREE = python3 -m lib2to3
 TTTFLAGS = --write --no-diffs --nobackups
 # C++ specific
 CPP_OUTPUT_DIR_DUMMY_TARGET := $(CPP_OUTPUT_DIR)/.dummy_target
