@@ -199,3 +199,13 @@ struct OAuthConfiguration {
   3: string authorization_grant_code
 }
 
+enum OAuthStatus {
+  NEVER_ATTEMPTED = 0
+  AUTHORIZED = 1
+  DEAUTHORIZED = 2 // We have received a 401 Unauthorized error
+}
+
+struct ThirdpartyIntegrationState {
+  1: OAuthStatus oauth_status
+}
+
