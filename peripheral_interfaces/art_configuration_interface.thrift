@@ -4,11 +4,9 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct ArtConfigurationPeripheralInterface {
-  1: string display_name
-  2: i32 display_time_date
-  3: i32 display_frequency
-  4: bool on
-  5: bool use_global_art_config
+  1: bool display_time_date
+  2: i32 display_frequency
+  3: bool on
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
