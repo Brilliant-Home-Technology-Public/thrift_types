@@ -7,7 +7,7 @@ include "peripheral_interface.thrift"
 struct HomeConfigurationPeripheralInterface {
   1: string name
   2: configuration.Rooms rooms
-  3: string thridparty_discovery_owner
+  3: string thirdparty_discovery_owner
   4: string local_timezone
 }
 
