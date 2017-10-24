@@ -209,3 +209,7 @@ struct ThirdpartyIntegrationState {
   1: OAuthStatus oauth_status
 }
 
+struct HueBridgeIntegrationStates {
+  1: map<string, ThirdpartyIntegrationState> integration_states
+}
+
