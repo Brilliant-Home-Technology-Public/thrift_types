@@ -4,11 +4,15 @@ enum AlexaStatus {
   // This defines the voice recognition state machine
   //
   //     Alexa, what is the time? (1pm):
-  //     WAKEWORD -> ALEXA -> OFF -> WAKEWORD
+  //     WAKEWORD -> ALEXA_LISTENING -> ALEXA_THINKING -> ALEXA_SPEAKING -> WAKEWORD
   //
   //     Alexa, wikipedia. (What?) Potatoes (...):
-  //     WAKEWORD -> ALEXA -> OFF -> ALEXA -> OFF -> WAKEWORD
+  //     WAKEWORD -> ALEXA_LISTENING -> ALEXA_THINKING -> ALEXA_SPEAKING ->
+  //                 ALEXA_LISTENING -> ALEXA_THINKING -> ALEXA_SPEAKING -> WAKEWORD
   OFF = 0,
   WAKEWORD = 1,
-  ALEXA = 2,
+  ALEXA_LISTENING = 2,
+  ALEXA_SPEAKING = 3,
+  ALEXA_THINKING = 4,
+  ALEXA_ERROR = 5,
 }
