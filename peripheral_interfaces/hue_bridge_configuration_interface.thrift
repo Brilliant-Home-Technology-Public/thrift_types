@@ -6,6 +6,7 @@ include "peripheral_interface.thrift"
 
 struct HueBridgeConfigurationPeripheralInterface {
   1: configuration.HueBridgeCredentials credentials
+  2: configuration.HueBridgeIntegrationStates bridge_thirdparty_integration_states
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
