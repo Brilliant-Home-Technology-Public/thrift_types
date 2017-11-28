@@ -158,6 +158,7 @@ struct VirtualDeviceRegistration {
 struct ModifiedVariable {
   1: string variable_name
   2: optional Variable variable # If the variable has been deleted, this will be None
+  3: optional i64 deletion_timestamp
 }
 
 struct ModifiedPeripheral {
