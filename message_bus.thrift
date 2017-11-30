@@ -188,6 +188,10 @@ struct SetVariableResponse {
   4: list<ModifiedVariable> modified_variables = []
 }
 
+struct SetUpdatedVariablesResponse {
+  1: i64 timestamp
+}
+
 struct DeviceAttributes {
   1: string home_id
   2: string my_device_id
@@ -231,11 +235,10 @@ service MessageBusService {
       2: string peripheral_id,
   )
 
-  SetVariableResponse set_updated_variables(
+  SetUpdatedVariablesResponse set_updated_variables(
       1: string device_id,
       2: string peripheral_name,
-      3: map<string, Variable> variables,
-      4: optional list<string> deleted_variables,
+      3: list<ModifiedVariable> modified_variables,
   )
   SetVariableResponse set_variables_request(
       1: string device_id,
