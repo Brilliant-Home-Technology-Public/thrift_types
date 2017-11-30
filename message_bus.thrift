@@ -122,6 +122,12 @@ struct Variable {
   4: bool externally_settable
 }
 
+struct ModifiedVariable {
+  1: string variable_name
+  2: optional Variable variable # If the variable has been deleted, this will be None
+  3: optional i64 deletion_timestamp
+}
+
 struct PeripheralRegistration {
   1: string name
   2: map<string, Variable> variables
@@ -144,6 +150,7 @@ struct Peripheral {
   4: optional string dynamic_variable_prefix
   5: PeripheralStatus status
   6: optional i64 timestamp
+  7: optional list<ModifiedVariable> deleted_variables = []
 }
 
 struct Device {
@@ -153,12 +160,6 @@ struct Device {
 
 struct VirtualDeviceRegistration {
   1: Device device
-}
-
-struct ModifiedVariable {
-  1: string variable_name
-  2: optional Variable variable # If the variable has been deleted, this will be None
-  3: optional i64 deletion_timestamp
 }
 
 struct ModifiedPeripheral {
