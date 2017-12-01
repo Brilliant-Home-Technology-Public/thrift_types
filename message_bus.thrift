@@ -171,6 +171,7 @@ struct ModifiedPeripheral {
   6: optional string dynamic_variable_prefix
   7: i64 timestamp
   8: optional i64 prior_timestamp
+  9: optional list<ModifiedVariable> prior_deleted_variables
 }
 
 struct SubscriptionNotification {
