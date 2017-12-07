@@ -108,6 +108,7 @@ enum PeripheralType {
   WEMO_CONFIGURATION = 39,
   OUTLET = 40,
   OAUTH_CONFIGURATION = 41,
+  GANGBOX_CONFIGURATION = 42,
 }
 
 enum PeripheralStatus {
