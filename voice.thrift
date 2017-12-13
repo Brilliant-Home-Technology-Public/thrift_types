@@ -50,6 +50,11 @@ struct AlexaWeatherData {
   8: optional string day_of_week
 }
 
+struct AlexaListItem {
+  1: string left_field
+  2: string right_field
+}
+
 struct AlexaRenderTemplateData {
   1: RenderTemplateType template_type
   2: optional string title
@@ -59,7 +64,7 @@ struct AlexaRenderTemplateData {
   5: optional string description
   6: optional string main_image_url
   // Mapping of left text field to right text field for list templates
-  7: optional map<string, string> list_items
+  7: optional list<AlexaListItem> list_items
   8: optional WeatherType weather_type
   9: optional AlexaWeatherData current_weather
   10: optional list<AlexaWeatherData> weather_forecast
