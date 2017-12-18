@@ -35,6 +35,14 @@ enum ArtDisplayFrequency {
   SPECIFIC_HOURS = 1,
 }
 
+// Cap touch configuration
+
+struct CapTouchSliderConfig {
+  1: i32 index
+  2: string device_id
+  3: string peripheral_id
+}
+
 struct HueBridgeCredential {
   1: string ip_address
   2: string username
