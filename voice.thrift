@@ -31,6 +31,7 @@ enum WeatherType {
   SUNNY = 1,
   CLOUDY = 2,
   RAINY = 3,
+  SNOWY = 4,
 }
 
 struct AlexaIconData {
