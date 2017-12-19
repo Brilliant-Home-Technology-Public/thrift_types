@@ -11,6 +11,8 @@ struct ComplexStruct {
   2: SimpleStruct struct_field
   3: list<i64> list_field
   4: map<string, i64> map_field
+  5: map<string, map<string, SimpleStruct>> nested_map
+  6: list<list<i64>> nested_list_field
 }
 
 service TestService {
