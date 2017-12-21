@@ -11,6 +11,7 @@ struct DeviceConfigurationPeripheralInterface {
   3: bool enable_intercom_audio
   4: bool enable_intercom
   5: bool video_is_upright
+  6: bool enable_demo_mode
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
