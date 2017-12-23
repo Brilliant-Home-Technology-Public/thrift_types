@@ -62,6 +62,8 @@ const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripher
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
 const string CLOUD_VIRTUAL_DEVICE = "cloud"
 
+const string RELAY_DEVICE_VARIABLE_NAME = "relay_device"
+
 const string UNASSIGNED_HOME_ID = "0"
 const string UNASSIGNED_DEVICE_ID = "0"
 
