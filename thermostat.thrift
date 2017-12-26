@@ -9,6 +9,7 @@ enum HVACMode {
   COOL = 2
   HEAT = 3
   AUTO = 4 // Only supported by Honeywell Lyric Round
+  ECO = 5 // Only supported by Nest
 }
 
 enum FanMode {
