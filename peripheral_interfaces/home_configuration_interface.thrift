@@ -10,6 +10,7 @@ struct HomeConfigurationPeripheralInterface {
   2: configuration.Rooms rooms
   3: string thirdparty_discovery_owner
   4: string local_timezone
+  5: string passcode
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
