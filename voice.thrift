@@ -70,3 +70,24 @@ struct AlexaRenderTemplateData {
   9: optional AlexaWeatherData current_weather
   10: optional list<AlexaWeatherData> weather_forecast
 }
+
+struct AlexaAsset {
+  1: string asset_id
+  2: string url
+}
+
+struct AlexaAlert {
+  1: string token // opaque alexa alert id
+  2: string type // documented values: TIMER, ALARM, REMINDER
+  4: i64 scheduled_timestamp
+  5: optional map<string, AlexaAsset> assets
+  6: optional list<string> asset_play_order // list of asset_ids (may have duplicates)
+  7: optional string background_alert_asset // asset_id
+  8: optional i32 loop_count // if not specified, loop for 1 hour
+  9: optional i32 loop_pause_ms // pause between loops unless 0 or not specified
+}
+
+struct AlexaAlerts {
+  1: map<string, AlexaAlert> alerts
+}
+
