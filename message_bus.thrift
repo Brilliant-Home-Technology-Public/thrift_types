@@ -270,6 +270,8 @@ service MessageBusService {
       3: string peripheral_name,
   )
 
+  Devices subscribe(1: SubscriptionRequest subscription_request)
+
   void update_peripheral_status(
       1: string device_id,
       2: string peripheral_name,
