@@ -54,3 +54,9 @@ struct ThirdpartyDeviceInterfaces {
   1: list<ThirdpartyDeviceInterface> device_interfaces
 }
 
+struct WebAPIEndpoint {
+  1: string scheme
+  2: string host
+  3: i32 port
+  4: i32 authenticated_client_port
+}
