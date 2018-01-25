@@ -203,6 +203,12 @@ struct DeviceAttributes {
   2: string my_device_id
 }
 
+struct SubscriptionRequest {
+  1: optional string device_id
+  2: optional PeripheralType peripheral_type
+  3: optional string peripheral_id_glob
+}
+
 enum InitializationTarget {
   MESSAGE_BUS_INITIALIZED = 1
   NETWORK_ONLINE = 2
