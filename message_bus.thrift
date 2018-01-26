@@ -257,19 +257,6 @@ service MessageBusService {
 
   void handle_notification(1: SubscriptionNotification notification)
 
-  void subscribe_all(
-      # 1: string subscriber_name - DEPRECATED
-  )
-  void subscribe_device(
-      # 1: string subscriber_name - DEPRECATED
-      2: string device_id
-  )
-  void subscribe_peripheral(
-      # 1: string subscriber_name - DEPRECATED
-      2: string device_id,
-      3: string peripheral_name,
-  )
-
   Devices subscribe(1: SubscriptionRequest subscription_request)
 
   void update_peripheral_status(
