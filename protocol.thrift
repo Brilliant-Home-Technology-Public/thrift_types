@@ -70,8 +70,10 @@ struct TLSInfo {
   3: string peer_certificate_fingerprint // Base64-encoded sha256 hash
 }
 
+
 struct RequestContext {
   1: Hello peer_hello
   2: optional TLSInfo tls_info
   3: SerializationProtocol serialization_protocol
+  4: optional string negotiated_api_version
 }
