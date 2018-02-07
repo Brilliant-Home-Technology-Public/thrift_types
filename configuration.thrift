@@ -41,6 +41,23 @@ struct CapTouchSliderConfig {
   3: string peripheral_id
 }
 
+// Gesture configuration
+
+enum GestureType {
+  UNKNOWN = 0,
+  SINGLE = 1, # Single finger swipes and drags
+}
+
+struct GestureConfig {
+  1: GestureType gesture_type
+  2: optional string device_id # Empty string means the current device. None means all devices.
+  3: optional string peripheral_id
+}
+
+struct GestureConfigs {
+  1: list<GestureConfig> gesture_configs
+}
+
 struct HueBridgeCredential {
   1: string ip_address
   2: string username
