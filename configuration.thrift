@@ -55,7 +55,7 @@ struct GestureConfig {
 }
 
 struct GestureConfigs {
-  1: list<GestureConfig> gesture_configs
+  1: map<GestureType, list<GestureConfig>> gesture_configs
 }
 
 struct HueBridgeCredential {
