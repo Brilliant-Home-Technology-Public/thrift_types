@@ -12,6 +12,7 @@ const string DEVICE_AUTH_CONFIG_IDENTIFIER = "device_authorization_configuration
 const string DEVICE_STATUS_IDENTIFIER = "device_status_peripheral"
 const string DISCOVERY_IDENTIFIER = "discovery_peripheral"
 const string FACEPLATE_IDENTIFIER = "faceplate_peripheral"
+const string FACEPLATE_UART_STATUS_IDENTIFIER = "faceplate_uart_status_peripheral"
 const string GANGBOX_IDENTIFIER = "gangbox_peripheral"
 const string GANGBOX_CONFIG_IDENTIFIER = "gangbox_config_peripheral"
 const string HARDWARE_IDENTIFIER = "hardware_peripheral"
@@ -111,6 +112,7 @@ enum PeripheralType {
   OUTLET = 40,
   OAUTH_CONFIGURATION = 41,
   GANGBOX_CONFIGURATION = 42,
+  FACEPLATE_UART_STATUS = 43,
 }
 
 enum PeripheralStatus {
