@@ -189,6 +189,12 @@ struct Devices {
   2: string home_id
 }
 
+struct SavedDevices {
+  1: list<Device> devices
+  2: string home_id
+  3: string version
+}
+
 struct SetVariableResponse {
   1: i64 timestamp
   4: list<ModifiedVariable> modified_variables = []
