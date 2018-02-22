@@ -24,3 +24,8 @@ enum FirmwareUpdateFailureCode {
 	API_VERSION_RESTRICTION=5,
 }
 
+enum DisplayOption {
+	ALWAYS_ON = 0,
+	ALWAYS_OFF = 1,
+	WINDOW = 2,
+}
