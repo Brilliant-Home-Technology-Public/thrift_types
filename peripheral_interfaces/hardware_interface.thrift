@@ -14,12 +14,11 @@ struct HardwarePeripheralInterface {
   6: i32 screen_on_start
   7: i32 screen_on_end
   8: configuration.ExecutionTimeRange screen_on_range
-  9: string software_version
-  10: string current_boot_version
-  11: i64 current_boot_version_timestamp
-  12: string next_boot_version
-  13: i32 software_support_status
-  14: i32 cpu_temperature
+  9: string current_boot_version
+  10: i64 current_boot_version_timestamp
+  11: string next_boot_version
+  12: i32 software_support_status
+  13: i32 cpu_temperature
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
