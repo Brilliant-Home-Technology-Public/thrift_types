@@ -165,6 +165,9 @@ struct Peripheral {
 struct Device {
   1: string id
   2: map<string, Peripheral> peripherals
+  // Make the timestamp optional until we can ensure that the timestamp is set in all uses of the
+  // Device struct. Otherwise, the mobile app will explode in the meantime.
+  3: optional i64 timestamp
 }
 
 struct VirtualDeviceRegistration {
