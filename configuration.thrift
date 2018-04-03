@@ -10,6 +10,9 @@ struct MediaContent {
 }
 
 // Art Configuration
+
+const string USER_CUSTOM_LIBRARY_ID = "library:custom_art"
+
 struct ArtPiece {
   1: string id
   4: optional MediaContent primary
