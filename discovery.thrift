@@ -48,6 +48,7 @@ struct ThirdpartyDeviceInterface {
   2: i32 port
   3: ThirdpartyDeviceType device_type
   4: DiscoveryType discovery_type
+  5: optional map<string, string> device_attributes // Additional attributes the device broadcasts
 }
 
 struct ThirdpartyDeviceInterfaces {
