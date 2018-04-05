@@ -16,6 +16,9 @@ const string DEVICE_PROVISIONING_MDNS_SERVICE_TYPE = "_init-brilliant._tcp.local
 const string REMOTE_BRIDGE_MDNS_SERVICE_SUFFIX = "-brilliant._tcp.local."
 const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 
+// Attribute name for unique ID a Hue bridge returns for SSDP discovery
+const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
