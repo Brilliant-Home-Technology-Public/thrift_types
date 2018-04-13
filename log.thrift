@@ -62,6 +62,10 @@ enum EventSource {
   COUNTER = 5
 }
 
+enum UIMandatoryUpdateImpressionContextType {
+  STARTUP_SCREEN = 1
+}
+
 // BEGIN MOBILE LOG TABLE NAMES
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
@@ -76,7 +80,16 @@ const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_
 // BEGIN QT LOG TABLE NAMES
 // Example Constant, TODO: Complete QT Logs
 const string QT_SCREEN_VIEW_EVENT_TABLE_NAME = "screen_view"
+const string UI_MANDATORY_UPDATE_IMPRESSION_TABLE_NAME = "ui_mandatory_update_impression"
 // END QT LOG TABLE NAMES
+
+// BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
+const string EMBEDDED_SOFTWARE_UPDATE_TABLE_NAME = "embedded_software_update"
+// END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
+
+// BEGIN EMBEDDED EVENT NAMES
+const string EMBEDDED_SOFTWARE_UPDATE_INITIATED_EVENT_NAME = "embedded_update_initiated"
+// END EMBEDDED EVENT NAMES
 
 struct ErrorEvent {
   1: string table_name
@@ -159,4 +172,25 @@ struct SectionExpansionToggleEvent {
   5: string device_id
   6: string screen_name
   8: bool expanding
+}
+
+struct EmbeddedSoftwareUpdateEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string event
+  7: string current_version
+  8: string next_version
+  9: bool is_mandatory
+}
+
+struct UIMandatoryUpdateImpressionEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: UIMandatoryUpdateImpressionContextType context
 }
