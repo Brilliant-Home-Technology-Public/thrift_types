@@ -8,7 +8,7 @@ namespace java thrift_types.log
  * For each struct there should be at least one corresponding table name (usually per platform)
  * Avoid Optional fields, only use in cases of deprecation and
  * even then, only if absolutely necessary and the intent is to phase out the column.
- * 
+ *
  */
 
 const string LOG_ALLOWED_NON_ALPHANUMERIC_CHARACTERS = " ,./;[]-=<>?:{}|~!@#$%^&*()_+"
