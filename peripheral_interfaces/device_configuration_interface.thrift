@@ -18,6 +18,6 @@ struct DeviceConfigurationPeripheralInterface {
 const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'DeviceConfigurationPeripheralInterface',
   'peripheral_type': message_bus.PeripheralType.DEVICE_CONFIGURATION,
-  'dynamic_variable_prefix': 'slider_config:',
+  'dynamic_variable_prefix': configuration.CAP_TOUCH_CONFIG_VARIABLE_PREFIX,
   'dynamic_variable_ttype': 'configuration.CapTouchSliderConfig',
 }

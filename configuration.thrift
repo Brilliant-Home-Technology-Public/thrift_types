@@ -38,6 +38,8 @@ enum ArtDisplayFrequency {
 
 // Cap touch configuration
 
+const string CAP_TOUCH_CONFIG_VARIABLE_PREFIX = "slider_config:"
+
 struct CapTouchSliderConfig {
   1: i32 index
   2: string device_id
