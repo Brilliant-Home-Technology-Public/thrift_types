@@ -53,7 +53,7 @@ const string OAUTH_CONFIG_IDENTIFIER = "oauth_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
-const string SMARTTHINGS_CLIENT_ID = "7f6b9929-95ab-46cb-8afa-4244d5656942"
+const string SMARTTHINGS_CLIENT_ID = "0a64157f-1717-42b9-85d0-4aaa37ece72d"
 const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
 const string HONEYWELL_CLIENT_ID = "hqO3pG8w2vCLowWWdKT3IANyvw4PrGqu"
 const string ECOBEE_CLIENT_ID = "p5QCDGdiJOHp7oRknVXzwpDEkeTRYTVy"
