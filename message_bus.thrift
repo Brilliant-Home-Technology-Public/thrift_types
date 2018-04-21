@@ -116,6 +116,7 @@ enum PeripheralType {
   FACEPLATE_UART_STATUS = 43,
   GANGBOX_UART_STATUS = 44,
   GENERIC_ON_OFF = 45,
+  ALWAYS_ON = 46,
 }
 
 enum PeripheralStatus {
