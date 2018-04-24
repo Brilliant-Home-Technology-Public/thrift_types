@@ -145,6 +145,7 @@ struct PeripheralRegistration {
   4: PeripheralType peripheral_type
   5: optional string dynamic_variable_prefix
   6: optional PeripheralStatus peripheral_status
+  7: optional bool register_new_variables_with_current_time
 }
 
 struct MessageBusRegistration {
