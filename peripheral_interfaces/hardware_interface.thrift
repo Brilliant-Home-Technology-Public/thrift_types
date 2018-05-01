@@ -19,6 +19,7 @@ struct HardwarePeripheralInterface {
   11: i32 cpu_temperature
   12: bool low_temp_mode
   13: i32 num_cap_touch_sliders
+  14: bool camera_on
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
