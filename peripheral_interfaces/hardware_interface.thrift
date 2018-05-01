@@ -17,6 +17,8 @@ struct HardwarePeripheralInterface {
   9: string next_boot_version
   10: i32 software_support_status
   11: i32 cpu_temperature
+  12: bool low_temp_mode
+  13: i32 num_cap_touch_sliders
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
