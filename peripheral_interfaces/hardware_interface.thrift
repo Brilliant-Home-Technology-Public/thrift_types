@@ -20,6 +20,7 @@ struct HardwarePeripheralInterface {
   12: bool low_temp_mode
   13: i32 num_cap_touch_sliders
   14: bool camera_on
+  15: string current_release_tag
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
