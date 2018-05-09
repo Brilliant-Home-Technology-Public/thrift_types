@@ -81,6 +81,7 @@ const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_
 // Example Constant, TODO: Complete QT Logs
 const string QT_SCREEN_VIEW_EVENT_TABLE_NAME = "screen_view"
 const string UI_MANDATORY_UPDATE_IMPRESSION_TABLE_NAME = "ui_mandatory_update_impression"
+const string UI_HOME_SCREEN_ICON_TAP_TABLE_NAME = "home_screen_icon"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -193,4 +194,13 @@ struct UIMandatoryUpdateImpressionEvent {
   4: string home_id
   5: string device_id
   6: UIMandatoryUpdateImpressionContextType context
+}
+
+struct UIHomeScreenIconTapEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string name
 }
