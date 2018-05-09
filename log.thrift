@@ -83,6 +83,8 @@ const string MOBILE_ICON_SELECTED_EVENT_TABLE_NAME = "mobile_icon_selected"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
+const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
+const string MOBILE_UPLOAD_PHOTO_EVENT_TABLE_NAME = "mobile_upload_photo_status"
 // END MOBILE LOG TABLE NAMES
 
 // BEGIN QT LOG TABLE NAMES
@@ -184,6 +186,35 @@ struct SectionExpansionToggleEvent {
   5: string device_id
   6: string screen_name
   8: bool expanding
+}
+
+// START: BUTTON NAME CONSTANTS
+const string BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo_start"
+const string BUTTON_NAME_UPLOAD_PHOTO_CONFIRM = "upload_photo_confirm"
+const string BUTTON_NAME_DELETE_PHOTO_FROM_LIBRARY = "delete_photo_from_library"
+const string BUTTON_NAME_DELETE_PHOTO_CONFIRM = "delete_photo_confirm"
+
+// NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
+// If A ButtonTapped log needs another field, make a new struct
+// ONLY USE CONSTANTS (add above) FOR button_name
+struct SimpleButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string button_name
+}
+
+struct UploadPhotoEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: i32 status_code
 }
 
 struct EmbeddedSoftwareUpdateEvent {
