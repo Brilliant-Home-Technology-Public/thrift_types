@@ -64,6 +64,7 @@ enum EventSource {
 
 enum UIMandatoryUpdateImpressionContextType {
   STARTUP_SCREEN = 1
+  SYSTEM_NOTIFICATION = 2
 }
 
 enum UIAbandonSetupStepType {
