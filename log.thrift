@@ -66,6 +66,13 @@ enum UIMandatoryUpdateImpressionContextType {
   STARTUP_SCREEN = 1
 }
 
+enum UIAbandonSetupStepType {
+  UNKNOWN = 0
+  WIFI = 1
+  LOGIN = 2
+  MANDATORY_UPDATE = 3
+}
+
 // BEGIN MOBILE LOG TABLE NAMES
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
@@ -82,6 +89,9 @@ const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_
 const string QT_SCREEN_VIEW_EVENT_TABLE_NAME = "screen_view"
 const string UI_MANDATORY_UPDATE_IMPRESSION_TABLE_NAME = "ui_mandatory_update_impression"
 const string UI_HOME_SCREEN_ICON_TAP_TABLE_NAME = "home_screen_icon"
+const string UI_ENTER_SETUP_TABLE_NAME = "ui_enter_setup"
+const string UI_ABANDON_SETUP_TABLE_NAME = "ui_abandon_setup"
+const string UI_COMPLETE_SETUP_TABLE_NAME = "ui_complete_setup"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -204,4 +214,29 @@ struct UIHomeScreenIconTapEvent {
   5: string device_id
   6: string name
   7: bool in_lights_only_mode
+}
+
+struct UIEnterSetupEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+}
+
+struct UIAbandonSetupEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: UIAbandonSetupStepType step
+}
+
+struct UICompleteSetupEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
 }
