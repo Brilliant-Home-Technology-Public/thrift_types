@@ -27,6 +27,7 @@ enum StatusCode {
   PERMISSION_ERROR = 5,
   CONNECTION_ERROR = 6,
   PROTOCOL_ERROR = 7,
+  CONSISTENCY_ERROR = 8,
 }
 
 
