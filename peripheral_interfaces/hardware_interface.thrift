@@ -3,6 +3,7 @@ namespace java thrift_types.peripheral_interfaces.hardware_interface
 
 include "../message_bus.thrift"
 include "../configuration.thrift"
+include "../hardware.thrift"
 include "peripheral_interface.thrift"
 
 struct HardwarePeripheralInterface {
@@ -21,6 +22,8 @@ struct HardwarePeripheralInterface {
   13: i32 num_cap_touch_sliders
   14: bool camera_on
   15: string current_release_tag
+  16: hardware.DisplayOption screen_on_config
+  17: bool duck_speaker
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
