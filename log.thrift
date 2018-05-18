@@ -40,6 +40,7 @@ enum EventIconType {
 
 enum ToggleType {
   ON = 1
+  LOCK = 2
 }
 
 enum LevelType {
