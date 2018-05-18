@@ -8,27 +8,31 @@ struct Timezone {
 
 const list<Timezone> supported_timezones = [
     {
-        "name": "America/Anchorage",
-        "display_name": "AKST - Alaska Standard Time"
-    },
-    {
-        "name": "America/Chicago",
-        "display_name": "CST - Central Standard Time"
-    },
-    {
-        "name": "America/New_York",
-        "display_name": "EST - Eastern Standard Time"
+        "name": "America/Los_Angeles",
+        "display_name": "Pacific - Los Angeles"
     },
     {
         "name": "Pacific/Honolulu",
-        "display_name": "HST - Hawaii Standard Time"
+        "display_name": "Hawaii - Honolulu"
+    },
+    {
+        "name": "America/Anchorage",
+        "display_name": "Alaska - Anchorage"
     },
     {
         "name": "America/Denver",
-        "display_name": "MST - Mountain Standard Time"
+        "display_name": "Mountain - Denver"
     },
     {
-        "name": "America/Los_Angeles",
-        "display_name": "PST - Pacific Standard Time"
-    }
+        "name": "America/Phoenix",
+        "display_name": "Mountain - Arizona"
+    },
+    {
+        "name": "America/Chicago",
+        "display_name": "Central - Chicago"
+    },
+    {
+        "name": "America/New_York",
+        "display_name": "Eastern - New York"
+    },
 ]
