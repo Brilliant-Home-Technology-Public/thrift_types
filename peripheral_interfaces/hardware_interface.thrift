@@ -24,6 +24,7 @@ struct HardwarePeripheralInterface {
   15: string current_release_tag
   16: hardware.DisplayOption screen_on_config
   17: bool duck_speaker
+  18: hardware.SoftwareReleaseStage tracked_release_stage
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
