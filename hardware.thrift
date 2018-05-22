@@ -29,3 +29,9 @@ enum DisplayOption {
 	ALWAYS_OFF = 1,
 	WINDOW = 2,
 }
+
+enum SoftwareReleaseStage {
+  UNKNOWN = 0,
+  STABLE = 1,
+  LATEST = 2,
+}
