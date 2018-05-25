@@ -36,6 +36,18 @@ enum ArtDisplayFrequency {
   SPECIFIC_HOURS = 1,
 }
 
+// Motion Control Configuration
+
+const string LIGHT_MOTION_CONFIG_VARIABLE_PREFIX = "light_config:"
+
+struct LightMotionConfig {
+  1: string device_id
+  2: string peripheral_id
+  3: optional bool trigger_on
+  4: optional bool trigger_off
+  5: optional i32 trigger_off_timeout_sec
+}
+
 // Cap touch configuration
 
 const string CAP_TOUCH_CONFIG_VARIABLE_PREFIX = "slider_config:"
