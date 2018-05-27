@@ -24,6 +24,7 @@ enum ErrorEventType {
 
 enum EventDeviceType {
   LIGHT = 1
+  LOCK = 2
 }
 
 enum EventIconType {
