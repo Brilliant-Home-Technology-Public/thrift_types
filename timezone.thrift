@@ -25,7 +25,7 @@ const list<Timezone> supported_timezones = [
     },
     {
         "name": "America/Phoenix",
-        "display_name": "Mountain - Arizona"
+        "display_name": "Mountain - Phoenix"
     },
     {
         "name": "America/Chicago",
