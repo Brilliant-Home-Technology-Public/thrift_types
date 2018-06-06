@@ -1,4 +1,5 @@
 namespace py thrift_types.hardware
+namespace java thrift_types.hardware
 
 enum SoftwareSupportStatus {
   UNKNOWN = 0,
