@@ -255,3 +255,8 @@ struct HueBridgeIntegrationStates {
   1: map<string, ThirdpartyIntegrationState> integration_states
 }
 
+// switch-ui HomeScreen Pinned Options Config
+
+struct PinnedOptionsConfig {
+  1: list<string> scene_ids = []
+}
