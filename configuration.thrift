@@ -205,6 +205,12 @@ struct Rooms {
   1: map<string, Room> rooms
 }
 
+// Room assignment
+
+struct RoomAssignment {
+  1: optional list<string> room_ids = []
+}
+
 // Wifi
 struct WifiCredentials {
   1: string network_name
