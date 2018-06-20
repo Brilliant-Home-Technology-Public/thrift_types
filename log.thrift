@@ -25,6 +25,7 @@ enum ErrorEventType {
 enum EventDeviceType {
   LIGHT = 1
   LOCK = 2
+  THERMOSTAT = 3
 }
 
 enum EventIconType {
