@@ -7,7 +7,8 @@ struct MusicTrack {
   4: string album
   5: optional string album_art
   6: optional i64 duration
-  7: i64 queue_position
+  7: optional i64 queue_position
+  8: optional string music_service
 }
 
 struct PlayQueue {
@@ -17,9 +18,9 @@ struct PlayQueue {
 struct Playlist {
   1: string title
   2: string uri
-  3: string description
-  4: string album_art
-  5: string metadata
+  3: optional string description
+  4: optional string album_art
+  5: optional string metadata
 }
 
 struct Playlists {

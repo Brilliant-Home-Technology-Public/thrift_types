@@ -123,6 +123,7 @@ enum PeripheralType {
   NEST_STRUCTURE = 47,
   ALARM_CONFIGURATION = 48,
   ALEXA_SKILL = 49,
+  MUSIC_V2 = 50, // TODO (Ananda): use this for MUSIC_SERVICE once Sonos migration pushed
 }
 
 enum PeripheralStatus {
