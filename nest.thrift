@@ -8,6 +8,7 @@ struct ThermostatIds {
 }
 
 enum HomeAwayStatus {
-	HOME = 0,
-	AWAY = 1,
+	UNKNOWN = 0,
+	HOME = 1,
+	AWAY = 2,
 }
