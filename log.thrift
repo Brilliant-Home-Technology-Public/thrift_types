@@ -25,6 +25,7 @@ enum ErrorEventType {
 enum EventDeviceType {
   LIGHT = 1
   LOCK = 2
+  CLIMATE = 3
 }
 
 enum EventIconType {
@@ -50,6 +51,11 @@ enum LevelType {
   TEMPERATURE = 3
 }
 
+enum SelectType {
+  HVAC_MODE = 1
+  FAN_MODE = 2
+}
+
 enum EventSectionType {
   DEVICE_TYPE_FOR_HOME = 1
   DEVICE_TYPE_FOR_ROOM = 2
@@ -62,6 +68,8 @@ enum EventSource {
   SLIDER = 3
   SWITCH = 4
   COUNTER = 5
+  STEP_TOGGLE = 6
+  SELECTION_MENU = 7
 }
 
 enum UIMandatoryUpdateImpressionContextType {
@@ -78,10 +86,11 @@ enum UIAbandonSetupStepType {
 
 // BEGIN MOBILE LOG TABLE NAMES
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
-const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
+const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_ICON_SELECTED_EVENT_TABLE_NAME = "mobile_icon_selected"
+const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
@@ -150,6 +159,19 @@ struct DeviceLevelEvent {
   8: EventSource source
   9: LevelType level_type
   10: i32 level
+}
+
+struct DeviceSelectEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: EventDeviceType device_type
+  8: EventSource source
+  9: SelectType select_type
+  10: string value
 }
 
 struct IconSelectedEvent {
