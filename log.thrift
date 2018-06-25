@@ -178,6 +178,7 @@ struct ScreenViewEvent {
   4: string home_id
   5: string device_id
   6: string screen_name
+  7: string source_screen
 }
 
 struct SectionExpansionToggleEvent {
@@ -248,6 +249,7 @@ struct UIHomeScreenIconTapEvent {
   5: string device_id
   6: string name
   7: bool in_lights_only_mode
+  8: i32 number_adjustable_lights_in_home
 }
 
 struct UIEnterSetupEvent {
