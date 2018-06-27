@@ -192,6 +192,7 @@ struct ModifiedPeripheral {
 }
 
 struct SubscriptionNotification {
+  # This device is not gaurenteed to have peripherals populated.
   1: Device updated_device
   2: i64 timestamp
   3: optional list<ModifiedPeripheral> modified_peripherals = []
