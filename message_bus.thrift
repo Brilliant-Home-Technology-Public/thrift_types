@@ -51,6 +51,7 @@ const string WEMO_CONFIG_IDENTIFIER = "wemo_configuration"
 const string WEMO_IDENTIFIER = "wemo"
 const string OAUTH_CONFIG_IDENTIFIER = "oauth_configuration"
 const string ALARM_CONFIG_IDENTIFIER = "alarm_config_peripheral"
+const string ALEXA_SKILL_IDENTIFIER = "alexa_skill_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -121,6 +122,7 @@ enum PeripheralType {
   ALWAYS_ON = 46,
   NEST_STRUCTURE = 47,
   ALARM_CONFIGURATION = 48,
+  ALEXA_SKILL = 49,
 }
 
 enum PeripheralStatus {
