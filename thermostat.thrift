@@ -22,4 +22,16 @@ enum FanMode {
 struct ThermostatCapabilities {
   1: list<HVACMode> supported_hvac_modes
   2: list<FanMode> supported_fan_modes
+  3: bool supports_fan_timer
+}
+
+// all times in minutes
+enum FanTimerDuration {
+  UNKNOWN = 0,
+  FIFTEEN_MINS = 15,
+  THIRTY_MINS = 30,
+  FORTY_FIVE_MINS = 45,
+  ONE_HOUR = 60,
+  TWO_HOURS = 120,
+  FOUR_HOURS = 240,
 }
