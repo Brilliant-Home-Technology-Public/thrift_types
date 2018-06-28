@@ -1,5 +1,5 @@
-namespace py thrift_types.log
-namespace java thrift_types.log
+namespace py thrift_types.mobile_screens
+namespace java thrift_types.mobile_screens
 
 const string UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
 
