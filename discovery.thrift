@@ -19,6 +19,9 @@ const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 // Attribute name for unique ID a Hue bridge returns for SSDP discovery
 const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
 
+// Attribute for USN (Unique Service Name)
+const string USN_ATTRIBUTE = "USN"
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
