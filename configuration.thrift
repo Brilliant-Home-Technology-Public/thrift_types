@@ -201,9 +201,8 @@ const string ALARM_CONFIG_VARIABLE_PREFIX = "alarm:"
 struct AlarmConfig {
   1: string id
   2: string title
-  3: bool enabled
-  4: i32 volume
-  5: ExecutionTimeRange time_range
+  3: i32 volume
+  4: ExecutionTimeRange time_range
 }
 
 // Home Configuration
