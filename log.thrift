@@ -106,6 +106,8 @@ const string UI_HOME_SCREEN_ICON_TAP_TABLE_NAME = "home_screen_icon"
 const string UI_ENTER_SETUP_TABLE_NAME = "ui_enter_setup"
 const string UI_ABANDON_SETUP_TABLE_NAME = "ui_abandon_setup"
 const string UI_COMPLETE_SETUP_TABLE_NAME = "ui_complete_setup"
+const string UI_ROOM_TAPPED_TABLE_NAME = "ui_room_tapped"
+const string UI_SIMPLE_BUTTON_TAPPED_TABLE_NAME = "ui_simple_button_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -213,11 +215,22 @@ struct SectionExpansionToggleEvent {
   8: bool expanding
 }
 
+struct RoomTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string room_id
+  7: i32 peripheral_type_filter
+}
+
 // START: BUTTON NAME CONSTANTS
 const string BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo_start"
 const string BUTTON_NAME_UPLOAD_PHOTO_CONFIRM = "upload_photo_confirm"
 const string BUTTON_NAME_DELETE_PHOTO_FROM_LIBRARY = "delete_photo_from_library"
 const string BUTTON_NAME_DELETE_PHOTO_CONFIRM = "delete_photo_confirm"
+const string UI_BUTTON_NAME_LIST_DEVICES_EDIT = "list_devices_edit"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
