@@ -231,6 +231,7 @@ const string BUTTON_NAME_UPLOAD_PHOTO_CONFIRM = "upload_photo_confirm"
 const string BUTTON_NAME_DELETE_PHOTO_FROM_LIBRARY = "delete_photo_from_library"
 const string BUTTON_NAME_DELETE_PHOTO_CONFIRM = "delete_photo_confirm"
 const string UI_BUTTON_NAME_LIST_DEVICES_EDIT = "list_devices_edit"
+const string UI_BUTTON_NAME_ADD_DEVICE = "add_device"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
