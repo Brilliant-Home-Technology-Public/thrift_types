@@ -232,6 +232,16 @@ const string BUTTON_NAME_DELETE_PHOTO_FROM_LIBRARY = "delete_photo_from_library"
 const string BUTTON_NAME_DELETE_PHOTO_CONFIRM = "delete_photo_confirm"
 const string UI_BUTTON_NAME_LIST_DEVICES_EDIT = "list_devices_edit"
 const string UI_BUTTON_NAME_ADD_DEVICE = "add_device"
+const string UI_BUTTON_NAME_ADD_UNSUPPORTED_DEVICE = "add_unsupported_device"
+const string UI_BUTTON_NAME_ADD_ECOBEE = "add_ecobee"
+const string UI_BUTTON_NAME_ADD_HONEYWELL = "add_honeywell"
+const string UI_BUTTON_NAME_ADD_HUE = "add_hue"
+const string UI_BUTTON_NAME_ADD_RING = "add_ring"
+const string UI_BUTTON_NAME_ADD_SMARTTHINGS = "add_smartthings"
+const string UI_BUTTON_NAME_ADD_SONOS = "add_sonos"
+const string UI_BUTTON_NAME_ADD_WEMO = "add_wemo"
+const string UI_BUTTON_NAME_ADD_ALMOND = "add_almond"
+const string UI_BUTTON_NAME_ADD_NEST = "add_nest"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
