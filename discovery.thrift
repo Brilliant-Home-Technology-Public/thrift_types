@@ -47,6 +47,7 @@ enum ThirdpartyDeviceType {
 enum DiscoveryType {
   MDNS = 1,
   UPNP = 2,
+  NUPNP = 3,
 }
 
 struct ThirdpartyDeviceInterface {
