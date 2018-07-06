@@ -8,7 +8,7 @@ enum HVACMode {
   OFF = 1
   COOL = 2
   HEAT = 3
-  AUTO = 4 // Only supported by Honeywell Lyric Round
+  AUTO = 4 // Only supported by Honeywell Lyric Round, Nest
   ECO = 5 // Only supported by Nest
 }
 
@@ -34,4 +34,17 @@ enum FanTimerDuration {
   ONE_HOUR = 60,
   TWO_HOURS = 120,
   FOUR_HOURS = 240,
+}
+
+struct TemperatureRange {
+  1: i32 min_f
+  2: i32 max_f
+}
+
+struct TemperatureRanges {
+  1: TemperatureRange target_temperature_range
+  // both target_temperature_low_f and target_temperature_high_f should be
+  // used mutually exclusively with target_temperature_f (depending on hvac_mode)
+  2: TemperatureRange target_temperature_low_range
+  3: TemperatureRange target_temperature_high_range
 }
