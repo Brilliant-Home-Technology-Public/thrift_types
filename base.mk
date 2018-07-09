@@ -6,7 +6,7 @@ THRIFT_COMPILER = $(CURDIR)/thirdparty-binaries/pre-built/$(BUILD_PLATFORM)/thri
 PY_OUTPUT_DIR ?= $(CURDIR)/site-packages/$(THRIFT_DIR)
 CPP_OUTPUT_DIR ?= $(CURDIR)/main_app/$(THRIFT_DIR)
 SWIFT_OUTPUT_DIR ?= $(CURDIR)/local-pods/BRL/$(THRIFT_DIR)
-JAVA_OUTPUT_DIR ?= $(CURDIR)/Brilliant/app/src/main/java/$(THRIFT_DIR)
+JAVA_OUTPUT_DIR ?= $(CURDIR)/Brilliant/brl/src/main/java/$(THRIFT_DIR)
 
 # Python specific
 PY_OUTPUT_DIR_DUMMY_TARGET := $(PY_OUTPUT_DIR)/.dummy_target
