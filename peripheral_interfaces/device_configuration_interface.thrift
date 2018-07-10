@@ -14,6 +14,7 @@ struct DeviceConfigurationPeripheralInterface {
   6: bool enable_demo_mode
   7: configuration.GestureConfigs gesture_configs
   8: configuration.RoomAssignment room_assignment
+  9: bool receive_intercom_broadcasts
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
