@@ -26,3 +26,7 @@ struct Playlist {
 struct Playlists {
   1: list<Playlist> playlists
 }
+
+struct Speakers {
+  1: list<string> speaker_ids
+}
