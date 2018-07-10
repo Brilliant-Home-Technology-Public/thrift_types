@@ -33,6 +33,7 @@ const string SMARTTHINGS_CONFIG_IDENTIFIER = "smartthings_configuration"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
 const string SONOS_CONFIG_IDENTIFIER = "sonos_configuration"
 const string SONOS_IDENTIFIER = "sonos"
+const string SONOS_MUSIC_LIRBARY_PREFIX = "sonos_music_library"
 const string VOICE_CONFIG_IDENTIFIER = "voice_configuration"
 const string WIFI_IDENTIFIER = "wifi_peripheral"
 const string WINK_IDENTIFIER = "wink"
@@ -124,6 +125,7 @@ enum PeripheralType {
   ALARM_CONFIGURATION = 48,
   ALEXA_SKILL = 49,
   SPEAKER = 50,
+  MUSIC_LIBRARY = 51,
 }
 
 enum PeripheralStatus {
