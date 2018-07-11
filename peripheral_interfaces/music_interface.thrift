@@ -15,7 +15,6 @@ struct MusicPeripheralInterface {
   8: i32 volume
   9: bool volume_fixed   // if volume can be adjusted or not
   10: string play_uri    // initiate playback of a favorite
-  11: music.Playlists favorites
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
