@@ -47,4 +47,5 @@ struct TemperatureRanges {
   // used mutually exclusively with target_temperature_f (depending on hvac_mode)
   2: TemperatureRange target_temperature_low_range
   3: TemperatureRange target_temperature_high_range
+  4: i32 heat_cool_min_delta // minimum required distance between low and high temps
 }
