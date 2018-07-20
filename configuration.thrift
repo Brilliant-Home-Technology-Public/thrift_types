@@ -84,6 +84,16 @@ struct HueBridgeCredentials {
   1: map<string, HueBridgeCredential> credentials
 }
 
+struct SomfyCredential {
+  1: string ip_address
+  2: string auth
+  3: map<string, string> available_targets
+}
+
+struct SomfyCredentials {
+  1: map<string, SomfyCredential> credentials
+}
+
 // Thirdparty Device Configurations
 
 struct PeripheralInfo {
@@ -269,6 +279,10 @@ struct ThirdpartyIntegrationState {
 }
 
 struct HueBridgeIntegrationStates {
+  1: map<string, ThirdpartyIntegrationState> integration_states
+}
+
+struct SomfyIntegrationStates {
   1: map<string, ThirdpartyIntegrationState> integration_states
 }
 
