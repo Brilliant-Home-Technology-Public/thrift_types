@@ -133,6 +133,7 @@ enum PeripheralStatus {
   ONLINE = 1, // Connected to message bus
   DISCONNECTED = 2, // Process connected to mb but cannot connect to necessary resource
   MALFUNCTIONING = 3, // Process connected to mb, peripheral is running, but has internal problems
+  DEGRADED = 4, // Process connected to mb, peripheral is running, limited functionality
 }
 
 struct Variable {
