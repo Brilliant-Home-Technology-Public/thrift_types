@@ -207,6 +207,7 @@ struct SubscriptionNotification {
   1: Device updated_device
   2: i64 timestamp
   3: optional list<ModifiedPeripheral> modified_peripherals = []
+  4: bool deleted = false
 }
 
 struct Devices {
