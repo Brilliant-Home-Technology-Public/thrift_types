@@ -1,5 +1,6 @@
 namespace py thrift_types.log
 namespace java thrift_types.log
+include "message_bus.thrift"
 
 /*
  * IMPORTANT NOTE:
@@ -108,6 +109,7 @@ const string UI_ABANDON_SETUP_TABLE_NAME = "ui_abandon_setup"
 const string UI_COMPLETE_SETUP_TABLE_NAME = "ui_complete_setup"
 const string UI_ROOM_TAPPED_TABLE_NAME = "ui_room_tapped"
 const string UI_SIMPLE_BUTTON_TAPPED_TABLE_NAME = "ui_simple_button_tapped"
+const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_warning_triggered"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -223,6 +225,18 @@ struct RoomTappedEvent {
   5: string device_id
   6: string room_id
   7: i32 peripheral_type_filter
+}
+
+struct GangboxLoadWarningTriggeredEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: i64 load_index
+  7: message_bus.PeripheralStatus peripheral_status
+  8: bool in_first_use
+  9: string screen_name
 }
 
 // START: BUTTON NAME CONSTANTS
