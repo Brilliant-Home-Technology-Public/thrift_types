@@ -84,10 +84,18 @@ struct HueBridgeCredentials {
   1: map<string, HueBridgeCredential> credentials
 }
 
+enum SomfyAPIType {
+  UNKNOWN = 0,
+  MYLINK = 1,
+  RTS = 2,
+  SDN = 3,
+}
+
 struct SomfyCredential {
   1: string ip_address
   2: string auth
   3: map<string, string> available_targets
+  4: SomfyAPIType api_type
 }
 
 struct SomfyCredentials {
