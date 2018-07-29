@@ -129,7 +129,7 @@ enum PeripheralType {
   SPEAKER = 50,
   MUSIC_LIBRARY = 51,
   SOMFY_CONFIGURATION = 52,
-  SHADES = 53,
+  SHADE = 53,
 }
 
 enum PeripheralStatus {
