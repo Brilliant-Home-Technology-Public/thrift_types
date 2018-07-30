@@ -200,6 +200,7 @@ struct ModifiedPeripheral {
   8: optional i64 prior_timestamp
   9: optional list<ModifiedVariable> prior_deleted_variables
   10: optional bool peripheral_type_changed // TODO: make non-optional
+  11: optional bool peripheral_status_changed // TODO: make non-optional
 }
 
 struct SubscriptionNotification {
