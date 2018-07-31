@@ -28,6 +28,7 @@ enum StatusCode {
   CONNECTION_ERROR = 6,
   PROTOCOL_ERROR = 7,
   CONSISTENCY_ERROR = 8,
+  SET_REQUEST_ERROR = 9,
 }
 
 
