@@ -71,6 +71,7 @@ enum EventSource {
   COUNTER = 5
   STEP_TOGGLE = 6
   SELECTION_MENU = 7
+  DIALOG = 8
 }
 
 enum UIMandatoryUpdateImpressionContextType {
