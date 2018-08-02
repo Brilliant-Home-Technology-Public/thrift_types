@@ -7,7 +7,7 @@ include "peripheral_interface.thrift"
 struct ShadePeripheralInterface {
   // Whether the shade can be set at intermediate
   // positions or must be either all up or all down
-  1: bool continous
+  1: bool continuous
   2: i32 position
 }
 
