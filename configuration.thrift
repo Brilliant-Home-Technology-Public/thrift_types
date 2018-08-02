@@ -96,6 +96,8 @@ struct SomfyCredential {
   2: string auth
   3: map<string, string> available_targets
   4: SomfyAPIType api_type
+  5: optional string user
+  6: optional string password
 }
 
 struct SomfyCredentials {
