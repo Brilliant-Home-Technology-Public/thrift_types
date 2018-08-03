@@ -27,6 +27,7 @@ enum EventDeviceType {
   LIGHT = 1
   LOCK = 2
   CLIMATE = 3
+  GENERIC_TOGGLE = 4
 }
 
 enum EventIconType {
