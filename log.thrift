@@ -4,8 +4,8 @@ include "message_bus.thrift"
 
 /*
  * IMPORTANT NOTE:
- * The structs below represent logs made on both the Qt and Mobile apps.
- * Not all logs are made on all platforms
+ * The structs, enums and consts below represent logs made on both the Qt and Mobile apps.
+ * Not all definitions are used on all platforms
  * For each struct there should be at least one corresponding table name (usually per platform)
  * Avoid Optional fields, only use in cases of deprecation and
  * even then, only if absolutely necessary and the intent is to phase out the column.
@@ -86,20 +86,6 @@ enum UIAbandonSetupStepType {
   LOGIN = 2
   MANDATORY_UPDATE = 3
 }
-
-// BEGIN MOBILE LOG TABLE NAMES
-const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
-const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
-const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
-const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
-const string MOBILE_ICON_SELECTED_EVENT_TABLE_NAME = "mobile_icon_selected"
-const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
-const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
-const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
-const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
-const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
-const string MOBILE_UPLOAD_PHOTO_EVENT_TABLE_NAME = "mobile_upload_photo_status"
-// END MOBILE LOG TABLE NAMES
 
 // BEGIN QT LOG TABLE NAMES
 // Example Constant, TODO: Complete QT Logs
