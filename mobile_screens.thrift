@@ -1,50 +1,63 @@
 namespace py thrift_types.mobile_screens
 namespace java thrift_types.mobile_screens
 
-const string UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
+const string MOBILE_UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
 
-const map<string,string> SCREEN_NAME_MAP = {
+const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Main Tabs
-  "Home": "HomeTab"
-  "HomeTab": "HomeTab",
-  "Photos": "PhotosTab",
-  "PhotosTab": "PhotosTab",
-  "Scenes": "ScenesTab",
-  "ScenesTab": "ScenesTab",
+  "PhotosTab": "Photos",
+  "ScenesTab": "Scenes",
+  "DevicesTab": "Devices",
+  "RoomsTab": "Rooms",
 
-  "Login": "Login",
+  "Login": "LockedWelcome",
   
   // Device Control
-  "Devices": "Devices",
-  "DeviceControl": "Devices",
-  "Rooms": "Rooms",
-  "DeviceControlByRoom": "Rooms",
+  "Devices": "Devices", // Use modifier to specify type
+  "DeviceControl": "Devices", // Use modifier to specify type
+  "Rooms": "Rooms:Specific"
+  "DeviceControlByRoom": "Rooms:Specific",
   "Settings": "Settings",
 
   // Account
-  "EditAccount": "EditAccount",
+  "EditAccount": "AccountSettings",
+  "EditAccountEditSettings": "AccountSettings",
+
+  // Settings
+  "DemoMode": "DemoMode",
+  "ForgetHome": "ForgetHome",
+  "ForgotPin": "ForgotPin",
 
   // Photos
-  "PhotosManageConfig": "PhotosManageConfig",
-  "PhotosConfigEdit": "PhotosManageConfig",
-  "PhotosConfigDevices": "PhotosManageDevices",
-  "PhotosManageDevices": "PhotosManageDevices",
-  "UploadPhoto": "UploadPhoto",
-  "PhotoDetail": "PhotoDetail"
+  "PhotosManageConfig": "Photos:Manage",
+  "PhotosConfigEdit": "Photos:Manage",
+  "UploadConfiguration": "Photos:Upload",
+  "UploadPhoto": "Photos:Upload",
+  "PhotoDetail": "Photos:Manage:ViewPhoto",
+  "PhotoDelete": "Photos:Manage:DeletePhoto",
+  "DeletePhoto": "Photos:Manage:DeletePhoto",
+  "UploadPhotoStatus": "Photos:Upload", // Use Modifier for status
+  "UploadLoading": "Photos:Upload:Loading",
+  "UploadSuccess": "Photos:Upload:Success",
+  "UploadFailure": "Photos:Upload:Failure",
+
 
   // Pairing Flow
-  "Setup": "Setup",
+  "Setup": "Launch",
   "Pairing": "Pairing",
   "ChooseHome": "ChooseHome",
   "SetupLoading": "PairingLoading",
   "PairingError": "PairingError",
-  "EnterCode": "EnterCode",
+  "EnterCode": "EnterCode", // User modifier for error
   "EnterCodeSuccess": "EnterCodeSuccess",
-  "SelectAccount": "SelectAccount",
-  "CreateAccount": "CreateAccount",
-  "CreateAccountSuccess": "SetupSuccess",
-  "SetupSuccess": "SetupSuccess"
+  "SelectAccount": "CreateAccount:Existing",
+  "CreateAccount": "CreateAccount:New",
+  "CreateAccountSuccess": "CreateAccount:Success",
+  "SetupSuccess": "CreateAccount:Success",
 
   // Debug
   "Debug": "Debug",
 }
+
+const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "GrantPermission"
+
