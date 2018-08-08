@@ -59,5 +59,5 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Debug": "Debug",
 }
 
-const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "GrantPermission"
+const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
 
