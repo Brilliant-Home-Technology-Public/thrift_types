@@ -287,7 +287,7 @@ struct MobileUnlockAttempt {
   4: string home_id
   5: string device_id
   6: string screen_name
-  7: MobileUnlockResult result
+  7: MobileUnlockResult unlock_result
 }
 
 struct MobileUploadPhotoEvent {
