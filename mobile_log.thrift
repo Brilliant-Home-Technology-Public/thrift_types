@@ -41,6 +41,8 @@ const string MOBILE_BUTTON_NAME_DEMO_MODE = "demo_mode"
 const string MOBILE_BUTTON_NAME_EDIT = "edit"
 const string MOBILE_BUTTON_NAME_EXISTING_ACCOUNT_CHOSEN = "existing_account_chosen"
 const string MOBILE_BUTTON_NAME_EXIT_DEMO_MODE = "exit_demo_mode"
+const string MOBILE_BUTTON_NAME_FINISH_SETUP = "finish_setup"
+const string MOBILE_BUTTON_NAME_FORGOT_PIN = "forgot_pin"
 const string MOBILE_BUTTON_NAME_FAQ = "faq"
 const string MOBILE_BUTTON_NAME_FORGET_HOME = "forget_home"
 const string MOBILE_BUTTON_NAME_GET_STARTED = "get_started"
@@ -51,6 +53,7 @@ const string MOBILE_BUTTON_NAME_LOCK_APP = "lock_app"
 const string MOBILE_BUTTON_NAME_NEXT = "next"
 const string MOBILE_BUTTON_NAME_OK = "ok"
 const string MOBILE_BUTTON_NAME_PAIR = "pair"
+const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
 const string MOBILE_BUTTON_NAME_REPORT_ISSUE = "report_issue"
 const string MOBILE_BUTTON_NAME_SAVE = "save"
 const string MOBILE_BUTTON_NAME_SETTINGS = "settings"
@@ -101,6 +104,8 @@ enum MobileLevelType {
   INTENSITY = 1
   VOLUME = 2
   TEMPERATURE = 3
+  TEMPERATURE_RANGE_LOW = 4
+  TEMPERATURE_RANGE_HIGH = 5
 }
 
 enum MobilePhotosAction {
