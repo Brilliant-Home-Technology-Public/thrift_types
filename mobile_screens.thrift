@@ -49,7 +49,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SetupLoading": "PairingLoading",
   "PairingError": "PairingError",
   "EnterCode": "EnterCode", // User modifier for error
-  "EnterCodeSuccess": "EnterCodeSuccess",
+  "EnterCodeSuccess": "PairSuccess",
   "SelectAccount": "CreateAccount:Existing",
   "CreateAccount": "CreateAccount:New",
   "CreateAccountSuccess": "CreateAccount:Success",
