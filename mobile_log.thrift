@@ -10,6 +10,7 @@ namespace java thrift_types.mobile_log
  *
  */
 
+
 // BEGIN MOBILE LOG TABLE NAMES
 // KEEP ALPHABETIZED
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
@@ -58,6 +59,17 @@ const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
 const string MOBILE_BUTTON_NAME_X = "x"
 // END: MOBILE BUTTON NAME CONSTANTS
+
+
+// Used for ScreenName and OverlayName Modifiers i.e. Screen EnterCode with modifier "Error" is "EnterCode:Error"
+const string MOBILE_NAME_MODIFIER_SEPARATOR = ":"
+
+// BEGIN NAME MODIFIERS
+const string MOBILE_NAME_MODIFIER_ERROR = "Error"
+const string MOBILE_NAME_MODIFIER_LOADING = "Loading"
+const string MOBILE_NAME_MODIFIER_FAILURE = "Failure"
+const string MOBILE_NAME_MODIFIER_SUCCESS = "Success"
+// END NAME MODIFIERS
 
 enum MobileErrorEventType {
   FAILED_AUTHENTICATION_CODE_ENTRY = 1
