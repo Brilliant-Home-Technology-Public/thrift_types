@@ -17,7 +17,6 @@ const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
-const string MOBILE_ICON_SELECTED_EVENT_TABLE_NAME = "mobile_icon_selected"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
@@ -85,24 +84,6 @@ enum MobileEventDeviceType {
   LOCK = 2
   CLIMATE = 3
   GENERIC_TOGGLE = 4
-}
-
-enum MobileEventIconType {
-  HOME = 1
-  MUSIC = 2
-  LIGHT = 3
-  EYE = 4
-  MICROPHONE = 5
-  THERMOSTAT = 6
-  BELL = 7
-  LOCK = 8
-  INTERCOM = 9
-}
-
-enum MobileEventSectionType {
-  DEVICE_TYPE_FOR_HOME = 1
-  DEVICE_TYPE_FOR_ROOM = 2
-  ROOM_FOR_DEVICE_TYPE = 3
 }
 
 enum MobileEventSource {
@@ -210,16 +191,6 @@ struct MobileErrorEvent {
   5: string device_id
   6: MobileErrorEventType event
   7: string reason
-}
-
-struct MobileIconSelectedEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string screen_name
-  7: MobileEventIconType icon_type
 }
 
 struct MobileJoinedHomeEvent {
