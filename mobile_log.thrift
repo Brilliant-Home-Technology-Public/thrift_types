@@ -24,7 +24,6 @@ const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
-const string MOBILE_UPLOAD_PHOTO_EVENT_TABLE_NAME = "mobile_upload_photo_status"
 // END MOBILE LOG TABLE NAMES
 
 // START: MOBILE BUTTON NAME CONSTANTS
