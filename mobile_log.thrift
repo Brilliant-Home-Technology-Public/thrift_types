@@ -287,7 +287,7 @@ struct MobileSimpleButtonTappedEvent {
   7: string button_name
 }
 
-struct MobileUnlockAttempt {
+struct MobileUnlockAttemptEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
