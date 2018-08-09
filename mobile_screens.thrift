@@ -40,6 +40,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "UploadLoading": "Photos:Upload:Loading",
   "UploadSuccess": "Photos:Upload:Success",
   "UploadFailure": "Photos:Upload:Failure",
+  "PUPhotoPickerHost": "Photos:Upload:SelectPhoto",
+  "CAMImagePickerCamera": "Photos:Upload:TakePhoto",
+  "Crop": "Photos:Upload:CropPhoto",
 
 
   // Pairing Flow
