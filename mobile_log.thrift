@@ -297,13 +297,3 @@ struct MobileUnlockAttemptEvent {
   7: MobileUnlockResult unlock_result
 }
 
-struct MobileUploadPhotoEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string screen_name
-  7: i32 status_code
-}
-
