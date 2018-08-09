@@ -3,7 +3,6 @@ namespace java thrift_types.version
 
 // MOST RECENT VERSION:
 const string VERSION_20180808 = "20180808"
-const string CURRENT_REMOTE_BRIDGE_API_VERSION = VERSION_20180808
 
 // OLD VERSIONS:
 const string VERSION_20180620 = "20180620"
