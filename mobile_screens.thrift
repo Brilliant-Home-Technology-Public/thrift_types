@@ -28,11 +28,18 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ForgetHome": "ForgetHome",
   "ForgotPin": "ForgotPin",
 
+  // Help
+  "Help": "Help",
+  "ZDKHelpCenterOverviewController": "ZendeskFAQ"
+  "RequestContainerController": "ZendeskRequest"
+
+
   // Photos
   "PhotosManageConfig": "Photos:Manage",
   "PhotosConfigEdit": "Photos:Manage",
   "UploadConfiguration": "Photos:Upload",
   "UploadPhoto": "Photos:Upload",
+  "LibraryHelp": "Photos:LibraryHelp",
   "PhotoDetail": "Photos:Manage:ViewPhoto",
   "PhotoDelete": "Photos:Manage:DeletePhoto",
   "DeletePhoto": "Photos:Manage:DeletePhoto",
@@ -50,6 +57,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Pairing": "Pairing",
   "ChooseHome": "ChooseHome",
   "SetupLoading": "PairingLoading",
+  "PairingLoading": "PairingLoading",
   "PairingError": "PairingError",
   "EnterCode": "EnterCode", // User modifier for error
   "EnterCodeSuccess": "PairSuccess",
