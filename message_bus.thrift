@@ -55,6 +55,8 @@ const string ALARM_CONFIG_IDENTIFIER = "alarm_config_peripheral"
 const string ALEXA_SKILL_IDENTIFIER = "alexa_skill_peripheral"
 const string SOMFY_CONFIG_IDENTIFIER = "somfy_configuration"
 const string SOMFY_IDENTIFIER = "somfy"
+const string AUGUST_CONFIG_IDENTIFIER = "august_configuration"
+const string AUGUST_IDENTIFIER = "august"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -130,6 +132,7 @@ enum PeripheralType {
   MUSIC_LIBRARY = 51,
   SOMFY_CONFIGURATION = 52,
   SHADE = 53,
+  AUGUST_CONFIGURATION = 54,
 }
 
 enum PeripheralStatus {
