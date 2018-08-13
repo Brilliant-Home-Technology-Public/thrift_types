@@ -245,6 +245,7 @@ const string UI_BUTTON_NAME_ADD_WEMO = "add_wemo"
 const string UI_BUTTON_NAME_ADD_ALMOND = "add_almond"
 const string UI_BUTTON_NAME_ADD_NEST = "add_nest"
 const string UI_BUTTON_NAME_ADD_SOMFY = "add_somfy"
+const string UI_BUTTON_NAME_ADD_AUGUST = "add_august"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
