@@ -74,6 +74,7 @@ const string MOBILE_NAME_MODIFIER_ERROR = "Error"
 const string MOBILE_NAME_MODIFIER_LOADING = "Loading"
 const string MOBILE_NAME_MODIFIER_FAILURE = "Failure"
 const string MOBILE_NAME_MODIFIER_SUCCESS = "Success"
+const string MOBILE_NAME_MODIFIER_DISABLED = "Disabled"
 // END NAME MODIFIERS
 
 enum MobileErrorEventType {
