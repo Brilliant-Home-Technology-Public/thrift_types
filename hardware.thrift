@@ -14,6 +14,7 @@ enum FirmwareUpdateStatus {
 	ROLLBACK_SUCCESS = 3, // Rollback succeeded
 	ROLLBACK_FAILURE = 4, // An exception occured during rollback but firmware functional
 	UNRECOVERABLE = 5, // Firmware will not function
+  NOT_APPLIED = 6,
 }
 
 enum FirmwareUpdateFailureCode {
