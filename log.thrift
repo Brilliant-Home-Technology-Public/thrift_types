@@ -98,6 +98,8 @@ const string UI_COMPLETE_SETUP_TABLE_NAME = "ui_complete_setup"
 const string UI_ROOM_TAPPED_TABLE_NAME = "ui_room_tapped"
 const string UI_SIMPLE_BUTTON_TAPPED_TABLE_NAME = "ui_simple_button_tapped"
 const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_warning_triggered"
+const string UI_NOTIFICATION_VIEW_TABLE_NAME = "notification_view"
+const string UI_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_button_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -246,6 +248,12 @@ const string UI_BUTTON_NAME_ADD_ALMOND = "add_almond"
 const string UI_BUTTON_NAME_ADD_NEST = "add_nest"
 const string UI_BUTTON_NAME_ADD_SOMFY = "add_somfy"
 const string UI_BUTTON_NAME_ADD_AUGUST = "add_august"
+const string UI_BUTTON_NAME_NEW_ALARM = "new_alarm"
+const string UI_BUTTON_NAME_SET_NEW_ALARM = "set_new_alarm"
+const string UI_BUTTON_NAME_CONFIRM_SAVE_ALARM = "confirm:save_alarm"
+const string UI_BUTTON_NAME_CONFIRM_CANCEL = "confirm:cancel"
+const string UI_BUTTON_NAME_CONFIRM_DELETE_ALARM = "confirm:delete_alarm"
+const string UI_BUTTON_NAME_DISMISS = "dismiss"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
@@ -325,4 +333,25 @@ struct UICompleteSetupEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+}
+
+struct UINotificationViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string notification_name
+}
+
+struct UINotificationButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string notification_name
+  8: string button_name
 }
