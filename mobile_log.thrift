@@ -31,6 +31,7 @@ const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
+const string MOBILE_BUTTON_NAME_BEGIN = "begin"
 const string MOBILE_BUTTON_NAME_CANCEL = "cancel"
 const string MOBILE_BUTTON_NAME_CREATE_NEW_ACCOUNT = "create_new_account"
 const string MOBILE_BUTTON_NAME_CONFIRM_DEMO_MODE = "confirm_demo_mode"
