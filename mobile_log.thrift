@@ -200,7 +200,8 @@ struct MobileErrorEvent {
   4: string home_id
   5: string device_id
   6: MobileErrorEventType event
-  7: string reason
+  7: string reason // May contain specific information (timestamps, deviceIds, etc)
+  9: string short_reason // Should be an aggregatable string (no timestamps, device ids, etc)
 }
 
 struct MobileJoinedHomeEvent {
