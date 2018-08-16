@@ -3,6 +3,7 @@ namespace java thrift_types.peripheral_interfaces.home_configuration_interface
 
 include "../configuration.thrift"
 include "../message_bus.thrift"
+include "../user.thrift"
 include "peripheral_interface.thrift"
 
 struct HomeConfigurationPeripheralInterface {
@@ -11,6 +12,7 @@ struct HomeConfigurationPeripheralInterface {
   3: string thirdparty_discovery_owner
   4: string local_timezone
   5: string passcode
+  6: user.User user
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
