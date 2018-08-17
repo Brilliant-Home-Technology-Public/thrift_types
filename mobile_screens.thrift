@@ -54,17 +54,17 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Pairing Flow
   "Setup": "Launch",
-  "Pairing": "Pairing",
-  "ChooseHome": "ChooseHome",
-  "SetupLoading": "PairingLoading",
-  "PairingLoading": "PairingLoading",
-  "PairingError": "PairingError",
-  "EnterCode": "EnterCode", // User modifier for error
-  "EnterCodeSuccess": "PairSuccess",
-  "SelectAccount": "CreateAccount:Existing",
-  "CreateAccount": "CreateAccount:New",
+  "ChooseHome": "Pair:Login:JoinHome",
+  "PairingLoading": "Pair:Login:Loading",
+  "EnterCode": "Pair:Login:Verification", // User modifier for error
+  "EnterCodeSuccess": "Pair:Login:Success",
+  "SelectAccount": "Pair:SetupAccount",
+  "CreateAccount": "Pair:SetupAccount:New",
   "CreateAccountSuccess": "CreateAccount:Success",
-  "SetupSuccess": "CreateAccount:Success",
+  "SetupSuccess": "Pair:SetupAccount:Success",
+  "EnterEmail": "Pair:Login",
+  "NoHomes": "Pair:JoinHome:Empty",
+  "SetupError": "Pair:Error",
 
   // Debug
   "Debug": "Debug",
