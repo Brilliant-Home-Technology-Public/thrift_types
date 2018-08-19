@@ -69,7 +69,14 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Debug
   "Debug": "Debug",
+
+  // Demo
+  "DemoWalkthrough": "DemoWalkthrough"
 }
 
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
+const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
+const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
+const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
+const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 
