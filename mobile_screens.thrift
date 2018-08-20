@@ -60,11 +60,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "EnterCodeSuccess": "Pair:Login:Success",
   "SelectAccount": "Pair:SetupAccount",
   "CreateAccount": "Pair:SetupAccount:New",
-  "CreateAccountSuccess": "CreateAccount:Success",
+  "CreateAccountSuccess": "Pair:SetupAccount:Success",
   "SetupSuccess": "Pair:SetupAccount:Success",
   "EnterEmail": "Pair:Login",
   "NoHomes": "Pair:JoinHome:Empty",
   "SetupError": "Pair:Error",
+  "WebView": "WebView",
 
   // Debug
   "Debug": "Debug",
