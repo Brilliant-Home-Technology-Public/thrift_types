@@ -12,7 +12,7 @@ struct HomeConfigurationPeripheralInterface {
   3: string thirdparty_discovery_owner
   4: string local_timezone
   5: string passcode
-  6: user.User user
+  6: user.User primary_user
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
