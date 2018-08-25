@@ -50,11 +50,6 @@ const string WEMO_IDENTIFIER = "wemo"
 const string OAUTH_CONFIG_IDENTIFIER = "oauth_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
-const string RING_CLIENT_ID = "brilliant_test"
-const string SMARTTHINGS_CLIENT_ID = "33e4cdfc-6d85-4a2b-bd22-6bc6b5c29f31"
-const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
-const string HONEYWELL_CLIENT_ID = "hqO3pG8w2vCLowWWdKT3IANyvw4PrGqu"
-const string ECOBEE_CLIENT_ID = "p5QCDGdiJOHp7oRknVXzwpDEkeTRYTVy"
 const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string EXTERNAL_CONFIGURATION_VIRTUAL_DEVICE = "external_configuration_virtual_device"
