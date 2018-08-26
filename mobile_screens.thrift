@@ -31,6 +31,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Help
   "Help": "Help",
   "ZDKHelpCenterOverviewController": "ZendeskFAQ"
+  "ZDCChat": "ZendeskLiveChat"
   "RequestContainerController": "ZendeskRequest"
 
 
