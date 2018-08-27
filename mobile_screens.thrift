@@ -63,7 +63,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Pairing Flow
   "Setup": "Launch",
-  "ChooseHome": "Pair:Login:JoinHome",
+  "ChooseHome": "Pair:JoinHome",
   "PairingLoading": "Pair:Login:Loading",
   "SetupLoading": "Pair:Login:Loading",
   "EnterCode": "Pair:Login:Verification", // User modifier for error
