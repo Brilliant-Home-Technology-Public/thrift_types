@@ -178,6 +178,7 @@ struct MobileDeviceLevelEvent {
   8: MobileEventSource source
   9: MobileLevelType level_type
   10: i32 level
+  11: string user_id
 }
 
 struct MobileDeviceSelectEvent {
@@ -191,6 +192,7 @@ struct MobileDeviceSelectEvent {
   8: MobileEventSource source
   9: MobileSelectType select_type
   10: string value
+  11: string user_id
 }
 
 struct MobileDeviceToggleEvent {
@@ -205,6 +207,7 @@ struct MobileDeviceToggleEvent {
   9: MobileToggleType toggle_type
   10: bool on
   11: bool aggregate
+  12: string user_id
 }
 
 struct MobileErrorEvent {
@@ -216,6 +219,7 @@ struct MobileErrorEvent {
   6: MobileErrorEventType event
   7: string reason // May contain specific information (timestamps, deviceIds, etc)
   9: string short_reason // Should be an aggregatable string (no timestamps, device ids, etc)
+  10: string user_id
 }
 
 struct MobileJoinedHomeEvent {
@@ -224,6 +228,7 @@ struct MobileJoinedHomeEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  6: string user_id
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileOverlayButtonTappedEvent
@@ -238,6 +243,7 @@ struct MobileOverlayButtonTappedEvent {
   6: string screen_name
   7: string overlay_name
   8: string button_name
+  9: string user_id
 }
 
 struct MobileOverlayViewEvent {
@@ -248,6 +254,7 @@ struct MobileOverlayViewEvent {
   5: string device_id
   6: string screen_name
   7: string overlay_name
+  8: string user_id
 }
 
 struct MobilePhotosActionEvent {
@@ -260,6 +267,7 @@ struct MobilePhotosActionEvent {
   7: MobilePhotosAction photos_action
   8: MobilePhotosConfigType config_type
   9: string album_name
+  10: string user_id
 }
 
 
@@ -270,6 +278,7 @@ struct MobileSceneExecutedEvent {
   4: string home_id
   5: string device_id
   6: string screen_name
+  7: string user_id
 }
 
 struct MobileScreenViewEvent {
@@ -280,6 +289,7 @@ struct MobileScreenViewEvent {
   5: string device_id
   6: string screen_name
   7: string source_screen
+  8: string user_id
 }
 
 struct MobileSectionExpansionToggleEvent {
@@ -290,6 +300,7 @@ struct MobileSectionExpansionToggleEvent {
   5: string device_id
   6: string screen_name
   8: bool expanding
+  7: string user_id
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileSimpleButtonTappedEvent
@@ -303,6 +314,7 @@ struct MobileSimpleButtonTappedEvent {
   5: string device_id
   6: string screen_name
   7: string button_name
+  8: string user_id
 }
 
 struct MobileUnlockAttemptEvent {
@@ -313,5 +325,6 @@ struct MobileUnlockAttemptEvent {
   5: string device_id
   6: string screen_name
   7: MobileUnlockResult unlock_result
+  8: string user_id
 }
 
