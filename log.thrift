@@ -4,8 +4,8 @@ include "message_bus.thrift"
 
 /*
  * IMPORTANT NOTE:
- * The structs, enums and consts below represent logs made on both the Qt and Mobile apps.
- * Not all definitions are used on all platforms
+ * The structs, enums and consts below represent logs made on the Qt app.
+ * Not all definitions may be used (originally these were shared with mobile).
  * For each struct there should be at least one corresponding table name (usually per platform)
  * Avoid Optional fields, only use in cases of deprecation and
  * even then, only if absolutely necessary and the intent is to phase out the column.
@@ -116,6 +116,7 @@ struct ErrorEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: ErrorEventType event
   7: string reason
 }
@@ -126,6 +127,7 @@ struct JoinedHomeEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  6: string user_id
 }
 
 struct DeviceToggleEvent {
@@ -134,6 +136,7 @@ struct DeviceToggleEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  12: string user_id
   6: string screen_name
   7: EventDeviceType device_type
   8: EventSource source
@@ -148,6 +151,7 @@ struct DeviceLevelEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  11: string user_id
   6: string screen_name
   7: EventDeviceType device_type
   8: EventSource source
@@ -161,6 +165,7 @@ struct DeviceSelectEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  11: string user_id
   6: string screen_name
   7: EventDeviceType device_type
   8: EventSource source
@@ -174,6 +179,7 @@ struct IconSelectedEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string screen_name
   7: EventIconType icon_type
 }
@@ -184,6 +190,7 @@ struct SceneExecutedEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  7: string user_id
   6: string screen_name
 }
 
@@ -193,6 +200,7 @@ struct ScreenViewEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string screen_name
   7: string source_screen
 }
@@ -203,6 +211,7 @@ struct SectionExpansionToggleEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  9: string user_id
   6: string screen_name
   8: bool expanding
 }
@@ -213,6 +222,7 @@ struct RoomTappedEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string room_id
   7: i32 peripheral_type_filter
 }
@@ -223,6 +233,7 @@ struct GangboxLoadWarningTriggeredEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  10: string user_id
   6: i64 load_index
   7: message_bus.PeripheralStatus peripheral_status
   8: bool in_first_use
@@ -264,6 +275,7 @@ struct SimpleButtonTappedEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string screen_name
   7: string button_name
 }
@@ -274,6 +286,7 @@ struct UploadPhotoEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string screen_name
   7: i32 status_code
 }
@@ -284,6 +297,7 @@ struct EmbeddedSoftwareUpdateEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  10: string user_id
   6: string event
   7: string current_version
   8: string next_version
@@ -296,6 +310,7 @@ struct UIMandatoryUpdateImpressionEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  7: string user_id
   6: UIMandatoryUpdateImpressionContextType context
 }
 
@@ -305,6 +320,7 @@ struct UIHomeScreenIconTapEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  9: string user_id
   6: string name
   7: bool in_lights_only_mode
   8: i32 number_adjustable_lights_in_home
@@ -316,6 +332,7 @@ struct UIEnterSetupEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  6: string user_id
 }
 
 struct UIAbandonSetupEvent {
@@ -324,6 +341,7 @@ struct UIAbandonSetupEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  7: string user_id
   6: UIAbandonSetupStepType step
 }
 
@@ -333,6 +351,7 @@ struct UICompleteSetupEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  6: string user_id
 }
 
 struct UINotificationViewEvent {
@@ -341,6 +360,7 @@ struct UINotificationViewEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  8: string user_id
   6: string screen_name
   7: string notification_name
 }
@@ -351,6 +371,7 @@ struct UINotificationButtonTappedEvent {
   3: string device_model
   4: string home_id
   5: string device_id
+  9: string user_id
   6: string screen_name
   7: string notification_name
   8: string button_name
