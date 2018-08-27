@@ -65,6 +65,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Setup": "Launch",
   "ChooseHome": "Pair:Login:JoinHome",
   "PairingLoading": "Pair:Login:Loading",
+  "SetupLoading": "Pair:Login:Loading",
   "EnterCode": "Pair:Login:Verification", // User modifier for error
   "EnterCodeSuccess": "Pair:Login:Success",
   "SelectAccount": "Pair:SetupAccount",
