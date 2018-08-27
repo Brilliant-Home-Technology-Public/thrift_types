@@ -27,15 +27,17 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DemoMode": "DemoMode",
   "ForgetHome": "ForgetHome",
   "ForgotPin": "ForgotPin",
+  "SettingsDemoMode": "DemoMode",
+  "SettingsForgetHome": "ForgetHome",
 
   // Help
   "Help": "Help",
-  "ZDKHelpCenterOverviewController": "ZendeskFAQ"
-  "ZDCChat": "ZendeskLiveChat"
-  "RequestContainerController": "ZendeskRequest"
-  "ReportIssue": "ZendeskRequest"
-  "FAQ": "ZendeskFAQ"
-  "LiveChat": "ZendeskLiveChat"
+  "ZDKHelpCenterOverviewController": "ZendeskFAQ",
+  "ZDCChat": "ZendeskLiveChat",
+  "RequestContainerController": "ZendeskRequest",
+  "ReportIssue": "ZendeskRequest",
+  "FAQ": "ZendeskFAQ",
+  "LiveChat": "ZendeskLiveChat",
 
 
   // Photos
@@ -44,6 +46,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "UploadConfiguration": "Photos:Upload",
   "UploadPhoto": "Photos:Upload",
   "LibraryHelp": "Photos:LibraryHelp",
+  "PhotosSharedLibraryHelp": "Photos:LibraryHelp",
   "PhotoDetail": "Photos:Manage:ViewPhoto",
   "PhotoDelete": "Photos:Manage:DeletePhoto",
   "DeletePhoto": "Photos:Manage:DeletePhoto",
@@ -54,6 +57,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "PUPhotoPickerHost": "Photos:Upload:SelectPhoto",
   "CAMImagePickerCamera": "Photos:Upload:TakePhoto",
   "Crop": "Photos:Upload:CropPhoto",
+  "PickImage": "Photos:Upload:PhotoSheet", // Android Select/Take Photo sheet
+  "CropImage": "Photos:Upload:CropPhoto",
 
 
   // Pairing Flow
