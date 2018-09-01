@@ -89,4 +89,5 @@ const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
 const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
+const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
 

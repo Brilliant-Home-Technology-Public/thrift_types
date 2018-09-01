@@ -56,6 +56,7 @@ const string MOBILE_BUTTON_NAME_HOME_CHOSEN = "home_chosen"
 const string MOBILE_BUTTON_NAME_LIVE_CHAT = "live_chat"
 const string MOBILE_BUTTON_NAME_LOCK_APP = "lock_app"
 const string MOBILE_BUTTON_NAME_MORE = "more"
+const string MOBILE_BUTTON_NAME_NO = "no"
 const string MOBILE_BUTTON_NAME_NEXT = "next"
 const string MOBILE_BUTTON_NAME_OK = "ok"
 const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
@@ -68,6 +69,7 @@ const string MOBILE_BUTTON_NAME_SKIP = "skip"
 const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
 const string MOBILE_BUTTON_NAME_X = "x"
+const string MOBILE_BUTTON_NAME_YES = "yes"
 // END: MOBILE BUTTON NAME CONSTANTS
 
 
