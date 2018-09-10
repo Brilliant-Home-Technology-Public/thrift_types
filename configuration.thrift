@@ -307,3 +307,11 @@ struct SomfyIntegrationStates {
 struct PinnedOptionsConfig {
   1: list<string> scene_ids = []
 }
+
+// Intercom settings
+
+struct IntercomParameters {
+  1: optional i32 audio_stream_id
+  2: optional i32 video_stream_id
+  3: optional string encryption_key
+}
