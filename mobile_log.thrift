@@ -89,6 +89,9 @@ const string MOBILE_ERROR_REASON_STATUS_CODE = "Error status code"
 const string MOBILE_ERROR_REASON_INVALID_HEADERS = "Invalid headers"
 const string MOBILE_ERROR_REASON_INVALID_RESPONSE = "Invalid response"
 const string MOBILE_ERROR_REASON_WEB_API = "WebAPI error"
+const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_LOAD_ERROR = "State Manager Cache Load Error"
+const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_SAVE_ERROR = "State Manager Cache Save Error"
+const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_CLEAR_ERROR = "State Manager Cache Clear Error"
 // END MOBILE ERROR SHORT REASON CONSTANTS
 
 enum MobileErrorEventType {
@@ -102,6 +105,7 @@ enum MobileErrorEventType {
   FAILED_PAIRING_ENTER_CODE = 8
   FAILED_PAIRING_CHOOSE_HOME = 9
   FAILED_ZENDESK_AUTHENTICATION = 10
+  STATE_MANAGER_CACHE_ERROR = 11
 }
 
 enum MobileEventDeviceType {
