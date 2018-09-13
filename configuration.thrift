@@ -202,6 +202,7 @@ struct SceneMultiAction {
   4: message_bus.PeripheralType peripheral_type
   5: map<string, string> variables
   6: optional map<string, string> expected_variable_states
+  7: optional map<string, string> excluded_variable_states
 }
 
 struct SceneAction {
