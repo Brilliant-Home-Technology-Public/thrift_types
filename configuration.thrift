@@ -201,7 +201,7 @@ struct SceneMultiAction {
   3: list<string> rooms
   4: message_bus.PeripheralType peripheral_type
   5: map<string, string> variables
-  6: map<string, string> expected_variable_states
+  6: optional map<string, string> expected_variable_states
 }
 
 struct SceneAction {
@@ -219,7 +219,7 @@ struct Scene {
   4: list<SceneAction> actions
   5: list<SceneMultiAction> multi_actions
   6: Trigger trigger
-  7: bool editable
+  7: optional bool editable
 }
 
 // Alarm configuration
