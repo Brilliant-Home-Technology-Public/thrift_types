@@ -220,7 +220,7 @@ struct Scene {
   4: list<SceneAction> actions
   5: list<SceneMultiAction> multi_actions
   6: Trigger trigger
-  7: optional bool editable
+  7: optional bool editable = true
 }
 
 // Alarm configuration
