@@ -18,6 +18,7 @@ const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
+const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
@@ -134,6 +135,11 @@ enum MobileLevelType {
   TEMPERATURE_RANGE_HIGH = 5
 }
 
+enum MobileOfflineStatus {
+  OFFLINE = 1
+  PARTIAL = 2
+}
+
 enum MobilePhotosAction {
   SELECT = 1
   SELECT_ALL = 2
@@ -236,6 +242,16 @@ struct MobileJoinedHomeEvent {
   4: string home_id
   5: string device_id
   6: string user_id
+}
+
+struct MobileOfflineEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: MobileOfflineStatus offline_status
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileOverlayButtonTappedEvent
