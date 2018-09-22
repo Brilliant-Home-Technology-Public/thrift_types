@@ -1,5 +1,6 @@
 namespace py thrift_types.peripheral_interfaces.music_interface
 
+include "../configuration.thrift"
 include "../message_bus.thrift"
 include "../music.thrift"
 include "peripheral_interface.thrift"
@@ -15,6 +16,8 @@ struct MusicPeripheralInterface {
   8: i32 volume
   9: bool volume_fixed   // if volume can be adjusted or not
   10: string play_uri    // initiate playback of a favorite
+  11: configuration.RoomAssignment room_assignment
+  12: music.Speakers speakers
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
