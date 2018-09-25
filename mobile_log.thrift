@@ -66,6 +66,7 @@ const string MOBILE_BUTTON_NAME_SAVE = "save"
 const string MOBILE_BUTTON_NAME_SET_UP = "set_up"
 const string MOBILE_BUTTON_NAME_SET_UP_CONTROL = "set_up_control"
 const string MOBILE_BUTTON_NAME_SETTINGS = "settings"
+const string MOBILE_BUTTON_NAME_SHOW_ME_HOW = "show_me_how"
 const string MOBILE_BUTTON_NAME_SKIP = "skip"
 const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
@@ -83,6 +84,7 @@ const string MOBILE_NAME_MODIFIER_LOADING = "Loading"
 const string MOBILE_NAME_MODIFIER_FAILURE = "Failure"
 const string MOBILE_NAME_MODIFIER_SUCCESS = "Success"
 const string MOBILE_NAME_MODIFIER_DISABLED = "Disabled"
+const string MOBILE_NAME_MODIFIER_NO_SCENES = "NoScenes"
 // END NAME MODIFIERS
 
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS
