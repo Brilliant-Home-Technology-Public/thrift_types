@@ -57,6 +57,7 @@ const string SOMFY_CONFIG_IDENTIFIER = "somfy_configuration"
 const string SOMFY_IDENTIFIER = "somfy"
 const string AUGUST_CONFIG_IDENTIFIER = "august_configuration"
 const string AUGUST_IDENTIFIER = "august"
+const string WEB_CONTENT_IDENTIFIER = "web_content_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -134,6 +135,7 @@ enum PeripheralType {
   SOMFY_CONFIGURATION = 52,
   SHADE = 53,
   AUGUST_CONFIGURATION = 54,
+  WEB_CONTENT = 55,
 }
 
 enum PeripheralStatus {
