@@ -29,6 +29,10 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ForgotPin": "ForgotPin",
   "SettingsDemoMode": "DemoMode",
   "SettingsForgetHome": "ForgetHome",
+  // Home Management
+  "HomeManagement": "HomeManagement",
+  "HomeManagementDetail": "HomeManagementDetail",
+  "HomeManagementDelete": "HomeManagementDelete",
 
   // Help
   "Help": "Help",
