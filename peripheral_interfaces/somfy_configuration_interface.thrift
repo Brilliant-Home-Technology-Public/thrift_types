@@ -6,7 +6,9 @@ include "../configuration.thrift"
 include "peripheral_interface.thrift"
 
 struct SomfyConfigurationPeripheralInterface {
-	1: configuration.SomfyCredentials credentials
+    1: configuration.SomfyCredentials credentials
+    2: string owner
+    3: configuration.SomfyIntegrationStates thirdparty_integration_states
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
