@@ -14,4 +14,6 @@ struct HueBridgeConfigurationPeripheralInterface {
 const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'HueBridgeConfigurationPeripheralInterface',
   'peripheral_type': message_bus.PeripheralType.HUE_BRIDGE_CONFIGURATION,
+  'dynamic_variable_prefix': message_bus.PROCESS_CONFIGURATION_VARIABLE_PREFIX,
+  'dynamic_variable_ttype': 'configuration.PeripheralInfo'
 }
