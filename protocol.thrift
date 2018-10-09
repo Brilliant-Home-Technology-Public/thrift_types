@@ -16,6 +16,7 @@ enum MessageType {
 enum SerializationProtocol {
   NONE = 0,
   BASE64_THRIFT_BINARY = 1,
+  JSON = 2,
 }
 
 enum StatusCode {
