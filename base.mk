@@ -54,28 +54,28 @@ $(PY_OUTPUT_DIR_DUMMY_TARGET) $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(SWIFT_OUTPUT_DIR_
 	touch $@
 
 # Python
-$(PY_OUTPUT_DIR)/%.py_dummy_target: $(THRIFT_DIR)/%.thrift $(PY_OUTPUT_DIR_DUMMY_TARGET)
+$(PY_OUTPUT_DIR)/%.py_dummy_target: $(THRIFT_DIR)/%.thrift $(PY_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
 	@echo Making python source for $<
 	$(THRIFT_COMPILER) $(PY_CFLAGS) $<
 	$(TWO_TO_THREE) $(TTTFLAGS) $(PY_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(basename $<))
 	@touch $@
 
 # CPP
-$(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DUMMY_TARGET)
+$(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
 	@echo Making cpp source for $<
 	mkdir -p $(CPP_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<))
 	$(THRIFT_COMPILER) $(CPP_CFLAGS) -out $(CPP_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<)) $<
 	@touch $@
 
 # Swift
-$(SWIFT_OUTPUT_DIR)/%.swift_dummy_target: $(THRIFT_DIR)/%.thrift $(SWIFT_OUTPUT_DIR_DUMMY_TARGET)
+$(SWIFT_OUTPUT_DIR)/%.swift_dummy_target: $(THRIFT_DIR)/%.thrift $(SWIFT_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
 	@echo Making swift source for $<
 	mkdir -p $(SWIFT_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<))
 	$(THRIFT_COMPILER) $(SWIFT_CFLAGS) -out $(SWIFT_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<)) $<
 	@touch $@
 
 # Java
-$(JAVA_OUTPUT_DIR)/%.java_dummy_target: $(THRIFT_DIR)/%.thrift $(JAVA_OUTPUT_DIR_DUMMY_TARGET)
+$(JAVA_OUTPUT_DIR)/%.java_dummy_target: $(THRIFT_DIR)/%.thrift $(JAVA_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
 	@echo Making java source for $<
 	mkdir -p $(JAVA_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<))
 	$(THRIFT_COMPILER) $(JAVA_CFLAGS) -out $(JAVA_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(dir $<)) $<
