@@ -56,9 +56,9 @@ struct Hello {
 }
 
 union MessageBodyUnion {
-  1: Request request
-  2: Response response
-  3: Hello hello
+  1: optional Request request
+  2: optional Response response
+  3: optional Hello hello
 }
 
 struct Message {
