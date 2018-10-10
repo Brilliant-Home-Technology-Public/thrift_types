@@ -21,6 +21,7 @@ enum ErrorEventType {
   ERRORED_WEBSOCKET_CONNECTION = 4
   REMOTE_BRIDGE_RESPONSE_FAILURE = 5
   FAILED_KNOCK = 6
+  FACEPLATE_GANGBOX = 7
 }
 
 enum EventDeviceType {
@@ -100,6 +101,7 @@ const string UI_SIMPLE_BUTTON_TAPPED_TABLE_NAME = "ui_simple_button_tapped"
 const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_warning_triggered"
 const string UI_NOTIFICATION_VIEW_TABLE_NAME = "notification_view"
 const string UI_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_button_tapped"
+const string UI_ERROR_EVENT_TABLE_NAME = "ui_error"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
