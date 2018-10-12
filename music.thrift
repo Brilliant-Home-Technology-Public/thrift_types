@@ -1,6 +1,8 @@
 namespace py thrift_types.music
 namespace java thrift_types.music
 
+const string MUSIC_PLAYLIST_PREFIX = "music_asset:"
+
 struct MusicTrack {
   2: string title
   3: string artist
