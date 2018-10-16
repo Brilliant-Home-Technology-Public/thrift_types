@@ -259,6 +259,11 @@ struct WifiCredentials {
 
 
 // Device Authorization
+enum BrilliantDeviceType {
+  BRILLIANT_CONTROL = 1,
+  MOBILE_APP = 2,
+}
+
 enum DeviceAuthorizationStatus {
   KNOCKED = 1  // Awaiting user confirmation to proceed
   READY = 2 // Can accept a commitment/secret
