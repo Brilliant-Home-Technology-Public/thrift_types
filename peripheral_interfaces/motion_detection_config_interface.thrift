@@ -8,6 +8,7 @@ include "peripheral_interface.thrift"
 struct MotionDetectionConfigPeripheralInterface {
   1: bool trigger_screen
   2: i32 trigger_screen_off_timeout_sec
+  3: bool trigger_screen_off
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
