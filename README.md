@@ -23,6 +23,7 @@ We use the thrift_types submodule to share a data schema using a unified IDL(Thr
   * Removing a non-optional field is **OK-ISH** AND requires a VERSION_UPDATE
   * Renumbering fields is **NOT OK** UNLESS the struct has NEVER been stored serialized in production
   * Re-using a field number is **NOT-OK** UNLESS the struct has NEVER been stored serialized in production
+  * Structs defined in peripheral_interfaces in general are not stored serialized in production (As of 10/19/2018)
 * **Structs**
   * Adding a new struct is OK
   * Removinng a struct is **DISCOURAGED**
