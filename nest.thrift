@@ -9,9 +9,3 @@ const string NEST_DEMO_ACCESS_TOKEN = "NEST_DEMO_ACCESS_TOKEN"
 struct ThermostatIds {
 	1: list<string> thermostat_ids
 }
-
-enum HomeAwayStatus {
-	UNKNOWN = 0,
-	HOME = 1,
-	AWAY = 2,
-}
