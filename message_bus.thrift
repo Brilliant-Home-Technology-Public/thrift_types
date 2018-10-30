@@ -46,8 +46,6 @@ const string HONEYWELL_IDENTIFIER = "honeywell"
 const string ECOBEE_CONFIG_IDENTIFIER = "ecobee_configuration"
 const string ECOBEE_IDENTIFIER = "ecobee"
 const string BOOTSTRAP_IDENTIFIER = "bootstrap"
-const string ALMOND_CONFIG_IDENTIFIER = "almond_configuration"
-const string ALMOND_IDENTIFIER = "almond"
 const string WEMO_CONFIG_IDENTIFIER = "wemo_configuration"
 const string WEMO_IDENTIFIER = "wemo"
 const string OAUTH_CONFIG_IDENTIFIER = "oauth_configuration"
@@ -81,7 +79,6 @@ const string UNASSIGNED_HOME_ID = "0"
 const string UNASSIGNED_DEVICE_ID = "0"
 
 const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
-    ALMOND_IDENTIFIER,
     CLOUD_VIRTUAL_DEVICE,
     CONFIGURATION_VIRTUAL_DEVICE,
     ECOBEE_IDENTIFIER,
