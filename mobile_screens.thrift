@@ -92,6 +92,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 }
 
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
+const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
+const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_UNSUPPORTED = "ControlRemoval:Unsupported"
+const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
 const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
