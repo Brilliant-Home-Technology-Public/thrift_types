@@ -10,7 +10,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DevicesTab": "Devices",
   "RoomsTab": "Rooms",
 
-  "Login": "LockedWelcome",
+  "Login": "LockedWelcome", // Use modifier for select account flow
   
   // Device Control
   "Devices": "Devices", // Use modifier to specify type
@@ -70,19 +70,20 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Pairing Flow
   "Setup": "Launch",
-  "ChooseHome": "Pair:JoinHome",
-  "PairingLoading": "Pair:Login:Loading",
-  "SetupLoading": "Pair:Login:Loading",
-  "EnterCode": "Pair:Login:Verification", // User modifier for error
-  "EnterCodeSuccess": "Pair:Login:Success",
-  "SelectAccount": "Pair:SetupAccount",
-  "CreateAccount": "Pair:SetupAccount:New",
-  "CreateAccountSuccess": "Pair:SetupAccount:Success",
-  "SetupSuccess": "Pair:SetupAccount:Success",
-  "EnterEmail": "Pair:Login",
-  "NoHomes": "Pair:JoinHome:Empty",
-  "SetupError": "Pair:Error",
+  "ChooseHome": "PairV2:JoinHome", // Use modifier for add home flow
+  "PairingLoading": "PairV2:Login:Loading",
+  "SetupLoading": "PairV2:Login:Loading",
+  "EnterCode": "PairV2:Login:Verification", // User modifier for error and add home flow
+  "EnterCodeSuccess": "PairV2:Login:Success",
+  "SelectAccount": "PairV2:Login:ChooseAccount",
+  "CreateAccount": "PairV2:Login:NewAccount",
+  "CreateAccountSuccess": "PairV2:SetupAccount:Success",
+  "SetupSuccess": "PairV2:SetupAccount:Success",
+  "EnterEmail": "PairV2:Login:AddHome",
+  "NoHomes": "PairV2:JoinHome:Empty",
+  "SetupError": "PairV2:Error",
   "WebView": "WebView",
+  "JoinHomeSuccess": "PairV2:SetupAccount:Success:AddHome",
 
   // Debug
   "Debug": "Debug",
@@ -102,4 +103,6 @@ const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
 const string MOBILE_OVERLAY_NAME_EMPTY_ROOM = "Rooms:Empty"
+const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
+const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 
