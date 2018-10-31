@@ -1,6 +1,7 @@
 namespace py thrift_types.mobile_screens
 namespace java thrift_types.mobile_screens
 
+const string MOBILE_DEMO_SCREEN_PREFIX = "Demo:"
 const string MOBILE_UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
 
 const map<string,string> MOBILE_SCREEN_NAME_MAP = {
