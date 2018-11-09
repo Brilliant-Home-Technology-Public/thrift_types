@@ -47,7 +47,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "FAQ": "ZendeskFAQ",
   "LiveChat": "ZendeskLiveChat",
 
-
   // Photos
   "PhotosManageConfig": "Photos:Manage",
   "PhotosConfigEdit": "Photos:Manage",
@@ -67,7 +66,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Crop": "Photos:Upload:CropPhoto",
   "PickImage": "Photos:Upload:PhotoSheet", // Android Select/Take Photo sheet
   "CropImage": "Photos:Upload:CropPhoto",
-
 
   // Pairing Flow
   "Setup": "Launch",
@@ -91,6 +89,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Demo
   "DemoWalkthrough": "DemoWalkthrough"
+
+  // Scenes
+  "SceneCreate": "SceneCreate"
+  "SceneEdit": "SceneEdit"
+  "SceneImageSelection": "SceneImageSelection"
+  "SceneEditAction": "SceneEditAction"
 }
 
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
