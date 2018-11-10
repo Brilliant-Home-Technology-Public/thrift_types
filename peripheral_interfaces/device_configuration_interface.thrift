@@ -6,7 +6,6 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct DeviceConfigurationPeripheralInterface {
-  1: bool enable_master_control
   2: configuration.Trigger software_update_poll_time
   3: bool enable_intercom_audio
   4: bool enable_intercom
