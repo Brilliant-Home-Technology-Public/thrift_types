@@ -15,6 +15,7 @@ struct DeviceConfigurationPeripheralInterface {
   7: configuration.GestureConfigs gesture_configs
   8: configuration.RoomAssignment room_assignment
   9: bool receive_intercom_broadcasts
+  10: bool remote_monitoring_enabled
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
