@@ -59,6 +59,8 @@ const string AUGUST_CONFIG_IDENTIFIER = "august_configuration"
 const string AUGUST_IDENTIFIER = "august"
 const string WEB_CONTENT_IDENTIFIER = "web_content_peripheral"
 const string MUSIC_IDENTIFIER = "music_peripheral"
+const string DEMO_CONFIG_IDENTIFIER = "demo_configuration"
+const string DEMO_IDENTIFIER = "demo_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -155,6 +157,8 @@ enum PeripheralType {
   AUGUST_CONFIGURATION = 54,
   WEB_CONTENT = 55,
   MUSIC_CONTENT = 56,
+  DEMO_CONFIGURATION = 57,
+  DEMO = 58,
 }
 
 enum PeripheralStatus {
