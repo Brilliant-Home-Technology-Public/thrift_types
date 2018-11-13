@@ -86,6 +86,8 @@ enum UIAbandonSetupStepType {
   WIFI = 1
   LOGIN = 2
   MANDATORY_UPDATE = 3
+  PAIRING = 4
+  SYNC = 5
 }
 
 // BEGIN QT LOG TABLE NAMES
