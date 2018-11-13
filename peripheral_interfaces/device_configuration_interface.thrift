@@ -6,6 +6,7 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct DeviceConfigurationPeripheralInterface {
+  1: string device_name
   2: configuration.Trigger software_update_poll_time
   3: bool enable_intercom_audio
   5: bool video_is_upright
