@@ -134,6 +134,9 @@ enum PeripheralType {
   SOMFY_CONFIGURATION = 52,
   SHADE = 53,
   AUGUST_CONFIGURATION = 54,
+  WEB_CONTENT = 55,
+  MUSIC_CONTENT = 56,
+  CAMERA = 57,
 }
 
 enum PeripheralStatus {
