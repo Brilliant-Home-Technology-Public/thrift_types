@@ -37,14 +37,17 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeManagementDeviceDetail": "HomeManagementDetail",
   "HomeManagementDelete": "HomeManagementDelete",
   "SwitchHome": "SwitchHome",
+  "NoJoinedHomes": "SwitchHome:Empty",
 
   // Help
   "Help": "Help",
   "ZDKHelpCenterOverviewController": "ZendeskFAQ",
   "ZDCChat": "ZendeskLiveChat",
+  "RequestList": "ZendeskRequestList",
   "RequestContainerController": "ZendeskRequest",
   "ReportIssue": "ZendeskRequest",
   "FAQ": "ZendeskFAQ",
+  "ZDKArticle": "ZendeskArticle"
   "LiveChat": "ZendeskLiveChat",
 
   // Photos
@@ -61,6 +64,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "UploadLoading": "Photos:Upload:Loading",
   "UploadSuccess": "Photos:Upload:Success",
   "UploadFailure": "Photos:Upload:Failure",
+  "UploadDisabled": "Photos:Upload:Disabled",
   "PUPhotoPickerHost": "Photos:Upload:SelectPhoto",
   "CAMImagePickerCamera": "Photos:Upload:TakePhoto",
   "Crop": "Photos:Upload:CropPhoto",
