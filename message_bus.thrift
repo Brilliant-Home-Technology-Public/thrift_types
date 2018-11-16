@@ -159,6 +159,7 @@ enum PeripheralType {
   MUSIC_CONTENT = 56,
   DEMO_CONFIGURATION = 57,
   DEMO = 58,
+  CAMERA = 59,
 }
 
 enum PeripheralStatus {
