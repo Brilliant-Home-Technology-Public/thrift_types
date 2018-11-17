@@ -37,6 +37,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeManagementDeviceDetail": "HomeManagementDetail",
   "HomeManagementDelete": "HomeManagementDelete",
   "SwitchHome": "SwitchHome",
+  "ChooseJoinedHome": "SwitchHome",
   "NoJoinedHomes": "SwitchHome:Empty",
 
   // Help
@@ -82,9 +83,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "CreateAccount": "PairV2:Login:NewAccount",
   "CreateAccountSuccess": "PairV2:SetupAccount:Success",
   "SetupSuccess": "PairV2:SetupAccount:Success",
+  "JoinHomeSuccess": "PairV2:SetupAccount:Success",
   "EnterEmail": "PairV2:Login:AddHome",
   "NoHomes": "PairV2:JoinHome:Empty",
   "SetupError": "PairV2:Error",
+  "PairingError": "PairV2:Error",
+  "EnterEmailError": "PairV2:Error",
   "WebView": "WebView",
   "JoinHomeSuccess": "PairV2:SetupAccount:Success:AddHome",
 
