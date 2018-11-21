@@ -11,6 +11,8 @@ struct SwitchUiPeripheralInterface {
   3: string intercom_sdp
   4: bool active
   5: configuration.IntercomParameters intercom_parameters
+  6: string request_reset
+  7: bool unsupported_configuration
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
