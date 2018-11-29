@@ -36,3 +36,47 @@ enum SoftwareReleaseStage {
   STABLE = 1,
   LATEST = 2,
 }
+
+
+/*
+ *  Temperature trip thresholds are:
+ *
+ *  80C: NONE
+ *    GPU clock: 64/64 when active, 16/64 when art transitioning, 4/64 when art is still
+ *    CPU governor: default (interactive)
+ *    screen_brightness: full brightness
+ *
+ *  85C: LIGHT
+ *    GPU clock: 64/64 when active, 16/64 when art transitioning, 4/64 when art is still
+ *    CPU governor: default (interactive)
+ *    screen_brightness: full brightness
+ *
+ *  90C: MEDIUM
+ *    GPU clock: 64/64 when active, 16/64 when art transitioning, 4/64 when art is still
+ *    CPU governor: default (interactive)
+ *    screen_brightness: full brightness
+ *
+ *  95C: HEAVY
+ *    GPU clock: 4/64
+ *    CPU governor: powersave
+ *    screen_brightness: half brightness
+ *
+ *  LOW_TEMP_MODE (manual set, ignores temperature trips):
+ *    GPU clock: 8/64
+ *    CPU governor: powersave
+ *    screen_brightness: half brightness
+ *
+ *  Throttling stops when temperature drops under 90
+*/
+enum ThermalThrottleLevel {
+  NONE = 0,
+  LIGHT = 1,
+  MEDIUM = 2,
+  HEAVY = 3,
+  LOW_TEMP_MODE = 4,
+}
+
+const int THERMAL_THROTTLE_NONE_TEMP = 80
+const int THERMAL_THROTTLE_LIGHT_TEMP = 85
+const int THERMAL_THROTTLE_MEDIUM_TEMP = 90
+const int THERMAL_THROTTLE_HEAVY_TEMP = 95
