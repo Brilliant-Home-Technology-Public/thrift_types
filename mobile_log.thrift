@@ -52,6 +52,7 @@ const string MOBILE_BUTTON_NAME_EXISTING_ACCOUNT_CHOSEN = "existing_account_chos
 const string MOBILE_BUTTON_NAME_EXIT_DEMO_MODE = "exit_demo_mode"
 const string MOBILE_BUTTON_NAME_FINISH_SETUP = "finish_setup"
 const string MOBILE_BUTTON_NAME_FORGOT_PIN = "forgot_pin"
+const string MOBILE_BUTTON_NAME_FORGET_HOME = "forget_home"
 const string MOBILE_BUTTON_NAME_FAQ = "faq"
 const string MOBILE_BUTTON_NAME_FORGET_HOME = "forget_home"
 const string MOBILE_BUTTON_NAME_GET_STARTED = "get_started"
