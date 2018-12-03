@@ -120,6 +120,7 @@ struct PeripheralInfo {
   4: optional string thirdparty_device_id
   5: string configuration_peripheral_id
   6: optional map<string, string> configuration_variables
+  7: optional bool stubbed
 }
 
 enum DayOfWeek {
