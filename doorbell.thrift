@@ -6,3 +6,10 @@ const string RING_PRO_MODEL_PREFIX = "lpd"
 // Ring Elite model names currently are: jbox_v1
 const string RING_ELITE_MODEL_PREFIX = "jbox"
 
+enum ChimeSetting {
+    UNKNOWN = 0,
+    DO_NOT_PLAY = 1,
+    PLAY_ONCE = 2,
+    PLAY_TWICE = 3,
+    PLAY_THRICE = 4,
+}
