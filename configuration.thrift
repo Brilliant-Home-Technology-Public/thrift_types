@@ -326,3 +326,15 @@ struct IntercomParameters {
   2: optional i32 video_stream_id
   3: optional string encryption_key
 }
+
+// Groups
+
+// Uniquely identifies a peripheral within a home
+struct GroupedPeripheralID {
+  1: string device_id
+  2: string peripheral_id
+}
+
+struct PeripheralGroup {
+  1: set<GroupedPeripheralID> peripherals
+}
