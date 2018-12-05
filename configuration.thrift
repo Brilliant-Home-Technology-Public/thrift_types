@@ -155,6 +155,8 @@ struct CalendarDay {
 
 // Execution
 
+const string EXECUTION_STATE_PREFIX = "execution_state:"
+
 struct ExecutedSetVariableRequest {
   1: message_bus.SetVariableResponse set_variable_response
   2: string device_id
