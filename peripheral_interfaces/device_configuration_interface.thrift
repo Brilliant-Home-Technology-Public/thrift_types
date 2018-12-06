@@ -10,7 +10,6 @@ struct DeviceConfigurationPeripheralInterface {
   2: configuration.Trigger software_update_poll_time
   3: bool enable_intercom_audio
   5: bool video_is_upright
-  6: bool enable_demo_mode
   7: configuration.GestureConfigs gesture_configs
   8: configuration.RoomAssignment room_assignment
   9: bool receive_intercom_broadcasts
