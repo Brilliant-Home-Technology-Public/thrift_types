@@ -23,7 +23,6 @@ const string HUE_BRIDGE_CONFIG_IDENTIFIER = "hue_bridge_configuration"
 const string LIGHT_CONFIG_IDENTIFIER = "light_config_peripheral"
 const string MOTION_DETECTION_IDENTIFIER = "motion_detection_config_peripheral"
 const string OBJECT_STORE_IDENTIFIER = "object_store_peripheral"
-const string OWNER_DEVICE_IDENTIFIER = "message_bus_owner"
 const string REMOTE_BRIDGE_IDENTIFIER = "remote_bridge"
 const string RING_IDENTIFIER = "ring"
 const string RING_CONFIG_IDENTIFIER = "ring_configuration"
@@ -98,6 +97,9 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     SOMFY_IDENTIFIER,
     AUGUST_IDENTIFIER,
 ]
+
+struct SentinelValue {}
+const SentinelValue OWNER_DEVICE_IDENTIFIER = {}
 
 enum PeripheralType {
   UNKNOWN = 0,
