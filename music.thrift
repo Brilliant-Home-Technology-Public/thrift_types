@@ -5,8 +5,8 @@ const string MUSIC_PLAYLIST_PREFIX = "music_asset:"
 
 struct MusicTrack {
   2: string title
-  3: string artist
-  4: string album
+  3: optional string artist
+  4: optional string album
   5: optional string album_art
   6: optional i64 duration
   7: optional i64 queue_position
