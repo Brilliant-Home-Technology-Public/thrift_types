@@ -50,3 +50,10 @@ Things that require a version update (AND MIGRATION):
   * Android/iOS Clients currently do not use PeripheralInterfaces
   * RULES:
     * SOMEONE ELSE FILL THIS OUT
+* **Sets**
+  * Sets of primitives is **OK**
+  * Sets of non-primitives, e.g. a struct, is **NOT-OK**
+    * C++ expects a comparator function, and we can't define a comparator function in Thrift, so this would break the switch-ui build.
+
+Note: Other types for which C++ would expect a comparator function also cannot take non-primitive types
+
