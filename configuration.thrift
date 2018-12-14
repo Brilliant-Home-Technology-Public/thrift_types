@@ -194,7 +194,6 @@ struct WeeklyRecurringTime {
 
 struct Trigger {
   1: bool enabled
-  2: optional WeeklyRecurringTime time_trigger
   3: optional ExecutionTimeRange time_range
 }
 
