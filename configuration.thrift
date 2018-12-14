@@ -335,5 +335,5 @@ struct GroupedPeripheralID {
 }
 
 struct PeripheralGroup {
-  1: set<GroupedPeripheralID> peripherals
+  1: list<GroupedPeripheralID> peripherals
 }
