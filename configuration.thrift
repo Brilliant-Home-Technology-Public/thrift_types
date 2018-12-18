@@ -223,6 +223,7 @@ struct Scene {
   5: list<SceneMultiAction> multi_actions
   6: Trigger trigger
   7: optional bool editable = true
+  8: optional bool should_retry = false
 }
 
 // Alarm configuration
