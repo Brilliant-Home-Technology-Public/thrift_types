@@ -60,6 +60,7 @@ const string WEB_CONTENT_IDENTIFIER = "web_content_peripheral"
 const string MUSIC_IDENTIFIER = "music_peripheral"
 const string DEMO_CONFIG_IDENTIFIER = "demo_configuration"
 const string DEMO_IDENTIFIER = "demo_peripheral"
+const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -162,6 +163,7 @@ enum PeripheralType {
   DEMO_CONFIGURATION = 57,
   DEMO = 58,
   CAMERA = 59,
+  NOTIFICATION = 60,
 }
 
 enum PeripheralStatus {
