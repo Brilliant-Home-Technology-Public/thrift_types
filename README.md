@@ -3,6 +3,12 @@
 We use the thrift_types submodule to share a data schema using a unified IDL(Thrift) across platforms. Each platform has its own idiosyncrasies so these rules need to be followed so as not to break other platforms.
 
 **VERSION_UPDATE** = Steps followed here: https://github.com/ramjet-labs/lib/tree/master/versioning
+Things that require a version update (AND MIGRATION):
+* Adding a new non-optional field to an existing struct
+* Removing a non-optional field
+* Adding a default value to an existing field
+* Changing a default value for an existing field
+* Changing the meaning/usage of a existing field
 
 **OK** = No additional action is needed
 
@@ -27,6 +33,13 @@ We use the thrift_types submodule to share a data schema using a unified IDL(Thr
 * **Structs**
   * Adding a new struct is OK
   * Removinng a struct is **DISCOURAGED**
+* **Default Values**
+  * Adding default values for new fields is **OK**
+    * Prefer values that will evaluate to false or empty (i.e. 0, false, empty list, empty map, etc)
+  * Adding default values for existing fields is **OK-ISH** AND requires a VERSION_UPDATE
+    * Same preference as new fields
+  * Changing default values is **OK-ISH** AND requires a VERSION_UPDATE
+    * The fastbinary protocol WILL NOT SEND values if they are thought to match the default value. This means the IDL (thrift) version needs to be bumped every time a default value is changed (or added).
 * **Constants**
   * Adding constants is **OK**
   * Changing constant values is **OK-ISH**
