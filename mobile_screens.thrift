@@ -108,6 +108,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit"
 }
 
+const string MOBILE_OVERLAY_NAME_CREATE_ROOM_ERROR = "CreateRoom:Error"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
