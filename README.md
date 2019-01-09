@@ -8,7 +8,7 @@ Things that require a version update (AND MIGRATION):
 * Removing a non-optional field
 * Adding a default value to an existing field
 * Changing a default value for an existing field
-* Changing the meaning/usage of a existing field
+* Changing the meaning/usage of an existing field
 
 **OK** = No additional action is needed
 
@@ -32,14 +32,14 @@ Things that require a version update (AND MIGRATION):
   * Structs defined in peripheral_interfaces in general are not stored serialized in production (As of 10/19/2018)
 * **Structs**
   * Adding a new struct is OK
-  * Removinng a struct is **DISCOURAGED**
+  * Removing a struct is **DISCOURAGED**
 * **Default Values**
   * Adding default values for new fields is **OK**
     * Prefer values that will evaluate to false or empty (i.e. 0, false, empty list, empty map, etc)
   * Adding default values for existing fields is **OK-ISH** AND requires a VERSION_UPDATE
     * Same preference as new fields
   * Changing default values is **OK-ISH** AND requires a VERSION_UPDATE
-    * The fastbinary protocol WILL NOT SEND values if they are thought to match the default value. This means the IDL (thrift) version needs to be bumped every time a default value is changed (or added).
+    * The fastbinary protocol WILL NOT SEND values if they are thought to match the default value. This means the IDL (thrift) version needs to be bumped every time a default value is changed (or added or removed).
 * **Constants**
   * Adding constants is **OK**
   * Changing constant values is **OK-ISH**
