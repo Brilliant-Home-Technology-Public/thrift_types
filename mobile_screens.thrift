@@ -20,6 +20,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceControlByRoom": "Rooms:Specific",
   "Settings": "Settings",
   "DeviceSettings": "DeviceSettings",
+  "AddRoom": "AddRoom",
 
   // Account
   "EditAccount": "AccountSettings",
@@ -107,10 +108,13 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit"
 }
 
+const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_UNSUPPORTED = "ControlRemoval:Unsupported"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
+const string MOBILE_OVERLAY_NAME_DELETE_ROOM = "DeleteRoom"
+const string MOBILE_OVERLAY_NAME_DELETE_ROOM_ERROR = "DeleteRoom:Error"
 const string MOBILE_OVERLAY_NAME_DEVICE_SETTINGS_ERROR = "DeviceSettings:Error"
 const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
 const string MOBILE_OVERLAY_NAME_EMPTY_ROOM = "Rooms:Empty"
