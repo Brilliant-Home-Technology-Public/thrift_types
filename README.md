@@ -27,6 +27,9 @@ Things that require a version update (AND MIGRATION):
     * The field is in a new struct **OK**
   * Removing an optional field is **OK**
   * Removing a non-optional field is **OK-ISH** AND requires a VERSION_UPDATE
+  * Changing a non-optional field to optional is **OK-ISH** AND requires a VERSION_UPDATE
+  * Changing an optional field to non-optional is **NOT OK** UNLESS the following is true:
+    * The field is a critical field (i.e. peripheralId, deviceId) AND you have completed a VERSION_UPDATE **OK-ISH**
   * Renumbering fields is **NOT OK** UNLESS the struct has NEVER been stored serialized in production
   * Re-using a field number is **NOT-OK** UNLESS the struct has NEVER been stored serialized in production
   * Structs defined in peripheral_interfaces in general are not stored serialized in production (As of 10/19/2018)
@@ -46,4 +49,6 @@ Things that require a version update (AND MIGRATION):
   * Changing constant names is **DISCOURAGED**
   * Removing constants is **DISCOURAGED**
 * **Interfaces**
-  * SOMEONE ELSE FILL THIS OUT
+  * Android/iOS Clients currently do not use PeripheralInterfaces
+  * RULES:
+    * SOMEONE ELSE FILL THIS OUT
