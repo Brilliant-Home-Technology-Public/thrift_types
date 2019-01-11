@@ -32,7 +32,7 @@ struct IPv4AddressInfo {
 }
 
 struct Network {
-  1: string name
+  1: optional string name
   2: SecurityType security
   3: byte signal_strength
   4: optional IPv4AddressInfo ipv4_address_info
