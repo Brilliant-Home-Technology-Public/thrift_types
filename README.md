@@ -39,10 +39,8 @@ Things that require a version update (AND MIGRATION):
 * **Default Values**
   * Adding default values for new fields is **OK**
     * Prefer values that will evaluate to false or empty (i.e. 0, false, empty list, empty map, etc)
-  * Adding default values for existing fields is **OK-ISH** AND requires a VERSION_UPDATE
-    * Same preference as new fields
-  * Changing default values is **OK-ISH** AND requires a VERSION_UPDATE
-    * The fastbinary protocol WILL NOT SEND values if they are thought to match the default value. This means the IDL (thrift) version needs to be bumped every time a default value is changed (or added or removed).
+  * Adding default values for existing fields is **NOT OK**
+  * Changing default values is **NOT OK**
 * **Constants**
   * Adding constants is **OK**
   * Changing constant values is **OK-ISH**
