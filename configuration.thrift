@@ -63,6 +63,7 @@ struct CapTouchSliderConfig {
 enum GestureType {
   UNKNOWN = 0,
   SINGLE = 1, # Single finger swipes and drags
+  TWO = 2, # Multi finger swipes
 }
 
 struct GestureConfig {
