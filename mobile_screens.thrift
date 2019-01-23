@@ -20,7 +20,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceControlByRoom": "Rooms:Specific",
   "Settings": "Settings",
   "DeviceSettings": "DeviceSettings",
-  "AddRoom": "AddRoom",
+  "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
 
   // Account
   "EditAccount": "AccountSettings",
@@ -38,6 +38,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeManagementDetail": "HomeManagementDetail",
   "HomeManagementDeviceDetail": "HomeManagementDetail",
   "HomeManagementDelete": "HomeManagementDelete",
+  "HomeManagementUpdateName": "HomeManagementUpdateName",
   "SwitchHome": "SwitchHome",
   "ChooseJoinedHome": "SwitchHome",
   "NoJoinedHomes": "SwitchHome:Empty",
@@ -108,7 +109,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit"
 }
 
-const string MOBILE_OVERLAY_NAME_CREATE_ROOM_ERROR = "CreateRoom:Error"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
@@ -124,8 +124,11 @@ const string MOBILE_OVERLAY_NAME_FORCE_UPGRADE = "ForceUpgrade"
 const string MOBILE_OVERLAY_NAME_FORGET_HOME = "ForgetHome"
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
+const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
+const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Create:Error"
+const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_UPDATE_NAME_ERROR = "RoomSettings:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
 const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
