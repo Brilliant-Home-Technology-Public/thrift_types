@@ -6,6 +6,7 @@ enum AssociationStatusType {
   SUCCESS = 1,
   ERROR_GENERIC = 2,
   ERROR_INVALID_KEY = 3,
+  NETWORK_NOT_FOUND = 4,
 }
 
 enum SecurityType {
