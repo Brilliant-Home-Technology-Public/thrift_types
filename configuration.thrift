@@ -148,6 +148,12 @@ struct CalendarDay {
 // Execution
 
 const string EXECUTION_STATE_PREFIX = "execution_state:"
+const string SCENE_EXECUTION_HANDLER_IDENTIFIER = "scene_execution_handler"
+const string ART_EXECUTION_HANDLER_IDENTIFIER = "art_execution_handler"
+const string LIGHT_EXECUTION_HANDLER_IDENTIFIER = "light_execution_handler"
+const string AUTO_UPDATE_HANDLER_IDENTIFIER = "auto_update_handler"
+const string ALARM_EXECUTION_HANDLER_IDENTIFIER = "alarm_execution_handler"
+const string DEMO_EXECUTION_HANDLER_IDENTIFIER = "demo_execution_handler"
 
 struct ExecutedSetVariableRequest {
   1: message_bus.SetVariableResponse set_variable_response
