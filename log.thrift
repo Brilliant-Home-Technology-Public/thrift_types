@@ -105,7 +105,6 @@ const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_war
 const string UI_NOTIFICATION_VIEW_TABLE_NAME = "notification_view"
 const string UI_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_button_tapped"
 const string UI_ERROR_EVENT_TABLE_NAME = "ui_error"
-const string UI_SONOS_ACTION_FAILED_TABLE_NAME = "ui_sonos_action_failed"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
