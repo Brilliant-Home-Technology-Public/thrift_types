@@ -270,6 +270,8 @@ const string UI_BUTTON_NAME_CONFIRM_SAVE_ALARM = "confirm:save_alarm"
 const string UI_BUTTON_NAME_CONFIRM_CANCEL = "confirm:cancel"
 const string UI_BUTTON_NAME_CONFIRM_DELETE_ALARM = "confirm:delete_alarm"
 const string UI_BUTTON_NAME_DISMISS = "dismiss"
+const string UI_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
+const string UI_BUTTON_NAME_RESET_CONFIRM = "reset_confirm"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
