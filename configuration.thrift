@@ -194,6 +194,14 @@ struct LightMotionConfig {
 
 // Scenes
 
+const string SCENE_ALL_ON_IDENTIFIER = "all_on"
+const string SCENE_ALL_OFF_IDENTIFIER = "all_off"
+
+const list<string> DEFAULT_SCENE_IDS = [
+    SCENE_ALL_ON_IDENTIFIER,
+    SCENE_ALL_OFF_IDENTIFIER,
+]
+
 # WeeklyRecurrigTime is deprecated. We are trying to move toward ExecutionTimeRange instead.
 struct WeeklyRecurringTime {
   1: optional list<DayOfWeek> days = []
