@@ -202,6 +202,20 @@ const list<string> DEFAULT_SCENE_IDS = [
     SCENE_ALL_OFF_IDENTIFIER,
 ]
 
+enum Validity {
+   UNKNOWN = 0,
+   VALID = 1,
+   DEVICE_OFFLINE = 2,
+   DEVICE_RECONFIGURED = 3,
+   DEVICE_DELETED = 4,
+   DEVICE_MODE_INCOMPATIBLE = 5,
+}
+
+struct SceneValidityStates {
+  # A mapping of scene id -> scene action id -> validity state
+  1: map<string, map<string, Validity>> scene_validity_states
+}
+
 # WeeklyRecurrigTime is deprecated. We are trying to move toward ExecutionTimeRange instead.
 struct WeeklyRecurringTime {
   1: optional list<DayOfWeek> days = []
