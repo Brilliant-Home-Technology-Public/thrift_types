@@ -18,6 +18,7 @@ struct MusicPeripheralInterface {
   10: string play_uri    // initiate playback of a favorite
   11: configuration.RoomAssignment room_assignment
   12: music.Speakers speakers
+  13: bool can_seek
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
