@@ -6,10 +6,10 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct RemoteBridgeInterface {
-  1: string address
-  2: remote_bridge.KnownRemoteDevices known_remote_devices
-  3: i32 device_provisioning_ip_listen_port
-  4: string relay_device
+  1: optional string address
+  2: optional remote_bridge.KnownRemoteDevices known_remote_devices
+  3: optional i32 device_provisioning_ip_listen_port
+  4: optional string relay_device
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
