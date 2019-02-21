@@ -2,6 +2,7 @@ namespace py thrift_types.configuration
 namespace java thrift_types.configuration
 
 include "message_bus.thrift"
+include "wifi.thrift"
 
 struct MediaContent {
   1: string url
@@ -272,6 +273,7 @@ struct RoomAssignment {
 struct WifiCredentials {
   1: string network_name
   2: string passphrase
+  3: optional wifi.SecurityType security // required for hidden networks
 }
 
 
