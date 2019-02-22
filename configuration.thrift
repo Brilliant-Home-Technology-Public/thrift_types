@@ -33,11 +33,6 @@ struct ArtLibraryConfig {
   3: list<string> disabled_art_pieces
 }
 
-enum ArtDisplayFrequency {
-  ALL_THE_TIME = 0,
-  SPECIFIC_HOURS = 1,
-}
-
 // Cap touch configuration
 
 const string CAP_TOUCH_CONFIG_VARIABLE_PREFIX = "slider_config:"
