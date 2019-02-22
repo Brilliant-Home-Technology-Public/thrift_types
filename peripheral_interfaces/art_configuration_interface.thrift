@@ -7,7 +7,6 @@ include "peripheral_interface.thrift"
 
 struct ArtConfigurationPeripheralInterface {
   1: bool display_time_date
-  2: optional i32 display_frequency
   3: bool on
   4: optional configuration.RoomAssignment room_assignment
   5: string display_name
