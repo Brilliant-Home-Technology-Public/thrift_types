@@ -80,3 +80,8 @@ const i32 THERMAL_THROTTLE_NONE_TEMP = 80
 const i32 THERMAL_THROTTLE_LIGHT_TEMP = 85
 const i32 THERMAL_THROTTLE_MEDIUM_TEMP = 90
 const i32 THERMAL_THROTTLE_HEAVY_TEMP = 95
+
+struct FilesystemStatus {
+  1: i64 bytes_total
+  2: i64 bytes_used
+}
