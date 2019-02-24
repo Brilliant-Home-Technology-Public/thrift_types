@@ -211,10 +211,19 @@ struct Peripheral {
   7: optional list<ModifiedVariable> deleted_variables = []
 }
 
+enum DeviceType {
+  UNKNOWN = 0
+  CONTROL = 1
+  MOBILE_APP = 2
+  VIRTUAL = 3
+  CLOUD = 4
+}
+
 struct Device {
   1: string id
   2: map<string, Peripheral> peripherals
   3: i64 timestamp = 0
+  4: optional DeviceType device_type
 }
 
 struct VirtualDeviceRegistration {
