@@ -19,6 +19,7 @@ struct ArtPiece {
   1: string id
   4: optional MediaContent primary
   5: optional list<MediaContent> previews
+  6: optional i64 created_timestamp
 }
 
 struct ArtLibrary {
