@@ -273,6 +273,7 @@ const string UI_BUTTON_NAME_DISMISS = "dismiss"
 const string UI_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
 const string UI_BUTTON_NAME_RESET_CONFIRM = "reset_confirm"
 const string UI_BUTTON_NAME_CONFIRM_OK = "confirm:ok"
+const string UI_BUTTON_NAME_FORGET_NETWORK = "forget_network"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
