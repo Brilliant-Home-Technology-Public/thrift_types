@@ -72,6 +72,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "PUPhotoPickerHost": "Photos:Upload:SelectPhoto",
   "CAMImagePickerCamera": "Photos:Upload:TakePhoto",
   "Crop": "Photos:Upload:CropPhoto",
+  "BRLCrop": "Photos:Upload:CropPhoto",
+  "BRLPhotoPicker": "Photos:Upload:SelectPhoto",
   "PickImage": "Photos:Upload:PhotoSheet", // Android Select/Take Photo sheet
   "CropImage": "Photos:Upload:CropPhoto",
 
