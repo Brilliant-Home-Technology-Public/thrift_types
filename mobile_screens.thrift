@@ -131,6 +131,7 @@ const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantP
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
+const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Create:Error"
