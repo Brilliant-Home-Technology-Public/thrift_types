@@ -21,6 +21,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Settings": "Settings",
   "DeviceSettings": "DeviceSettings",
   "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
+  "NowPlaying": "NowPlaying",
+  "Favorites": "Favorites",
 
   // Account
   "EditAccount": "AccountSettings",

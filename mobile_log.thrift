@@ -72,6 +72,7 @@ const string MOBILE_BUTTON_NAME_MORE = "more"
 const string MOBILE_BUTTON_NAME_NO = "no"
 const string MOBILE_BUTTON_NAME_NEXT = "next"
 const string MOBILE_BUTTON_NAME_OK = "ok"
+const string MOBILE_BUTTON_NAME_OPEN_SONOS = "open_sonos"
 const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
 const string MOBILE_BUTTON_NAME_REMOVE_CONTROL = "remove_control"
 const string MOBILE_BUTTON_NAME_REPORT_ISSUE = "report_issue"
@@ -144,6 +145,7 @@ enum MobileEventDeviceType {
   LOCK = 2
   CLIMATE = 3
   GENERIC_TOGGLE = 4
+  MUSIC = 5
 }
 
 enum MobileEventSource {
