@@ -26,6 +26,7 @@ struct HardwarePeripheralInterface {
   17: hardware.SoftwareReleaseStage tracked_release_stage
   18: hardware.FilesystemStatus rootfs_status
   19: i32 reboot_timeout_seconds
+  20: i32 alert_volume
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
