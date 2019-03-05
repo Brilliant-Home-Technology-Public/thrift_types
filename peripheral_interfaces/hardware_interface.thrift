@@ -25,6 +25,7 @@ struct HardwarePeripheralInterface {
   16: bool duck_speaker
   17: hardware.SoftwareReleaseStage tracked_release_stage
   18: hardware.FilesystemStatus rootfs_status
+  19: i32 reboot_timeout_seconds
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
