@@ -20,16 +20,28 @@ enum GuideOperator {
   EQUAL = 1
   NOT_EQUAL = 2
   IS_SET = 3
+  AND = 4 // Evaluates child rules and validation_value of 1 or 0
+  OR = 5 // Evaluates child rules and validation value of 1 or 0
 }
  
+const string GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
+
 struct GuideRule {
-  1: string target_identifier
-  2: GuideOperator rule_operator
+  1: GuideOperator rule_operator
+  2: string target_identifier
   3: string validation_value
-  4: optional string invalid_overlay_title
-  5: optional string invalid_overlay_message
-  6: optional string invalid_overlay_primary_url
-  7: optional string invalid_overlay_secondary_url
+  4: optional GuideOverlay overlay // If present, when rule is FIRST violated the overlay will be presented
+  5: optional list<GuideRule> child_rules
+}
+
+struct GuideOverlay {
+  1: string overlay_identifier
+  2: string overlay_title
+  3: string overlay_message
+  4: optional string overlay_confirm_button_title
+  5: optional string overlay_confirm_url
+  6: optional string overlay_secondary_button_title
+  7: optional string overlay_secondary_button_url
 }
  
 enum GuideScreenType {
@@ -54,6 +66,7 @@ struct GuideScreen {
   6: optional list<GuideLoads> loads // If this is present, header will be displayed AND pages will be repeated per load
   7: optional list<GuideRule> display_rules // Rules that must pass in order for the screen to display
   8: optional list<GuideRule> validation_rules // Rules to check after every option selection
+  9: optional list<GuideRule> additional_rules // Rules to check after every option selection but does not halt progress
 }
  
 struct GuidePage {
@@ -63,6 +76,7 @@ struct GuidePage {
   // If confirmTitle is present, a confirm button will display locked to the bottom of the screen
   // If not, the confirm will be taken once all fields have been processed and the last option is selected
   4: optional string confirm_title
+  5: optional string underline_button_title
 }
  
 enum GuideFieldType {
@@ -83,6 +97,7 @@ struct GuideField {
   5: optional string secondary_label // Secondary text for field
   6: optional string large_image_url // Primary image for field
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
+  8: optional string footer_label // Footer text for field
 }
  
 struct GuideOption {
