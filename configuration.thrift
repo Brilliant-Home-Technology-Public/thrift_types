@@ -109,6 +109,9 @@ struct PeripheralInfo {
   5: string configuration_peripheral_id
   6: optional map<string, string> configuration_variables
   7: optional bool stubbed
+  8: optional bool hidden // if true, do not create peripheral and do not show as normal device
+  9: optional bool unrecognized // true if device is no longer being discovered
+  10: optional string default_display_name
 }
 
 enum DayOfWeek {
