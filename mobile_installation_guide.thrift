@@ -49,6 +49,7 @@ enum GuideScreenType {
   VERTICAL_SCROLLING = 2
   HORIZONTAL_SCROLLING = 3
   WIRE_PHOTOS = 4
+  INSTALL_SUCCESS = 5
 }
  
 struct GuideLoads {
@@ -87,6 +88,8 @@ enum GuideFieldType {
   SETUP_PROMPT = 5
   ROUNDED_CARD = 6
   VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
+  STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
+  STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
 }
 
 struct GuideField {
