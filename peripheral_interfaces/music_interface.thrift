@@ -19,6 +19,7 @@ struct MusicPeripheralInterface {
   11: configuration.RoomAssignment room_assignment
   12: music.Speakers speakers
   13: bool can_seek
+  14: bool can_pause     // can pause the current track (would be false for something like line-in)
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
