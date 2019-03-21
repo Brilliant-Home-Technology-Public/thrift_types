@@ -13,7 +13,14 @@ struct InstallationGuide {
   1: string version
   2: InstallationDeviceType device_type
   3: string product_sku
-  4: list<GuideScreen> screens
+  4: list<GuideSection> sections
+}
+
+struct GuideSection {
+  1: string identifier
+  2: string title
+  3: list<GuideScreen> screens
+  4: optional list<GuideRule> enabled_rules
 }
  
 enum GuideOperator {
