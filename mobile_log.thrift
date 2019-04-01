@@ -36,6 +36,8 @@ const string MOBILE_BUTTON_NAME_BEGIN = "begin"
 const string MOBILE_BUTTON_NAME_BRILLIANT_HELP = "brilliant_help"
 const string MOBILE_BUTTON_NAME_BUY_BRILLIANT = "buy_brilliant"
 const string MOBILE_BUTTON_NAME_CANCEL = "cancel"
+const string MOBILE_BUTTON_NAME_CREATE_HOME = "create_home"
+const string MOBILE_BUTTON_NAME_CREATE_NEW_HOME = "create_new_home"
 const string MOBILE_BUTTON_NAME_CREATE_NEW_ACCOUNT = "create_new_account"
 const string MOBILE_BUTTON_NAME_CREATE_ROOM = "create_room"
 const string MOBILE_BUTTON_NAME_CONFIRM_DEMO_MODE = "confirm_demo_mode"
@@ -93,6 +95,7 @@ const string MOBILE_BUTTON_NAME_SHOW_ME_HOW = "show_me_how"
 const string MOBILE_BUTTON_NAME_SKIP = "skip"
 const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
+const string MOBILE_BUTTON_NAME_WHERE_IS_MY_BRILLIANT = "where_is_my_brilliant"
 const string MOBILE_BUTTON_NAME_X = "x"
 const string MOBILE_BUTTON_NAME_YES = "yes"
 // END: MOBILE BUTTON NAME CONSTANTS
@@ -138,6 +141,7 @@ enum MobileErrorEventType {
   FAILED_PAIRING_CHOOSE_HOME = 9
   FAILED_ZENDESK_AUTHENTICATION = 10
   STATE_MANAGER_CACHE_ERROR = 11
+  FAILED_PAIRING_CREATE_HOME = 12
 }
 
 enum MobileEventDeviceType {
