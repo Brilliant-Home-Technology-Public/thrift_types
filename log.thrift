@@ -105,6 +105,10 @@ const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_war
 const string UI_NOTIFICATION_VIEW_TABLE_NAME = "notification_view"
 const string UI_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_button_tapped"
 const string UI_ERROR_EVENT_TABLE_NAME = "ui_error"
+const string UI_THIRDPARTY_DEVICE_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdparty_device_notification_view"
+const string UI_THIRDPARTY_DEVICE_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_button_tapped"
+const string UI_THIRDPARTY_DEVICE_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_notification_button_tapped"
+const string UI_THIRDPARTY_INTEGRATION_SCREEN_VIEW_TABLE_NAME = "ui_thirdparty_integration_screen_view"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -277,6 +281,9 @@ const string UI_BUTTON_NAME_CONFIRM_OK = "confirm:ok"
 const string UI_BUTTON_NAME_FORGET_NETWORK = "forget_network"
 const string UI_BUTTON_NAME_HIDDEN_NETWORK = "hidden_network"
 const string UI_BUTTON_NAME_DISCOVERED_NETWORK = "discovered_network"
+const string UI_BUTTON_NAME_VIEW_REMOVED_DEVICES = "view_removed_devices"
+const string UI_BUTTON_NAME_REDISCOVER = "rediscover"
+const string UI_BUTTON_NAME_REMOVE_OFFLINE = "remove_offline"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
@@ -375,6 +382,7 @@ struct UINotificationViewEvent {
   8: string user_id
   6: string screen_name
   7: string notification_name
+  9: string notification_type
 }
 
 struct UINotificationButtonTappedEvent {
