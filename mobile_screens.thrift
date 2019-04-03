@@ -111,6 +111,15 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneImageSelection": "SceneImageSelection"
   "SceneEditAction": "SceneEditAction"
   "SceneTimerEdit": "SceneTimerEdit"
+
+  // Installation Guide
+  "IGHorizontal": "InstallationGuide"
+  "IGVertical": "InstallationGuide"
+  "IGBarcode": "InstallationGuide:Barcode"
+  "IGWirePhotos": "InstallationGuide:WirePhotos"
+  "IGInstallSuccess": "InstallationGuide:Success"
+  "IGOverview": "InstallationGuide:Overview"
+  "InstallationArchive": "InstallationGuide:Archive"
 }
 
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
