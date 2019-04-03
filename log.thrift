@@ -284,6 +284,15 @@ const string UI_BUTTON_NAME_DISCOVERED_NETWORK = "discovered_network"
 const string UI_BUTTON_NAME_VIEW_REMOVED_DEVICES = "view_removed_devices"
 const string UI_BUTTON_NAME_REDISCOVER = "rediscover"
 const string UI_BUTTON_NAME_REMOVE_OFFLINE = "remove_offline"
+const string UI_BUTTON_NAME_GESTURE_REDO = "redo"
+const string UI_BUTTON_NAME_GESTURE_ALL = "all"
+const string UI_BUTTON_NAME_GESTURE_SINGLE_TAP = "single_tap"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_ONE_FINGER = "swipe_up_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_ONE_FINGER = "swipe_down_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_TWO_FINGERS = "swipe_up_two_fingers"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_TWO_FINGERS = "swipe_down_two_fingers"
+const string UI_BUTTON_NAME_GESTURE_HOLD_AND_DRAG_UP = "hold_and_drag_up"
+const string UI_BUTTON_NAME_GESTURE_HOLD_AND_DRAG_DOWN = "hold_and_drag_down"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
