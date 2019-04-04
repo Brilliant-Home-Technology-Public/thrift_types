@@ -9,18 +9,14 @@ enum InstallationDeviceType {
   BRILLIANT_SWITCH = 5
 }
  
-struct InstallationGuide {
-  1: string version
-  2: InstallationDeviceType device_type
-  3: string product_sku
-  4: list<GuideSection> sections
-}
-
-struct GuideSection {
-  1: string identifier
-  2: string title
-  3: list<GuideScreen> screens
-  4: optional list<GuideRule> enabled_rules
+struct GuideOverlay {
+  1: string overlay_identifier
+  2: string overlay_title
+  3: string overlay_message
+  4: optional string overlay_confirm_button_title
+  5: optional string overlay_confirm_url
+  6: optional string overlay_secondary_button_title
+  7: optional string overlay_secondary_button_url
 }
  
 enum GuideOperator {
@@ -40,17 +36,45 @@ struct GuideRule {
   4: optional GuideOverlay overlay // If present, when rule is FIRST violated the overlay will be presented
   5: optional list<GuideRule> child_rules
 }
-
-struct GuideOverlay {
-  1: string overlay_identifier
-  2: string overlay_title
-  3: string overlay_message
-  4: optional string overlay_confirm_button_title
-  5: optional string overlay_confirm_url
-  6: optional string overlay_secondary_button_title
-  7: optional string overlay_secondary_button_url
+ 
+enum GuideFieldType {
+  VERTICAL_OPTION_QUESTION = 1
+  HORIZONTAL_OPTION_QUESTION = 2 // Max of 3 options
+  SETUP_VERIFICATION = 3
+  INSTALLATION_SUCCESS = 4
+  SETUP_PROMPT = 5
+  ROUNDED_CARD = 6
+  VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
+  STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
+  STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
 }
  
+struct GuideOption {
+  1: string display_name
+  2: string option_value 
+}
+
+struct GuideField {
+  1: string identifier
+  2: GuideFieldType field_type
+  3: optional list<GuideOption> options // Options to display
+  4: optional string primary_label // Main text for field
+  5: optional string secondary_label // Secondary text for field
+  6: optional string large_image_url // Primary image for field
+  7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
+  8: optional string footer_label // Footer text for field
+}
+ 
+struct GuidePage {
+  1: string identifier
+  2: optional string title_override
+  3: list<GuideField> fields
+  // If confirmTitle is present, a confirm button will display locked to the bottom of the screen
+  // If not, the confirm will be taken once all fields have been processed and the last option is selected
+  4: optional string confirm_title
+  5: optional string underline_button_title
+}
+
 enum GuideScreenType {
   BARCODE_SCREEN = 1
   VERTICAL_SCROLLING = 2
@@ -76,41 +100,18 @@ struct GuideScreen {
   8: optional list<GuideRule> validation_rules // Rules to check after every option selection
   9: optional list<GuideRule> additional_rules // Rules to check after every option selection but does not halt progress
 }
- 
-struct GuidePage {
+
+struct GuideSection {
   1: string identifier
-  2: optional string title_override
-  3: list<GuideField> fields
-  // If confirmTitle is present, a confirm button will display locked to the bottom of the screen
-  // If not, the confirm will be taken once all fields have been processed and the last option is selected
-  4: optional string confirm_title
-  5: optional string underline_button_title
-}
- 
-enum GuideFieldType {
-  VERTICAL_OPTION_QUESTION = 1
-  HORIZONTAL_OPTION_QUESTION = 2 // Max of 3 options
-  SETUP_VERIFICATION = 3
-  INSTALLATION_SUCCESS = 4
-  SETUP_PROMPT = 5
-  ROUNDED_CARD = 6
-  VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
-  STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
-  STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
+  2: string title
+  3: list<GuideScreen> screens
+  4: optional list<GuideRule> enabled_rules
 }
 
-struct GuideField {
-  1: string identifier
-  2: GuideFieldType field_type
-  3: optional list<GuideOption> options // Options to display
-  4: optional string primary_label // Main text for field
-  5: optional string secondary_label // Secondary text for field
-  6: optional string large_image_url // Primary image for field
-  7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
-  8: optional string footer_label // Footer text for field
+struct InstallationGuide {
+  1: string version
+  2: InstallationDeviceType device_type
+  3: string product_sku
+  4: list<GuideSection> sections
 }
- 
-struct GuideOption {
-  1: string display_name
-  2: string option_value 
-}
+
