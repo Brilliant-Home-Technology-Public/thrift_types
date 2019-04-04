@@ -109,6 +109,9 @@ const string UI_THIRDPARTY_DEVICE_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdparty_
 const string UI_THIRDPARTY_DEVICE_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_button_tapped"
 const string UI_THIRDPARTY_DEVICE_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_notification_button_tapped"
 const string UI_THIRDPARTY_INTEGRATION_SCREEN_VIEW_TABLE_NAME = "ui_thirdparty_integration_screen_view"
+const string UI_THIRDPARTY_INTEGRATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_integration_button_tapped"
+const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdparty_integration_notification_view"
+const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_integration_notification_button_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -275,6 +278,7 @@ const string UI_BUTTON_NAME_CONFIRM_CANCEL = "confirm:cancel"
 const string UI_BUTTON_NAME_CONFIRM_DELETE_ALARM = "confirm:delete_alarm"
 const string UI_BUTTON_NAME_DISMISS = "dismiss"
 const string UI_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
+const string UI_BUTTON_NAME_RESET_INTEGRATION = "reset_integration"
 const string UI_BUTTON_NAME_RESET_CONFIRM = "reset_confirm"
 const string UI_BUTTON_NAME_RESET_CANCEL = "reset_cancel"
 const string UI_BUTTON_NAME_CONFIRM_OK = "confirm:ok"
