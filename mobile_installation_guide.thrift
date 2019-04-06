@@ -17,6 +17,8 @@ struct GuideOverlay {
   5: optional string overlay_confirm_url
   6: optional string overlay_secondary_button_title
   7: optional string overlay_secondary_button_url
+  8: optional string overlay_underline_button_title
+  9: optional string overlay_underline_button_url
 }
  
 enum GuideOperator {
@@ -27,7 +29,8 @@ enum GuideOperator {
   OR = 5 // Evaluates child rules and validation value of 1 or 0
 }
  
-const string GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
+const string MOBILE_GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
+const string MOBILE_GUIDE_RULE_ANY_IDENTIFIER = "any_identifier"
 
 struct GuideRule {
   1: GuideOperator rule_operator
@@ -52,6 +55,7 @@ enum GuideFieldType {
 struct GuideOption {
   1: string display_name
   2: string option_value 
+  3: optional string image_url
 }
 
 struct GuideField {
@@ -73,6 +77,7 @@ struct GuidePage {
   // If not, the confirm will be taken once all fields have been processed and the last option is selected
   4: optional string confirm_title
   5: optional string underline_button_title
+  6: optional string underline_button_url
 }
 
 enum GuideScreenType {
@@ -114,4 +119,7 @@ struct InstallationGuide {
   3: string product_sku
   4: list<GuideSection> sections
 }
+
+const string MOBILE_GUIDE_URL_RESET = "screen_url_reset"
+const string MOBILE_GUIDE_URL_NOT_SURE = "screen_url_not_sure"
 
