@@ -121,6 +121,11 @@ struct InstallationGuide {
   4: list<GuideSection> sections
 }
 
-const string MOBILE_GUIDE_URL_RESET = "screen_url_reset"
-const string MOBILE_GUIDE_URL_NOT_SURE = "screen_url_not_sure"
+const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
+const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
+const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
+const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
+const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
+const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
+const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
 
