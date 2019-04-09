@@ -56,6 +56,7 @@ struct GuideOption {
   1: string display_name
   2: string option_value 
   3: optional string image_url
+  4: optional list<GuideRule> display_rules // Logical statement reference field identifiers and option values
 }
 
 struct GuideField {
