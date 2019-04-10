@@ -1,6 +1,12 @@
 namespace py thrift_types.mobile_installation_guide
 namespace java thrift_types.mobile_installation_guide
 
+// MOST RECENT VERSION:
+const string MOBILE_GUIDE_VERSION_20190403 = "20190403"
+
+// OLD VERSIONS:
+// NONE
+
 enum InstallationDeviceType {
   ONE_GANG = 1
   TWO_GANG = 2
@@ -128,4 +134,21 @@ const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
 const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
 const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
 const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
+
+const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
+const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
+const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_isntallation_success"
+const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
+const string MOBILE_GUIDE_SCREEN_PRODUCT_SELECTION = "screen_product_selection"
+const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
+const string MOBILE_GUIDE_SCREEN_WIRE_PHOTOS = "screen_wire_photos"
+
+const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
+const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
+const string MOBILE_GUIDE_SECTION_WIRE_PHOTOS = "section_wire_photos"
+
+const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
+const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
+const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
+const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 
