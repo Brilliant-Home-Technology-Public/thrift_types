@@ -137,7 +137,7 @@ const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidatio
 
 const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
-const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_isntallation_success"
+const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
 const string MOBILE_GUIDE_SCREEN_PRODUCT_SELECTION = "screen_product_selection"
 const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
