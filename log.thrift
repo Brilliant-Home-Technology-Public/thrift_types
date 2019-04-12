@@ -296,8 +296,9 @@ const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_ONE_FINGER = "swipe_up_one_finger"
 const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_ONE_FINGER = "swipe_down_one_finger"
 const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_TWO_FINGERS = "swipe_up_two_fingers"
 const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_TWO_FINGERS = "swipe_down_two_fingers"
-const string UI_BUTTON_NAME_GESTURE_HOLD_AND_DRAG_UP = "hold_and_drag_up"
-const string UI_BUTTON_NAME_GESTURE_HOLD_AND_DRAG_DOWN = "hold_and_drag_down"
+const string UI_BUTTON_NAME_GESTURE_SLIDE_UP_ONE_FINGER = "slide_up_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SLIDE_DOWN_ONE_FINGER = "slide_down_one_finger"
+const string UI_BUTTON_NAME_GESTURE_DOUBLE_TAP = "double_tap"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
