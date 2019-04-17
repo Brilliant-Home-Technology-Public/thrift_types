@@ -74,6 +74,7 @@ struct GuideField {
   6: optional string large_image_url // Primary image for field
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
   8: optional string footer_label // Footer text for field
+  9: optional string video_url // Could be web or bundle protocol
 }
  
 struct GuidePage {
