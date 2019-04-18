@@ -143,6 +143,7 @@ enum MobileErrorEventType {
   STATE_MANAGER_CACHE_ERROR = 11
   FAILED_PAIRING_CREATE_HOME = 12
   UPLOAD_PHOTO_ERROR = 13
+  FAILED_GET_ICE_SERVERS = 14
 }
 
 enum MobileEventDeviceType {
