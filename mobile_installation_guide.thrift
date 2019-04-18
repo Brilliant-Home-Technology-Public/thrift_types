@@ -75,6 +75,7 @@ struct GuideField {
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
   8: optional string footer_label // Footer text for field
   9: optional string video_url // Could be web or bundle protocol
+  10: optional GuideOverlay help_overlay
 }
  
 struct GuidePage {
@@ -132,9 +133,12 @@ const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
 const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
 const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
 const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
+const string MOBILE_GUIDE_URL_NOT_SURE = "brl://guide/notSure"
 const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
 const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
 const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
+
+const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 
 const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
@@ -152,4 +156,6 @@ const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
+
+const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
