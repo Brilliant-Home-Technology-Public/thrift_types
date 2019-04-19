@@ -87,6 +87,7 @@ struct GuidePage {
   4: optional string confirm_title
   5: optional string underline_button_title
   6: optional string underline_button_url
+  7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
 }
 
 enum GuideScreenType {
