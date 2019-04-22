@@ -209,6 +209,7 @@ enum Validity {
    DEVICE_RECONFIGURED = 3,
    DEVICE_DELETED = 4,
    DEVICE_MODE_INCOMPATIBLE = 5,
+   DEVICE_ROOMLESS = 6,
 }
 
 struct SceneValidityStates {
