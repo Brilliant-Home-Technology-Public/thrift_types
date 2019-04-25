@@ -63,6 +63,7 @@ struct GuideOption {
   2: string option_value 
   3: optional string image_url
   4: optional list<GuideRule> display_rules // Logical statement reference field identifiers and option values
+  5: optional string secondary_display_label
 }
 
 struct GuideField {
@@ -73,9 +74,10 @@ struct GuideField {
   5: optional string secondary_label // Secondary text for field
   6: optional string large_image_url // Primary image for field
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
-  8: optional string footer_label // Footer text for field
+  8: optional string tertiary_label // Footer text for field
   9: optional string video_url // Could be web or bundle protocol
   10: optional GuideOverlay help_overlay
+  11: optional string secondary_image_url
 }
  
 struct GuidePage {
@@ -88,6 +90,7 @@ struct GuidePage {
   5: optional string underline_button_title
   6: optional string underline_button_url
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
+  8: optional string confirm_button_url // If nil this will just process nextTapped
 }
 
 enum GuideScreenType {
@@ -159,4 +162,6 @@ const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
+
+const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 
