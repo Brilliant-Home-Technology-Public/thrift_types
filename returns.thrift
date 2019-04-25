@@ -6,5 +6,6 @@ enum ReturnType {
   UNKNOWN = 0,
   REFUND = 1,
   ADVANCED_EXCHANGE = 2,
+  CANCELLATION = 3,
 }
 
