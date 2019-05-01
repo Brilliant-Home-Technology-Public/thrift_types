@@ -29,7 +29,7 @@ struct IPv4AddressInfo {
   // TODO also report them in machine-readable form?
   1: string address
   2: string netmask
-  3: string gateway
+  3: optional string gateway
 }
 
 struct Network {
