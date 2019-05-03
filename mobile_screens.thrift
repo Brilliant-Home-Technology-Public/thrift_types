@@ -23,6 +23,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
   "NowPlaying": "NowPlaying",
   "Favorites": "Favorites",
+  "RemoveBrilliantControl": "RemoveBrilliantControl",
 
   // Account
   "EditAccount": "AccountSettings",
@@ -39,7 +40,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeManagementDevices": "HomeManagement",
   "HomeManagementDetail": "HomeManagementDetail",
   "HomeManagementDeviceDetail": "HomeManagementDetail",
-  "HomeManagementDelete": "HomeManagementDelete",
   "HomeManagementUpdateName": "HomeManagementUpdateName",
   "SwitchHome": "SwitchHome",
   "ChooseJoinedHome": "SwitchHome",
@@ -145,6 +145,8 @@ const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
+const string MOBILE_OVERLAY_NAME_RESET_SETTINGS = "ResetSettings"
+const string MOBILE_OVERLAY_NAME_REMOVE_THIRDPARTY_DEVICE = "RemoveThirdpartyDevice"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Create:Error"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_UPDATE_NAME_ERROR = "RoomSettings:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
