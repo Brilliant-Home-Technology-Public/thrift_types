@@ -6,6 +6,7 @@ include "peripheral_interface.thrift"
 
 struct AnalyticsPeripheralInterface {
   1: string socket_path
+  2: string error_server_listen_address
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
