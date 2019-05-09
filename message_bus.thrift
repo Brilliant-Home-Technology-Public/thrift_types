@@ -211,6 +211,7 @@ struct Peripheral {
   5: PeripheralStatus status
   6: optional i64 timestamp
   7: optional list<ModifiedVariable> deleted_variables = []
+  8: optional string version
 }
 
 enum DeviceType {
