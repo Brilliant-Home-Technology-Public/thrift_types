@@ -293,6 +293,7 @@ struct WifiCredentials {
   1: string network_name
   2: string passphrase
   3: optional wifi.SecurityType security // required for hidden networks
+  4: optional bool force_disable_ipv6
 }
 
 
