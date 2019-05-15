@@ -111,6 +111,15 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneImageSelection": "SceneImageSelection"
   "SceneEditAction": "SceneEditAction"
   "SceneTimerEdit": "SceneTimerEdit"
+
+  // Installation Guide
+  "IGHorizontal": "InstallationGuide"
+  "IGVertical": "InstallationGuide"
+  "IGBarcode": "InstallationGuide:Barcode"
+  "IGWirePhotos": "InstallationGuide:WirePhotos"
+  "IGInstallSuccess": "InstallationGuide:Success"
+  "IGOverview": "InstallationGuide:Overview"
+  "InstallationArchive": "InstallationGuide:Archive"
 }
 
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
@@ -119,6 +128,8 @@ const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_UNSUPPORTED = "ControlRemoval:Unsupported"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
+const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION = "DeleteInstallation"
+const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION_ERROR = "DeleteInstallation:Error"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM = "DeleteRoom"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM_ERROR = "DeleteRoom:Error"
 const string MOBILE_OVERLAY_NAME_DEVICE_SETTINGS_ERROR = "DeviceSettings:Error"

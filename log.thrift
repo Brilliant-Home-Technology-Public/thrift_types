@@ -105,6 +105,13 @@ const string UI_GANGBOX_LOAD_WARNING_TRIGGERED_TABLE_NAME = "ui_gangbox_load_war
 const string UI_NOTIFICATION_VIEW_TABLE_NAME = "notification_view"
 const string UI_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_button_tapped"
 const string UI_ERROR_EVENT_TABLE_NAME = "ui_error"
+const string UI_THIRDPARTY_DEVICE_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdparty_device_notification_view"
+const string UI_THIRDPARTY_DEVICE_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_button_tapped"
+const string UI_THIRDPARTY_DEVICE_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_device_notification_button_tapped"
+const string UI_THIRDPARTY_INTEGRATION_SCREEN_VIEW_TABLE_NAME = "ui_thirdparty_integration_screen_view"
+const string UI_THIRDPARTY_INTEGRATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_integration_button_tapped"
+const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdparty_integration_notification_view"
+const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_integration_notification_button_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -271,12 +278,27 @@ const string UI_BUTTON_NAME_CONFIRM_CANCEL = "confirm:cancel"
 const string UI_BUTTON_NAME_CONFIRM_DELETE_ALARM = "confirm:delete_alarm"
 const string UI_BUTTON_NAME_DISMISS = "dismiss"
 const string UI_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
+const string UI_BUTTON_NAME_DELETE_CANCEL = "delete_cancel"
+const string UI_BUTTON_NAME_RESET_INTEGRATION = "reset_integration"
 const string UI_BUTTON_NAME_RESET_CONFIRM = "reset_confirm"
 const string UI_BUTTON_NAME_RESET_CANCEL = "reset_cancel"
 const string UI_BUTTON_NAME_CONFIRM_OK = "confirm:ok"
 const string UI_BUTTON_NAME_FORGET_NETWORK = "forget_network"
 const string UI_BUTTON_NAME_HIDDEN_NETWORK = "hidden_network"
 const string UI_BUTTON_NAME_DISCOVERED_NETWORK = "discovered_network"
+const string UI_BUTTON_NAME_VIEW_REMOVED_DEVICES = "view_removed_devices"
+const string UI_BUTTON_NAME_REDISCOVER = "rediscover"
+const string UI_BUTTON_NAME_REMOVE_OFFLINE = "remove_offline"
+const string UI_BUTTON_NAME_GESTURE_REDO = "redo"
+const string UI_BUTTON_NAME_GESTURE_ALL = "all"
+const string UI_BUTTON_NAME_GESTURE_SINGLE_TAP = "single_tap"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_ONE_FINGER = "swipe_up_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_ONE_FINGER = "swipe_down_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_UP_TWO_FINGERS = "swipe_up_two_fingers"
+const string UI_BUTTON_NAME_GESTURE_SWIPE_DOWN_TWO_FINGERS = "swipe_down_two_fingers"
+const string UI_BUTTON_NAME_GESTURE_SLIDE_UP_ONE_FINGER = "slide_up_one_finger"
+const string UI_BUTTON_NAME_GESTURE_SLIDE_DOWN_ONE_FINGER = "slide_down_one_finger"
+const string UI_BUTTON_NAME_GESTURE_DOUBLE_TAP = "double_tap"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
@@ -375,6 +397,7 @@ struct UINotificationViewEvent {
   8: string user_id
   6: string screen_name
   7: string notification_name
+  9: string notification_type
 }
 
 struct UINotificationButtonTappedEvent {
