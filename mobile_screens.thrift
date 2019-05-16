@@ -38,8 +38,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Home Management
   "HomeManagement": "HomeManagement",
   "HomeManagementDevices": "HomeManagement",
-  "HomeManagementDetail": "HomeManagementDetail",
-  "HomeManagementDeviceDetail": "HomeManagementDetail",
   "HomeManagementUpdateName": "HomeManagementUpdateName",
   "SwitchHome": "SwitchHome",
   "ChooseJoinedHome": "SwitchHome",
