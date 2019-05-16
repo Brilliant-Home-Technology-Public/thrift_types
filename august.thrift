@@ -1,3 +1,4 @@
+# Temp test submodule update
 namespace py thrift_types.august
 namespace java thrift_types.august
 
