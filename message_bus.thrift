@@ -62,6 +62,7 @@ const string DEMO_CONFIG_IDENTIFIER = "demo_configuration"
 const string DEMO_IDENTIFIER = "demo_peripheral"
 const string REMOTE_MEDIA_IDENTIFIER = "remote_media_peripheral"
 const string MESH_CONFIG_IDENTIFIER = "mesh_configuration"
+const string BLE_PERIPHERAL_IDENTIFIER = "ble_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -166,6 +167,7 @@ enum PeripheralType {
   CAMERA = 59,
   REMOTE_MEDIA = 60,
   MESH_CONFIGURATION = 61,
+  BLE = 62,
 }
 
 enum PeripheralStatus {
