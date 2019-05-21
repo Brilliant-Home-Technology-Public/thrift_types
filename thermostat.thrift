@@ -2,9 +2,9 @@ namespace py thrift_types.thermostat
 namespace java thrift_types.thermostat
 
 const string HONEYWELL_LYRIC_ROUND = "Lyric Round"
-// Note that the HONEYWELL_LYRIC_T5 constant is being used for ALL T-Series devices
+// Note that the HONEYWELL_T_SERIES constant is being used for ALL T-Series devices
 // The Honeywell API does not provide a way for us to distinguish between the various models.
-const string HONEYWELL_LYRIC_T5 = "T-Series"
+const string HONEYWELL_T_SERIES = "T-Series"
 
 enum HVACMode {
   OFF = 1
