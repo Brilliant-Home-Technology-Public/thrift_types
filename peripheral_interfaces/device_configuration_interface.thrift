@@ -14,6 +14,7 @@ struct DeviceConfigurationPeripheralInterface {
   8: configuration.RoomAssignment room_assignment
   9: bool receive_intercom_broadcasts
   10: bool remote_monitoring_enabled
+  11: bool disable_cap_touch_sliders
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
