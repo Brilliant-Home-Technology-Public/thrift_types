@@ -22,6 +22,15 @@ const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
 // Attribute for USN (Unique Service Name)
 const string USN_ATTRIBUTE = "USN"
 
+// Search target used to discover Sonos speakers
+const string SONOS_UPNP_SEARCH_TARGET = "urn:smartspeaker-audio:service:SpeakerGroup:1"
+// Attributes that Sonos speakers return through SSDP discovery
+const string SONOS_GROUP_INFO_ATTRIBUTE = "GROUPINFO.SMARTSPEAKER.AUDIO"
+const string SONOS_GROUP_ID_ATTRIBUTE = "GROUP_ID"
+const string SONOS_GROUP_NAME_ATTRIBUTE = "GROUP_NAME"
+const string SONOS_WEBSOCKET_ATTRIBUTE = "WEBSOCK.SMARTSPEAKER.AUDIO"
+const string SONOS_HOUSEHOLD_ID_ATTRIBUTE = "HOUSEHOLD.SMARTSPEAKER.AUDIO"
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
