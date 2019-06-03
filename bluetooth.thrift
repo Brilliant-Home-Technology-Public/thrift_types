@@ -68,6 +68,12 @@ struct ReplayProtection {
   1: map<i32, i64> unicast_address_to_seqauth_map
 }
 
+struct BleMeshDevice {
+  1: string mesh_device_id
+  2: i16 unicast_address
+  3: i64 rssi
+}
+
 struct BleMeshDevices {
-  1: list<string> device_ids
+  1: list<BleMeshDevice> devices
 }
