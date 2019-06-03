@@ -32,12 +32,20 @@ struct IPv4AddressInfo {
   3: string gateway
 }
 
+struct IPv6AddressInfo {
+  1: string address
+  2: i16 prefix_length
+  3: string gateway
+}
+
 struct Network {
   1: optional string name
   2: SecurityType security
   3: byte signal_strength
   4: optional IPv4AddressInfo ipv4_address_info
   5: NetworkStatusType status
+  6: optional bool force_disable_ipv6
+  7: optional IPv6AddressInfo ipv6_address_info
 }
 
 struct AvailableNetworks {
