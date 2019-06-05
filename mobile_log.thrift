@@ -17,6 +17,9 @@ const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
+const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
+const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
+const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
@@ -275,6 +278,44 @@ struct MobileErrorEvent {
   7: string reason // May contain specific information (timestamps, deviceIds, etc)
   9: string short_reason // Should be an aggregatable string (no timestamps, device ids, etc)
   10: string user_id
+}
+
+struct MobileInstallationEndedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string sku
+  9: string guide_version
+  10: string exit_section
+}
+
+struct MobileInstallationFeedbackEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string sku
+  8: string guide_version
+  9: string helpfulness
+  10: string additional_help
+  11: string free_response // TO BE EVENTUALLY DEPRECATED
+}
+
+struct MobileInstallationStartedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string sku
+  8: string guide_version
 }
 
 struct MobileJoinedHomeEvent {
