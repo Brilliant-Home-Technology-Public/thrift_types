@@ -154,6 +154,7 @@ enum MobileEventDeviceType {
   CLIMATE = 3
   GENERIC_TOGGLE = 4
   MUSIC = 5
+  SHADE = 6
 }
 
 enum MobileEventSource {
@@ -173,6 +174,7 @@ enum MobileLevelType {
   TEMPERATURE = 3
   TEMPERATURE_RANGE_LOW = 4
   TEMPERATURE_RANGE_HIGH = 5
+  POSITION = 6
 }
 
 enum MobileOfflineStatus {
