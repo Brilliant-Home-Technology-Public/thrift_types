@@ -56,6 +56,7 @@ enum GuideFieldType {
   VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
   STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
   STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
+  FREEFORM_TEXT = 10
 }
  
 struct GuideOption {
