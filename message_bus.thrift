@@ -97,6 +97,8 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     AUGUST_IDENTIFIER,
 ]
 
+const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = []
+
 struct SentinelValue {}
 const SentinelValue OWNER_DEVICE_IDENTIFIER = {}
 
