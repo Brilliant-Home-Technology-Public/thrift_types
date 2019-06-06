@@ -144,6 +144,7 @@ const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
 const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
 const string MOBILE_GUIDE_URL_MARK_SINGLE_POLE = "brl://guide/markSinglePole"
 const string MOBILE_GUIDE_URL_MARK_THREE_WAY = "brl://guide/markThreeWay"
+const string MOBILE_GUIDE_URL_FEEDBACK_SUBMIT = "brl://guide/feedbackSubmit"
 const string MOBILE_GUIDE_URL_TRIGGER_HELP_OVERLAY = "brl://guide/triggerHelpOverlay"
 const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
 
