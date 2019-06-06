@@ -12,6 +12,8 @@ struct MediaContent {
 
 // Art Configuration
 
+const string ART_CONFIG_VARIABLE_PREFIX = "library:"
+
 const string USER_CUSTOM_LIBRARY_ID = "library:custom_art"
 const string FEATURED_LIBRARY_ID = "library:featured"
 const string DEMO_LIBRARY_ID = "library:demo_album"
