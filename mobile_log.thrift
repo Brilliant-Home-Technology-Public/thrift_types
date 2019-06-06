@@ -302,9 +302,10 @@ struct MobileInstallationFeedbackEvent {
   6: string user_id
   7: string sku
   8: string guide_version
-  9: string helpfulness
-  10: string additional_help
-  11: string free_response // TO BE EVENTUALLY DEPRECATED
+  9: bool success
+  10: string helpfulness
+  11: string additional_help
+  12: string free_response // TO BE EVENTUALLY DEPRECATED
 }
 
 struct MobileInstallationStartedEvent {
