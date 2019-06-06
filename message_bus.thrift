@@ -72,7 +72,6 @@ const string ECOBEE_CLIENT_ID = "p5QCDGdiJOHp7oRknVXzwpDEkeTRYTVy"
 const string AUGUST_CLIENT_ID = ""
 const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
-const string EXTERNAL_CONFIGURATION_VIRTUAL_DEVICE = "external_configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
 const string CLOUD_VIRTUAL_DEVICE = "cloud"
@@ -87,7 +86,6 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     CLOUD_VIRTUAL_DEVICE,
     CONFIGURATION_VIRTUAL_DEVICE,
     ECOBEE_IDENTIFIER,
-    EXTERNAL_CONFIGURATION_VIRTUAL_DEVICE,
     HONEYWELL_IDENTIFIER,
     HUE_BRIDGE_IDENTIFIER,
     NEST_IDENTIFIER,
