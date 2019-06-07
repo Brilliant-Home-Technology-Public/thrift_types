@@ -137,6 +137,7 @@ struct InstallationGuide {
 const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"
 const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
 const string MOBILE_GUIDE_URL_EXIT_INSTALLATION_NO_FEEDBACK = "brl://guide/exitInstallationNoFeedback"
+const string MOBILE_GUIDE_URL_FINISH_SCREEN = "brl://guide/finishScreen"
 const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
 const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
 const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
