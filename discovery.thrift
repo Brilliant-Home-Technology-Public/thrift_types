@@ -50,12 +50,14 @@ enum ThirdpartyDeviceType {
   ALMOND = 3,
   WEMO = 4,
   BOSE_ST = 5,
+  LIFX = 6,
 }
 
 enum DiscoveryType {
   MDNS = 1,
   UPNP = 2,
   NUPNP = 3,
+  UDP = 4,
 }
 
 struct ThirdpartyDeviceInterface {
