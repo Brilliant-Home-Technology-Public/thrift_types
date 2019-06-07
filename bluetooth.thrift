@@ -18,6 +18,7 @@ struct BluetoothDevice {
   1: string mac_address
   2: list<BluetoothService> services = []
   3: optional byte signal_strength
+  4: string device_id
 }
 
 enum MeshDeviceType {
@@ -76,4 +77,8 @@ struct BleMeshDevice {
 
 struct BleMeshDevices {
   1: list<BleMeshDevice> devices
+}
+
+struct BluetoothDevices {
+  1: list<BluetoothDevice> devices
 }
