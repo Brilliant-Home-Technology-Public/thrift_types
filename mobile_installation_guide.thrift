@@ -162,6 +162,7 @@ const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
 const string MOBILE_GUIDE_SCREEN_WIRE_PHOTOS = "screen_wire_photos"
 
 const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
+const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
 const string MOBILE_GUIDE_SECTION_WIRE_PHOTOS = "section_wire_photos"
 
