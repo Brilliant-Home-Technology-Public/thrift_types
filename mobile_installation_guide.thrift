@@ -134,21 +134,18 @@ struct InstallationGuide {
   4: list<GuideSection> sections
 }
 
-const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"
-const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
-const string MOBILE_GUIDE_URL_EXIT_INSTALLATION_NO_FEEDBACK = "brl://guide/exitInstallationNoFeedback"
-const string MOBILE_GUIDE_URL_FINISH_SCREEN = "brl://guide/finishScreen"
-const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
-const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
-const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
-const string MOBILE_GUIDE_URL_NOT_SURE = "brl://guide/notSure"
-const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
-const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
-const string MOBILE_GUIDE_URL_MARK_SINGLE_POLE = "brl://guide/markSinglePole"
-const string MOBILE_GUIDE_URL_MARK_THREE_WAY = "brl://guide/markThreeWay"
-const string MOBILE_GUIDE_URL_FEEDBACK_SUBMIT = "brl://guide/feedbackSubmit"
-const string MOBILE_GUIDE_URL_TRIGGER_HELP_OVERLAY = "brl://guide/triggerHelpOverlay"
-const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
+
+const string MOBILE_GUIDE_COMPUTED_IMAGE_URL_WIRING_DIAGRAM = "COMPUTED_IMAGE_URL_WIRING_DIAGRAM"
+const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING = "COMPUTED_TEXT_CONTINUE_LABELING"
+
+const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
+const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
+const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
+const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
+
+const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
+
+const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 
 const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 
@@ -166,12 +163,19 @@ const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
 const string MOBILE_GUIDE_SECTION_WIRE_PHOTOS = "section_wire_photos"
 
-const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
-const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
-const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
-const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
-
-const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
-
-const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
+const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"
+const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
+const string MOBILE_GUIDE_URL_EXIT_INSTALLATION_NO_FEEDBACK = "brl://guide/exitInstallationNoFeedback"
+const string MOBILE_GUIDE_URL_FINISH_SCREEN = "brl://guide/finishScreen"
+const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
+const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
+const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
+const string MOBILE_GUIDE_URL_NOT_SURE = "brl://guide/notSure"
+const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
+const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
+const string MOBILE_GUIDE_URL_MARK_SINGLE_POLE = "brl://guide/markSinglePole"
+const string MOBILE_GUIDE_URL_MARK_THREE_WAY = "brl://guide/markThreeWay"
+const string MOBILE_GUIDE_URL_FEEDBACK_SUBMIT = "brl://guide/feedbackSubmit"
+const string MOBILE_GUIDE_URL_TRIGGER_HELP_OVERLAY = "brl://guide/triggerHelpOverlay"
+const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
 
