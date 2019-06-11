@@ -156,6 +156,7 @@ const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_suc
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
 const string MOBILE_GUIDE_SCREEN_PRODUCT_SELECTION = "screen_product_selection"
 const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
+const string MOBILE_GUIDE_SCREEN_TROUBLESHOOTING_BASE = "screen_troubleshooting_base"
 const string MOBILE_GUIDE_SCREEN_WIRE_PHOTOS = "screen_wire_photos"
 
 const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
