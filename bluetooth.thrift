@@ -23,6 +23,7 @@ struct BluetoothDevice {
 
 enum MeshDeviceType {
   SWITCH = 0,
+  CONTROL = 1,
 }
 
 struct NetKey {
