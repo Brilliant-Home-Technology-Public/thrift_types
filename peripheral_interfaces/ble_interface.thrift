@@ -7,7 +7,7 @@ include "peripheral_interface.thrift"
 
 struct BlePeripheralInterface {
   1: i16 unicast_address
-  2: bluetooth.SeqBlock seq_block
+  2: i32 seq_upper
   3: bluetooth.ReplayProtection replay_protection
 }
 
