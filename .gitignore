@@ -5,3 +5,10 @@
 
 # Ignore some vi temporary files
 *.swp
+
+# Ignore Python build artifacts
+*.egg-info
+build
+dist
+python/env
+python/src/
