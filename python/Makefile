@@ -7,7 +7,7 @@ BIN_PYTHON = $(VENV)/bin/python
 PYTHON = python3.7
 
 
-.DEFAULT_GOAL := wheel
+.DEFAULT_GOAL := src/thrift_types
 
 
 .PHONY = clean clean_wheel wheel
