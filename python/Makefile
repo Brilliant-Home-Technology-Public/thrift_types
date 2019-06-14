@@ -26,5 +26,8 @@ clean: clean_wheel
 clean_wheel:
 	rm -rf build dist src/*.egg-info
 
+test_install_package: $(VENV) src/thrift_types
+	"$(BIN_PIP)" install $(PWD)
+
 wheel: $(VENV) src/thrift_types
 	"$(BIN_PYTHON)" setup.py sdist bdist_wheel
