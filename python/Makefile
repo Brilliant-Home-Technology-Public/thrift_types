@@ -29,7 +29,7 @@ PYTHON = python3.7
 .DEFAULT_GOAL := src/thrift_types
 
 
-.PHONY = clean_all clean_env clean_wheel wheel
+.PHONY = clean_all clean_env clean_wheel test_install_package wheel
 
 ## Generate the python files from thrift
 src/thrift_types: py_gen
@@ -54,6 +54,9 @@ clean_env:
 
 clean_wheel:
 	rm -rf build dist src/*.egg-info
+
+test_install_package: $(VENV) src/thrift_types
+	"$(BIN_PIP)" install $(PWD)
 
 wheel: $(VENV) src/thrift_types
 	"$(BIN_PYTHON)" setup.py sdist bdist_wheel
