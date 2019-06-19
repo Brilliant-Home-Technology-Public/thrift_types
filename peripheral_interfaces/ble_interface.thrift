@@ -6,10 +6,9 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct BlePeripheralInterface {
-  1: i16 unicast_address
-  2: i32 seq_upper
-  3: bluetooth.ReplayProtection replay_protection
-  4: bluetooth.BluetoothDevices bluetooth_devices_nearby
+  1: i32 seq_upper
+  2: bluetooth.ReplayProtection replay_protection
+  3: bluetooth.BluetoothDevices bluetooth_devices_nearby
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
