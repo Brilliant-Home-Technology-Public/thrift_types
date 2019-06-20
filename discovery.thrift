@@ -27,7 +27,6 @@ const string SONOS_UPNP_SEARCH_TARGET = "urn:smartspeaker-audio:service:SpeakerG
 // Attributes that Sonos speakers return through SSDP discovery
 const string SONOS_GROUP_INFO_ATTRIBUTE = "GROUPINFO.SMARTSPEAKER.AUDIO"
 const string SONOS_GROUP_ID_ATTRIBUTE = "GROUP_ID"
-const string SONOS_GROUP_NAME_ATTRIBUTE = "GROUP_NAME"
 const string SONOS_WEBSOCKET_ATTRIBUTE = "WEBSOCK.SMARTSPEAKER.AUDIO"
 const string SONOS_HOUSEHOLD_ID_ATTRIBUTE = "HOUSEHOLD.SMARTSPEAKER.AUDIO"
 
