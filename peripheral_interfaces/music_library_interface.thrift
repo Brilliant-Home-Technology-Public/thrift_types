@@ -7,7 +7,6 @@ include "peripheral_interface.thrift"
 
 struct MusicLibraryPeripheralInterface {
   1: music.Playlists favorites
-  2: music.Playlists playlists
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
