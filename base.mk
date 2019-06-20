@@ -7,19 +7,10 @@ THIRDPARTY_BINARIES_DIR ?= $(CURDIR)/thirdparty-binaries
 SOURCES := $(shell cd $(SOURCES_DIR); find . -type f -name '*.thrift')
 BUILD_PLATFORM ?= $(shell $(THIRDPARTY_BINARIES_DIR)/tools/platform_name.sh)
 THRIFT_COMPILER ?= $(THIRDPARTY_BINARIES_DIR)/pre-built/$(BUILD_PLATFORM)/thrift/bin/thrift
-PY_OUTPUT_DIR ?= $(CURDIR)/site-packages/$(THRIFT_DIR)
 CPP_OUTPUT_DIR ?= $(CURDIR)/main_app/$(THRIFT_DIR)
 SWIFT_OUTPUT_DIR ?= $(CURDIR)/local-pods/BRL/$(THRIFT_DIR)
 JAVA_OUTPUT_DIR ?= $(CURDIR)/Brilliant/brl/src/main/java/$(THRIFT_DIR)
 
-# Python specific
-PY_OUTPUT_DIR_DUMMY_TARGET := $(PY_OUTPUT_DIR)/.dummy_target
-PY_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(PY_OUTPUT_DIR)/%.py_dummy_target)
-# The python thrift compiler automatically creates a thrift_types subdirectory even when we
-# override the output directory with -out
-PY_CFLAGS = -out $(dir $(PY_OUTPUT_DIR)) --gen py
-TWO_TO_THREE = python3 -m lib2to3
-TTTFLAGS = --write --no-diffs --nobackups
 # C++ specific
 CPP_OUTPUT_DIR_DUMMY_TARGET := $(CPP_OUTPUT_DIR)/.dummy_target
 CPP_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(CPP_OUTPUT_DIR)/%.cpp_dummy_target)
@@ -38,10 +29,7 @@ MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
 
 clean:
-	rm -rf $(PY_OUTPUT_DIR) $(CPP_OUTPUT_DIR) $(SWIFT_OUTPUT_DIR) $(JAVA_OUTPUT_DIR)
-
-py_gen: $(PY_DUMMY_TARGETS)
-	@echo Finished making py sources
+	rm -rf $(CPP_OUTPUT_DIR) $(SWIFT_OUTPUT_DIR) $(JAVA_OUTPUT_DIR)
 
 cpp_gen: $(CPP_DUMMY_TARGETS)
 	@echo Finished making cpp sources
@@ -53,16 +41,9 @@ swift_gen: $(SWIFT_DUMMY_TARGETS)
 java_gen: $(JAVA_DUMMY_TARGETS)
 	@echo Finished making java sources
 
-$(PY_OUTPUT_DIR_DUMMY_TARGET) $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(SWIFT_OUTPUT_DIR_DUMMY_TARGET) $(JAVA_OUTPUT_DIR_DUMMY_TARGET):
+$(CPP_OUTPUT_DIR_DUMMY_TARGET) $(SWIFT_OUTPUT_DIR_DUMMY_TARGET) $(JAVA_OUTPUT_DIR_DUMMY_TARGET):
 	mkdir -p $(dir $@)
 	touch $@
-
-# Python
-$(PY_OUTPUT_DIR)/%.py_dummy_target: $(THRIFT_DIR)/%.thrift $(PY_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
-	@echo Making python source for $<
-	$(THRIFT_COMPILER) $(PY_CFLAGS) $<
-	$(TWO_TO_THREE) $(TTTFLAGS) $(PY_OUTPUT_DIR)/$(subst $(THRIFT_DIR)/,,$(basename $<))
-	@touch $@
 
 # CPP
 $(CPP_OUTPUT_DIR)/%.cpp_dummy_target: $(THRIFT_DIR)/%.thrift $(CPP_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
