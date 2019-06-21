@@ -83,6 +83,8 @@ const string RELAY_DEVICE_VARIABLE_NAME = "relay_device"
 const string UNASSIGNED_HOME_ID = "0"
 const string UNASSIGNED_DEVICE_ID = "0"
 
+const i32 DEFAULT_MAX_CACHED_DELETED_VARIABLES = 16
+
 const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     ALMOND_IDENTIFIER,
     CLOUD_VIRTUAL_DEVICE,
