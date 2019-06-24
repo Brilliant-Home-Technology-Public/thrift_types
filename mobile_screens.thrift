@@ -22,7 +22,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSettings": "DeviceSettings",
   "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
   "NowPlaying": "NowPlaying",
+  "MusicNowPlaying": "NowPlaying",
   "Favorites": "Favorites",
+  "MusicFavorites": "Favorites",
   "RemoveBrilliantControl": "RemoveBrilliantControl",
 
   // Account
@@ -51,6 +53,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RequestContainerController": "ZendeskRequest",
   "ReportIssue": "ZendeskRequest",
   "FAQ": "ZendeskFAQ",
+  "Coordinating": "ZendeskFAQ",
   "ZDKArticle": "ZendeskArticle",
   "LiveChat": "ZendeskLiveChat",
 
@@ -96,6 +99,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "EnterEmailError": "PairV2:Error",
   "WebView": "WebView",
   "JoinHomeSuccess": "PairV2:SetupAccount:Success:AddHome",
+  "CreateHome": "PairV2:CreateHome",
 
   // Debug
   "Debug": "Debug",
@@ -107,7 +111,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneCreate": "SceneCreate"
   "SceneEdit": "SceneEdit"
   "SceneImageSelection": "SceneImageSelection"
+  "SceneIconEdit": "SceneImageSelection"
   "SceneEditAction": "SceneEditAction"
+  "SceneActionEdit": "SceneEditAction"
   "SceneTimerEdit": "SceneTimerEdit"
 
   // Installation Guide
