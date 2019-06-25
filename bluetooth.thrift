@@ -15,10 +15,10 @@ enum BluetoothService {
 }
 
 struct BluetoothDevice {
-  1: string mac_address
-  2: list<BluetoothService> services = []
-  3: optional byte signal_strength
-  4: string device_id
+  1: list<BluetoothService> services = []
+  2: optional string mac_address
+  3: optional string device_id
+  4: optional byte signal_strength
 }
 
 enum MeshDeviceType {
