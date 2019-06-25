@@ -182,6 +182,7 @@ const string MOBILE_GUIDE_SCREEN_WIRE_PHOTOS = "screen_wire_photos"
 const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
 const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
+const string MOBILE_GUIDE_SECTION_TOOLS_AND_SAFETY = "section_tools_and_safety"
 const string MOBILE_GUIDE_SECTION_WIRE_PHOTOS = "section_wire_photos"
 
 const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"

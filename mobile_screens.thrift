@@ -56,6 +56,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Coordinating": "ZendeskFAQ",
   "ZDKArticle": "ZendeskArticle",
   "LiveChat": "ZendeskLiveChat",
+  "MFMailComposeInternal": "MailComposer",
 
   // Photos
   "PhotosManageConfig": "Photos:Manage",
