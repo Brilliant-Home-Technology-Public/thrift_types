@@ -32,6 +32,17 @@ pipeline {
     }
   }
   post {
+    always {
+      script {
+        // Manually set the build result to success so we can calculate
+        // "back to normal". Jenkins doesn't do this automatically until the
+        // build is fully completed.
+        if (currentBuild.result == null) {
+            currentBuild.result = 'SUCCESS'
+        }
+      }
+      sendGoogleChatNotifications()
+    }
     failure {
       emailext(
         subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
@@ -44,4 +55,24 @@ pipeline {
       )
     }
   }
+}
+
+def sendGoogleChatNotifications() {
+  if ("${env.GIT_BRANCH}" != "master" ) {
+    return
+  }
+  googlechatnotification(
+    url: 'id:google_chat_jenkins_build_room_url',
+    message: "*FAILED* '${env.JOB_NAME} build #${env.BUILD_NUMBER}' - ${env.BUILD_URL}",
+    notifyFailure: true,
+    // Will post all messages under JOB_NAME to the same thread.
+    sameThreadNotification: true
+  )
+  googlechatnotification(
+    url: 'id:google_chat_jenkins_build_room_url',
+    message: "'${env.JOB_NAME}' back to normal (Build #${env.BUILD_NUMBER}) - ${env.BUILD_URL}",
+    notifyBackToNormal: true,
+    // Will post all messages under JOB_NAME to the same thread.
+    sameThreadNotification: true
+  )
 }
