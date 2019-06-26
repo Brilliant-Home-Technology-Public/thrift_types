@@ -44,7 +44,7 @@ $(PY_OUTPUT_DIR)/%.py_dummy_target: $(REPO_ROOT)/%.thrift $(PY_OUTPUT_DIR_DUMMY_
 src/thrift_types: $(PY_DUMMY_TARGETS)
 	@# The Python generation creates an __init__.py in the `src` directory, which we do not
 	@# want.
-	rm -f $(SRC_DIR)/__init__.py
+	rm $(SRC_DIR)/__init__.py
 	@echo Finished making py sources
 
 clean_py_gen:
