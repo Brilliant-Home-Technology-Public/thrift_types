@@ -9,7 +9,7 @@ include "peripheral_interface.thrift"
 struct LifxConfigurationPeripheralInterface {
     1: string owner
     2: configuration.ThirdpartyIntegrationState thirdparty_integration_state
-    3: bool is_enabled
+    3: optional bool is_enabled
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
