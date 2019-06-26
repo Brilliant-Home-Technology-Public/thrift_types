@@ -26,6 +26,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Favorites": "Favorites",
   "MusicFavorites": "Favorites",
   "RemoveBrilliantControl": "RemoveBrilliantControl",
+  "RemoteVideo": "RemoteVideo"
 
   // Account
   "EditAccount": "AccountSettings",

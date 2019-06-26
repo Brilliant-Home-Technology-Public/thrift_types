@@ -21,6 +21,8 @@ const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation
 const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
+const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
+const string MOBILE_LIVEVIEW_SESSION_REPORT_DEBUG_EVENT_TABLE_NAME = "mobile_liveview_session_debug_report"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
@@ -435,3 +437,34 @@ struct MobileUnlockAttemptEvent {
   8: string user_id
 }
 
+struct MobileLiveviewSessionReportEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string network_type
+  8: string session_id
+  9: string farthest_state
+  10: string termination_reason
+  11: i64 session_time_elapsed_seconds
+  12: bool local_connection
+}
+
+struct MobileLiveviewSessionReportDebugEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string network_type
+  8: string session_id
+  9: string farthest_state
+  10: string termination_reason
+  11: i64 session_time_elapsed_seconds
+  12: bool local_connection
+  13: string wifi_ssid
+  14: string ice_candidates
+}
