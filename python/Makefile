@@ -12,7 +12,8 @@ REPO_ROOT = $(abspath $(PWD)/..)
 # Thrift generation of Python files #
 #####################################
 SOURCES := $(shell cd $(REPO_ROOT); find . -type f -name '*.thrift')
-PY_OUTPUT_DIR = $(PWD)/src/thrift_types
+SRC_DIR = $(PWD)/src
+PY_OUTPUT_DIR = $(SRC_DIR)/thrift_types
 THIRDPARTY_BINARIES_DIR ?= $(abspath $(REPO_ROOT)/..)/thirdparty-binaries
 THRIFT_COMPILER ?= $(THIRDPARTY_BINARIES_DIR)/pre-built/current_platform/thrift/bin/thrift
 
