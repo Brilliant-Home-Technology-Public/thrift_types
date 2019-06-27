@@ -65,6 +65,7 @@ const string MESH_CONFIG_IDENTIFIER = "mesh_configuration"
 const string BLE_PERIPHERAL_IDENTIFIER = "ble_peripheral"
 const string LIFX_CONFIG_IDENTIFIER = "lifx_configuration"
 const string LIFX_IDENTIFIER = "lifx"
+const string MOBILE_CONFIGURATION_IDENTIFIER = "mobile_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -174,6 +175,7 @@ enum PeripheralType {
   MESH_CONFIGURATION = 61,
   BLE = 62,
   LIFX_CONFIGURATION = 63,
+  MOBILE_CONFIGURATION = 64,
 }
 
 enum PeripheralStatus {
