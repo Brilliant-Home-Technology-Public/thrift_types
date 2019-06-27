@@ -6,8 +6,9 @@ include "../mobile_configuration.thrift"
 include "peripheral_interface.thrift"
 
 struct MobileConfigurationPeripheralInterface {
-  1: string phone_name
-  2: mobile_configuration.Profiles profiles_on_phone
+  1: string device_name
+  2: string mobile_device_type
+  3: mobile_configuration.Profiles profiles
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
