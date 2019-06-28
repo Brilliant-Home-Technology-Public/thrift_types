@@ -453,6 +453,7 @@ struct MobileLiveviewSessionReportEvent {
   10: string termination_reason
   11: i64 session_time_elapsed_seconds
   12: bool local_connection
+  13: i64 connection_time_elapsed_seconds
 }
 
 struct MobileLiveviewSessionReportDebugEvent {
@@ -470,4 +471,5 @@ struct MobileLiveviewSessionReportDebugEvent {
   12: bool local_connection
   13: string wifi_ssid
   14: string ice_candidates
+  15: i64 connection_time_elapsed_seconds
 }
