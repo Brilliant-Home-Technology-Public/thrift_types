@@ -78,3 +78,7 @@ struct WebAPIEndpoint {
   3: i32 port
   4: i32 authenticated_client_port
 }
+
+struct AvailableDetailedDiscoveryModes {
+  1: list<ThirdpartyDeviceType> discovery_modes
+}
