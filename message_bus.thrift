@@ -105,7 +105,9 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     LIFX_IDENTIFIER,
 ]
 
-const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = []
+const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
+    CONFIGURATION_VIRTUAL_DEVICE,
+]
 
 struct SentinelValue {}
 const SentinelValue OWNER_DEVICE_IDENTIFIER = {}
