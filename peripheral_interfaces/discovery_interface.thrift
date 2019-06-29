@@ -11,6 +11,7 @@ struct DiscoveryPeripheralInterface {
   3: bool discovery_mode_available
   4: discovery.ThirdpartyDeviceInterfaces available_thirdparty_services
   5: discovery.WebAPIEndpoint web_api_service
+  6: discovery.AvailableDetailedDiscoveryModes detailed_discovery_modes_available
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
