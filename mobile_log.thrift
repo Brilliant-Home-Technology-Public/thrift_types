@@ -21,6 +21,7 @@ const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation
 const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
+const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_DEBUG_EVENT_TABLE_NAME = "mobile_liveview_session_debug_report"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
@@ -438,6 +439,18 @@ struct MobileUnlockAttemptEvent {
   6: string screen_name
   7: MobileUnlockResult unlock_result
   8: string user_id
+}
+
+struct MobileLiveviewSessionFeedbackEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string network_type
+  8: string session_id
+  9: i32 quality_level
 }
 
 struct MobileLiveviewSessionReportEvent {
