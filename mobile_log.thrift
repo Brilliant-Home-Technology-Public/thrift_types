@@ -451,6 +451,7 @@ struct MobileLiveviewSessionFeedbackEvent {
   7: string network_type
   8: string session_id
   9: i32 quality_level
+  10: string screen_name
 }
 
 struct MobileLiveviewSessionReportEvent {
