@@ -1,4 +1,8 @@
 # thrift_types
+
+# Naming note
+Swift's compiler does not support namespacing so please be careful to avoid naming collisions within the thrift_types repo, as well as collisions with typical system classes like "Date", "Time", etc. as they will not be compilable in Swift.
+
 # Rules for thrift files in thrift_types
 We use the thrift_types submodule to share a data schema using a unified IDL(Thrift) across platforms. Each platform has its own idiosyncrasies so these rules need to be followed so as not to break other platforms.
 
