@@ -39,6 +39,7 @@ const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
 const string MOBILE_BUTTON_NAME_BEGIN = "begin"
+const string MOBILE_BUTTON_NAME_BRILLIANT_CONTROLS = "brilliant_controls"
 const string MOBILE_BUTTON_NAME_BRILLIANT_HELP = "brilliant_help"
 const string MOBILE_BUTTON_NAME_BUY_BRILLIANT = "buy_brilliant"
 const string MOBILE_BUTTON_NAME_CANCEL = "cancel"
