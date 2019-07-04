@@ -26,7 +26,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Favorites": "Favorites",
   "MusicFavorites": "Favorites",
   "RemoveBrilliantControl": "RemoveBrilliantControl",
-  "RemoteVideo": "RemoteVideo"
+  "LiveView": "LiveView",
 
   // Account
   "EditAccount": "AccountSettings",
@@ -149,7 +149,7 @@ const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
-const string MOBILE_OVERLAY_NAME_REMOTE_VIDEO_SURVEY = "RemoveVideoSurvey"
+const string MOBILE_OVERLAY_NAME_LIVE_VIEW_SURVEY = "LiveViewSurvey"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
 const string MOBILE_OVERLAY_NAME_RESET_SETTINGS = "ResetSettings"

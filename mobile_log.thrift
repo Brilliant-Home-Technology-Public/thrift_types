@@ -24,6 +24,7 @@ const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_DEBUG_EVENT_TABLE_NAME = "mobile_liveview_session_debug_report"
+const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
@@ -77,6 +78,7 @@ const string MOBILE_BUTTON_NAME_HOME_MANAGEMENT = "home_management"
 const string MOBILE_BUTTON_NAME_INSTALL_BRILLIANT = "install_brilliant"
 const string MOBILE_BUTTON_NAME_JOIN_ANOTHER_HOME = "join_another_home"
 const string MOBILE_BUTTON_NAME_LIVE_CHAT = "live_chat"
+const string MOBILE_BUTTON_NAME_LIVE_VIEW = "live_view"
 const string MOBILE_BUTTON_NAME_LOCK_APP = "lock_app"
 const string MOBILE_BUTTON_NAME_LOG_IN = "log_in"
 const string MOBILE_BUTTON_NAME_LOG_OUT = "log_out"
@@ -86,6 +88,7 @@ const string MOBILE_BUTTON_NAME_NEXT = "next"
 const string MOBILE_BUTTON_NAME_OK = "ok"
 const string MOBILE_BUTTON_NAME_OPEN_SONOS = "open_sonos"
 const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
+const string MOBILE_BUTTON_NAME_RETRY = "retry"
 const string MOBILE_BUTTON_NAME_REMOVE_CONTROL = "remove_control"
 const string MOBILE_BUTTON_NAME_REMOVE_THIRDPARTY_DEVICE = "remove_thirdparty_device"
 const string MOBILE_BUTTON_NAME_RESET_SETTINGS = "reset_settings"
@@ -129,6 +132,7 @@ const string MOBILE_NAME_MODIFIER_ADD_HOME = "AddHome"
 const string MOBILE_NAME_MODIFIER_PAIR = "Pair"
 const string MOBILE_NAME_MODIFIER_SCENE_ACTION = "SceneAction"
 const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
+const string MOBILE_NAME_MODIFIER_OVERLAY = "Overlay"
 // END NAME MODIFIERS
 
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS
@@ -139,6 +143,8 @@ const string MOBILE_ERROR_REASON_WEB_API = "WebAPI error"
 const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_LOAD_ERROR = "State Manager Cache Load Error"
 const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_SAVE_ERROR = "State Manager Cache Save Error"
 const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_CLEAR_ERROR = "State Manager Cache Clear Error"
+const string MOBILE_ERROR_REASON_CONTROL_ENDED = "ControlEnded"
+const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 // END MOBILE ERROR SHORT REASON CONSTANTS
 
 enum MobileErrorEventType {
@@ -156,6 +162,7 @@ enum MobileErrorEventType {
   FAILED_PAIRING_CREATE_HOME = 12
   UPLOAD_PHOTO_ERROR = 13
   FAILED_GET_ICE_SERVERS = 14
+  LIVE_VIEW_DISCONNECTED = 15
 }
 
 enum MobileEventDeviceType {
@@ -487,4 +494,16 @@ struct MobileLiveviewSessionReportDebugEvent {
   13: string wifi_ssid
   14: string ice_candidates
   15: i64 connection_time_elapsed_seconds
+}
+
+struct MobileLiveviewUsageReportEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: bool hold_to_talk_toggled
+  8: bool sound_toggled
+  9: string session_id
 }
