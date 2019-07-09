@@ -293,6 +293,7 @@ const string UI_BUTTON_NAME_GESTURE_REDO = "redo"
 const string UI_BUTTON_NAME_LOCK_SCREEN_MUSIC_NOW_PLAYING_ON = "lock_screen_music_now_playing_on"
 const string UI_BUTTON_NAME_LOCK_SCREEN_MUSIC_NOW_PLAYING_OFF = "lock_screen_music_now_playing_off"
 const string UI_BUTTON_NAME_COLOR_CHANGE = "color_change"
+const string UI_BUTTON_NAME_CONFIRM_RESET_ALL_SETTINGS = "confirm:reset_all_settings"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
