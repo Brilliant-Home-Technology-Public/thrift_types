@@ -30,6 +30,8 @@ const string SCENE_CONFIG_IDENTIFIER = "scene_configuration"
 const string SCENE_EXECUTION_IDENTIFIER = "scene_execution_peripheral"
 const string SMARTTHINGS_CONFIG_IDENTIFIER = "smartthings_configuration"
 const string SMARTTHINGS_IDENTIFIER = "smartthings"
+const string SMARTTHINGS_SCHEMA_CONNECTOR_CONFIG_IDENTIFIER = "smartthings_schema_connector_configuration"
+const string SMARTTHINGS_SCHEMA_CONNECTOR_IDENTIFIER = "smartthings_schema_connector"
 const string SONOS_CONFIG_IDENTIFIER = "sonos_configuration"
 const string SONOS_IDENTIFIER = "sonos"
 const string SONOS_MUSIC_LIRBARY_PREFIX = "sonos_music_library"
@@ -178,6 +180,7 @@ enum PeripheralType {
   BLE = 62,
   LIFX_CONFIGURATION = 63,
   MOBILE_CONFIGURATION = 64,
+  SMARTTHINGS_SCHEMA_CONNECTOR_CONFIGURATION = 65,
 }
 
 enum PeripheralStatus {
