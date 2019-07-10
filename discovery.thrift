@@ -30,6 +30,9 @@ const string SONOS_GROUP_ID_ATTRIBUTE = "GROUP_ID"
 const string SONOS_WEBSOCKET_ATTRIBUTE = "WEBSOCK.SMARTSPEAKER.AUDIO"
 const string SONOS_HOUSEHOLD_ID_ATTRIBUTE = "HOUSEHOLD.SMARTSPEAKER.AUDIO"
 
+// Attribute name for LIFX Device IDs
+const string LIFX_DEVICE_ID_ATTRIBUTE_NAME = "lifx_device_id"
+
 struct DeviceInterface {
   1: string device_id
   2: string ip_address # Remote bridge ip address
