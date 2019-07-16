@@ -494,6 +494,7 @@ struct MobileLiveviewSessionReportDebugEvent {
   13: string wifi_ssid
   14: string ice_candidates
   15: i64 connection_time_elapsed_seconds
+  16: string remote_video_params
 }
 
 struct MobileLiveviewUsageReportEvent {
