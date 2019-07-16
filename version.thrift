@@ -2,9 +2,10 @@ namespace py thrift_types.version
 namespace java thrift_types.version
 
 // MOST RECENT VERSION:
-const string VERSION_20190614 = "20190614"
+const string VERSION_20190716 = "20190716"
 
 // OLD VERSIONS:
+const string VERSION_20190614 = "20190614"
 const string VERSION_20190604 = "20190604"
 const string VERSION_20190530 = "20190530"
 const string VERSION_20190412 = "20190412"
