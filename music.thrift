@@ -32,3 +32,14 @@ struct Playlists {
 struct Speakers {
   1: list<string> speaker_ids
 }
+
+enum RepeatMode {
+  UNKNOWN = 0,
+  OFF = 1,
+  ON = 2,
+  ONE = 3,
+}
+
+struct AvailableRepeatModes {
+  1: list<RepeatMode> available_repeat_modes
+}
