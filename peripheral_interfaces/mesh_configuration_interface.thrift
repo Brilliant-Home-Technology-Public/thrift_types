@@ -2,6 +2,7 @@ namespace py thrift_types.peripheral_interfaces.mesh_configuration_interface
 namespace java thrift_types.peripheral_interfaces.mesh_configuration_interface
 
 include "../bluetooth.thrift"
+include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
@@ -19,5 +20,5 @@ const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'MeshConfigurationPeripheralInterface',
   'peripheral_type': message_bus.PeripheralType.MESH_CONFIGURATION,
   'dynamic_variable_prefix': bluetooth.MESH_CONFIG_VARIABLE_PREFIX,
-  'dynamic_variable_ttype': 'bluetooth.MeshDeviceConfig',
+  'dynamic_variable_ttype': 'configuration.PeripheralInfo',
 }

@@ -56,6 +56,10 @@ struct Element {
   3: list<Model> models
 }
 
+struct Elements {
+  1: list<Element> elements
+}
+
 struct MeshDeviceConfig {
   1: string device_id		// The UUID of the device
   2: MeshDeviceType type
