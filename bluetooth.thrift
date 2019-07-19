@@ -50,14 +50,14 @@ struct Model {
   2: list<i16> app_key_indexes	// The app keys which are bound to this model
 }
 
-struct Element {
+struct MeshElement {
   1: i16 index			// The index of the element in the mesh device
   2: i16 unicast_address
   3: list<Model> models
 }
 
-struct Elements {
-  1: list<Element> elements
+struct MeshElements {
+  1: list<MeshElement> mesh_elements
 }
 
 struct MeshDeviceConfig {
@@ -66,7 +66,7 @@ struct MeshDeviceConfig {
   3: i16 version_id		// The version of this device
   4: string device_key		// The device key will be required for appkey rotation
   5: list<i16> net_key_indexes	// This represents what networks the mesh device is part of
-  6: list<Element> elements	// Elements on a mesh device -> see below for Element definition
+  6: list<MeshElement> mesh_elements	// Elements on a mesh device -> see below for Element definition
   7: string relay_device_id	// The device from which we can reach the mesh device
 }
 
