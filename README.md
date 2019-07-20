@@ -6,7 +6,7 @@ Swift's compiler does not support namespacing so please be careful to avoid nami
 # Rules for thrift files in thrift_types
 We use the thrift_types submodule to share a data schema using a unified IDL(Thrift) across platforms. Each platform has its own idiosyncrasies so these rules need to be followed so as not to break other platforms.
 
-**VERSION_UPDATE** = Steps followed here: https://github.com/ramjet-labs/lib/tree/master/versioning
+**VERSION_UPDATE** = Steps followed here: https://github.com/ramjet-labs/lib/tree/master/src/lib/versioning
 Things that require a version update (AND MIGRATION):
 * Adding a new non-optional field to an existing struct
 * Removing a non-optional field
