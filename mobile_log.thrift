@@ -66,6 +66,7 @@ const string MOBILE_BUTTON_NAME_EXIT_DEMO_MODE = "exit_demo_mode"
 const string MOBILE_BUTTON_NAME_FAQ = "faq"
 const string MOBILE_BUTTON_NAME_FINISH_SETUP = "finish_setup"
 const string MOBILE_BUTTON_NAME_FORGOT_PIN = "forgot_pin"
+const string MOBILE_BUTTON_NAME_FORGOT_PASSCODE = "forgot_passcode"
 const string MOBILE_BUTTON_NAME_FORGET_HOME = "forget_home"
 const string MOBILE_BUTTON_NAME_GET_STARTED = "get_started"
 const string MOBILE_BUTTON_NAME_GO_TO_APP_STORE = "go_to_app_store"
@@ -133,6 +134,8 @@ const string MOBILE_NAME_MODIFIER_PAIR = "Pair"
 const string MOBILE_NAME_MODIFIER_SCENE_ACTION = "SceneAction"
 const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
 const string MOBILE_NAME_MODIFIER_OVERLAY = "Overlay"
+const string MOBILE_NAME_MODIFIER_RESET = "Reset"
+const string MOBILE_NAME_MODIFIER_CONFIRM = "Confirm"
 // END NAME MODIFIERS
 
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS

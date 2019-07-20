@@ -41,6 +41,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ForgotPin": "ForgotPin",
   "SettingsDemoMode": "DemoMode",
   "SettingsForgetHome": "ForgetHome",
+  "HomeLogin": "HomeLogin", // Use modifier for forgot passcode flow
   // Home Management
   "HomeManagement": "HomeManagement",
   "HomeManagementDevices": "HomeManagement",
