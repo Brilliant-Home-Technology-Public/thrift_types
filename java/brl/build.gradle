@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+
+repositories {
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion 21
+        targetSdkVersion 29
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        beta {
+            minifyEnabled false
+        }
+        debug {
+            minifyEnabled false
+        }
+        development {
+            minifyEnabled false
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('../libthrift-1.0.0.jar')
+    implementation group: 'org.slf4j', name: 'slf4j-nop', version: '1.7.25'
+}
