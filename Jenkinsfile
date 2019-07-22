@@ -4,30 +4,60 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: "2"))
   }
   stages {
-    stage("Cleanup Old Environment") {
-      steps {
-        // Remove all untracked files and directories:
-        // -d = Clean untracked directories as well as files.
-        // -x = Also delete files that are usually ignored.
-        sh "git clean --force -d -x ./"
-      }
-    }
+    stage("Language Compilation") {
+      parallel {
+        stage("python") {
+          stages {
+            stage("Cleanup Old Environment") {
+              steps {
+                // Remove all untracked files and directories:
+                // -d = Clean untracked directories as well as files.
+                // -x = Also delete files that are usually ignored.
+                sh "git clean --force -d -x ./"
+              }
+            }
+            stage("Build Python Files") {
+              steps {
+                sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C python"
+              }
+            }
 
-    stage("Build Python Files") {
-      steps {
-        sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C python"
-      }
-    }
+            stage("Build Wheel") {
+              steps {
+                sh "make -C python wheel"
+              }
+            }
 
-    stage("Build Wheel") {
-      steps {
-        sh "make -C python wheel"
-      }
-    }
-
-    stage("Install Package") {
-      steps {
-        sh "make -C python test_install_package"
+            stage("Install Package") {
+              steps {
+                sh "make -C python test_install_package"
+              }
+            }
+          }
+        }
+        stage("swift") {
+          agent {label "mac"}
+          stages {
+            stage("Cleanup Old Environment") {
+              steps {
+                // Remove all untracked files and directories:
+                // -d = Clean untracked directories as well as files.
+                // -x = Also delete files that are usually ignored.
+                sh "git clean --force -d -x ./"
+              }
+            }
+            stage("Build Swift Files") {
+              steps {
+                sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C swift"
+              }
+            }
+            stage("Build BRL Module") {
+              steps {
+                sh "make -C swift test_project_compilation"
+              }
+            }
+          }
+        }
       }
     }
   }
