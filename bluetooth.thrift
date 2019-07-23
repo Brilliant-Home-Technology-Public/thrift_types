@@ -35,6 +35,10 @@ struct NetKeys {
   1: list<NetKey> keys
 }
 
+struct NetKeyIndexes {
+  1: list<i16> net_key_indexes
+}
+
 struct AppKey {
   1: i16 index
   2: i16 bound_net_key_index
