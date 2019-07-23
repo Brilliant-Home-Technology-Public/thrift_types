@@ -35,7 +35,7 @@ struct IPv4AddressInfo {
 struct IPv6AddressInfo {
   1: string address
   2: i16 prefix_length
-  3: string gateway
+  3: optional string gateway
 }
 
 struct Network {
