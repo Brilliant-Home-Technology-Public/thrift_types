@@ -476,6 +476,8 @@ struct MobileLiveviewSessionReportEvent {
   11: i64 session_time_elapsed_seconds
   12: bool local_connection
   13: i64 connection_time_elapsed_seconds
+  14: string local_candidate_type
+  15: string remote_candidate_type
 }
 
 struct MobileLiveviewSessionReportDebugEvent {
@@ -495,6 +497,8 @@ struct MobileLiveviewSessionReportDebugEvent {
   14: string ice_candidates
   15: i64 connection_time_elapsed_seconds
   16: string remote_video_params
+  17: string local_candidate_type
+  18: string remote_candidate_type
 }
 
 struct MobileLiveviewUsageReportEvent {
