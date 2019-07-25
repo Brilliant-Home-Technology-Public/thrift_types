@@ -20,6 +20,10 @@ struct MusicPeripheralInterface {
   12: music.Speakers speakers
   13: bool can_seek
   14: bool can_pause     // can pause the current track (would be false for something like line-in)
+  15: music.AvailableRepeatModes available_repeat_modes
+  16: music.RepeatMode repeat_mode
+  17: bool can_shuffle   // if shuffle can be enabled or not
+  18: bool shuffle       // shuffle mode on or off
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
