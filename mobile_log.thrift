@@ -135,6 +135,7 @@ const string MOBILE_NAME_MODIFIER_SCENE_ACTION = "SceneAction"
 const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
 const string MOBILE_NAME_MODIFIER_OVERLAY = "Overlay"
 const string MOBILE_NAME_MODIFIER_RESET = "Reset"
+const string MOBILE_NAME_MODIFIER_RESET_PASSCODE = "ResetPasscode"
 const string MOBILE_NAME_MODIFIER_CONFIRM = "Confirm"
 // END NAME MODIFIERS
 

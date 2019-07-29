@@ -91,7 +91,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChooseHome": "PairV2:JoinHome", // Use modifier for add home flow
   "PairingLoading": "PairV2:Login:Loading",
   "SetupLoading": "PairV2:Login:Loading",
-  "EnterCode": "PairV2:Login:Verification", // User modifier for error and add home flow
+  "EnterCode": "PairV2:Login:Verification", // User modifier for error, add home flow and reset passcode
   "EnterCodeSuccess": "PairV2:Login:Success",
   "SelectAccount": "PairV2:Login:ChooseAccount",
   "CreateAccount": "PairV2:Login:NewAccount",
