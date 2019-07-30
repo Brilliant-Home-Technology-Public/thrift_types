@@ -28,6 +28,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantControl": "RemoveBrilliantControl",
   "LiveView": "LiveView",
 
+  // Color
+  "LightColor": "LightColor",
+
   // Account
   "EditAccount": "AccountSettings",
   "EditAccountEditSettings": "AccountSettings",
