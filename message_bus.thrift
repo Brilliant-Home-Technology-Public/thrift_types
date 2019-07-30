@@ -66,6 +66,8 @@ const string BLE_PERIPHERAL_IDENTIFIER = "ble_peripheral"
 const string LIFX_CONFIG_IDENTIFIER = "lifx_configuration"
 const string LIFX_IDENTIFIER = "lifx"
 const string MOBILE_CONFIGURATION_IDENTIFIER = "mobile_configuration"
+const string SCHLAGE_IDENTIFIER = "schlage"
+const string SCHLAGE_CONFIG_IDENTIFIER = "schlage_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -105,6 +107,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     SOMFY_IDENTIFIER,
     AUGUST_IDENTIFIER,
     LIFX_IDENTIFIER,
+    SCHLAGE_IDENTIFIER,
 ]
 
 const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
@@ -181,6 +184,7 @@ enum PeripheralType {
   BLE = 62,
   LIFX_CONFIGURATION = 63,
   MOBILE_CONFIGURATION = 64,
+  SCHLAGE_CONFIGURATION = 65,
 }
 
 enum PeripheralStatus {
