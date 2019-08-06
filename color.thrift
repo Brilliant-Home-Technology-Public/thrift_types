@@ -15,6 +15,10 @@ struct Color {
   5: optional RGB rgb
 }
 
+struct ColorList {
+  1: list<Color> color_list
+}
+
 const Color WARM_WHITE = {
   "name": "Warm White",
   "temp": 454,
