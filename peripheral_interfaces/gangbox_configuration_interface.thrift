@@ -5,6 +5,7 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct GangboxConfigurationPeripheralInterface {
+  1: i32 expected_total_gang_count
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
