@@ -31,8 +31,8 @@ $(JAVA_OUTPUT_DIR_DUMMY_TARGET):
 # Java
 $(JAVA_OUTPUT_DIR)/%.java_dummy_target: $(REPO_ROOT)/%.thrift $(JAVA_OUTPUT_DIR_DUMMY_TARGET) $(THRIFT_COMPILER)
 	@echo Making java source for $<
-	mkdir -p $(JAVA_OUTPUT_DIR)/$(subst $(REPO_ROOT)/,,$(basename $<))
-	$(THRIFT_COMPILER) $(JAVA_CFLAGS) -out $(JAVA_OUTPUT_DIR)/$(subst $(REPO_ROOT)/,,$(basename $<)) $<
+	mkdir -p $(JAVA_OUTPUT_DIR)/$(subst $(REPO_ROOT)/,,$(dir $<))
+	$(THRIFT_COMPILER) $(JAVA_CFLAGS) -out $(JAVA_OUTPUT_DIR)/$(subst $(REPO_ROOT)/,,$(dir $<)) $<
 	@touch $@
 
 ## Generate the java files from thrift
