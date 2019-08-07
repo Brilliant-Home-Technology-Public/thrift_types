@@ -68,6 +68,7 @@ const string LIFX_IDENTIFIER = "lifx"
 const string MOBILE_CONFIGURATION_IDENTIFIER = "mobile_configuration"
 const string SCHLAGE_IDENTIFIER = "schlage"
 const string SCHLAGE_CONFIG_IDENTIFIER = "schlage_configuration"
+const string HOMEKIT_IDENTIFIER = "homekit_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -185,6 +186,7 @@ enum PeripheralType {
   LIFX_CONFIGURATION = 63,
   MOBILE_CONFIGURATION = 64,
   SCHLAGE_CONFIGURATION = 65,
+  HOMEKIT = 66,
 }
 
 enum PeripheralStatus {
