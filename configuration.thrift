@@ -381,6 +381,7 @@ struct Pin {
 
 struct PinnedOptionsConfig {
   1: list<string> scene_ids = []
+  2: optional map<i32, Pin> pin_order
 }
 
 // Intercom settings
