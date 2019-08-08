@@ -257,6 +257,7 @@ struct MobileDeviceLevelEvent {
   9: MobileLevelType level_type
   10: i32 level
   11: string user_id
+  12: string app_class
 }
 
 struct MobileDeviceSelectEvent {
@@ -271,6 +272,7 @@ struct MobileDeviceSelectEvent {
   9: MobileSelectType select_type
   10: string value
   11: string user_id
+  12: string app_class
 }
 
 struct MobileDeviceToggleEvent {
@@ -286,6 +288,7 @@ struct MobileDeviceToggleEvent {
   10: bool on
   11: bool aggregate
   12: string user_id
+  13: string app_class
 }
 
 struct MobileErrorEvent {
@@ -298,6 +301,7 @@ struct MobileErrorEvent {
   7: string reason // May contain specific information (timestamps, deviceIds, etc)
   9: string short_reason // Should be an aggregatable string (no timestamps, device ids, etc)
   10: string user_id
+  11: string app_class
 }
 
 struct MobileInstallationEndedEvent {
@@ -311,6 +315,7 @@ struct MobileInstallationEndedEvent {
   8: string sku
   9: string guide_version
   10: string exit_section
+  11: string app_class
 }
 
 struct MobileInstallationFeedbackEvent {
@@ -326,6 +331,7 @@ struct MobileInstallationFeedbackEvent {
   10: string helpfulness
   11: string additional_help
   12: string free_response // TO BE EVENTUALLY DEPRECATED
+  13: string app_class
 }
 
 struct MobileInstallationStartedEvent {
@@ -337,6 +343,7 @@ struct MobileInstallationStartedEvent {
   6: string user_id
   7: string sku
   8: string guide_version
+  9: string app_class
 }
 
 struct MobileJoinedHomeEvent {
@@ -346,6 +353,7 @@ struct MobileJoinedHomeEvent {
   4: string home_id
   5: string device_id
   6: string user_id
+  7: string app_class
 }
 
 struct MobileOfflineEvent {
@@ -356,6 +364,7 @@ struct MobileOfflineEvent {
   5: string device_id
   6: string user_id
   7: MobileOfflineStatus offline_status
+  8: string app_class
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileOverlayButtonTappedEvent
@@ -371,6 +380,7 @@ struct MobileOverlayButtonTappedEvent {
   7: string overlay_name
   8: string button_name
   9: string user_id
+  10: string app_class
 }
 
 struct MobileOverlayViewEvent {
@@ -382,6 +392,7 @@ struct MobileOverlayViewEvent {
   6: string screen_name
   7: string overlay_name
   8: string user_id
+  9: string app_class
 }
 
 struct MobilePhotosActionEvent {
@@ -395,6 +406,7 @@ struct MobilePhotosActionEvent {
   8: MobilePhotosConfigType config_type
   9: string album_name
   10: string user_id
+  11: string app_class
 }
 
 
@@ -406,6 +418,7 @@ struct MobileSceneExecutedEvent {
   5: string device_id
   6: string screen_name
   7: string user_id
+  8: string app_class
 }
 
 struct MobileScreenViewEvent {
@@ -417,6 +430,7 @@ struct MobileScreenViewEvent {
   6: string screen_name
   7: string source_screen
   8: string user_id
+  9: string app_class
 }
 
 struct MobileSectionExpansionToggleEvent {
@@ -426,8 +440,9 @@ struct MobileSectionExpansionToggleEvent {
   4: string home_id
   5: string device_id
   6: string screen_name
-  8: bool expanding
   7: string user_id
+  8: bool expanding
+  9: string app_class
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileSimpleButtonTappedEvent
@@ -442,6 +457,7 @@ struct MobileSimpleButtonTappedEvent {
   6: string screen_name
   7: string button_name
   8: string user_id
+  9: string app_class
 }
 
 struct MobileUnlockAttemptEvent {
@@ -453,6 +469,7 @@ struct MobileUnlockAttemptEvent {
   6: string screen_name
   7: MobileUnlockResult unlock_result
   8: string user_id
+  9: string app_class
 }
 
 struct MobileLiveviewSessionFeedbackEvent {
@@ -466,6 +483,7 @@ struct MobileLiveviewSessionFeedbackEvent {
   8: string session_id
   9: i32 quality_level
   10: string screen_name
+  11: string app_class
 }
 
 struct MobileLiveviewSessionReportEvent {
@@ -484,6 +502,7 @@ struct MobileLiveviewSessionReportEvent {
   13: i64 connection_time_elapsed_seconds
   14: string local_candidate_type
   15: string remote_candidate_type
+  16: string app_class
 }
 
 struct MobileLiveviewSessionReportDebugEvent {
@@ -505,6 +524,7 @@ struct MobileLiveviewSessionReportDebugEvent {
   16: string remote_video_params
   17: string local_candidate_type
   18: string remote_candidate_type
+  19: string app_class
 }
 
 struct MobileLiveviewUsageReportEvent {
@@ -517,4 +537,5 @@ struct MobileLiveviewUsageReportEvent {
   7: bool hold_to_talk_toggled
   8: bool sound_toggled
   9: string session_id
+  10: string app_class
 }
