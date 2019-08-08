@@ -260,6 +260,7 @@ struct Scene {
   6: Trigger trigger
   7: optional bool editable = true
   8: optional bool should_retry = false
+  9: optional bool hidden = false
 }
 
 // Alarm configuration
