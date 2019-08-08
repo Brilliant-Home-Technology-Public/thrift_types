@@ -354,6 +354,30 @@ struct SomfyIntegrationStates {
 
 // switch-ui HomeScreen Pinned Options Config
 
+enum PinType {
+  ADJUST_LIGHT = 0,
+  MUSIC = 1,
+  CLIMATE = 2,
+  PINNED_SCENE = 3,
+  INTERCOM = 4,
+  SCENES = 5,
+  DEVICES = 6,
+  SETTINGS = 7,
+  ALEXA_MUTE = 8,
+  HOME = 9,
+  SHADES = 10,
+  ALARM = 11,
+  CAMERAS = 12,
+  LOCKS = 13,
+  DOORBELL = 14,
+  ADD_DEVICE = 15,
+}
+
+struct Pin {
+  1: PinType type
+  2: optional string id
+}
+
 struct PinnedOptionsConfig {
   1: list<string> scene_ids = []
 }
