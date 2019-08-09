@@ -50,7 +50,7 @@ struct AppKeys {
 }
 
 struct Model {
-  1: i16 id			// 1000 for onoff model, 1002 for level model
+  1: i16 id			// 0x1000 for onoff model, 0x1002 for level model
   2: list<i16> app_key_indexes	// The app keys which are bound to this model
 }
 
