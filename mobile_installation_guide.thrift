@@ -57,6 +57,8 @@ enum GuideFieldType {
   STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
   STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
   FREEFORM_TEXT = 10
+  SWITCH_GESTURE = 11
+  BLUETOOTH_STATUS = 12 // Bluetooth Icon and Status String
 }
  
 struct GuideOption {
@@ -100,6 +102,7 @@ enum GuideScreenType {
   HORIZONTAL_SCROLLING = 3
   WIRE_PHOTOS = 4
   INSTALL_SUCCESS = 5
+  SWITCH_PROVISIONING = 6
 }
  
 struct GuideLoads {
