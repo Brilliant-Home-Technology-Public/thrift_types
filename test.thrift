@@ -13,6 +13,8 @@ struct ComplexStruct {
   4: map<string, i64> map_field
   5: map<string, map<string, SimpleStruct>> nested_map
   6: list<list<i64>> nested_list_field
+  7: optional binary binary_field
+  8: optional map<binary, binary> binary_map
 }
 
 service TestService {
