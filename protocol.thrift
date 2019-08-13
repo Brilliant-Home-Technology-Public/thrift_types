@@ -41,13 +41,15 @@ struct StatusResponse {
 
 struct Request {
   1: string command,
-  2: string args_serialized
+  2: optional string args_serialized
   3: bool is_oneway = false
+  4: optional binary args_serialized_binary
 }
 
 struct Response {
   1: StatusResponse status,
   2: optional string result_serialized /* IE: serialized message_bus.ResponseResult */
+  3: optional binary result_serialized_binary
 }
 
 struct Hello {
