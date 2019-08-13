@@ -29,7 +29,7 @@ enum MeshDeviceType {
 
 struct NetKey {
   1: i16 index
-  2: string key
+  2: string key // 32 digit hexadecimal
 }
 
 struct NetKeys {
@@ -43,7 +43,7 @@ struct NetKeyIndexes {
 struct AppKey {
   1: i16 index
   2: i16 bound_net_key_index
-  3: string key
+  3: string key // 32 digit hexadecimal
 }
 
 struct AppKeys {
