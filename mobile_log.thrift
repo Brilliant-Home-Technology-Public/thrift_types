@@ -525,6 +525,12 @@ struct MobileLiveviewSessionReportDebugEvent {
   17: string local_candidate_type
   18: string remote_candidate_type
   19: string app_class
+  20: i64 session_start_ts
+  21: i64 ice_servers_ts
+  22: i64 ice_gathering_ts
+  23: i64 updated_peripheral_ts
+  24: i64 peer_updated_ts
+  25: i64 connected_ts
 }
 
 struct MobileLiveviewUsageReportEvent {
