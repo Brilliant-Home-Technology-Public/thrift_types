@@ -16,5 +16,7 @@ struct DiscoveryPeripheralInterface {
 
 const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'DiscoveryPeripheralInterface',
-  'peripheral_type': message_bus.PeripheralType.DISCOVERY
+  'peripheral_type': message_bus.PeripheralType.DISCOVERY,
+  'dynamic_variable_prefix': discovery.SERVICE_VARIABLE_PREFIX,
+  'dynamic_variable_ttype': 'discovery.Service'
 }

@@ -1,6 +1,8 @@
 namespace py thrift_types.discovery
 namespace java thrift_types.discovery
 
+const string SERVICE_VARIABLE_PREFIX = "service:"
+
 const string WEMO_DIMMER_MODEL_NAME = "Dimmer"
 const string WEMO_INSIGHT_MODEL_NAME = "Insight"
 // The Wemo Smart Plug and Mini Smart Plug broadcast with the same name for discovery
@@ -84,4 +86,11 @@ struct WebAPIEndpoint {
 
 struct AvailableDetailedDiscoveryModes {
   1: list<ThirdpartyDeviceType> discovery_modes
+}
+
+struct Service {
+  1: string name
+  2: string service_type
+  3: i32 port
+  4: map<string, string> properties
 }
