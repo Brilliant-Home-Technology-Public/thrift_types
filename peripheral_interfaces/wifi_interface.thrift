@@ -13,6 +13,7 @@ struct WifiPeripheralInterface {
   5: bool connectivity_ping_successful
   6: bool disable_no_wifi_alert
   7: bool ntp_synced
+  8: wifi.HostedNetwork hosted_network
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {

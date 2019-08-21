@@ -51,3 +51,9 @@ struct Network {
 struct AvailableNetworks {
   1: list<Network> networks
 }
+
+struct HostedNetwork {
+  1: optional string name
+  2: optional string passphrase
+  3: optional binary vendor_elements
+}
