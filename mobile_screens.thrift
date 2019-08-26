@@ -29,7 +29,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LiveView": "LiveView",
 
   // Color
-  "LightColor": "LightColor",
+  "LightColor": "LightColor", // deprecated
+  "PresetColorPicker": "PresetColorPicker",
+  "ColorPicker": "ColorPicker",
 
   // Account
   "EditAccount": "AccountSettings",
