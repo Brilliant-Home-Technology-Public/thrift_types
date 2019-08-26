@@ -10,6 +10,7 @@ struct HomeKitPeripheralInterface {
   3: string setup_id
   4: string setup_code
   5: bool reset
+  6: bool paired
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
