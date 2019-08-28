@@ -25,6 +25,20 @@ struct Pong {
   2: i64 current_time
 }
 
+struct ReceiveUpdatedStateResponse {
+  1: map<string, message_bus.SubscriptionNotification> updated_states
+}
+
+struct KnownPeripheralState {
+  1: i64 timestamp
+  2: optional map<string, i64> variable_timestamps
+}
+
+struct KnownDeviceState {
+  1: i64 timestamp
+  2: optional map<string, KnownPeripheralState> peripheral_states
+}
+
 service RemoteBridgeService {
   message_bus.SetVariableResponse forward_set_variables_request(
       1: string device_id,
@@ -35,6 +49,14 @@ service RemoteBridgeService {
 
   void forward_notification(
       1: message_bus.SubscriptionNotification notification,
+  )
+
+  ReceiveUpdatedStateResponse receive_updated_state(
+      // The key should be the device id.
+      1: map<string, KnownDeviceState> known_states,
+      // Whether to only return information about the peripherals and variables requested,
+      // or all peripherals/variables for the provided devices.
+      2: bool targeted,
   )
 
   Pong ping()
