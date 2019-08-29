@@ -10,6 +10,9 @@ struct LifxConfigurationPeripheralInterface {
     1: string owner
     2: configuration.ThirdpartyIntegrationState thirdparty_integration_state
     3: optional bool is_enabled
+    4: optional string access_token
+    5: optional i64 expiration_date
+    6: optional string refresh_token
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
