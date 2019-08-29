@@ -118,6 +118,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DemoWalkthrough": "DemoWalkthrough"
 
   // Scenes
+  "SceneChooseAction": "SceneChooseAction"
+  "SceneCopy": "SceneCopy"
   "SceneCreate": "SceneCreate"
   "SceneEdit": "SceneEdit"
   "SceneImageSelection": "SceneImageSelection"
