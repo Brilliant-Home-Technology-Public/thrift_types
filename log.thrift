@@ -301,6 +301,7 @@ const string UI_BUTTON_NAME_MUSIC_WIDGET = "music_widget"
 const string UI_BUTTON_NAME_ALL_LIGHTS_ON = "all_lights_on"
 const string UI_BUTTON_NAME_ALL_LIGHTS_OFF = "all_lights_off"
 const string UI_BUTTON_NAME_DELETE_ROOM = "delete_room"
+const string UI_BUTTON_NAME_NEST_INDICATE_INTEREST = "nest_indicate_interest"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
