@@ -5,6 +5,9 @@ const string MOBILE_DEMO_SCREEN_PREFIX = "Demo:"
 const string MOBILE_UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
 
 const map<string,string> MOBILE_SCREEN_NAME_MAP = {
+  // SpecialDemo:
+  "StreamlinedDemo": "Launch:Demo:Streamlined"
+
   // Main Tabs
   "PhotosTab": "Photos",
   "ScenesTab": "Scenes",
@@ -136,6 +139,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGInstallSuccess": "InstallationGuide:Success"
   "IGOverview": "InstallationGuide:Overview"
   "InstallationArchive": "InstallationGuide:Archive"
+
+  // Switch Provisioning
+  "SwitchProvisioning": "SwitchProvisioning"
 }
 
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
