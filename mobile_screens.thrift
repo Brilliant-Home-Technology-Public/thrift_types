@@ -6,7 +6,7 @@ const string MOBILE_UNMAPPED_SCREEN_PREFIX = "[UNMAPPED]"
 
 const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // SpecialDemo:
-  "StreamlinedDemo": "Launch:Demo:Streamlined"
+  "StreamlinedDemo": "Launch:Demo:Streamlined",
 
   // Main Tabs
   "PhotosTab": "Photos",
@@ -118,27 +118,27 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Debug": "Debug",
 
   // Demo
-  "DemoWalkthrough": "DemoWalkthrough"
+  "DemoWalkthrough": "DemoWalkthrough",
 
   // Scenes
-  "SceneChooseAction": "SceneChooseAction"
-  "SceneCopy": "SceneCopy"
-  "SceneCreate": "SceneCreate"
-  "SceneEdit": "SceneEdit"
-  "SceneImageSelection": "SceneImageSelection"
-  "SceneIconEdit": "SceneImageSelection"
-  "SceneEditAction": "SceneEditAction"
-  "SceneActionEdit": "SceneEditAction"
-  "SceneTimerEdit": "SceneTimerEdit"
+  "SceneChooseAction": "SceneChooseAction",
+  "SceneCopy": "SceneCopy",
+  "SceneCreate": "SceneCreate",
+  "SceneEdit": "SceneEdit",
+  "SceneImageSelection": "SceneImageSelection",
+  "SceneIconEdit": "SceneImageSelection",
+  "SceneEditAction": "SceneEditAction",
+  "SceneActionEdit": "SceneEditAction",
+  "SceneTimerEdit": "SceneTimerEdit",
 
   // Installation Guide
-  "IGHorizontal": "InstallationGuide"
-  "IGVertical": "InstallationGuide"
-  "IGBarcode": "InstallationGuide:Barcode"
-  "IGWirePhotos": "InstallationGuide:WirePhotos"
-  "IGInstallSuccess": "InstallationGuide:Success"
-  "IGOverview": "InstallationGuide:Overview"
-  "InstallationArchive": "InstallationGuide:Archive"
+  "IGHorizontal": "InstallationGuide",
+  "IGVertical": "InstallationGuide",
+  "IGBarcode": "InstallationGuide:Barcode",
+  "IGWirePhotos": "InstallationGuide:WirePhotos",
+  "IGInstallSuccess": "InstallationGuide:Success",
+  "IGOverview": "InstallationGuide:Overview",
+  "InstallationArchive": "InstallationGuide:Archive",
 
   // Switch Provisioning
   "SwitchProvisioning": "SwitchProvisioning"
