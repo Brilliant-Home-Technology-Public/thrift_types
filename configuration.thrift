@@ -384,6 +384,10 @@ struct PinnedOptionsConfig {
   2: optional map<i32, Pin> pin_order
 }
 
+struct HomeScreenConfig {
+  1: map<i32, Pin> pin_order
+}
+
 // Intercom settings
 
 struct IntercomParameters {
