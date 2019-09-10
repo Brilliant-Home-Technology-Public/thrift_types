@@ -249,6 +249,7 @@ struct SceneAction {
   3: string device_id
   4: string peripheral_name
   5: map<string, string> variables
+  6: optional string name
 }
 
 struct Scene {
@@ -261,6 +262,16 @@ struct Scene {
   7: optional bool editable = true
   8: optional bool should_retry = false
   9: optional bool hidden = false
+}
+
+struct ThirdpartyScene {
+  1: string id
+  2: string name
+  3: string thirdparty_identifier
+}
+
+struct ThirdpartySceneList {
+  1: list<ThirdpartyScene> thirdparty_scenes
 }
 
 // Alarm configuration
