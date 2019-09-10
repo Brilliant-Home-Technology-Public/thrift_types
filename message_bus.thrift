@@ -71,6 +71,7 @@ const string SCHLAGE_CONFIG_IDENTIFIER = "schlage_configuration"
 const string HOMEKIT_IDENTIFIER = "homekit_peripheral"
 const string BUTTERFLYMX_IDENTIFIER = "butterflymx"
 const string BUTTERFLYMX_CONFIG_IDENTIFIER = "butterflymx_configuration"
+const string LIFX_SCENE_CONFIG_IDENTIFIER = "lifx_scene_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -191,6 +192,7 @@ enum PeripheralType {
   SCHLAGE_CONFIGURATION = 65,
   HOMEKIT = 66,
   BUTTERFLYMX_CONFIGURATION = 67,
+  THIRD_PARTY_SCENE_CONFIGURATION = 68,
 }
 
 enum PeripheralStatus {
