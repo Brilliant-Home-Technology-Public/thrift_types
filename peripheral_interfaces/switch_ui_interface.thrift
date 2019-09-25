@@ -13,6 +13,7 @@ struct SwitchUiPeripheralInterface {
   5: configuration.IntercomParameters intercom_parameters
   6: string request_reset
   7: bool unsupported_configuration
+  8: configuration.HomeScreenConfig home_screen_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
