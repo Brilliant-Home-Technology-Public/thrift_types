@@ -8,7 +8,6 @@ include "peripheral_interface.thrift"
 
 struct ExecutionPeripheralInterface {
     1: string last_executed_scene_id
-    2: i64 last_movement_detected_timestamp
     3: string trigger_scene_validity_check
 }
 
