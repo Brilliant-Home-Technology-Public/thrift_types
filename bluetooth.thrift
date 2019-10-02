@@ -13,6 +13,7 @@ enum BluetoothService {
   BRILLIANT_CONTROL_PROVISIONING = 1,
   MESH_PROVISIONING = 2,
   MESH_PROXY = 3,
+  NORDIC_SERVICE = 4, // This includes the Nordic-defined DFU (Device Firmware Update) protocol
 }
 
 struct BluetoothDevice {
