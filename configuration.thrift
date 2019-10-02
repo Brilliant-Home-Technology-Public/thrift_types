@@ -268,6 +268,7 @@ struct ThirdpartyScene {
   1: string id
   2: string name
   3: string thirdparty_identifier
+  4: optional string peripheral_name
 }
 
 struct ThirdpartySceneList {
