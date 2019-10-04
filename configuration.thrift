@@ -264,6 +264,8 @@ struct Scene {
   9: optional bool hidden = false
 }
 
+const string THIRDPARTY_SCENE_VARIABLE_PREFIX = "thirdparty_scene:"
+
 struct ThirdpartyScene {
   1: string id
   2: string name
