@@ -115,6 +115,8 @@ const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_VIEW_TABLE_NAME = "ui_thirdp
 const string UI_THIRDPARTY_INTEGRATION_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_thirdparty_integration_notification_button_tapped"
 const string UI_LIST_DEVICES_SCREEN_VIEW_EVENT_TABLE_NAME = "list_devices_screen_view"
 const string UI_ADD_SHORTCUT_BUTTON_TAPPED_TABLE_NAME = "ui_add_shortcut_button_tapped"
+const string UI_CHANGE_HOME_SCREEN_PIN_TABLE_NAME = "change_home_screen_pin"
+const string UI_DELETE_HOME_SCREEN_PIN_TABLE_NAME = "delete_home_screen_pin"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
