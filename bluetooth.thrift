@@ -127,7 +127,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": "always_on", # special case: mapped to the peripheral type
+    "variable_name": "always_on", // special case: mapped to the peripheral type
   },
   SwitchPropertyID.DIMMABLE: {
     "property_id": SwitchPropertyID.DIMMABLE,
@@ -183,6 +183,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": 'slider_config', # special case: mapped to a thrift struct
+    "variable_name": 'slider_config', // special case: mapped to a thrift struct
   },
 }
