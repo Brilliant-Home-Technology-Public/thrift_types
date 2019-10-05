@@ -83,3 +83,106 @@ struct ReplayProtection {
 struct BluetoothDevices {
   1: list<BluetoothDevice> devices
 }
+
+enum BrilliantOpCode{
+//  First 2 bits must be 1. Bytes 2 and 3 are Brilliant BT SIG ID: 0x0820
+  RESERVED_FOR_FUTURE_USE = 0xC02008
+  SWITCH_OPCODE = 0xC12008
+}
+
+enum SwitchPropertyID {
+  RESERVED_FOR_FUTURE_USE     = 0x00,
+  ALWAYS_ON                   = 0x01,
+  DIMMABLE                    = 0x02,
+  MINIMUM_DIM_LEVEL           = 0x03,
+  MAXIMUM_DIM_LEVEL           = 0x04,
+  MOTION_LOW_THRESHOLD        = 0x05,
+  MOTION_HIGH_THRESHOLD       = 0x06,
+  STATUS_LIGHT_MAX_BRIGHTNESS = 0x07,
+  UNICAST_ADDRESS_FORWARDING  = 0x08,
+  MOTION_TO_TRIGGER_ON        = 0x09,
+  MOTION_TO_TRiGGER_OFF       = 0x0A,
+}
+
+enum SwitchOpCode {
+  RESERVED_FOR_FUTURE_USE   = 0x00,
+  GET_PROPERTIES            = 0x01,
+  SET_PROPERTIES            = 0x02,
+  PROPERTIES_STATUS         = 0x03,
+}
+
+struct SwitchPropertySpec {
+  1: byte property_id
+  2: byte property_size // in bytes
+  3: optional i64 default_value
+  4: optional i64 min_value
+  5: optional i64 max_value
+  6: optional string variable_name
+}
+
+const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
+  SwitchPropertyID.ALWAYS_ON: {
+    "property_id": SwitchPropertyID.ALWAYS_ON,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": "always_on", # special case: mapped to the peripheral type
+  },
+  SwitchPropertyID.DIMMABLE: {
+    "property_id": SwitchPropertyID.DIMMABLE,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": 'dimmable',
+  },
+  SwitchPropertyID.MINIMUM_DIM_LEVEL: {
+    "property_id": SwitchPropertyID.MINIMUM_DIM_LEVEL,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1000,
+    "variable_name": 'minimum_dim_level',
+  },
+  SwitchPropertyID.MAXIMUM_DIM_LEVEL: {
+    "property_id": SwitchPropertyID.MAXIMUM_DIM_LEVEL,
+    "property_size": 2,
+    "default_value": 1000,
+    "min_value": 0,
+    "max_value": 1000,
+    "variable_name": 'maximum_dim_level',
+  },
+  SwitchPropertyID.MOTION_LOW_THRESHOLD: {
+    "property_id": SwitchPropertyID.MOTION_LOW_THRESHOLD,
+    "property_size": 1,
+    "default_value": 15,
+    "min_value": 0,
+    "max_value": 100,
+    "variable_name": 'motion_low_threshold',
+  },
+  SwitchPropertyID.MOTION_HIGH_THRESHOLD: {
+    "property_id": SwitchPropertyID.MOTION_HIGH_THRESHOLD,
+    "property_size": 1,
+    "default_value": 24,
+    "min_value": 0,
+    "max_value": 100,
+    "variable_name": 'motion_high_threshold',
+  },
+  SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS: {
+    "property_id": SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS,
+    "property_size": 2,
+    "default_value": 1000,
+    "min_value": 0,
+    "max_value": 1000,
+    "variable_name": 'status_light_max_brightness',
+  },
+  SwitchPropertyID.UNICAST_ADDRESS_FORWARDING: {
+    "property_id": SwitchPropertyID.UNICAST_ADDRESS_FORWARDING,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "variable_name": 'slider_config', # special case: mapped to a thrift struct
+  },
+}
