@@ -1,6 +1,7 @@
 namespace py thrift_types.peripheral_interfaces.homekit_interface
 namespace java thrift_types.peripheral_interfaces.homekit_interface
 
+include "../homekit.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
@@ -11,6 +12,9 @@ struct HomeKitPeripheralInterface {
   4: string setup_code
   5: bool reset
   6: bool paired
+  7: string accessory_name
+  8: bool adk_enabled
+  9: homekit.MFiToken mfi_token
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
