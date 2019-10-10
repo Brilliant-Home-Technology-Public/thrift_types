@@ -387,6 +387,7 @@ enum PinType {
   DOORBELLS = 15,
   ADD_DEVICE = 16,
   HOMEKIT = 17,
+  BLANK = 18,
 }
 
 struct Pin {
