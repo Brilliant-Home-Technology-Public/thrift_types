@@ -130,6 +130,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneActionEdit": "SceneEditAction",
   "SceneTimerEdit": "SceneTimerEdit",
   "ScenePartnerScenes": "AddPartnerScene",
+  "SceneViewAction": "PartnerSceneAction",
 
   // Installation Guide
   "IGHorizontal": "InstallationGuide",
