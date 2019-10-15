@@ -117,6 +117,7 @@ const string UI_LIST_DEVICES_SCREEN_VIEW_EVENT_TABLE_NAME = "list_devices_screen
 const string UI_ADD_SHORTCUT_BUTTON_TAPPED_TABLE_NAME = "ui_add_shortcut_button_tapped"
 const string UI_CHANGE_HOME_SCREEN_PIN_TABLE_NAME = "change_home_screen_pin"
 const string UI_DELETE_HOME_SCREEN_PIN_TABLE_NAME = "delete_home_screen_pin"
+const string UI_IMPORT_PARTNER_SCENE_TABLE_NAME = "import_partner_scene"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -308,6 +309,9 @@ const string UI_BUTTON_NAME_ALL_LIGHTS_ON = "all_lights_on"
 const string UI_BUTTON_NAME_ALL_LIGHTS_OFF = "all_lights_off"
 const string UI_BUTTON_NAME_DELETE_ROOM = "delete_room"
 const string UI_BUTTON_NAME_NEST_INDICATE_INTEREST = "nest_indicate_interest"
+const string UI_BUTTON_NAME_COPY_SCENE = "copy_scene"
+const string UI_BUTTON_NAME_ADD_PARTNER_SCENE = "add_partner_scene"
+const string UI_BUTTON_NAME_ADD_SCENE_ACTION = "add_scene_action"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
