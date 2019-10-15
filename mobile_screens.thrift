@@ -82,9 +82,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "PhotoDelete": "Photos:Manage:DeletePhoto",
   "DeletePhoto": "Photos:Manage:DeletePhoto",
   "UploadPhotoStatus": "Photos:Upload", // Use Modifier for status
-  "UploadLoading": "Photos:Upload:Loading",
-  "UploadSuccess": "Photos:Upload:Success",
-  "UploadFailure": "Photos:Upload:Failure",
+  "UploadLoading": "Photos:Upload", // Use Modifier for status
   "UploadDisabled": "Photos:Upload:Disabled",
   "PUPhotoPickerHost": "Photos:Upload:SelectPhoto",
   "CAMImagePickerCamera": "Photos:Upload:TakePhoto",
