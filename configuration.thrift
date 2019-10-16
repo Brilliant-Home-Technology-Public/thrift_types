@@ -213,6 +213,7 @@ enum Validity {
    DEVICE_DELETED = 4,
    DEVICE_MODE_INCOMPATIBLE = 5,
    DEVICE_ROOMLESS = 6,
+   THIRDPARTY_SCENE_UNRECOGNIZED = 7,
 }
 
 struct SceneValidityStates {
