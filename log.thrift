@@ -315,8 +315,9 @@ const string UI_BUTTON_NAME_COPY_SCENE = "copy_scene"
 const string UI_BUTTON_NAME_ADD_PARTNER_SCENE = "add_partner_scene"
 const string UI_BUTTON_NAME_ADD_SCENE_ACTION = "add_scene_action"
 const string UI_BUTTON_NAME_UPDATE_SCENE = "update_scene"
-const string UI_BUTTON_NAME_CREATE_SCENE = "create_scene"
 const string UI_BUTTON_NAME_CONFIRM_DELETE_SCENE = "confirm:delete_scene"
+const string UI_BUTTON_NAME_INITIATE_CREATE_SCENE = "initiate:create_scene"
+const string UI_BUTTON_NAME_CONFIRM_CREATE_SCENE = "confirm:create_scene"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
