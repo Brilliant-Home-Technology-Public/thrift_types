@@ -318,6 +318,7 @@ const string UI_BUTTON_NAME_UPDATE_SCENE = "update_scene"
 const string UI_BUTTON_NAME_CONFIRM_DELETE_SCENE = "confirm:delete_scene"
 const string UI_BUTTON_NAME_INITIATE_CREATE_SCENE = "initiate:create_scene"
 const string UI_BUTTON_NAME_CONFIRM_CREATE_SCENE = "confirm:create_scene"
+const string UI_BUTTON_NAME_CONFIRM_SAVE = "confirm:save"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
