@@ -109,6 +109,15 @@ enum SwitchOpCode {
   GET_PROPERTIES            = 0x01,
   SET_PROPERTIES            = 0x02,
   PROPERTIES_STATUS         = 0x03,
+  GESTURE_DETECTED          = 0x04,
+}
+
+enum SwitchGesture {
+  RESERVED_FOR_FUTURE_USE = 0x00,
+  FLICK                   = 0x01,
+  SLIDE                   = 0x02,
+  TAP                     = 0x03,
+  DOUBLE_TAP              = 0x04,
 }
 
 struct SwitchPropertySpec {
@@ -184,5 +193,28 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 65535,
     "variable_name": 'slider_config', // special case: mapped to a thrift struct
+  },
+}
+
+const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
+  SwitchGesture.FLICK: {
+    "property_id": SwitchGesture.FLICK,
+    "property_size": 1,
+    "min_value": 0, // 0 for down flick
+    "max_value": 1, // 1 for up flick
+  },
+  SwitchGesture.TAP: {
+    "property_id": SwitchGesture.TAP,
+    "property_size": 0,
+  },
+  SwitchGesture.SLIDE: {
+    "property_id": SwitchGesture.SLIDE,
+    "property_size": 2,
+    "min_value": -32768, // negative for slide down
+    "max_value": 32767,  // positive for slide up
+  },
+  SwitchGesture.DOUBLE_TAP: {
+    "property_id": SwitchGesture.DOUBLE_TAP,
+    "property_size": 0,
   },
 }
