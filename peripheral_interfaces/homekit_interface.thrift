@@ -15,6 +15,7 @@ struct HomeKitPeripheralInterface {
   7: string accessory_name
   8: bool adk_enabled
   9: homekit.MFiToken mfi_token
+  10: bool restart
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
