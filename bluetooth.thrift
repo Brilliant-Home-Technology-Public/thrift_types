@@ -101,7 +101,36 @@ enum SwitchPropertyID {
   STATUS_LIGHT_MAX_BRIGHTNESS = 0x07,
   UNICAST_ADDRESS_FORWARDING  = 0x08,
   MOTION_TO_TRIGGER_ON        = 0x09,
-  MOTION_TO_TRiGGER_OFF       = 0x0A,
+  MOTION_TO_TRIGGER_OFF       = 0x0A,
+  MOTION_SCORE                = 0x0B,
+  MOTION_DETECTED             = 0x0C,
+  TEMPERATURE_1               = 0x0D,
+  TEMPERATURE_2               = 0x0E, 
+  UUID                        = 0x0F,
+  FIRMWARE_VERSION            = 0x10,
+  API_VERSION                 = 0x11,
+  CURRENT_ZERO_CROSS          = 0x12,
+  BREAK_DIMMING               = 0x13,
+  POWER                       = 0x14, 
+  POWER_THRESHOLD             = 0x15,
+  BREAK_CIRCUIT               = 0x16,
+  ADC_RAW_DATA                = 0x17,
+  DEVICE_REVISION             = 0x18,
+  FLASH_DEVICE_?STATUS                = 0x19,  // TODO: what statuses do we want for this?
+  DISK_USAGE                  = 0x1A,
+}
+
+// BreakCircuitStatus are bitflags
+enum BreakCircuitStatus {
+  OVER_WATTAGE      = 1;
+  OVER_HEAT         = 2;
+}
+ 
+enum SwitchFlashStatus {
+  NORMAL                   = 0,
+  NRF_ERROR_INTERNAL       = 3;
+  NRF_ERROR_NO_MEM         = 4;
+  NRF_ERROR_TIMEOUT        = 13;
 }
 
 enum SwitchOpCode {
@@ -193,6 +222,126 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 65535,
     "variable_name": 'slider_config', // special case: mapped to a thrift struct
+  },
+  SwitchPropertyID.MOTION_TO_TRIGGER_ON: {
+    "property_id": SwitchPropertyID.MOTION_TO_TRIGGER_ON,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": '',
+  },
+  SwitchPropertyID.MOTION_TO_TRIGGER_OFF: {
+    "property_id": SwitchPropertyID.MOTION_TO_TRIGGER_OFF,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": '',
+  },
+  SwitchPropertyID.MOTION_SCORE: {
+    "property_id": SwitchPropertyID.MOTION_SCORE,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 100,
+    "variable_name": '',
+  },
+  SwitchPropertyID.MOTION_DETECTED: {
+    "property_id": SwitchPropertyID.MOTION_DETECTED,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": 'movement_detected',
+  },
+  SwitchPropertyID.TEMPERATURE_1: {
+    "property_id": SwitchPropertyID.TEMPERATURE_1,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "variable_name": 'temperature_1',
+  },
+  SwitchPropertyID.TEMPERATURE_2: {
+    "property_id": SwitchPropertyID.TEMPERATURE_2,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "variable_name": 'temperature_2',
+  },
+  SwitchPropertyID.UUID: {
+    "property_id": SwitchPropertyID.UUID,
+    "property_size": 16,
+    "variable_name": '',
+  },
+  SwitchPropertyID.FIRMWARE_VERSION: {
+    "property_id": SwitchPropertyID.FIRMWARE_VERSION,
+    "property_size": 4,
+    "default_value": 0,
+    "variable_name": 'firmware_version',
+  },
+  SwitchPropertyID.API_VERSION: {
+    "property_id": SwitchPropertyID.API_VERSION,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 255,
+    "variable_name": 'api_version',
+  },
+  SwitchPropertyID.CURRENT_ZERO_CROSS: {
+    "property_id": SwitchPropertyID.CURRENT_ZERO_CROSS,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1000, 
+    "variable_name": '',
+  },
+  SwitchPropertyID.BREAK_DIMMING: {
+    "property_id": SwitchPropertyID.BREAK_DIMMING,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": 'break_dimming',
+  },
+  SwitchPropertyID.POWER: {
+    "property_id": SwitchPropertyID.POWER,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535, 
+    "variable_name": '', // units in 1/10 of a watt
+  },
+  SwitchPropertyID.POWER_THRESHOLD: {
+    "property_id": SwitchPropertyID.POWER_THRESHOLD,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535, 
+    "variable_name": 'power_threshold', // units in 1/10 of a watt
+  },
+  SwitchPropertyID.BREAK_CIRCUIT: {
+    "property_id": SwitchPropertyID.BREAK_CIRCUIT,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 3, 
+    "variable_name": 'break_circuit', // BreakCircuitStatus bitflags
+  },
+  SwitchPropertyID.ADC_RAW_DATA: {
+    "property_id": SwitchPropertyID.ADC_RAW_DATA,
+    "property_size": 256, // 128 values of 2 byte adc readings
+    "variable_name": '',
+  },
+  SwitchPropertyID.DEVICE_REVISION: {
+    "property_id": SwitchPropertyID.DEVICE_REVISION,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 255, 
+    "variable_name": '',
   },
 }
 
