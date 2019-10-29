@@ -35,6 +35,7 @@ enum SoftwareReleaseStage {
   UNKNOWN = 0,
   STABLE = 1,
   LATEST = 2,
+  UNINITIALIZED = 3,
 }
 
 
