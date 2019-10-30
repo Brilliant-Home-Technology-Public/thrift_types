@@ -153,7 +153,7 @@ enum SwitchGesture {
 
 struct SwitchPropertySpec {
   1: byte property_id
-  2: byte property_size // in bytes
+  2: i16 property_size // in bytes
   3: optional i64 default_value
   4: optional i64 min_value
   5: optional i64 max_value
