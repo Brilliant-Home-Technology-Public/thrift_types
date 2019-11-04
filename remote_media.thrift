@@ -2,6 +2,15 @@ namespace py thrift_types.remote_media
 namespace java thrift_types.remote_media
 
 
+enum MediaTransmission {
+  NONE = 0
+  // Chosen so AUDIO_AND_VIDEO == (AUDIO | VIDEO)
+  AUDIO = 1
+  VIDEO = 2
+  AUDIO_AND_VIDEO = 3
+}
+
+
 // Interface taken from: https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface
 struct IceCandidate {
     1: string candidate
