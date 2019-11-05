@@ -271,7 +271,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   },
   SwitchPropertyID.FIRMWARE_VERSION: {
     "property_id": SwitchPropertyID.FIRMWARE_VERSION,
-    "property_size": 4,
+    "property_size": 8, // SoftDevice (2 bytes) + Bootloader (2 bytes) + App (4 bytes)
     "default_value": 0,
     "variable_name": 'firmware_version',
   },
