@@ -121,6 +121,7 @@ const string UI_IMPORT_PARTNER_SCENE_TABLE_NAME = "import_partner_scene"
 const string UI_SCENE_EXECUTION_TABLE_NAME = "ui_scene_execution"
 const string UI_HOMESCREEN_NOTIFICATION_VIEW_TABLE_NAME = "ui_homescreen_notification_view"
 const string UI_HOMESCREEN_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_homescreen_notification_button_tapped"
+const string UI_NOTIFICATION_OPTION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_option_button_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
