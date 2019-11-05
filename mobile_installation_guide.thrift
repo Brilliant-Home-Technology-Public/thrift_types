@@ -164,6 +164,8 @@ const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
+const string MOBILE_GUIDE_FIELD_STATIC_AUTH = "field_static_auth"
+const string MOBILE_GUIDE_FIELD_PROVISIONING_COMPLETE = "field_provisioning_complete"
 
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
@@ -187,6 +189,7 @@ const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
 const string MOBILE_GUIDE_SECTION_TOOLS_AND_SAFETY = "section_tools_and_safety"
 const string MOBILE_GUIDE_SECTION_WIRE_PHOTOS = "section_wire_photos"
+const string MOBILE_GUIDE_SECTION_PROVISIONING = "section_provisioning"
 
 const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"
 const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
