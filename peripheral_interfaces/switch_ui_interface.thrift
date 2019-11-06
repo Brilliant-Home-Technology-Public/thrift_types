@@ -14,6 +14,7 @@ struct SwitchUiPeripheralInterface {
   6: string request_reset
   7: bool unsupported_configuration
   8: configuration.HomeScreenConfig home_screen_config
+  9: bool child_lock_enabled
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
