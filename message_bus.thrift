@@ -353,6 +353,7 @@ service MessageBusService {
   void delete_peripheral(
       1: string device_id,
       2: string peripheral_id,
+      3: i64 deletion_time_ms,
   )
 
   SetUpdatedVariablesResponse set_updated_variables(
