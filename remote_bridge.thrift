@@ -29,9 +29,21 @@ struct ReceiveUpdatedStateResponse {
   1: map<string, message_bus.SubscriptionNotification> updated_states
 }
 
+enum PeripheralIntegrityType {
+  THRIFT_SERIALIZED_BINARY_HASH = 1,
+}
+
+// This struct represents an "integrity" computation for a peripheral.
+// It is comprised of the actual "integrity" value and how the value was computed.
+struct PeripheralIntegrity {
+  1: binary integrity_value
+  2: PeripheralIntegrityType integrity_type
+}
+
 struct KnownPeripheralState {
   1: i64 timestamp
   2: optional map<string, i64> variable_timestamps
+  3: optional PeripheralIntegrity integrity
 }
 
 struct KnownDeviceState {
