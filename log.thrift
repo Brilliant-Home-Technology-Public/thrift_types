@@ -328,6 +328,11 @@ const string UI_BUTTON_NAME_CHANGE_SHORTCUT = "change_shortcut"
 const string UI_BUTTON_NAME_REMOVE_SHORTCUT = "remove_shortcut"
 const string UI_BUTTON_NAME_EDIT_SCENE = "edit_scene"
 const string UI_BUTTON_NAME_VISIT_SETTINGS = "visit_settings"
+const string UI_BUTTON_NAME_ACCEPT = "accept"
+const string UI_BUTTON_NAME_DECLINE = "decline"
+const string UI_BUTTON_NAME_GRANT_ACCESS = "grant_access"
+const string UI_BUTTON_NAME_TALK = "talk"
+const string UI_BUTTON_NAME_MUTE = "mute"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
