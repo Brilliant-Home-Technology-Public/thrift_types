@@ -166,6 +166,9 @@ const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_STATIC_AUTH = "field_static_auth"
 const string MOBILE_GUIDE_FIELD_PROVISIONING_COMPLETE = "field_provisioning_complete"
+const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_PREFIX = "field_line_side_multimeter_question_"
+const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_question_"
+const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
