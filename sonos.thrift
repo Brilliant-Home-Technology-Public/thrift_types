@@ -3,6 +3,7 @@ namespace java thrift_types.sonos
 
 // For favorites, set uri to "<raw_uri>". For playlists, set uri to "playlist:<raw_uri>"
 const string PLAYLIST_URI_PREFIX = "playlist"
+const string LINE_IN_URI_PREFIX = "line_in_source"
 
 enum GroupStatus {
   UNKNOWN = 0,
