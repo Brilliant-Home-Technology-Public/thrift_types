@@ -17,6 +17,7 @@ struct BuildingEntryPanelPeripheralInterface {
   8: remote_media.MediaTransmission media_transmitted
   9: bool grant_access
   10: i16 chime_count
+  11: message_bus.Event event
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
