@@ -329,6 +329,11 @@ enum InitializationTarget {
   CONFIGURATION_INITIALIZED = 4
 }
 
+struct Event {
+  1: optional i64 timestamp
+  2: optional map<string, string> event_data
+}
+
 service PeripheralService {
 
   SetVariableResponse set_variables_request(
