@@ -334,6 +334,7 @@ const string UI_BUTTON_NAME_DECLINE = "decline"
 const string UI_BUTTON_NAME_GRANT_ACCESS = "grant_access"
 const string UI_BUTTON_NAME_TALK = "talk"
 const string UI_BUTTON_NAME_MUTE = "mute"
+const string UI_BUTTON_NAME_LINE_IN_PLAYBACK = "line_in:play"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
