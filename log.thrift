@@ -335,6 +335,7 @@ const string UI_BUTTON_NAME_GRANT_ACCESS = "grant_access"
 const string UI_BUTTON_NAME_TALK = "talk"
 const string UI_BUTTON_NAME_MUTE = "mute"
 const string UI_BUTTON_NAME_LINE_IN_PLAYBACK = "line_in:play"
+const string UI_BUTTON_NAME_TV_PLAYBACK = "tv:play"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
