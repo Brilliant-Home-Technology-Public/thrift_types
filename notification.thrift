@@ -3,10 +3,15 @@ namespace java thrift_types.notification
 
 enum NotificationType {
   UNKNOWN = 0,
+  ALEXA_MUTED = 1,
+  ALEXA_UNMUTED = 2,
+  ALEXA_NEW_NOTIFICATIONS = 3,
+  ALEXA_CONFIGURE_HOME_SKILL = 4,
 }
 
 enum NotificationAction {
   NONE = 0,
+  ALEXA_CONFIGURE_HOME_SKILL = 1,
 }
 
 enum NotificationPriority {
