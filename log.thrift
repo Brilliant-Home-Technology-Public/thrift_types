@@ -338,6 +338,12 @@ const string UI_BUTTON_NAME_LINE_IN_PLAYBACK = "line_in:play"
 const string UI_BUTTON_NAME_TV_PLAYBACK = "tv:play"
 const string UI_BUTTON_NAME_CHECK_COMPATIBILITY = "check_compatibility"
 const string UI_BUTTON_NAME_RECONFIGURE = "re-configure"
+const string UI_BUTTON_NAME_ONE_TAP_ON = "one_tap_on"
+const string UI_BUTTON_NAME_ONE_TAP_OFF = "one_tap_off"
+const string UI_BUTTON_NAME_CONTROL_DEVICE_ON = "control_device_on"
+const string UI_BUTTON_NAME_CONTROL_DEVICE_OFF = "control_device_off"
+const string UI_BUTTON_NAME_ROOM_SELECTION = "room_selection"
+const string UI_BUTTON_NAME_DEFAULT_SETTINGS = "default_settings"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
