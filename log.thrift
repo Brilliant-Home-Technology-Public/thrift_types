@@ -344,6 +344,7 @@ const string UI_BUTTON_NAME_CONTROL_DEVICE_ON = "control_device_on"
 const string UI_BUTTON_NAME_CONTROL_DEVICE_OFF = "control_device_off"
 const string UI_BUTTON_NAME_ROOM_SELECTION = "room_selection"
 const string UI_BUTTON_NAME_DEFAULT_SETTINGS = "default_settings"
+const string UI_BUTTON_NAME_SLIDER_INDEX = "slider_index"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
