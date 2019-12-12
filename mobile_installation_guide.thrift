@@ -13,6 +13,7 @@ enum InstallationDeviceType {
   THREE_GANG = 3
   FOUR_GANG = 4
   BRILLIANT_SWITCH = 5
+  BRILLIANT_PLUG = 6
 }
  
 struct GuideOverlay {
