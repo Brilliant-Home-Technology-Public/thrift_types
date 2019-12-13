@@ -3,7 +3,7 @@ namespace java thrift_types.august
 
 const string AUGUST_API_PREFIX = "https://api-production.august.com"
 
-enum NotificationType {
+enum AugustNotificationType {
 	UNKNOWN = 0,
 	OPERATION = 1,
 	CONFIGURATION = 2,
@@ -13,7 +13,7 @@ enum NotificationType {
 }
 
 struct AugustNotification {
-	1: NotificationType type
+	1: AugustNotificationType type
 	2: string event
 	3: i64 timestamp
 	4: optional string details
