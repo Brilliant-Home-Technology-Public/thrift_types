@@ -23,6 +23,8 @@ enum NetworkStatusType {
   READY = 3,
   ONLINE = 4,
   FAILURE = 5,
+  DISCONNECTING = 6,
+  CONFIGURING = 7,
 }
 
 struct IPv4AddressInfo {
