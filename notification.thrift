@@ -32,3 +32,12 @@ struct BrilliantNotification {
   6: optional map<string, string> notification_context
 }
 
+const list<BrilliantNotificationType> banner_priority_ordering = [
+    BrilliantNotificationType.UNKNOWN,
+    BrilliantNotificationType.ALEXA_MUTED,
+    BrilliantNotificationType.ALEXA_UNMUTED,
+    BrilliantNotificationType.ALEXA_NEW_NOTIFICATIONS,
+    BrilliantNotificationType.ALEXA_CONFIGURE_HOME_SKILL,
+    BrilliantNotificationType.SCENE_ACTIVATION_STARTED,
+    BrilliantNotificationType.SCENE_ACTIVATION_COMPLETED_SUCCESSFUL,
+]
