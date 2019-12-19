@@ -17,8 +17,10 @@ enum BrilliantNotificationAction {
   ALEXA_CONFIGURE_HOME_SKILL = 1,
 }
 
-enum BrilliantNotificationPriority {
+enum BrilliantNotificationDisplayType {
   UNKNOWN = 0,
+  BANNER = 1,
+  POPUP = 2,
 }
 
 struct BrilliantNotification {
@@ -26,6 +28,7 @@ struct BrilliantNotification {
   2: i64 timestamp
   3: BrilliantNotificationType notification_type
   4: BrilliantNotificationAction notification_action
-  5: BrilliantNotificationPriority notification_priority
+  5: BrilliantNotificationDisplayType notification_display_type
   6: optional map<string, string> notification_context
 }
+
