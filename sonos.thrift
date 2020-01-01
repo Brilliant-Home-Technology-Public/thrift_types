@@ -19,3 +19,7 @@ struct GroupStatusUpdate {
   1: GroupStatus status
   2: optional string new_group_coordinator_id // Only set when status == MOVED
 }
+
+struct GroupRequest {
+  1: list<string> speaker_ids
+}
