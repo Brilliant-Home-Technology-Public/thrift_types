@@ -8,16 +8,16 @@ struct Timezone {
 
 const list<Timezone> supported_timezones = [
     {
-        "name": "America/Los_Angeles",
-        "display_name": "Pacific - Los Angeles"
-    },
-    {
         "name": "Pacific/Honolulu",
         "display_name": "Hawaii - Honolulu"
     },
     {
         "name": "America/Anchorage",
         "display_name": "Alaska - Anchorage"
+    },
+    {
+        "name": "America/Los_Angeles",
+        "display_name": "Pacific - Los Angeles"
     },
     {
         "name": "America/Denver",
@@ -34,5 +34,9 @@ const list<Timezone> supported_timezones = [
     {
         "name": "America/New_York",
         "display_name": "Eastern - New York"
+    },
+    {
+        "name": "America/Halifax",
+        "display_name": "Atlantic - Halifax"
     },
 ]
