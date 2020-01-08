@@ -174,8 +174,18 @@ const string MOBILE_GUIDE_FIELD_PROVISIONING_COMPLETE = "field_provisioning_comp
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_PREFIX = "field_line_side_multimeter_question_"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_question_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_LIGHT_TYPE = "field_device_setup_light_type"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DIMMABLE = "field_device_setup_dimmable"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_FORWARDING_ADDRESS = "field_device_setup_forwarding_address"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG = "field_device_setup_device_config"
 
+const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_LINE = "line"
+const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_LOAD = "load"
+const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_MULTIWAY_UNSURE = "multiway_unsure"
+const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_SINGLE_POLE = "single_pole"
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
+const string MOBILE_GUIDE_OPTION_LIGHT_TYPE_STANDARD = "standard_light"
+const string MOBILE_GUIDE_OPTION_LIGHT_TYPE_ALWAYS_ON = "always_on"
 
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 
