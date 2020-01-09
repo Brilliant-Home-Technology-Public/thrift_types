@@ -13,6 +13,7 @@ const string EVENT_KEY_CALL_STATUS = "butterflymx:call_status"
 const string CALL_STATUS_INITIALIZING = "initializing"
 const string CALL_STATUS_CANCELED = "canceled"
 const string CALL_STATUS_CONNECTING = "connecting_sip"
+const string CALL_STATUS_TIMEOUT = "timeout_online_signal"
 
 struct BuildingEntryPanels {
   1: list<string> building_entry_panel_ids
