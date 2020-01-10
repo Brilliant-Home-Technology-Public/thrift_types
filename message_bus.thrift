@@ -200,6 +200,7 @@ enum PeripheralType {
   TPLINK_CONFIGURATION = 69,
   BUILDING_ENTRY_PANEL = 70,
   MANAGED_BUILDING = 71,
+  SWITCH_CONFIGURATION = 72,
 }
 
 enum PeripheralStatus {
