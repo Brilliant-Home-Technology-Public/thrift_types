@@ -10,6 +10,7 @@ const string MESH_PROXY_DATA_OUT_UUID_STR = "00002ade-0000-1000-8000-00805f9b34f
 const string MESH_CONFIG_VARIABLE_PREFIX = "mesh_device:"
 const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
+const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
 
 enum BluetoothService {
   BRILLIANT_CONTROL_PROVISIONING = 1,
