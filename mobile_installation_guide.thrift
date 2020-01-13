@@ -108,6 +108,7 @@ enum GuideScreenType {
   DEVICE_SETUP_DIMMABLE = 8
   DEVICE_SETUP_MINIMUM_DIM = 9
   DEVICE_SETUP_FORWARDING = 10
+  DEVICE_SETUP_OWNERSHIP = 11
 }
  
 struct GuideLoads {
@@ -171,6 +172,7 @@ const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG_PREFIX = "field_device_setup_device_config_"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_OWNERSHIP = "field_device_setup_ownership"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_ID = "field_device_setup_id"
 const string MOBILE_GUIDE_FIELD_DIMMABLE_PREFIX = "field_dimmable_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_ADDRESS = "field_forwarding_address"
@@ -215,6 +217,7 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_TYPE = "screen_device_setup_
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_DIMMABLE = "screen_device_setup_dimmable"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_MINIMUM_DIM = "screen_device_setup_minimum_dim"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FORWARDING = "screen_device_setup_forwarding"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_ownership"
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
