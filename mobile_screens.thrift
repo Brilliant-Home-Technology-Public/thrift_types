@@ -142,7 +142,15 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "InstallationArchive": "InstallationGuide:Archive",
 
   // Switch Provisioning
-  "SwitchProvisioning": "SwitchProvisioning"
+  "SwitchProvisioning": "SwitchProvisioning",
+
+  // Install Device Setup
+  "ActiveDeviceSetup": "ActiveDeviceSetup",
+  "BRLDevicePicker": "BRLDevicePicker",
+  "AddDevice": "AddDevice",
+  "AddLight": "AddLight",
+  "SpecifyNumLights": "SpecifyNumLights",
+  "ExistingFixtures": "ExistingFixtures",
 }
 
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
