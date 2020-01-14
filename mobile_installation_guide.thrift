@@ -167,8 +167,6 @@ const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_TEXT = [
 
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_LIGHT_TYPE = "field_device_setup_light_type"
-const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DIMMABLE = "field_device_setup_dimmable"
-const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_FORWARDING_ADDRESS = "field_device_setup_forwarding_address"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG = "field_device_setup_device_config"
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
