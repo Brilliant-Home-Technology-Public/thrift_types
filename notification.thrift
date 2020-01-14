@@ -10,6 +10,7 @@ enum BrilliantNotificationType {
   SCENE_ACTIVATION_STARTED = 5,
   SCENE_ACTIVATION_COMPLETED_SUCCESSFUL = 6,
   SCENE_ACTIVATION_COMPLETED_UNSUCCESSFUL = 7,
+  UART_COMMUNICATION_ERROR = 8,
 }
 
 enum BrilliantNotificationAction {
@@ -21,6 +22,7 @@ enum BrilliantNotificationDisplayType {
   UNKNOWN = 0,
   BANNER = 1,
   POPUP = 2,
+  FULL_SCREEN = 3,
 }
 
 struct BrilliantNotification {
