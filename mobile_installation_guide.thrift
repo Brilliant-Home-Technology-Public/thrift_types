@@ -215,6 +215,7 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FORWARDING = "screen_device_setup_
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
+const string MOBILE_GUIDE_SCREEN_NEUTRAL_WIRE_CHECK = "screen_installation_neutral_wire_check"
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
 const string MOBILE_GUIDE_SCREEN_PLUG_PRE_PROVISION = "screen_plug_pre_provision"
 const string MOBILE_GUIDE_SCREEN_PLUG_PROVISIONING = "screen_plug_provisioning"
