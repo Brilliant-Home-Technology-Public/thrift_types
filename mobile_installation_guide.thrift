@@ -165,10 +165,11 @@ const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_TEXT = [
   MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION_TITLE,
 ]
 
+const string MOBILE_GUIDE_FIELD_ALL_BRILLIANT_PREFIX = "field_all_brilliant_"
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
-const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG = "field_device_setup_device_config"
+const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG_PREFIX = "field_device_setup_device_config_"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_ID = "field_device_setup_id"
 const string MOBILE_GUIDE_FIELD_DIMMABLE_PREFIX = "field_dimmable_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_ADDRESS = "field_forwarding_address"
@@ -184,6 +185,7 @@ const string MOBILE_GUIDE_FIELD_LOAD_TYPE_PREFIX = "field_load_type_"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_PROVISIONING_COMPLETE = "field_provisioning_complete"
+const string MOBILE_GUIDE_FIELD_SETUP_FLOW = "field_setup_flow"
 const string MOBILE_GUIDE_FIELD_STATIC_AUTH = "field_static_auth"
 const string MOBILE_GUIDE_FIELD_STATIC_DATA_HEX = "field_static_data_hex"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
