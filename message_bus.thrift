@@ -75,6 +75,8 @@ const string LIFX_SCENE_CONFIG_IDENTIFIER = "lifx_scene_configuration"
 const string TPLINK_IDENTIFIER = "tplink"
 const string TPLINK_CONFIG_IDENTIFIER = "tplink_configuration"
 const string HUE_BRIDGE_SCENE_CONFIG_IDENTIFIER = "hue_bridge_scene_configuration"
+const string GENIE_IDENTIFIER = "genie"
+const string GENIE_CONFIG_IDENTIFIER = "genie_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -117,6 +119,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     SCHLAGE_IDENTIFIER,
     BUTTERFLYMX_IDENTIFIER,
     TPLINK_IDENTIFIER,
+    GENIE_IDENTIFIER,
 ]
 
 const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
@@ -201,6 +204,7 @@ enum PeripheralType {
   BUILDING_ENTRY_PANEL = 70,
   MANAGED_BUILDING = 71,
   SWITCH_CONFIGURATION = 72,
+  GENIE_CONFIGURATION = 73,
 }
 
 enum PeripheralStatus {
