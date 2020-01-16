@@ -9,6 +9,7 @@ struct SwitchConfigurationPeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
   3: i32 status_light_max_brightness
+  4: configuration.CapTouchSliderConfig slider_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
