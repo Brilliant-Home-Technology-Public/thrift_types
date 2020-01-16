@@ -317,7 +317,7 @@ struct MobileInstallationEndedEvent {
   5: string device_id
   6: string screen_name
   7: string user_id
-  8: string sku
+  8: string installation_device_type
   9: string guide_version
   10: string exit_section
   11: string app_class
@@ -330,7 +330,7 @@ struct MobileInstallationFeedbackEvent {
   4: string home_id
   5: string device_id
   6: string user_id
-  7: string sku
+  7: string installation_device_type
   8: string guide_version
   9: bool success
   10: string helpfulness
@@ -346,7 +346,7 @@ struct MobileInstallationStartedEvent {
   4: string home_id
   5: string device_id
   6: string user_id
-  7: string sku
+  7: string installation_device_type
   8: string guide_version
   9: string app_class
 }

@@ -140,8 +140,7 @@ struct GuideSection {
 struct InstallationGuide {
   1: string version
   2: InstallationDeviceType device_type
-  3: string product_sku
-  4: list<GuideSection> sections
+  3: list<GuideSection> sections
 }
 
 
@@ -193,6 +192,7 @@ const string MOBILE_GUIDE_FIELD_SETUP_FLOW = "field_setup_flow"
 const string MOBILE_GUIDE_FIELD_STATIC_AUTH_DATA_HEX = "field_static_auth"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
 const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE = "field_user_identified_as_line_"
+const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing_configuration"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_WATTAGE_PREFIX = "field_wattage_"
 
