@@ -205,6 +205,7 @@ enum PeripheralType {
   MANAGED_BUILDING = 71,
   SWITCH_CONFIGURATION = 72,
   GENIE_CONFIGURATION = 73,
+  GARAGE_DOOR = 74,
 }
 
 enum PeripheralStatus {
