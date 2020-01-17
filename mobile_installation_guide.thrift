@@ -133,6 +133,7 @@ struct GuideSection {
   2: string title
   3: list<GuideScreen> screens
   4: optional list<GuideRule> enabled_rules
+  5: string group_identifier
 }
 
 struct InstallationGuide {
