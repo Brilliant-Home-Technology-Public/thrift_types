@@ -15,6 +15,36 @@ enum InstallationDeviceType {
   BRILLIANT_SWITCH = 5
   BRILLIANT_PLUG = 6
 }
+
+enum InstallLoadType {
+  LED = 1
+  CFL = 2
+  INCANDESCENT = 3
+  MAGNETIC_LIGHTING = 4
+  SMART_LIGHT_BULB = 5
+  FAN = 6
+  ON_OFF_SWITCH = 7
+  POWER_OUTLET = 8
+  OTHER = 9
+}
+
+enum InstallWattage {
+  LESS_THAN_10W = 1
+  BETWEEN_10_AND_150W = 2
+  GREATER_THAN_150W = 3
+  BETWEEN_150_AND_300W = 4
+  BETWEEN_10_AND_300W = 5
+  GREATER_THAN_300W = 6
+  NOT_SURE = 7
+}
+
+enum InstallConfig {
+  SINGLE_POLE = 1
+  LOAD = 2
+  LINE = 3
+  FOURWAY = 4
+  NOT_SURE = 5
+}
  
 struct GuideOverlay {
   1: string overlay_identifier
@@ -104,11 +134,9 @@ enum GuideScreenType {
   WIRE_PHOTOS = 4
   INSTALL_SUCCESS = 5
   SWITCH_PROVISIONING = 6
-  DEVICE_SETUP_LIGHT_TYPE = 7
-  DEVICE_SETUP_DIMMABLE = 8
-  DEVICE_SETUP_MINIMUM_DIM = 9
-  DEVICE_SETUP_FORWARDING = 10
-  DEVICE_SETUP_OWNERSHIP = 11
+  DEVICE_SETUP_MINIMUM_DIM = 7
+  DEVICE_SETUP_FORWARDING = 8
+  DEVICE_SETUP_OWNERSHIP = 9
 }
  
 struct GuideLoads {
@@ -170,7 +198,6 @@ const string MOBILE_GUIDE_FIELD_ALL_BRILLIANT_PREFIX = "field_all_brilliant_"
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
-const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_DEVICE_CONFIG_PREFIX = "field_device_setup_device_config_"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_ID = "field_device_setup_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_MIN_DIMMABLE_PREFIX = "field_device_setup_minimum_dim_level_"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_OWNER_ID = "field_device_setup_owner_id"
@@ -180,6 +207,7 @@ const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID = "field_forwarding_d
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID = "field_forwarding_device_id"
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID = "field_fowarding_peripheral_id"
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
+const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_PREFIX = "field_line_side_multimeter_question_"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_question_"
@@ -197,14 +225,7 @@ const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_WATTAGE_PREFIX = "field_wattage_"
 
-const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_LINE = "line"
-const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_LOAD = "load"
-const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_MULTIWAY_UNSURE = "multiway_unsure"
-const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_SINGLE_POLE = "single_pole"
-const string MOBILE_GUIDE_OPTION_DEVICE_CONFIG_PLUG = "plug"
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
-const string MOBILE_GUIDE_OPTION_LIGHT_TYPE_STANDARD = "standard_light"
-const string MOBILE_GUIDE_OPTION_LIGHT_TYPE_ALWAYS_ON = "always_on"
 
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 
@@ -214,8 +235,7 @@ const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
 const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
-const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_TYPE = "screen_device_setup_light_type"
-const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_DIMMABLE = "screen_device_setup_dimmable"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_POST_PROVISION = "screen_device_setup_post_provision"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_MINIMUM_DIM = "screen_device_setup_minimum_dim"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FORWARDING = "screen_device_setup_forwarding"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_ownership"
