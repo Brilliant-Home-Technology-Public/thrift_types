@@ -26,6 +26,7 @@ enum InstallLoadType {
   ON_OFF_SWITCH = 7
   POWER_OUTLET = 8
   OTHER = 9
+  OTHER_LIGHT = 10
 }
 
 enum InstallWattage {
