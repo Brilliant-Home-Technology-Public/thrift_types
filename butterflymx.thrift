@@ -14,6 +14,7 @@ const string CALL_STATUS_INITIALIZING = "initializing"
 const string CALL_STATUS_CANCELED = "canceled"
 const string CALL_STATUS_CONNECTING = "connecting_sip"
 const string CALL_STATUS_TIMEOUT = "timeout_online_signal"
+const string CALL_STATUS_REJECTED = "rejected"
 
 struct BuildingEntryPanels {
   1: list<string> building_entry_panel_ids
