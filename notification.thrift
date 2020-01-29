@@ -1,6 +1,8 @@
 namespace py thrift_types.notification
 namespace java thrift_types.notification
 
+const string NOTIFICATION_VARIABLE_PREFIX = "notification:"
+
 enum BrilliantNotificationType {
   UNKNOWN = 0,
   ALEXA_MUTED = 1,

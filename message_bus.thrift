@@ -77,6 +77,7 @@ const string TPLINK_CONFIG_IDENTIFIER = "tplink_configuration"
 const string HUE_BRIDGE_SCENE_CONFIG_IDENTIFIER = "hue_bridge_scene_configuration"
 const string GENIE_IDENTIFIER = "genie"
 const string GENIE_CONFIG_IDENTIFIER = "genie_configuration"
+const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -206,6 +207,7 @@ enum PeripheralType {
   SWITCH_CONFIGURATION = 72,
   GENIE_CONFIGURATION = 73,
   GARAGE_DOOR = 74,
+  NOTIFICATION = 75,
 }
 
 enum PeripheralStatus {
