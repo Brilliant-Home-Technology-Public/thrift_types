@@ -282,7 +282,8 @@ const string MOBILE_GUIDE_URL_FEEDBACK_SUBMIT = "brl://guide/feedbackSubmit"
 const string MOBILE_GUIDE_URL_TRIGGER_HELP_OVERLAY = "brl://guide/triggerHelpOverlay"
 const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
 
-const string MOBILE_SECTION_GROUP_UNINSTALL = "section_group_uninstall"
 const string MOBILE_SECTION_GROUP_INSTALL_NEW = "section_group_install_new"
 const string MOBILE_SECTION_GROUP_PROVISION = "section_group_provision"
+const string MOBILE_SECTION_GROUP_TEST = "section_group_test"
+const string MOBILE_SECTION_GROUP_UNINSTALL = "section_group_uninstall"
 
