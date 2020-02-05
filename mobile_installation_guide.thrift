@@ -14,6 +14,8 @@ enum InstallationDeviceType {
   FOUR_GANG = 4
   BRILLIANT_SWITCH = 5
   BRILLIANT_PLUG = 6
+  STANDARD_SWITCH = 7
+  STANDARD_DIMMER = 8
 }
 
 enum InstallLoadType {
