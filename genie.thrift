@@ -12,5 +12,7 @@ const string DOOR_STATUS_UNKNOWN = "unknown"
 const string DOOR_STATUS_TIMEOUT_OPENING = "timeout_opening"
 const string DOOR_STATUS_TIMEOUT_CLOSING = "timeout_closing"
 
+const string DOOR_FAULT_NONE = "none"
+
 const string DOOR_COMMAND_OPEN = "open"
 const string DOOR_COMMAND_CLOSE = "close"
