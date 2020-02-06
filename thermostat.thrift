@@ -51,3 +51,9 @@ struct TemperatureRanges {
   3: TemperatureRange target_temperature_high_range
   4: i32 heat_cool_min_delta // minimum required distance between low and high temps
 }
+
+enum TemperatureUnits {
+  UNKOWN = 0
+  FAHRENHEIT = 1
+  CELSIUS = 2
+}
