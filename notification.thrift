@@ -13,11 +13,13 @@ enum BrilliantNotificationType {
   SCENE_ACTIVATION_COMPLETED_SUCCESSFUL = 6,
   SCENE_ACTIVATION_COMPLETED_UNSUCCESSFUL = 7,
   UART_COMMUNICATION_ERROR = 8,
+  UNCONFIGURED_DEVICE = 9,
 }
 
 enum BrilliantNotificationAction {
   NONE = 0,
   ALEXA_CONFIGURE_HOME_SKILL = 1,
+  ADD_DEVICES = 2,
 }
 
 enum BrilliantNotificationDisplayType {
@@ -25,6 +27,7 @@ enum BrilliantNotificationDisplayType {
   BANNER = 1,
   POPUP = 2,
   FULL_SCREEN = 3,
+  ACTION_LIST = 4,
 }
 
 struct BrilliantNotification {
