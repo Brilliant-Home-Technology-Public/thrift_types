@@ -128,6 +128,7 @@ const string UI_PRIVACY_SETTINGS_UPDATE_TABLE_NAME = "privacy_settings_update"
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 const string EMBEDDED_SOFTWARE_UPDATE_TABLE_NAME = "embedded_software_update"
 const string EMBEDDED_SCENE_EXECUTION_AUTOMATION_TABLE_NAME = "embedded_scene_execution_automation"
+const string EMBEDDED_BRILLIANT_SWITCH_SET_SLIDER_CONFIG_TABLE_NAME = "embedded_brilliant_switch_set_slider_config"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
