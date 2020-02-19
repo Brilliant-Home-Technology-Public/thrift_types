@@ -151,6 +151,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "AddLight": "AddLight",
   "SpecifyNumLights": "SpecifyNumLights",
   "ExistingFixtures": "ExistingFixtures",
+  "DeviceGroupOverview": "DeviceGroupOverview",
 }
 
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
