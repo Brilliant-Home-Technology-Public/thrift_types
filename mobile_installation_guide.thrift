@@ -128,6 +128,7 @@ struct GuidePage {
   6: optional string underline_button_url
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
   8: optional string confirm_button_url // If nil this will just process nextTapped
+  9: optional string underline_button_logging_name
 }
 
 enum GuideScreenType {
