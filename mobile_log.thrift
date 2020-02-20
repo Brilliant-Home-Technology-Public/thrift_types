@@ -41,11 +41,13 @@ const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
+const string MOBILE_BUTTON_NAME_BACK = "back"
 const string MOBILE_BUTTON_NAME_BEGIN = "begin"
 const string MOBILE_BUTTON_NAME_BRILLIANT_CONTROLS = "brilliant_controls"
 const string MOBILE_BUTTON_NAME_BRILLIANT_HELP = "brilliant_help"
 const string MOBILE_BUTTON_NAME_BUY_BRILLIANT = "buy_brilliant"
 const string MOBILE_BUTTON_NAME_CANCEL = "cancel"
+const string MOBILE_BUTTON_NAME_CLOSE = "close"
 const string MOBILE_BUTTON_NAME_CONFIRM_DEMO_MODE = "confirm_demo_mode"
 const string MOBILE_BUTTON_NAME_CONFIRM_FORGET_HOME = "confirm_forget_home"
 const string MOBILE_BUTTON_NAME_CONFIRM_REMOVE_CONTROL = "confirm_remove_control"
