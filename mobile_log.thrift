@@ -13,6 +13,7 @@ namespace java thrift_types.mobile_log
 
 // BEGIN MOBILE LOG TABLE NAMES
 // KEEP ALPHABETIZED
+const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
@@ -45,15 +46,16 @@ const string MOBILE_BUTTON_NAME_BRILLIANT_CONTROLS = "brilliant_controls"
 const string MOBILE_BUTTON_NAME_BRILLIANT_HELP = "brilliant_help"
 const string MOBILE_BUTTON_NAME_BUY_BRILLIANT = "buy_brilliant"
 const string MOBILE_BUTTON_NAME_CANCEL = "cancel"
-const string MOBILE_BUTTON_NAME_CREATE_HOME = "create_home"
-const string MOBILE_BUTTON_NAME_CREATE_NEW_HOME = "create_new_home"
-const string MOBILE_BUTTON_NAME_CREATE_NEW_ACCOUNT = "create_new_account"
-const string MOBILE_BUTTON_NAME_CREATE_ROOM = "create_room"
 const string MOBILE_BUTTON_NAME_CONFIRM_DEMO_MODE = "confirm_demo_mode"
 const string MOBILE_BUTTON_NAME_CONFIRM_FORGET_HOME = "confirm_forget_home"
 const string MOBILE_BUTTON_NAME_CONFIRM_REMOVE_CONTROL = "confirm_remove_control"
 const string MOBILE_BUTTON_NAME_CONFIRM_UPLOAD_PHOTO = "confirm_upload_photo"
+const string MOBILE_BUTTON_NAME_CONTACT_CUSTOMER_SUPPORT = "contact_customer_support"
 const string MOBILE_BUTTON_NAME_CONTINUE = "continue"
+const string MOBILE_BUTTON_NAME_CREATE_HOME = "create_home"
+const string MOBILE_BUTTON_NAME_CREATE_NEW_HOME = "create_new_home"
+const string MOBILE_BUTTON_NAME_CREATE_NEW_ACCOUNT = "create_new_account"
+const string MOBILE_BUTTON_NAME_CREATE_ROOM = "create_room"
 const string MOBILE_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
 const string MOBILE_BUTTON_NAME_DELETE_PHOTO = "delete_photo"
 const string MOBILE_BUTTON_NAME_DELETE_PROFILE = "delete_profile"
@@ -162,6 +164,18 @@ const string MOBILE_ERROR_REASON_CONTROL_ENDED = "ControlEnded"
 const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 // END MOBILE ERROR SHORT REASON CONSTANTS
 
+enum MobileBLEDeviceType {
+  BRILLIANT_SWITCH = 1
+  BRILLIANT_PLUG = 2
+}
+
+enum MobileBLEProvisioningEventStatus {
+  SUCCESS = 1 // Only recorded when successfully added to brilliant message bus
+  ERROR_PROVISIONING = 2 // Returned when an error in the BLE Provisioning occurs
+  ERROR_CONFIGURATION = 3 // Returned when an error during vendor message exchanges occurs 
+  ERROR_MESSAGE_BUS = 4 // Returned when an error in message bus setup occurs
+}
+
 enum MobileErrorEventType {
   FAILED_AUTHENTICATION_CODE_ENTRY = 1
   FAILED_DEVICE_DISCOVERY = 2
@@ -253,6 +267,20 @@ enum MobileUnlockResult {
 
 
 // BEGIN LOGGING STRUCTS
+
+struct MobileBLEProvisioningEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: MobileBLEProvisioningEventStatus ble_provisioning_status
+  8: MobileBLEDeviceType ble_device_type
+  9: string ble_device_id
+  10: optional string error_reason
+  11: string last_provisioning_state
+}
 
 struct MobileDeviceLevelEvent {
   1: string table_name
