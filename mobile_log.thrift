@@ -19,9 +19,11 @@ const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
-const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
+const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
 const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
+const string MOBILE_INSTALLATION_GROUP_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_started"
+const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
@@ -343,6 +345,20 @@ struct MobileErrorEvent {
   11: string app_class
 }
 
+struct MobileInstallationConfigChangedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string installation_device_type
+  9: string previous_installation_config
+  10: string new_installation_config
+  11: string install_id
+}
+
 struct MobileInstallationEndedEvent {
   1: string table_name
   2: i64 ts
@@ -371,6 +387,27 @@ struct MobileInstallationFeedbackEvent {
   11: string additional_help
   12: string free_response // TO BE EVENTUALLY DEPRECATED
   13: string app_class
+}
+
+struct MobileInstallationGroupStartedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string installation_device_type
+  8: string guide_version
+  9: string app_class
+  10: i32 load_index // 0 if it's a single load device, > 0 if multi
+  11: string light_type
+  12: string wattage_type
+  13: string installation_type // single_pole, multiway, etc
+  14: bool dimmable
+  15: bool is_existing_device
+  16: bool first_time
+  18: string install_id
+  19: string load_id
 }
 
 struct MobileInstallationStartedEvent {
