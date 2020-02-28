@@ -8,6 +8,7 @@ include "peripheral_interface.thrift"
 struct GarageDoorPeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
+  3: optional message_bus.Event event
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {

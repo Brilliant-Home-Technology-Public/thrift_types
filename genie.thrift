@@ -1,6 +1,12 @@
 namespace py thrift_types.genie
 namespace java thrift_types.genie
 
+// Event keys
+const string EVENT_KEY_DOOR_STATUS = "genie:door_status"
+const string EVENT_KEY_LINK_STATUS = "genie:link_status"
+const string EVENT_KEY_DEVICE_STATUS = "genie:device_status"
+const string EVENT_KEY_FAULT = "genie:fault"
+
 // These are constants for the Genie API
 // https://brillianthome.atlassian.net/wiki/spaces/TP/pages/193429539/Genie+API
 
