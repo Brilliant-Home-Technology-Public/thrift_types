@@ -1,6 +1,7 @@
 namespace py thrift_types.remote_media
 namespace java thrift_types.remote_media
 
+const string LIVE_VIEW_SESSION_PREFIX = "live_view_session:"
 
 enum MediaTransmission {
   NONE = 0
