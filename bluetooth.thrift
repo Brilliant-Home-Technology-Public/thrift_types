@@ -1,16 +1,26 @@
 namespace py thrift_types.bluetooth
 namespace java thrift_types.bluetooth
 
-
+const string MESH_PROV_SERVICE_UUID_STR = "00001827-0000-1000-8000-00805f9b34fb"
 const string MESH_PROXY_SERVICE_UUID_STR = "00001828-0000-1000-8000-00805f9b34fb"
 const string MESH_PROV_DATA_IN_UUID_STR = "00002adb-0000-1000-8000-00805f9b34fb"
 const string MESH_PROV_DATA_OUT_UUID_STR = "00002adc-0000-1000-8000-00805f9b34fb"
 const string MESH_PROXY_DATA_IN_UUID_STR ="00002add-0000-1000-8000-00805f9b34fb"
 const string MESH_PROXY_DATA_OUT_UUID_STR = "00002ade-0000-1000-8000-00805f9b34fb"
 const string MESH_CONFIG_VARIABLE_PREFIX = "mesh_device:"
+const string NORDIC_SERVICE_UUID_STR = "0000fee4-0000-1000-8000-00805f9b34fb"
 const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
+
+// The advertisement priority enum is used by the adapter client for ordering advertisments
+// that are enqueued for broadcasting. The underlying mechanism used is a PriorityQueue and
+// returns items with lower value first. As a result, the enum that is used to represent
+// the highest priority is smaller than the lowest priority.
+enum AdvertisementPriority {
+  HIGH = 1,
+  LOW = 100,
+}
 
 enum BluetoothService {
   BRILLIANT_CONTROL_PROVISIONING = 1,
