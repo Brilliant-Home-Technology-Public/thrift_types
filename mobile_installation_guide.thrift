@@ -129,6 +129,7 @@ struct GuidePage {
   7: optional list<GuideRule> display_rules // Logical statement referencing field identifiers and option values
   8: optional string confirm_button_url // If nil this will just process nextTapped
   9: optional string underline_button_logging_name
+  10: optional string tip_text
 }
 
 enum GuideScreenType {
@@ -241,11 +242,14 @@ const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_DIMMABLE = "screen_device_setup_dimmable"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FIXTURE_TYPE = "screen_device_setup_fixture_type"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_INSTALL_CONFIG = "screen_device_setup_install_config"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_TYPE = "screen_device_setup_light_type"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_MINIMUM_DIM = "screen_device_setup_minimum_dim"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FINISH_CIRCUIT = "screen_device_setup_finish_circuit"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FORWARDING = "screen_device_setup_forwarding"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_ownership"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PROVISIONED_LOAD = "screen_device_setup_provisioned_load"
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
