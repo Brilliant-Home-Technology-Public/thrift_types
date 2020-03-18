@@ -31,6 +31,11 @@ enum MeshDeviceType {
   CONTROL = 1,
 }
 
+enum OtaUpdateStatus {
+  UP_TO_DATE = 0,
+  IN_PROGRESS = 1,
+}
+
 struct NetKey {
   1: i16 index
   2: string key // 32 digit hexadecimal
