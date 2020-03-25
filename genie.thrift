@@ -41,10 +41,12 @@ const map<i32, string> DOOR_LINK_STATUS_ENUM_TO_STRING = {
 const string DOOR_FAULT_NONE = "none"
 const string DOOR_FAULT_UL_LOCKOUT = "ul_lockout"
 const string DOOR_FAULT_MOVE_ABORT = "move_abort"
+const string DOOR_FAULT_UNKNOWN = "unknown"
 const map<i32, string> DOOR_FAULT_ENUM_TO_STRING = {
      0: DOOR_FAULT_NONE,
      1: DOOR_FAULT_UL_LOCKOUT,
      2: DOOR_FAULT_MOVE_ABORT,
+     3: DOOR_FAULT_UNKNOWN,
 }
 
 const string DEVICE_STATUS_OFFLINE = "offline"
