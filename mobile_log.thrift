@@ -179,7 +179,7 @@ enum MobileBLEDeviceType {
 enum MobileBLEProvisioningEventStatus {
   SUCCESS = 1 // Only recorded when successfully added to brilliant message bus
   ERROR_PROVISIONING = 2 // Returned when an error in the BLE Provisioning occurs
-  ERROR_CONFIGURATION = 3 // Returned when an error during vendor message exchanges occurs 
+  ERROR_CONFIGURATION = 3 // Returned when an error during vendor message exchanges occurs
   ERROR_MESSAGE_BUS = 4 // Returned when an error in message bus setup occurs
 }
 
@@ -208,6 +208,7 @@ enum MobileEventDeviceType {
   GENERIC_TOGGLE = 4
   MUSIC = 5
   SHADE = 6
+  GARAGE_DOOR = 7
 }
 
 enum MobileEventSource {
