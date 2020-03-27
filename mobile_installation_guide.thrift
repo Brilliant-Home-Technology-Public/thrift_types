@@ -98,6 +98,7 @@ enum GuideFieldType {
   FREEFORM_TEXT = 10
   SWITCH_GESTURE = 11
   BLUETOOTH_STATUS = 12 // Bluetooth Icon and Status String
+  VERTICAL_CHECKBOX_QUESTION = 13
 }
  
 struct GuideOption {
