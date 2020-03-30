@@ -72,6 +72,8 @@ enum GuideOperator {
   IS_SET = 3
   AND = 4 // Evaluates child rules and validation_value of 1 or 0
   OR = 5 // Evaluates child rules and validation value of 1 or 0
+  CONTAIN
+  NOT_CONTAIN
 }
  
 const string MOBILE_GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
