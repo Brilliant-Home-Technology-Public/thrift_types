@@ -237,6 +237,9 @@ const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_WATTAGE_PREFIX = "field_wattage_"
 
+const string MOBILE_GUIDE_OPTION_BRILLIANT_CONTROLS = "brilliant_controls"
+const string MOBILE_GUIDE_OPTION_BRILLIANT_SWITCHES = "brilliant_switches"
+const string MOBILE_GUIDE_OPTION_NON_BRILLIANT_DEVICES = "non_brilliant_devices"
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
