@@ -2,6 +2,7 @@ namespace py thrift_types.notification
 namespace java thrift_types.notification
 
 const string NOTIFICATION_VARIABLE_PREFIX = "notification:"
+const string BRILLIANT_DEVICE_NOTIFICATION_IDENTIFIER = "brilliant"
 
 enum BrilliantNotificationType {
   UNKNOWN = 0,
