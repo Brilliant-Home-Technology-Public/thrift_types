@@ -72,8 +72,8 @@ enum GuideOperator {
   IS_SET = 3
   AND = 4 // Evaluates child rules and validation_value of 1 or 0
   OR = 5 // Evaluates child rules and validation value of 1 or 0
-  CONTAIN
-  NOT_CONTAIN
+  CONTAIN // Evaluates if string contains the validation value substring
+  NOT_CONTAIN // Evaluates if string does not contain the validation value substring
 }
  
 const string MOBILE_GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
@@ -306,4 +306,4 @@ const string MOBILE_SECTION_GROUP_PROVISION = "section_group_provision"
 const string MOBILE_SECTION_GROUP_TEST = "section_group_test"
 const string MOBILE_SECTION_GROUP_UNINSTALL = "section_group_uninstall"
 
-const string MOBILE_GUIDE_CONSTANT_VERTICAL_CHECKBOX_DELIMETER = ":"
+const string MOBILE_GUIDE_CONSTANT_VERTICAL_CHECKBOX_OPTION_DELIMITER = ":"
