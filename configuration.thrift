@@ -426,3 +426,18 @@ struct GroupedPeripheralID {
 struct PeripheralGroup {
   1: list<GroupedPeripheralID> peripherals
 }
+
+// Peripheral State Configuration
+
+struct PeripheralState {
+  1: i32 state_config_id // Maps to an ENUM, expected to be unique per peripheral type
+  2: optional map<string, string> additional_variable_state
+}
+
+const string PERIPHERAL_STATE_CONFIGURATION_USE_CURRENT_VARIABLE_VALUE_INDICATOR = "peripheral_state_configuration_use_current_variable_value_indicator"
+
+enum GangboxPeripheralStates {
+  UNKNOWN = 0,
+  CDK_KITCHEN = 1,
+  CDK_PORCH = 2,
+}
