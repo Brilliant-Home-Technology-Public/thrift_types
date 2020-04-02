@@ -133,6 +133,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneViewAction": "PartnerSceneAction",
 
   // Installation Guide
+  // iOS
   "IGHorizontal": "InstallationGuide",
   "IGVertical": "InstallationGuide",
   "IGBarcode": "InstallationGuide:Barcode",
@@ -140,9 +141,25 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGInstallSuccess": "InstallationGuide:Success",
   "IGOverview": "InstallationGuide:Overview",
   "InstallationArchive": "InstallationGuide:Archive",
+  // Android
+  "Horizontal": "InstallationGuide"
+  "Vertical": "InstallationGuide",
+  "GuideBarcode": "InstallationGuide:Barcode",
+  "WirePhotos": "InstallationGuide:WirePhotos",
+  "InstallSuccess": "InstallationGuide:Success",
+  "Overview": "InstallationGuide:Overview",
+  "Archive": "InstallationGuide:Archive",
 
   // Switch Provisioning
-  "SwitchProvisioning": "SwitchProvisioning",
+  // iOS
+  "SwitchProvisioning": "Provisioning:SwitchProvisioning",
+  "DeviceSetupMinDimLevel": "Provisioning:MinDimLevel",
+  "DeviceSetupForwarding": "Provisioning:ForwardingAddress",
+  "DeviceSetupOwner": "Provisioning:Owner",
+  // Android
+  "ProvisionProgress": "Provisioning", // adds SwitchProvisioning modifier to match iOS
+  "GuideMinDimLevel": "Provisioning:MinDimLevel",
+  "GuideForwardingAddress": "Provisioning:ForwardingAddress",
 
   // Install Device Setup
   "ActiveDeviceSetup": "ActiveDeviceSetup",
