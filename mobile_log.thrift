@@ -17,6 +17,7 @@ const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
+const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
@@ -171,6 +172,11 @@ const string MOBILE_ERROR_REASON_CONTROL_ENDED = "ControlEnded"
 const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 // END MOBILE ERROR SHORT REASON CONSTANTS
 
+// BEGIN MOBILE INTEGRATION NAME CONSTANTS
+// All integration names aside from brilliant are simply the virtual device id constants
+const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
+// END MOBILE INTEGRATION NAME CONSTANTS
+
 enum MobileBLEDeviceType {
   BRILLIANT_SWITCH = 1
   BRILLIANT_PLUG = 2
@@ -209,6 +215,7 @@ enum MobileEventDeviceType {
   MUSIC = 5
   SHADE = 6
   GARAGE_DOOR = 7
+  OTHER = 8
 }
 
 enum MobileEventSource {
@@ -511,6 +518,20 @@ struct MobileScreenViewEvent {
   7: string source_screen
   8: string user_id
   9: string app_class
+}
+
+struct MobileDeviceSettingsScreenViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string source_screen
+  8: string user_id
+  9: string app_class
+  10: MobileEventDeviceType device_type
+  11: string integration_name
 }
 
 struct MobileSectionExpansionToggleEvent {
