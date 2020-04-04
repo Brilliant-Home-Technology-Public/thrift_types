@@ -16,6 +16,8 @@ namespace java thrift_types.mobile_log
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
+const string MOBILE_DEVICE_NOTIFICATION_BUTTON_TAPPED = "mobile_device_notification_button_tapped"
+const string MOBILE_DEVICE_NOTIFICATION_VIEW = "mobile_device_notification_view"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
@@ -236,6 +238,10 @@ enum MobileLevelType {
   TEMPERATURE_RANGE_LOW = 4
   TEMPERATURE_RANGE_HIGH = 5
   POSITION = 6
+}
+
+enum MobileNotificationType {
+  POPUP = 1
 }
 
 enum MobileOfflineStatus {
@@ -470,6 +476,21 @@ struct MobileOverlayButtonTappedEvent {
   10: string app_class
 }
 
+struct MobileDeviceNotificationButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string notification_name
+  8: string button_name
+  9: string user_id
+  10: string app_class
+  11: MobileEventDeviceType device_type
+  12: string integration_name
+}
+
 struct MobileOverlayViewEvent {
   1: string table_name
   2: i64 ts
@@ -480,6 +501,21 @@ struct MobileOverlayViewEvent {
   7: string overlay_name
   8: string user_id
   9: string app_class
+}
+
+struct MobileDeviceNotificationViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string notification_name
+  8: string user_id
+  9: string app_class
+  10: MobileNotificationType notification_type
+  11: MobileEventDeviceType device_type
+  12: string integration_name
 }
 
 struct MobilePhotosActionEvent {
