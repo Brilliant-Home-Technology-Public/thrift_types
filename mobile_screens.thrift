@@ -15,7 +15,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RoomsTab": "Rooms",
 
   "Login": "LockedWelcome", // Use modifier for select account flow
-  
+
   // Device Control
   "Devices": "Devices", // Use modifier to specify type
   "DeviceControl": "Devices", // Use modifier to specify type
@@ -215,4 +215,5 @@ const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_DELETE = "SceneAction:Delete"
 const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
+const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 
