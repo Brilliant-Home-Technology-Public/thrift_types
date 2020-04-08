@@ -248,7 +248,6 @@ const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
 const string MOBILE_GUIDE_OVERLAY_ALL_OTHER_DEVICES_INSTALLED = "overlay_all_other_devices_installed"
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
-const string MOBILE_GUIDE_OVERLAY_ALL_OTHER_DEVICES_INSTALLED = "overlay_all_other_devices_installed"
 
 const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 
