@@ -228,6 +228,7 @@ const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_ques
 const string MOBILE_GUIDE_FIELD_LOAD_NAME_PREFIX = "field_load_name_"
 const string MOBILE_GUIDE_FIELD_LOAD_ROOM_IDS_PREFIX = "field_load_room_ids_"
 const string MOBILE_GUIDE_FIELD_LOAD_TYPE_PREFIX = "field_load_type_"
+const string MOBILE_GUIDE_FIELD_MULTIWAY_ALL_OTHER_DEVICES_INSTALLED = "field_multiway_all_other_devices_installed"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_PROVISIONED_ADDRESS = "field_provisioned_address"
@@ -245,6 +246,7 @@ const string MOBILE_GUIDE_OPTION_BRILLIANT_SWITCHES = "brilliant_switches"
 const string MOBILE_GUIDE_OPTION_NON_BRILLIANT_DEVICES = "non_brilliant_devices"
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
+const string MOBILE_GUIDE_OVERLAY_ALL_OTHER_DEVICES_INSTALLED = "overlay_all_other_devices_installed"
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 
 const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
@@ -268,6 +270,7 @@ const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_suc
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_TEST_SELECTION = "screen_line_load_test_selection"
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST = "screen_line_load_wire_multimeter_test"
 const string MOBILE_GUIDE_SCREEN_MULTIMETER_CHECK = "screen_multimeter_check"
+const string MOBILE_GUIDE_SCREEN_MULTIWAY_ALL_DEVICES_INSTALLED = "screen_multiway_all_devices_installed_check"
 const string MOBILE_GUIDE_SCREEN_NCV_DETECTOR_CHECK = "screen_ncv_detector_check"
 const string MOBILE_GUIDE_SCREEN_NEUTRAL_WIRE_CHECK = "screen_installation_neutral_wire_check"
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
