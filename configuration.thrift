@@ -448,3 +448,10 @@ enum DeviceConfigPeripheralStates {
   UNKNOWN = 0,
   CDK_KITCHEN = 1,
 }
+
+enum HueBridgePeripheralStubStates {
+  UNKNOWN = 0,
+  CDK_LIVING_ROOM = 1,
+  CDK_DINING_ROOM = 2,
+  CDK_MASTER_BEDROOM = 3,
+}
