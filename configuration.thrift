@@ -436,8 +436,15 @@ struct PeripheralState {
 
 const string PERIPHERAL_STATE_CONFIGURATION_USE_CURRENT_VARIABLE_VALUE_INDICATOR = "peripheral_state_configuration_use_current_variable_value_indicator"
 
+const string PERIPHERAL_STATE_CONFIGURATION_USE_ADDITIONAL_VARIABLE_STATE_VALUE_INDICATOR = "peripheral_state_configuration_use_additional_variable_state_value_indicator"
+
 enum GangboxPeripheralStates {
   UNKNOWN = 0,
   CDK_KITCHEN = 1,
   CDK_PORCH = 2,
+}
+
+enum DeviceConfigPeripheralStates {
+  UNKNOWN = 0,
+  CDK_KITCHEN = 1,
 }
