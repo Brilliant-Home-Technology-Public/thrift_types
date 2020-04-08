@@ -9,6 +9,7 @@ struct BlePeripheralInterface {
   1: i32 seq_upper
   2: bluetooth.ReplayProtection replay_protection
   3: bluetooth.BluetoothDevices bluetooth_devices_nearby
+  4: string mesh_proxy_device_id
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
