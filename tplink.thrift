@@ -24,3 +24,9 @@ const list<string> model_specific_icons = [
 const string default_light_icon = "KL100"
 const string default_switch_icon = "HS200"
 const string default_outlet_icon = "HS103"
+
+// Event keys
+const string EVENT_KEY_POWERED = "tplink:powered"
+const string EVENT_KEY_BRIGHTNESS = "tplink:brightness"
+const string EVENT_KEY_COLOR_TEMPERATURE = "tplink:color_temperature"
+const string EVENT_KEY_COLOR = "tplink:color"
