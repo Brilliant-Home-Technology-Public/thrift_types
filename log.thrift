@@ -124,6 +124,7 @@ const string UI_HOMESCREEN_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_homescree
 const string UI_NOTIFICATION_OPTION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_option_button_tapped"
 const string UI_PRIVACY_SETTINGS_UPDATE_TABLE_NAME = "privacy_settings_update"
 const string UI_DEVICE_SETTINGS_SCREEN_VIEW_TABLE_NAME = "device_settings_screen_view"
+const string UI_ALERT_TAPPED_TABLE_NAME = "alert_tapped"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
@@ -351,6 +352,11 @@ const string UI_BUTTON_NAME_SLIDER_INDEX = "slider_index"
 const string UI_BUTTON_NAME_MANAGE_GROUPS = "manage_groups"
 const string UI_BUTTON_NAME_GROUP = "group"
 const string UI_BUTTON_NAME_EDIT = "edit"
+const string UI_BUTTON_NAME_EDIT_COMPLETE = "edit_complete"
+const string UI_BUTTON_NAME_SELECT_ALL = "select_all"
+const string UI_BUTTON_NAME_DESELECT_ALL = "deselect_all"
+const string UI_BUTTON_NAME_EDIT_NAME = "edit_name"
+const string UI_BUTTON_NAME_ADD_NEW_ROOM = "add_new_room"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
