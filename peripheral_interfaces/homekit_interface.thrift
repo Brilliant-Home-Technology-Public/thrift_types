@@ -6,7 +6,6 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct HomeKitPeripheralInterface {
-  1: bool enabled
   2: string setup_uri
   3: string setup_id
   4: string setup_code
