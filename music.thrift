@@ -11,6 +11,7 @@ struct MusicTrack {
   6: optional i64 duration
   7: optional i64 queue_position
   8: optional string music_service
+  9: optional string line_in_mode
 }
 
 struct PlayQueue {
