@@ -11,6 +11,7 @@ struct MusicTrack {
   6: optional i64 duration
   7: optional i64 queue_position
   8: optional string music_service
+  9: optional LineInMode line_in_mode
 }
 
 struct PlayQueue {
@@ -42,4 +43,10 @@ enum RepeatMode {
 
 struct AvailableRepeatModes {
   1: list<RepeatMode> available_repeat_modes
+}
+
+enum LineInMode {
+  GENERIC = 0,
+  TV = 1,
+  AIRPLAY = 2,
 }
