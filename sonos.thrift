@@ -9,11 +9,6 @@ const string LINE_IN_URI_PREFIX = "line_in_source"
 // coordinator is not the Sonos with the Home Theater input.
 const string HOME_THEATER_URI_PREFIX = "home_theater_source"
 
-// Line-In mode enum values
-const string LINE_IN_GENERIC = "linein"
-const string LINE_IN_TV = "linein.homeTheater"
-const string LINE_IN_AIRPLAY = "linein.airplay"
-
 enum GroupStatus {
   UNKNOWN = 0,
   MOVED = 1,

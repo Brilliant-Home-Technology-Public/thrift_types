@@ -3,6 +3,12 @@ namespace java thrift_types.music
 
 const string MUSIC_PLAYLIST_PREFIX = "music_asset:"
 
+enum LineInMode {
+  GENERIC = 1,
+  TV = 2,
+  AIRPLAY = 3,
+}
+
 struct MusicTrack {
   2: string title
   3: optional string artist
@@ -11,7 +17,7 @@ struct MusicTrack {
   6: optional i64 duration
   7: optional i64 queue_position
   8: optional string music_service
-  9: optional string line_in_mode
+  9: optional LineInMode line_in_mode
 }
 
 struct PlayQueue {
