@@ -7,7 +7,7 @@ enum BatteryStatus {
 }
 
 enum LockStatus {
-  UNKNOWN = -1,
+  UNKNOWN = 0,
   NORMAL = 1,
   JAMMED = 2,
 }
