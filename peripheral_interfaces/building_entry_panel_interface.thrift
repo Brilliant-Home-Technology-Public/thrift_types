@@ -18,6 +18,7 @@ struct BuildingEntryPanelPeripheralInterface {
   9: bool grant_access
   10: i16 chime_count
   11: message_bus.Event event
+  12: optional bool grant_access_any_time
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
