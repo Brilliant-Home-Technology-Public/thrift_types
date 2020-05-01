@@ -411,3 +411,15 @@ enum SwitchLoadType {
   LOAD_TYPE_ALWAYS_OFF = 0x04,
   LOAD_TYPE_SAFETY_DISABLE = 0x05,
 }
+
+enum LoadWattageStatus {
+  UNDETERMINED = 0,
+  STANDARD = 1,
+  HIGH = 2,
+}
+
+enum LoadMagneticStatus {
+  UNDETERMINED = 0,
+  NOT_MAGNETIC = 1,
+  MAGNETIC = 2,
+}
