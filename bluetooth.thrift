@@ -12,6 +12,7 @@ const string NORDIC_SERVICE_UUID_STR = "0000fee4-0000-1000-8000-00805f9b34fb"
 const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
+const i32 SWITCH_DVT_APP_VERSION = 6
 
 // The advertisement priority enum is used by the adapter client for ordering advertisments
 // that are enqueued for broadcasting. The underlying mechanism used is a PriorityQueue and
