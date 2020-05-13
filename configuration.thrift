@@ -429,23 +429,23 @@ struct PeripheralGroup {
 
 // Peripheral State Configuration
 
-struct PeripheralState {
-  1: i32 peripheral_state_template_id // Maps to an ENUM, expected to be unique per peripheral type
-  2: optional map<string, string> additional_variable_state
+struct PeripheralConfiguration {
+  1: i32 peripheral_configuration_template_id // Maps to an ENUM, expected to be unique per peripheral type
+  2: optional map<string, string> additional_variable_configuration
 }
 
-enum GangboxPeripheralStateTemplates {
+enum GangboxPeripheralConfigurationTemplates {
   UNKNOWN = 0,
   CDK_KITCHEN = 1,
   CDK_PORCH = 2,
 }
 
-enum DeviceConfigPeripheralStateTemplates {
+enum DeviceConfigPeripheralConfigurationTemplates {
   UNKNOWN = 0,
   CDK_KITCHEN = 1,
 }
 
-enum HueBridgePeripheralStubStateTemplates {
+enum HueBridgePeripheralStubConfigurationTemplates {
   UNKNOWN = 0,
   CDK_LIVING_ROOM = 1,
   CDK_DINING_ROOM = 2,
