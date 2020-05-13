@@ -131,6 +131,7 @@ const string UI_ALERT_TAPPED_TABLE_NAME = "alert_tapped"
 const string EMBEDDED_SOFTWARE_UPDATE_TABLE_NAME = "embedded_software_update"
 const string EMBEDDED_SCENE_EXECUTION_AUTOMATION_TABLE_NAME = "embedded_scene_execution_automation"
 const string EMBEDDED_BRILLIANT_SWITCH_SET_SLIDER_CONFIG_TABLE_NAME = "embedded_brilliant_switch_set_slider_config"
+const string EMBEDDED_RECEIVED_SWITCH_GESTURE_EVENT = "switch_gesture_event"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
