@@ -434,6 +434,23 @@ struct PeripheralConfiguration {
   2: optional map<string, string> additional_variable_configuration
 }
 
+struct UniquePeripheralID {
+  1: string device_id
+  2: string peripheral_id
+}
+
+struct PeripheralConfigurationAssignment {
+  1: UniquePeripheralID unique_peripheral_id
+  3: PeripheralConfiguration peripheral_configuration
+}
+
+struct StateConfig {
+  1: string id
+  2: string title
+  3: list <PeripheralConfigurationAssignment> peripheral_configuration_assignments
+  4: optional Trigger time_trigger
+}
+
 enum GangboxPeripheralConfigurationTemplates {
   UNKNOWN = 0,
   CDK_KITCHEN = 1,
