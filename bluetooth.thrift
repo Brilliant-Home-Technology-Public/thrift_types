@@ -136,6 +136,7 @@ enum SwitchPropertyID {
   DEVICE_REVISION             = 0x17,
   ERROR_STATUS                = 0x18,
   DOUBLE_TAP_ENABLED          = 0x19,
+  SWITCH_LOAD_TYPE            = 0x1A,
 }
 
 enum BreakCircuitStatus {
@@ -369,6 +370,14 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 1,
     "variable_name": '',
   },
+  SwitchPropertyID.SWITCH_LOAD_TYPE: {
+    "property_id": SwitchPropertyID.SWITCH_LOAD_TYPE,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 5,
+    "variable_name": 'switch_load_type',
+  },
 }
 
 const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
@@ -392,4 +401,13 @@ const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
     "property_id": SwitchGesture.DOUBLE_TAP,
     "property_size": 0,
   },
+}
+
+enum SwitchLoadType {
+  INVALID = 0x00,
+  LOAD_TYPE_ONOFF = 0x01,
+  LOAD_TYPE_DIMMABLE = 0x02,
+  LOAD_TYPE_ALWAYS_ON = 0x03,
+  LOAD_TYPE_ALWAYS_OFF = 0x04,
+  LOAD_TYPE_SAFETY_DISABLE = 0x05,
 }
