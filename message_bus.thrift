@@ -78,6 +78,7 @@ const string HUE_BRIDGE_SCENE_CONFIG_IDENTIFIER = "hue_bridge_scene_configuratio
 const string GENIE_IDENTIFIER = "genie"
 const string GENIE_CONFIG_IDENTIFIER = "genie_configuration"
 const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
+const string STATE_CONFIG_IDENTIFIER = "state_config_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -208,6 +209,7 @@ enum PeripheralType {
   GENIE_CONFIGURATION = 73,
   GARAGE_DOOR = 74,
   NOTIFICATION = 75,
+  STATE_CONFIGURATION = 76,
 }
 
 enum PeripheralStatus {

@@ -429,6 +429,8 @@ struct PeripheralGroup {
 
 // Peripheral State Configuration
 
+const string STATE_CONFIG_VARIABLE_PREFIX = "state_config:"
+
 struct PeripheralConfiguration {
   1: i32 peripheral_configuration_template_id // Maps to an ENUM, expected to be unique per peripheral type
   2: optional map<string, string> additional_variable_configuration
