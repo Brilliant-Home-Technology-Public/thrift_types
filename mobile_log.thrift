@@ -36,6 +36,7 @@ const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
+const string MOBILE_PROVISIONING_CANCEL_EVENT_TABLE_NAME = "mobile_provisioning_cancel"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
@@ -109,6 +110,7 @@ const string MOBILE_BUTTON_NAME_NO_TOOL = "no_tool"
 const string MOBILE_BUTTON_NAME_OK = "ok"
 const string MOBILE_BUTTON_NAME_OPEN_SONOS = "open_sonos"
 const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
+const string MOBILE_BUTTON_NAME_PROVISION_BACK = "provision_back"
 const string MOBILE_BUTTON_NAME_REPEAT = "repeat"
 const string MOBILE_BUTTON_NAME_RETRY = "retry"
 const string MOBILE_BUTTON_NAME_REMOVE_CONTROL = "remove_control"
@@ -697,4 +699,15 @@ struct MobileLiveviewUsageReportEvent {
   8: bool sound_toggled
   9: string session_id
   10: string app_class
+}
+
+struct MobileProvisioningCancelEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string app_class
+  8: i64 time_elapsed_seconds
 }
