@@ -43,6 +43,8 @@ enum MeshProvisionStatus {
   BLUETOOTH_UNSUPPORTED
   BLUETOOTH_UNAUTHORIZED
   BLUETOOTH_OFF
+  FIRMWARE_CHECK
+  COMPATIBILITY_CHECK
 }
 
 enum InstallationDeviceType {
@@ -188,6 +190,7 @@ enum GuideScreenType {
   DEVICE_SETUP_MINIMUM_DIM = 7
   DEVICE_SETUP_FORWARDING = 8
   DEVICE_SETUP_OWNERSHIP = 9
+  WARNING_SCREEN = 10
 }
  
 struct GuideLoads {
@@ -222,6 +225,21 @@ struct InstallationGuide {
   3: list<GuideSection> sections
 }
 
+enum CompatibilityCheckResult {
+  SUCCESS = 1
+  GENERIC_ERROR = 2
+  HIGH_WATTAGE = 3
+  MAGNETIC_LOAD = 4
+}
+
+enum CompatibilityCheckState {
+  SET_LOAD_TYPE_ONOFF = 1
+  SET_ON = 2
+  WAIT = 3
+  GET_SWITCH_LOAD_TYPE = 4
+  GET_POWER = 5
+  GET_CURRENT_ZERO_CROSS = 6
+}
 
 const string MOBILE_GUIDE_COMPUTED_IMAGE_URL_WIRING_DIAGRAM = "COMPUTED_IMAGE_URL_WIRING_DIAGRAM"
 const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_COMMON = "COMPUTED_TEXT_CONTINUE_LABELING_COMMON"
@@ -260,6 +278,7 @@ const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID = "field_forwarding_d
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID = "field_forwarding_device_id"
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID = "field_fowarding_peripheral_id"
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
+const string MOBILE_GUIDE_FIELD_HIGH_WATTAGE = "field_high_wattage"
 const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_PREFIX = "field_line_side_multimeter_question_"
@@ -267,12 +286,14 @@ const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_ques
 const string MOBILE_GUIDE_FIELD_LOAD_NAME_PREFIX = "field_load_name_"
 const string MOBILE_GUIDE_FIELD_LOAD_ROOM_IDS_PREFIX = "field_load_room_ids_"
 const string MOBILE_GUIDE_FIELD_LOAD_TYPE_PREFIX = "field_load_type_"
+const string MOBILE_GUIDE_FIELD_MAGNETIC_LOAD = "field_magnetic_load"
 const string MOBILE_GUIDE_FIELD_MULTIWAY_ALL_OTHER_DEVICES_INSTALLED = "field_multiway_all_other_devices_installed"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
 const string MOBILE_GUIDE_FIELD_PROVISIONED_ADDRESS = "field_provisioned_address"
 const string MOBILE_GUIDE_FIELD_SETUP_FLOW = "field_setup_flow"
 const string MOBILE_GUIDE_FIELD_STATIC_AUTH_DATA_HEX = "field_static_auth"
+const string MOBILE_GUIDE_FIELD_SWITCH_FIRMWARE_VALID = "field_switch_firmware_valid"
 const string MOBILE_GUIDE_FIELD_SWITCH_TYPE_PREFIX = "field_switch_type_"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
 const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE = "field_user_identified_as_line_"
@@ -305,10 +326,13 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_o
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PLUG_TYPE = "screen_device_setup_plug_type"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PROVISIONED_LOAD = "screen_device_setup_provisioned_load"
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
+const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
+const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_TEST_SELECTION = "screen_line_load_test_selection"
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST = "screen_line_load_wire_multimeter_test"
+const string MOBILE_GUIDE_SCREEN_MAGNETIC_LOAD = "screen_magnetic_load"
 const string MOBILE_GUIDE_SCREEN_MULTIMETER_CHECK = "screen_multimeter_check"
 const string MOBILE_GUIDE_SCREEN_MULTIWAY_ALL_DEVICES_INSTALLED = "screen_multiway_all_devices_installed_check"
 const string MOBILE_GUIDE_SCREEN_NCV_DETECTOR_CHECK = "screen_ncv_detector_check"
