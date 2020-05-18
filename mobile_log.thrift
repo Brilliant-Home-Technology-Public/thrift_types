@@ -309,6 +309,11 @@ struct MobileBLEProvisioningEvent {
   9: string ble_device_id
   10: optional string error_reason
   11: string last_provisioning_state
+  // Concatenated dictionary of SwitchPropertyIDs to their values
+  // "(FAILURE)" indicates we attempted but did not succeed in setting the property
+  // "(SKIPPED)" indicates we did not attempt to set this property due to missing information.
+  // Note this is not always an error case (e.g. not setting forwarding address for the load side switch)
+  12: string configuration_state
 }
 
 struct MobileDeviceLevelEvent {
