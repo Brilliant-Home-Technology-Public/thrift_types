@@ -453,20 +453,9 @@ struct StateConfig {
   4: optional Trigger time_trigger
 }
 
-enum GangboxPeripheralConfigurationTemplates {
+enum ConfigurationTemplateID {
   UNKNOWN = 0,
-  CDK_KITCHEN = 1,
-  CDK_PORCH = 2,
-}
-
-enum DeviceConfigPeripheralConfigurationTemplates {
-  UNKNOWN = 0,
-  CDK_KITCHEN = 1,
-}
-
-enum HueBridgePeripheralStubConfigurationTemplates {
-  UNKNOWN = 0,
-  CDK_LIVING_ROOM = 1,
-  CDK_DINING_ROOM = 2,
-  CDK_MASTER_BEDROOM = 3,
+  SHOWING = 1,
+  VACANT = 2,
+  CDK = 3,
 }
