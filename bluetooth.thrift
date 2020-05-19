@@ -307,7 +307,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1000,
-    "variable_name": '',
+    "variable_name": 'current_zero_cross',
   },
   SwitchPropertyID.BREAK_DIMMING: {
     "property_id": SwitchPropertyID.BREAK_DIMMING,
@@ -323,7 +323,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": '', // units in 1/10 of a watt
+    "variable_name": 'power', // units in 1/10 of a watt
   },
   SwitchPropertyID.POWER_THRESHOLD: {
     "property_id": SwitchPropertyID.POWER_THRESHOLD,
