@@ -9,6 +9,7 @@ include "peripheral_interface.thrift"
 struct ExecutionPeripheralInterface {
     1: string last_executed_scene_id
     3: string trigger_scene_validity_check
+    4: string last_executed_state_config_id
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
