@@ -152,7 +152,10 @@ struct CalendarDay {
 // Execution
 
 const string EXECUTION_STATE_PREFIX = "execution_state:"
+const string SCENE_ACTIVATION_HANDLER_IDENTIFIER = "scene_activation_handler"
 const string SCENE_EXECUTION_HANDLER_IDENTIFIER = "scene_execution_handler"
+const string STATE_CONFIG_ACTIVATION_HANDLER_IDENTIFIER = "state_config_activation_handler"
+const string STATE_CONFIG_EXECUTION_HANDLER_IDENTIFIER = "state_config_execution_handler"
 const string ART_EXECUTION_HANDLER_IDENTIFIER = "art_execution_handler"
 const string LIGHT_EXECUTION_HANDLER_IDENTIFIER = "light_execution_handler"
 const string AUTO_UPDATE_HANDLER_IDENTIFIER = "auto_update_handler"
