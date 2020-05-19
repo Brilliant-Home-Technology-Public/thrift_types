@@ -220,4 +220,6 @@ const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_DELETE = "SceneAction:Delete"
 const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
+const string MOBILE_OVERLAY_NAME_JAMMED = "Jammed"
+const string MOBILE_OVERLAY_NAME_UNKNOWN = "Unknown"
 
