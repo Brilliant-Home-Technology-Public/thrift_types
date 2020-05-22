@@ -137,6 +137,8 @@ enum SwitchPropertyID {
   ERROR_STATUS                = 0x18,
   DOUBLE_TAP_ENABLED          = 0x19,
   SWITCH_LOAD_TYPE            = 0x1A,
+  UNICAST_FORWARDING_GESTURES = 0x1B,
+  CAPTOUCH_AND_LOAD_CONNECTED = 0x1C,
 }
 
 enum BreakCircuitStatus {
@@ -377,6 +379,22 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 5,
     "variable_name": 'switch_load_type',
+  },
+  SwitchPropertyID.UNICAST_FORWARDING_GESTURES: {
+    "property_id": SwitchPropertyID.UNICAST_FORWARDING_GESTURES,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 3,
+    "variable_name": '',
+  },
+  SwitchPropertyID.CAPTOUCH_AND_LOAD_CONNECTED: {
+    "property_id": SwitchPropertyID.CAPTOUCH_AND_LOAD_CONNECTED,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "variable_name": '',
   },
 }
 
