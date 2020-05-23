@@ -157,6 +157,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSetupMinDimLevel": "Provisioning:MinDimLevel",
   "DeviceSetupForwarding": "Provisioning:ForwardingAddress",
   "DeviceSetupOwner": "Provisioning:Owner",
+  "IGWarning": "Provisioning", // Use modifier to specify warning type
   // Android
   "ProvisionProgress": "Provisioning", // adds SwitchProvisioning modifier to match iOS
   "GuideMinDimLevel": "Provisioning:MinDimLevel",
@@ -192,6 +193,7 @@ const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
 const string MOBILE_OVERLAY_NAME_FORCE_UPGRADE = "ForceUpgrade"
 const string MOBILE_OVERLAY_NAME_FORGET_HOME = "ForgetHome"
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
+const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE_LOAD = "HighWattageLoad"
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"

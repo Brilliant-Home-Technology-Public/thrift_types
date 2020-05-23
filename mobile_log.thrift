@@ -140,6 +140,7 @@ const string MOBILE_BUTTON_NAME_SKIP = "skip"
 const string MOBILE_BUTTON_NAME_SOLID = "solid"
 const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
+const string MOBILE_BUTTON_NAME_VIEW_ARTICLE = "view_article"
 const string MOBILE_BUTTON_NAME_WHERE_IS_MY_BRILLIANT = "where_is_my_brilliant"
 const string MOBILE_BUTTON_NAME_X = "x"
 const string MOBILE_BUTTON_NAME_YES = "yes"
@@ -166,6 +167,7 @@ const string MOBILE_NAME_MODIFIER_OVERLAY = "Overlay"
 const string MOBILE_NAME_MODIFIER_RESET = "Reset"
 const string MOBILE_NAME_MODIFIER_CONFIRM = "Confirm"
 const string MOBILE_NAME_MODIFIER_IN_USE = "InUse"
+const string MOBILE_NAME_MODIFIER_LIGHT_ON_OFF_CHECK = "LightOnOffCheck"
 // END NAME MODIFIERS
 
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS
