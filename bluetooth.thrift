@@ -13,6 +13,11 @@ const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
 const i32 SWITCH_DVT_APP_VERSION = 6
+// We're using const bytes for unicast forwarding gestures rather than enums because we
+// bitwise OR their values.
+const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
+const byte UNICAST_FORWARDING_GESTURES_ONOFF = 0x01
+const byte UNICAST_FORWARDING_GESTURES_DIMMABLE = 0x02
 
 // The advertisement priority enum is used by the adapter client for ordering advertisments
 // that are enqueued for broadcasting. The underlying mechanism used is a PriorityQueue and
