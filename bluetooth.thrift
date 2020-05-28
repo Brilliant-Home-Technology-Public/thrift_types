@@ -12,7 +12,7 @@ const string NORDIC_SERVICE_UUID_STR = "0000fee4-0000-1000-8000-00805f9b34fb"
 const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
-const i32 SWITCH_DVT_APP_VERSION = 6
+const i32 SWITCH_DVT_APP_VERSION = 7
 // We're using const bytes for unicast forwarding gestures rather than enums because we
 // bitwise OR their values.
 const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
