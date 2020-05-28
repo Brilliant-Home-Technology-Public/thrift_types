@@ -113,8 +113,20 @@ enum GuideOperator {
   IS_SET = 3
   AND = 4 // Evaluates child rules and validation_value of 1 or 0
   OR = 5 // Evaluates child rules and validation value of 1 or 0
-  CONTAIN // Evaluates if string contains the validation value substring
-  NOT_CONTAIN // Evaluates if string does not contain the validation value substring
+  CONTAIN = 6 // Evaluates if string contains the validation value substring
+  NOT_CONTAIN = 7 // Evaluates if string does not contain the validation value substring
+  
+  // Tries INTEGER comparison first, returning true if target value > validation value.
+  // If either validation value or target value cannot be represented as Int,
+  // does LEXCICOGRAPHIC comparison of the same as a backup.
+  // Evaluates to false if value missing. 
+  GREATER_THAN = 8
+  
+  // Tries INTEGER comparison first, returning true if target value < validation value.
+  // If either validation value or target value cannot be represented as Int,
+  // does LEXCICOGRAPHIC comparison of the same as a backup.
+  // Evaluates to false if value missing. 
+  LESS_THAN = 9
 }
  
 const string MOBILE_GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
