@@ -14,7 +14,6 @@ struct LightPeripheralInterface {
   5: optional bool dimming_edge
   6: optional i32 minimum_dim_level
   7: optional i32 maximum_dim_level
-  8: optional bool has_load
   9: optional i32 power_threshold
   10: optional bool low_wattage
   11: optional bool multi_way
