@@ -104,6 +104,7 @@ struct GuideOverlay {
   7: optional string overlay_secondary_button_url
   8: optional string overlay_underline_button_title
   9: optional string overlay_underline_button_url
+  10: optional string overlay_image_url
 }
  
 enum GuideOperator {
