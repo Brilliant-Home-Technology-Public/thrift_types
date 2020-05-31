@@ -439,10 +439,12 @@ enum LoadWattageStatus {
   UNDETERMINED = 0,
   STANDARD = 1,
   HIGH = 2,
+  PENDING = 3, // Used during control compatibility check
 }
 
 enum LoadMagneticStatus {
   UNDETERMINED = 0,
   NOT_MAGNETIC = 1,
   MAGNETIC = 2,
+  PENDING = 3, // Used during control compatibility check
 }
