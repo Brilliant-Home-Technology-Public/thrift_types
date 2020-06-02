@@ -157,12 +157,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSetupMinDimLevel": "Provisioning:MinDimLevel",
   "DeviceSetupForwarding": "Provisioning:ForwardingAddress",
   "DeviceSetupOwner": "Provisioning:Owner",
-  "IGWarning": "Provisioning", // Use modifier to specify warning type
+  "IGWarning": "Provisioning:Warning", // Use modifier to specify warning type
   // Android
   "ProvisionProgress": "Provisioning", // adds SwitchProvisioning modifier to match iOS
   "GuideMinDimLevel": "Provisioning:MinDimLevel",
   "GuideForwardingAddress": "Provisioning:ForwardingAddress",
-  "GuideWarning": "Provisioning", // Use modifier to specify warning type
+  "GuideWarning": "Provisioning:Warning", // Use modifier to specify warning type
 
   // Install Device Setup
   "ActiveDeviceSetup": "ActiveDeviceSetup",
