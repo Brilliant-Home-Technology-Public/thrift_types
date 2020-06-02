@@ -162,6 +162,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ProvisionProgress": "Provisioning", // adds SwitchProvisioning modifier to match iOS
   "GuideMinDimLevel": "Provisioning:MinDimLevel",
   "GuideForwardingAddress": "Provisioning:ForwardingAddress",
+  "GuideWarning": "Provisioning", // Use modifier to specify warning type
 
   // Install Device Setup
   "ActiveDeviceSetup": "ActiveDeviceSetup",
