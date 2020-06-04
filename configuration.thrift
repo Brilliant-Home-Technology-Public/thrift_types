@@ -172,7 +172,7 @@ struct ExecutedSetVariableRequest {
 struct ExecutionState {
   1: i64 last_execution_timestamp = 0
   2: list<ExecutedSetVariableRequest> executed_set_variable_requests
-  3: optional bool in_progress
+  3: optional bool in_progress // DEPRECATED
 }
 
 struct DailyTimeRange {
