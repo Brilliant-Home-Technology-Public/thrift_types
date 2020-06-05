@@ -57,6 +57,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "NoJoinedHomes": "SwitchHome:Empty",
   "HomeSettings": "HomeSettings",
   "PrivacySettings": "PrivacySettings",
+  "SwitchEnvironment": "SwitchEnvironment",
 
   // Help
   "Help": "Help",
@@ -69,6 +70,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "FAQ": "ZendeskFAQ",
   "Coordinating": "ZendeskFAQ",
   "ZDKArticle": "ZendeskArticle",
+  "ViewArticle": "ZendeskArticle",
   "LiveChat": "ZendeskLiveChat",
   "MFMailComposeInternal": "MailComposer",
 
@@ -99,6 +101,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "PairingLoading": "PairV2:Login:Loading",
   "SetupLoading": "PairV2:Login:Loading",
   "EnterCode": "PairV2:Login:Verification", // User modifier for error, add home flow and reset passcode
+  "PairingEnterCode": "PairV2:Login:Verification", // User modifier for error, add home flow and reset passcode
   "EnterCodeSuccess": "PairV2:Login:Success",
   "SelectAccount": "PairV2:Login:ChooseAccount",
   "CreateAccount": "PairV2:Login:NewAccount",
@@ -116,6 +119,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Debug
   "Debug": "Debug",
+  "DebugStats": "DebugStats",
+  "DebugFlags": "DebugFlags",
 
   // Demo
   "DemoWalkthrough": "DemoWalkthrough",
@@ -150,6 +155,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "InstallSuccess": "InstallationGuide:Success",
   "Overview": "InstallationGuide:Overview",
   "Archive": "InstallationGuide:Archive",
+  "ControlInstallation": "InstallationGuide:ControlInstallation",
 
   // Switch Provisioning
   // iOS
