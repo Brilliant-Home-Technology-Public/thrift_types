@@ -342,6 +342,7 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_o
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PLUG_TYPE = "screen_device_setup_plug_type"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PROVISIONED_LOAD = "screen_device_setup_provisioned_load"
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
+const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK = "screen_multiway_4way_check"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
