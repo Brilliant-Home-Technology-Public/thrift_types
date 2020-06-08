@@ -231,4 +231,5 @@ const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_JAMMED = "Jammed"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
+const string MOBILE_OVERLAY_NAME_UNCONFIGURED_DEVICE = "UnconfiguredDevice"
 
