@@ -144,6 +144,8 @@ enum SwitchPropertyID {
   SWITCH_LOAD_TYPE            = 0x1A,
   UNICAST_FORWARDING_GESTURES = 0x1B,
   CAPTOUCH_AND_LOAD_CONNECTED = 0x1C,
+  AMPS_IN_MA                  = 0x1D,
+  AMPS_SAFE_MAX_THRESHOLD     = 0x1E,
 }
 
 enum BreakCircuitStatus {
@@ -400,6 +402,20 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "variable_name": '',
+  },
+  SwitchPropertyID.AMPS_IN_MA: {
+    "property_id": SwitchPropertyID.AMPS_IN_MA,
+    "property_size": 2,
+    "default_value": 0,
+    "variable_name": '',
+  },
+  SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD: {
+    "property_id": SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "variable_name": 'amps_safe_max_threshold', // units in mA
   },
 }
 
