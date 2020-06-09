@@ -647,6 +647,7 @@ struct MobileLiveviewSessionFeedbackEvent {
   9: i32 quality_level
   10: string screen_name
   11: string app_class
+  12: i32 session_count
 }
 
 struct MobileLiveviewSessionReportEvent {
