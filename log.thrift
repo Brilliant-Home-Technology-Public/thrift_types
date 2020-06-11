@@ -133,6 +133,7 @@ const string EMBEDDED_SCENE_EXECUTION_AUTOMATION_TABLE_NAME = "embedded_scene_ex
 const string EMBEDDED_BRILLIANT_SWITCH_SET_SLIDER_CONFIG_TABLE_NAME = "embedded_brilliant_switch_set_slider_config"
 const string EMBEDDED_RECEIVED_SWITCH_GESTURE_EVENT = "switch_gesture_event"
 const string EMBEDDED_MESH_DEVICE_CONNECTIVITY_TABLE_NAME = "mesh_device_connectivity"
+const string EMBEDDED_SCENE_EXECUTION_TABLE_NAME = "embedded_scene_execution"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
