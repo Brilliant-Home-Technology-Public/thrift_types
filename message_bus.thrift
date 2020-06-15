@@ -79,6 +79,8 @@ const string GENIE_IDENTIFIER = "genie"
 const string GENIE_CONFIG_IDENTIFIER = "genie_configuration"
 const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
 const string STATE_CONFIG_IDENTIFIER = "state_config_peripheral"
+const string SPECTRUM_BRANDS_IDENTIFIER = "spectrum_brands"
+const string SPECTRUM_BRANDS_CONFIG_IDENTIFIER = "spectrum_brands_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -122,6 +124,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     BUTTERFLYMX_IDENTIFIER,
     TPLINK_IDENTIFIER,
     GENIE_IDENTIFIER,
+    SPECTRUM_BRANDS_IDENTIFIER,
 ]
 
 const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
@@ -210,6 +213,7 @@ enum PeripheralType {
   GARAGE_DOOR = 74,
   NOTIFICATION = 75,
   STATE_CONFIGURATION = 76,
+  SPECTRUM_BRANDS_CONFIGURATION = 77,
 }
 
 enum PeripheralStatus {
