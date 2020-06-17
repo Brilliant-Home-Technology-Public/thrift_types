@@ -271,6 +271,7 @@ enum DeviceType {
   MOBILE_APP = 2
   VIRTUAL = 3
   CLOUD = 4
+  THIRDPARTY_VIRTUAL = 5
 }
 
 struct Device {
