@@ -29,6 +29,7 @@ struct ArtLibrary {
   1: string id
   2: string title
   3: list<ArtPiece> art_pieces
+  4: optional bool test = false
 }
 
 struct ArtLibraryConfig {
