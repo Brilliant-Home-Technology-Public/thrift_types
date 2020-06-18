@@ -306,6 +306,15 @@ struct Rooms {
   1: map<string, Room> rooms
 }
 
+struct Location {
+  1: string country_code
+  2: string postal_code
+  3: string city // might not technically be a city, but is of a similar scale
+  4: string state_abbreviation
+  5: double latitude
+  6: double longitude
+}
+
 // Room assignment
 
 struct RoomAssignment {
