@@ -25,10 +25,16 @@ struct ArtPiece {
   6: optional i64 created_timestamp
 }
 
+enum LibraryType {
+  USER = 0,
+  UNASSISTED_TOURS = 1
+}
+
 struct ArtLibrary {
   1: string id
   2: string title
   3: list<ArtPiece> art_pieces
+  4: optional LibraryType library_type = LibraryType.USER
 }
 
 struct ArtLibraryConfig {
