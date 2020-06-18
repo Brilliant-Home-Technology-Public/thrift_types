@@ -15,6 +15,7 @@ struct HomeConfigurationPeripheralInterface {
   6: user.User primary_user
   7: bool passcode_enabled
   8: optional configuration.Trigger control_software_update_poll_time
+  9: optional configuration.Location location
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
