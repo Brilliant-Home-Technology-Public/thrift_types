@@ -2,6 +2,7 @@ namespace py thrift_types.peripheral_interfaces.ble_interface
 namespace java thrift_types.peripheral_interfaces.ble_interface
 
 include "../bluetooth.thrift"
+include "../mesh_dfu.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
@@ -10,6 +11,7 @@ struct BlePeripheralInterface {
   2: bluetooth.ReplayProtection replay_protection
   3: bluetooth.BluetoothDevices bluetooth_devices_nearby
   4: string mesh_proxy_device_id
+  5: mesh_dfu.MeshDfuApplicationID last_update_attempt_application_id
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
