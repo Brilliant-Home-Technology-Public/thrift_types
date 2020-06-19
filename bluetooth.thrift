@@ -464,3 +464,9 @@ enum LoadMagneticStatus {
   MAGNETIC = 2,
   PENDING = 3, // Used during control compatibility check
 }
+
+struct MeshDeviceFirmware {
+  1: string firmware_version
+  2: i32 application_version
+  3: i16 bootloader_version
+}
