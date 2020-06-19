@@ -8,3 +8,9 @@ enum MeshDfuHexType {
   APPLICATION = 4
   MESH_BOOTLOADER_INFO = 8
 }
+
+enum MeshDfuApplicationID {
+  UNKNOWN = 0
+  SWITCH = 1
+  PLUG = 2
+}
