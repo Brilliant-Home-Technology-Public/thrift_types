@@ -467,6 +467,15 @@ enum LoadMagneticStatus {
 
 struct MeshDeviceFirmware {
   1: string firmware_version
+  2: i64 application_version
+  3: i32 bootloader_version
+}
+
+// Used in a BrilliantSwitchPeripheral migration: if during the migration we get
+// a serialized string, we can deserialize it to this type, then convert it to
+// a MeshDeviceFirmware, which we set the variable value to
+struct MeshDeviceFirmwareOld {
+  1: string firmware_version
   2: i32 application_version
   3: i16 bootloader_version
 }
