@@ -1,6 +1,8 @@
 namespace py thrift_types.mesh_dfu
 namespace java thrift_types.mesh_dfu
 
+const i32 MESH_DEVICE_BOOTLOADER_ID = 1
+
 enum MeshDfuHexType {
   SOFTDEVICE = 1
   BOOTLOADER = 2
