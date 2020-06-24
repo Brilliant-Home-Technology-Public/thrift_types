@@ -169,6 +169,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GuideMinDimLevel": "Provisioning:MinDimLevel",
   "GuideForwardingAddress": "Provisioning:ForwardingAddress",
   "GuideWarning": "Provisioning:Warning", // Use modifier to specify warning type
+  "GuideRoomSelection": "Provisioning", // adds RoomSelection modifier
 
   // Install Device Setup
   "ActiveDeviceSetup": "ActiveDeviceSetup",
