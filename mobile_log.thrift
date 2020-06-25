@@ -234,6 +234,7 @@ enum MobileEventDeviceType {
   SHADE = 6
   GARAGE_DOOR = 7
   OTHER = 8
+  BUILDING_ENTRY_PANEL = 9
 }
 
 enum MobileEventSource {
@@ -292,6 +293,7 @@ enum MobileToggleType {
   ON = 1
   LOCK = 2
   GLOBAL_ON = 3
+  ACCESS_GRANTED = 4
 }
 
 enum MobileUnlockResult {
