@@ -11,4 +11,5 @@ enum DemoType {
   SALES_KIT = 1,
   CHANNEL = 2,
   CONFERENCE = 3,
+  RETAIL = 4,
 }
