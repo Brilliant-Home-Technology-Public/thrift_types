@@ -278,6 +278,7 @@ const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_TEXT = [
 ]
 
 const string MOBILE_GUIDE_FIELD_ALL_BRILLIANT_PREFIX = "field_all_brilliant_"
+const string MOBILE_GUIDE_FIELD_COMPLETE_SETUP_READY_TS = "field_complete_setup_ready_ts"
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
