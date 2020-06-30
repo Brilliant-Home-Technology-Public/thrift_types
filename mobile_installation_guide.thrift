@@ -61,7 +61,7 @@ struct GuideOverlay {
   9: optional string overlay_underline_button_url
   10: optional string overlay_image_url
 }
- 
+
 enum GuideOperator {
   EQUAL = 1
   NOT_EQUAL = 2
@@ -70,20 +70,20 @@ enum GuideOperator {
   OR = 5 // Evaluates child rules and validation value of 1 or 0
   CONTAIN = 6 // Evaluates if string contains the validation value substring
   NOT_CONTAIN = 7 // Evaluates if string does not contain the validation value substring
-  
+
   // Tries INTEGER comparison first, returning true if target value > validation value.
   // If either validation value or target value cannot be represented as Int,
   // does LEXCICOGRAPHIC comparison of the same as a backup.
-  // Evaluates to false if value missing. 
+  // Evaluates to false if value missing.
   GREATER_THAN = 8
-  
+
   // Tries INTEGER comparison first, returning true if target value < validation value.
   // If either validation value or target value cannot be represented as Int,
   // does LEXCICOGRAPHIC comparison of the same as a backup.
-  // Evaluates to false if value missing. 
+  // Evaluates to false if value missing.
   LESS_THAN = 9
 }
- 
+
 const string MOBILE_GUIDE_RULE_COMPOSITE_IDENTIFIER = "composite_identifier"
 const string MOBILE_GUIDE_RULE_ANY_IDENTIFIER = "any_identifier"
 
@@ -94,7 +94,7 @@ struct GuideRule {
   4: optional GuideOverlay overlay // If present, when rule is FIRST violated the overlay will be presented
   5: optional list<GuideRule> child_rules
 }
- 
+
 enum GuideFieldType {
   VERTICAL_OPTION_QUESTION = 1
   HORIZONTAL_OPTION_QUESTION = 2 // Max of 3 options
@@ -110,10 +110,10 @@ enum GuideFieldType {
   BLUETOOTH_STATUS = 12 // Bluetooth Icon and Status String
   VERTICAL_CHECKBOX_QUESTION = 13
 }
- 
+
 struct GuideOption {
   1: string display_name
-  2: string option_value 
+  2: string option_value
   3: optional string image_url
   4: optional list<GuideRule> display_rules // Logical statement reference field identifiers and option values
   5: optional string secondary_display_label
@@ -132,7 +132,7 @@ struct GuideField {
   10: optional GuideOverlay help_overlay
   11: optional string secondary_image_url
 }
- 
+
 struct GuidePage {
   1: string identifier
   2: optional string title_override
@@ -161,13 +161,13 @@ enum GuideScreenType {
   WARNING_SCREEN = 10
   ROOM_SELECTION = 11
 }
- 
+
 struct GuideLoads {
   1: string identifier
   2: string display_name
   3: optional string image_url
 }
- 
+
 struct GuideScreen {
   1: string identifier
   2: GuideScreenType screen_type
