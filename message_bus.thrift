@@ -81,6 +81,7 @@ const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
 const string STATE_CONFIG_IDENTIFIER = "state_config_peripheral"
 const string SPECTRUM_BRANDS_IDENTIFIER = "spectrum_brands"
 const string SPECTRUM_BRANDS_CONFIG_IDENTIFIER = "spectrum_brands_configuration"
+const string BRILLIANT_VIRTUAL_DEVICE_CONFIG_IDENTIFIER = "brilliant_virtual_device_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -213,6 +214,7 @@ enum PeripheralType {
   NOTIFICATION = 75,
   STATE_CONFIGURATION = 76,
   SPECTRUM_BRANDS_CONFIGURATION = 77,
+  BRILLIANT_VIRTUAL_DEVICE_CONFIGURATION = 78,
 }
 
 enum PeripheralStatus {
