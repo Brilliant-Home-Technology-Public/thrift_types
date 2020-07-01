@@ -16,3 +16,8 @@ const string REQUEST_ID_REQUEST_HEADER_KEY = "x-request-id"
 const string ACTION_KEY = "action"
 const string LOCK_ACTION = "Lock"
 const string UNLOCK_ACTION = "Unlock"
+
+// Webhook notification body keys and values from Spectrum Brands API
+const string EVENT_KEY_STATE = "spectrum_brands:state"
+const string NOTIFICATION_ACTION_LOCK_STATUS_CHANGE = "lock.statuschange"
+const string NOTIFICATION_ACTION_LOCK_UPDATED = "lock.updated"
