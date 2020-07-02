@@ -1,6 +1,7 @@
 namespace py thrift_types.peripheral_interfaces.switch_configuration_interface
 namespace java thrift_types.peripheral_interfaces.switch_configuration_interface
 
+include "../bluetooth.thrift"
 include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
@@ -10,6 +11,7 @@ struct SwitchConfigurationPeripheralInterface {
   2: configuration.RoomAssignment room_assignment
   3: i32 status_light_max_brightness
   4: configuration.CapTouchSliderConfig slider_config
+  5: bluetooth.MeshDeviceFirmware firmware_version
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
