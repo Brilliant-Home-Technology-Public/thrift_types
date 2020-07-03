@@ -16,7 +16,7 @@ const string SCHLAGE_INTEGRATION_NAME = "Schlage Encode"
 const string SMARTTHINGS_INTEGRATION_NAME = "SmartThings"
 const string SOMFY_INTEGRATION_NAME = "Somfy"
 const string SONOS_INTEGRATION_NAME = "Sonos"
-const string SPECTRUM_BRANDS_INTEGRATION_NAME = "Spectrum Brands"
+const string SPECTRUM_BRANDS_INTEGRATION_NAME = "Kwikset"
 const string TPLINK_INTEGRATION_NAME = "TP-Link Kasa"
 const string WEMO_INTEGRATION_NAME = "Wemo"
 
