@@ -317,6 +317,7 @@ struct MobileBLEProvisioningEvent {
   // Note this is not always an error case (e.g. not setting forwarding address for the load side switch)
   12: string configuration_state
   13: i32 ble_firmware_version
+  14: i64 time_elapsed_seconds
 }
 
 struct MobileDeviceLevelEvent {
