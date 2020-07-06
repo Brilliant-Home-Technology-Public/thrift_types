@@ -5,6 +5,7 @@ include "message_bus.thrift"
 
 const string RESTORE_DEMO_STATE_SCENE = "restore_demo_state"
 const string DEMO_PROVISIONING_SSID = "brilliant_demo_provisioning"
+const string HOME_DEPOT_RETAIL_DEMO_IDENTIFIER = "home_depot_demo"
 
 enum DemoType {
   NONE = 0,
@@ -13,3 +14,7 @@ enum DemoType {
   CONFERENCE = 3,
   RETAIL = 4,
 }
+
+const list<string> KNOWN_RETAIL_DEMO_IDENTIFIERS = [
+    HOME_DEPOT_RETAIL_DEMO_IDENTIFIER,
+]
