@@ -189,6 +189,8 @@ const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
 // END MOBILE INTEGRATION NAME CONSTANTS
 
+const i16 MOBILE_INVALID_OWNER_RSSI = -128
+
 enum MobileBLEDeviceType {
   BRILLIANT_SWITCH = 1
   BRILLIANT_PLUG = 2
@@ -318,6 +320,7 @@ struct MobileBLEProvisioningEvent {
   12: string configuration_state
   13: i32 ble_firmware_version
   14: i64 time_elapsed_seconds
+  15: i16 owner_rssi
 }
 
 struct MobileDeviceLevelEvent {
