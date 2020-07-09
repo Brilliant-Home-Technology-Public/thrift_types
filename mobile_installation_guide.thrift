@@ -237,7 +237,6 @@ const string MOBILE_GUIDE_FIELD_COMPLETE_SETUP_READY_TS = "field_complete_setup_
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
-const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_ALWAYS_ON_PREFIX = "field_device_setup_always_on_"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_ID = "field_device_setup_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_LOAD_ID_PREFIX = "field_device_setup_load_id_"
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_MIN_DIMMABLE_PREFIX = "field_device_setup_minimum_dim_level_"
