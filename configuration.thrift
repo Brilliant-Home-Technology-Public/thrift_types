@@ -19,6 +19,9 @@ const string FEATURED_LIBRARY_ID = "library:featured"
 const string DEMO_LIBRARY_ID = "library:demo_album"
 const string RETAIL_LIBRARY_ID = "library:retail_album"
 
+const string CUSTOM_LIBRARY_TITLE = "Custom Art"
+const string UNASSISTED_TOURS_LIBRARY_TITLE = "Unassisted Tours"
+
 struct ArtPiece {
   1: string id
   4: optional MediaContent primary
@@ -43,6 +46,11 @@ struct ArtLibraryConfig {
   2: bool enabled
   3: list<string> disabled_art_pieces
 }
+
+const list<string> USER_HOME_ART_LIBRARY_TITLES = [
+    CUSTOM_LIBRARY_TITLE,
+    UNASSISTED_TOURS_LIBRARY_TITLE,
+]
 
 // Cap touch configuration
 
