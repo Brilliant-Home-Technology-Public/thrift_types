@@ -81,6 +81,7 @@ const string NOTIFICATION_IDENTIFIER = "notification_peripheral"
 const string STATE_CONFIG_IDENTIFIER = "state_config_peripheral"
 const string SPECTRUM_BRANDS_IDENTIFIER = "spectrum_brands"
 const string SPECTRUM_BRANDS_CONFIG_IDENTIFIER = "spectrum_brands_configuration"
+const string BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER = "brilliant_virtual_device"
 const string BRILLIANT_VIRTUAL_DEVICE_CONFIG_IDENTIFIER = "brilliant_virtual_device_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
@@ -125,6 +126,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     TPLINK_IDENTIFIER,
     GENIE_IDENTIFIER,
     SPECTRUM_BRANDS_IDENTIFIER,
+    BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER,
 ]
 
 const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
