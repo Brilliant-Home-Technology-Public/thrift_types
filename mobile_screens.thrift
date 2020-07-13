@@ -58,6 +58,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeSettings": "HomeSettings",
   "PrivacySettings": "PrivacySettings",
   "SwitchEnvironment": "SwitchEnvironment",
+  "TroubleshootSwitch": "SwitchTroubleshoot",
 
   // Help
   "Help": "Help",
@@ -210,6 +211,7 @@ const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVED = "MobileRemoved"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVAL_ERROR = "MobileRemoval:Error"
 const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
+const string MOBILE_OVERLAY_NAME_OTHER_RECOMMENDATIONS = "OtherRecommendations"
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CODE_LOCATION = "Provisioning:WhereToFindCode"
@@ -232,6 +234,7 @@ const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
 const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_DELETE = "SceneAction:Delete"
 const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
+const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
 const string MOBILE_OVERLAY_NAME_TOGGLE_AIRPLANE = "ToggleAirplaneMode"
 const string MOBILE_OVERLAY_NAME_UNCONFIGURED_DEVICE = "UnconfiguredDevice"
 
