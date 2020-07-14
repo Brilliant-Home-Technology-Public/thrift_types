@@ -37,6 +37,7 @@ Things that require a version update (AND MIGRATION):
   * Renumbering fields is **NOT OK** UNLESS the struct has NEVER been stored serialized in production
   * Re-using a field number is **NOT-OK** UNLESS the struct has NEVER been stored serialized in production
   * Structs defined in peripheral_interfaces in general are not stored serialized in production (As of 10/19/2018)
+  * Recursive Structs (e.g. GuideRule struct contains a field of type list<GuideRule>) is **NOT OK** because thrift 0.9.3 does not support this (specifically the Python compiler does not support and the thrift serialization/deserialization is unknown). Thrift 0.11.0 does support this but migrating to a more recent version is a large task that requires further investigation.
 * **Structs**
   * Adding a new struct is OK
   * Removing a struct is **DISCOURAGED**
