@@ -9,6 +9,9 @@ const string LINE_IN_URI_PREFIX = "line_in_source"
 // coordinator is not the Sonos with the Home Theater input.
 const string HOME_THEATER_URI_PREFIX = "home_theater_source"
 
+const string QUEUE_ACTION_APPEND = "APPEND"
+const string QUEUE_ACTION_REPLACE = "REPLACE"
+
 enum GroupStatus {
   UNKNOWN = 0,
   MOVED = 1,
