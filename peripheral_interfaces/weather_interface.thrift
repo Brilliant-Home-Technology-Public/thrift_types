@@ -1,0 +1,20 @@
+namespace py thrift_types.peripheral_interfaces.weather_interface
+namespace java thrift_types.peripheral_interfaces.weather_interface
+
+include "../message_bus.thrift"
+include "../weather.thrift"
+include "peripheral_interface.thrift"
+
+struct WeatherPeripheralInterface {
+  1: i32 current_temp_f
+  2: i32 day_max_temp_f
+  3: i32 day_min_temp_f
+  4: weather.WeatherStatus weather_status
+  5: i64 next_sunrise_time
+  6: i64 next_sunset_time
+}
+
+const peripheral_interface.PeripheralInterface peripheral = {
+  'peripheral_interface_name': 'WeatherPeripheralInterface',
+  'peripheral_type': message_bus.PeripheralType.WEATHER,
+}
