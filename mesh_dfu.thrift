@@ -37,3 +37,28 @@ struct MeshUpdateStateInfo {
 struct MeshUpdateStates {
   1: list<MeshUpdateStateInfo> mesh_update_states
 }
+
+enum MeshDfuPacketType {
+  UNKNOWN = 0
+  FIRMWARE_ID = 1
+  STATE = 2
+  DATA = 3
+  DATA_REQUEST = 4
+  DATA_RESPONSE = 5
+}
+
+struct MeshDfuPacket {
+  1: MeshDfuPacketType packet_type
+  2: binary raw_data
+  // Version info (FIRMWARE_ID + STATE types)
+  3: optional MeshDfuApplicationID application_id
+  4: optional i64 application_version
+  // TODO Add SoftDevice/Bootloader version
+  5: optional i64 network_id
+  // Update type (STATE)
+  6: optional MeshDfuHexType hex_type
+  // Transaction (STATE + DATA/DATA_REQUEST/DATA_RESPONSE)
+  7: optional i64 transaction_id
+  // Firmware segment block (DATA/DATA_REQUEST/DATA_RESPONSE)
+  8: optional i32 segment_index
+}
