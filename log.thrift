@@ -135,6 +135,7 @@ const string EMBEDDED_RECEIVED_SWITCH_GESTURE_EVENT = "switch_gesture_event"
 const string EMBEDDED_MESH_DEVICE_CONNECTIVITY_TABLE_NAME = "mesh_device_connectivity"
 const string EMBEDDED_SCENE_EXECUTION_TABLE_NAME = "embedded_scene_execution"
 const string EMBEDDED_MESH_FIRMWARE_UPDATE_TABLE_NAME = "mesh_firmware_update"
+const string EMBEDDED_MESH_DEVICE_FIRMWARE_REPORT_TABLE_NAME = "mesh_device_firmware_report"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
