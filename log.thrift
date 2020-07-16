@@ -363,6 +363,7 @@ const string UI_BUTTON_NAME_SELECT_ALL = "select_all"
 const string UI_BUTTON_NAME_DESELECT_ALL = "deselect_all"
 const string UI_BUTTON_NAME_EDIT_NAME = "edit_name"
 const string UI_BUTTON_NAME_ADD_NEW_ROOM = "add_new_room"
+const string UI_BUTTON_NAME_CONTROL_MANUAL_UPDATE = "control_manual_update"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
