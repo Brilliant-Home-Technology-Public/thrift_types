@@ -24,6 +24,7 @@ const string HUE_BRIDGE_CONFIG_IDENTIFIER = "hue_bridge_configuration"
 const string LIGHT_CONFIG_IDENTIFIER = "light_config_peripheral"
 const string MOTION_DETECTION_IDENTIFIER = "motion_detection_config_peripheral"
 const string OBJECT_STORE_IDENTIFIER = "object_store_peripheral"
+const string PROPERTY_IDENTIFIER = "property"
 const string REMOTE_BRIDGE_IDENTIFIER = "remote_bridge"
 const string RING_IDENTIFIER = "ring"
 const string RING_CONFIG_IDENTIFIER = "ring_configuration"
@@ -222,6 +223,7 @@ enum PeripheralType {
   WEATHER = 79,
   CLIMATE_SENSOR = 80,
   CONFIGURATION_TEMPLATES = 81,
+  PROPERTY = 82,
 }
 
 enum PeripheralStatus {
