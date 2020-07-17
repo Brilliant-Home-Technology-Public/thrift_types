@@ -7,6 +7,7 @@ const string ALEXA_VOICE_IDENTIFIER = "voice_peripheral"
 const string ANALYTICS_IDENTIFIER = "analytics_peripheral"
 const string ART_CONFIG_IDENTIFIER = "art_config_peripheral"
 const string ART_IDENTIFIER = "art_peripheral"
+const string CONFIGURATION_TEMPLATES_IDENTIFIER = "configuration_templates"
 const string DEVICE_CONFIG_IDENTIFIER = "device_config_peripheral"
 const string DEVICE_AUTH_CONFIG_IDENTIFIER = "device_authorization_configuration"
 const string DEVICE_STATUS_IDENTIFIER = "device_status_peripheral"
@@ -220,6 +221,7 @@ enum PeripheralType {
   BRILLIANT_VIRTUAL_DEVICE_CONFIGURATION = 78,
   WEATHER = 79,
   CLIMATE_SENSOR = 80,
+  CONFIGURATION_TEMPLATES = 81,
 }
 
 enum PeripheralStatus {
