@@ -125,6 +125,7 @@ const string UI_NOTIFICATION_OPTION_BUTTON_TAPPED_TABLE_NAME = "ui_notification_
 const string UI_PRIVACY_SETTINGS_UPDATE_TABLE_NAME = "privacy_settings_update"
 const string UI_DEVICE_SETTINGS_SCREEN_VIEW_TABLE_NAME = "device_settings_screen_view"
 const string UI_ALERT_TAPPED_TABLE_NAME = "alert_tapped"
+const string UI_DEVICE_NOTIFICATION_VIEW_TABLE_NAME = "ui_device_notification_view"
 // END QT LOG TABLE NAMES
 
 // BEGIN EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
