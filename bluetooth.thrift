@@ -146,6 +146,16 @@ enum SwitchPropertyID {
   CAPTOUCH_AND_LOAD_CONNECTED = 0x1C,
   AMPS_IN_MA                  = 0x1D,
   AMPS_SAFE_MAX_THRESHOLD     = 0x1E,
+  TEMP_SAFE_MAX_THRESHOLD     = 0x1F,
+  MOTION_MIN_SMPLS_BTW_UPDATE = 0x20,
+  DBG_LAST_CS_RESULT_STATUS   = 0x21,
+  DBG_COMPUTED_ZERO_POINT     = 0x22,
+  DBG_CYCLES_SINCE_ZC_SUCCESS = 0x23,
+  TUNE_MAX_DEVIATION_IDL_ZERO = 0x24,
+  TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION   = 0x25,
+  TUNE_MAX_DEV_BETWEEN_RUNS            = 0x26,
+  REBOOT                      = 0x27,
+  ENABLE_FWID_PACKET_BROADCAST= 0x28,
 }
 
 enum BreakCircuitStatus {
@@ -416,6 +426,70 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 65535,
     "variable_name": 'amps_safe_max_threshold', // units in mA
+  },
+  SwitchPropertyID.TEMP_SAFE_MAX_THRESHOLD: {
+    "property_id": SwitchPropertyID.TEMP_SAFE_MAX_THRESHOLD,
+    "property_size": 2,
+    "default_value": 600,
+    "min_value": -32768,
+    "max_value": 32767,
+    "variable_name": "",
+  },
+  SwitchPropertyID.MOTION_MIN_SMPLS_BTW_UPDATE: {
+    "property_id": SwitchPropertyID.MOTION_MIN_SMPLS_BTW_UPDATE,
+    "property_size": 1,
+    "default_value": 50,
+    "min_value": 0,
+    "max_value": 255,
+    "variable_name": "",
+  },
+  SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS: {
+    "property_id": SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS,
+    "property_size": 1,
+    "default_value": 0,
+    "variable_name": "",
+  },
+  SwitchPropertyID.DBG_COMPUTED_ZERO_POINT: {
+    "property_id": SwitchPropertyID.DBG_COMPUTED_ZERO_POINT,
+    "property_size": 2,
+    "default_value": 65535,
+    "variable_name": "",
+  },
+  SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS: {
+    "property_id": SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS,
+    "property_size": 2,
+    "default_value": 65535,
+    "variable_name": "",
+  },
+  SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO: {
+    "property_id": SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO,
+    "property_size": 2,
+    "default_value": 32,
+    "variable_name": "",
+  },
+  SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION: {
+    "property_id": SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION,
+    "property_size": 2,
+    "default_value": 15,
+    "variable_name": "",
+  },
+  SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS: {
+    "property_id": SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS,
+    "property_size": 2,
+    "default_value": 96,
+    "variable_name": "",
+  },
+  SwitchPropertyID.REBOOT: {
+    "property_id": SwitchPropertyID.REBOOT,
+    "property_size": 1,
+    "default_value": 0,
+    "variable_name": "reboot",
+  },
+  SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST: {
+    "property_id": SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
+    "property_size": 1,
+    "default_value": 1,
+    "variable_name": "enable_fwid_packet_broadcast",
   },
 }
 
