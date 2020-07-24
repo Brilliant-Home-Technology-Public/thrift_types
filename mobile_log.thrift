@@ -30,7 +30,6 @@ const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
-const string MOBILE_LIVEVIEW_SESSION_REPORT_DEBUG_EVENT_TABLE_NAME = "mobile_liveview_session_debug_report"
 const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
@@ -690,34 +689,14 @@ struct MobileLiveviewSessionReportEvent {
   14: string local_candidate_type
   15: string remote_candidate_type
   16: string app_class
-}
-
-struct MobileLiveviewSessionReportDebugEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string user_id
-  7: string network_type
-  8: string session_id
-  9: string farthest_state
-  10: string termination_reason
-  11: i64 session_time_elapsed_seconds
-  12: bool local_connection
-  13: string wifi_ssid
-  14: string ice_candidates
-  15: i64 connection_time_elapsed_seconds
-  16: string remote_video_params
-  17: string local_candidate_type
-  18: string remote_candidate_type
-  19: string app_class
-  20: i64 session_start_ts
-  21: i64 ice_servers_ts
-  22: i64 ice_gathering_ts
-  23: i64 updated_peripheral_ts
-  24: i64 peer_updated_ts
-  25: i64 connected_ts
+  17: string ice_candidates
+  18: string remote_video_params
+  19: i64 session_start_ts
+  20: i64 ice_servers_ts
+  21: i64 ice_gathering_ts
+  22: i64 updated_peripheral_ts
+  23: i64 peer_updated_ts
+  24: i64 connected_ts
 }
 
 struct MobileLiveviewUsageReportEvent {
