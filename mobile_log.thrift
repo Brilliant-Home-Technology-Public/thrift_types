@@ -247,6 +247,7 @@ enum MobileEventDeviceType {
   GARAGE_DOOR = 7
   OTHER = 8
   BUILDING_ENTRY_PANEL = 9
+  LEAK_DETECTOR = 10
 }
 
 enum MobileEventSource {
