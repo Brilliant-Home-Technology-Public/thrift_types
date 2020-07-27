@@ -25,6 +25,7 @@ enum BrilliantNotificationAction {
   NONE = 0,
   ALEXA_CONFIGURE_HOME_SKILL = 1,
   ADD_DEVICES = 2,
+  LIST_DEVICES = 3,
 }
 
 enum BrilliantNotificationDisplayType {
