@@ -19,4 +19,6 @@ struct SwitchConfigurationPeripheralInterface {
 const peripheral_interface.PeripheralInterface peripheral = {
   'peripheral_interface_name': 'SwitchConfigurationPeripheralInterface',
   'peripheral_type': message_bus.PeripheralType.SWITCH_CONFIGURATION,
+  'dynamic_variable_prefix': configuration.LIGHT_MOTION_CONFIG_VARIABLE_PREFIX,
+  'dynamic_variable_ttype': 'configuration.LightMotionConfig',
 }
