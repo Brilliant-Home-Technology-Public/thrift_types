@@ -192,9 +192,19 @@ struct ExecutionState {
   3: optional bool in_progress // DEPRECATED
 }
 
+enum TimeReferencePoint {
+   MIDNIGHT = 0,
+   SUNRISE = 1,
+   SUNSET = 2,
+}
+
 struct DailyTimeRange {
   1: i32 start_seconds_from_midnight = 0 // Inclusive
   2: i32 end_seconds_from_midnight = 0 // Inclusive
+  3: TimeReferencePoint start_reference = TimeReferencePoint.MIDNIGHT
+  4: TimeReferencePoint end_reference = TimeReferencePoint.MIDNIGHT
+  5: optional i32 start_seconds_from_reference // Inclusive; only set if start_reference is not MIDNIGHT
+  6: optional i32 end_seconds_from_reference // Inclusive; only set if end_reference is not MIDNIGHT
 }
 
 struct ExecutionTimeRange {
