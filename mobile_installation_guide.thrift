@@ -249,6 +249,7 @@ const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID_PREFIX = "field_forwarding_
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID_PREFIX = "field_fowarding_peripheral_id_"
 const string MOBILE_GUIDE_FIELD_HAD_VENDOR_MESSAGE_ERROR = "field_had_vendor_message_error"
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
+const string MOBILE_GUIDE_FIELD_HAS_SUCCESSFULLY_PROVISIONED = "field_has_successfully_provisioned"
 const string MOBILE_GUIDE_FIELD_HIGH_WATTAGE_PREFIX = "field_high_wattage_"
 const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
