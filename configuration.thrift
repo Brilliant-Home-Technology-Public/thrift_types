@@ -178,6 +178,7 @@ const string ALARM_EXECUTION_HANDLER_IDENTIFIER = "alarm_execution_handler"
 const string DEMO_EXECUTION_HANDLER_IDENTIFIER = "demo_execution_handler"
 const string NOTIFICATION_EXECUTION_HANDLER_IDENTIFIER = "notification_execution_handler"
 const string MESH_OTA_UPDATE_EXECUTION_HANDLER_IDENTIFIER = "mesh_ota_update_execution_handler"
+const string MESH_OTA_UPDATE_PREPARE_STEP_HANDLER_IDENTIFIER = "mesh_ota_update_prepare_step_handler"
 
 struct ExecutedSetVariableRequest {
   1: message_bus.SetVariableResponse set_variable_response
