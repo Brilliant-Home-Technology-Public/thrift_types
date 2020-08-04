@@ -298,13 +298,13 @@ struct VirtualDeviceRegistration {
 struct ModifiedPeripheral {
   1: string peripheral_id
   2: bool deleted
-  3: optional list<ModifiedVariable> modified_variables
+  3: optional list<ModifiedVariable> modified_variables = []
   4: optional PeripheralStatus status
   5: optional PeripheralType peripheral_type
   6: optional string dynamic_variable_prefix
   7: i64 timestamp
   8: optional i64 prior_timestamp
-  9: optional list<ModifiedVariable> prior_deleted_variables
+  9: optional list<ModifiedVariable> prior_deleted_variables = []
   10: optional bool peripheral_type_changed // TODO: make non-optional
   11: optional bool peripheral_status_changed // TODO: make non-optional
 }
