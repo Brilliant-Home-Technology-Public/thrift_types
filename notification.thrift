@@ -19,6 +19,8 @@ enum BrilliantNotificationType {
   CLIMATE_ALERT_HIGH_TEMPERATURE = 11,
   CLIMATE_ALERT_HIGH_HUMIDITY = 12,
   CLIMATE_ALERT_WATER_DETECTED = 13,
+  MESH_DEVICE_UPDATE_SCHEDULED = 14,
+  MESH_DEVICE_UPDATE_IN_PROGRESS = 15,
 }
 
 enum BrilliantNotificationAction {
@@ -26,6 +28,7 @@ enum BrilliantNotificationAction {
   ALEXA_CONFIGURE_HOME_SKILL = 1,
   ADD_DEVICES = 2,
   LIST_DEVICES = 3,
+  SHOW_MESH_UPDATE_INFO = 4,
 }
 
 enum BrilliantNotificationDisplayType {
