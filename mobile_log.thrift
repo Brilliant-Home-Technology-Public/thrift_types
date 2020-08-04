@@ -217,6 +217,7 @@ enum MobileBLEProvisioningEventStatus {
   ERROR_PROVISIONING = 2 // Returned when an error in the BLE Provisioning occurs
   ERROR_CONFIGURATION = 3 // Returned when an error during vendor message exchanges occurs
   ERROR_MESSAGE_BUS = 4 // Returned when an error in message bus setup occurs
+  ERROR_BLUETOOTH = 5 // Returned when an error accessing bluetooth occurs
 }
 
 enum MobileErrorEventType {
