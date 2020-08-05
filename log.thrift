@@ -370,6 +370,7 @@ const string UI_BUTTON_NAME_ADD_NEW_ROOM = "add_new_room"
 const string UI_BUTTON_NAME_CONTROL_MANUAL_UPDATE = "control_manual_update"
 const string UI_BUTTON_NAME_ADD_HOME_LOCATION = "add_home_location"
 const string UI_BUTTON_NAME_CHANGE_HOME_LOCATION = "change_home_location"
+const string UI_BUTTON_NAME_GENERAL_SETTINGS = "general_settings"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
