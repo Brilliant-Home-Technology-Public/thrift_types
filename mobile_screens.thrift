@@ -213,6 +213,7 @@ const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETION_PROMPT = "InstallCompletion:
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_LEAK_DETECTED = "AttentionNeeded:LeakDetected"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_SURVEY = "LiveViewSurvey"
+const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_PRIVACY = "LiveView:Disabled:Privacy"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_JAMMED = "Jammed"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
 const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperature"
