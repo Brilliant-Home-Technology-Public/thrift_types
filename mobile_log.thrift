@@ -347,6 +347,7 @@ struct MobileBLEProvisioningEvent {
   12: i32 ble_firmware_version
   13: i64 time_elapsed_seconds
   14: i16 owner_rssi
+  15: string add_mesh_result
 }
 
 struct MobileDeviceLevelEvent {
