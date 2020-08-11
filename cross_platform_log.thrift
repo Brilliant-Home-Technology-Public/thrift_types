@@ -8,6 +8,13 @@ namespace java thrift_types.cross_platform_log
  * NOTE: Enum values should be logged using their names uppercased.
  */
 
+const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
+
+enum HomeType {
+  UNKNOWN = 0
+  MULTIFAMILY = 1
+}
+
 enum PhysicalDeviceModel {
   UNKNOWN = 0
   BRILLIANT_CONTROL = 1
