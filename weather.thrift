@@ -5,7 +5,7 @@ enum WeatherStatus {
   UNKNOWN = 0,
   GENERIC_DAY = 1,
   GENERIC_NIGHT = 2,
-  CLOUD = 3,
+  CLOUDY = 3,
   RAIN_HEAVY = 4,
   RAIN_MODERATE = 5,
   RAIN_LIGHT = 6,
