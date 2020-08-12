@@ -227,6 +227,19 @@ enum MobileBLEProvisioningEventStatus {
   ERROR_BLUETOOTH = 5 // Returned when an error accessing bluetooth occurs
 }
 
+enum AddMeshResult {
+  SUCCESS = 1
+  FAIL_ADD_TO_BRILLIANT_MESH = 2
+  TIMEOUT_ADD_TO_BRILLIANT_MESH  = 3
+  FAIL_CONFIGURE_BLE_MESH = 4
+  TIMEOUT_CONFIGURE_BLE_MESH = 5
+  FAIL_CONFIGURE_SWITCH_CONFIG = 6
+  TIMEOUT_CONFIGURE_SWITCH_CONFIG = 7
+  GENERIC_ERROR = 8
+  FAIL_UPDATE_SUCCESS_PROVISION_GUIDE_STATE = 9
+  NOT_ADDED = 10
+}
+
 enum MobileErrorEventType {
   FAILED_AUTHENTICATION_CODE_ENTRY = 1
   FAILED_DEVICE_DISCOVERY = 2
@@ -347,7 +360,7 @@ struct MobileBLEProvisioningEvent {
   12: i32 ble_firmware_version
   13: i64 time_elapsed_seconds
   14: i16 owner_rssi
-  15: string add_mesh_result
+  15: AddMeshResult add_mesh_result
 }
 
 struct MobileDeviceLevelEvent {
