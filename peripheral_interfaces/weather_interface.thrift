@@ -10,8 +10,8 @@ struct WeatherPeripheralInterface {
   2: i32 day_max_temp_f
   3: i32 day_min_temp_f
   4: weather.WeatherStatus weather_status
-  5: i64 next_sunrise_time
-  6: i64 next_sunset_time
+  5: i64 next_sunrise_time_ms
+  6: i64 next_sunset_time_ms
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
