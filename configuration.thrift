@@ -131,6 +131,7 @@ struct PeripheralInfo {
   8: optional bool hidden // if true, do not create peripheral and do not show as normal device
   9: optional bool unrecognized // true if device is no longer being discovered
   10: optional string default_display_name
+  11: optional StateConfig initial_state_config
 }
 
 enum DayOfWeek {
@@ -497,4 +498,5 @@ enum ConfigurationTemplateID {
   SHOWING = 1,
   VACANT = 2,
   CDK = 3,
+  PERIPHERAL_INFO_INITIAL_STATE = 4,
 }
