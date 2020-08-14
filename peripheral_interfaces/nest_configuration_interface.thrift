@@ -12,6 +12,7 @@ struct NestConfigurationPeripheralInterface {
     3: string refresh_token
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
+    6: optional i32 api_version
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
