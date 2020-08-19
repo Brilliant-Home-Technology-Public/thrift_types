@@ -310,10 +310,52 @@ struct ModifiedPeripheral {
 }
 
 struct SubscriptionNotification {
-  # This device is not gaurenteed to have peripherals populated.
+  # The SubscriptionNotification can be populated in the following ways:
+  #
+  # 1) A partial update.
+  # A partial update occurs whenever specific peripherals in a device are modified. The message bus
+  # has logic to attempt to group notifications together. Thus, multiple peripherals may be modified
+  # in one SubscriptionNotification. In this case, the SubscriptionNotification will be as follows:
+  # - updated_device: The device will only be paritially populated. The id and timestamp will be
+  #     set, but the map of peripherals will not be set.
+  # - modified_peripherals: There will be at least one ModifiedPeripheral in the list.
+  # - deleted: Will be false.
+  #
+  # 2) A full device update.
+  # A device will send a full update on a set interval. This is done to ensure that the recipient of
+  # the SubscriptionNotification can synchronize its view of the device if any partial updates were
+  # somehow missed. In this case, the SubscriptionNotification will be as follows:
+  # - updated_device: The device will be completely populated, including all peripherals for the
+  #     device.
+  # - modified_peripherals: Will be an empty list.
+  # - deleted: Will be false.
+  #
+  # 3) A combined partial and full update.
+  # Since the message bus has logic to attempt to group notifications together, it is possible that
+  # a partial update and a full update will be combined into a single SubscriptionNotification. In
+  # this case, the SubscriptionNotification will be as follows:
+  # - updated_device: The device will be completely populated, including all peripherals for the
+  #     device.
+  # - modified_peripherals: There will be at least one ModifiedPeripheral in the list.
+  # - deleted: Will be false
+  #
+  # 4) A device deletion.
+  # When a device should be deleted, the SubscriptionNotification will be as follows:
+  # - updated_device: The device will only be paritially populated. The id and timestamp will be
+  #     set, but the map of peripherals will not be set.
+  # - modified_peripherals: Will be an empty list.
+  # - deleted: Will be true.
+
+  # Details about the device that is being updated.
   1: Device updated_device
+
+  # The timestamp at which the SubscriptionNotification was sent.
   2: i64 timestamp
+
+  # A list of peipherals that are being modified.
   3: optional list<ModifiedPeripheral> modified_peripherals = []
+
+  # 'deleted' denotes whether or not the updated_device is being deleted.
   4: bool deleted = false
 }
 
