@@ -27,6 +27,7 @@ struct ArtPiece {
   4: optional MediaContent primary
   5: optional list<MediaContent> previews
   6: optional i64 created_timestamp
+  7: optional string title
 }
 
 enum LibraryType {
