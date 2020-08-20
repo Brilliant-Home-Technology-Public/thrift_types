@@ -119,21 +119,6 @@ struct SomfyCredentials {
 
 // Thirdparty Device Configurations
 
-struct PeripheralInfo {
-  1: string owner
-  2: string name
-  3: message_bus.PeripheralType peripheral_type
-  // The device id the thirdparty has provided
-  4: optional string thirdparty_device_id
-  5: string configuration_peripheral_id
-  6: optional map<string, string> configuration_variables
-  7: optional bool stubbed
-  8: optional bool hidden // if true, do not create peripheral and do not show as normal device
-  9: optional bool unrecognized // true if device is no longer being discovered
-  10: optional string default_display_name
-  11: optional StateConfig initial_state_config
-}
-
 enum DayOfWeek {
   SUNDAY = 0,
   MONDAY = 1,
@@ -491,6 +476,21 @@ struct StateConfig {
   2: string title
   3: list <PeripheralConfigurationAssignment> peripheral_configuration_assignments
   4: optional Trigger time_trigger
+}
+
+struct PeripheralInfo {
+  1: string owner
+  2: string name
+  3: message_bus.PeripheralType peripheral_type
+  // The device id the thirdparty has provided
+  4: optional string thirdparty_device_id
+  5: string configuration_peripheral_id
+  6: optional map<string, string> configuration_variables
+  7: optional bool stubbed
+  8: optional bool hidden // if true, do not create peripheral and do not show as normal device
+  9: optional bool unrecognized // true if device is no longer being discovered
+  10: optional string default_display_name
+  11: optional StateConfig initial_state_config
 }
 
 enum ConfigurationTemplateID {
