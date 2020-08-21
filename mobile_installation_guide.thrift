@@ -47,6 +47,8 @@ enum MeshProvisionStatus {
   BLUETOOTH_OFF = 35
   FIRMWARE_CHECK = 36
   COMPATIBILITY_CHECK = 37
+  GENERIC_ERROR = 38
+  MESH_PROVISION_COMPLETE = 49 // Switch has app key, netkey, and unicast address bound
 }
 
 struct GuideOverlay {

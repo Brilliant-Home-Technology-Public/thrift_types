@@ -1,6 +1,8 @@
 namespace py thrift_types.mobile_log
 namespace java thrift_types.mobile_log
 
+include "mobile_installation_guide.thrift"
+
 /*
  * IMPORTANT NOTE:
  * The structs below represent logs made on Mobile apps.
@@ -379,6 +381,7 @@ struct MobileBLEProvisioningEvent {
   13: i64 time_elapsed_seconds
   14: i16 owner_rssi
   15: AddMeshResult add_mesh_result
+  16: mobile_installation_guide.MeshProvisionStatus final_status
 }
 
 struct MobileDeviceLevelEvent {
