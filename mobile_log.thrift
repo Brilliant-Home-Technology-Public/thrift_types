@@ -726,6 +726,7 @@ struct MobileLiveviewSessionReportEvent {
   22: i64 updated_peripheral_ts
   23: i64 peer_updated_ts
   24: i64 connected_ts
+  25: string peer_device_id
 }
 
 struct MobileLiveviewUsageReportEvent {
