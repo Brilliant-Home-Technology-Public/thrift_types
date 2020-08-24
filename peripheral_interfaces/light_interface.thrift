@@ -30,6 +30,7 @@ struct LightPeripheralInterface {
   22: optional i32 current_zero_cross
   23: optional bool break_dimming
   24: optional bool enable_dimmability_check
+  25: optional bool enable_current_sensed
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
