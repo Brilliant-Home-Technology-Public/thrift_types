@@ -43,6 +43,7 @@ const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
+const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
 // END MOBILE LOG TABLE NAMES
 
 // START: MOBILE BUTTON NAME CONSTANTS
@@ -767,4 +768,16 @@ struct MobileProvisioningCancelEvent {
   6: string user_id
   7: string app_class
   8: i64 time_elapsed_seconds
+}
+
+struct MobileLiveviewSupportEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string app_class
+  8: string h264_decoders
+  9: string h264_hw_decoders
 }
