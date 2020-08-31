@@ -163,6 +163,7 @@ enum GuideScreenType {
   WARNING_SCREEN = 10
   ROOM_SELECTION = 11
   FREE_PAIRING = 12
+  PROGRESSION_EDUCATION = 13
 }
 
 struct GuideLoads {
@@ -340,6 +341,7 @@ const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
 const string MOBILE_GUIDE_SCREEN_PLUG_PRE_PROVISION = "screen_plug_pre_provision"
 const string MOBILE_GUIDE_SCREEN_PLUG_PROVISIONING = "screen_plug_provisioning"
 const string MOBILE_GUIDE_SCREEN_PRODUCT_SELECTION = "screen_product_selection"
+const string MOBILE_GUIDE_SCREEN_PROGRESSION_EDUCATION = "screen_progression_education"
 const string MOBILE_GUIDE_SCREEN_RESET_SWITCH_SUCCESS = "screen_reset_switch_success"
 const string MOBILE_GUIDE_SCREEN_ROOM_SELECTION = "screen_room_selection"
 const string MOBILE_GUIDE_SCREEN_SAFETY_BREAKER_CHECK = "screen_safety_breaker_check"

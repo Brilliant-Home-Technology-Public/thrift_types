@@ -154,6 +154,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
   "GuideBarcode": "InstallationGuide:Barcode",
+  "GuideProgressionEducation": "InstallationGuide:ProgressionEducation"
   "WirePhotos": "InstallationGuide:WirePhotos",
   "InstallSuccess": "InstallationGuide:Success",
   "Overview": "InstallationGuide:Overview",
