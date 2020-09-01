@@ -237,9 +237,13 @@ enum MobileBLEProvisioningEventStatus {
 }
 
 enum MobileConnectivityStatus {
-  CLOUD_CONNECTED = 1
-  PARTIAL_CONNECTED = 2
-  DISCONNECTED = 3
+  // Primary goal connectivity status is CLOUD_CONNECTED, anything less is a sort of error mode
+  // This is because direct connections are not sufficient since there are things
+  // owned by cloud (like room names, and other things in configuration_virtual_device) that are needed.
+
+  CLOUD_CONNECTED = 1 // May or may not be connected directly to Brilliant Controls as well
+  PARTIAL_CONNECTED = 2 // Connected directly to Brilliant Controls only and not cloud
+  DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directly
 }
 
 enum AddMeshResult {
@@ -404,9 +408,15 @@ struct MobileConnectivityEvent {
   7: string user_id
   8: string app_class
   9: MobileConnectivityStatus connectivity_status
+  // Time since AppCoordinator start() was called
   10: i64 time_since_start_ms
+  // Time since last foreground (checkAppVersion()), this will usually be close to time_since_start_ms
+  // An example where it may be different is if we backgrounded in the installation guide
   11: i64 time_since_launch_ms
+  // Time since the stateManager last emitted the Loading status (spinner is displayed when loading is emitted)
+  // This should be used to determine how long a user saw the loading spinner.
   12: i64 time_since_loading_ms
+  // This is reset on every start()
   13: MobileConnectivityStatus farthest_status_in_session
 }
 
