@@ -390,6 +390,8 @@ struct MobileBLEProvisioningEvent {
   14: i16 owner_rssi
   15: AddMeshResult add_mesh_result
   16: mobile_installation_guide.MeshProvisionStatus final_status
+  17: string user_id
+  18: string app_class
 }
 
 struct MobileConnectivityEvent {
