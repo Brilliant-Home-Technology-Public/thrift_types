@@ -16,6 +16,7 @@ include "mobile_installation_guide.thrift"
 // BEGIN MOBILE LOG TABLE NAMES
 // KEEP ALPHABETIZED
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
+const string MOBILE_CONNECTIVITY_EVENT_TABLE_NAME = "mobile_connectivity"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_NOTIFICATION_BUTTON_TAPPED = "mobile_device_notification_button_tapped"
@@ -235,6 +236,12 @@ enum MobileBLEProvisioningEventStatus {
   ERROR_BLUETOOTH = 5 // Returned when an error accessing bluetooth occurs
 }
 
+enum MobileConnectivityStatus {
+  CLOUD_CONNECTED = 1
+  PARTIAL_CONNECTED = 2
+  DISCONNECTED = 3
+}
+
 enum AddMeshResult {
   SUCCESS = 1
   FAIL_ADD_TO_BRILLIANT_MESH = 2
@@ -383,6 +390,22 @@ struct MobileBLEProvisioningEvent {
   14: i16 owner_rssi
   15: AddMeshResult add_mesh_result
   16: mobile_installation_guide.MeshProvisionStatus final_status
+}
+
+struct MobileConnectivityEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileConnectivityStatus connectivity_status
+  10: i64 time_since_start_ms
+  11: i64 time_since_launch_ms
+  12: i64 time_since_loading_ms
+  13: MobileConnectivityStatus farthest_status_in_session
 }
 
 struct MobileDeviceLevelEvent {
