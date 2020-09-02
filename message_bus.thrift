@@ -224,6 +224,7 @@ enum PeripheralType {
   CLIMATE_SENSOR = 80,
   CONFIGURATION_TEMPLATES = 81,
   PROPERTY = 82,
+  BRILLIANT_PLUG = 83,
 }
 
 enum PeripheralStatus {
