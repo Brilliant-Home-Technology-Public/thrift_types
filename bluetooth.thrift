@@ -591,3 +591,31 @@ struct MeshDeviceFirmwareOld {
   2: i32 application_version
   3: i16 bootloader_version
 }
+
+// Brilliant Switch cap touch tuning configurations
+
+struct SwitchCapTouchButtonTuningParamsHwRev3 {
+  1: i16 btn00_conversion_count
+  2: i16 btn00_conversion_gain
+  3: i16 btn00_prox_threshold
+  4: i16 btn00_negative_touch_threshold
+  5: i16 btn00_touch_debounce_threshold
+  6: i16 btn00_count_filter_beta
+  7: i16 btn00_e00_touch_threshold
+  8: i16 btn00_e01_touch_threshold
+  9: i16 btn00_e02_touch_threshold
+  10: i16 btn00_e03_touch_threshold
+  11: i16 btn00_e04_touch_threshold
+}
+
+struct SwitchCapTouchSliderTuningParamsHwRev3 {
+  1: i16 sld00_conversion_count
+  2: i16 sld00_conversion_gain
+  3: i16 sld00_prox_threshold
+  4: i16 sld00_negative_touch_threshold
+  5: i16 sld00_touch_debounce_threshold
+  6: i16 sld00_count_filter_beta
+  7: i16 sld00_e00_touch_threshold
+  8: i16 sld00_e01_touch_threshold
+  9: i16 sld00_e02_touch_threshold
+}
