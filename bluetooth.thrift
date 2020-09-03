@@ -156,6 +156,10 @@ enum SwitchPropertyID {
   TUNE_MAX_DEV_BETWEEN_RUNS            = 0x26,
   REBOOT                      = 0x27,
   ENABLE_FWID_PACKET_BROADCAST= 0x28,
+  DFU_LAST_TRANSFER_STATE     = 0x29,
+  DFU_LAST_RX_RESPONSE        = 0x2A,
+  DFU_END_TRANSFER_REASON     = 0x2B,
+  DFU_LAST_RX_PACKET          = 0x2C,
 }
 
 enum BreakCircuitStatus {
@@ -490,6 +494,22 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_size": 1,
     "default_value": 1,
     "variable_name": "enable_fwid_packet_broadcast",
+  },
+  SwitchPropertyID.DFU_LAST_TRANSFER_STATE: {
+    "property_id": SwitchPropertyID.DFU_LAST_TRANSFER_STATE,
+    "property_size": 16,
+  },
+  SwitchPropertyID.DFU_LAST_RX_RESPONSE: {
+    "property_id": SwitchPropertyID.DFU_LAST_RX_RESPONSE,
+    "property_size": 4,
+  },
+  SwitchPropertyID.DFU_END_TRANSFER_REASON: {
+    "property_id": SwitchPropertyID.DFU_END_TRANSFER_REASON,
+    "property_size": 1,
+  },
+  SwitchPropertyID.DFU_LAST_RX_PACKET: {
+    "property_id": SwitchPropertyID.DFU_LAST_RX_PACKET,
+    "property_size": 20,
   },
 }
 
