@@ -160,6 +160,9 @@ enum SwitchPropertyID {
   DFU_LAST_RX_RESPONSE        = 0x2A,
   DFU_END_TRANSFER_REASON     = 0x2B,
   DFU_LAST_RX_PACKET          = 0x2C,
+  HARDWARE_REVISION           = 0x2D,
+  CAPTOUCH_BTN00_TUNING_PARAM = 0x2E,
+  CAPTOUCH_SLD00_TUNING_PARAM = 0x2F,
 }
 
 enum BreakCircuitStatus {
@@ -510,6 +513,21 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.DFU_LAST_RX_PACKET: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_PACKET,
     "property_size": 20,
+  },
+  SwitchPropertyID.HARDWARE_REVISION: {
+    "property_id": SwitchPropertyID.HARDWARE_REVISION,
+    "property_size": 4,
+    "variable_name": 'hardware_revision',
+  },
+  SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM: {
+    "property_id": SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM,
+    "property_size": 15,
+    "variable_name": 'captouch_btn00_tuning_param',
+  },
+  SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM: {
+    "property_id": SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM,
+    "property_size": 13,
+    "variable_name": 'captouch_sld00_tuning_param',
   },
 }
 
