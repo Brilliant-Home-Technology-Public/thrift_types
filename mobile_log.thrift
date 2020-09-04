@@ -815,4 +815,5 @@ struct MobileLiveviewSupportEvent {
   7: string app_class
   8: string h264_decoders
   9: string h264_hw_decoders
+  10: bool supported
 }
