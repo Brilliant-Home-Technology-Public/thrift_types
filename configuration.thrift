@@ -53,6 +53,14 @@ const list<string> USER_HOME_ART_LIBRARY_TITLES = [
     UNASSISTED_TOURS_LIBRARY_TITLE,
 ]
 
+// Unassisted Tours Configuration
+
+struct UnassistedToursConfig {
+  1: bool enabled
+  2: string video_id
+  3: i32 replay_time_sec
+}
+
 // Cap touch configuration
 
 const string CAP_TOUCH_CONFIG_VARIABLE_PREFIX = "slider_config:"
