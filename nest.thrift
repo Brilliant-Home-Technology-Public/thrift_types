@@ -16,6 +16,9 @@ const string NEST_ECO_TRAIT = "sdm.devices.traits.ThermostatEco"
 const string NEST_MODE_TRAIT = "sdm.devices.traits.ThermostatMode"
 const string NEST_SETPOINT_TRAIT = "sdm.devices.traits.ThermostatTemperatureSetpoint"
 
+// Google API Struture Trait Keys
+const string NEST_STRUCTURE_INFO_TRAIT = "sdm.structures.traits.Info"
+
 // Google API Commands
 const string NEST_SET_ECO_MODE = "sdm.devices.commands.ThermostatEco.SetMode"
 const string NEST_SET_HVAC_MODE = "sdm.devices.commands.ThermostatMode.SetMode"
