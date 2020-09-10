@@ -260,6 +260,8 @@ const string MOBILE_GUIDE_FIELD_IDENTITY_LOAD_IS_KNOWN = "field_identify_load_is
 const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_IS_IMPLIED_CONFIG_PREFIX = "field_is_implied_config_"
+// The MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION may change into a prefix in the future.
+// Right now, it refers to a gangbox as a whole (like a 2G) rather than the configuration of each slider.
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION = "field_line_side_multimeter_control_question"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_PREFIX = "field_line_side_multimeter_question_"
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_NCV_PREFIX = "field_line_side_ncv_question_"
