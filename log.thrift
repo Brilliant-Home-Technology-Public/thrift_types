@@ -376,6 +376,8 @@ const string UI_BUTTON_NAME_UPDATE_NOW = "update_now"
 const string UI_BUTTON_NAME_SETTIME = "settime"
 const string UI_BUTTON_NAME_SUNRISE = "sunrise"
 const string UI_BUTTON_NAME_SUNSET = "sunset"
+const string UI_BUTTON_NAME_NEXT = "next"
+const string UI_BUTTON_NAME_TRY_AGAIN = "try_again"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
