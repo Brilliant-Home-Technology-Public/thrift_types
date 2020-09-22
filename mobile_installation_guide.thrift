@@ -36,8 +36,6 @@ enum MeshProvisionStatus {
   SETUP_TIMEOUT = 24
   SETUP_FAILED = 25
   ADDING_TO_BRILLIANT_MESH = 26
-  CONFIGURING_BLE_MESH_PERIPHERAL = 27
-  CONFIGURING_SWITCH_CONFIG = 28
   AUTOMATIC_CONFIGURATION_PUSH = 29
   SUCCESSFULLY_ADDED_TO_BRILLIANT = 30
   FAILED_TO_ADD_TO_BRILLIANT = 31
@@ -257,8 +255,6 @@ const string MOBILE_GUIDE_FIELD_FORWARDING_ADDRESS_PREFIX = "field_forwarding_ad
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID_PREFIX = "field_forwarding_device_setup_id_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID_PREFIX = "field_forwarding_device_id_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID_PREFIX = "field_fowarding_peripheral_id_"
-const string MOBILE_GUIDE_FIELD_HAD_SWITCH_PERIPHERAL_ERROR = "field_had_configure_switch_peripheral_error"
-const string MOBILE_GUIDE_FIELD_HAD_SWITCH_CONFIG_PERIPHERAL_ERROR = "field_had_switch_config_peripheral_error"
 const string MOBILE_GUIDE_FIELD_HAD_VENDOR_MESSAGE_ERROR = "field_had_vendor_message_error"
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
 const string MOBILE_GUIDE_FIELD_HAS_SUCCESSFULLY_PROVISIONED = "field_has_successfully_provisioned"
