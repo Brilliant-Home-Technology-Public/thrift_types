@@ -13,6 +13,7 @@ const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
 const i32 SWITCH_DVT_APP_VERSION = 7
+const i32 PLUG_PROD_APP_VERSION = 202009170
 // We're using const bytes for unicast forwarding gestures rather than enums because we
 // bitwise OR their values.
 const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
@@ -45,6 +46,7 @@ struct BluetoothDevice {
 enum MeshDeviceType {
   SWITCH = 0,
   CONTROL = 1,
+  PLUG = 2,
 }
 
 enum OtaUpdateStatus {
