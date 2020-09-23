@@ -14,6 +14,8 @@ struct BlePeripheralInterface {
   5: mesh_dfu.MeshDfuApplicationID last_update_attempt_application_id
   6: bluetooth.MeshDeviceFirmware switch_firmware_version
   7: mesh_dfu.MeshUpdateStates mesh_update_states
+  8: bool monitor_bluetooth_operations
+  9: bluetooth.MeshDeviceFirmware plug_firmware_version
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
