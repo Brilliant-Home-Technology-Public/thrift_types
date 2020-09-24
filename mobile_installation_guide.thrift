@@ -162,6 +162,7 @@ enum GuideScreenType {
   DEVICE_SETUP_OWNERSHIP = 9
   WARNING_SCREEN = 10
   ROOM_SELECTION = 11
+  FREE_PAIRING = 12
 }
 
 struct GuideLoads {
