@@ -196,6 +196,24 @@ enum SwitchGesture {
   DOUBLE_TAP              = 0x04,
 }
 
+enum MeshPropertyDataType {
+  // The data type defines how the property is packed into the mesh property message.
+  // All data types shall be packed little-endian.
+  RESERVED_FOR_FUTURE_USE = 0x00,
+  BOOL                    = 0x01, // This shall be 0 (False) or 1 (True) and packed into 8 bits
+  UINT8                   = 0x02, // This shall be an unsigned int packed into 8 bits (1 byte)
+  UINT16                  = 0x03, // This shall be an unsigned int packed into 16 bits (2 bytes)
+  UINT32                  = 0x04, // This shall be an unsigned int packed into 32 bits (4 bytes)
+  UINT64                  = 0x05, // This shall be an unsigned int packed into 64 bits (8 bytes)
+  INT8                    = 0x06, // This shall be a signed int packed into 8 bits (1 byte)
+  INT16                   = 0x07, // This shall be a signed int packed into 16 bits (2 bytes)
+  INT32                   = 0x08, // This shall be a signed int packed into 32 bits (4 bytes)
+  INT64                   = 0x09, // This shall be a signed int packed into 64 bits (8 bytes)
+  UINT8_ARRAY             = 0x0A, // This is an opaque byte array where the size is specifed by the
+                                  // property_size field. Users are free to cast this property into
+                                  // the desired struct.
+}
+
 struct SwitchPropertySpec {
   1: byte property_id
   2: i16 property_size // in bytes
@@ -203,6 +221,7 @@ struct SwitchPropertySpec {
   4: optional i64 min_value
   5: optional i64 max_value
   6: optional string variable_name
+  7: optional MeshPropertyDataType property_type
 }
 
 const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
