@@ -291,6 +291,7 @@ struct Device {
   2: map<string, Peripheral> peripherals
   3: i64 timestamp = 0
   4: optional DeviceType device_type
+  5: optional string version
 }
 
 struct VirtualDeviceRegistration {
