@@ -3,6 +3,7 @@ namespace java thrift_types.peripheral_interfaces.brilliant_plug_interface
 
 include "../bluetooth.thrift"
 include "../configuration.thrift"
+include "../mesh_dfu.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
@@ -15,6 +16,8 @@ struct BrilliantPlugPeripheralInterface {
   6: bluetooth.MeshDeviceFirmware firmware_version
   7: i32 api_version
   8: configuration.PeripheralConfiguration peripheral_configuration
+  9: optional bool enable_fwid_packet_broadcast
+  10: optional mesh_dfu.MeshDfuPacket last_advertised_dfu_packet
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
