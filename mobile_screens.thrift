@@ -163,6 +163,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "CustomizeSwitch": "CustomizeSwitch"
 
   // Switch Provisioning
+  "FreePairing": "BluetoothDevicesDetected",
   // iOS
   "SwitchProvisioning": "Provisioning:SwitchProvisioning",
   "DeviceSetupMinDimLevel": "Provisioning:MinDimLevel",
@@ -188,6 +189,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED_MULTIPLE = "AttentionNeeded:Multiple"
+const string MOBILE_OVERLAY_NAME_BLUETOOTH_GENERIC_ERROR = "BluetoothGenericErrorOverlay"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
@@ -204,6 +206,7 @@ const string MOBILE_OVERLAY_NAME_DEVICE_SETTINGS_ERROR = "DeviceSettings:Error"
 const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
 const string MOBILE_OVERLAY_NAME_EMPTY_ROOM = "Rooms:Empty"
 const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
+const string MOBILE_OVERLAY_NAME_FREE_PAIRING_NO_DEVICES = "FreePairing:NoDevices"
 const string MOBILE_OVERLAY_NAME_FORCE_UPGRADE = "ForceUpgrade"
 const string MOBILE_OVERLAY_NAME_FORGET_HOME = "ForgetHome"
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
