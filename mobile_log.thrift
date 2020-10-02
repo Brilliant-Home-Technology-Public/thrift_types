@@ -400,6 +400,7 @@ struct MobileBLEProvisioningEvent {
   16: mobile_installation_guide.MeshProvisionStatus final_status
   17: string user_id
   18: string app_class
+  19: bool is_free_pairing
 }
 
 struct MobileConnectivityEvent {
