@@ -261,4 +261,5 @@ const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
 const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
 const string MOBILE_OVERLAY_NAME_TOGGLE_AIRPLANE = "ToggleAirplaneMode"
 const string MOBILE_OVERLAY_NAME_UNCONFIGURED_DEVICE = "UnconfiguredDevice"
+const string MOBILE_OVERLAY_NAME_VIEW_HOMES = "ViewHomes"
 
