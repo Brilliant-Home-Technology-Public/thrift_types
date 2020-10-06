@@ -87,6 +87,8 @@ const string BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER = "brilliant_virtual_device"
 const string BRILLIANT_VIRTUAL_DEVICE_CONFIG_IDENTIFIER = "brilliant_virtual_device_configuration"
 const string WEATHER_IDENTIFIER = "weather_peripheral"
 const string DEVICE_METRICS_IDENTIFIER = "device_metrics_peripheral"
+const string SALTO_KS_IDENTIFIER = "salto_ks"
+const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -132,6 +134,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     GENIE_IDENTIFIER,
     SPECTRUM_BRANDS_IDENTIFIER,
     BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER,
+    SALTO_KS_IDENTIFIER,
 ]
 
 const list<string> BRIDGE_HOSTED_VIRTUAL_DEVICE_IDS = [
@@ -228,6 +231,7 @@ enum PeripheralType {
   PROPERTY = 82,
   BRILLIANT_PLUG = 83,
   DEVICE_METRICS = 84,
+  SALTO_KS_CONFIGURATION = 85,
 }
 
 enum PeripheralStatus {
