@@ -231,6 +231,7 @@ const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperatu
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVED = "MobileRemoved"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVAL_ERROR = "MobileRemoval:Error"
 const string MOBILE_OVERLAY_NAME_NO_ONLINE_CONTROL = "NoOnlineControl"
+const string MOBILE_OVERLAY_NAME_NO_QR_CODE = "NoQRCode"
 const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
 const string MOBILE_OVERLAY_NAME_OTHER_RECOMMENDATIONS = "OtherRecommendations"
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"

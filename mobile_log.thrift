@@ -68,6 +68,7 @@ const string MOBILE_BUTTON_NAME_CONNECT_TO_BRILLIANT_HOME = "connect_to_brillian
 const string MOBILE_BUTTON_NAME_CONNECTIVITY = "connectivity"
 const string MOBILE_BUTTON_NAME_CONTACT_CUSTOMER_SUPPORT = "contact_customer_support"
 const string MOBILE_BUTTON_NAME_CONTINUE = "continue"
+const string MOBILE_BUTTON_NAME_CONTINUE_FREE_PAIRING = "continue:free_pairing"
 const string MOBILE_BUTTON_NAME_CREATE_CUSTOM = "create_custom"
 const string MOBILE_BUTTON_NAME_CREATE_HOME = "create_home"
 const string MOBILE_BUTTON_NAME_CREATE_NEW_HOME = "create_new_home"
