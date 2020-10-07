@@ -358,12 +358,14 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.API_VERSION: {
+    // This property is unused
     "property_id": SwitchPropertyID.API_VERSION,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 255,
     "variable_name": 'api_version',
+    "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.CURRENT_ZERO_CROSS: {
     "property_id": SwitchPropertyID.CURRENT_ZERO_CROSS,
@@ -431,12 +433,14 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.ERROR_STATUS: {
+    // This property is unused
     "property_id": SwitchPropertyID.ERROR_STATUS,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 255,
     "variable_name": '', // SwitchErrorStatus value
+    "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.DOUBLE_TAP_ENABLED: {
     "property_id": SwitchPropertyID.DOUBLE_TAP_ENABLED,
