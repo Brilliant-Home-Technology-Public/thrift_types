@@ -298,20 +298,24 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_ON: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.MOTION_TO_TRIGGER_ON,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
     "variable_name": '',
+    "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_OFF: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.MOTION_TO_TRIGGER_OFF,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
     "variable_name": '',
+    "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.MOTION_SCORE: {
     "property_id": SwitchPropertyID.MOTION_SCORE,
@@ -371,12 +375,14 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.BREAK_DIMMING: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.BREAK_DIMMING,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
     "variable_name": 'break_dimming',
+    "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.POWER: {
     "property_id": SwitchPropertyID.POWER,
@@ -388,33 +394,41 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.POWER_THRESHOLD: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.POWER_THRESHOLD,
     "property_size": 2,
     "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
     "variable_name": 'power_threshold', // units in 1/10 of a watt
+    "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.BREAK_CIRCUIT: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.BREAK_CIRCUIT,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 3,
     "variable_name": 'break_circuit', // BreakCircuitStatus bitflags
+    "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.CURRENT_SENSE_ADC_DATA: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.CURRENT_SENSE_ADC_DATA,
     "property_size": 256, // 128 values of 2 byte adc readings
     "variable_name": '',
+    "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.DEVICE_REVISION: {
+    // This property has been deprecated
     "property_id": SwitchPropertyID.DEVICE_REVISION,
     "property_size": 1,
     "default_value": 0,
     "min_value": 0,
     "max_value": 255,
     "variable_name": '',
+    "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.ERROR_STATUS: {
     "property_id": SwitchPropertyID.ERROR_STATUS,
