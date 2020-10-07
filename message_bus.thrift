@@ -86,6 +86,7 @@ const string SPECTRUM_BRANDS_CONFIG_IDENTIFIER = "spectrum_brands_configuration"
 const string BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER = "brilliant_virtual_device"
 const string BRILLIANT_VIRTUAL_DEVICE_CONFIG_IDENTIFIER = "brilliant_virtual_device_configuration"
 const string WEATHER_IDENTIFIER = "weather_peripheral"
+const string DEVICE_METRICS_IDENTIFIER = "device_metrics_peripheral"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -226,6 +227,7 @@ enum PeripheralType {
   CONFIGURATION_TEMPLATES = 81,
   PROPERTY = 82,
   BRILLIANT_PLUG = 83,
+  DEVICE_METRICS = 84,
 }
 
 enum PeripheralStatus {
