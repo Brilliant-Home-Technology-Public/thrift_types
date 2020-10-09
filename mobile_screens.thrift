@@ -58,7 +58,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeSettings": "HomeSettings",
   "PrivacySettings": "PrivacySettings",
   "SwitchEnvironment": "SwitchEnvironment",
-  "TroubleshootSwitch": "SwitchTroubleshoot",
+  "Troubleshoot": "Troubleshoot",
 
   // Help
   "Help": "Help",
