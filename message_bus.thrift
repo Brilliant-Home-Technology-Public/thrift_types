@@ -321,8 +321,8 @@ struct SubscriptionNotification {
   # A partial update occurs whenever specific peripherals in a device are modified. The message bus
   # has logic to attempt to group notifications together. Thus, multiple peripherals may be modified
   # in one SubscriptionNotification. In this case, the SubscriptionNotification will be as follows:
-  # - updated_device: The device will only be paritially populated. The id and timestamp will be
-  #     set, but the map of peripherals will not be set.
+  # - updated_device: The device will only be paritially populated. The id, device_type, and
+  #     timestamp will be set, but the map of peripherals will not be set.
   # - modified_peripherals: There will be at least one ModifiedPeripheral in the list.
   # - deleted: Will be false.
   #
@@ -346,8 +346,8 @@ struct SubscriptionNotification {
   #
   # 4) A device deletion.
   # When a device should be deleted, the SubscriptionNotification will be as follows:
-  # - updated_device: The device will only be paritially populated. The id and timestamp will be
-  #     set, but the map of peripherals will not be set.
+  # - updated_device: The device will only be paritially populated. The id, device_type, and
+  #     timestamp will be set, but the map of peripherals will not be set.
   # - modified_peripherals: Will be an empty list.
   # - deleted: Will be true.
 
