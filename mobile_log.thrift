@@ -411,6 +411,7 @@ struct MobileBLEProvisioningEvent {
   17: string user_id
   18: string app_class
   19: bool is_free_pairing
+  20: string provisioning_message_state
 }
 
 struct MobileConnectivityEvent {
