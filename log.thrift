@@ -326,6 +326,7 @@ const string UI_BUTTON_NAME_LOCK_SCREEN_MUSIC_NOW_PLAYING_OFF = "lock_screen_mus
 const string UI_BUTTON_NAME_COLOR_CHANGE = "color_change"
 const string UI_BUTTON_NAME_CONFIRM_RESET_ALL_SETTINGS = "confirm:reset_all_settings"
 const string UI_BUTTON_NAME_MUSIC_WIDGET = "music_widget"
+const string UI_BUTTON_NAME_MUSIC_WIDGET_GROUP = "music_widget:group"
 const string UI_BUTTON_NAME_ALL_LIGHTS_ON = "all_lights_on"
 const string UI_BUTTON_NAME_ALL_LIGHTS_OFF = "all_lights_off"
 const string UI_BUTTON_NAME_DELETE_ROOM = "delete_room"
@@ -379,6 +380,8 @@ const string UI_BUTTON_NAME_SUNRISE = "sunrise"
 const string UI_BUTTON_NAME_SUNSET = "sunset"
 const string UI_BUTTON_NAME_NEXT = "next"
 const string UI_BUTTON_NAME_TRY_AGAIN = "try_again"
+const string UI_BUTTON_NAME_SWITCH_PLAYERS = "switch_players"
+const string UI_BUTTON_NAME_EDIT_GROUP = "edit_group"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
