@@ -14,6 +14,7 @@ struct SwitchConfigurationPeripheralInterface {
   4: configuration.CapTouchSliderConfig slider_config
   5: bluetooth.MeshDeviceFirmware firmware_version
   6: mesh_dfu.MeshDfuPacket last_advertised_dfu_packet
+  7: optional string mac_address
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
