@@ -290,6 +290,8 @@ enum DeviceType {
   VIRTUAL = 3
   CLOUD = 4
   THIRDPARTY_VIRTUAL = 5
+  SWITCH = 6
+  PLUG = 7
 }
 
 struct Device {
