@@ -1,6 +1,8 @@
 namespace py thrift_types.bluetooth
 namespace java thrift_types.bluetooth
 
+include "hardware.thrift"
+
 const string MESH_PROV_SERVICE_UUID_STR = "00001827-0000-1000-8000-00805f9b34fb"
 const string MESH_PROXY_SERVICE_UUID_STR = "00001828-0000-1000-8000-00805f9b34fb"
 const string MESH_PROV_DATA_IN_UUID_STR = "00002adb-0000-1000-8000-00805f9b34fb"
@@ -658,6 +660,14 @@ struct MeshDeviceFirmware {
   1: string firmware_version
   2: i64 application_version
   3: i32 bootloader_version
+}
+
+struct TrackedReleaseStages {
+  1: map<MeshDeviceType, hardware.SoftwareReleaseStage> tracked_release_stage_by_device_type
+}
+
+struct AvailableFirmwares {
+  1: map<MeshDeviceType, map<hardware.SoftwareReleaseStage, MeshDeviceFirmware>> firmwares_by_type_and_stage
 }
 
 // Used in a BrilliantSwitchPeripheral migration: if during the migration we get

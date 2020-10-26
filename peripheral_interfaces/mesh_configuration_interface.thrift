@@ -14,6 +14,7 @@ struct MeshConfigurationPeripheralInterface {
   5: i64 iv_index_recovery_time_ms
   6: string relay_arbiter_device_id
   7: i32 next_unicast_address
+  8: optional bluetooth.TrackedReleaseStages tracked_release_stages
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
