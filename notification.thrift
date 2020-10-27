@@ -21,6 +21,7 @@ enum BrilliantNotificationType {
   CLIMATE_ALERT_WATER_DETECTED = 13,
   MESH_DEVICE_UPDATE_SCHEDULED = 14,
   MESH_DEVICE_UPDATE_IN_PROGRESS = 15,
+  NEST_UPDATE = 16,
 }
 
 enum BrilliantNotificationAction {
