@@ -221,6 +221,7 @@ const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_COMPLETION_TITLE = "CO
 const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_L1 = "COMPUTED_TEXT_CONTINUE_LABELING_L1"
 const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION = "COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION"
 const string MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION_TITLE = "COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION_TITLE"
+const string MOBILE_GUIDE_COMPUTED_TEXT_TEST_CONTROLS = "COMPUTED_TEXT_TEST_CONTROLS"
 
 // Keep list so we can prevent these constants from ever being displayed in text
 const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_IMAGES = [
@@ -236,6 +237,7 @@ const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_TEXT = [
   MOBILE_GUIDE_COMPUTED_TEXT_CONTINUE_LABELING_TRANSITION_TITLE,
   MOBILE_GUIDE_COMPUTED_TEXT_COMPLETED_CONTROL,
   MOBILE_GUIDE_COMPUTED_TEXT_COMPLETED_CONTROL_HELP,
+  MOBILE_GUIDE_COMPUTED_TEXT_TEST_CONTROLS,
 ]
 
 const string MOBILE_GUIDE_FIELD_ALL_BRILLIANT_PREFIX = "field_all_brilliant_"
@@ -259,8 +261,9 @@ const string MOBILE_GUIDE_FIELD_HAD_VENDOR_MESSAGE_ERROR = "field_had_vendor_mes
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
 const string MOBILE_GUIDE_FIELD_HAS_SUCCESSFULLY_PROVISIONED = "field_has_successfully_provisioned"
 const string MOBILE_GUIDE_FIELD_HIGH_WATTAGE_PREFIX = "field_high_wattage_"
-const string MOBILE_GUIDE_FIELD_IDENTITY_LINE_IS_KNOWN = "field_identify_line_is_known"
-const string MOBILE_GUIDE_FIELD_IDENTITY_LOAD_IS_KNOWN = "field_identify_load_is_known"
+const string MOBILE_GUIDE_FIELD_IDENTIFY_LINE_LOAD_KNOWN_PREFIX = "field_identify_line_load_known_"
+const string MOBILE_GUIDE_FIELD_IDENTITY_LINE_IS_KNOWN_PREFIX = "field_identify_line_is_known_"
+const string MOBILE_GUIDE_FIELD_IDENTITY_LOAD_IS_KNOWN_PREFIX = "field_identify_load_is_known_"
 const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_IS_FREE_PAIRING_PROVISION = "field_is_free_pairing_provision"
@@ -320,19 +323,19 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP = "screen_device_setup_o
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PLUG_TYPE = "screen_device_setup_plug_type"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PROVISIONED_LOAD = "screen_device_setup_provisioned_load"
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
-const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK = "screen_multiway_4way_check"
+const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK_PREFIX = "screen_multiway_4way_check_"
 const string MOBILE_GUIDE_SCREEN_FREE_PAIRING_SCAN = "screen_free_pairing_scan"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
 const string MOBILE_GUIDE_SCREEN_LIGHT_NOT_WORKING = "screen_light_not_working"
-const string MOBILE_GUIDE_SCREEN_LINE_LOAD_TEST_SELECTION = "screen_line_load_test_selection"
-const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST = "screen_line_load_wire_multimeter_test"
+const string MOBILE_GUIDE_SCREEN_LINE_LOAD_TEST_SELECTION_PREFIX = "screen_line_load_test_selection_"
+const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST_PREFIX = "screen_line_load_wire_multimeter_test_"
 const string MOBILE_GUIDE_SCREEN_MAGNETIC_LOAD = "screen_magnetic_load"
 const string MOBILE_GUIDE_SCREEN_MULTIMETER_CHECK = "screen_multimeter_check"
 const string MOBILE_GUIDE_SCREEN_MULTIWAY_ALL_DEVICES_INSTALLED = "screen_multiway_all_devices_installed_check"
-const string MOBILE_GUIDE_SCREEN_NCV_DETECTOR_CHECK = "screen_ncv_detector_check"
+const string MOBILE_GUIDE_SCREEN_NCV_DETECTOR_CHECK_PREFIX = "screen_ncv_detector_check_"
 const string MOBILE_GUIDE_SCREEN_NEUTRAL_WIRE_CHECK = "screen_installation_neutral_wire_check"
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"
 const string MOBILE_GUIDE_SCREEN_PLUG_PRE_PROVISION = "screen_plug_pre_provision"
