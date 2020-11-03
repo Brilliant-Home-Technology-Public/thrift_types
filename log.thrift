@@ -129,6 +129,7 @@ const string UI_DEVICE_ALERT_TAPPED_TABLE_NAME = "device_alert_tapped"
 const string UI_DEVICE_NOTIFICATION_VIEW_TABLE_NAME = "ui_device_notification_view"
 const string UI_DEVICE_BUTTON_TAPPED_TABLE_NAME = "ui_device_button_tapped"
 const string UI_DEVICE_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_device_notification_button_tapped"
+const string UI_MESH_TRACKED_FW_TABLE_NAME = "ui_mesh_tracked_fw"
 
 // END QT LOG TABLE NAMES
 
