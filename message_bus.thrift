@@ -232,6 +232,7 @@ enum PeripheralType {
   BRILLIANT_PLUG = 83,
   DEVICE_METRICS = 84,
   SALTO_KS_CONFIGURATION = 85,
+  SALTO_KS_IQ = 86,
 }
 
 enum PeripheralStatus {
