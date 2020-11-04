@@ -6,8 +6,7 @@ include "../lock.thrift"
 include "peripheral_interface.thrift"
 
 struct SaltoKSIQPeripheralInterface {
-	1: string display_name
-	2: lock.LockIds lock_ids
+	1: lock.LockIds lock_ids
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
