@@ -385,6 +385,11 @@ const string UI_BUTTON_NAME_TRY_AGAIN = "try_again"
 const string UI_BUTTON_NAME_SWITCH_PLAYERS = "switch_players"
 const string UI_BUTTON_NAME_EDIT_GROUP = "edit_group"
 const string UI_BUTTON_NAME_PLAY = "play"
+const string UI_BUTTON_NAME_PAUSE = "pause"
+const string UI_BUTTON_NAME_REPEAT_TOGGLE = "repeat:toggle"
+const string UI_BUTTON_NAME_SHUFFLE_TOGGLE = "shuffle:toggle"
+const string UI_BUTTON_NAME_PREVIOUS_TRACK = "previous_track"
+const string UI_BUTTON_NAME_NEXT_TRACK = "next_track"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
