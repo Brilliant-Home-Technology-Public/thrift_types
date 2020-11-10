@@ -369,6 +369,11 @@ enum MobileUnlockResult {
   LOCKED_OUT = 3
 }
 
+enum MobileUnlockType {
+  PIN = 1
+  BIOMETRICS = 2
+}
+
 enum LiveViewConnectionState {
   NEW = 1
   ICE_GATHERING_START = 2
@@ -752,6 +757,7 @@ struct MobileUnlockAttemptEvent {
   7: MobileUnlockResult unlock_result
   8: string user_id
   9: string app_class
+  10: MobileUnlockType unlock_type
 }
 
 struct MobileLiveviewSessionFeedbackEvent {
