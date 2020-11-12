@@ -143,6 +143,7 @@ const string EMBEDDED_SCENE_EXECUTION_TABLE_NAME = "embedded_scene_execution"
 const string EMBEDDED_MESH_FIRMWARE_UPDATE_TABLE_NAME = "mesh_firmware_update"
 const string EMBEDDED_MESH_DEVICE_FIRMWARE_REPORT_TABLE_NAME = "mesh_device_firmware_report"
 const string EMBEDDED_SET_ACK_TABLE_NAME = "embedded_set_ack"
+const string EMBEDDED_PHYSICAL_DEVICE_AVAILABLE_DURATION = "physical_device_available_duration"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
