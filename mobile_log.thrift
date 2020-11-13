@@ -63,7 +63,6 @@ const string MOBILE_BUTTON_NAME_CHANGE_PIN = "change_pin"
 const string MOBILE_BUTTON_NAME_CLOSE = "close"
 const string MOBILE_BUTTON_NAME_CONFIRM_DEMO_MODE = "confirm_demo_mode"
 const string MOBILE_BUTTON_NAME_CONFIRM_FORGET_HOME = "confirm_forget_home"
-const string MOBILE_BUTTON_NAME_CONFIRM_REMOVE_CONTROL = "confirm_remove_control"
 const string MOBILE_BUTTON_NAME_CONFIRM_UPLOAD_PHOTO = "confirm_upload_photo"
 const string MOBILE_BUTTON_NAME_CONNECT_TO_BRILLIANT_HOME = "connect_to_brilliant_home"
 const string MOBILE_BUTTON_NAME_CONNECTIVITY = "connectivity"
@@ -151,7 +150,8 @@ const string MOBILE_BUTTON_NAME_REMOTE_VIDEO_ENABLE = "enable_remote_video"
 const string MOBILE_BUTTON_NAME_REPEAT = "repeat"
 const string MOBILE_BUTTON_NAME_RESET_DEVICE = "reset_device"
 const string MOBILE_BUTTON_NAME_RETRY = "retry"
-const string MOBILE_BUTTON_NAME_REMOVE_CONTROL = "remove_control"
+const string MOBILE_BUTTON_NAME_REMOVE_BRILLIANT_CONTROL_DEVICE = "remove_brilliant_control"
+const string MOBILE_BUTTON_NAME_REMOVE_BRILLIANT_MESH_DEVICE = "remove_brilliant_mesh_device"
 const string MOBILE_BUTTON_NAME_REMOVE_MOBILE = "remove_mobile"
 const string MOBILE_BUTTON_NAME_REMOVE_THIRDPARTY_DEVICE = "remove_thirdparty_device"
 const string MOBILE_BUTTON_NAME_RESET_SETTINGS = "reset_settings"
@@ -306,6 +306,9 @@ enum MobileEventDeviceType {
   OTHER = 8
   BUILDING_ENTRY_PANEL = 9
   LEAK_DETECTOR = 10
+  BRILLIANT_SWITCH = 11
+  BRILLIANT_PLUG = 12
+  BRILLIANT_CONTROL = 13
 }
 
 enum MobileEventSource {
@@ -330,6 +333,7 @@ enum MobileLevelType {
 
 enum MobileNotificationType {
   POPUP = 1
+  FULLSCREEN = 2 // May be implemented as an actual screen
 }
 
 enum MobileOfflineStatus {

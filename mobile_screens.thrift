@@ -28,7 +28,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MusicNowPlaying": "NowPlaying",
   "Favorites": "Favorites",
   "MusicFavorites": "Favorites",
-  "RemoveBrilliantControl": "RemoveBrilliantControl",
+  "RemoveBrilliantControl": "RemoveDevice",
+  "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
 
   // Color
@@ -47,8 +48,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ForgotPin": "ForgotPin",
   "SettingsDemoMode": "DemoMode",
   "SettingsForgetHome": "ForgetHome",
-  "HomeLogin": "HomeLogin", // Use modifier for forgot passcode flow
-  "HomePasscodeReset": "HomeLogin", // Use modifier for forgot passcode flow
+  "HomeLogin": "HomePasscode", // Use modifier for forgot passcode flow
+  "HomePasscodeReset": "HomePasscode", // Use modifier for forgot passcode flow
   // Home Management
   "HomeManagement": "HomeManagement",
   "HomeManagementDevices": "HomeManagement",
@@ -256,8 +257,8 @@ const string MOBILE_OVERLAY_NAME_PROVISIONING_SUCCESS = "Provisioning:Success"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
 const string MOBILE_OVERLAY_NAME_RESET_SETTINGS = "ResetSettings"
-const string MOBILE_OVERLAY_NAME_REMOVE_MESH_DEVICE_FAILED = "RemoveMeshDeviceFailed"
-const string MOBILE_OVERLAY_NAME_REMOVE_MESH_DEVICE_SUCCESS = "RemoveMeshDeviceSuccess"
+const string MOBILE_OVERLAY_NAME_REMOVE_DEVICE_FAILED = "RemoveDevice:Failed"
+const string MOBILE_OVERLAY_NAME_REMOVE_DEVICE_SUCCESS = "RemoveDevice:Confirmed"
 const string MOBILE_OVERLAY_NAME_REMOVE_THIRDPARTY_DEVICE = "RemoveThirdpartyDevice"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Create:Error"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_UPDATE_NAME_ERROR = "RoomSettings:UpdateName:Error"
