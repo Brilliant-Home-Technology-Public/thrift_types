@@ -39,6 +39,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Account
   "EditAccount": "AccountSettings",
   "EditAccountEditSettings": "AccountSettings",
+  "ResetPin": "ResetPin",
 
   // Settings
   "DemoMode": "DemoMode",
@@ -238,6 +239,7 @@ const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
 const string MOBILE_OVERLAY_NAME_OTHER_RECOMMENDATIONS = "OtherRecommendations"
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
+const string MOBILE_OVERLAY_NAME_PIN_UPDATED = "PinUpdated"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CODE_LOCATION = "Provisioning:WhereToFindCode"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CODE_READ_ERROR = "Provisioning:CodeReadError"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CREATE_MESH_NETWORK = "Provisioning:CreateMesh"
