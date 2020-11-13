@@ -306,9 +306,14 @@ enum MobileEventDeviceType {
   OTHER = 8
   BUILDING_ENTRY_PANEL = 9
   LEAK_DETECTOR = 10
-  BRILLIANT_SWITCH = 11
-  BRILLIANT_PLUG = 12
-  BRILLIANT_CONTROL = 13
+  BRILLIANT_DEVICE = 11
+}
+
+enum MobileEventPhysicalDeviceModel {
+  NONE = 1
+  BRILLIANT_CONTROL = 2
+  BRILLIANT_SWITCH = 3
+  BRILLIANT_PLUG = 4
 }
 
 enum MobileEventSource {
@@ -635,6 +640,7 @@ struct MobileDeviceNotificationButtonTappedEvent {
   10: string app_class
   11: MobileEventDeviceType device_type
   12: string integration_name
+  13: MobileEventPhysicalDeviceModel physical_device_model
 }
 
 struct MobileOverlayViewEvent {
@@ -662,6 +668,7 @@ struct MobileDeviceNotificationViewEvent {
   10: MobileNotificationType notification_type
   11: MobileEventDeviceType device_type
   12: string integration_name
+  13: MobileEventPhysicalDeviceModel physical_device_model
 }
 
 struct MobilePhotosActionEvent {
@@ -714,6 +721,7 @@ struct MobileDeviceSettingsScreenViewEvent {
   9: string app_class
   10: MobileEventDeviceType device_type
   11: string integration_name
+  12: MobileEventPhysicalDeviceModel physical_device_model
 }
 
 struct MobileSectionExpansionToggleEvent {
