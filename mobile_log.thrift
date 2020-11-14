@@ -310,10 +310,10 @@ enum MobileEventDeviceType {
 }
 
 enum MobileEventPhysicalDeviceModel {
-  NONE = 1
-  BRILLIANT_CONTROL = 2
-  BRILLIANT_SWITCH = 3
-  BRILLIANT_PLUG = 4
+  UNKNOWN = 0
+  BRILLIANT_CONTROL = 1
+  BRILLIANT_SWITCH = 2
+  BRILLIANT_PLUG = 3
 }
 
 enum MobileEventSource {
