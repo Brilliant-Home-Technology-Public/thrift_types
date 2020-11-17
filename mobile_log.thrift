@@ -2,6 +2,7 @@ namespace py thrift_types.mobile_log
 namespace java thrift_types.mobile_log
 
 include "mobile_installation_guide.thrift"
+include "cross_platform_log.thrift"
 
 /*
  * IMPORTANT NOTE:
@@ -308,13 +309,6 @@ enum MobileEventDeviceType {
   BUILDING_ENTRY_PANEL = 9
   LEAK_DETECTOR = 10
   BRILLIANT_DEVICE = 11
-}
-
-enum MobileEventPhysicalDeviceModel {
-  UNKNOWN = 0
-  BRILLIANT_CONTROL = 1
-  BRILLIANT_SWITCH = 2
-  BRILLIANT_PLUG = 3
 }
 
 enum MobileEventSource {
@@ -641,7 +635,7 @@ struct MobileDeviceNotificationButtonTappedEvent {
   10: string app_class
   11: MobileEventDeviceType device_type
   12: string integration_name
-  13: MobileEventPhysicalDeviceModel physical_device_model
+  13: cross_platform_log.PhysicalDeviceModel physical_device_model
 }
 
 struct MobileOverlayViewEvent {
@@ -669,7 +663,7 @@ struct MobileDeviceNotificationViewEvent {
   10: MobileNotificationType notification_type
   11: MobileEventDeviceType device_type
   12: string integration_name
-  13: MobileEventPhysicalDeviceModel physical_device_model
+  13: cross_platform_log.PhysicalDeviceModel physical_device_model
 }
 
 struct MobilePhotosActionEvent {
@@ -722,7 +716,7 @@ struct MobileDeviceSettingsScreenViewEvent {
   9: string app_class
   10: MobileEventDeviceType device_type
   11: string integration_name
-  12: MobileEventPhysicalDeviceModel physical_device_model
+  12: cross_platform_log.PhysicalDeviceModel physical_device_model
 }
 
 struct MobileSectionExpansionToggleEvent {
