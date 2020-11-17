@@ -131,6 +131,7 @@ struct GuideField {
   9: optional string video_url // Could be web or bundle protocol
   10: optional GuideOverlay help_overlay
   11: optional string secondary_image_url
+  12: optional list<string> primary_animation_images
 }
 
 struct GuidePage {
