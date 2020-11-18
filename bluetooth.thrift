@@ -222,7 +222,6 @@ struct SwitchPropertySpec {
   3: optional i64 default_value
   4: optional i64 min_value
   5: optional i64 max_value
-  6: optional string variable_name
   7: optional MeshPropertyDataType property_type
 }
 
@@ -233,7 +232,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": "always_on", // special case: mapped to the peripheral type
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.DIMMABLE: {
@@ -242,7 +240,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": 'dimmable',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.MINIMUM_DIM_LEVEL: {
@@ -251,7 +248,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1000,
-    "variable_name": 'minimum_dim_level',
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.MAXIMUM_DIM_LEVEL: {
@@ -260,7 +256,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 1000,
     "min_value": 0,
     "max_value": 1000,
-    "variable_name": 'maximum_dim_level',
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.MOTION_LOW_THRESHOLD: {
@@ -269,7 +264,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 15,
     "min_value": 0,
     "max_value": 100,
-    "variable_name": 'motion_low_threshold',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.MOTION_HIGH_THRESHOLD: {
@@ -278,7 +272,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 24,
     "min_value": 0,
     "max_value": 100,
-    "variable_name": 'motion_high_threshold',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS: {
@@ -287,7 +280,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 1000,
     "min_value": 0,
     "max_value": 1000,
-    "variable_name": 'status_light_max_brightness',
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.UNICAST_ADDRESS_FORWARDING: {
@@ -296,7 +288,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": 'slider_config', // special case: mapped to a thrift struct
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_ON: {
@@ -306,7 +297,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_OFF: {
@@ -316,7 +306,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.MOTION_SCORE: {
@@ -325,7 +314,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 100,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.MOTION_DETECTED: {
@@ -334,7 +322,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": 'movement_detected',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.TEMPERATURE: {
@@ -343,20 +330,17 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0, // TODO: The min_value needs to be adjusted to -32768
     "max_value": 65535, // TODO: The max_value needs to be adjusted to 32767
-    "variable_name": 'temperature',
     "property_type": MeshPropertyDataType.INT16,
   },
   SwitchPropertyID.UUID: {
     "property_id": SwitchPropertyID.UUID,
     "property_size": 16,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.FIRMWARE_VERSION: {
     "property_id": SwitchPropertyID.FIRMWARE_VERSION,
     "property_size": 8, // SoftDevice (2 bytes) + Bootloader (2 bytes) + App (4 bytes)
     "default_value": 0,
-    "variable_name": 'firmware_version',
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.API_VERSION: {
@@ -366,7 +350,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 255,
-    "variable_name": 'api_version',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.CURRENT_ZERO_CROSS: {
@@ -375,7 +358,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1000,
-    "variable_name": 'current_zero_cross',
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.BREAK_DIMMING: {
@@ -385,26 +367,23 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": 'break_dimming',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.POWER: {
     "property_id": SwitchPropertyID.POWER,
     "property_size": 2,
-    "default_value": 0,
+    "default_value": 0, // units in 1/10 of a watt
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": 'power', // units in 1/10 of a watt
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.POWER_THRESHOLD: {
     // This property has been deprecated
     "property_id": SwitchPropertyID.POWER_THRESHOLD,
     "property_size": 2,
-    "default_value": 0,
+    "default_value": 0, // units in 1/10 of a watt
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": 'power_threshold', // units in 1/10 of a watt
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.BREAK_CIRCUIT: {
@@ -414,14 +393,12 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 3,
-    "variable_name": 'break_circuit', // BreakCircuitStatus bitflags
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.CURRENT_SENSE_ADC_DATA: {
     // This property has been deprecated
     "property_id": SwitchPropertyID.CURRENT_SENSE_ADC_DATA,
     "property_size": 256, // 128 values of 2 byte adc readings
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.DEVICE_REVISION: {
@@ -431,17 +408,15 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 255,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.ERROR_STATUS: {
     // This property is unused
     "property_id": SwitchPropertyID.ERROR_STATUS,
     "property_size": 1,
-    "default_value": 0,
+    "default_value": 0, // SwitchErrorStatus value
     "min_value": 0,
     "max_value": 255,
-    "variable_name": '', // SwitchErrorStatus value
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.DOUBLE_TAP_ENABLED: {
@@ -450,7 +425,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.SWITCH_LOAD_TYPE: {
@@ -459,7 +433,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 5,
-    "variable_name": 'switch_load_type',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.UNICAST_FORWARDING_GESTURES: {
@@ -468,7 +441,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 3,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.CAPTOUCH_AND_LOAD_CONNECTED: {
@@ -477,14 +449,12 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 1,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.AMPS_IN_MA: {
     "property_id": SwitchPropertyID.AMPS_IN_MA,
     "property_size": 2,
     "default_value": 0,
-    "variable_name": '',
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD: {
@@ -493,7 +463,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
-    "variable_name": 'amps_safe_max_threshold', // units in mA
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.TEMP_SAFE_MAX_THRESHOLD: {
@@ -502,7 +471,6 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 600,
     "min_value": -32768,
     "max_value": 32767,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.INT16,
   },
   SwitchPropertyID.MOTION_MIN_SMPLS_BTW_UPDATE: {
@@ -511,63 +479,54 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "default_value": 50,
     "min_value": 0,
     "max_value": 255,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS: {
     "property_id": SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS,
     "property_size": 1,
     "default_value": 0,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT8,
   },
   SwitchPropertyID.DBG_COMPUTED_ZERO_POINT: {
     "property_id": SwitchPropertyID.DBG_COMPUTED_ZERO_POINT,
     "property_size": 2,
     "default_value": 65535,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS: {
     "property_id": SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS,
     "property_size": 2,
     "default_value": 65535,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO: {
     "property_id": SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO,
     "property_size": 2,
     "default_value": 32,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION: {
     "property_id": SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION,
     "property_size": 2,
     "default_value": 15,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS: {
     "property_id": SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS,
     "property_size": 2,
     "default_value": 96,
-    "variable_name": "",
     "property_type": MeshPropertyDataType.UINT16,
   },
   SwitchPropertyID.REBOOT: {
     "property_id": SwitchPropertyID.REBOOT,
     "property_size": 1,
     "default_value": 0,
-    "variable_name": "reboot",
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST: {
     "property_id": SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
     "property_size": 1,
     "default_value": 1,
-    "variable_name": "enable_fwid_packet_broadcast",
     "property_type": MeshPropertyDataType.BOOL,
   },
   SwitchPropertyID.DFU_LAST_TRANSFER_STATE: {
@@ -593,19 +552,16 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.HARDWARE_REVISION: {
     "property_id": SwitchPropertyID.HARDWARE_REVISION,
     "property_size": 4,
-    "variable_name": 'hardware_revision',
     "property_type": MeshPropertyDataType.UINT32,
   },
   SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM: {
     "property_id": SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM,
     "property_size": 15,
-    "variable_name": 'captouch_btn00_tuning_param',
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
   SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM: {
     "property_id": SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM,
     "property_size": 13,
-    "variable_name": 'captouch_sld00_tuning_param',
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
   },
 }
