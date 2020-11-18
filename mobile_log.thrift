@@ -309,6 +309,7 @@ enum MobileEventDeviceType {
   BUILDING_ENTRY_PANEL = 9
   LEAK_DETECTOR = 10
   BRILLIANT_DEVICE = 11
+  MOBILE = 12
 }
 
 enum MobileEventSource {
