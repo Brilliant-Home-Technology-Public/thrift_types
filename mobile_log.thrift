@@ -365,6 +365,10 @@ enum MobileSelectType {
   FAN_MODE = 2
 }
 
+enum MobileSettingsDetail {
+  GENERAL = 1
+}
+
 enum MobileToggleType {
   ON = 1
   LOCK = 2
@@ -718,6 +722,7 @@ struct MobileDeviceSettingsScreenViewEvent {
   10: MobileEventDeviceType device_type
   11: string integration_name
   12: cross_platform_log.PhysicalDeviceModel physical_device_model
+  13: MobileSettingsDetail settings_detail
 }
 
 struct MobileSectionExpansionToggleEvent {
