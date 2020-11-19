@@ -25,6 +25,7 @@ const string MOBILE_DEVICE_NOTIFICATION_VIEW = "mobile_device_notification_view"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
+const string MOBILE_HOME_PASSCODE_ATTEMPT_TABLE_NAME = "mobile_home_passcode_attempt"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
 const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
@@ -380,6 +381,7 @@ enum MobileUnlockResult {
   SUCCESS = 1
   FAILURE = 2
   LOCKED_OUT = 3
+  CONFIRMED_NEW_PIN = 4 // Currently only logged for home passcode attempt
 }
 
 enum MobileUnlockType {
@@ -855,4 +857,16 @@ struct MobileLiveviewSupportEvent {
   8: string h264_decoders
   9: string h264_hw_decoders
   10: bool supported
+}
+
+struct MobileHomePasscodeAttemptEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: MobileUnlockResult unlock_result
+  8: string user_id
+  9: string app_class
 }
