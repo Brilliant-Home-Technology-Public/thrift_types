@@ -298,6 +298,7 @@ enum MobileErrorEventType {
   UPLOAD_PHOTO_ERROR = 13
   FAILED_GET_ICE_SERVERS = 14
   LIVE_VIEW_DISCONNECTED = 15
+  FAILED_CHANGE_HOME_LOCATION = 16
 }
 
 enum MobileEventDeviceType {
