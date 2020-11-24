@@ -209,6 +209,22 @@ struct ExecutionTimeRange {
   4: list<DailyTimeRange> valid_time_ranges = []
 }
 
+enum TimeOffset {
+  ZERO_MIN = 0,
+  ONE_MIN_BEFORE = -60,
+  ONE_MIN_AFTER = 60,
+  FIVE_MIN_BEFORE = -300,
+  FIVE_MIN_AFTER = 300,
+  TEN_MIN_BEFORE = -600,
+  TEN_MIN_AFTER = 600,
+  THIRTY_MIN_BEFORE = -1800,
+  THIRTY_MIN_AFTER = 1800,
+  ONE_HOUR_BEFORE = -3600,
+  ONE_HOUR_AFTER = 3600,
+  TWO_HOURS_BEFORE = -7200,
+  TWO_HOURS_AFTER = 7200,
+}
+
 // Motion Control Configuration
 
 const string LIGHT_MOTION_CONFIG_VARIABLE_PREFIX = "light_config:"
