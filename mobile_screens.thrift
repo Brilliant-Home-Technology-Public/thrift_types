@@ -141,6 +141,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit",
   "ScenePartnerScenes": "AddPartnerScene",
   "SceneViewAction": "PartnerSceneAction",
+  "SceneTimerLocation": "HomeLocation",
 
   // Installation Guide
   // iOS
