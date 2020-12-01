@@ -18,6 +18,7 @@ struct SwitchConfigurationPeripheralInterface {
   8: i32 hardware_revision
   9: bluetooth.SwitchCapTouchButtonTuningParamsHwRev3 captouch_btn00_tuning_param
   10: bluetooth.SwitchCapTouchSliderTuningParamsHwRev3 captouch_sld00_tuning_param
+  11: string peripheral_info_id
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
