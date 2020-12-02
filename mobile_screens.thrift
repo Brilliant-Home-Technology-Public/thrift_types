@@ -194,6 +194,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED_MULTIPLE = "AttentionNeeded:Multiple"
 const string MOBILE_OVERLAY_NAME_BLUETOOTH_GENERIC_ERROR = "BluetoothGenericErrorOverlay"
+const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarning"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
