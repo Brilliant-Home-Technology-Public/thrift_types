@@ -18,6 +18,7 @@ const string GANGBOX_IDENTIFIER = "gangbox_peripheral"
 const string GANGBOX_UART_STATUS_PREFIX = "gangbox_uart_status_peripheral"
 const string GANGBOX_CONFIG_IDENTIFIER = "gangbox_config_peripheral"
 const string HARDWARE_IDENTIFIER = "hardware_peripheral"
+const string HOMEKIT_CONFIG_IDENTIFIER = "homekit_configuration"
 const string HOME_CONFIG_IDENTIFIER = "home_configuration"
 const string HUE_BRIDGE_IDENTIFIER = "hue_bridge"
 const string HUE_BRIDGE_CONFIG_IDENTIFIER = "hue_bridge_configuration"
@@ -233,6 +234,7 @@ enum PeripheralType {
   DEVICE_METRICS = 84,
   SALTO_KS_CONFIGURATION = 85,
   SALTO_KS_IQ = 86,
+  HOMEKIT_CONFIGURATION = 87,
 }
 
 enum PeripheralStatus {
