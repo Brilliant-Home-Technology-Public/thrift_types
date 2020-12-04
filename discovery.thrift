@@ -13,6 +13,7 @@ const string WEMO_SOCKET_MODEL_NAME_FOR_DISCOVERY = "Socket"
 // The Wemo Switch device name has different casing between discovery and their XML API :(
 const string WEMO_SWITCH_MODEL_NAME = "LightSwitch"
 const string WEMO_SWITCH_MODEL_NAME_FOR_DISCOVERY = "Lightswitch"
+const string WEMO_OUTDOOR_PLUG_MODEL_NAME = "OutdoorPlug"
 
 const string DEVICE_PROVISIONING_MDNS_SERVICE_TYPE = "_init-brilliant._tcp.local."
 const string REMOTE_BRIDGE_MDNS_SERVICE_SUFFIX = "-brilliant._tcp.local."
