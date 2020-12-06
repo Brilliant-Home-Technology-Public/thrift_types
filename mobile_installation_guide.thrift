@@ -307,6 +307,8 @@ const string MOBILE_GUIDE_OVERLAY_ALL_OTHER_DEVICES_INSTALLED = "overlay_all_oth
 const string MOBILE_GUIDE_OVERLAY_INSTALLATION_CHECK_TURN_LIGHT_OFF = "overlay_installation_check_turn_light_off"
 const string MOBILE_GUIDE_OVERLAY_INSTALLATION_CHECK_TURN_LIGHT_ON = "overlay_installation_check_turn_light_on"
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
+const string MOBILE_GUIDE_OVERLAY_SWITCH_FREE_PAIRING_READY_TO_CONNECT = "overlay_free_pairing_ready_to_connect"
+const string MOBILE_GUIDE_OVERLAY_PLUG_FREE_PAIRING_READY_TO_CONNECT = "overlay_plug_free_pairing_ready_to_connect"
 
 const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 
