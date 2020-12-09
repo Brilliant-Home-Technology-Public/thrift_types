@@ -326,6 +326,7 @@ enum MobileEventDeviceType {
   LEAK_DETECTOR = 10
   BRILLIANT_DEVICE = 11
   MOBILE = 12
+  CAMERA = 13
 }
 
 enum MobileEventSource {
