@@ -144,6 +144,7 @@ const string EMBEDDED_MESH_FIRMWARE_UPDATE_TABLE_NAME = "mesh_firmware_update"
 const string EMBEDDED_MESH_DEVICE_FIRMWARE_REPORT_TABLE_NAME = "mesh_device_firmware_report"
 const string EMBEDDED_SET_ACK_TABLE_NAME = "embedded_set_ack"
 const string EMBEDDED_PHYSICAL_DEVICE_AVAILABLE_DURATION = "physical_device_available_duration"
+const string EMBEDDED_MOTION_HIGH_THRESHOLD_MIGRATION_TABLE_NAME = "motion_high_threshold_migration"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
