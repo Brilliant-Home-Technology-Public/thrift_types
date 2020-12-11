@@ -14,6 +14,9 @@ const string NORDIC_SERVICE_UUID_STR = "0000fee4-0000-1000-8000-00805f9b34fb"
 const string CONFIGURATION_VARIABLE_MESH_ELEMENTS_ = "mesh_elements"
 const string CONFIGURATION_VARIABLE_DEVICE_KEY = "device_key"
 const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
+// Gestures are sent with a special "gesture" property ID and do not utilize the
+// SwitchPropertyID scheme despite being part of the SWITCH_CONFIG_CLIENT model
+const string GESTURE_PROPERTY_ID = "gesture"
 const i32 SWITCH_DVT_APP_VERSION = 7
 const i32 PLUG_PROD_APP_VERSION = 202009170
 // We're using const bytes for unicast forwarding gestures rather than enums because we
