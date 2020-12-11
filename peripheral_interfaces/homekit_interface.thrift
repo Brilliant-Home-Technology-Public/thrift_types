@@ -15,6 +15,7 @@ struct HomeKitPeripheralInterface {
   8: bool adk_enabled
   10: bool restart
   11: bool token_exists
+  12: optional homekit.ExposedFixtures exposed_fixtures
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
