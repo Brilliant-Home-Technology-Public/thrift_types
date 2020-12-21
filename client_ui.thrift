@@ -40,3 +40,150 @@ const map<string, string> THIRDPARTY_VIRTUAL_DEVICE_IDENTIFIER_TO_INTEGRATION_NA
 		message_bus.TPLINK_IDENTIFIER: TPLINK_INTEGRATION_NAME,
 		message_bus.WEMO_IDENTIFIER: WEMO_INTEGRATION_NAME,
 }
+
+enum SupportType {
+  DEVICES = 0,
+  SCENES = 1,
+  GESTURES = 2,
+  CAP_TOUCH = 3,
+  MOTION = 4,
+  // TODO: Add Alexa
+}
+
+const map<message_bus.PeripheralType, map<SupportType, bool>> control_peripheral_support_details = {
+  message_bus.PeripheralType.LIGHT: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: true,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: true
+    },
+    message_bus.PeripheralType.MUSIC: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.SPEAKER: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        // TODO: Cap Touch for speakers will only be enabled if customer complaints/requests are received
+        // See: https://brillianthome.atlassian.net/browse/CQ-3846
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.LOCK: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.DOORBELL: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.CAMERA: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.THERMOSTAT: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.OUTLET: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: true,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: true
+    },
+    message_bus.PeripheralType.ART_CONFIGURATION: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.GENERIC_ON_OFF: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: true,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: true
+    },
+    message_bus.PeripheralType.ALWAYS_ON: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.DEVICE_CONFIGURATION: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.SHADE: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.NEST_STRUCTURE: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.BUILDING_ENTRY_PANEL: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.SWITCH_CONFIGURATION: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.BRILLIANT_PLUG: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.GARAGE_DOOR: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.CLIMATE_SENSOR: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    }
+}
