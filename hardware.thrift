@@ -85,4 +85,6 @@ const i32 THERMAL_THROTTLE_HEAVY_TEMP = 95
 struct FilesystemStatus {
   1: i64 bytes_total
   2: i64 bytes_used
+  3: i64 inodes_used
+  4: i64 inodes_total
 }
