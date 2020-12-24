@@ -185,5 +185,12 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> control_peripheral
         SupportType.GESTURES: false,
         SupportType.CAP_TOUCH: false,
         SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.SALTO_KS_IQ: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
     }
 }
