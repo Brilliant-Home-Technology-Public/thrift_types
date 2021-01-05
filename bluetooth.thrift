@@ -59,6 +59,11 @@ enum OtaUpdateStatus {
   IN_PROGRESS = 1,
 }
 
+enum FaultCondition {
+  NORMAL = 0,
+  WIFI_COEXISTENCE_CONFLICT = 1,
+}
+
 struct NetKey {
   1: i16 index
   2: string key // 32 digit hexadecimal
