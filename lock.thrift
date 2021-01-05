@@ -5,6 +5,7 @@ enum LockStatus {
   UNKNOWN = 0,
   NORMAL = 1,
   JAMMED = 2,
+  DEAUTHORIZED = 3,
 }
 
 struct LockIds {
