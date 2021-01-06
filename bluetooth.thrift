@@ -196,6 +196,8 @@ enum SwitchOpCode {
   SET_PROPERTIES            = 0x02,
   PROPERTIES_STATUS         = 0x03,
   GESTURE_DETECTED          = 0x04,
+  SET_PUBLISH_CONFIG        = 0x05,
+  GET_PUBLISH_CONFIG        = 0x06,
 }
 
 enum SwitchGesture {
