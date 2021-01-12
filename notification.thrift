@@ -22,6 +22,7 @@ enum BrilliantNotificationType {
   MESH_DEVICE_UPDATE_SCHEDULED = 14,
   MESH_DEVICE_UPDATE_IN_PROGRESS = 15,
   NEST_UPDATE = 16,
+  SALTO_KS_CODE_REQUIRED = 17,
 }
 
 enum BrilliantNotificationAction {
