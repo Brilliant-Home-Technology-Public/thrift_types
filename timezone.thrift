@@ -6,6 +6,11 @@ struct Timezone {
   2: string display_name
 }
 
+const string JAPAN_TIMEZONE_NAME = "Asia/Tokyo"
+const string JAPAN_TIMEZONE_DISPLAY_NAME = "Japan - Tokyo"
+const string UK_TIMEZONE_NAME = "Europe/London"
+const string UK_TIMEZONE_DISPLAY_NAME = "UK - London"
+
 const list<Timezone> supported_timezones = [
     {
         "name": "Pacific/Honolulu",
@@ -38,5 +43,16 @@ const list<Timezone> supported_timezones = [
     {
         "name": "America/Halifax",
         "display_name": "Atlantic - Halifax"
+    },
+]
+
+const list<Timezone> dev_timezones = [
+    {
+        "name": JAPAN_TIMEZONE_NAME,
+        "display_name": JAPAN_TIMEZONE_DISPLAY_NAME
+    },
+    {
+        "name": UK_TIMEZONE_NAME,
+        "display_name": UK_TIMEZONE_DISPLAY_NAME
     },
 ]
