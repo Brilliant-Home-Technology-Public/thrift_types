@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		415FD49E1ED8D5B400A7DA75 /* BRLTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 415FD49C1ED8D5B400A7DA75 /* BRLTest.h */; };
-		415FD4A01ED8D7F600A7DA75 /* thrift_types in Resources */ = {isa = PBXBuildFile; fileRef = 415FD49F1ED8D7F600A7DA75 /* thrift_types */; };
+		947B2F1D43F4372077912CDA /* Pods_BRLTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E14D58927452A77C83E08CF /* Pods_BRLTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		415FD4341ED8BB4B00A7DA75 /* BRLTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRLTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		415FD49B1ED8D5B400A7DA75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415FD49C1ED8D5B400A7DA75 /* BRLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLTest.h; sourceTree = "<group>"; };
-		415FD49F1ED8D7F600A7DA75 /* thrift_types */ = {isa = PBXFileReference; lastKnownFileType = folder; path = thrift_types; sourceTree = SOURCE_ROOT; };
+		6E14D58927452A77C83E08CF /* Pods_BRLTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRLTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FE27B138397095496366B3 /* Pods-BRLTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRLTest.debug.xcconfig"; path = "Target Support Files/Pods-BRLTest/Pods-BRLTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E225B15190D61F1FB8BD2ACB /* Pods-BRLTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRLTest.release.xcconfig"; path = "Target Support Files/Pods-BRLTest/Pods-BRLTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +25,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947B2F1D43F4372077912CDA /* Pods_BRLTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07EF86DA0F067964E77C7A74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77FE27B138397095496366B3 /* Pods-BRLTest.debug.xcconfig */,
+				E225B15190D61F1FB8BD2ACB /* Pods-BRLTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		415FD42A1ED8BB4B00A7DA75 = {
 			isa = PBXGroup;
 			children = (
 				415FD49A1ED8D5B400A7DA75 /* BRLTest */,
 				415FD4351ED8BB4B00A7DA75 /* Products */,
+				07EF86DA0F067964E77C7A74 /* Pods */,
+				978DF0277F95925019E042C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,9 +64,16 @@
 			children = (
 				415FD49B1ED8D5B400A7DA75 /* Info.plist */,
 				415FD49C1ED8D5B400A7DA75 /* BRLTest.h */,
-				415FD49F1ED8D7F600A7DA75 /* thrift_types */,
 			);
 			path = BRLTest;
+			sourceTree = "<group>";
+		};
+		978DF0277F95925019E042C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E14D58927452A77C83E08CF /* Pods_BRLTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 415FD43C1ED8BB4B00A7DA75 /* Build configuration list for PBXNativeTarget "BRLTest" */;
 			buildPhases = (
+				79283955151B54FE9D600788 /* [CP] Check Pods Manifest.lock */,
 				415FD42F1ED8BB4B00A7DA75 /* Sources */,
 				415FD4301ED8BB4B00A7DA75 /* Frameworks */,
 				415FD4311ED8BB4B00A7DA75 /* Headers */,
@@ -126,11 +148,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				415FD4A01ED8D7F600A7DA75 /* thrift_types in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79283955151B54FE9D600788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BRLTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		415FD42F1ED8BB4B00A7DA75 /* Sources */ = {
@@ -246,6 +292,7 @@
 		};
 		415FD43D1ED8BB4B00A7DA75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FE27B138397095496366B3 /* Pods-BRLTest.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -266,6 +313,7 @@
 		};
 		415FD43E1ED8BB4B00A7DA75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E225B15190D61F1FB8BD2ACB /* Pods-BRLTest.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;

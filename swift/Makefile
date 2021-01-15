@@ -12,7 +12,7 @@ REPO_ROOT = $(abspath $(PWD)/..)
 # Thrift generation of Python files #
 #####################################
 SOURCES := $(shell cd $(REPO_ROOT); find . -type f -name '*.thrift')
-SWIFT_OUTPUT_DIR ?= $(CURDIR)/thrift_types
+SWIFT_OUTPUT_DIR ?= $(CURDIR)/local-pods/BRL/thrift_types
 THIRDPARTY_BINARIES_DIR ?= $(abspath $(REPO_ROOT)/..)/thirdparty-binaries
 THRIFT_COMPILER ?= $(THIRDPARTY_BINARIES_DIR)/pre-built/osx/thrift/bin/thrift
 
@@ -47,10 +47,10 @@ clean_swift_gen:
 # Targets for building and Swift Module #
 #########################################
 test_project_compilation: thrift_types clean_project_compilation
-	xcodebuild build -project BRLTest.xcodeproj
+	xcodebuild build -workspace BRLTest.xcworkspace -scheme BRLTest
 
 clean_project_compilation:
-	xcodebuild clean -project BRLTest.xcodeproj
+	xcodebuild clean -workspace BRLTest.xcworkspace -scheme BRLTest
 
 ##################
 # Global targets #

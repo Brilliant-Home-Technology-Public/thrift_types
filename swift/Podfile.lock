@@ -1,0 +1,28 @@
+PODS:
+  - BRL (0.1.0):
+    - Thrift
+  - Thrift (1.1.1)
+
+DEPENDENCIES:
+  - BRL (from `local-pods/BRL`)
+  - "Thrift (from `git@github.com:ramjet-labs/Thrift-Swift.git`, branch `brilliant-dev`)"
+
+EXTERNAL SOURCES:
+  BRL:
+    :path: local-pods/BRL
+  Thrift:
+    :branch: brilliant-dev
+    :git: "git@github.com:ramjet-labs/Thrift-Swift.git"
+
+CHECKOUT OPTIONS:
+  Thrift:
+    :commit: 36ae901864660c4248fbd1b2d3f4d96a68c175d1
+    :git: "git@github.com:ramjet-labs/Thrift-Swift.git"
+
+SPEC CHECKSUMS:
+  BRL: 11975a59cec53c50c5e61b3adab85b3a105fa84b
+  Thrift: ec1398cf0f7e39055d5d8aeb27df399f1becbc17
+
+PODFILE CHECKSUM: c9df172e4fd5f4ab1b1b179bb34040572481504e
+
+COCOAPODS: 1.9.3
