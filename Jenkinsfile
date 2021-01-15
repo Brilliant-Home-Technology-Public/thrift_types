@@ -46,6 +46,14 @@ pipeline {
                 sh "git clean --force -d -x ./"
               }
             }
+            stage("Install pods") {
+              steps {
+                dir("swift") {
+                  sh "pod update"
+                  sh "pod install"
+                }
+              }
+            }
             stage("Build Swift Files") {
               steps {
                 sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C swift"
