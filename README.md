@@ -47,6 +47,7 @@ Things that require a version update (AND MIGRATION):
   * Adding default values for existing fields is **NOT OK**
   * Changing default values is **NOT OK**
 * **Constants**
+  * Constants names should be **UPPERCASED**
   * Adding constants is **OK**
   * Changing constant values is **OK-ISH**
   * Changing constant names is **DISCOURAGED**
