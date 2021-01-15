@@ -50,7 +50,7 @@ enum SupportType {
   // TODO: Add Alexa
 }
 
-const map<message_bus.PeripheralType, map<SupportType, bool>> control_peripheral_support_details = {
+const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL_SUPPORT_DETAILS = {
   message_bus.PeripheralType.LIGHT: {
         SupportType.DEVICES: true,
         SupportType.SCENES: true,
