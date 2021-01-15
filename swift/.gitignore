@@ -9,5 +9,8 @@
 !default.perspectivev3
 *xcuserdata/
 
+# Ignore workspace settings
+BRLTest.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
 # Ignore Swift build artifacts
 thrift_types/*

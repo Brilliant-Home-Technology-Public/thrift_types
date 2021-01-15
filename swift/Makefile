@@ -47,10 +47,10 @@ clean_swift_gen:
 # Targets for building and Swift Module #
 #########################################
 test_project_compilation: thrift_types clean_project_compilation
-	xcodebuild build -project BRL.xcodeproj
+	xcodebuild build -project BRLTest.xcodeproj
 
 clean_project_compilation:
-	xcodebuild clean -project BRL.xcodeproj
+	xcodebuild clean -project BRLTest.xcodeproj
 
 ##################
 # Global targets #
