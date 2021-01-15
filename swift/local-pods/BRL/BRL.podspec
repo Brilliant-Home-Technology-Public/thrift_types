@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
   spec.source        = { :path => '.' }
   spec.source_files = 'thrift_types/*.swift'
   spec.dependency 'Thrift'
-  spec.ios.deployment_target = '9.0'
+  spec.ios.deployment_target = '10.0'
 end
