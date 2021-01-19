@@ -678,3 +678,8 @@ enum PublishConfigType {
     PUBLISH_ON_DELTA = 1,
     PUBLISH_ON_DELTA_REPUBLISH_ON_NON_ZERO = 2,
 }
+
+struct PublishConfig {
+  1: PublishConfigType type
+  2: i16 profile # Profile field is actually 8 bits; we use i16 since thrift byte type is signed
+}
