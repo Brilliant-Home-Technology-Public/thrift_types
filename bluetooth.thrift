@@ -672,3 +672,9 @@ struct SwitchCapTouchSliderTuningParamsHwRev3 {
   8: i16 sld00_e01_touch_threshold
   9: i16 sld00_e02_touch_threshold
 }
+
+enum PublishConfigType {
+    DISABLED = 0,
+    PUBLISH_ON_DELTA = 1,
+    PUBLISH_ON_DELTA_REPUBLISH_ON_NON_ZERO = 2,
+}
