@@ -272,6 +272,7 @@ const string MOBILE_OVERLAY_NAME_REMOVE_THIRDPARTY_DEVICE = "RemoveThirdpartyDev
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Create:Error"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_UPDATE_NAME_ERROR = "RoomSettings:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
+const string MOBILE_OVERLAY_NAME_SALTO_CODE_REQUIRED = "SaltoCodeRequired"
 const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_DELETE = "SceneAction:Delete"
 const string MOBILE_OVERLAY_NAME_SCENE_DELETE = "Scene:Delete"
