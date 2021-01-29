@@ -262,6 +262,7 @@ const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 // BEGIN MOBILE INTEGRATION NAME CONSTANTS
 // All integration names aside from brilliant are simply the virtual device id constants
 const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
+const string MOBILE_INTEGRATION_NAME_AGGREGATE = "aggregate"
 // END MOBILE INTEGRATION NAME CONSTANTS
 
 const i16 MOBILE_INVALID_OWNER_RSSI = -128
@@ -519,6 +520,7 @@ struct MobileDeviceToggleEvent {
   11: bool aggregate
   12: string user_id
   13: string app_class
+  14: string integration_name
 }
 
 struct MobileErrorEvent {
