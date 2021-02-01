@@ -398,6 +398,7 @@ const string UI_BUTTON_NAME_PING_BRILLIANT = "ping_brilliant"
 const string UI_BUTTON_NAME_VIEW_NEARBY_MESH_DEVICES = "view_nearby_mesh_devices"
 const string UI_BUTTON_NAME_LOCK_MESH_DEVICE = "lock_mesh_device"
 const string UI_BUTTON_NAME_AUTO_MESH_DEVICE = "auto_mesh_device"
+const string UI_BUTTON_NAME_SLIDER_SETTINGS = "slider_settings"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
