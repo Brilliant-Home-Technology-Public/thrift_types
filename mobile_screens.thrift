@@ -153,6 +153,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGInstallSuccess": "InstallationGuide:Success",
   "IGOverview": "InstallationGuide:Overview",
   "InstallationArchive": "InstallationGuide:Archive",
+  "LargeHomeSupport": "LargeHomeSupport",
   "ProgressionEducation": "InstallationGuide:ProgressionEducation",
   // Android
   "Horizontal": "InstallationGuide"
