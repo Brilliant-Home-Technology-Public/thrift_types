@@ -675,9 +675,9 @@ struct SwitchCapTouchSliderTuningParamsHwRev3 {
 }
 
 enum PublishConfigType {
-    DISABLED = 0,
-    PUBLISH_ON_DELTA = 1,
-    PUBLISH_ON_DELTA_REPUBLISH_ON_NON_ZERO = 2,
+  DISABLED = 0,
+  PUBLISH_ON_DELTA = 1,
+  PUBLISH_ON_DELTA_WITH_EXPONENTIAL_BACKOFF = 2,
 }
 
 struct PublishConfig {
