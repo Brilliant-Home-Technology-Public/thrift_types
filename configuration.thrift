@@ -100,32 +100,6 @@ struct HueBridgeCredentials {
   1: map<string, HueBridgeCredential> credentials
 }
 
-enum SomfyAPIType {
-  UNKNOWN = 0,
-  MYLINK = 1,
-  RTS = 2,
-  SDN = 3,
-  SDN_PLUS = 4,
-}
-
-struct SomfyTarget {
-  1: string display_name
-  2: bool group
-}
-
-struct SomfyCredential {
-  1: string ip_address
-  2: optional string auth
-  3: map<string, SomfyTarget> available_targets
-  4: SomfyAPIType api_type
-  5: optional string user
-  6: optional string password
-}
-
-struct SomfyCredentials {
-  1: map<string, SomfyCredential> credentials
-}
-
 // Thirdparty Device Configurations
 
 enum DayOfWeek {
@@ -413,10 +387,6 @@ struct ThirdpartyIntegrationState {
 }
 
 struct HueBridgeIntegrationStates {
-  1: map<string, ThirdpartyIntegrationState> integration_states
-}
-
-struct SomfyIntegrationStates {
   1: map<string, ThirdpartyIntegrationState> integration_states
 }
 

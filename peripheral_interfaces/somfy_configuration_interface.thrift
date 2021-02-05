@@ -2,13 +2,13 @@ namespace py thrift_types.peripheral_interfaces.somfy_configuration_interface
 namespace java thrift_types.peripheral_interfaces.somfy_configuration_interface
 
 include "../message_bus.thrift"
-include "../configuration.thrift"
+include "../somfy.thrift"
 include "peripheral_interface.thrift"
 
 struct SomfyConfigurationPeripheralInterface {
-    1: configuration.SomfyCredentials credentials
+    1: somfy.SomfyCredentials credentials
     2: string owner
-    3: configuration.SomfyIntegrationStates thirdparty_integration_states
+    3: somfy.SomfyIntegrationStates thirdparty_integration_states
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
