@@ -58,6 +58,7 @@ enum ThirdpartyDeviceType {
   WEMO = 4,
   BOSE_ST = 5,
   LIFX = 6,
+  SOMFY = 7,
 }
 
 enum DiscoveryType {
