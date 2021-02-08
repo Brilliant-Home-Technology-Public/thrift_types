@@ -18,6 +18,7 @@ const string WEMO_OUTDOOR_PLUG_MODEL_NAME = "OutdoorPlug"
 const string DEVICE_PROVISIONING_MDNS_SERVICE_TYPE = "_init-brilliant._tcp.local."
 const string REMOTE_BRIDGE_MDNS_SERVICE_SUFFIX = "-brilliant._tcp.local."
 const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
+const string SOMFY_MDNS_SERVICE_TYPE = "_kizbox._tcp.local."
 
 // Attribute name for unique ID a Hue bridge returns for SSDP discovery
 const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
