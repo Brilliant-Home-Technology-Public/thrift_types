@@ -3,6 +3,8 @@ namespace java thrift_types.somfy
 
 include "configuration.thrift"
 
+const string SOMFY_TEMPORARY_AUTH_TOKEN = "TemporarySynergyAuth"
+
 // TODO (Aman): Remove SomfyAPIType
 enum SomfyAPIType {
   UNKNOWN = 0, // deprecated
