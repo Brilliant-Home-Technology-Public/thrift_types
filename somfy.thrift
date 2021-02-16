@@ -22,6 +22,7 @@ struct SomfyTarget {
 struct SomfyCredential {
   1: string ip_address
   2: string auth
+  3: bool attempting_auth
 }
 
 struct SomfyCredentials {
