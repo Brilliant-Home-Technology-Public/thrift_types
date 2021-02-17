@@ -169,6 +169,7 @@ enum GuideScreenType {
   ADD_LOAD_SCREEN = 17
   LOAD_CONTROLLERS_SCREEN = 18
   LARGE_HOME_SUPPORT = 19
+  CUSTOMIZE_SWITCH = 20
 }
 
 struct GuideLoads {
@@ -322,6 +323,7 @@ const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
 const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
+const string MOBILE_GUIDE_SCREEN_CUSTOMIZE_SWITCH = "screen_customize_switch"
 const string MOBILE_GUIDE_SCREEN_NAME_DEVICE = "screen_name_device"
 const string MOBILE_GUIDE_SCREEN_NAME_LOAD = "screen_name_load"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_DIMMABLE = "screen_device_setup_dimmable"
