@@ -31,6 +31,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantControl": "RemoveDevice",
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
+  "ChangeMeshOwner": "ChangeMeshOwner",
 
   // Color
   "LightColor": "LightColor", // deprecated
