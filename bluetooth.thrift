@@ -176,6 +176,9 @@ enum SwitchPropertyID {
   HARDWARE_REVISION           = 0x2D,
   CAPTOUCH_BTN00_TUNING_PARAM = 0x2E,
   CAPTOUCH_SLD00_TUNING_PARAM = 0x2F,
+  DFU_RELAY_ENABLED           = 0x40,
+  DFU_RELAY_APP_ID            = 0x41,
+  DFU_RELAY_APP_VERSION       = 0x42,
 }
 
 enum BreakCircuitStatus {
@@ -574,6 +577,26 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_id": SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM,
     "property_size": 13,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+  },
+  SwitchPropertyID.DFU_RELAY_ENABLED: {
+    "property_id": SwitchPropertyID.DFU_RELAY_ENABLED,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
+  },
+  SwitchPropertyID.DFU_RELAY_APP_ID: {
+    "property_id": SwitchPropertyID.DFU_RELAY_APP_ID,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_RELAY_APP_VERSION: {
+    "property_id": SwitchPropertyID.DFU_RELAY_APP_VERSION,
+    "property_size": 4,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT32,
   },
 }
 
