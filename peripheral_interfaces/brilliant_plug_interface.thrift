@@ -19,6 +19,7 @@ struct BrilliantPlugPeripheralInterface {
   9: optional bool enable_fwid_packet_broadcast
   10: optional mesh_dfu.MeshDfuPacket last_advertised_dfu_packet
   11: optional string mac_address
+  12: optional i64 last_firmware_updated_timestamp
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
