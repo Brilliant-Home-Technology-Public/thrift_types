@@ -20,6 +20,8 @@ const string GESTURE_PROPERTY_ID = "gesture"
 const i32 SWITCH_DVT_APP_VERSION = 7
 const i32 PLUG_PROD_APP_VERSION = 202009170
 const i32 SWITCH_PUBLISH_CONFIG_APP_VERSION = 202102010
+const i32 SWITCH_DFU_RELAY_APP_VERSION = 202102010
+const i32 PLUG_DFU_RELAY_APP_VERSION = 202102010
 // We're using const bytes for unicast forwarding gestures rather than enums because we
 // bitwise OR their values.
 const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
