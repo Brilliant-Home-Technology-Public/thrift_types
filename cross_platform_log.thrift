@@ -8,6 +8,7 @@ namespace java thrift_types.cross_platform_log
  * NOTE: Enum values should be logged using their names uppercased.
  */
 
+const string BRILLIANT_INTEGRATION_NAME = "Brilliant"
 const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
 
 enum HomeType {
