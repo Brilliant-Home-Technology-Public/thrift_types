@@ -23,6 +23,7 @@ const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_NOTIFICATION_BUTTON_TAPPED = "mobile_device_notification_button_tapped"
 const string MOBILE_DEVICE_NOTIFICATION_VIEW = "mobile_device_notification_view"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
+const string MOBILE_DEVICE_SETTINGS_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_device_settings_button_tapped"
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_HOME_PASSCODE_ATTEMPT_TABLE_NAME = "mobile_home_passcode_attempt"
@@ -394,6 +395,7 @@ enum MobileSelectType {
 
 enum MobileSettingsDetail {
   GENERAL = 1
+  MESH_OWNER = 2
 }
 
 enum MobileToggleType {
@@ -752,6 +754,22 @@ struct MobileDeviceSettingsScreenViewEvent {
   11: string integration_name
   12: cross_platform_log.PhysicalDeviceModel physical_device_model
   13: MobileSettingsDetail settings_detail
+}
+
+struct MobileDeviceSettingsButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileEventDeviceType device_type
+  10: string integration_name
+  11: cross_platform_log.PhysicalDeviceModel physical_device_model
+  12: MobileSettingsDetail settings_detail
+  13: string button_name
 }
 
 struct MobileSectionExpansionToggleEvent {
