@@ -8,6 +8,7 @@ namespace java thrift_types.cross_platform_log
  * NOTE: Enum values should be logged using their names uppercased.
  */
 
+const string NOT_APPLICABLE = "NOT_APPLICABLE" // Any string field can potentially use this value.
 const string BRILLIANT_INTEGRATION_NAME = "Brilliant"
 const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
 
