@@ -23,6 +23,7 @@ enum BrilliantNotificationType {
   MESH_DEVICE_UPDATE_IN_PROGRESS = 15,
   NEST_UPDATE = 16,
   SALTO_KS_CODE_REQUIRED = 17,
+  CONTROL_TRACKED_RELEASE_STAGES_DIFFER = 18,
 }
 
 enum BrilliantNotificationAction {
@@ -31,6 +32,7 @@ enum BrilliantNotificationAction {
   ADD_DEVICES = 2,
   LIST_DEVICES = 3,
   SHOW_MESH_UPDATE_INFO = 4,
+  CHOOSE_CONTROL_TRACKED_RELEASE_STAGE = 5,
 }
 
 enum BrilliantNotificationDisplayType {
