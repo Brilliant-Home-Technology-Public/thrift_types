@@ -13,9 +13,17 @@ const string NEST_INFO_TRAIT = "sdm.devices.traits.Info"
 const string NEST_FAN_TRAIT = "sdm.devices.traits.Fan"
 const string NEST_SETTINGS_TRAIT = "sdm.devices.traits.Settings"
 const string NEST_TEMPERATURE_TRAIT = "sdm.devices.traits.Temperature"
+
+// Google API Thermostat Trait Keys
 const string NEST_ECO_TRAIT = "sdm.devices.traits.ThermostatEco"
 const string NEST_MODE_TRAIT = "sdm.devices.traits.ThermostatMode"
 const string NEST_SETPOINT_TRAIT = "sdm.devices.traits.ThermostatTemperatureSetpoint"
+
+// Google API Camera Trait Keys
+const string NEST_CAMERA_LIVE_STREAM_TRAIT = "sdm.devices.traits.CameraLiveStream"
+
+// Google API Doorbell Trait Keys
+const string NEST_DOORBELL_CHIME_TRAIT = "sdm.devices.traits.DoorbellChime"
 
 // Google API Struture Trait Keys
 const string NEST_STRUCTURE_INFO_TRAIT = "sdm.structures.traits.Info"
