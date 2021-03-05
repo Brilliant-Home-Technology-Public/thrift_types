@@ -149,7 +149,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // iOS
   "IGHorizontal": "InstallationGuide",
   "IGVertical": "InstallationGuide",
-  "IGBarcode": "InstallationGuide:Barcode",
+  "IGBarcode": "InstallationGuide:QRCode",
   "IGWirePhotos": "InstallationGuide:WirePhotos",
   "IGInstallSuccess": "InstallationGuide:Success",
   "IGOverview": "InstallationGuide:Overview",
@@ -159,7 +159,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
-  "GuideBarcode": "InstallationGuide:Barcode",
+  "GuideBarcode": "InstallationGuide:QRCode",
   "GuideLargeHomeSupport": "LargeHomeSupport"
   "GuideProgressionEducation": "InstallationGuide:ProgressionEducation"
   "WirePhotos": "InstallationGuide:WirePhotos",
