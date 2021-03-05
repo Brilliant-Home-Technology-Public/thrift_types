@@ -301,6 +301,7 @@ const string MOBILE_GUIDE_FIELD_SWITCH_FIRMWARE_VERSION = "field_switch_firmware
 const string MOBILE_GUIDE_FIELD_SWITCH_LIGHT_CHECK = "field_switch_light_check"
 const string MOBILE_GUIDE_FIELD_SWITCH_TYPE_PREFIX = "field_switch_type_"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
+const string MOBILE_GUIDE_FIELD_UNIDENTIFIED_FOURWAYS_PREFIX = "field_unidentified_fourways_"
 const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE = "field_user_identified_as_line_"
 const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing_configuration"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
