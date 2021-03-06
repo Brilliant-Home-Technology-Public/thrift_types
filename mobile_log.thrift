@@ -497,6 +497,7 @@ struct MobileDeviceLevelEvent {
   10: i32 level
   11: string user_id
   12: string app_class
+  13: string integration_name
 }
 
 struct MobileDeviceSelectEvent {
