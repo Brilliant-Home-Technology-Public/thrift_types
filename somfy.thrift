@@ -4,6 +4,8 @@ namespace java thrift_types.somfy
 include "configuration.thrift"
 
 const string SOMFY_TEMPORARY_AUTH_TOKEN = "TemporarySynergyAuth"
+const string SOMFY_MOVEMENT_NOTIFICATION_METHOD = "status.movement"
+const string SOMFY_POSITION_NOTIFICATION_METHOD = "status.position"
 
 // TODO (Aman): Remove SomfyAPIType
 enum SomfyAPIType {
