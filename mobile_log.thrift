@@ -294,6 +294,7 @@ enum MobileConnectivityStatus {
   CLOUD_CONNECTED = 1 // May or may not be connected directly to Brilliant Controls as well
   PARTIAL_CONNECTED = 2 // Connected directly to Brilliant Controls only and not cloud
   DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directly
+  DEAUTHED = 4 // Deauthed from home
 }
 
 enum AddMeshResult {
@@ -368,6 +369,7 @@ enum MobileNotificationType {
 enum MobileOfflineStatus {
   OFFLINE = 1
   PARTIAL = 2
+  DEAUTHED = 3
 }
 
 enum MobilePhotosAction {
