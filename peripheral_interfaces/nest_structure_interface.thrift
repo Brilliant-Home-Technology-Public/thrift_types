@@ -6,8 +6,9 @@ include "../nest.thrift"
 include "peripheral_interface.thrift"
 
 struct NestStructurePeripheralInterface {
-	1: string display_name
-	2: nest.ThermostatIds thermostat_ids
+  1: string display_name
+  2: nest.ThermostatIds thermostat_ids
+  3: optional nest.NestStructurePeripherals structure_peripherals
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
