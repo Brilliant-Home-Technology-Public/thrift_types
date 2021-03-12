@@ -403,6 +403,8 @@ enum MobileToggleType {
   LOCK = 2
   GLOBAL_ON = 3
   ACCESS_GRANTED = 4
+  MY_POSITION = 5
+  STOP = 6
 }
 
 enum MobileUnlockResult {
