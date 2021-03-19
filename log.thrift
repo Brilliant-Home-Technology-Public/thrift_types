@@ -402,6 +402,7 @@ const string UI_BUTTON_NAME_LOCK_MESH_DEVICE = "lock_mesh_device"
 const string UI_BUTTON_NAME_AUTO_MESH_DEVICE = "auto_mesh_device"
 const string UI_BUTTON_NAME_SLIDER_SETTINGS = "slider_settings"
 const string UI_BUTTON_NAME_GET_SUPPORT = "get_support"
+const string UI_BUTTON_NAME_MY_POSITION = "my_position"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
