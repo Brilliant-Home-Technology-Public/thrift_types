@@ -39,6 +39,7 @@ struct RemoteMediaSession {
     4: optional SessionDescription sdp_description
     // The ICE candidates retrieved by this device, sent to the peer for processing.
     5: optional list<IceCandidate> ice_candidates
+    6: optional string rtsp_url
 }
 
 
