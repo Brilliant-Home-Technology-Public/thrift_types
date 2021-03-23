@@ -37,6 +37,8 @@ const string NEST_SET_HEAT_TEMP = "sdm.devices.commands.ThermostatTemperatureSet
 const string NEST_SET_COOL_TEMP = "sdm.devices.commands.ThermostatTemperatureSetpoint.SetCool"
 const string NEST_SET_TEMP_RANGE = "sdm.devices.commands.ThermostatTemperatureSetpoint.SetRange"
 const string NEST_SET_FAN = "sdm.devices.commands.Fan.SetTimer"
+const string NEST_GENERATE_RTSP_STREAM = "sdm.devices.commands.CameraLiveStream.GenerateRtspStream"
+const string NEST_STOP_RTSP_STREAM = "sdm.devices.commands.CameraLiveStream.StopRtspStream"
 
 struct ThermostatIds {
 	1: list<string> thermostat_ids
