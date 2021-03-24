@@ -30,6 +30,9 @@ const string NEST_DOORBELL_CHIME_TRAIT = "sdm.devices.traits.DoorbellChime"
 // Google API Struture Trait Keys
 const string NEST_STRUCTURE_INFO_TRAIT = "sdm.structures.traits.Info"
 
+// Google API Event Keys
+const string NEST_DOORBELL_CHIME_EVENT = "sdm.devices.events.DoorbellChime.Chime"
+
 // Google API Commands
 const string NEST_SET_ECO_MODE = "sdm.devices.commands.ThermostatEco.SetMode"
 const string NEST_SET_HVAC_MODE = "sdm.devices.commands.ThermostatMode.SetMode"
