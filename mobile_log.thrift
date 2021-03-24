@@ -31,7 +31,8 @@ const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partn
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
 const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
-const string MOBILE_INSTALLATION_GROUP_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_started"
+const string MOBILE_INSTALLATION_GROUP_DEVICE_ENDED_EVENT_TABLE_NAME = "mobile_installation_group_device_ended"
+const string MOBILE_INSTALLATION_GROUP_DEVICE_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_device_started"
 const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
@@ -591,7 +592,7 @@ struct MobileInstallationFeedbackEvent {
   13: string app_class
 }
 
-struct MobileInstallationGroupStartedEvent {
+struct MobileInstallationGroupDeviceStartedEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -601,15 +602,33 @@ struct MobileInstallationGroupStartedEvent {
   7: string installation_device_type
   8: string guide_version
   9: string app_class
-  10: i32 load_index // 0 if it's a single load device, > 0 if multi
+  10: i32 load_index // This log is logged for each load (e.g. twice for a 2g with load index 0 and 1)
   11: string light_type
   12: string wattage_type
-  13: string installation_type // single_pole, multiway, etc
+  13: string installation_type // single_pole, multiway, outlet, outlet_controlled_light, etc.
   14: bool dimmable
   15: bool is_existing_device
   16: bool first_time
   18: string install_id
   19: string load_id
+  20: string group_id
+}
+
+struct MobileInstallationGroupDeviceEndedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string installation_device_type
+  8: string guide_version
+  9: string app_class
+  10: i32 load_index // This log is logged for each load (e.g. twice for a 2g with load index 0 and 1)
+  11: string installation_type // single_pole, multiway, outlet, outlet_controlled_light, etc.
+  12: string install_id
+  13: string load_id
+  14: string group_id
 }
 
 struct MobileInstallationStartedEvent {
