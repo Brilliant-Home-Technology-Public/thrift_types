@@ -7,6 +7,8 @@ enum InstallConfig {
   LINE = 3
   FOURWAY = 4
   NOT_SURE = 5
+  OUTLET = 6
+  OUTLET_CONTROLLED_LIGHT = 7
 }
 
 enum InstallLoadType {
