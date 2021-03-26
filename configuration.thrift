@@ -435,18 +435,6 @@ struct IntercomParameters {
   3: optional string encryption_key
 }
 
-// Groups
-
-// Uniquely identifies a peripheral within a home
-struct GroupedPeripheralID {
-  1: string device_id
-  2: string peripheral_id
-}
-
-struct PeripheralGroup {
-  1: list<GroupedPeripheralID> peripherals
-}
-
 // Peripheral State Configuration
 
 const string STATE_CONFIG_VARIABLE_PREFIX = "state_config:"
@@ -494,4 +482,18 @@ enum ConfigurationTemplateID {
   VACANT = 2,
   CDK = 3,
   PERIPHERAL_INFO_INITIAL_STATE = 4,
+}
+
+// Groups
+
+// Uniquely identifies a peripheral within a home
+// TODO: deprecate GroupedPeripheralID and use UniquePeripheralID struct instead
+struct GroupedPeripheralID {
+  1: string device_id
+  2: string peripheral_id
+}
+
+struct PeripheralGroup {
+  1: optional list<GroupedPeripheralID> peripherals
+  2: optional list<UniquePeripheralID> peripheral_ids
 }
