@@ -182,6 +182,11 @@ enum SwitchPropertyID {
   DFU_RELAY_ENABLED           = 0x40,
   DFU_RELAY_APP_ID            = 0x41,
   DFU_RELAY_APP_VERSION       = 0x42,
+  DBG_BUF_SET_NEXT_TRIGGER    = 0x43,
+  DBG_BUF_AWAITING_NEXT_TRIGGER       = 0x44,
+  DBG_BUF_CUR_CONTENTS_TRIGGER        = 0x45,
+  DBG_BUF_SET_READ_CHUNK_IDX  = 0x46,
+  DBG_BUF_GET_CHUNK           = 0x47
 }
 
 enum BreakCircuitStatus {
@@ -600,6 +605,36 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_size": 4,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT32,
+  },
+  SwitchPropertyID.DBG_BUF_SET_NEXT_TRIGGER: {
+    "property_id": SwitchPropertyID.DBG_BUF_SET_NEXT_TRIGGER,
+    "property_size": 1,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT8,
+  },
+  SwitchPropertyID.DBG_BUF_AWAITING_NEXT_TRIGGER: {
+    "property_id": SwitchPropertyID.DBG_BUF_AWAITING_NEXT_TRIGGER,
+    "property_size": 1,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT8,
+  },
+  SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER: {
+    "property_id": SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER,
+    "property_size": 1,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT8,
+  },
+  SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX: {
+    "property_id": SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX,
+    "property_size": 1,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT8,
+  },
+  SwitchPropertyID.DBG_BUF_GET_CHUNK: {
+    "property_id": SwitchPropertyID.DBG_BUF_GET_CHUNK,
+    "property_size": 8,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT64,
   },
 }
 
