@@ -132,6 +132,7 @@ const string UI_DEVICE_NOTIFICATION_BUTTON_TAPPED_TABLE_NAME = "ui_device_notifi
 const string UI_MESH_TRACKED_FW_TABLE_NAME = "ui_mesh_tracked_fw"
 const string UI_DEVICE_NOTIFICATION_OPTION_VALUE_APPLIED_TABLE_NAME = "ui_device_notification_option_value_applied"
 const string UI_PASSCODE_ATTEMPT = "passcode_attempt"
+const string UI_CONTROL_FEATURE_FLAG_TABLE_NAME = "control_feature_flag"
 
 // END QT LOG TABLE NAMES
 
