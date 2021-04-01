@@ -364,6 +364,7 @@ enum MobileLevelType {
 enum MobileNotificationType {
   POPUP = 1
   FULLSCREEN = 2 // May be implemented as an actual screen
+  BOTTOM_DRAWER = 3
 }
 
 enum MobileOfflineStatus {
