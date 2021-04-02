@@ -15,6 +15,7 @@ const string NEST_INFO_TRAIT = "sdm.devices.traits.Info"
 const string NEST_FAN_TRAIT = "sdm.devices.traits.Fan"
 const string NEST_SETTINGS_TRAIT = "sdm.devices.traits.Settings"
 const string NEST_TEMPERATURE_TRAIT = "sdm.devices.traits.Temperature"
+const string NEST_CONNECTIVITY_TRAIT = "sdm.devices.traits.Connectivity"
 
 // Google API Thermostat Trait Keys
 const string NEST_ECO_TRAIT = "sdm.devices.traits.ThermostatEco"
