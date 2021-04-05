@@ -33,6 +33,7 @@ const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_e
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 const string MOBILE_INSTALLATION_GROUP_DEVICE_ENDED_EVENT_TABLE_NAME = "mobile_installation_group_device_ended"
 const string MOBILE_INSTALLATION_GROUP_DEVICE_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_device_started"
+const string MOBILE_INSTALLATION_GROUP_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_group_feedback"
 const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
@@ -113,6 +114,7 @@ const string MOBILE_BUTTON_NAME_FORGET_HOME = "forget_home"
 const string MOBILE_BUTTON_NAME_GEAR = "gear"
 const string MOBILE_BUTTON_NAME_GESTURE_SETTINGS = "gesture_settings"
 const string MOBILE_BUTTON_NAME_GET_STARTED = "get_started"
+const string MOBILE_BUTTON_NAME_GIVE_FEEDBACK = "give_feedback"
 const string MOBILE_BUTTON_NAME_GO_TO_APP_STORE = "go_to_app_store"
 const string MOBILE_BUTTON_NAME_GO_TO_INSTALL = "go_to_install"
 const string MOBILE_BUTTON_NAME_GRANT_ALLOW = "grant_allow"
@@ -630,6 +632,18 @@ struct MobileInstallationGroupDeviceEndedEvent {
   12: string install_id
   13: string load_id
   14: string group_id
+}
+
+struct MobileInstallationGroupFeedbackEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string guide_version
+  8: i32 rating
+  9: string app_class
 }
 
 struct MobileInstallationStartedEvent {
