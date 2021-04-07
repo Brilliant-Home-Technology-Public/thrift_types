@@ -405,6 +405,14 @@ const string UI_BUTTON_NAME_AUTO_MESH_DEVICE = "auto_mesh_device"
 const string UI_BUTTON_NAME_SLIDER_SETTINGS = "slider_settings"
 const string UI_BUTTON_NAME_GET_SUPPORT = "get_support"
 const string UI_BUTTON_NAME_MY_POSITION = "my_position"
+const string UI_BUTTON_NAME_REVERSE_LOAD_ON = "reverse_load_on"
+const string UI_BUTTON_NAME_REVERSE_LOAD_OFF = "reverse_load_off"
+const string UI_BUTTON_NAME_MAGNETIC_OVERRIDE = "magnetic_override"
+const string UI_BUTTON_NAME_MAGNETIC_DEFAULT = "magnetic_default"
+const string UI_BUTTON_NAME_CONNECTION_TO_BASE_CALIBRATE = "connection_to_base_calibrate"
+const string UI_BUTTON_NAME_DISABLE_SLIDERS_ON = "disable_sliders_on"
+const string UI_BUTTON_NAME_DISABLE_SLIDERS_OFF = "disable_sliders_off"
+const string UI_BUTTON_NAME_RESET_SLIDERS = "reset_sliders"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
