@@ -196,6 +196,7 @@ const string MOBILE_BUTTON_NAME_SCENES_EDIT_MODE_FINISH = "scenes_edit_mode_fini
 const string MOBILE_BUTTON_NAME_SEARCH_AGAIN = "search_again"
 const string MOBILE_BUTTON_NAME_SELECT_PLUG = "select_plug"
 const string MOBILE_BUTTON_NAME_SELECT_SWITCH = "select_switch"
+const string MOBILE_BUTTON_NAME_SELECT_DEVICE = "select_device"
 const string MOBILE_BUTTON_NAME_SET_TIME = "set_time"
 const string MOBILE_BUTTON_NAME_SET_UP = "set_up"
 const string MOBILE_BUTTON_NAME_SET_UP_CONTROL = "set_up_control"
@@ -400,6 +401,7 @@ enum MobileSelectType {
 enum MobileSettingsDetail {
   GENERAL = 1
   MESH_OWNER = 2
+  SLIDER_SETTINGS = 3
 }
 
 enum MobileToggleType {
