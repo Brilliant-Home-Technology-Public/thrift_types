@@ -140,7 +140,7 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
     message_bus.PeripheralType.SHADE: {
         SupportType.DEVICES: true,
         SupportType.SCENES: true,
-        SupportType.GESTURES: false,
+        SupportType.GESTURES: true,
         SupportType.CAP_TOUCH: true,
         SupportType.MOTION: false
     },
