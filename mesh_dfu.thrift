@@ -32,7 +32,7 @@ struct MeshUpdateStateInfo {
   10: optional i32 last_sent_packet_index
   // The last index of the update packet stream that the state machine intentionally skips
   11: optional i32 last_skipped_packet_index
-  12: optional bool ignore_missing_skip_packet
+  12: optional i32 num_permitted_unrequested_skipped_packets = 0
 }
 
 struct MeshUpdateStates {
