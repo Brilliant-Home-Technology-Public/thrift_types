@@ -4,7 +4,7 @@ include "message_bus.thrift"
 
 /*
  * IMPORTANT NOTE:
- * The structs, enums and consts below represent logs made on the Qt app.
+ * The structs, enums and consts below represent logs made on the Qt app and switch-embedded.
  * Not all definitions may be used (originally these were shared with mobile).
  * For each struct there should be at least one corresponding table name (usually per platform)
  * Avoid Optional fields, only use in cases of deprecation and
@@ -285,6 +285,13 @@ struct GangboxLoadWarningTriggeredEvent {
   8: bool in_first_use
   9: string screen_name
 }
+
+// BEGIN HOMEKIT SERVICE TYPE CONSTANTS
+const string HOMEKIT_SWITCH_SERVICE_TYPE = "switch"
+const string HOMEKIT_LIGHT_SERVICE_TYPE = "light"
+const string HOMEKIT_OUTLET_SERVICE_TYPE = "outlet"
+const string HOMEKIT_UNKNOWN_SERVICE_TYPE = "unknown"
+// END HOMEKIT SERVICE TYPE CONSTANTS
 
 // START: BUTTON NAME CONSTANTS
 const string BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo_start"
