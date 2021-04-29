@@ -245,6 +245,7 @@ const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_PRIVACY = "LiveView:Disabled
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_SOFTWARE_VERSION = "LiveView:Disabled:SoftwareVersion"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_UNSUPPORTED = "LiveView:Disabled:Unsupported"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_SURVEY = "LiveViewSurvey"
+const string MOBILE_OVERLAY_NAME_CONNECTION_LOADING = "ConnectionLoading"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_JAMMED = "Jammed"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
 const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperature"
