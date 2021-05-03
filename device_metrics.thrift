@@ -16,4 +16,5 @@ struct DeviceMetrics {
   3: configuration.UniquePeripheralID unique_peripheral_id
   4: string date
   5: optional string software_version
+  6: optional i32 total_time_cloud_connected_seconds = 0
 }
