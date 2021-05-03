@@ -50,6 +50,8 @@ const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
+const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
+const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide"
 // END MOBILE LOG TABLE NAMES
 
 // START: MOBILE BUTTON NAME CONSTANTS
@@ -437,6 +439,12 @@ enum LiveViewConnectionState {
   UPDATING_PEER_CONNECTION = 8
   CONNECTED = 9
   PEER_REMOVED_SESSION = 10
+}
+
+enum InstallNameStatus {
+  KEPT_AUTO_GENERATED = 1
+  CHANGED_AUTO_TO_USER = 2
+  USER_GENERATED = 3
 }
 
 // END LOGGING ENUMS
@@ -954,4 +962,30 @@ struct MobileHomePasscodeAttemptEvent {
   7: MobileUnlockResult unlock_result
   8: string user_id
   9: string app_class
+}
+
+struct MobileInstallDeviceAddedToGuideEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: InstallNameStatus name_status
+  10: string installation_device_type
+}
+
+struct MobileInstallLoadAddedToGuideEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: InstallNameStatus name_status
+  10: string installation_device_type
 }
