@@ -6,6 +6,15 @@ include "configuration.thrift"
 const string SOMFY_TEMPORARY_AUTH_TOKEN = "TemporarySynergyAuth"
 const string SOMFY_MOVEMENT_NOTIFICATION_METHOD = "status.movement"
 const string SOMFY_POSITION_NOTIFICATION_METHOD = "status.position"
+const list<string> SOMFY_TILT_CAPABLE_KINDS = [
+    "UpDownExteriorVenetianBlind",
+    "UpDownVenetianBlind",
+    "UpDownZebraScreen",
+    "UpDownSheerScreen",
+    "TiltOnlyVenetianBlind",
+    "PositionableScreen",
+    "PositionableVenetianBlind",
+]
 
 // TODO (Aman): Remove SomfyAPIType
 enum SomfyAPIType {
