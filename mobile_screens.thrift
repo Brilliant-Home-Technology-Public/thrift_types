@@ -22,7 +22,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Rooms": "Rooms:Specific"
   "DeviceControlByRoom": "Rooms:Specific",
   "Settings": "Settings",
-  "DeviceSettings": "DeviceSettings",
   "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
   "NowPlaying": "NowPlaying",
   "MusicNowPlaying": "NowPlaying",
@@ -31,7 +30,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantControl": "RemoveDevice",
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
+
+  // Device Settings
+  "DeviceSettings": "DeviceSettings",
   "ChangeMeshOwner": "ChangeMeshOwner",
+  "SliderSettings": "SliderSettings",
+  "DeviceSelection": "DeviceSelection",
 
   // Color
   "LightColor": "LightColor", // deprecated
