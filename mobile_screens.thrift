@@ -173,6 +173,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ControlInstallation": "InstallationGuide:ControlInstallation",
   "CustomizeSwitch": "CustomizeSwitch"
 
+  // Control Configuration
+  "ControlSelection": "ControlSelection"
+
   // Switch Provisioning
   "FreePairing": "BluetoothDevicesDetected",
   // iOS
