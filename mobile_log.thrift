@@ -93,6 +93,7 @@ const string MOBILE_BUTTON_NAME_CREATE_NEW_ACCOUNT = "create_new_account"
 const string MOBILE_BUTTON_NAME_CREATE_ROOM = "create_room"
 const string MOBILE_BUTTON_NAME_DELETE = "delete"
 const string MOBILE_BUTTON_NAME_DELETE_CONFIRM = "delete_confirm"
+const string MOBILE_BUTTON_NAME_DELETE_HOME = "delete_home"
 const string MOBILE_BUTTON_NAME_DELETE_PHOTO = "delete_photo"
 const string MOBILE_BUTTON_NAME_DELETE_PROFILE = "delete_profile"
 const string MOBILE_BUTTON_NAME_DELETE_ROOM = "delete_room"
@@ -236,6 +237,7 @@ const string MOBILE_NAME_MODIFIER_ADD_HOME = "AddHome"
 const string MOBILE_NAME_MODIFIER_CONFIRM = "Confirm"
 const string MOBILE_NAME_MODIFIER_CONFIRM_NEW_PIN = "ConfirmNewPin"
 const string MOBILE_NAME_MODIFIER_CREATE_NEW_PIN = "CreateNewPin"
+const string MOBILE_NAME_MODIFIER_DELETE_HOME = "DeleteHome"
 const string MOBILE_NAME_MODIFIER_DISABLED = "Disabled"
 const string MOBILE_NAME_MODIFIER_ENTER_CURRENT_PIN = "EnterCurrentPin"
 const string MOBILE_NAME_MODIFIER_ERROR = "Error"
@@ -329,6 +331,8 @@ enum MobileErrorEventType {
   LIVE_VIEW_DISCONNECTED = 15
   FAILED_CHANGE_HOME_LOCATION = 16
   FAILED_CREATE_ZENDESK_TICKET = 17
+  FAILED_DELETE_HOME_VERIFICATION_CODE = 18
+  FAILED_DELETE_HOME = 19
 }
 
 enum MobileEventDeviceType {
