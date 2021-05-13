@@ -13,6 +13,7 @@ struct SmartthingsConfigurationPeripheralInterface {
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
     6: string api_endpoint
+    7: optional i32 api_version
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
