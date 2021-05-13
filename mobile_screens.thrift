@@ -126,6 +126,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WebView": "WebView",
   "JoinHomeSuccess": "PairV2:SetupAccount:Success:AddHome",
   "CreateHome": "PairV2:CreateHome",
+  "SetHomePasscodeChapter": "SetHomePasscode"
+  "SetHomePasscodeSuccess": "HomePasscodeSuccess"
 
   // Debug
   "Debug": "Debug",
