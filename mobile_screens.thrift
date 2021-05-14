@@ -67,6 +67,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "PrivacySettings": "PrivacySettings",
   "SwitchEnvironment": "SwitchEnvironment",
   "Troubleshoot": "Troubleshoot",
+  "DeleteHomeEnterCode": "PairV2:Login:Verification:DeleteHome", // Making Android match iOS, which reuses the enter code screen for delete home
 
   // Help
   "Help": "Help",
@@ -110,8 +111,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChooseHome": "PairV2:JoinHome", // Use modifier for add home flow
   "PairingLoading": "PairV2:Login:Loading",
   "SetupLoading": "PairV2:Login:Loading",
-  "EnterCode": "PairV2:Login:Verification", // User modifier for error, add home flow and reset passcode
-  "PairingEnterCode": "PairV2:Login:Verification", // User modifier for error, add home flow and reset passcode
+  "EnterCode": "PairV2:Login:Verification", // Use modifier for error, add home flow, reset passcode, and delete home
+  "PairingEnterCode": "PairV2:Login:Verification", // Use modifier for error, add home flow and reset passcode
   "EnterCodeSuccess": "PairV2:Login:Success",
   "SelectAccount": "PairV2:Login:ChooseAccount",
   "CreateAccount": "PairV2:Login:NewAccount",
