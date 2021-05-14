@@ -419,6 +419,7 @@ enum MobileToggleType {
   ACCESS_GRANTED = 4
   MY_POSITION = 5
   STOP = 6
+  UP = 7
 }
 
 enum MobileUnlockResult {
