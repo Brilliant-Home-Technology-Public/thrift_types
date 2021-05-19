@@ -36,6 +36,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChangeMeshOwner": "ChangeMeshOwner",
   "SliderSettings": "SliderSettings",
   "DeviceSelection": "DeviceSelection",
+  "UpdateZipCode": "HomeLocation",
 
   // Color
   "LightColor": "LightColor", // deprecated
@@ -150,7 +151,6 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit",
   "ScenePartnerScenes": "AddPartnerScene",
   "SceneViewAction": "PartnerSceneAction",
-  "SceneTimerLocation": "HomeLocation",
 
   // Installation Guide
   // iOS
