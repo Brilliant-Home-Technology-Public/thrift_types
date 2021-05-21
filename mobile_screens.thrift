@@ -36,11 +36,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChangeMeshOwner": "ChangeMeshOwner",
   "SliderSettings": "SliderSettings",
   "DeviceSelection": "DeviceSelection",
-  "UpdateTimeZone": "TimeZone",  // iOS
+  "UpdateTimeZone": "TimeZone:Select",  // iOS
   "UpdateZipCode": "HomeLocation",  // iOS  
   "LocationTimezone": "TimeZone",  // Android
   "LocationZipcode": "HomeLocation",  // Android
   "LocationInformation": "LocationInformation",
+  "TimeZoneConfirmation": "TimeZone", // iOS
   "LocationTimeZoneChange": "TimeZone:Select",
 
   // Color
