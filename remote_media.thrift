@@ -46,3 +46,15 @@ struct RemoteMediaSession {
 struct RemoteMediaSessions {
     1: list<RemoteMediaSession> remote_sessions
 }
+
+
+enum RemoteStreamingProtocol {
+    UNKNOWN = 0
+    WEBRTC = 1
+    RTSP = 2
+}
+
+
+struct RemoteStreamingConfiguration {
+    1: RemoteStreamingProtocol streaming_protocol
+}
