@@ -10,6 +10,7 @@ struct DoorbellPeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
   3: remote_media.RemoteMediaSessions remote_sessions
+  4: remote_media.RemoteStreamingConfiguration streaming_configuration
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
