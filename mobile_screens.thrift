@@ -194,7 +194,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSetupOwner": "Provisioning:Owner",
   "IGWarning": "Provisioning:Warning", // Use modifier to specify warning type
   // Android
-  "ProvisionProgress": "Provisioning", // adds SwitchProvisioning modifier to match iOS
+  "SwitchProvisionProgress": "Provisioning", // Guide framework adds "SwitchProvisioning" modifier to match iOS
   "GuideMinDimLevel": "Provisioning:MinDimLevel",
   "GuideForwardingAddress": "Provisioning:ForwardingAddress",
   "GuideWarning": "Provisioning:Warning", // Use modifier to specify warning type
