@@ -173,6 +173,7 @@ enum GuideScreenType {
   CUSTOMIZE_SWITCH = 20
   DEVICE_GROUP_OVERVIEW = 21
   CONTROL_SELECTION = 22
+  SKIP_INSTALL = 23
 }
 
 struct GuideLoads {
