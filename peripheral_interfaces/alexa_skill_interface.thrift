@@ -6,6 +6,7 @@ include "peripheral_interface.thrift"
 
 struct AlexaSkillPeripheralInterface {
   1: i64 last_discovered_timestamp
+  2: optional string home_skill_id
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
