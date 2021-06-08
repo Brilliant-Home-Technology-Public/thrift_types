@@ -174,6 +174,7 @@ enum GuideScreenType {
   DEVICE_GROUP_OVERVIEW = 21
   CONTROL_SELECTION = 22
   SKIP_INSTALL = 23
+  CONTROL_PROVISIONING = 24
 }
 
 struct GuideLoads {
@@ -333,8 +334,9 @@ const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
 const string MOBILE_GUIDE_SCREEN_CONNECT_DEVICES = "screen_connect_devices"
-const string MOBILE_GUIDE_SCREEN_CONTROL_SELECTION = "screen_control_selection"
+const string MOBILE_GUIDE_SCREEN_CONTROL_PROVISIONING = "screen_control_provisioning"
 const string MOBILE_GUIDE_SCREEN_CONTROL_QR_CODE = "screen_control_qr_code"
+const string MOBILE_GUIDE_SCREEN_CONTROL_SELECTION = "screen_control_selection"
 const string MOBILE_GUIDE_SCREEN_CUSTOMIZE_SWITCH = "screen_customize_switch"
 const string MOBILE_GUIDE_SCREEN_NAME_DEVICE = "screen_name_device"
 const string MOBILE_GUIDE_SCREEN_NAME_LOAD = "screen_name_load"
