@@ -14,6 +14,7 @@ struct ArtConfigurationPeripheralInterface {
   7: optional bool music_widget_on_lock
   8: optional bool device_status_on_lock
   9: optional bool weather_widget_on_lock
+  10: optional configuration.LockScreenClimateConfig lock_screen_climate_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
