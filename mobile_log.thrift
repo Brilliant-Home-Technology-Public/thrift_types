@@ -289,6 +289,12 @@ const string MOBILE_INTEGRATION_NAME_AGGREGATE = "aggregate"
 
 const i16 MOBILE_INVALID_OWNER_RSSI = -128
 
+enum MobileUserType {
+  CONSUMER = 1
+  MULTIFAMILY = 2
+  DEMO = 3
+}
+
 enum MobileBLEDeviceType {
   BRILLIANT_SWITCH = 1
   BRILLIANT_PLUG = 2
@@ -800,6 +806,7 @@ struct MobileScreenViewEvent {
   7: string source_screen
   8: string user_id
   9: string app_class
+  10: string user_type
 }
 
 struct MobileDeviceSettingsScreenViewEvent {
@@ -871,6 +878,7 @@ struct MobileSimpleButtonTappedEvent {
   7: string button_name
   8: string user_id
   9: string app_class
+  10: string user_type
 }
 
 struct MobileUnlockAttemptEvent {
