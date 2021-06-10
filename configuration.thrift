@@ -10,6 +10,11 @@ struct MediaContent {
   // TODO include dimensions?
 }
 
+struct UniquePeripheralID {
+  1: string device_id
+  2: string peripheral_id
+}
+
 // Art Configuration
 
 const string ART_CONFIG_VARIABLE_PREFIX = "library:"
@@ -442,11 +447,6 @@ const string STATE_CONFIG_VARIABLE_PREFIX = "state_config:"
 struct PeripheralConfiguration {
   1: i32 peripheral_configuration_template_id // Currently always a ConfigurationTemplateID
   2: optional map<string, string> additional_variable_configuration
-}
-
-struct UniquePeripheralID {
-  1: string device_id
-  2: string peripheral_id
 }
 
 struct PeripheralConfigurationAssignment {
