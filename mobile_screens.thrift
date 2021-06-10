@@ -53,6 +53,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "EditAccount": "AccountSettings",
   "EditAccountEditSettings": "AccountSettings",
   "ResetPin": "ResetPin",
+  "EditAccountResetPin": "ResetPin",
 
   // Settings
   "DemoMode": "DemoMode",
