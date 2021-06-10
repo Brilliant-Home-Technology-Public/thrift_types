@@ -53,6 +53,10 @@ struct ArtLibraryConfig {
   3: list<string> disabled_art_pieces
 }
 
+struct LockScreenClimateConfig {
+  1: list<UniquePeripheralID> excluded_climate_peripherals = []
+}
+
 const list<string> USER_HOME_ART_LIBRARY_TITLES = [
     CUSTOM_LIBRARY_TITLE,
     UNASSISTED_TOURS_LIBRARY_TITLE,
