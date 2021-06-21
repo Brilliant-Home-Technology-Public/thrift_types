@@ -186,7 +186,8 @@ enum SwitchPropertyID {
   DBG_BUF_AWAITING_NEXT_TRIGGER       = 0x44,
   DBG_BUF_CUR_CONTENTS_TRIGGER        = 0x45,
   DBG_BUF_SET_READ_CHUNK_IDX  = 0x46,
-  DBG_BUF_GET_CHUNK           = 0x47
+  DBG_BUF_GET_CHUNK           = 0x47,
+  USE_COMPACT_COMM_PROTOCOL_FOR_BROADCASTING_MOTION_EVENT = 0x48,
 }
 
 enum BreakCircuitStatus {
@@ -635,6 +636,14 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_size": 8,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT64,
+  },
+  SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_BROADCASTING_MOTION_EVENT: {
+    "property_id": SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_BROADCASTING_MOTION_EVENT,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
   },
 }
 
