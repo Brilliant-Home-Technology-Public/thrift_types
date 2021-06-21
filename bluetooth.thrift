@@ -188,6 +188,13 @@ enum SwitchPropertyID {
   DBG_BUF_SET_READ_CHUNK_IDX  = 0x46,
   DBG_BUF_GET_CHUNK           = 0x47,
   USE_COMPACT_COMM_PROTOCOL_FOR_BROADCASTING_MOTION_EVENT = 0x48,
+  DFU_CURRENT_TRANSACTION_ID = 0x49,
+  DFU_CURRENT_TX_REQUEST = 0x4A,
+  DFU_CURRENT_MISSING_COUNT = 0x4B,
+  DFU_MAX_MISSING_COUNT = 0x4C,
+  DFU_TOTAL_MISSING_COUNT = 0x4D,
+  DFU_BOOTLOADER_FSM_STATE = 0x4E,
+  DFU_APPLICATION_FSM_STATE = 0x4F,
 }
 
 enum BreakCircuitStatus {
@@ -644,6 +651,48 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+  },
+  SwitchPropertyID.DFU_CURRENT_TRANSACTION_ID: {
+    "property_id": SwitchPropertyID.DFU_CURRENT_TRANSACTION_ID,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_CURRENT_TX_REQUEST: {
+    "property_id": SwitchPropertyID.DFU_CURRENT_TX_REQUEST,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_CURRENT_MISSING_COUNT: {
+    "property_id": SwitchPropertyID.DFU_CURRENT_MISSING_COUNT,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_MAX_MISSING_COUNT: {
+    "property_id": SwitchPropertyID.DFU_MAX_MISSING_COUNT,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_TOTAL_MISSING_COUNT: {
+    "property_id": SwitchPropertyID.DFU_TOTAL_MISSING_COUNT,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_BOOTLOADER_FSM_STATE: {
+    "property_id": SwitchPropertyID.DFU_BOOTLOADER_FSM_STATE,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_APPLICATION_FSM_STATE: {
+    "property_id": SwitchPropertyID.DFU_APPLICATION_FSM_STATE,
+    "property_size": 2,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT16,
   },
 }
 
