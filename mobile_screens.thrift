@@ -138,6 +138,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SetHomePasscodeChapter": "SetHomePasscode",
   "SetHomePasscodeSuccess": "HomePasscodeSuccess",
   "MFLogin": "MFLogin",
+  // Android
+  "MFEnterCode": "PairV2:Login:Verification:LogInOperator",
+  "MFCreatePin": "ResetPin",
 
   // Debug
   "Debug": "Debug",
