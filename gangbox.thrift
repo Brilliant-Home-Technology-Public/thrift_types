@@ -7,6 +7,12 @@ enum EasingType {
   EASE_OUT_CUBIC = 2,
 }
 
+enum MinDimlevelCalibrationStatus {
+  IDLE = 0,
+  START = 1,
+  SUCCESS = 2,
+}
+
 struct DimSmoothingConfiguration {
   1: EasingType easing_type
   // Required for all easing types except for NO_EASING
