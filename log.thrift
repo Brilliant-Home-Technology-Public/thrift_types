@@ -424,6 +424,8 @@ const string UI_BUTTON_NAME_RESET_SLIDERS = "reset_sliders"
 const string UI_BUTTON_NAME_SET_UP_HOMEKIT = "set_up_homekit"
 const string UI_BUTTON_NAME_WAC_WHILE_HOMEKIT_PAIRED = "wac_while_homekit_paired"
 const string UI_BUTTON_NAME_ALEXA_SKILL_CONFIRM_DISCOVERED = "confirm_discovered"
+const string UI_BUTTON_NAME_LOCK = "lock"
+const string UI_BUTTON_NAME_UNLOCK = "unlock"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
