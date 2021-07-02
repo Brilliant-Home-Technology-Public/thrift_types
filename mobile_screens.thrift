@@ -138,9 +138,14 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SetHomePasscodeChapter": "SetHomePasscode",
   "SetHomePasscodeSuccess": "HomePasscodeSuccess",
   "MFLogin": "MFLogin",
+  // iOS
+  "ChooseBuilding": "MFChooseBuilding",
+  "ChooseUnit": "MFChooseUnit",
   // Android
   "MFEnterCode": "PairV2:Login:Verification:LogInOperator",
   "MFCreatePin": "ResetPin",
+  "MFChooseBuilding": "MFChooseBuilding",
+  "MFChooseUnit": "MFChooseUnit",
 
   // Debug
   "Debug": "Debug",
@@ -279,6 +284,8 @@ const string MOBILE_OVERLAY_NAME_LOCK_STATE_JAMMED = "Jammed"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
 const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperature"
 const string MOBILE_OVERLAY_NAME_MESH_FIRMWARE_UPDATE = "MeshFirmwareUpdate"
+const string MOBILE_OVERLAY_NAME_MF_HOMES_LISTING = "MFHomesListing"
+const string MOBILE_OVERLAY_NAME_MF_UNIT_OCCUPIED = "MFUnitOccupied"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVED = "MobileRemoved"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVAL_ERROR = "MobileRemoval:Error"
 const string MOBILE_OVERLAY_NAME_NO_ONLINE_CONTROL = "NoOnlineControl"
