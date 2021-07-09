@@ -24,6 +24,7 @@ enum BrilliantNotificationType {
   NEST_UPDATE = 16,
   SALTO_KS_CODE_REQUIRED = 17,
   CONTROL_TRACKED_RELEASE_STAGES_DIFFER = 18,
+  ALEXA_HOME_SKILL_AUTO_ENABLE = 19,
 }
 
 enum BrilliantNotificationAction {
@@ -33,6 +34,7 @@ enum BrilliantNotificationAction {
   LIST_DEVICES = 3,
   SHOW_MESH_UPDATE_INFO = 4,
   CHOOSE_CONTROL_TRACKED_RELEASE_STAGE = 5,
+  ALEXA_HOME_SKILL_AUTO_ENABLE = 6,
 }
 
 enum BrilliantNotificationDisplayType {
@@ -50,6 +52,7 @@ struct BrilliantNotification {
   4: BrilliantNotificationAction notification_action
   5: BrilliantNotificationDisplayType notification_display_type
   6: optional map<string, string> notification_context
+  7: optional bool dismissed = false
 }
 
 const list<BrilliantNotificationType> banner_priority_ordering = [
