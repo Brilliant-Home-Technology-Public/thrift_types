@@ -28,6 +28,8 @@ const i32 SWITCH_MOTION_SCORE_255_APP_VERSION = 202103011
 const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
 const byte UNICAST_FORWARDING_GESTURES_ONOFF = 0x01
 const byte UNICAST_FORWARDING_GESTURES_DIMMABLE = 0x02
+const i32 SWITCH_CONFIG_SERVER_PUBLISH_CONFIG_FLASH_HANDLE_PREFIX = 0x7100
+const i16 FLASH_HANDLE_UNSET = 0x0000
 
 // The advertisement priority enum is used by the adapter client for ordering advertisments
 // that are enqueued for broadcasting. The underlying mechanism used is a PriorityQueue and
@@ -66,6 +68,21 @@ enum OtaUpdateStatus {
 enum FaultCondition {
   NORMAL = 0,
   WIFI_COEXISTENCE_CONFLICT = 1,
+}
+
+enum PublishConfigType {
+  DISABLED = 0,
+  PUBLISH_ON_DELTA = 1,
+  PUBLISH_ON_DELTA_WITH_EXPONENTIAL_BACKOFF = 2,
+}
+
+enum SwitchLoadType {
+  INVALID = 0x00,
+  LOAD_TYPE_ONOFF = 0x01,
+  LOAD_TYPE_DIMMABLE = 0x02,
+  LOAD_TYPE_ALWAYS_ON = 0x03,
+  LOAD_TYPE_ALWAYS_OFF = 0x04,
+  LOAD_TYPE_SAFETY_DISABLE = 0x05,
 }
 
 struct NetKey {
@@ -179,6 +196,15 @@ enum SwitchPropertyID {
   HARDWARE_REVISION           = 0x2D,
   CAPTOUCH_BTN00_TUNING_PARAM = 0x2E,
   CAPTOUCH_SLD00_TUNING_PARAM = 0x2F,
+  PROXY_HAS_ACTIVE_CONNS      = 0x30,
+  PROXY_DISCONNECT_ALL        = 0x31,
+  REPLAY_CACHE_CLEAR          = 0x32,
+  REPLAY_CACHE_GET_NUM_ELEM   = 0x33,
+  REPLAY_CACHE_GET_CUR_IV     = 0x34,
+  REPLAY_CACHE_SET_GET_ELEM_IDX = 0x35,
+  REPLAY_CACHE_GET_ELEM_SRC   = 0x36,
+  REPLAY_CACHE_GET_ELEM_SEQ   = 0x37,
+  REPLAY_CACHE_GET_ELEM_IV    = 0x38,
   DFU_RELAY_ENABLED           = 0x40,
   DFU_RELAY_APP_ID            = 0x41,
   DFU_RELAY_APP_VERSION       = 0x42,
@@ -186,7 +212,8 @@ enum SwitchPropertyID {
   DBG_BUF_AWAITING_NEXT_TRIGGER       = 0x44,
   DBG_BUF_CUR_CONTENTS_TRIGGER        = 0x45,
   DBG_BUF_SET_READ_CHUNK_IDX  = 0x46,
-  DBG_BUF_GET_CHUNK           = 0x47
+  DBG_BUF_GET_CHUNK           = 0x47,
+  USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x48,
 }
 
 enum BreakCircuitStatus {
@@ -238,6 +265,31 @@ enum MeshPropertyDataType {
                                   // the desired struct.
 }
 
+enum SwitchPropertyFlashHandle {
+  SWITCH_DIMMER_FLASH_HANDLE               = 0x7001,
+  FLASH_HANDLE_ALWAYS_ON                   = 0x7002,
+  FLASH_HANDLE_DIMMABLE                    = 0x7003,
+  FLASH_HANDLE_MIN_DIM_LEVEL               = 0x7004,
+  FLASH_HANDLE_MAX_DIM_LEVEL               = 0x7005,
+  FLASH_HANDLE_MOTION_LOW_THRESHOLD        = 0x7006,
+  FLASH_HANDLE_MOTION_HIGH_THRESHOLD       = 0x7007,
+  FLASH_HANDLE_STATUS_LIGHT_MAX_DIM        = 0x7008,
+  FLASH_HANDLE_UNICAST_FORWARD_ADDR        = 0x7009,
+  FLASH_HANDLE_DOUBLE_TAP_ENABLED          = 0x700A,
+  FLASH_HANDLE_SWITCH_LOAD_TYPE            = 0x700B,
+  FLASH_HANDLE_UNICAST_FORWARDING_GESTURES = 0x700C,
+  FLASH_HANDLE_CAPTOUCH_AND_LOAD_CONNECTED = 0x700D,
+  FLASH_HANDLE_AMPS_SAFE_MAX_THRESHOLD     = 0x700E,
+  FLASH_HANDLE_TEMP_SAFE_MAX_THRESHOLD     = 0x700F,
+  FLASH_HANDLE_MOTION_MIN_SMPLS_BTW_UPDATE = 0x7010,
+  FLASH_HANDLE_TUNE_MAX_DEV_FROM_IDL_ZERO  = 0x7011,
+  FLASH_HANDLE_TUNE_ZC_PTS_FOR_NOISE_RED   = 0x7012,
+  FLASH_HANDLE_TUNE_MAX_DEV_BTW_RUNS       = 0x7013,
+  FLASH_HANDLE_CAPTOUCH_BTN00_TUNING_PARAMS = 0x7014,
+  FLASH_HANDLE_CAPTOUCH_SLD00_TUNING_PARAMS = 0x7015,
+  FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x7016,
+}
+
 struct SwitchPropertySpec {
   1: byte property_id
   2: i16 property_size // in bytes
@@ -245,6 +297,10 @@ struct SwitchPropertySpec {
   4: optional i64 min_value
   5: optional i64 max_value
   7: optional MeshPropertyDataType property_type
+  8: optional i16 flash_handle
+  9: optional PublishConfigType publish_config_type
+  10: optional bool deprecated
+  11: optional list<byte> array_default_value
 }
 
 const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
@@ -255,6 +311,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_ALWAYS_ON,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DIMMABLE: {
     "property_id": SwitchPropertyID.DIMMABLE,
@@ -263,6 +322,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_DIMMABLE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MINIMUM_DIM_LEVEL: {
     "property_id": SwitchPropertyID.MINIMUM_DIM_LEVEL,
@@ -271,6 +333,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1000,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MIN_DIM_LEVEL,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MAXIMUM_DIM_LEVEL: {
     "property_id": SwitchPropertyID.MAXIMUM_DIM_LEVEL,
@@ -279,22 +344,31 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1000,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MAX_DIM_LEVEL,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MOTION_LOW_THRESHOLD: {
     "property_id": SwitchPropertyID.MOTION_LOW_THRESHOLD,
     "property_size": 1,
-    "default_value": 15,
+    "default_value": 20,
     "min_value": 0,
     "max_value": 100,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MOTION_LOW_THRESHOLD,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MOTION_HIGH_THRESHOLD: {
     "property_id": SwitchPropertyID.MOTION_HIGH_THRESHOLD,
     "property_size": 1,
-    "default_value": 24,
+    "default_value": 70,
     "min_value": 0,
     "max_value": 100,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MOTION_HIGH_THRESHOLD,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS: {
     "property_id": SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS,
@@ -303,6 +377,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1000,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_STATUS_LIGHT_MAX_DIM,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.UNICAST_ADDRESS_FORWARDING: {
     "property_id": SwitchPropertyID.UNICAST_ADDRESS_FORWARDING,
@@ -311,6 +388,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_UNICAST_FORWARD_ADDR,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_ON: {
     // This property has been deprecated
@@ -320,6 +400,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.MOTION_TO_TRIGGER_OFF: {
     // This property has been deprecated
@@ -329,6 +412,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.MOTION_SCORE: {
     "property_id": SwitchPropertyID.MOTION_SCORE,
@@ -337,6 +423,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 100,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MOTION_DETECTED: {
     "property_id": SwitchPropertyID.MOTION_DETECTED,
@@ -345,25 +434,36 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.PUBLISH_ON_DELTA,
+    "deprecated": 0,
   },
   SwitchPropertyID.TEMPERATURE: {
     "property_id": SwitchPropertyID.TEMPERATURE,
     "property_size": 2,
-    "default_value": 0,
-    "min_value": 0, // TODO: The min_value needs to be adjusted to -32768
-    "max_value": 65535, // TODO: The max_value needs to be adjusted to 32767
+    "default_value": 32767,
+    "min_value": -32768,
+    "max_value": 32767,
     "property_type": MeshPropertyDataType.INT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.UUID: {
     "property_id": SwitchPropertyID.UUID,
     "property_size": 16,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.FIRMWARE_VERSION: {
     "property_id": SwitchPropertyID.FIRMWARE_VERSION,
     "property_size": 8, // SoftDevice (2 bytes) + Bootloader (2 bytes) + App (4 bytes)
-    "default_value": 0,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.API_VERSION: {
     // This property is unused
@@ -373,14 +473,20 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 255,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.CURRENT_ZERO_CROSS: {
     "property_id": SwitchPropertyID.CURRENT_ZERO_CROSS,
     "property_size": 2,
-    "default_value": 0,
+    "default_value": 0xFFFF,
     "min_value": 0,
-    "max_value": 1000,
+    "max_value": 0xFFFF,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.BREAK_DIMMING: {
     // This property has been deprecated
@@ -390,14 +496,20 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.POWER: {
     "property_id": SwitchPropertyID.POWER,
     "property_size": 2,
-    "default_value": 0, // units in 1/10 of a watt
+    "default_value": 0xFFFF, // units in 1/10 of a watt
     "min_value": 0,
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.POWER_THRESHOLD: {
     // This property has been deprecated
@@ -407,6 +519,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.BREAK_CIRCUIT: {
     // This property has been deprecated
@@ -416,12 +531,18 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 3,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.CURRENT_SENSE_ADC_DATA: {
     // This property has been deprecated
     "property_id": SwitchPropertyID.CURRENT_SENSE_ADC_DATA,
     "property_size": 256, // 128 values of 2 byte adc readings
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.DEVICE_REVISION: {
     // This property has been deprecated
@@ -431,6 +552,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 255,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.ERROR_STATUS: {
     // This property is unused
@@ -440,6 +564,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 255,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 1,
   },
   SwitchPropertyID.DOUBLE_TAP_ENABLED: {
     "property_id": SwitchPropertyID.DOUBLE_TAP_ENABLED,
@@ -448,44 +575,62 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_DOUBLE_TAP_ENABLED,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.SWITCH_LOAD_TYPE: {
     "property_id": SwitchPropertyID.SWITCH_LOAD_TYPE,
     "property_size": 1,
-    "default_value": 0,
+    "default_value": SwitchLoadType.LOAD_TYPE_ONOFF,
     "min_value": 0,
     "max_value": 5,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_SWITCH_LOAD_TYPE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.UNICAST_FORWARDING_GESTURES: {
     "property_id": SwitchPropertyID.UNICAST_FORWARDING_GESTURES,
     "property_size": 1,
-    "default_value": 0,
+    "default_value": 3,
     "min_value": 0,
     "max_value": 3,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_UNICAST_FORWARDING_GESTURES,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.CAPTOUCH_AND_LOAD_CONNECTED: {
     "property_id": SwitchPropertyID.CAPTOUCH_AND_LOAD_CONNECTED,
     "property_size": 1,
-    "default_value": 0,
+    "default_value": 1,
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_CAPTOUCH_AND_LOAD_CONNECTED,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.AMPS_IN_MA: {
     "property_id": SwitchPropertyID.AMPS_IN_MA,
     "property_size": 2,
-    "default_value": 0,
+    "default_value": 0xFFFF,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD: {
     "property_id": SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD,
     "property_size": 2,
-    "default_value": 0,
+    "default_value": 5500,
     "min_value": 0,
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_AMPS_SAFE_MAX_THRESHOLD,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.TEMP_SAFE_MAX_THRESHOLD: {
     "property_id": SwitchPropertyID.TEMP_SAFE_MAX_THRESHOLD,
@@ -494,6 +639,9 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": -32768,
     "max_value": 32767,
     "property_type": MeshPropertyDataType.INT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TEMP_SAFE_MAX_THRESHOLD,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.MOTION_MIN_SMPLS_BTW_UPDATE: {
     "property_id": SwitchPropertyID.MOTION_MIN_SMPLS_BTW_UPDATE,
@@ -502,89 +650,272 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 255,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MOTION_MIN_SMPLS_BTW_UPDATE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS: {
     "property_id": SwitchPropertyID.DBG_LAST_CS_RESULT_STATUS,
     "property_size": 1,
-    "default_value": 0,
+    "default_value": 0xFF,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_COMPUTED_ZERO_POINT: {
     "property_id": SwitchPropertyID.DBG_COMPUTED_ZERO_POINT,
     "property_size": 2,
     "default_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS: {
     "property_id": SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS,
     "property_size": 2,
     "default_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO: {
     "property_id": SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO,
     "property_size": 2,
     "default_value": 32,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TUNE_MAX_DEV_FROM_IDL_ZERO,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION: {
     "property_id": SwitchPropertyID.TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION,
     "property_size": 2,
     "default_value": 15,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TUNE_ZC_PTS_FOR_NOISE_RED,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS: {
     "property_id": SwitchPropertyID.TUNE_MAX_DEV_BETWEEN_RUNS,
     "property_size": 2,
     "default_value": 96,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TUNE_MAX_DEV_BTW_RUNS,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.REBOOT: {
     "property_id": SwitchPropertyID.REBOOT,
     "property_size": 1,
     "default_value": 0,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST: {
     "property_id": SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
+    "default_value": 1,
     "property_size": 1,
     "default_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_LAST_TRANSFER_STATE: {
     "property_id": SwitchPropertyID.DFU_LAST_TRANSFER_STATE,
     "property_size": 16,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_LAST_RX_RESPONSE: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_RESPONSE,
+    "default_value": 0
     "property_size": 4,
     "property_type": MeshPropertyDataType.UINT32,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_END_TRANSFER_REASON: {
     "property_id": SwitchPropertyID.DFU_END_TRANSFER_REASON,
+    "default_value": 0
     "property_size": 1,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_LAST_RX_PACKET: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_PACKET,
     "property_size": 20,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.HARDWARE_REVISION: {
     "property_id": SwitchPropertyID.HARDWARE_REVISION,
     "property_size": 4,
+    "default_value": 4294967295,
     "property_type": MeshPropertyDataType.UINT32,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM: {
     "property_id": SwitchPropertyID.CAPTOUCH_BTN00_TUNING_PARAM,
     "property_size": 15,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_CAPTOUCH_BTN00_TUNING_PARAMS,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+    "array_default_value": [
+      0x20, // BTN00 Conversion Count (lower byte)
+      0x03, // BTN00 Conversion Count (upper byte)
+      0x64, // BTN00 Conversion Gain (lower byte)
+      0x00, // BTN00 Conversion Gain (upper byte)
+      0x06, // BTN00 Proximity Threshold (lower byte)
+      0x00, // BTN00 Proximity Threshold (upper byte)
+      0x1E, // BTN00 Negative Touch Threshold (lower byte)
+      0x00, // BTN00 Negative Touch Threshold (upper byte)
+      0x03, // BTN00 Touch Debounce Threshold
+      0x02, // BTN00 Count Filter Beta
+      0x05, // BTN00 E00 Touch Threshold
+      0x05, // BTN00 E01 Touch Threshold
+      0x05, // BTN00 E02 Touch Threshold
+      0x05, // BTN00 E03 Touch Threshold
+      0x05  // BTN00 E04 Touch Threshold
+    ],
   },
   SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM: {
     "property_id": SwitchPropertyID.CAPTOUCH_SLD00_TUNING_PARAM,
     "property_size": 13,
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_CAPTOUCH_SLD00_TUNING_PARAMS,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+    "array_default_value": [
+      0x2C, // SLD00 Conversion Count (lower byte)
+      0x01, // SLD00 Conversion Count (upper byte)
+      0x64, // SLD00 Conversion Gain (lower byte)
+      0x00, // SLD00 Conversion Gain (upper byte)
+      0x02, // SLD00 Proximity Threshold (lower byte)
+      0x00, // SLD00 Proximity Threshold (upper byte)
+      0x1E, // SLD00 Negative Touch Threshold (lower byte)
+      0x00, // SLD00 Negative Touch Threshold (upper byte)
+      0x02, // SLD00 Touch Debounce Threshold
+      0x01, // SLD00 Count Filter Beta
+      0x02, // SLD00 E00 Touch Threshold
+      0x02, // SLD00 E01 Touch Threshold
+      0x02  // SLD00 E02 Touch Threshold
+    ],
+  },
+  SwitchPropertyID.PROXY_HAS_ACTIVE_CONNS: {
+    "property_id": SwitchPropertyID.PROXY_HAS_ACTIVE_CONNS,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.PROXY_DISCONNECT_ALL: {
+    "property_id": SwitchPropertyID.PROXY_DISCONNECT_ALL,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_CLEAR: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_CLEAR,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_GET_NUM_ELEM: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_GET_NUM_ELEM,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 255,
+    "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_GET_CUR_IV: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_GET_CUR_IV,
+    "property_size": 4,
+    "default_value": 4294967295,
+    "min_value": 0,
+    "max_value": 4294967295,
+    "property_type": MeshPropertyDataType.UINT32,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_SET_GET_ELEM_IDX: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_SET_GET_ELEM_IDX,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 255,
+    "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SRC: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SRC,
+    "property_size": 2,
+    "default_value": 65535,
+    "min_value": 0,
+    "max_value": 65535,
+    "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SEQ: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SEQ,
+    "property_size": 4,
+    "default_value": 4294967295,
+    "min_value": 0,
+    "max_value": 4294967295,
+    "property_type": MeshPropertyDataType.UINT32,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.REPLAY_CACHE_GET_ELEM_IV: {
+    "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_IV,
+    "property_size": 2,
+    "default_value": 65535,
+    "min_value": 0,
+    "max_value": 65535,
+    "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_RELAY_ENABLED: {
     "property_id": SwitchPropertyID.DFU_RELAY_ENABLED,
@@ -593,48 +924,83 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "min_value": 0,
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_RELAY_APP_ID: {
     "property_id": SwitchPropertyID.DFU_RELAY_APP_ID,
     "property_size": 2,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DFU_RELAY_APP_VERSION: {
     "property_id": SwitchPropertyID.DFU_RELAY_APP_VERSION,
     "property_size": 4,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT32,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_BUF_SET_NEXT_TRIGGER: {
     "property_id": SwitchPropertyID.DBG_BUF_SET_NEXT_TRIGGER,
     "property_size": 1,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_BUF_AWAITING_NEXT_TRIGGER: {
     "property_id": SwitchPropertyID.DBG_BUF_AWAITING_NEXT_TRIGGER,
     "property_size": 1,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER: {
     "property_id": SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER,
     "property_size": 1,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX: {
     "property_id": SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX,
     "property_size": 1,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
   SwitchPropertyID.DBG_BUF_GET_CHUNK: {
     "property_id": SwitchPropertyID.DBG_BUF_GET_CHUNK,
     "property_size": 8,
     "default_value": 0,
     "property_type": MeshPropertyDataType.UINT64,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE: {
+    "property_id": SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 1,
+    "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
   },
 }
 
@@ -659,15 +1025,6 @@ const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
     "property_id": SwitchGesture.DOUBLE_TAP,
     "property_size": 0,
   },
-}
-
-enum SwitchLoadType {
-  INVALID = 0x00,
-  LOAD_TYPE_ONOFF = 0x01,
-  LOAD_TYPE_DIMMABLE = 0x02,
-  LOAD_TYPE_ALWAYS_ON = 0x03,
-  LOAD_TYPE_ALWAYS_OFF = 0x04,
-  LOAD_TYPE_SAFETY_DISABLE = 0x05,
 }
 
 enum LoadWattageStatus {
@@ -733,12 +1090,6 @@ struct SwitchCapTouchSliderTuningParamsHwRev3 {
   7: i16 sld00_e00_touch_threshold
   8: i16 sld00_e01_touch_threshold
   9: i16 sld00_e02_touch_threshold
-}
-
-enum PublishConfigType {
-  DISABLED = 0,
-  PUBLISH_ON_DELTA = 1,
-  PUBLISH_ON_DELTA_WITH_EXPONENTIAL_BACKOFF = 2,
 }
 
 struct PublishConfig {
