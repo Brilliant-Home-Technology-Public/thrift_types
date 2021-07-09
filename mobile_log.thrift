@@ -198,6 +198,7 @@ const string MOBILE_BUTTON_NAME_SCENE_CREATE_ADD_ACTION = "scene_create_add_acti
 const string MOBILE_BUTTON_NAME_SCENE_CREATE_COPY = "copy_scene"
 const string MOBILE_BUTTON_NAME_SCENE_DELETE = "scene_delete"
 const string MOBILE_BUTTON_NAME_SCENE_EDIT = "edit_scene"
+const string MOBILE_BUTTON_NAME_SCENE_SELECT = "select_scene"
 const string MOBILE_BUTTON_NAME_SCENE_TIMER_ADD = "scene_timer_add"
 const string MOBILE_BUTTON_NAME_SCENE_TIMER_DELETE = "scene_timer_delete"
 const string MOBILE_BUTTON_NAME_SCENE_TIMER_EDIT = "scene_timer_edit"
