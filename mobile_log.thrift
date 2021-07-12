@@ -58,6 +58,7 @@ const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_insta
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
 const string MOBILE_BUTTON_NAME_ADD = "add"
+const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
 const string MOBILE_BUTTON_NAME_APPLY = "apply"
 const string MOBILE_BUTTON_NAME_AUTO = "auto"
