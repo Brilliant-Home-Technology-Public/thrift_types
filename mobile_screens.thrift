@@ -222,6 +222,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceGroupOverview": "DeviceGroupOverview",
 }
 
+const string MOBILE_OVERLAY_NAME_ADD_THIRD_PARTY_DEVICE_OTHER = "AddThirdPartyDeviceOther"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
