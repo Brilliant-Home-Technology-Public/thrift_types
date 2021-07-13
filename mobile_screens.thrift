@@ -220,6 +220,10 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SpecifyNumLights": "SpecifyNumLights",
   "ExistingFixtures": "ExistingFixtures",
   "DeviceGroupOverview": "DeviceGroupOverview",
+
+  // Third Party Device Setup
+  "ThirdPartyDevicePicker": "ThirdPartyDevicePicker",
+  "EnterOtherDevice": "EnterOtherDevice"
 }
 
 const string MOBILE_OVERLAY_NAME_ADD_THIRD_PARTY_DEVICE_OTHER = "AddThirdPartyDeviceOther"
