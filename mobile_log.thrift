@@ -1025,3 +1025,16 @@ struct MobileInstallLoadAddedToGuideEvent {
   9: InstallNameStatus name_status
   10: string installation_device_type
 }
+
+struct MobileOtherThirdPartyDeviceEnteredEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string other_device_name
+  8: string user_id
+  9: string app_class
+  10: string user_type
+}
