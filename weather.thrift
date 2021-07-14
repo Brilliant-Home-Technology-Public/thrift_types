@@ -14,3 +14,5 @@ enum WeatherStatus {
   THUNDERSTORM = 9,
   TORNADO = 10,
 }
+
+const i32 INVALID_TEMPERATURE_F = -460 # ~Zero Kelvin
