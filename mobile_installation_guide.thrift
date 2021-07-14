@@ -256,6 +256,7 @@ const list<string> MOBILE_GUIDE_CONSTANTS_COMPUTED_TEXT = [
 ]
 
 const string MOBILE_GUIDE_FIELD_ALL_BRILLIANT_PREFIX = "field_all_brilliant_"
+const string MOBILE_GUIDE_FIELD_AUTO_MIN_DIM_CALIBRATION_SUCCEEDED_PREFIX = "field_auto_min_dim_calibration_suceeded_"
 const string MOBILE_GUIDE_FIELD_BREAKER_ASSUMED = "field_breaker_assumed"
 const string MOBILE_GUIDE_FIELD_BREAKER_QUESTION = "field_breaker_question"
 const string MOBILE_GUIDE_FIELD_COMPLETE_SETUP_READY_TS = "field_complete_setup_ready_ts"
@@ -286,6 +287,9 @@ const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_IS_FREE_PAIRING_PROVISION = "field_is_free_pairing_provision"
 const string MOBILE_GUIDE_FIELD_IS_IMPLIED_CONFIG_PREFIX = "field_is_implied_config_"
+const string MOBILE_GUIDE_FIELD_IS_LIGHT_FLICKERING_PREFIX = "field_is_light_flickering_"
+const string MOIBLE_GUIDE_FIELD_IS_LIGHT_ON_PREFIX = "field_is_light_on_"
+const string MOBILE_GUIDE_FIELD_IS_LOW_WATTAGE_PREFIX = "field_is_low_wattage_"
 // The MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION may change into a prefix in the future.
 // Right now, it refers to a gangbox as a whole (like a 2G) rather than the configuration of each slider.
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION = "field_line_side_multimeter_control_question"
