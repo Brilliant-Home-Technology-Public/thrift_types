@@ -199,8 +199,10 @@ enum SwitchPropertyID {
   DFU_CUR_MISSING_COUNT       = 0x50,
   DFU_MAX_MISSING_COUNT       = 0x51,
   DFU_TOTAL_MISSING_COUNT     = 0x52,
-  DFU_LAST_BL_FSM_STATE       = 0x53,
-  DFU_LAST_APP_FSM_STATE      = 0x54
+  DFU_BL_FSM_STATE            = 0x53,
+  DFU_LAST_BL_FSM_STATE       = 0x54,
+  DFU_APP_FSM_STATE           = 0x55,
+  DFU_LAST_APP_FSM_STATE      = 0x56
 
 }
 
@@ -706,8 +708,18 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_size": 2,
     "property_type": MeshPropertyDataType.UINT16,
   },
+  SwitchPropertyID.DFU_BL_FSM_STATE: {
+    "property_id": SwitchPropertyID.DFU_BL_FSM_STATE,
+    "property_size": 2,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
   SwitchPropertyID.DFU_LAST_BL_FSM_STATE: {
     "property_id": SwitchPropertyID.DFU_LAST_BL_FSM_STATE,
+    "property_size": 2,
+    "property_type": MeshPropertyDataType.UINT16,
+  },
+  SwitchPropertyID.DFU_APP_FSM_STATE: {
+    "property_id": SwitchPropertyID.DFU_APP_FSM_STATE,
     "property_size": 2,
     "property_type": MeshPropertyDataType.UINT16,
   },
