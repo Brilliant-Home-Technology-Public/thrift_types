@@ -36,7 +36,7 @@ pipeline {
           }
         }
         stage("swift") {
-          agent {label "mac"}
+          agent {label "iosbuilder"}
           stages {
             stage("Cleanup Old Environment") {
               steps {
