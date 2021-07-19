@@ -101,7 +101,7 @@ enum GuideFieldType {
   SETUP_VERIFICATION = 3
   INSTALLATION_SUCCESS = 4
   SETUP_PROMPT = 5
-  ROUNDED_CARD = 6
+  ROUNDED_CARD = 6 // Options will function same as BOTTOM_SCREEN_FIELD for HorizontalPages
   VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
   STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
   STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
@@ -110,6 +110,7 @@ enum GuideFieldType {
   BLUETOOTH_STATUS = 12 // Bluetooth Icon and Status String
   VERTICAL_CHECKBOX_QUESTION = 13
   INSTALLS_REMAINING = 14
+  BOTTOM_SCREEN_FIELD = 15 // Configures UI pinned to bottom of screen on VerticalViewModel
 }
 
 struct GuideOption {
