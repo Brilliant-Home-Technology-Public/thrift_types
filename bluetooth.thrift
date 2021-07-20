@@ -216,6 +216,10 @@ enum SwitchPropertyID {
   USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x48,
 }
 
+DFUPropertyID {
+  DFU_TRACKED_TRANSACTION_ID = 0x01,
+}
+
 enum BreakCircuitStatus {
   // bitflags: keep values a multiple of 2
   OVER_WATTAGE      = 1;
@@ -999,6 +1003,18 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+}
+
+const map<DFUPropertyID, SwitchPropertySpec> DFU_SERVER_PROPERTY_SPECS = {
+  DFUPropertyID.DFU_TRACKED_TRANSACTION_ID: {
+    "property_id": DFUPropertyID.DFU_TRACKED_TRANSACTION_ID,
+    "property_size": 8,
+    "default_value": 0,
+    "property_type": MeshPropertyDataType.UINT64,
+    "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
