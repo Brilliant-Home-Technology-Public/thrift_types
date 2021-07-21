@@ -298,7 +298,7 @@ const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_IS_FREE_PAIRING_PROVISION = "field_is_free_pairing_provision"
 const string MOBILE_GUIDE_FIELD_IS_IMPLIED_CONFIG_PREFIX = "field_is_implied_config_"
 const string MOBILE_GUIDE_FIELD_IS_LIGHT_FLICKERING_PREFIX = "field_is_light_flickering_"
-const string MOIBLE_GUIDE_FIELD_IS_LIGHT_ON_PREFIX = "field_is_light_on_"
+const string MOBILE_GUIDE_FIELD_IS_LIGHT_ON_PREFIX = "field_is_light_on_"
 const string MOBILE_GUIDE_FIELD_IS_LOW_WATTAGE_PREFIX = "field_is_low_wattage_"
 // The MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION may change into a prefix in the future.
 // Right now, it refers to a gangbox as a whole (like a 2G) rather than the configuration of each slider.
