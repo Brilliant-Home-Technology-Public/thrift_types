@@ -712,6 +712,7 @@ struct MobileJoinedHomeEvent {
   5: string device_id
   6: string user_id
   7: string app_class
+  8: string user_type
 }
 
 struct MobileOfflineEvent {
@@ -767,6 +768,7 @@ struct MobileOverlayViewEvent {
   7: string overlay_name
   8: string user_id
   9: string app_class
+  10: string user_type
 }
 
 struct MobileDeviceNotificationViewEvent {
@@ -907,6 +909,7 @@ struct MobileUnlockAttemptEvent {
   8: string user_id
   9: string app_class
   10: MobileUnlockType unlock_type
+  11: string user_type
 }
 
 struct MobileLiveviewSessionFeedbackEvent {
