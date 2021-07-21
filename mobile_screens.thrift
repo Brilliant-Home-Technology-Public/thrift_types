@@ -167,6 +167,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SceneTimerEdit": "SceneTimerEdit",
   "ScenePartnerScenes": "AddPartnerScene",
   "SceneViewAction": "PartnerSceneAction",
+  "ScenesSelection": "ScenesSelection",
 
   // Installation Guide
   // iOS
@@ -224,7 +225,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Third Party Device Setup
   "ThirdPartyDevicePicker": "ThirdPartyDevicePicker",
-  "EnterOtherDevice": "EnterOtherDevice"
+  "EnterOtherDevice": "EnterOtherDevice",
+  "ThirdPartyDeviceAddIntegration": "ThirdPartyDeviceAddIntegration",
 }
 
 const string MOBILE_OVERLAY_NAME_ADD_THIRD_PARTY_DEVICE_OTHER = "AddThirdPartyDeviceOther"
