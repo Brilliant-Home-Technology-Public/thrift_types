@@ -227,6 +227,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ThirdPartyDevicePicker": "ThirdPartyDevicePicker",
   "EnterOtherDevice": "EnterOtherDevice",
   "ThirdPartyDeviceAddIntegration": "ThirdPartyDeviceAddIntegration",
+  "EnterDeviceName": "EnterDeviceName",
 }
 
 const string MOBILE_OVERLAY_NAME_ADD_THIRD_PARTY_DEVICE_OTHER = "AddThirdPartyDeviceOther"
