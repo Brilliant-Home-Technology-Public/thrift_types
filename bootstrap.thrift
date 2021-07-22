@@ -24,3 +24,9 @@ struct AvailableHome {
 struct AvailableHomes {
   1: list<AvailableHome> homes
 }
+
+struct BootstrapParameters {
+  1: optional string target_home_id
+  2: optional string server_authentication_token
+  3: optional map<string, string> wifi_variables
+}
