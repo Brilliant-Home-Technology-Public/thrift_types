@@ -111,6 +111,7 @@ enum GuideFieldType {
   VERTICAL_CHECKBOX_QUESTION = 13
   INSTALLS_REMAINING = 14
   BOTTOM_SCREEN_FIELD = 15 // Configures UI pinned to bottom of screen on VerticalViewModel
+  SCREEN_CONFIGURATION = 16 // Used by custom screens to pass values
 }
 
 struct GuideOption {
