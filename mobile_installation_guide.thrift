@@ -176,6 +176,7 @@ enum GuideScreenType {
   CONTROL_SELECTION = 22
   SKIP_INSTALL = 23
   CONTROL_PROVISIONING = 24
+  SWITCH_WALLPLATE = 25
 }
 
 struct GuideLoads {
@@ -386,6 +387,7 @@ const string MOBILE_GUIDE_SCREEN_ROOM_SELECTION = "screen_room_selection"
 const string MOBILE_GUIDE_SCREEN_SAFETY_BREAKER_CHECK = "screen_safety_breaker_check"
 const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
 const string MOBILE_GUIDE_SCREEN_SWITCH_PROVISIONING = "screen_switch_provisioning"
+const string MOBILE_GUIDE_SCREEN_SWITCH_WALLPLATE = "screen_switch_wallplate"
 const string MOBILE_GUIDE_SCREEN_TOOLS = "screen_tools"
 const string MOBILE_GUIDE_SCREEN_TROUBLESHOOTING_BASE = "screen_troubleshooting_base"
 const string MOBILE_GUIDE_SCREEN_USE_EXISTING_CONFIGURATION = "screen_use_existing_configuration"
