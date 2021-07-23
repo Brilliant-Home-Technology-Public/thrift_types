@@ -133,6 +133,7 @@ const string UI_TRACKED_STAGE_TABLE_NAME = "ui_tracked_stage"
 const string UI_DEVICE_NOTIFICATION_OPTION_VALUE_APPLIED_TABLE_NAME = "ui_device_notification_option_value_applied"
 const string UI_PASSCODE_ATTEMPT = "passcode_attempt"
 const string UI_CONTROL_FEATURE_FLAG_TABLE_NAME = "control_feature_flag"
+const string UI_CONTROL_THIRDPARTY_STREAM_TABLE_NAME = "control_thirdparty_stream"
 const string UI_ALEXA_AUTO_ENABLE_ATTEMPT_TABLE_NAME = "alexa_auto_enable_attempt"
 
 // END QT LOG TABLE NAMES
