@@ -53,6 +53,7 @@ const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
 const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
 const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide"
+const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_switch_connect"
 // END MOBILE LOG TABLE NAMES
 
 // START: MOBILE BUTTON NAME CONSTANTS
@@ -1040,4 +1041,17 @@ struct MobileOtherThirdPartyDeviceEnteredEvent {
   8: string user_id
   9: string app_class
   10: string user_type
+}
+
+struct MobileInstallSwitchConnectEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string user_type
+  10: bool wallplate_attached
 }
