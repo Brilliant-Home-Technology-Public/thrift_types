@@ -1096,3 +1096,17 @@ struct PublishConfig {
   1: PublishConfigType type
   2: i16 profile # Profile field is actually 8 bits; we use i16 since thrift byte type is signed
 }
+
+enum ConfirmMeshPropertyResult {
+  MISMATCHES = 0,
+  EQUALS = 1,
+  REQUEST_TIMED_OUT = 2,
+}
+
+struct SetAckStats {
+  1: i16 num_success
+  2: i16 num_timeout
+  3: i16 num_mismatch
+  4: i16 num_generic_failure
+  5: i16 num_sets_attempted
+}
