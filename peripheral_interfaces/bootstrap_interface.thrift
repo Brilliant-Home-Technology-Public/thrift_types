@@ -10,6 +10,7 @@ struct BootstrapPeripheralInterface {
   3: bootstrap.BootstrapStatus status
   4: string target_home_id
   5: string server_authentication_token
+  6: bootstrap.BootstrapParameters pivot_home
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
