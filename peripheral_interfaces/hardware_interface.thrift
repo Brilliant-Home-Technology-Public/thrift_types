@@ -28,6 +28,7 @@ struct HardwarePeripheralInterface {
   19: i32 reboot_timeout_seconds
   20: i32 alert_volume
   21: bool software_update_enabled
+  22: i32 reset_all_settings_timeout_seconds
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
