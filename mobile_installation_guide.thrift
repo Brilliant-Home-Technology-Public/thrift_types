@@ -180,7 +180,8 @@ enum GuideScreenType {
   CONTROL_PROVISIONING = 24
   SWITCH_WALLPLATE = 25
   LOW_WATTAGE_QUESTION = 26
-  }
+  MULTIWAY_CONTROL_SUPPORT = 27
+}
 
 struct GuideLoads {
   1: string identifier
