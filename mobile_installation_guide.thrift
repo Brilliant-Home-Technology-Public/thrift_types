@@ -387,6 +387,7 @@ const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST_PREFIX = "screen
 const string MOBILE_GUIDE_SCREEN_MAGNETIC_LOAD = "screen_magnetic_load"
 const string MOBILE_GUIDE_SCREEN_MULTIMETER_CHECK = "screen_multimeter_check"
 const string MOBILE_GUIDE_SCREEN_MULTIWAY_ALL_DEVICES_INSTALLED = "screen_multiway_all_devices_installed_check"
+const string MOBILE_GUIDE_SCREEN_MULTIWAY_CONTROL_SUPPORT = "screen_multiway_control_support"
 const string MOBILE_GUIDE_SCREEN_NCV_DETECTOR_CHECK_PREFIX = "screen_ncv_detector_check_"
 const string MOBILE_GUIDE_SCREEN_NEUTRAL_WIRE_CHECK = "screen_installation_neutral_wire_check"
 const string MOBILE_GUIDE_SCREEN_OVERVIEW = "screen_overview"

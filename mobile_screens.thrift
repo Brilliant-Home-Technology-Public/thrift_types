@@ -192,8 +192,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Overview": "InstallationGuide:Overview",
   "Archive": "InstallationGuide:Archive",
   "ControlInstallation": "InstallationGuide:ControlInstallation",
-  "CustomizeSwitch": "CustomizeSwitch"
-  "IGSwitchWallPlate": "BrilliantSwitchConnectSelector"
+  "CustomizeSwitch": "CustomizeSwitch",
+  "IGSwitchWallPlate": "BrilliantSwitchConnectSelector",
+  "GuideMultiwayControlSupport": "MultiwayControlSupport",
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
