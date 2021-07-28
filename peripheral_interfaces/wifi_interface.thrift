@@ -16,6 +16,7 @@ struct WifiPeripheralInterface {
   8: bool forget_current_network_requested
   9: wifi.HostedNetwork hosted_network
   10: bool force_reassociation
+  11: string backup_network
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
