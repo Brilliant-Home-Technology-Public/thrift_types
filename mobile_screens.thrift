@@ -186,6 +186,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GuideBarcode": "InstallationGuide:QRCode",
   "GuideLargeHomeSupport": "LargeHomeSupport"
   "GuideProgressionEducation": "InstallationGuide:ProgressionEducation"
+  "GuideLowWattage": "InstallationGuide"
   "WirePhotos": "InstallationGuide:WirePhotos",
   "InstallSuccess": "InstallationGuide:Success",
   "Overview": "InstallationGuide:Overview",
@@ -241,6 +242,7 @@ const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarnin
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CHANGE_MESH_OWNER = "ChangeMeshOwner"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
+const string MOBILE_OVERLAY_NAME_CONTROL_LOAD_CONFIG_ERROR = "ControlLoadConfig:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_UNSUPPORTED = "ControlRemoval:Unsupported"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
