@@ -432,6 +432,9 @@ const string UI_BUTTON_NAME_CHANGE_NETWORK = "change_network"
 const string UI_BUTTON_NAME_PROCEED_ANYWAY = "proceed_anyway"
 const string UI_BUTTON_NAME_ENABLE_REMOTE_ASSISTANCE = "enable_remote_assistance"
 const string UI_BUTTON_NAME_SUPPORT_HOURS = "support_hours"
+const string UI_BUTTON_NAME_WEATHER = "weather"
+const string UI_BUTTON_NAME_THERMOSTAT = "thermostat"
+const string UI_BUTTON_NAME_CLIMATE_WIDGET = "climate_widget"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
