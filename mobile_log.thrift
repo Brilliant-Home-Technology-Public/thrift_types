@@ -403,6 +403,7 @@ enum MobileLevelType {
   TEMPERATURE_RANGE_LOW = 4
   TEMPERATURE_RANGE_HIGH = 5
   POSITION = 6
+  LED_BRIGHTNESS = 7
 }
 
 enum MobileNotificationType {

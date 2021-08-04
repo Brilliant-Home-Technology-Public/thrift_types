@@ -43,6 +43,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LocationInformation": "LocationInformation",
   "TimeZoneConfirmation": "TimeZone", // iOS
   "LocationTimeZoneChange": "TimeZone:Select",
+  "MeshLEDSettings": "LEDPreferences",
 
   // Color
   "LightColor": "LightColor", // deprecated
@@ -195,6 +196,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "CustomizeSwitch": "CustomizeSwitch",
   "IGSwitchWallPlate": "BrilliantSwitchConnectSelector",
   "GuideMultiwayControlSupport": "MultiwayControlSupport",
+  "GuideLEDSettings": "LEDPreferences:InstallationGuide",
 
   // Control Configuration
   "ControlSelection": "ControlSelection"

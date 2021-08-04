@@ -179,6 +179,7 @@ enum GuideScreenType {
   SWITCH_WALLPLATE = 24
   LOW_WATTAGE_QUESTION = 25
   MULTIWAY_CONTROL_SUPPORT = 26
+  DEVICE_SETUP_LED_LEVEL = 27
 }
 
 struct GuideLoads {
@@ -300,6 +301,7 @@ const string MOBILE_GUIDE_FIELD_IS_IMPLIED_CONFIG_PREFIX = "field_is_implied_con
 const string MOBILE_GUIDE_FIELD_IS_LIGHT_FLICKERING_PREFIX = "field_is_light_flickering_"
 const string MOBILE_GUIDE_FIELD_IS_LIGHT_ON_PREFIX = "field_is_light_on_"
 const string MOBILE_GUIDE_FIELD_IS_LOW_WATTAGE_PREFIX = "field_is_low_wattage_"
+const string MOBILE_GUIDE_FIELD_LED_LEVEL_PREFIX = "field_led_level_"
 // The MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION may change into a prefix in the future.
 // Right now, it refers to a gangbox as a whole (like a 2G) rather than the configuration of each slider.
 const string MOBILE_GUIDE_FIELD_LINE_SIDE_MULTIMETER_CONTROL_QUESTION = "field_line_side_multimeter_control_question"
@@ -362,6 +364,7 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FIXTURE_TYPE_PREFIX = "screen_devi
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_FORWARDING_PREFIX = "screen_device_setup_forwarding_"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_OWNERSHIP_PREFIX = "screen_device_setup_ownership_"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_INSTALL_CONFIG_PREFIX = "screen_device_setup_install_config_"
+const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LED_LEVEL_PREFIX = "screen_device_setup_led_level_"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_FLICKERING_PREFIX = "screen_device_setup_is_light_flickering_"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_ON_PREFIX = "screen_device_setup_is_light_on_"
 const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_LIGHT_TYPE_PREFIX = "screen_device_setup_light_type_"
