@@ -98,20 +98,19 @@ struct GuideRule {
 enum GuideFieldType {
   VERTICAL_OPTION_QUESTION = 1
   HORIZONTAL_OPTION_QUESTION = 2 // Max of 3 options
-  SETUP_VERIFICATION = 3
-  INSTALLATION_SUCCESS = 4
-  SETUP_PROMPT = 5
-  ROUNDED_CARD = 6 // Options will function same as BOTTOM_SCREEN_FIELD for HorizontalPages
-  VERTICAL_DISPLAY = 7 // Has no options, will display primary and secondary labels, and image URL according to display rule
-  STATIC_SUMMARY = 8 // Will display image, primary label, secondary label and options in summary box with checkmarks
-  STATIC_SUMMARY_DESCRIPTION = 9 // Will display image, primary label, secondary label and options in summary box without checkmarks
-  FREEFORM_TEXT = 10
-  SWITCH_GESTURE = 11
-  BLUETOOTH_STATUS = 12 // Bluetooth Icon and Status String
-  VERTICAL_CHECKBOX_QUESTION = 13
-  INSTALLS_REMAINING = 14
-  BOTTOM_SCREEN_FIELD = 15 // Configures UI pinned to bottom of screen on VerticalViewModel
-  SCREEN_CONFIGURATION = 16 // Used by custom screens to pass values
+  INSTALLATION_SUCCESS = 3
+  SETUP_PROMPT = 4
+  ROUNDED_CARD = 5 // Options will function same as BOTTOM_SCREEN_FIELD for HorizontalPages
+  VERTICAL_DISPLAY = 6 // Has no options, will display primary and secondary labels, and image URL according to display rule
+  STATIC_SUMMARY = 7 // Will display image, primary label, secondary label and options in summary box with checkmarks
+  STATIC_SUMMARY_DESCRIPTION = 8 // Will display image, primary label, secondary label and options in summary box without checkmarks
+  FREEFORM_TEXT = 9
+  SWITCH_GESTURE = 10
+  BLUETOOTH_STATUS = 11 // Bluetooth Icon and Status String
+  VERTICAL_CHECKBOX_QUESTION = 12
+  INSTALLS_REMAINING = 13
+  BOTTOM_SCREEN_FIELD = 14 // Configures UI pinned to bottom of screen on VerticalViewModel
+  SCREEN_CONFIGURATION = 15 // Used by custom screens to pass values
 }
 
 struct GuideOption {
@@ -162,25 +161,24 @@ enum GuideScreenType {
   SWITCH_PROVISIONING = 6
   DEVICE_SETUP_MINIMUM_DIM = 7
   DEVICE_SETUP_FORWARDING = 8
-  DEVICE_SETUP_OWNERSHIP = 9 // DEPRECATED
-  WARNING_SCREEN = 10
-  ROOM_SELECTION = 11
-  FREE_PAIRING = 12
-  PROGRESSION_EDUCATION = 13
-  ACTIVE_DEVICE_SETUP = 14
-  BRL_DEVICE_PICKER = 15
-  ADD_DEVICE_SCREEN = 16
-  ADD_LOAD_SCREEN = 17
-  LOAD_CONTROLLERS_SCREEN = 18
-  LARGE_HOME_SUPPORT = 19
-  CUSTOMIZE_SWITCH = 20
-  DEVICE_GROUP_OVERVIEW = 21
-  CONTROL_SELECTION = 22
-  SKIP_INSTALL = 23
-  CONTROL_PROVISIONING = 24
-  SWITCH_WALLPLATE = 25
-  LOW_WATTAGE_QUESTION = 26
-  MULTIWAY_CONTROL_SUPPORT = 27
+  WARNING_SCREEN = 9
+  ROOM_SELECTION = 10
+  FREE_PAIRING = 11
+  PROGRESSION_EDUCATION = 12
+  ACTIVE_DEVICE_SETUP = 13
+  BRL_DEVICE_PICKER = 14
+  ADD_DEVICE_SCREEN = 15
+  ADD_LOAD_SCREEN = 16
+  LOAD_CONTROLLERS_SCREEN = 17
+  LARGE_HOME_SUPPORT = 18
+  CUSTOMIZE_SWITCH = 19
+  DEVICE_GROUP_OVERVIEW = 20
+  CONTROL_SELECTION = 21
+  SKIP_INSTALL = 22
+  CONTROL_PROVISIONING = 23
+  SWITCH_WALLPLATE = 24
+  LOW_WATTAGE_QUESTION = 25
+  MULTIWAY_CONTROL_SUPPORT = 26
 }
 
 struct GuideLoads {
@@ -432,8 +430,6 @@ const string MOBILE_GUIDE_URL_NOT_SURE = "brl://guide/notSure"
 const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
 const string MOBILE_GUIDE_URL_RESET = "brl://guide/reset"
 const string MOBILE_GUIDE_URL_RESTART_PAGES = "brl://guide/restart_pages"
-const string MOBILE_GUIDE_URL_MARK_SINGLE_POLE = "brl://guide/markSinglePole"
-const string MOBILE_GUIDE_URL_MARK_THREE_WAY = "brl://guide/markThreeWay"
 const string MOBILE_GUIDE_URL_FEEDBACK_SUBMIT = "brl://guide/feedbackSubmit"
 const string MOBILE_GUIDE_URL_TRIGGER_HELP_OVERLAY = "brl://guide/triggerHelpOverlay"
 const string MOBILE_GUIDE_URL_TRIGGER_VALIDATION = "brl://guide/triggerValidation"
