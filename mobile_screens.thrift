@@ -181,13 +181,14 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "InstallationArchive": "InstallationGuide:Archive",
   "LargeHomeSupport": "LargeHomeSupport",
   "ProgressionEducation": "InstallationGuide:ProgressionEducation",
+  "ControlLowWattage": "InstallationGuide", // Guide framework adds "DeviceSetupIsLowWattage" modifier
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
   "GuideBarcode": "InstallationGuide:QRCode",
   "GuideLargeHomeSupport": "LargeHomeSupport"
   "GuideProgressionEducation": "InstallationGuide:ProgressionEducation"
-  "GuideLowWattage": "InstallationGuide"
+  "GuideLowWattage": "InstallationGuide",  // Guide framework adds "DeviceSetupIsLowWattage" modifier
   "WirePhotos": "InstallationGuide:WirePhotos",
   "InstallSuccess": "InstallationGuide:Success",
   "Overview": "InstallationGuide:Overview",
