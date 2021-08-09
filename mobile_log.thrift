@@ -63,7 +63,9 @@ const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_sw
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
 const string MOBILE_BUTTON_NAME_ADD = "add"
-const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
+const string MOBILE_BUTTON_NAME_ADD3P_ADD_TO_HOME = "add_to_home"
+const string MOBILE_BUTTON_NAME_ADD3P_HIDE = "hide"
+const string MOBILE_BUTTON_NAME_ADD3P_WORKS_WITH = "works_with"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
 const string MOBILE_BUTTON_NAME_APPLY = "apply"
 const string MOBILE_BUTTON_NAME_AUTO = "auto"

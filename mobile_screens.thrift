@@ -236,9 +236,10 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceDiscoverySpinner": "Add3PDiscoverySpinner",
 }
 
-const string MOBILE_OVERLAY_NAME_ADD3P_DEVICE_OFFLINE = "Add3PDeviceOffline"
-const string MOBILE_OVERLAY_NAME_ADD3P_REQUEST = "Add3PRequest"
-const string MOBILE_OVERLAY_NAME_ADD3P_NO_DEVICES_FOUND = "Add3PNoDevicesFound"
+const string MOBILE_OVERLAY_NAME_ADD3P_DEVICE_OFFLINE = "Add3P:DeviceOffline"
+const string MOBILE_OVERLAY_NAME_ADD3P_IS_THIS_LIGHT = "Add3P:IsThisLight"
+const string MOBILE_OVERLAY_NAME_ADD3P_NO_DEVICES_FOUND = "Add3P:NoDevicesFound"
+const string MOBILE_OVERLAY_NAME_ADD3P_REQUEST = "Add3P:Request"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
