@@ -229,13 +229,16 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceGroupOverview": "DeviceGroupOverview",
 
   // Third Party Device Setup
-  "ThirdPartyDevicePicker": "ThirdPartyDevicePicker",
-  "EnterOtherDevice": "EnterOtherDevice",
-  "ThirdPartyDeviceAddIntegration": "ThirdPartyDeviceAddIntegration",
-  "EnterDeviceName": "EnterDeviceName",
+  "ThirdPartyDevicePicker": "WorksWith",
+  "EnterOtherDevice": "Add3PEnterOtherDevice",
+  "ThirdPartyDeviceAddIntegration": "Add3PDevice",
+  "EnterDeviceName": "Add3PEnterDeviceName",
+  "DeviceDiscoverySpinner": "Add3PDiscoverySpinner",
 }
 
-const string MOBILE_OVERLAY_NAME_ADD_THIRD_PARTY_DEVICE_OTHER = "AddThirdPartyDeviceOther"
+const string MOBILE_OVERLAY_NAME_ADD3P_DEVICE_OFFLINE = "Add3PDeviceOffline"
+const string MOBILE_OVERLAY_NAME_ADD3P_REQUEST = "Add3PRequest"
+const string MOBILE_OVERLAY_NAME_ADD3P_NO_DEVICES_FOUND = "Add3PNoDevicesFound"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"

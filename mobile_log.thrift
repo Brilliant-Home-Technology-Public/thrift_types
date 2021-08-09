@@ -16,6 +16,10 @@ include "cross_platform_log.thrift"
 
 // BEGIN MOBILE LOG TABLE NAMES
 // KEEP ALPHABETIZED
+const string MOBILE_3P_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_3P_button_tapped"
+const string MOBILE_3P_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_3P_overlay_view"
+const string MOBILE_3P_REQUEST_EVENT_TABLE_NAME = "mobile_3P_request"
+const string MOBILE_3P_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_3P_screen_view"
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_CONNECTIVITY_EVENT_TABLE_NAME = "mobile_connectivity"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
@@ -40,7 +44,6 @@ const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_livevie
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
 const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
-const string MOBILE_OTHER_THIRD_PARTY_DEVICE_ENTERED_TABLE_NAME = "mobile_other_third_party_device_entered"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
@@ -1035,19 +1038,6 @@ struct MobileInstallLoadAddedToGuideEvent {
   10: string installation_device_type
 }
 
-struct MobileOtherThirdPartyDeviceEnteredEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string screen_name
-  7: string other_device_name
-  8: string user_id
-  9: string app_class
-  10: string user_type
-}
-
 struct MobileInstallSwitchConnectEvent {
   1: string table_name
   2: i64 ts
@@ -1059,4 +1049,59 @@ struct MobileInstallSwitchConnectEvent {
   8: string app_class
   9: string user_type
   10: bool wallplate_attached
+}
+
+struct Mobile3PScreenViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string source_screen
+  8: string user_id
+  9: string app_class
+  10: string user_type
+  11: string integration_name
+}
+
+struct Mobile3PButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string button_name
+  8: string user_id
+  9: string app_class
+  10: string user_type
+  11: string integration_name
+}
+
+struct Mobile3POverlayViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string overlay_name
+  8: string user_id
+  9: string app_class
+  10: string user_type
+  11: string integration_name
+}
+
+struct Mobile3PRequestEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string user_type
+  10: string request_text
 }
