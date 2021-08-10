@@ -498,6 +498,5 @@ struct GroupedPeripheralID {
 }
 
 struct PeripheralGroup {
-  1: optional list<GroupedPeripheralID> peripherals
-  2: optional list<UniquePeripheralID> peripheral_ids
+  1: optional list<UniquePeripheralID> peripheral_ids
 }
