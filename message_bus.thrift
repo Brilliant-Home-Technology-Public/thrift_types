@@ -90,6 +90,8 @@ const string WEATHER_IDENTIFIER = "weather_peripheral"
 const string DEVICE_METRICS_IDENTIFIER = "device_metrics_peripheral"
 const string SALTO_KS_IDENTIFIER = "salto_ks"
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration"
+const string HONEYWELL_TC2_IDENTIFIER = "honeywell_tc2"
+const string HONEYWELL_TC2_CONFIG_IDENTIFIER = "honeywell_tc2_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -136,6 +138,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     SPECTRUM_BRANDS_IDENTIFIER,
     BRILLIANT_VIRTUAL_DEVICE_IDENTIFIER,
     SALTO_KS_IDENTIFIER,
+    HONEYWELL_TC2_IDENTIFIER,
 ]
 
 const map<string, string> THIRDPARTY_VIRTUAL_DEVICE_IDS_TO_CONFIG_IDS = {
@@ -256,6 +259,7 @@ enum PeripheralType {
   SALTO_KS_CONFIGURATION = 85,
   SALTO_KS_IQ = 86,
   HOMEKIT_CONFIGURATION = 87,
+  HONEYWELL_TC2_CONFIGURATION = 88,
 }
 
 enum PeripheralStatus {
