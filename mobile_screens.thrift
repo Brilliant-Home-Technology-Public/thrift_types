@@ -44,6 +44,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "TimeZoneConfirmation": "TimeZone", // iOS
   "LocationTimeZoneChange": "TimeZone:Select",
   "MeshLEDSettings": "LEDPreferences",
+  "LEDBrightness": "LEDPreferences",
 
   // Color
   "LightColor": "LightColor", // deprecated
