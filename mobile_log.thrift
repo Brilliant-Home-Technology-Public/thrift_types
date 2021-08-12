@@ -16,10 +16,6 @@ include "cross_platform_log.thrift"
 
 // BEGIN MOBILE LOG TABLE NAMES
 // KEEP ALPHABETIZED
-const string MOBILE_3P_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_3P_button_tapped"
-const string MOBILE_3P_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_3P_overlay_view"
-const string MOBILE_3P_REQUEST_EVENT_TABLE_NAME = "mobile_3P_request"
-const string MOBILE_3P_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_3P_screen_view"
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_CONNECTIVITY_EVENT_TABLE_NAME = "mobile_connectivity"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
@@ -52,6 +48,10 @@ const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
+const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
+const string MOBILE_THIRDPARTY_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_view"
+const string MOBILE_THIRDPARTY_REQUEST_EVENT_TABLE_NAME = "mobile_thirdparty_request"
+const string MOBILE_THIRDPARTY_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_screen_view"
 const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
 const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
@@ -62,9 +62,9 @@ const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_sw
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
-const string MOBILE_BUTTON_NAME_ADD = "add"
 const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
+const string MOBILE_BUTTON_NAME_ADD_TO_HOME = "add_to_home"
 const string MOBILE_BUTTON_NAME_APPLY = "apply"
 const string MOBILE_BUTTON_NAME_AUTO = "auto"
 const string MOBILE_BUTTON_NAME_BACK = "back"
@@ -139,6 +139,7 @@ const string MOBILE_BUTTON_NAME_HELP = "help"
 const string MOBILE_BUTTON_NAME_HELP_FAILED_COMPATIBILITY = "help_failed_compatibility"
 const string MOBILE_BUTTON_NAME_HELP_FIND_CODE = "help_find_code"
 const string MOBILE_BUTTON_NAME_HELP_HIGH_WATTAGE = "help_high_wattage"
+const string MOBILE_BUTTON_NAME_HIDE_DEVICE = "hide"
 const string MOBILE_BUTTON_NAME_HOME_CHOSEN = "home_chosen"
 const string MOBILE_BUTTON_NAME_HOME_PASSCODE_DISABLE = "disable_passcode"
 const string MOBILE_BUTTON_NAME_HOME_PASSCODE_ENABLE = "enable_passcode"
@@ -242,6 +243,7 @@ const string MOBILE_BUTTON_NAME_VIEW_HOMES = "view_homes"
 const string MOBILE_BUTTON_NAME_VIEW_PRIVACY_SETTINGS = "view_privacy_settings"
 const string MOBILE_BUTTON_NAME_WHERE_IS_MY_BRILLIANT = "where_is_my_brilliant"
 const string MOBILE_BUTTON_NAME_WIRED_TO = "wired_to"
+const string MOBILE_BUTTON_NAME_WORKS_WITH = "works_with"
 const string MOBILE_BUTTON_NAME_X = "x"
 const string MOBILE_BUTTON_NAME_YES = "yes"
 const string MOBILE_BUTTON_NAME_YES_CONTINUE = "yes_continue"
@@ -1051,7 +1053,7 @@ struct MobileInstallSwitchConnectEvent {
   10: bool wallplate_attached
 }
 
-struct Mobile3PScreenViewEvent {
+struct MobileThirdPartyScreenViewEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1065,7 +1067,7 @@ struct Mobile3PScreenViewEvent {
   11: string integration_name
 }
 
-struct Mobile3PButtonTappedEvent {
+struct MobileThirdPartyButtonTappedEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1079,7 +1081,7 @@ struct Mobile3PButtonTappedEvent {
   11: string integration_name
 }
 
-struct Mobile3POverlayViewEvent {
+struct MobileThirdPartyOverlayViewEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1093,7 +1095,7 @@ struct Mobile3POverlayViewEvent {
   11: string integration_name
 }
 
-struct Mobile3PRequestEvent {
+struct MobileThirdPartyRequestEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1104,4 +1106,5 @@ struct Mobile3PRequestEvent {
   8: string app_class
   9: string user_type
   10: string request_text
+  11: string request_context
 }

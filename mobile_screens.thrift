@@ -230,15 +230,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // Third Party Device Setup
   "ThirdPartyDevicePicker": "WorksWith",
-  "EnterOtherDevice": "Add3PEnterOtherDevice",
-  "ThirdPartyDeviceAddIntegration": "Add3PDevice",
-  "EnterDeviceName": "Add3PEnterDeviceName",
-  "DeviceDiscoverySpinner": "Add3PDiscoverySpinner",
+  "EnterOtherDevice": "ThirdParty:EnterOtherDevice",
+  "ThirdPartyDeviceAddIntegration": "ThirdParty:AddDevice",
+  "EnterDeviceName": "ThirdParty:EnterDeviceName",
+  "DeviceDiscoverySpinner": "ThirdParty:DiscoverySpinner",
 }
 
-const string MOBILE_OVERLAY_NAME_ADD3P_DEVICE_OFFLINE = "Add3PDeviceOffline"
-const string MOBILE_OVERLAY_NAME_ADD3P_REQUEST = "Add3PRequest"
-const string MOBILE_OVERLAY_NAME_ADD3P_NO_DEVICES_FOUND = "Add3PNoDevicesFound"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
@@ -263,11 +260,13 @@ const string MOBILE_OVERLAY_NAME_DELETE_HOME_SUCCESS = "DeleteHomeSuccess"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_ERROR = "DeleteHomeError"
 const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION = "DeleteInstallation"
 const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION_ERROR = "DeleteInstallation:Error"
+const string MOBILE_OVERLAY_NAME_IS_THIS_LIGHT = "ThirdParty:IsThisLight"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM = "DeleteRoom"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM_ERROR = "DeleteRoom:Error"
 const string MOBILE_OVERLAY_NAME_DETECTING_DEVICES = "DetectingDevices"
 const string MOBILE_OVERLAY_NAME_DETECTING_DEVICES_ERROR = "DetectingDevices:Error"
-const string MOBILE_OVERLAY_NAME_DEVICE_ADDED = "AddThirdParty:DeviceAdded"
+const string MOBILE_OVERLAY_NAME_DEVICE_ADDED = "ThirdParty:DeviceAdded"
+const string MOBILE_OVERLAY_NAME_DEVICE_OFFLINE = "ThirdParty:DeviceOffline"
 const string MOBILE_OVERLAY_NAME_DEVICE_NOT_FOUND = "SliderSettings:DeviceNotFound"
 const string MOBILE_OVERLAY_NAME_DEVICE_SETTINGS_ERROR = "DeviceSettings:Error"
 const string MOBILE_OVERLAY_NAME_DEVICES_DEMO_INFO = "Demo:Devices"
@@ -311,6 +310,7 @@ const string MOBILE_OVERLAY_NAME_MF_RESET_PIN = "MFResetPin"
 const string MOBILE_OVERLAY_NAME_MF_UNIT_OCCUPIED = "MFUnitOccupied"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVED = "MobileRemoved"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVAL_ERROR = "MobileRemoval:Error"
+const string MOBILE_OVERLAY_NAME_NO_DEVICES_FOUND = "ThirdParty:DevicesFound"
 const string MOBILE_OVERLAY_NAME_NO_ONLINE_CONTROL = "NoOnlineControl"
 const string MOBILE_OVERLAY_NAME_NO_QR_CODE = "Provisioning:NoQRCode"
 const string MOBILE_OVERLAY_NAME_OFFLINE_DEVICE = "OfflineDevice"
@@ -358,6 +358,7 @@ const string MOBILE_OVERLAY_NAME_SCENE_SELECTED_FULLY_INVALID = "SceneSelected:F
 const string MOBILE_OVERLAY_NAME_SCENE_SELECTED_PARTIALLY_INVALID = "SceneSelected:PartiallyInvalid"
 const string MOBILE_OVERLAY_NAME_SKIP_WARNING = "SkipWarning"
 const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_DEVICE_REQUEST = "ThirdParty:Request"
 const string MOBILE_OVERLAY_NAME_TOGGLE_AIRPLANE = "ToggleAirplaneMode"
 const string MOBILE_OVERLAY_NAME_UNCONFIGURED_DEVICE = "UnconfiguredDevice"
 const string MOBILE_OVERLAY_NAME_UPDATING_MESH_NETWORK = "UpdatingMeshNetwork"
