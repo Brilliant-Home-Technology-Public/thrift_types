@@ -225,6 +225,8 @@ struct LightMotionConfig {
 
 const string SCENE_ALL_ON_IDENTIFIER = "all_on"
 const string SCENE_ALL_OFF_IDENTIFIER = "all_off"
+const string SCENE_START_TOUR_MF_IDENTIFIER = "multi_family:start_tour"
+const string SCENE_END_TOUR_MF_IDENTIFIER = "multi_family:end_tour'"
 
 const list<string> DEFAULT_SCENE_IDS = [
     SCENE_ALL_ON_IDENTIFIER,
