@@ -180,6 +180,7 @@ enum GuideScreenType {
   LOW_WATTAGE_QUESTION = 25
   MULTIWAY_CONTROL_SUPPORT = 26
   DEVICE_SETUP_LED_LEVEL = 27
+  CIRCUIT_LOAD_IDENTIFICATION = 28
 }
 
 struct GuideLoads {
@@ -350,6 +351,7 @@ const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 const string MOBILE_GUIDE_SCREEN_BARCODE = "screen_barcode_scan"
 const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
+const string MOBILE_GUIDE_SCREEN_CIRCUIT_LOAD_IDENTIFICATION_PREFIX = "screen_circuit_load_identification_"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
 const string MOBILE_GUIDE_SCREEN_CONNECT_DEVICES = "screen_connect_devices"
 const string MOBILE_GUIDE_SCREEN_CONTROL_PROVISIONING = "screen_control_provisioning"
