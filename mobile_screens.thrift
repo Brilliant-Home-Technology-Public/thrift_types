@@ -183,6 +183,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LargeHomeSupport": "LargeHomeSupport",
   "ProgressionEducation": "InstallationGuide:ProgressionEducation",
   "ControlLowWattage": "InstallationGuide", // Guide framework adds "DeviceSetupIsLowWattage" modifier
+  "IGCircuitLoadIdentification": "CircuitLoadIdentification",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
@@ -246,6 +247,8 @@ const string MOBILE_OVERLAY_NAME_BLUETOOTH_GENERIC_ERROR = "BluetoothGenericErro
 const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarning"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CHANGE_MESH_OWNER = "ChangeMeshOwner"
+const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_ERROR = "CircuitLoadIdentification:WiringError"
+const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_HELP = "CircuitLoadIdentification:LoadSideDevice"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_CONFIGURATION_ERROR_GENERIC = "Configuration:Control:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_LOAD_CONFIG_ERROR = "ControlLoadConfig:Error"
