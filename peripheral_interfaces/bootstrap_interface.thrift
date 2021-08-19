@@ -11,6 +11,7 @@ struct BootstrapPeripheralInterface {
   4: string target_home_id
   5: string server_authentication_token
   6: bootstrap.BootstrapParameters pivot_home
+  7: bootstrap.OutOfBandData out_of_band_data
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
