@@ -30,3 +30,10 @@ struct BootstrapParameters {
   2: optional string server_authentication_token
   3: optional map<string, string> wifi_variables
 }
+
+struct OutOfBandData {
+  1: optional string session_id
+  2: optional binary secret_bytes
+  3: optional string certificate_fingerprint_base64
+  4: optional i64 expiration_timestamp_ms
+}
