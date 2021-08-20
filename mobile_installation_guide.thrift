@@ -284,6 +284,7 @@ const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_OUTLET_CONTROLLED_LIGHT = "field_ou
 const string MOBILE_GUIDE_FIELD_DIMMABLE_PREFIX = "field_dimmable_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_ADDRESS_PREFIX = "field_forwarding_address_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID_PREFIX = "field_forwarding_device_setup_id_"
+const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_LOAD_INDEX_PREFIX = "field_forwarding_device_setup_load_index_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID_PREFIX = "field_forwarding_device_id_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID_PREFIX = "field_fowarding_peripheral_id_"
 const string MOBILE_GUIDE_FIELD_HAD_CONFIGURATION_ERROR_PREFIX = "field_had_configuration_error_"
