@@ -1,0 +1,14 @@
+namespace py thrift_types.security_system
+namespace java thrift_types.security_system
+
+enum SystemMode {
+  UNKNOWN = 0
+  DISARMED = 1
+  ARMED_STAY = 2
+  ARMED_AWAY = 3
+  ARMED_NIGHT = 4
+}
+
+struct SystemCapabilities {
+  1: list<SystemMode> supported_system_modes
+}

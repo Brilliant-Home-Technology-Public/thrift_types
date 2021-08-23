@@ -260,6 +260,7 @@ enum PeripheralType {
   SALTO_KS_IQ = 86,
   HOMEKIT_CONFIGURATION = 87,
   HONEYWELL_TC2_CONFIGURATION = 88,
+  SECURITY_SYSTEM = 89,
 }
 
 enum PeripheralStatus {
