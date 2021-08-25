@@ -181,6 +181,7 @@ enum GuideScreenType {
   MULTIWAY_CONTROL_SUPPORT = 26
   DEVICE_SETUP_LED_LEVEL = 27
   CIRCUIT_LOAD_IDENTIFICATION = 28
+  INSTALL_PARTIAL_SUCCESS = 29
 }
 
 struct GuideLoads {
@@ -379,6 +380,7 @@ const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK_PREFIX = "screen_multiway_4way_ch
 const string MOBILE_GUIDE_SCREEN_FREE_PAIRING_SCAN = "screen_free_pairing_scan"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
+const string MOBILE_GUIDE_SCREEN_INSTALLATION_PARTIAL_SUCCESS = "screen_installation_partial_success"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
 const string MOBILE_GUIDE_SCREEN_LARGE_HOME_SUPPORT = "screen_large_home_support"

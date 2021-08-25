@@ -193,6 +193,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GuideLowWattage": "InstallationGuide",  // Guide framework adds "DeviceSetupIsLowWattage" modifier
   "WirePhotos": "InstallationGuide:WirePhotos",
   "InstallSuccess": "InstallationGuide:Success",
+  "InstallPartialSuccess": "InstallationGuide:PartialSuccess",
   "Overview": "InstallationGuide:Overview",
   "Archive": "InstallationGuide:Archive",
   "ControlInstallation": "InstallationGuide:ControlInstallation",
