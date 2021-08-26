@@ -184,6 +184,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ProgressionEducation": "InstallationGuide:ProgressionEducation",
   "ControlLowWattage": "InstallationGuide", // Guide framework adds "DeviceSetupIsLowWattage" modifier
   "IGCircuitLoadIdentification": "CircuitLoadIdentification",
+  "IGInstallPartialSuccess": "InstallationGuide:PartialSuccess",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
