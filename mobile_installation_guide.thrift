@@ -379,6 +379,7 @@ const string MOBILE_GUIDE_SCREEN_DEVICE_SETUP_PROVISIONED_LOAD_PREFIX = "screen_
 const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
 const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK_PREFIX = "screen_multiway_4way_check_"
 const string MOBILE_GUIDE_SCREEN_FREE_PAIRING_SCAN = "screen_free_pairing_scan"
+const string MOBILE_GUIDE_SCREEN_GANGBOX_MISSING = "screen_gangbox_missing"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PARTIAL_SUCCESS = "screen_installation_partial_success"
@@ -428,6 +429,7 @@ const string MOBILE_GUIDE_SECTION_TEST_BRILLIANT_SWITCH = "section_test_brillian
 const string MOBILE_GUIDE_SECTION_PROVISIONING = "section_provisioning"
 
 const string MOBILE_GUIDE_URL_CONTACT_SUPPORT = "brl://guide/contactSupport"
+const string MOBILE_GUIDE_URL_EXIT_CONTROL_CONFIGURATION = "brl://guide/exitControlConfiguration"
 const string MOBILE_GUIDE_URL_EXIT_INSTALLATION = "brl://guide/exitInstallation"
 const string MOBILE_GUIDE_URL_EXIT_INSTALLATION_NO_FEEDBACK = "brl://guide/exitInstallationNoFeedback"
 const string MOBILE_GUIDE_URL_FINISH_SCREEN = "brl://guide/finishScreen"
