@@ -54,7 +54,7 @@ Things that require a version update (AND MIGRATION):
   * Removing constants is **DISCOURAGED**
 * **Interfaces**
   * Android/iOS Clients currently do not use PeripheralInterfaces
-  * Server checks this to alert on missing variables. Variables should be added to the interface and thrift_types deployed to server before/in tandem with adding the actual variable
+  * Server checks this to alert on missing variables in server owned peripherals. Variables should be added to the interface and thrift_types deployed to server before/in tandem with adding the actual variable
   * Any new variable to an existing peripheral interface for a peripheral that lives in server MUST initially be optional. After all homes have been migrated, this can potentially be made required.
   * RULES:
     * SOMEONE ELSE FILL THIS OUT
