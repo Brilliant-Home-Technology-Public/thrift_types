@@ -239,7 +239,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "EnterDeviceName": "ThirdParty:EnterDeviceName",
   "DeviceDiscoverySpinner": "ThirdParty:DiscoverySpinner",
   "ThirdPartyAuthProgress": "ThirdParty:AccountLinkingProgress",
-  "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess"
+  "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess",
+  "ThirdPartySettings": "ThirdParty:Settings"
 }
 
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
@@ -371,6 +372,8 @@ const string MOBILE_OVERLAY_NAME_SWITCH_NEXT_STEPS = "SwitchNextSteps"
 const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_DEVICE_REQUEST = "ThirdParty:Request"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_NOT_AUTHORIZED = "ThirdParty:NotAuthorized"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION = "ThirdParty:ResetIntegration"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION_FAILURE = "ThirdParty:ResetIntegration:Failure"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_SECONDARY_USER = "ThirdParty:SecondaryUser"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_URL_ERROR = "ThirdParty:UrlError"
 const string MOBILE_OVERLAY_NAME_TOGGLE_AIRPLANE = "ToggleAirplaneMode"
