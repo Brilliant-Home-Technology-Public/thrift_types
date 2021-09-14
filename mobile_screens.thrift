@@ -374,6 +374,7 @@ const string MOBILE_OVERLAY_NAME_THIRD_PARTY_DEVICE_REQUEST = "ThirdParty:Reques
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_NOT_AUTHORIZED = "ThirdParty:NotAuthorized"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION = "ThirdParty:ResetIntegration"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION_FAILURE = "ThirdParty:ResetIntegration:Failure"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION_SUCCESS = "ThirdParty:ResetIntegration:Success"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_SECONDARY_USER = "ThirdParty:SecondaryUser"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_URL_ERROR = "ThirdParty:UrlError"
 const string MOBILE_OVERLAY_NAME_TOGGLE_AIRPLANE = "ToggleAirplaneMode"
