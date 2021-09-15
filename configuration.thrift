@@ -423,6 +423,7 @@ enum PinType {
   ADD_DEVICE = 16,
   HOMEKIT = 17,
   BLANK = 18,
+  SECURITY = 19,
 }
 
 struct Pin {
