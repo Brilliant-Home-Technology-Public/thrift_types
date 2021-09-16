@@ -52,12 +52,12 @@ enum InstallationDeviceType {
   LEAK_DETECTOR = 10
 }
 
+const string INSTALL_TEMPLATE_HONEYWELL_USERNAME_KEY = "honeywell_username"
+const string INSTALL_TEMPLATE_HONEYWELL_PASSWORD_KEY = "honeywell_password"
+const string INSTALL_TEMPLATE_ROOMS_KEY = "rooms"
 const string INSTALL_TEMPLATE_TEMPLATE_KEY = "template"
 const string INSTALL_TEMPLATE_TEMPLATE_VALUES_KEY = "template_values"
-const string INSTALL_TEMPLATE_ROOMS_KEY = "rooms"
 const string INSTALL_TEMPLATE_WIFI_SSID_KEY = "wifi_ssid"
 const string INSTALL_TEPMLATE_WIFI_PASSWORD_KEY = "wifi_password"
 const string INSTALL_TEMPLATE_WIFI_NOTES_KEY = "wifi_notes"
-const string INSTALL_TEMPLATE_HONEYWELL_USERNAME_KEY = "honeywell_username"
-const string INSTALL_TEMPLATE_HONEYWELL_PASSWORD_KEY = "honeywell_password"
 
