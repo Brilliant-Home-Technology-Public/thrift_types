@@ -327,7 +327,6 @@ const string MOBILE_GUIDE_FIELD_SKIP_INSTALL = "field_skip_install"
 const string MOBILE_GUIDE_FIELD_STATIC_AUTH_DATA_HEX = "field_static_auth"
 const string MOBILE_GUIDE_FIELD_SWITCH_FIRMWARE_VERSION = "field_switch_firmware_version"
 const string MOBILE_GUIDE_FIELD_SWITCH_LIGHT_CHECK = "field_switch_light_check"
-const string MOBILE_GUIDE_FIELD_SWITCH_TYPE_PREFIX = "field_switch_type_"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
 const string MOBILE_GUIDE_FIELD_UNIDENTIFIED_FOURWAYS_PREFIX = "field_unidentified_fourways_"
 const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE_PREFIX = "field_user_identified_as_line_"
@@ -335,9 +334,6 @@ const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_WATTAGE_PREFIX = "field_wattage_"
 
-const string MOBILE_GUIDE_OPTION_BRILLIANT_CONTROLS = "brilliant_controls"
-const string MOBILE_GUIDE_OPTION_BRILLIANT_SWITCHES = "brilliant_switches"
-const string MOBILE_GUIDE_OPTION_NON_BRILLIANT_DEVICES = "non_brilliant_devices"
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
 const string MOBILE_GUIDE_OVERLAY_ALL_OTHER_DEVICES_INSTALLED = "overlay_all_other_devices_installed"
