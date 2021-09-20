@@ -85,6 +85,12 @@ enum SwitchLoadType {
   LOAD_TYPE_SAFETY_DISABLE = 0x05,
 }
 
+enum LoadDimmingMode {
+  INVALID = 0x00,
+  TIME_BASED = 0x01,
+  POWER_BASED = 0x02,
+}
+
 struct NetKey {
   1: i16 index
   2: string key // 32 digit hexadecimal
@@ -214,6 +220,7 @@ enum SwitchPropertyID {
   DBG_BUF_SET_READ_CHUNK_IDX  = 0x46,
   DBG_BUF_GET_CHUNK           = 0x47,
   USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x48,
+  LOAD_DIMMING_MODE           = 0x49,
 }
 
 enum BreakCircuitStatus {
@@ -288,6 +295,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_CAPTOUCH_BTN00_TUNING_PARAMS = 0x7014,
   FLASH_HANDLE_CAPTOUCH_SLD00_TUNING_PARAMS = 0x7015,
   FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x7016,
+  FLASH_HANDLE_LOAD_DIMMING_MODE            = 0x7017,
 }
 
 struct SwitchPropertySpec {
@@ -999,6 +1007,17 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 1,
     "property_type": MeshPropertyDataType.BOOL,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.LOAD_DIMMING_MODE: {
+    "property_id": SwitchPropertyID.LOAD_DIMMING_MODE,
+    "property_size": 1,
+    "default_value": LoadDimmingMode.TIME_BASED,
+    "min_value": 0,
+    "max_value": 2,
+    "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_LOAD_DIMMING_MODE,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
