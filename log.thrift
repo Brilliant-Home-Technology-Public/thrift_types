@@ -153,6 +153,7 @@ const string EMBEDDED_PHYSICAL_DEVICE_AVAILABLE_DURATION = "physical_device_avai
 const string EMBEDDED_MOTION_HIGH_THRESHOLD_MIGRATION_TABLE_NAME = "motion_high_threshold_migration"
 const string EMBEDDED_SWITCH_MOTION_LARGE_HOME_TABLE_NAME = "switch_motion_large_home"
 const string EMBEDDED_LOAD_COMPATIBILITY_ERROR = "embedded_load_compatibility_error"
+const string EMBEDDED_WIFI_NETWORK_CHANGE = "wifi_network_change"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
