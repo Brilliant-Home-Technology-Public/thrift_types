@@ -111,6 +111,8 @@ enum GuideFieldType {
   INSTALLS_REMAINING = 13
   BOTTOM_SCREEN_FIELD = 14 // Configures UI pinned to bottom of screen on VerticalViewModel
   SCREEN_CONFIGURATION = 15 // Used by custom screens to pass values
+  KEY_VALUE_LIST = 16 // Displays a key and value list from GuideOptions
+  STEP_INSTRUCTION = 17 // Displays a field that has a step number and maybe a key/value listing
 }
 
 struct GuideOption {
