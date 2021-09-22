@@ -300,6 +300,7 @@ const string MOBILE_GUIDE_FIELD_IDENTIFY_LINE_LOAD_KNOWN_PREFIX = "field_identif
 const string MOBILE_GUIDE_FIELD_IDENTITY_LINE_IS_KNOWN_PREFIX = "field_identify_line_is_known_"
 const string MOBILE_GUIDE_FIELD_IDENTITY_LOAD_IS_KNOWN_PREFIX = "field_identify_load_is_known_"
 const string MOBILE_GUIDE_FIELD_INSTALL_CONFIG_PREFIX = "field_install_config_"
+const string MOBILE_GUIDE_FIELD_INTEGRATION_ID = "field_integration_id"
 const string MOBILE_GUIDE_FIELD_IS_4_WAY_PREFIX = "field_multiway_is_4_way_"
 const string MOBILE_GUIDE_FIELD_IS_FREE_PAIRING_PROVISION = "field_is_free_pairing_provision"
 const string MOBILE_GUIDE_FIELD_IS_IMPLIED_CONFIG_PREFIX = "field_is_implied_config_"
