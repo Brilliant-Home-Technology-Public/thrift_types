@@ -210,3 +210,12 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
         SupportType.MOTION: false
     },
 }
+
+enum ControlLockScreenWidgetType {
+  MUSIC = 1,
+  SECURITY_SYSTEM_ARM_STAY = 2,
+}
+
+struct ControlLockScreenWidgetConfiguration {
+  1: list<ControlLockScreenWidgetType> widget_priority
+}
