@@ -18,6 +18,7 @@ include "cross_platform_log.thrift"
 // KEEP ALPHABETIZED
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_CONNECTIVITY_EVENT_TABLE_NAME = "mobile_connectivity"
+const string MOBILE_CUSTOM_URL_LAUNCH_EVENT_TABLE_NAME = "mobile_custom_url_launch"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
 const string MOBILE_DEVICE_NOTIFICATION_BUTTON_TAPPED = "mobile_device_notification_button_tapped"
@@ -551,6 +552,18 @@ struct MobileConnectivityEvent {
   12: i64 time_since_loading_ms
   // This is reset on every start()
   13: MobileConnectivityStatus farthest_status_in_session
+}
+
+struct MobileCustomURLLaunchEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string app_class
+  8: string base_url
+  9: string full_url
 }
 
 struct MobileDeviceLevelEvent {
