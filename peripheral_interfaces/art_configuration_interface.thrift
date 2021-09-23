@@ -1,6 +1,7 @@
 namespace py thrift_types.peripheral_interfaces.art_configuration_interface
 namespace java thrift_types.peripheral_interfaces.art_configuration_interface
 
+include "../client_ui.thrift"
 include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
@@ -15,6 +16,8 @@ struct ArtConfigurationPeripheralInterface {
   8: optional bool device_status_on_lock
   9: optional bool weather_widget_on_lock
   10: optional configuration.LockScreenClimateConfig lock_screen_climate_config
+  11: optional configuration.UniquePeripheralID security_system_peripheral_on_lock
+  12: optional client_ui.ControlLockScreenWidgetConfiguration lock_screen_widget_configuration
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
