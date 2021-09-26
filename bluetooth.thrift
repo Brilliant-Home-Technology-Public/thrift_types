@@ -141,12 +141,18 @@ struct BluetoothDevices {
   1: list<BluetoothDevice> devices
 }
 
+enum BrilliantOpCode{
+//  First 2 bits must be 1. Bytes 2 and 3 are Brilliant BT SIG ID: 0x0820
+  RESERVED_FOR_FUTURE_USE = 0xC02008
+  SWITCH_OPCODE = 0xC12008
+}
+
 enum BrilliantBTSIG {
   //  Brilliant BT SIG ID: 0x0820
   ID = 0x2008,
 }
 
-enum BrilliantOpCode {
+enum BrilliantMeshOpCode {
   //  First 2 bits must be 1.
   RESERVED_FOR_FUTURE_USE = 0xC0,
   SWITCH_OPCODE = 0xC1,
