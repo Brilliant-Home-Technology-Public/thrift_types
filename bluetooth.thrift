@@ -3,6 +3,11 @@ namespace java thrift_types.bluetooth
 
 include "hardware.thrift"
 
+include "bluetooth_common.thrift"
+
+include "bluetooth_switch.thrift"
+# include "bluetooth_plug.thrift" # TODO: (when needed) similar to "bluetooth_switch.thrift"
+
 const string MESH_PROV_SERVICE_UUID_STR = "00001827-0000-1000-8000-00805f9b34fb"
 const string MESH_PROXY_SERVICE_UUID_STR = "00001828-0000-1000-8000-00805f9b34fb"
 const string MESH_PROV_DATA_IN_UUID_STR = "00002adb-0000-1000-8000-00805f9b34fb"
@@ -29,6 +34,8 @@ const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
 const byte UNICAST_FORWARDING_GESTURES_ONOFF = 0x01
 const byte UNICAST_FORWARDING_GESTURES_DIMMABLE = 0x02
 const i32 SWITCH_CONFIG_SERVER_PUBLISH_CONFIG_FLASH_HANDLE_PREFIX = 0x7100
+
+# TODO: Deprecated, move to bluetooth_common.FLASH_HANDLE_UNSET
 const i16 FLASH_HANDLE_UNSET = 0x0000
 
 // The advertisement priority enum is used by the adapter client for ordering advertisments
@@ -70,12 +77,14 @@ enum FaultCondition {
   WIFI_COEXISTENCE_CONFLICT = 1,
 }
 
+# TODO: Deprecated, move to bluetooth_common.PublishConfigType
 enum PublishConfigType {
   DISABLED = 0,
   PUBLISH_ON_DELTA = 1,
   PUBLISH_ON_DELTA_WITH_EXPONENTIAL_BACKOFF = 2,
 }
 
+# TODO: Deprecated, move to bluetooth_common.SwitchLoadType
 enum SwitchLoadType {
   INVALID = 0x00,
   LOAD_TYPE_ONOFF = 0x01,
@@ -158,6 +167,7 @@ enum BrilliantMeshOpCode {
   SWITCH_OPCODE = 0xC1,
 }
 
+# TODO: Deprecated, move to ble_mesh_config_service.MeshConfigServicePropertyID
 enum SwitchPropertyID {
   RESERVED_FOR_FUTURE_USE     = 0x00,
   ALWAYS_ON                   = 0x01,
@@ -258,6 +268,7 @@ enum SwitchGesture {
   DOUBLE_TAP              = 0x04,
 }
 
+# TODO: Deprecated, move to bluetooth_common.MeshPropertyDataType
 enum MeshPropertyDataType {
   // The data type defines how the property is packed into the mesh property message.
   // All data types shall be packed little-endian.
@@ -276,6 +287,7 @@ enum MeshPropertyDataType {
                                   // the desired struct.
 }
 
+# TODO: Deprecated, move to bluetooth_common.SwitchPropertyFlashHandle
 enum SwitchPropertyFlashHandle {
   SWITCH_DIMMER_FLASH_HANDLE               = 0x7001,
   FLASH_HANDLE_ALWAYS_ON                   = 0x7002,
@@ -301,6 +313,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x7016,
 }
 
+# TODO: Deprecated, move to bluetooth_common.ServicePropertySpec
 struct SwitchPropertySpec {
   1: byte property_id
   2: i16 property_size // in bytes
@@ -314,6 +327,7 @@ struct SwitchPropertySpec {
   11: optional list<byte> array_default_value
 }
 
+# TODO: Deprecated, move to ble_mesh_config_service.CONFIG_SERVICE_PROPERTY_SPECS
 const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.ALWAYS_ON: {
     "property_id": SwitchPropertyID.ALWAYS_ON,
@@ -748,7 +762,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   },
   SwitchPropertyID.DFU_LAST_RX_RESPONSE: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_RESPONSE,
-    "default_value": 0
+    "default_value": 0,
     "property_size": 4,
     "property_type": MeshPropertyDataType.UINT32,
     "flash_handle": FLASH_HANDLE_UNSET,
@@ -757,7 +771,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   },
   SwitchPropertyID.DFU_END_TRANSFER_REASON: {
     "property_id": SwitchPropertyID.DFU_END_TRANSFER_REASON,
-    "default_value": 0
+    "default_value": 0,
     "property_size": 1,
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": FLASH_HANDLE_UNSET,
