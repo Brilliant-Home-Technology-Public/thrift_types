@@ -202,6 +202,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGSwitchWallPlate": "BrilliantSwitchConnectSelector",
   "GuideMultiwayControlSupport": "MultiwayControlSupport",
   "GuideLEDSettings": "LEDPreferences:InstallationGuide",
+  "InstallIntegrationSetupComplete": "InstallationGuide:IntegrationSetupComplete",
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
