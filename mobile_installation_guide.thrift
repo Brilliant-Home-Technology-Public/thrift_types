@@ -185,6 +185,8 @@ enum GuideScreenType {
   CIRCUIT_LOAD_IDENTIFICATION = 28
   INSTALL_PARTIAL_SUCCESS = 29
   INTEGRATION_SETUP_COMPLETE = 30
+  MARK_INSTALLATION_COMPLETE_PROGRESS = 31
+  MARK_INSTALLATION_COMPLETE_MATCH = 32
 }
 
 struct GuideLoads {
@@ -397,6 +399,8 @@ const string MOBILE_GUIDE_SCREEN_LIGHT_NOT_WORKING = "screen_light_not_working"
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_TEST_SELECTION_PREFIX = "screen_line_load_test_selection_"
 const string MOBILE_GUIDE_SCREEN_LINE_LOAD_WIRE_MULTIMETER_TEST_PREFIX = "screen_line_load_wire_multimeter_test_"
 const string MOBILE_GUIDE_SCREEN_MAGNETIC_LOAD = "screen_magnetic_load"
+const string MOBILE_GUIDE_SCREEN_MARK_INSTALLATION_COMPLETE_MATCH = "mark_installation_complete_match"
+const string MOBILE_GUIDE_SCREEN_MARK_INSTALLATION_COMPLETE_PROGRESS = "mark_installation_complete_progress"
 const string MOBILE_GUIDE_SCREEN_MISSING_GANGBOX = "screen_missing_gangbox"
 const string MOBILE_GUIDE_SCREEN_MULTIMETER_CHECK = "screen_multimeter_check"
 const string MOBILE_GUIDE_SCREEN_MULTIWAY_ALL_DEVICES_INSTALLED = "screen_multiway_all_devices_installed_check"
