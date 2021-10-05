@@ -985,6 +985,7 @@ struct MobileLiveviewSessionReportEvent {
   23: i64 peer_updated_ts
   24: i64 connected_ts
   25: string peer_device_id
+  26: string remote_audio_params
 }
 
 struct MobileLiveviewUsageReportEvent {
