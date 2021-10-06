@@ -440,6 +440,8 @@ const string UI_BUTTON_NAME_WEATHER = "weather"
 const string UI_BUTTON_NAME_THERMOSTAT = "thermostat"
 const string UI_BUTTON_NAME_CLIMATE_WIDGET = "climate_widget"
 const string UI_BUTTON_NAME_REFRESH = "refresh"
+const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_HOME = "armed_state_widget:arm_home"
+const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_AWAY = "armed_state_widget:arm_away"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
