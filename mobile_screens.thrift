@@ -202,7 +202,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGSwitchWallPlate": "BrilliantSwitchConnectSelector",
   "GuideMultiwayControlSupport": "MultiwayControlSupport",
   "GuideLEDSettings": "LEDPreferences:InstallationGuide",
-  "InstallIntegrationSetupComplete": "InstallationGuide:IntegrationSetupComplete",
+  "InstallIntegrationSetupComplete": "InstallationGuide:IntegrationConfirm",
+  "MarkInstallationCompleteProgress": "CompleteIntegrationProgress",
+  "MarkInstallationCompleteMatch": "MultipleDeviceTypes",
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
@@ -296,6 +298,7 @@ const string MOBILE_OVERLAY_NAME_HIGH_HUMIDITY = "AttentionNeeded:HighHumidity"
 const string MOBILE_OVERLAY_NAME_HIGH_TEMPERATURE = "AttentionNeeded:HighTemperature"
 const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE = "HighWattage"
 const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE_LOAD = "HighWattageLoad"
+const string MOBILE_OVERLAY_NAME_HONEYWELL_SETUP_ERROR = "HoneywellSetupError"
 const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled"
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
