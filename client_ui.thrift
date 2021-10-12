@@ -2,6 +2,7 @@ namespace py thrift_types.client_ui
 namespace java thrift_types.client_ui
 
 include "message_bus.thrift"
+include "configuration.thrift"
 
 const string AUGUST_INTEGRATION_NAME = "August"
 const string BUTTERFLYMX_INTEGRATION_NAME = "ButterflyMX"
@@ -219,3 +220,40 @@ enum ControlLockScreenWidgetType {
 struct ControlLockScreenWidgetConfiguration {
   1: list<ControlLockScreenWidgetType> widget_priority
 }
+
+const list<configuration.SetVariablesAction> SCENE_ACTIONS_INCOMPATIBLE_WITH_ALEXA = [
+    {
+        "variables": {}, // any variable, any value
+        "peripheral_filter": {
+            "peripheral_types": [
+                message_bus.PeripheralType.BUILDING_ENTRY_PANEL,
+                message_bus.PeripheralType.LOCK,
+                message_bus.PeripheralType.CAMERA,
+                message_bus.PeripheralType.GARAGE_DOOR,
+                message_bus.PeripheralType.SECURITY_SYSTEM,
+            ],
+        },
+    },
+]
+
+const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_PASSCODE = [
+    {
+        "variables": {}, // any variable, any value
+        "peripheral_filter": {
+            "peripheral_types": [
+                message_bus.PeripheralType.SECURITY_SYSTEM,
+            ],
+        },
+    },
+]
+
+const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_UI_PREPARATION = [
+    {
+        "variables": {"current_system_mode": "1"} // security_system.SystemMode.DISARMED
+        "peripheral_filter": {
+            "peripheral_types": [
+                message_bus.PeripheralType.SECURITY_SYSTEM,
+            ],
+        },
+    },
+]
