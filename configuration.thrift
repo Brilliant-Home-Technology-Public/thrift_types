@@ -15,6 +15,26 @@ struct UniquePeripheralID {
   2: string peripheral_id
 }
 
+const set<string> ALL_ROOM_IDS = ["ALL_ROOM_IDS"] // sentinel value
+
+struct PeripheralFilter {
+  // non-null fields are ANDed together
+
+  // peripherals conceptually can be a set, but some platforms (switch-ui) may not like sets of
+  // structures.
+  1: optional list<UniquePeripheralID> peripherals // match any
+  2: optional set<string> room_ids // match any. null allows unassigned. Use ALL_ROOM_IDS if you
+                                   // want to filter out unassigned peripherals
+  3: optional map<string, string> expected_variable_states // all must match
+  4: optional map<string, string> excluded_variable_states // any match is excluded
+  5: optional set<message_bus.PeripheralType> peripheral_types // match any
+}
+
+struct SetVariablesAction {
+  1: map<string, string> variables
+  2: PeripheralFilter peripheral_filter
+}
+
 // Art Configuration
 
 const string ART_CONFIG_VARIABLE_PREFIX = "library:"
