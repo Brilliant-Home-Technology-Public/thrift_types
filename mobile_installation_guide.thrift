@@ -278,6 +278,7 @@ const string MOBILE_GUIDE_FIELD_AUTO_MIN_DIM_CALIBRATION_SUCCEEDED_PREFIX = "fie
 const string MOBILE_GUIDE_FIELD_BREAKER_ASSUMED = "field_breaker_assumed"
 const string MOBILE_GUIDE_FIELD_BREAKER_QUESTION = "field_breaker_question"
 const string MOBILE_GUIDE_FIELD_COMPLETE_SETUP_READY_TS = "field_complete_setup_ready_ts"
+const string MOBILE_GUIDE_FIELD_CONFIG_PERIPHERAL_VARIABLE_NAME = "field_config_peripheral_variable_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ID = "field_device_id"
 const string MOBILE_GUIDE_FIELD_DEVICE_NAME = "field_device_name"
 const string MOBILE_GUIDE_FIELD_DEVICE_ROOM_ID = "field_device_room_id"
