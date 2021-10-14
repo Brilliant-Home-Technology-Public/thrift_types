@@ -2,6 +2,7 @@ namespace py thrift_types.mobile_log
 namespace java thrift_types.mobile_log
 
 include "mobile_installation_guide.thrift"
+include "installation_template.thrift"
 include "cross_platform_log.thrift"
 
 /*
@@ -18,6 +19,7 @@ include "cross_platform_log.thrift"
 // KEEP ALPHABETIZED
 const string MOBILE_BLE_PROVISIONING_EVENT_TABLE_NAME = "mobile_ble_provisioning"
 const string MOBILE_CONNECTIVITY_EVENT_TABLE_NAME = "mobile_connectivity"
+const string MOBILE_CONTROL_CONFIGURATION_EVENT_TABLE_NAME = "mobile_control_configuration"
 const string MOBILE_CUSTOM_URL_LAUNCH_EVENT_TABLE_NAME = "mobile_custom_url_launch"
 const string MOBILE_DEVICE_TOGGLE_EVENT_TABLE_NAME = "mobile_device_toggle"
 const string MOBILE_DEVICE_LEVEL_EVENT_TABLE_NAME = "mobile_device_level"
@@ -336,6 +338,23 @@ enum MobileBLEProvisioningEventStatus {
   ERROR_BLUETOOTH = 5 // Returned when an error accessing bluetooth occurs
 }
 
+enum MobileControlConfigurationEventStatus {
+  SUCCESS = 1 // Only recorded when device config room is successfully set
+  ERROR_SET_AVAILABLE_HOME = 2 // Returned only when set available home request fails
+  ERROR_FINDING_CONTROL = 3 // Returned control is not found
+  ERROR_WAITING_FOR_CONTROL_ONLINE = 4 // Returned when control is found but never comes online
+  ERROR_CONFIGURATION = 5 // Returned when a blocking error occurs during configuration
+}
+
+enum MobileLoadConfigurationStatus {
+  SUCCESS = 1
+  HIGH_WATTAGE = 2
+  MAGNETIC = 3
+  CONFIGURATION_ERROR = 4
+  MISSING_GANGBOX = 5
+  LOW_WATTAGE = 6
+}
+
 enum MobileConnectivityStatus {
   // Primary goal connectivity status is CLOUD_CONNECTED, anything less is a sort of error mode
   // This is because direct connections are not sufficient since there are things
@@ -554,6 +573,27 @@ struct MobileConnectivityEvent {
   12: i64 time_since_loading_ms
   // This is reset on every start()
   13: MobileConnectivityStatus farthest_status_in_session
+}
+
+struct MobileControlConfigurationEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileControlConfigurationEventStatus control_configuration_status
+  10: installation_template.InstallationDeviceType control_device_type
+  11: string control_device_id
+  12: mobile_installation_guide.ControlConfigurationStatus final_control_configuration_state
+  // Concatenated dictionary of GangboxIndexes to list of MobileLoadConfigurationStatus
+  // Multiple can apply (e.g. SUCCESS with others means a non blocking status)
+  13: string load_configuration_state
+  14: i64 time_elapsed_seconds
+  15: bool is_join_home // Whether we scanned a join home QR code or not
+  16: bool is_reconfiguration // Based on whether a room is already assigned to device_config
 }
 
 struct MobileCustomURLLaunchEvent {

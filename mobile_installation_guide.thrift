@@ -49,6 +49,21 @@ enum MeshProvisionStatus {
   MESH_PROVISION_COMPLETE = 49 // Switch has app key, netkey, and unicast address bound
 }
 
+enum ControlConfigurationStatus {
+    NOT_STARTED = 1
+    ADD_TO_HOME = 2
+    FIND_CONTROL = 3
+    CONTROL_NAME_PUSH = 4
+    LOAD_NAME_PUSH = 5
+    LOAD_ROOM_PUSH = 6
+    COMPATIBILITY_CHECK = 7
+    GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG = 8
+    AUTO_DIMMABILITY_CHECK = 9
+    RECORD_MESH_ADDRESS = 10
+    CONTROL_ROOM_PUSH = 11
+    SUCCESS = 12
+}
+
 struct GuideOverlay {
   1: string overlay_identifier
   2: string overlay_title
