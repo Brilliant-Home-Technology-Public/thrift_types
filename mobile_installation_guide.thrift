@@ -59,9 +59,11 @@ enum ControlConfigurationStatus {
     COMPATIBILITY_CHECK = 7
     GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG = 8
     AUTO_DIMMABILITY_CHECK = 9
-    RECORD_MESH_ADDRESS = 10
-    CONTROL_ROOM_PUSH = 11
-    SUCCESS = 12
+    MANUAL_MIN_DIM_LEVEL_SET = 10
+    RECORD_MESH_ADDRESS = 11
+    CONTROL_ROOM_PUSH = 12
+    UNUSED = 13 // Superstitious like that.
+    SUCCESS = 14
 }
 
 struct GuideOverlay {
