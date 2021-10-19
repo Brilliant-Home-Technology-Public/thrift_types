@@ -185,7 +185,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ControlLowWattage": "InstallationGuide", // Guide framework adds "DeviceSetupIsLowWattage" modifier
   "IGCircuitLoadIdentification": "CircuitLoadIdentification",
   "IGInstallPartialSuccess": "InstallationGuide:PartialSuccess",
-  "IGIntegrationSetupComplete": "InstallationGuide:IntegrationConfirm",
+  "IGIntegrationSetupComplete": "InstallationGuide", // Guide framework adds "IntegrationConfirm" modifer
   "IGMarkCompleteProgress": "CompleteIntegrationProgress",
   "IGMarkCompleteMatch": "MultipleDeviceTypes",
   // Android
