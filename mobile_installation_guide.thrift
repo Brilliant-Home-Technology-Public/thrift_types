@@ -53,17 +53,18 @@ enum ControlConfigurationStatus {
     NOT_STARTED = 1
     ADD_TO_HOME = 2
     FIND_CONTROL = 3
-    CONTROL_NAME_PUSH = 4
-    LOAD_NAME_PUSH = 5
-    LOAD_ROOM_PUSH = 6
+    CONTROL_NAME_PUSH = 4 // Android now using CONTROL_CONFIG_PUSH instead
+    LOAD_NAME_PUSH = 5 // Android now using LOAD_CONFIG_PUSH instead
+    LOAD_ROOM_PUSH = 6 // Android now using LOAD_CONFIG_PUSH instead
     COMPATIBILITY_CHECK = 7
     GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG = 8
     AUTO_DIMMABILITY_CHECK = 9
     MANUAL_MIN_DIM_LEVEL_SET = 10
     RECORD_MESH_ADDRESS = 11
-    CONTROL_ROOM_PUSH = 12
-    UNUSED = 13 // Superstitious like that.
-    SUCCESS = 14
+    CONTROL_ROOM_PUSH = 12 // Android now using CONTROL_CONFIG_PUSH instead
+    LOAD_CONFIG_PUSH = 13
+    CONTROL_CONFIG_PUSH = 14
+    SUCCESS = 15
 }
 
 struct GuideOverlay {
