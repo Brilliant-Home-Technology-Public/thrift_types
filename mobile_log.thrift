@@ -790,7 +790,6 @@ struct MobileJoinedHomeEvent {
   5: string device_id
   6: string user_id
   7: string app_class
-  8: string user_type
 }
 
 struct MobileOfflineEvent {
@@ -846,7 +845,6 @@ struct MobileOverlayViewEvent {
   7: string overlay_name
   8: string user_id
   9: string app_class
-  10: string user_type
 }
 
 struct MobileDeviceNotificationViewEvent {
@@ -901,7 +899,6 @@ struct MobileScreenViewEvent {
   7: string source_screen
   8: string user_id
   9: string app_class
-  10: string user_type
 }
 
 struct MobileDeviceSettingsScreenViewEvent {
@@ -973,7 +970,6 @@ struct MobileSimpleButtonTappedEvent {
   7: string button_name
   8: string user_id
   9: string app_class
-  10: string user_type
 }
 
 struct MobileUnlockAttemptEvent {
@@ -987,7 +983,6 @@ struct MobileUnlockAttemptEvent {
   8: string user_id
   9: string app_class
   10: MobileUnlockType unlock_type
-  11: string user_type
 }
 
 struct MobileLiveviewSessionFeedbackEvent {
@@ -1118,8 +1113,7 @@ struct MobileInstallSwitchConnectEvent {
   6: string screen_name
   7: string user_id
   8: string app_class
-  9: string user_type
-  10: bool wallplate_attached
+  9: bool wallplate_attached
 }
 
 struct MobileThirdPartyScreenViewEvent {
@@ -1132,8 +1126,7 @@ struct MobileThirdPartyScreenViewEvent {
   7: string source_screen
   8: string user_id
   9: string app_class
-  10: string user_type
-  11: string integration_name
+  10: string integration_name
 }
 
 struct MobileThirdPartyButtonTappedEvent {
@@ -1146,8 +1139,7 @@ struct MobileThirdPartyButtonTappedEvent {
   7: string button_name
   8: string user_id
   9: string app_class
-  10: string user_type
-  11: string integration_name
+  10: string integration_name
 }
 
 struct MobileThirdPartyOverlayViewEvent {
@@ -1160,8 +1152,7 @@ struct MobileThirdPartyOverlayViewEvent {
   7: string overlay_name
   8: string user_id
   9: string app_class
-  10: string user_type
-  11: string integration_name
+  10: string integration_name
 }
 
 struct MobileThirdPartyRequestEvent {
@@ -1173,7 +1164,6 @@ struct MobileThirdPartyRequestEvent {
   6: string screen_name
   7: string user_id
   8: string app_class
-  9: string user_type
-  10: string request_text
-  11: string request_context
+  9: string request_text
+  10: string request_context
 }
