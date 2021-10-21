@@ -221,6 +221,7 @@ enum SwitchPropertyID {
   DBG_BUF_GET_CHUNK           = 0x47,
   USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x48,
   LOAD_DIMMING_MODE           = 0x49,
+  MOTION_MEDIAN_FILTER_SIZE   = 0x50,
 }
 
 enum BreakCircuitStatus {
@@ -296,6 +297,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_CAPTOUCH_SLD00_TUNING_PARAMS = 0x7015,
   FLASH_HANDLE_USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE = 0x7016,
   FLASH_HANDLE_LOAD_DIMMING_MODE            = 0x7017,
+  FLASH_HANDLE_MOTION_MEDIAN_FILTER_SIZE    = 0x7018,
 }
 
 struct SwitchPropertySpec {
@@ -1018,6 +1020,17 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 2,
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_LOAD_DIMMING_MODE,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.MOTION_MEDIAN_FILTER_SIZE: {
+    "property_id": SwitchPropertyID.MOTION_MEDIAN_FILTER_SIZE,
+    "property_size": 1,
+    "default_value": 1,
+    "min_value": 0,
+    "max_value": 32,
+    "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MOTION_MEDIAN_FILTER_SIZE,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
