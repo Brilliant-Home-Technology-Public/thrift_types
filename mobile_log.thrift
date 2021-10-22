@@ -420,6 +420,7 @@ enum MobileEventDeviceType {
   BRILLIANT_DEVICE = 11
   MOBILE = 12
   CAMERA = 13
+  SECURITY_SYSTEM = 14
 }
 
 enum MobileEventSource {
