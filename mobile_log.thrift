@@ -353,6 +353,8 @@ enum MobileLoadConfigurationStatus {
   CONFIGURATION_ERROR = 4
   MISSING_GANGBOX = 5
   LOW_WATTAGE = 6
+  MULTIWAY_NON_BRILLIANT = 7
+  MULTIWAY_ALL_BRILLIANT = 8 
 }
 
 enum MobileConnectivityStatus {
@@ -594,6 +596,10 @@ struct MobileControlConfigurationEvent {
   14: i64 time_elapsed_seconds
   15: bool is_join_home // Whether we scanned a join home QR code or not
   16: bool is_reconfiguration // Based on whether a room is already assigned to device_config
+  17: bool has_multiway_non_brilliant
+  18: bool has_multiway_all_brilliant
+  // Number of devices controlling the load with the most controlling devices.
+  19: i32 max_number_of_devices_for_load
 }
 
 struct MobileCustomURLLaunchEvent {
