@@ -30,6 +30,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantControl": "RemoveDevice",
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
+  "SecuritySingle": "Devices:Security",
+  "SecurityPin": "Pincode",
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
@@ -375,6 +377,7 @@ const string MOBILE_OVERLAY_NAME_SCENE_INVALID_FULLY = "SceneInvalid:Fully"
 const string MOBILE_OVERLAY_NAME_SCENE_INVALID_PARTIAL = "SceneInvalid:Partial"
 const string MOBILE_OVERLAY_NAME_SCENE_SELECTED_FULLY_INVALID = "SceneSelected:FullyInvalid"
 const string MOBILE_OVERLAY_NAME_SCENE_SELECTED_PARTIALLY_INVALID = "SceneSelected:PartiallyInvalid"
+const string MOBILE_OVERLAY_NAME_SECURITY_ERROR = "SecurityError"
 const string MOBILE_OVERLAY_NAME_SETUP_FINISHED = "SetupFinished"
 const string MOBILE_OVERLAY_NAME_SKIP_WARNING = "SkipWarning"
 const string MOBILE_OVERLAY_NAME_SWITCH_NEXT_STEPS = "SwitchNextSteps"

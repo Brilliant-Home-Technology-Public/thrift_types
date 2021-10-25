@@ -50,6 +50,7 @@ const string MOBILE_PROVISIONING_CANCEL_EVENT_TABLE_NAME = "mobile_provisioning_
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
+const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobile_security_system_adjustment_attempt"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
 const string MOBILE_THIRDPARTY_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_view"
@@ -1166,4 +1167,18 @@ struct MobileThirdPartyRequestEvent {
   8: string app_class
   9: string request_text
   10: string request_context
+}
+
+struct MobileSecuritySystemAdjustmentAttemptEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string security_state
+  10: string integration_name
+  11: bool pin_required
 }
