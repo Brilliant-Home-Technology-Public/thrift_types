@@ -265,6 +265,7 @@ const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_ERROR = "CircuitLoa
 const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_HELP = "CircuitLoadIdentification:LoadSideDevice"
 const string MOBILE_OVERLAY_NAME_CONNECTIVITY_ERROR = "ConnetivityError"
 const string MOBILE_OVERLAY_NAME_CONTROL_CONFIGURATION_ERROR_GENERIC = "Configuration:Control:Error"
+const string MOBILE_OVERLAY_NAME_CONTROL_CONFIGURATION_INCORRECT_DEVICE_TYPE = "Configuration:Control:IncorrectDeviceType"
 const string MOBILE_OVERLAY_NAME_CONTROL_LOAD_CONFIG_ERROR = "ControlLoadConfig:Error"
 const string MOBILE_OVERLAY_NAME_CONTROL_NEXT_STEPS = "ControlNextSteps"
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_ERROR = "ControlRemoval:Error"
