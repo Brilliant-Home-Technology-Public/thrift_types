@@ -254,6 +254,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
+const string MOBILE_OVERLAY_NAME_ARM_STATE_ACTIVE = "ArmStateActive"
 const string MOBILE_OVERLAY_NAME_ASSIGN_SLIDER = "AssignSlider"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED_MULTIPLE = "AttentionNeeded:Multiple"
