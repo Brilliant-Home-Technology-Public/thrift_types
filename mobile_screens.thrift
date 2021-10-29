@@ -31,7 +31,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
   "SecuritySingle": "Devices:Security",
-  "SecurityPin": "Pincode",
+  "SecurityPin": "ResetPin",
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
