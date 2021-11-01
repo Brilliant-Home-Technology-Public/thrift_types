@@ -53,6 +53,7 @@ const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_
 const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobile_security_system_adjustment_attempt"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
+const string MOBILE_THIRDPARTY_DEVICE_ADDED_EVENT_TABLE_NAME = "mobile_thirdparty_device_added"
 const string MOBILE_THIRDPARTY_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_view"
 const string MOBILE_THIRDPARTY_REQUEST_EVENT_TABLE_NAME = "mobile_thirdparty_request"
 const string MOBILE_THIRDPARTY_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_screen_view"
@@ -325,6 +326,11 @@ enum MobileUserType {
   CONSUMER = 1
   MULTIFAMILY = 2
   DEMO = 3
+}
+
+enum MobileAddDeviceFlowType {
+  WORKS_WITH = 1
+  DEVICE_LIST = 2
 }
 
 enum MobileBLEDeviceType {
@@ -1117,6 +1123,19 @@ struct MobileInstallSwitchConnectEvent {
   7: string user_id
   8: string app_class
   9: bool wallplate_attached
+}
+
+struct MobileThirdPartyDeviceAddedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string integration_name
+  10: string flow_type
 }
 
 struct MobileThirdPartyScreenViewEvent {
