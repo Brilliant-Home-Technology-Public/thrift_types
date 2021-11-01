@@ -634,7 +634,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD: {
     "property_id": SwitchPropertyID.AMPS_SAFE_MAX_THRESHOLD,
     "property_size": 2,
-    "default_value": 5500,
+    "default_value": 0,
     "min_value": 0,
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
