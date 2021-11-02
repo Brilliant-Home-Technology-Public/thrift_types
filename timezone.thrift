@@ -44,6 +44,10 @@ const list<Timezone> supported_timezones = [
         "name": "America/Halifax",
         "display_name": "Atlantic - Halifax"
     },
+    {
+        "name": "America/St_Johns",
+        "display_name": "Newfoundland - St. John's"
+    },
 ]
 
 const list<Timezone> dev_timezones = [
