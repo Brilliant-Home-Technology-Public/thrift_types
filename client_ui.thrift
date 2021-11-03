@@ -246,14 +246,3 @@ const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_PASSCODE = 
         },
     },
 ]
-
-const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_UI_PREPARATION = [
-    {
-        "variables": {"current_system_mode": "1"} // security_system.SystemMode.DISARMED
-        "peripheral_filter": {
-            "peripheral_types": [
-                message_bus.PeripheralType.SECURITY_SYSTEM,
-            ],
-        },
-    },
-]
