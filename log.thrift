@@ -138,6 +138,7 @@ const string UI_CONTROL_THIRDPARTY_STREAM_TABLE_NAME = "control_thirdparty_strea
 const string UI_ALEXA_AUTO_ENABLE_ATTEMPT_TABLE_NAME = "alexa_auto_enable_attempt"
 const string UI_CLIMATE_WIDGET_CONFIGURATION_TABLE_NAME = "climate_widget_configuration"
 const string UI_ARMED_STATE_WIDGET_TABLE_NAME = "armed_state_widget"
+const string UI_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT = "security_system_adjustment_attempt"
 
 // END QT LOG TABLE NAMES
 
