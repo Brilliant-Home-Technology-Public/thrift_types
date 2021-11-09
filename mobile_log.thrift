@@ -42,6 +42,7 @@ const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
 const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
+const string MOBILE_MESH_NETWORK_EVENT_TABLE_NAME = "mobile_mesh_network_event"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
@@ -449,6 +450,11 @@ enum MobileLevelType {
   TEMPERATURE_RANGE_HIGH = 5
   POSITION = 6
   LED_BRIGHTNESS = 7
+}
+
+enum MobileMeshNetworkEventType {
+  NETWORK_KEY_CREATION = 1
+  APP_KEY_CREATION = 2
 }
 
 enum MobileNotificationType {
@@ -1049,6 +1055,18 @@ struct MobileLiveviewUsageReportEvent {
   8: bool sound_toggled
   9: string session_id
   10: string app_class
+}
+
+struct MobileMeshNetworkEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string app_class
+  8: MobileMeshNetworkEventType network_event_type
+  9: i64 modification_timestamp
 }
 
 struct MobileProvisioningCancelEvent {
