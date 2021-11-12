@@ -16,6 +16,7 @@ const string WEMO_SWITCH_MODEL_NAME_FOR_DISCOVERY = "Lightswitch"
 const string WEMO_OUTDOOR_PLUG_MODEL_NAME = "OutdoorPlug"
 
 const string DEVICE_PROVISIONING_MDNS_SERVICE_TYPE = "_init-brilliant._tcp.local."
+const string REMOTE_BRIDGE_HOME_ID_TXT_RECORD_KEY = "home_id"
 const string REMOTE_BRIDGE_MDNS_SERVICE_TYPE = "_brilliant._tcp.local."
 const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 const string SOMFY_MDNS_SERVICE_TYPE = "_kizbox._tcp.local."
