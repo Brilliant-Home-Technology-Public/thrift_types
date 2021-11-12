@@ -43,6 +43,8 @@ const string NEST_SET_TEMP_RANGE = "sdm.devices.commands.ThermostatTemperatureSe
 const string NEST_SET_FAN = "sdm.devices.commands.Fan.SetTimer"
 const string NEST_GENERATE_RTSP_STREAM = "sdm.devices.commands.CameraLiveStream.GenerateRtspStream"
 const string NEST_STOP_RTSP_STREAM = "sdm.devices.commands.CameraLiveStream.StopRtspStream"
+const string NEST_GENERATE_WEBRTC_STREAM = "sdm.devices.commands.CameraLiveStream.GenerateWebRtcStream"
+const string NEST_STOP_WEBRTC_STREAM = "sdm.devices.commands.CameraLiveStream.StopWebRtcStream"
 const string NEST_GENERATE_PREVIEW_IMAGE = "sdm.devices.commands.CameraEventImage.GenerateImage"
 
 struct ThermostatIds {
