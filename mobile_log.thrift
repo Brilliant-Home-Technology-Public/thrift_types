@@ -1217,7 +1217,8 @@ struct MobileSecuritySystemAdjustmentAttemptEvent {
   6: string screen_name
   7: string user_id
   8: string app_class
-  9: string security_state
+  9: string update_state
   10: string integration_name
   11: bool pin_required
+  12: string previous_state
 }
