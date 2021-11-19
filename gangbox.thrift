@@ -22,3 +22,9 @@ struct DimSmoothingConfiguration {
   5: optional i32 max_fade_out_duration_ms
   6: optional bool use_proportional_duration
 }
+
+enum GangboxDeviceRevision {
+  DVT = 0,
+  V1 = 1,
+  V2 = 2,
+}
