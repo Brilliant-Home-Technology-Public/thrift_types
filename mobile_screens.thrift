@@ -31,7 +31,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
   "SecuritySingle": "Devices:Security",
-  "SecurityPin": "ResetPin",
+  "SecurityPin": "EnterPin",
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
@@ -56,8 +56,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Account
   "EditAccount": "AccountSettings",
   "EditAccountEditSettings": "AccountSettings",
-  "ResetPin": "ResetPin",
-  "EditAccountResetPin": "ResetPin",
+  "ResetPin": "EnterPin",
+  "EditAccountResetPin": "EnterPin",
 
   // Settings
   "DemoMode": "DemoMode",
@@ -147,7 +147,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChooseUnit": "MFChooseUnit",
   // Android
   "MFEnterCode": "PairV2:Login:Verification:LogInOperator",
-  "MFCreatePin": "ResetPin",
+  "MFCreatePin": "EnterPin",
   "MFChooseBuilding": "MFChooseBuilding",
   "MFChooseUnit": "MFChooseUnit",
 
