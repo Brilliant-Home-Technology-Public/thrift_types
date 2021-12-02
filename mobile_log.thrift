@@ -515,6 +515,13 @@ enum MobileUnlockResult {
   CONFIRMED_NEW_PIN = 4 // Currently only logged for home passcode attempt
 }
 
+enum MobilePasscodeContext {
+  REMOVE_DEVICE = 1
+  PRIVACY_SETTINGS = 2
+  CHANGE_PASSCODE = 3
+  RESIDEO_SECURITY_ACTION = 4
+}
+
 enum MobileUnlockType {
   PIN = 1
   BIOMETRICS = 2
@@ -1104,6 +1111,7 @@ struct MobileHomePasscodeAttemptEvent {
   7: MobileUnlockResult unlock_result
   8: string user_id
   9: string app_class
+  10: MobilePasscodeContext passcode_context
 }
 
 struct MobileInstallDeviceAddedToGuideEvent {
