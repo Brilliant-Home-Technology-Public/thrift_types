@@ -75,4 +75,10 @@ enum RemoteStreamingAudioCodec {
 
 struct RemoteStreamingConfiguration {
     1: RemoteStreamingProtocol streaming_protocol
+    // below fields are only relevant if streaming_protocol is WEBRTC
+    2: optional RemoteStreamingBundlePolicy bundle_policy
+    3: optional list<RemoteStreamingAudioCodec> supported_audio_codecs
+    4: optional bool two_way_audio_supported
+    5: optional bool include_data_channel
+    6: optional bool include_video_profile_level_id
 }
