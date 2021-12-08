@@ -65,6 +65,14 @@ enum RemoteStreamingBundlePolicy {
 }
 
 
+enum RemoteStreamingAudioCodec {
+    UNKNOWN = 0,
+    PCMU = 1,
+    AAC = 2,
+    OPUS = 3,
+}
+
+
 struct RemoteStreamingConfiguration {
     1: RemoteStreamingProtocol streaming_protocol
 }
