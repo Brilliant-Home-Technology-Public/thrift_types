@@ -55,6 +55,16 @@ enum RemoteStreamingProtocol {
 }
 
 
+// mirrors GstWebRTCBundlePolicy enum:
+// https://gstreamer.freedesktop.org/documentation/webrtclib/webrtc_fwd.html?gi-language=c#GstWebRTCBundlePolicy
+enum RemoteStreamingBundlePolicy {
+    NONE = 0
+    BALANCED = 1
+    MAX_COMPAT = 2
+    MAX_BUNDLE = 3
+}
+
+
 struct RemoteStreamingConfiguration {
     1: RemoteStreamingProtocol streaming_protocol
 }
