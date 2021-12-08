@@ -869,6 +869,7 @@ struct MobileOverlayViewEvent {
   7: string overlay_name
   8: string user_id
   9: string app_class
+  10: MobileNotificationType overlay_type
 }
 
 struct MobileDeviceNotificationViewEvent {
