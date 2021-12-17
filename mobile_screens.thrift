@@ -238,7 +238,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "AddLight": "AddLight",
   "SpecifyNumLights": "SpecifyNumLights",
   "ExistingFixtures": "ExistingFixtures",
-  "DeviceGroupOverview": "DeviceGroupOverview",
+  "DeviceGroupOverview": "DeviceGroupOverview:Incomplete",
+  "DeviceGroupHistory": "DeviceGroupOverview:History",
 
   // Third Party Device Setup
   "ThirdPartyDevicePicker": "WorksWith",
