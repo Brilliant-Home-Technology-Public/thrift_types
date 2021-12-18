@@ -240,6 +240,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ExistingFixtures": "ExistingFixtures",
   "DeviceGroupOverview": "DeviceGroupOverview:Incomplete",
   "DeviceGroupHistory": "DeviceGroupOverview:History",
+  "InstallationHistory": "DeviceGroupOverview:History",
 
   // Third Party Device Setup
   "ThirdPartyDevicePicker": "WorksWith",
