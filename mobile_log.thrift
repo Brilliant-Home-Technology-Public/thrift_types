@@ -547,6 +547,11 @@ enum InstallNameStatus {
   USER_GENERATED = 3
 }
 
+enum InstallEditType {
+  NEW = 1
+  UPDATE = 2
+}
+
 // END LOGGING ENUMS
 
 
@@ -1127,6 +1132,8 @@ struct MobileInstallDeviceAddedToGuideEvent {
   8: string app_class
   9: InstallNameStatus name_status
   10: string installation_device_type
+  11: InstallEditType install_edit_type
+  12: bool name_exists_in_completed
 }
 
 struct MobileInstallLoadAddedToGuideEvent {
@@ -1140,6 +1147,8 @@ struct MobileInstallLoadAddedToGuideEvent {
   8: string app_class
   9: InstallNameStatus name_status
   10: string installation_device_type
+  11: InstallEditType install_edit_type
+  12: bool name_exists_in_completed
 }
 
 struct MobileInstallSwitchConnectEvent {
