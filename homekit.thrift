@@ -11,3 +11,9 @@ struct MFiToken {
 struct ExposedFixtures {
   1: optional list<configuration.UniquePeripheralID> exposed_peripheral_ids
 }
+
+struct SetupInfo {
+  1: string setup_uri
+  2: string setup_code
+}
+
