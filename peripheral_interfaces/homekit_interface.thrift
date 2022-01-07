@@ -6,9 +6,7 @@ include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct HomeKitPeripheralInterface {
-  2: string setup_uri
   3: string setup_id
-  4: string setup_code
   5: bool reset
   6: bool paired
   7: string accessory_name
@@ -16,6 +14,7 @@ struct HomeKitPeripheralInterface {
   10: bool restart
   11: bool token_exists
   12: optional homekit.ExposedFixtures exposed_fixtures
+  13: homekit.SetupInfo setup_info
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
