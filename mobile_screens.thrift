@@ -80,6 +80,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SwitchEnvironment": "SwitchEnvironment",
   "Troubleshoot": "Troubleshoot",
   "DeleteHomeEnterCode": "PairV2:Login:Verification:DeleteHome", // Making Android match iOS, which reuses the enter code screen for delete home
+  "DeleteHome": "DeleteHome",
 
   // Help
   "Help": "Help",
