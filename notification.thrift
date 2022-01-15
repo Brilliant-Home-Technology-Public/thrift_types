@@ -25,6 +25,7 @@ enum BrilliantNotificationType {
   SALTO_KS_CODE_REQUIRED = 17,
   CONTROL_TRACKED_RELEASE_STAGES_DIFFER = 18,
   ALEXA_HOME_SKILL_AUTO_ENABLE = 19,
+  SMARTTHINGS_API_MIGRATION = 20,
 }
 
 enum BrilliantNotificationAction {
