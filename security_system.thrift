@@ -9,6 +9,7 @@ enum SystemMode {
   ARMED_NIGHT = 4
   DISABLED = 5
   DISARMING = 6
+  DISARMED_NOT_READY = 7
 }
 
 struct SystemCapabilities {
