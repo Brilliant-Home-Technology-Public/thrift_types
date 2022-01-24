@@ -251,7 +251,11 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceDiscoverySpinner": "ThirdParty:DiscoverySpinner",
   "ThirdPartyAuthProgress": "ThirdParty:AccountLinkingProgress",
   "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess",
-  "ThirdPartySettings": "ThirdParty:Settings"
+  "ThirdPartySettings": "ThirdParty:Settings",
+
+  // DeleteAccount
+  "DeleteAccountExistingHomes": "ExistingHomes",
+  "DeleteAccountConfirmation": "AccountDeletion"
 }
 
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
