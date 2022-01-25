@@ -283,6 +283,7 @@ const string MOBILE_OVERLAY_NAME_CONTROL_SCAN_SWITCH_INSTALL = "ControlScanSwitc
 const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED = "CurrentDeviceDeauthed"
 const string MOBILE_OVERLAY_NAME_CURRENT_GANG_INFO = "CurrentGangInfo"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
+const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_ERROR = "DeleteAccountError"
 const string MOBILE_OVERLAY_NAME_DELETE_DEVICE_CONFIRMATION = "DeleteDeviceConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_CONFIRMATION = "DeleteHomeConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_SUCCESS = "DeleteHomeSuccess"
