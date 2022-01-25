@@ -1228,6 +1228,7 @@ struct MobileThirdPartyOverlayViewEvent {
   8: string user_id
   9: string app_class
   10: string integration_name
+  11: MobileNotificationType overlay_type
 }
 
 struct MobileThirdPartyOverlayButtonTappedEvent {
