@@ -55,6 +55,7 @@ const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobil
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
 const string MOBILE_THIRDPARTY_DEVICE_ADDED_EVENT_TABLE_NAME = "mobile_thirdparty_device_added"
+const string MOBILE_THIRDPARTY_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_button_tapped"
 const string MOBILE_THIRDPARTY_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_view"
 const string MOBILE_THIRDPARTY_REQUEST_EVENT_TABLE_NAME = "mobile_thirdparty_request"
 const string MOBILE_THIRDPARTY_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_screen_view"
@@ -1227,6 +1228,21 @@ struct MobileThirdPartyOverlayViewEvent {
   8: string user_id
   9: string app_class
   10: string integration_name
+}
+
+struct MobileThirdPartyOverlayButtonTappedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string overlay_name
+  8: string button_name
+  9: string user_id
+  10: string app_class
+  11: string integration_name
+  12: MobileNotificationType overlay_type
 }
 
 struct MobileThirdPartyRequestEvent {
