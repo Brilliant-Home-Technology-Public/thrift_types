@@ -218,8 +218,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Switch Provisioning
   "FreePairing": "BluetoothDevicesDetected",
   // iOS
-  "SwitchProvisioning": "Provisioning:SwitchProvisioning",
-  "ControlProvisioning": "Provisioning:ControlProvisioning"
+  "SwitchProvisioning": "Provisioning", // Use modifier to specify device type
+  "ControlProvisioning": "Provisioning", // Use modifier to specify device type
   "DeviceSetupMinDimLevel": "Provisioning:MinDimLevel",
   "DeviceSetupForwarding": "Provisioning:ForwardingAddress",
   "DeviceSetupOwner": "Provisioning:Owner",
