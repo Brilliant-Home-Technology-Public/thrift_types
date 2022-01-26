@@ -256,7 +256,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
-  "DeleteAccountConfirmation": "AccountDeletion"
+  "DeleteAccountConfirmation": "AccountDeletion",
+  "DeleteAccountCode": "PairV2:Login:Verification:DeleteAccount", // Making Android match iOS, which reuses the enter code screen for delete account
 }
 
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
@@ -285,6 +286,7 @@ const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED = "CurrentDeviceDeauthe
 const string MOBILE_OVERLAY_NAME_CURRENT_GANG_INFO = "CurrentGangInfo"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
 const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_ERROR = "DeleteAccountError"
+const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_CONFIRMATION = "DeleteAccountConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_DEVICE_CONFIRMATION = "DeleteDeviceConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_CONFIRMATION = "DeleteHomeConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_SUCCESS = "DeleteHomeSuccess"
