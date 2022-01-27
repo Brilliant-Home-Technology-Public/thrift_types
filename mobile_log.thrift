@@ -847,8 +847,9 @@ struct MobileOfflineEvent {
   8: string app_class
 }
 
-// NOTE:DO NOT ADD ANY FIELDS TO MobileOverlayButtonTappedEvent
-// If a ButtonTapped log needs another field, make a new struct
+// NOTE:ONLY ADD FIELDS TO MobileOverlayButtonTappedEvent
+// THAT ARE APPLICABLE TO ALL OVERLAY BUTTON TAPS
+// If a specific ButtonTapped log needs another field, make a new struct
 // ONLY USE CONSTANTS (add above) FOR button_name
 struct MobileOverlayButtonTappedEvent {
   1: string table_name
@@ -861,6 +862,7 @@ struct MobileOverlayButtonTappedEvent {
   8: string button_name
   9: string user_id
   10: string app_class
+  11: MobileNotificationType overlay_type
 }
 
 struct MobileDeviceNotificationButtonTappedEvent {
