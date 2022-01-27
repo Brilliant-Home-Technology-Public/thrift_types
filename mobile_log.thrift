@@ -516,6 +516,7 @@ enum MobileSettingsDetail {
   SLIDER_SETTINGS = 3
   GESTURE_SETTINGS = 4
   AUDIO_SETTINGS = 5
+  DISPLAY_SETTINGS = 6
 }
 
 enum MobileToggleType {
