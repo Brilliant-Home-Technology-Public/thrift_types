@@ -510,6 +510,7 @@ enum MobileSettingsDetail {
   GENERAL = 1
   MESH_OWNER = 2
   SLIDER_SETTINGS = 3
+  GESTURE_SETTINGS = 4
 }
 
 enum MobileToggleType {
