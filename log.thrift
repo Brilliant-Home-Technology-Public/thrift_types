@@ -450,6 +450,7 @@ const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_AWAY = "armed_state_widget:ar
 const string UI_BUTTON_NAME_RESTART = "restart"
 const string UI_BUTTON_NAME_SHUTDOWN = "shutdown"
 const string UI_BUTTON_NAME_CANCEL = "cancel"
+const string UI_BUTTON_NAME_LEARN_MORE = "learn_more"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
