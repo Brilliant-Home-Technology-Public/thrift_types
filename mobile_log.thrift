@@ -427,7 +427,8 @@ enum MobileErrorEventType {
   FAILED_SET_AVAILABLE_HOME = 27
   FAILED_DELETE_ACCOUNT_VERIFICATION_CODE = 28 // Request to send code
   FAILED_DELETE_ACCOUNT_VERIFICATION = 29 // Request to validate code
-  FAILED_DELETE_ACCOUNT = 30 // Request to actually delete account
+  FAILED_DELETE_ACCOUNT_GET_HOMES = 30 // Request to get homes for delete account
+  FAILED_DELETE_ACCOUNT = 31 // Request to actually delete account
 }
 
 enum MobileEventDeviceType {
