@@ -73,6 +73,7 @@ const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
 const string MOBILE_BUTTON_NAME_ADD_TO_HOME = "add_to_home"
 const string MOBILE_BUTTON_NAME_APPLY = "apply"
+const string MOBILE_BUTTON_NAME_AUDIO_SETTINGS = "audio_settings"
 const string MOBILE_BUTTON_NAME_AUTO = "auto"
 const string MOBILE_BUTTON_NAME_BACK = "back"
 const string MOBILE_BUTTON_NAME_BACK_TO_INSTALL = "back_to_install"
@@ -514,6 +515,7 @@ enum MobileSettingsDetail {
   MESH_OWNER = 2
   SLIDER_SETTINGS = 3
   GESTURE_SETTINGS = 4
+  AUDIO_SETTINGS = 5
 }
 
 enum MobileToggleType {

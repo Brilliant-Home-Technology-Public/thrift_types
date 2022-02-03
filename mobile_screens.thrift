@@ -38,6 +38,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChangeMeshOwner": "ChangeMeshOwner",
   "SliderSettings": "SliderSettings",
   "GestureSettings": "GestureSettings",
+  "AudioSettings": "AudioSettings",
   "DeviceSelection": "DeviceSelection",
   "UpdateTimeZone": "TimeZone:Select",  // iOS
   "UpdateZipCode": "HomeLocation",  // iOS  
