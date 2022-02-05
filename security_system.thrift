@@ -10,6 +10,9 @@ enum SystemMode {
   DISABLED = 5
   DISARMING = 6
   DISARMED_NOT_READY = 7
+  FIRE_ALARM = 8
+  CARBON_MONOXIDE_ALARM = 9
+  MEDICAL_ALARM = 10
 }
 
 struct SystemCapabilities {
