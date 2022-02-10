@@ -451,6 +451,7 @@ const string UI_BUTTON_NAME_RESTART = "restart"
 const string UI_BUTTON_NAME_SHUTDOWN = "shutdown"
 const string UI_BUTTON_NAME_CANCEL = "cancel"
 const string UI_BUTTON_NAME_LEARN_MORE = "learn_more"
+const string UI_BUTTON_NAME_SKIP_ACTION = "skip_action"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
