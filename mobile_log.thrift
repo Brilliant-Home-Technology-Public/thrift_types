@@ -64,6 +64,8 @@ const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support
 const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
 const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide"
 const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_switch_connect"
+const string MOBILE_VERIFICATION_CODE_ATTEMPT_EVENT_TABLE_NAME = "mobile_verification_code_attempt"
+
 // END MOBILE LOG TABLE NAMES
 
 // START: MOBILE BUTTON NAME CONSTANTS
@@ -541,6 +543,7 @@ enum MobilePasscodeContext {
   PRIVACY_SETTINGS = 2
   CHANGE_PASSCODE = 3
   RESIDEO_SECURITY_ACTION = 4
+  VERIFY_EMAIL = 5
 }
 
 enum MobileUnlockType {
@@ -1279,4 +1282,17 @@ struct MobileSecuritySystemAdjustmentAttemptEvent {
   10: string integration_name
   11: bool pin_required
   12: string previous_state
+}
+
+struct MobileVerificationCodeAttemptEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileUnlockResult passcode_result
+  10: MobilePasscodeContext passcode_context
 }
