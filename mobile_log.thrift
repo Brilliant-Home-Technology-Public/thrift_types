@@ -544,6 +544,7 @@ enum MobilePasscodeContext {
   CHANGE_PASSCODE = 3
   RESIDEO_SECURITY_ACTION = 4
   VERIFY_EMAIL = 5
+  VERIFY_MULTIFACTOR_AUTHENTICATION = 6
 }
 
 enum MobileUnlockType {
