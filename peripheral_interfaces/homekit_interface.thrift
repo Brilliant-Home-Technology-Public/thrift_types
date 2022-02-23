@@ -15,6 +15,7 @@ struct HomeKitPeripheralInterface {
   11: bool token_exists
   12: optional homekit.ExposedFixtures exposed_fixtures
   13: homekit.SetupInfo setup_info
+  14: bool force_fetch_token
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
