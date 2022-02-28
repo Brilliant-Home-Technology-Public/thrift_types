@@ -56,6 +56,8 @@ const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
 const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobile_security_system_adjustment_attempt"
+const string MOBILE_SETTINGS_LEVEL_EVENT_TABLE_NAME = "mobile_settings_level"
+const string MOBILE_SETTINGS_TOGGLE_EVENT_TABLE_NAME = "mobile_settings_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
 const string MOBILE_THIRDPARTY_DEVICE_ADDED_EVENT_TABLE_NAME = "mobile_thirdparty_device_added"
@@ -290,11 +292,13 @@ const string MOBILE_NAME_MODIFIER_EMPTY_HOME = "EmptyHome"
 const string MOBILE_NAME_MODIFIER_ENTER_CURRENT_PIN = "EnterCurrentPin"
 const string MOBILE_NAME_MODIFIER_ERROR = "Error"
 const string MOBILE_NAME_MODIFIER_FAILURE = "Failure"
+const string MOBILE_NAME_MODIFIER_GENERAL = "General"
 const string MOBILE_NAME_MODIFIER_IN_USE = "InUse"
 const string MOBILE_NAME_MODIFIER_INSTALLATION_GUIDE = "InstallationGuide"
 const string MOBILE_NAME_MODIFIER_INSTALLATION_COMPLETE = "InstallationComplete"
 const string MOBILE_NAME_MODIFIER_LIGHT_ON_OFF_CHECK = "LightOnOffCheck"
 const string MOBILE_NAME_MODIFIER_LOADING = "Loading"
+const string MOBILE_NAME_MODIFIER_LOCK_SCREEN = "LockScreen"
 const string MOBILE_NAME_MODIFIER_LOG_IN_OPERATOR = "LogInOperator"
 const string MOBILE_NAME_MODIFIER_LOW_WATTAGE = "LowWattage"
 const string MOBILE_NAME_MODIFIER_NEW = "New"
@@ -574,6 +578,25 @@ enum InstallNameStatus {
 enum InstallEditType {
   NEW = 1
   UPDATE = 2
+}
+
+enum MobileSettingsToggleType {
+  SINGLE_FINGER_GESTURE = 1
+  TWO_FINGER_GESTURE = 2
+  DISPLAY_TIME = 3
+  SHARED_LIBRARY = 4
+  DISPLAY_ART = 5
+  MUSIC = 6
+  ARMED_STATE = 7
+  WEATHER = 8
+  THERMOSTAT = 9
+  MICROPHONE_STATUS = 10
+}
+
+enum MobileSettingsLevelType {
+  MEDIA_VOLUME = 1
+  ALERT_VOLUME = 2
+  BRIGHTNESS = 3
 }
 
 // END LOGGING ENUMS
@@ -1296,4 +1319,30 @@ struct MobileVerificationCodeAttemptEvent {
   8: string app_class
   9: MobileUnlockResult passcode_result
   10: MobilePasscodeContext passcode_context
+}
+
+struct MobileSettingsToggleEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileSettingsToggleType settings_toggle_type
+  10: bool on
+}
+
+struct MobileSettingsLevelEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileSettingsLevelType settings_level_type
+  10: i32 level
 }
