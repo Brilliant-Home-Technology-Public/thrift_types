@@ -59,8 +59,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ColorPicker": "ColorPicker",
 
   // Account
-  "EditAccount": "AccountSettings",
-  "EditAccountEditSettings": "AccountSettings",
+  "EditAccount": "ProfileSettings",
+  "EditAccountEditSettings": "ProfileSettings",
   "ResetPin": "EnterPin",
   "EditAccountResetPin": "EnterPin",
 
@@ -77,9 +77,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeManagement": "HomeManagement",
   "HomeManagementDevices": "HomeManagement",
   "HomeManagementUpdateName": "HomeManagementUpdateName",
-  "SwitchHome": "SwitchHome",
-  "ChooseJoinedHome": "SwitchHome",
-  "NoJoinedHomes": "SwitchHome:Empty",
+  "SwitchHome": "MyHomes",
+  "ChooseJoinedHome": "MyHomes",
+  "NoJoinedHomes": "MyHomes:Empty",
   "HomeSettings": "HomeSettings",
   "PrivacySettings": "PrivacySettings",
   "SwitchEnvironment": "SwitchEnvironment",
@@ -264,6 +264,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeleteAccountCode": "PairV2:Login:Verification:DeleteAccount", // Making Android match iOS, which reuses the enter code screen for delete account
 }
 
+const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
