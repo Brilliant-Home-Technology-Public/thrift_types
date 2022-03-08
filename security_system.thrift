@@ -13,6 +13,7 @@ enum SystemMode {
   FIRE_ALARM = 8
   CARBON_MONOXIDE_ALARM = 9
   MEDICAL_ALARM = 10
+  INTRUSION_ALARM = 11
 }
 
 struct SystemCapabilities {
