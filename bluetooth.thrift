@@ -30,6 +30,7 @@ const byte UNICAST_FORWARDING_GESTURES_ONOFF = 0x01
 const byte UNICAST_FORWARDING_GESTURES_DIMMABLE = 0x02
 const i32 SWITCH_CONFIG_SERVER_PUBLISH_CONFIG_FLASH_HANDLE_PREFIX = 0x7100
 const i16 FLASH_HANDLE_UNSET = 0x0000
+const i32 BROADCAST_UNICAST_ADDRESS = 65535
 
 // The advertisement priority enum is used by the adapter client for ordering advertisments
 // that are enqueued for broadcasting. The underlying mechanism used is a PriorityQueue and
