@@ -676,6 +676,7 @@ struct MobileControlConfigurationEvent {
   18: bool has_multiway_all_brilliant
   // Number of devices controlling the load with the most controlling devices.
   19: i32 max_number_of_devices_for_load
+  20: string gangbox_revision
 }
 
 struct MobileCustomURLLaunchEvent {

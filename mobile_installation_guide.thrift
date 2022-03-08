@@ -131,6 +131,7 @@ enum GuideFieldType {
   SCREEN_CONFIGURATION = 15 // Used by custom screens to pass values
   KEY_VALUE_LIST = 16 // Displays a key and value list from GuideOptions
   STEP_INSTRUCTION = 17 // Displays a field that has a step number and maybe a key/value listing
+  LARGE_VERTICAL_OPTION_QUESTION = 18 // Displays a field with large image cells for users to answer a question
 }
 
 struct GuideOption {
@@ -314,6 +315,7 @@ const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID_PREFIX = "field_forwa
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_LOAD_INDEX_PREFIX = "field_forwarding_device_setup_load_index_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_ID_PREFIX = "field_forwarding_device_id_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_PERIPHERAL_ID_PREFIX = "field_fowarding_peripheral_id_"
+const string MOBILE_GUIDE_FIELD_GANGBOX_VERSION = "field_gangbox_version"
 const string MOBILE_GUIDE_FIELD_HAD_CONFIGURATION_ERROR_PREFIX = "field_had_configuration_error_"
 const string MOBILE_GUIDE_FIELD_HAD_VENDOR_MESSAGE_ERROR = "field_had_vendor_message_error"
 const string MOBILE_GUIDE_FIELD_HAS_G1_AND_G3_NEUTRAL_BUNDLES = "field_has_g1_andg3_neutral_bundles"
@@ -361,6 +363,7 @@ const string MOBILE_GUIDE_FIELD_STATIC_AUTH_DATA_HEX = "field_static_auth"
 const string MOBILE_GUIDE_FIELD_SWITCH_FIRMWARE_VERSION = "field_switch_firmware_version"
 const string MOBILE_GUIDE_FIELD_SWITCH_LIGHT_CHECK = "field_switch_light_check"
 const string MOBILE_GUIDE_FIELD_SWITCHES_COUNT_PREFIX = "field_switches_count_"
+const string MOBILE_GUIDE_FIELD_UART_REVISION = "uart_revision"
 const string MOBILE_GUIDE_FIELD_UNIDENTIFIED_FOURWAYS_PREFIX = "field_unidentified_fourways_"
 const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE_PREFIX = "field_user_identified_as_line_"
 const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing_configuration"
@@ -409,6 +412,7 @@ const string MOBILE_GUIDE_SCREEN_FEEDBACK_FORM = "screen_feedback_form"
 const string MOBILE_GUIDE_SCREEN_FOURWAY_CHECK_PREFIX = "screen_multiway_4way_check_"
 const string MOBILE_GUIDE_SCREEN_FREE_PAIRING_SCAN = "screen_free_pairing_scan"
 const string MOBILE_GUIDE_SCREEN_GANGBOX_MISSING = "screen_gangbox_missing"
+const string MOBILE_GUIDE_SCREEN_GANGBOX_VERSION = "screen_gangbox_version"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PARTIAL_SUCCESS = "screen_installation_partial_success"
