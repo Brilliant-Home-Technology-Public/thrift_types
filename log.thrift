@@ -454,6 +454,10 @@ const string UI_BUTTON_NAME_LEARN_MORE = "learn_more"
 const string UI_BUTTON_NAME_SKIP_ACTION = "skip_action"
 const string UI_BUTTON_NAME_FORGOT_PASSCODE = "forgot_passcode"
 const string UI_BUTTON_NAME_RESEND_CODE = "resend_code"
+const string UI_BUTTON_NAME_PREVIEW_RECENT = "preview:recent"
+const string UI_BUTTON_NAME_PREVIEW_PRESET = "preview:preset"
+const string UI_BUTTON_NAME_APPLY_RECENT = "apply:recent"
+const string UI_BUTTON_NAME_APPLY_PRESET = "apply:preset"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
