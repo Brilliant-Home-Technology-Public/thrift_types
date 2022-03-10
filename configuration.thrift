@@ -232,6 +232,13 @@ enum TimeOffset {
 
 const string LIGHT_MOTION_CONFIG_VARIABLE_PREFIX = "light_config:"
 
+const list<i32> MOTION_TIMEOUT_SEC = [
+  60,
+  300,
+  600,
+  1800,
+]
+
 struct LightMotionConfig {
   1: string device_id
   2: string peripheral_id
