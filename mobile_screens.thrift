@@ -44,6 +44,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WidgetPreferences": "WidgetPreferences",
   "MotionSettings": "MotionSettings",
   "MotionSensitivity": "MotionSensitivity",
+  "MotionHours": "MotionHours",
   "DeviceSelection": "DeviceSelection",
   "UpdateTimeZone": "TimeZone:Select",  // iOS
   "UpdateZipCode": "HomeLocation",  // iOS  
