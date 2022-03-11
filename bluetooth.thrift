@@ -252,6 +252,9 @@ enum SwitchOpCode {
   GESTURE_DETECTED          = 0x04,
   SET_PUBLISH_CONFIG        = 0x05,
   GET_PUBLISH_CONFIG        = 0x06,
+  COMPACT_GET_PROPERTIES    = 0x11,
+  COMPACT_SET_PROPERTIES    = 0x12,
+  COMPACT_PROPERTIES_STATUS = 0x13,
 }
 
 enum SwitchGesture {
