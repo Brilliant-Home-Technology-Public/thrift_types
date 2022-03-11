@@ -20,6 +20,7 @@ struct SwitchConfigurationPeripheralInterface {
   10: bluetooth.SwitchCapTouchSliderTuningParamsHwRev3 captouch_sld00_tuning_param
   11: string peripheral_info_id
   12: optional i64 last_firmware_updated_timestamp
+  13: bool compact_comm_protocol_for_publishing_variable_enabled
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
