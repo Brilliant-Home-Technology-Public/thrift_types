@@ -142,8 +142,8 @@ const Color SKY_BLUE = {
 const Color BLUE = {
   "name": "Blue",
   "temp": 153,
-  "hue": 47104,
-  "sat": 189,
+  "hue": 41870,
+  "sat": 254,
   "rgb": {"r": 0, "g": 39, "b": 245}
 }
 
