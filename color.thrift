@@ -115,8 +115,8 @@ const Color GREEN = {
   "rgb": {"r": 117, "g": 249, "b": 76}
 }
 
-const Color TURQOISE = {
-  "name": "Turqoise",
+const Color TURQUOISE = {
+  "name": "Turquoise",
   "temp": 153,
   "hue": 37464,
   "sat": 244,
