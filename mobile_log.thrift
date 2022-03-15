@@ -1078,7 +1078,6 @@ struct MobileLiveviewSessionFeedbackEvent {
   10: string screen_name
   11: string app_class
   12: i32 session_count
-  13: string integration_name
 }
 
 struct MobileLiveviewSessionReportEvent {
@@ -1108,7 +1107,6 @@ struct MobileLiveviewSessionReportEvent {
   24: i64 connected_ts
   25: string peer_device_id
   26: string remote_audio_params
-  27: string integration_name
 }
 
 struct MobileLiveviewUsageReportEvent {
@@ -1122,7 +1120,6 @@ struct MobileLiveviewUsageReportEvent {
   8: bool sound_toggled
   9: string session_id
   10: string app_class
-  11: string integration_name
 }
 
 struct MobileMeshNetworkEvent {
@@ -1159,7 +1156,6 @@ struct MobileLiveviewSupportEvent {
   8: string h264_decoders
   9: string h264_hw_decoders
   10: bool supported
-  11: string integration_name
 }
 
 struct MobileHomePasscodeAttemptEvent {
