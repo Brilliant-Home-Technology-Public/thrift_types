@@ -212,6 +212,7 @@ const string MOBILE_BUTTON_NAME_RESET_DEVICE = "reset_device"
 const string MOBILE_BUTTON_NAME_RETRY = "retry"
 const string MOBILE_BUTTON_NAME_REMOVE_BRILLIANT_CONTROL_DEVICE = "remove_brilliant_control"
 const string MOBILE_BUTTON_NAME_REMOVE_BRILLIANT_MESH_DEVICE = "remove_brilliant_mesh_device"
+const string MOBILE_BUTTON_NAME_REMOVE_DEVICE = "remove_device"
 const string MOBILE_BUTTON_NAME_REMOVE_MOBILE = "remove_mobile"
 const string MOBILE_BUTTON_NAME_REMOVE_THIRDPARTY_DEVICE = "remove_thirdparty_device"
 const string MOBILE_BUTTON_NAME_REPORT_ISSUE = "report_issue"
@@ -239,6 +240,8 @@ const string MOBILE_BUTTON_NAME_SEARCH_AGAIN = "search_again"
 const string MOBILE_BUTTON_NAME_SELECT_ANOTHER_DEVICE = "select_another_device"
 const string MOBILE_BUTTON_NAME_SELECT_PLUG = "select_plug"
 const string MOBILE_BUTTON_NAME_SELECT_SWITCH = "select_switch"
+const string MOBILE_BUTTON_NAME_SET_MOTION_RULES = "set_motion_rules"
+const string MOBILE_BUTTON_NAME_SET_MOTION_SENSITIVITY = "set_motion_sensitivity"
 const string MOBILE_BUTTON_NAME_SET_TIME = "set_time"
 const string MOBILE_BUTTON_NAME_SET_UP = "set_up"
 const string MOBILE_BUTTON_NAME_SET_UP_CONTROL = "set_up_control"
@@ -254,6 +257,7 @@ const string MOBILE_BUTTON_NAME_STOP_SCENE = "stop_scene"
 const string MOBILE_BUTTON_NAME_SUNRISE = "sunrise"
 const string MOBILE_BUTTON_NAME_SUNSET = "sunset"
 const string MOBILE_BUTTON_NAME_SWITCH_HOME = "switch_home"
+const string MOBILE_BUTTON_NAME_TIMEOUT_SELECT = "timeout_select"
 const string MOBILE_BUTTON_NAME_TOGGLE = "toggle"
 const string MOBILE_BUTTON_NAME_TROUBLESHOOT = "troubleshoot"
 const string MOBILE_BUTTON_NAME_TRY_AGAIN = "try_again"
@@ -287,7 +291,9 @@ const string MOBILE_NAME_MODIFIER_CONTROL = "Control"
 const string MOBILE_NAME_MODIFIER_CREATE_NEW_PIN = "CreateNewPin"
 const string MOBILE_NAME_MODIFIER_DELETE_ACCOUNT = "DeleteAccount"
 const string MOBILE_NAME_MODIFIER_DELETE_HOME = "DeleteHome"
+const string MOBILE_NAME_MODIFIER_DEVICES = "Devices"
 const string MOBILE_NAME_MODIFIER_DISABLED = "Disabled"
+const string MOBILE_NAME_MODIFIER_DISPLAY = "Display"
 const string MOBILE_NAME_MODIFIER_EMPTY_HOME = "EmptyHome"
 const string MOBILE_NAME_MODIFIER_ENTER_CURRENT_PIN = "EnterCurrentPin"
 const string MOBILE_NAME_MODIFIER_ERROR = "Error"
@@ -524,6 +530,7 @@ enum MobileSettingsDetail {
   GESTURE_SETTINGS = 4
   AUDIO_SETTINGS = 5
   DISPLAY_SETTINGS = 6
+  MOTION_SETTINGS = 7
 }
 
 enum MobileToggleType {
@@ -592,6 +599,9 @@ enum MobileSettingsToggleType {
   WEATHER = 8
   THERMOSTAT = 9
   MICROPHONE_STATUS = 10
+  ACTIVATE_WITH_MOTION = 11
+  DEACTIVATE_AFTER_NO_MOTION = 12
+  MOTION_DEACTIVATE_TIME = 13
 }
 
 enum MobileSettingsLevelType {
