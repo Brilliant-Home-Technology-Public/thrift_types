@@ -458,6 +458,7 @@ const string UI_BUTTON_NAME_PREVIEW_RECENT = "preview:recent"
 const string UI_BUTTON_NAME_PREVIEW_PRESET = "preview:preset"
 const string UI_BUTTON_NAME_APPLY_RECENT = "apply:recent"
 const string UI_BUTTON_NAME_APPLY_PRESET = "apply:preset"
+const string UI_BUTTON_NAME_BYPASS = "bypass"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
