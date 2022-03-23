@@ -278,6 +278,7 @@ const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED_MULTIPLE = "AttentionNeeded:Mu
 const string MOBILE_OVERLAY_NAME_AUTHORIZATION_EXPIRED = "AuthorizationExpired"
 const string MOBILE_OVERLAY_NAME_BLUETOOTH_GENERIC_ERROR = "BluetoothGenericErrorOverlay"
 const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarning"
+const string MOBILE_OVERLAY_NAME_BYPASS_SENSOR = "BypassSensor"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CHANGE_MESH_OWNER = "ChangeMeshOwner"
 const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_ERROR = "CircuitLoadIdentification:WiringError"
