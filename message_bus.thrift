@@ -92,6 +92,8 @@ const string SALTO_KS_IDENTIFIER = "salto_ks"
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration"
 const string HONEYWELL_TC2_IDENTIFIER = "honeywell_tc2"
 const string HONEYWELL_TC2_CONFIG_IDENTIFIER = "honeywell_tc2_configuration"
+const string REMOTE_LOCK_IDENTIFIER = "remote_lock"
+const string REMOTE_LOCK_CONFIG_IDENTIFIER = "remote_lock_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
