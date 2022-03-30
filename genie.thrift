@@ -47,6 +47,7 @@ const map<i32, string> DOOR_FAULT_ENUM_TO_STRING = {
      1: DOOR_FAULT_UL_LOCKOUT,
      2: DOOR_FAULT_MOVE_ABORT,
      3: DOOR_FAULT_UNKNOWN,
+     4: DOOR_FAULT_UNKNOWN,
 }
 
 const string DEVICE_STATUS_OFFLINE = "offline"
