@@ -163,6 +163,7 @@ const string MOBILE_BUTTON_NAME_HOME_SETTINGS = "home_settings"
 const string MOBILE_BUTTON_NAME_INSTALL = "install"
 const string MOBILE_BUTTON_NAME_INSTALL_BRILLIANT = "install_brilliant"
 const string MOBILE_BUTTON_NAME_JOIN_ANOTHER_HOME = "join_another_home"
+const string MOBILE_BUTTON_NAME_LANDSCAPE = "landscape"
 const string MOBILE_BUTTON_NAME_LEARN_MORE = "learn_more"
 const string MOBILE_BUTTON_NAME_LED_PREFERENCES = "led_preferences"
 const string MOBILE_BUTTON_NAME_LIGHT_NOT_DIMMABLE = "light_not_dimmable"
@@ -198,6 +199,7 @@ const string MOBILE_BUTTON_NAME_OTHER_RECOMMENDATIONS_DIMMING = "other_recommend
 const string MOBILE_BUTTON_NAME_PHOTO_LIBRARY_HELP = "photo_library_help"
 const string MOBILE_BUTTON_NAME_PLAY_LINE_IN = "line_in_play"
 const string MOBILE_BUTTON_NAME_PLAY_LINE_IN_TV = "line_in_tv_play"
+const string MOBILE_BUTTON_NAME_PORTRAIT = "portrait"
 const string MOBILE_BUTTON_NAME_POWER_CYCLE = "power_cycle"
 const string MOBILE_BUTTON_NAME_PRIVACY_POLICY = "privacy_policy"
 const string MOBILE_BUTTON_NAME_PROCEED = "proceed"
@@ -1134,6 +1136,8 @@ struct MobileLiveviewUsageReportEvent {
   9: string session_id
   10: string app_class
   11: string integration_name
+  12: bool landscape_used // Set if landscape viewing is used at all
+  13: bool rotation_sensor_used // Only set when rotation sensor CHANGES orientation.
 }
 
 struct MobileMeshNetworkEvent {
