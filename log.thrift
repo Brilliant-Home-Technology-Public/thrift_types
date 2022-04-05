@@ -160,6 +160,7 @@ const string EMBEDDED_SWITCH_MOTION_LARGE_HOME_TABLE_NAME = "switch_motion_large
 const string EMBEDDED_LOAD_COMPATIBILITY_ERROR = "embedded_load_compatibility_error"
 const string EMBEDDED_WIFI_NETWORK_CHANGE = "wifi_network_change"
 const string EMBEDDED_SCENE_STRUCTURE_UPDATE_TABLE_NAME = "scene_structure_update"
+const string EMBEDDED_SWITCH_LOAD_TYPE_UPDATE_ERROR = "switch_load_type_update_error"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
