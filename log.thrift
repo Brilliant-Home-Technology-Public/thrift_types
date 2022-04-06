@@ -161,6 +161,7 @@ const string EMBEDDED_LOAD_COMPATIBILITY_ERROR = "embedded_load_compatibility_er
 const string EMBEDDED_WIFI_NETWORK_CHANGE = "wifi_network_change"
 const string EMBEDDED_SCENE_STRUCTURE_UPDATE_TABLE_NAME = "scene_structure_update"
 const string EMBEDDED_SWITCH_LOAD_TYPE_UPDATE_ERROR = "switch_load_type_update_error"
+const string EMBEDDED_SWITCH_COMPACT_COMM_PROTOCOL_SYNC_FAILURE = "switch_compact_comm_protocol_sync_failure"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
