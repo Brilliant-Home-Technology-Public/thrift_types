@@ -462,6 +462,7 @@ enum MobileEventDeviceType {
   MOBILE = 12
   CAMERA = 13
   SECURITY_SYSTEM = 14
+  MOTION_CONTROL = 15
 }
 
 enum MobileEventSource {
