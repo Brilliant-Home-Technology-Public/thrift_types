@@ -722,6 +722,7 @@ struct MobileDeviceLevelEvent {
   11: string user_id
   12: string app_class
   13: string integration_name
+  14: bool common_area
 }
 
 struct MobileDeviceSelectEvent {
@@ -754,6 +755,7 @@ struct MobileDeviceToggleEvent {
   12: string user_id
   13: string app_class
   14: string integration_name
+  15: bool common_area
 }
 
 struct MobileErrorEvent {
@@ -929,6 +931,7 @@ struct MobileDeviceNotificationButtonTappedEvent {
   11: MobileEventDeviceType device_type
   12: string integration_name
   13: cross_platform_log.PhysicalDeviceModel physical_device_model
+  14: bool common_area
 }
 
 struct MobileOverlayViewEvent {
@@ -958,6 +961,7 @@ struct MobileDeviceNotificationViewEvent {
   11: MobileEventDeviceType device_type
   12: string integration_name
   13: cross_platform_log.PhysicalDeviceModel physical_device_model
+  14: bool common_area
 }
 
 struct MobilePhotosActionEvent {
@@ -1012,6 +1016,7 @@ struct MobileDeviceSettingsScreenViewEvent {
   11: string integration_name
   12: cross_platform_log.PhysicalDeviceModel physical_device_model
   13: MobileSettingsDetail settings_detail
+  14: bool common_area
 }
 
 struct MobileDeviceSettingsButtonTappedEvent {
@@ -1028,6 +1033,7 @@ struct MobileDeviceSettingsButtonTappedEvent {
   11: cross_platform_log.PhysicalDeviceModel physical_device_model
   12: MobileSettingsDetail settings_detail
   13: string button_name
+  14: bool common_area
 }
 
 struct MobileSectionExpansionToggleEvent {
@@ -1247,6 +1253,7 @@ struct MobileThirdPartyDeviceAddedEvent {
   8: string app_class
   9: string integration_name
   10: string flow_type
+  11: bool common_area
 }
 
 struct MobileThirdPartyScreenViewEvent {
@@ -1273,6 +1280,7 @@ struct MobileThirdPartyButtonTappedEvent {
   8: string user_id
   9: string app_class
   10: string integration_name
+  11: bool common_area
 }
 
 struct MobileThirdPartyOverlayViewEvent {
@@ -1287,6 +1295,7 @@ struct MobileThirdPartyOverlayViewEvent {
   9: string app_class
   10: string integration_name
   11: MobileNotificationType overlay_type
+  12: bool common_area
 }
 
 struct MobileThirdPartyOverlayButtonTappedEvent {
@@ -1302,6 +1311,7 @@ struct MobileThirdPartyOverlayButtonTappedEvent {
   10: string app_class
   11: string integration_name
   12: MobileNotificationType overlay_type
+  13: bool common_area
 }
 
 struct MobileThirdPartyRequestEvent {
@@ -1330,6 +1340,7 @@ struct MobileSecuritySystemAdjustmentAttemptEvent {
   10: string integration_name
   11: bool pin_required
   12: string previous_state
+  13: bool common_area
 }
 
 struct MobileVerificationCodeAttemptEvent {
