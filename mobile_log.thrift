@@ -351,6 +351,7 @@ const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 // All integration names aside from brilliant are simply the virtual device id constants
 const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
 const string MOBILE_INTEGRATION_NAME_AGGREGATE = "aggregate"
+const string MOBILE_INTEGRATION_NAME_PROPERTY_ACCESS = "property_access"
 // END MOBILE INTEGRATION NAME CONSTANTS
 
 const i16 MOBILE_INVALID_OWNER_RSSI = -128
