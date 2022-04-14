@@ -17,6 +17,7 @@ enum SystemMode {
   ARMED_AWAY_BYPASS = 12
   ARMED_HOME_BYPASS = 13
   POLICE_ALARM = 14
+  DISARMED_BYPASS = 15
 }
 
 struct SystemCapabilities {
