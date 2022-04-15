@@ -17,6 +17,7 @@ struct MeshConfigurationPeripheralInterface {
   8: optional bluetooth.TrackedReleaseStages tracked_release_stages
   9: optional bool allow_background_dfu
   10: optional bool enable_dfu_relay_prepare
+  11: optional bluetooth.BleMeshPollingParams ble_mesh_device_polling_params
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
