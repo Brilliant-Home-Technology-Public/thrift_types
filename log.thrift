@@ -451,6 +451,7 @@ const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_HOME = "armed_state_widget:ar
 const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_AWAY = "armed_state_widget:arm_away"
 const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_HOME_BYPASS = "armed_state_widget:arm_home_bypass"
 const string UI_BUTTON_NAME_ARMED_STATE_WIDGET_ARM_AWAY_BYPASS = "armed_state_widget:arm_away_bypass"
+const string UI_BUTTON_NAME_DISARMED_STATE_WIDGET_DISARMED_BYPASS = "disarmed_state_widget:disarmed_bypass”
 const string UI_BUTTON_NAME_RESTART = "restart"
 const string UI_BUTTON_NAME_SHUTDOWN = "shutdown"
 const string UI_BUTTON_NAME_CANCEL = "cancel"
