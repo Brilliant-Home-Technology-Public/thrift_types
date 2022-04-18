@@ -27,6 +27,24 @@ struct SessionDescription {
 }
 
 
+struct SkybellMediaStreamingConfiguration {
+    1: string host
+    2: i32 port
+    3: string key
+    4: string ssrc
+    5: optional i32 channels
+    6: optional i32 sample_rate
+    7: optional i32 payload_type
+}
+
+
+struct SkybellStreamingConfiguration {
+    1: SkybellMediaStreamingConfiguration incoming_audio_configuration
+    2: SkybellMediaStreamingConfiguration incoming_video_configuration
+    3: SkybellMediaStreamingConfiguration outgoing_audio_configuration
+}
+
+
 struct RemoteMediaSession {
     // A unique identifier for this particular session.
     1: string session_id
@@ -40,6 +58,7 @@ struct RemoteMediaSession {
     // The ICE candidates retrieved by this device, sent to the peer for processing.
     5: optional list<IceCandidate> ice_candidates
     6: optional string rtsp_url
+    7: optional SkybellStreamingConfiguration skybell_streaming_configuration
 }
 
 
@@ -52,6 +71,7 @@ enum RemoteStreamingProtocol {
     UNKNOWN = 0
     WEBRTC = 1
     RTSP = 2
+    SKYBELL = 3
 }
 
 
