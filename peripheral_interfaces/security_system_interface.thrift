@@ -11,7 +11,7 @@ struct SecuritySystemPeripheralInterface {
   2: configuration.RoomAssignment room_assignment
   3: security_system.SystemMode current_system_mode
   4: security_system.SystemCapabilities system_capabilities
-  5: security_system.SecuritySensors security_sensors
+  5: optional security_system.Sensors security_sensors
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {

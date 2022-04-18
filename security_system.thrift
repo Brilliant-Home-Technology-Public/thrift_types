@@ -20,7 +20,7 @@ enum SystemMode {
   DISARMED_BYPASS = 15
 }
 
-enum ZoneStatus {
+enum SensorStatus {
   NORMAL = 1
   BYPASSED = 2
   FAULT = 3
@@ -36,12 +36,12 @@ struct SystemCapabilities {
   1: list<SystemMode> supported_system_modes
 }
 
-struct SecuritySensor {
+struct Sensor {
   1: string name
   2: string id
-  3: list<ZoneStatus> status
+  3: list<SensorStatus> status
 }
 
-struct SecuritySensors {
-  1: list<SecuritySensor> security_sensors
+struct Sensors {
+  1: list<Sensor> sensors
 }
