@@ -70,6 +70,7 @@ enum RemoteStreamingAudioCodec {
     PCMU = 1,
     AAC = 2,
     OPUS = 3,
+    S16LE = 4,
 }
 
 
