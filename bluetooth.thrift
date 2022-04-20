@@ -149,6 +149,16 @@ struct MeshDeviceConfig {
   7: string relay_device_id	// The device from which we can reach the mesh device
 }
 
+struct BleMeshPollingParams {
+  1: i32 var_poll_interval_sec_if_unset
+  2: i32 failed_polls_threshold
+}
+
+const BleMeshPollingParams DEFAULT_BLE_MESH_POLLING_PARAMS = {
+  "var_poll_interval_sec_if_unset": 30,
+  "failed_polls_threshold": 5,
+}
+
 struct ReplayProtection {
   1: map<i32, i64> unicast_address_to_seqauth_map
 }
