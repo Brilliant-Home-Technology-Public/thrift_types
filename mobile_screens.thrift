@@ -262,6 +262,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ThirdPartyAuthProgress": "ThirdParty:AccountLinkingProgress",
   "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess",
   "ThirdPartySettings": "ThirdParty:Settings",
+  "ThirdPartyInstructions": "ThirdParty:Instructions",
+  "NestStructures": "GoogleNestHomes",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
