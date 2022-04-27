@@ -20,6 +20,7 @@ const string REMOTE_BRIDGE_HOME_ID_TXT_RECORD_KEY = "home_id"
 const string REMOTE_BRIDGE_MDNS_SERVICE_TYPE = "_brilliant._tcp.local."
 const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 const string SOMFY_MDNS_SERVICE_TYPE = "_kizbox._tcp.local."
+const string HUNTER_DOUGLAS_MDNS_SERVICE_TYPE = "_PowerView-G3._tcp.local."
 
 // Attribute name for unique ID a Hue bridge returns for SSDP discovery
 const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
@@ -60,6 +61,7 @@ enum ThirdpartyDeviceType {
   BOSE_ST = 5,
   LIFX = 6,
   SOMFY = 7,
+  HUNTER_DOUGLAS = 8,
 }
 
 enum DiscoveryType {
