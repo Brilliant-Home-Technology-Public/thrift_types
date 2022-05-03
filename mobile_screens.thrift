@@ -266,6 +266,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ThirdPartySettings": "ThirdParty:Settings",
   "ThirdPartyInstructions": "ThirdParty:Instructions",
   "NestStructures": "GoogleNestHomes",
+  "WidgetControlSelection": "ArmStateWidgetVisibility",
+  "WidgetPriority": "WidgetPriority",
+  "WidgetConfigSuccess": "WidgetSummary",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
@@ -432,11 +435,13 @@ const string MOBILE_OVERLAY_NAME_SWITCH_NEXT_STEPS = "SwitchNextSteps"
 const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
 const string MOBILE_OVERLAY_NAME_SWITCH_SCAN_CONTROL_INSTALL = "SwitchScanControlInstall"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_DEVICE_REQUEST = "ThirdParty:Request"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_ERROR = "ThirdParty:Error"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_NOT_AUTHORIZED = "ThirdParty:NotAuthorized"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION = "ThirdParty:ResetIntegration"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION_FAILURE = "ThirdParty:ResetIntegration:Failure"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_RESET_INTEGRATION_SUCCESS = "ThirdParty:ResetIntegration:Success"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_SECONDARY_USER = "ThirdParty:SecondaryUser"
+const string MOBILE_OVERLAY_NAME_THIRD_PARTY_SECURITY_UNSUPPORTED = "ThirdParty:SecurityUnsupported"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_URL_ERROR = "ThirdParty:UrlError"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_WORKS_WITH_OPTIONS = "ThirdParty:WorksWithOptions"
 const string MOBILE_OVERLAY_NAME_TIMEOUT_SELECTION = "TimeoutSelection"
