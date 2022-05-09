@@ -30,7 +30,7 @@ struct SessionDescription {
 struct SkybellMediaStreamingConfiguration {
     1: string host
     2: i32 port
-    3: string key
+    3: binary key
     4: string ssrc
     5: optional i32 channels
     6: optional i32 sample_rate
