@@ -366,6 +366,7 @@ enum MobileUserType {
 enum MobileAddDeviceFlowType {
   WORKS_WITH = 1
   DEVICE_LIST = 2
+  POST_INSTALL = 3
 }
 
 enum MobileBLEDeviceType {
