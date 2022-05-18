@@ -44,7 +44,6 @@ const string MOBILE_INSTALLATION_GROUP_FEEDBACK_EVENT_TABLE_NAME = "mobile_insta
 const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
-const string MOBILE_LIVEVIEW_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_liveview_session_report"
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
 const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
 const string MOBILE_MESH_NETWORK_EVENT_TABLE_NAME = "mobile_mesh_network_event"
@@ -53,6 +52,7 @@ const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_but
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
 const string MOBILE_PROVISIONING_CANCEL_EVENT_TABLE_NAME = "mobile_provisioning_cancel"
+const string MOBILE_RTSP_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_rtsp_session_report"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
@@ -68,6 +68,7 @@ const string MOBILE_THIRDPARTY_REQUEST_EVENT_TABLE_NAME = "mobile_thirdparty_req
 const string MOBILE_THIRDPARTY_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_thirdparty_screen_view"
 const string MOBILE_UNLOCK_ATTEMPT_EVENT_TABLE_NAME = "mobile_unlock_attempt"
 const string MOBILE_VERIFICATION_CODE_ATTEMPT_EVENT_TABLE_NAME = "mobile_verification_code_attempt"
+const string MOBILE_WEBRTC_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_webrtc_session_report" // 22-05-18 Previously named "mobile_liveview_session_report"
 
 // END MOBILE LOG TABLE NAMES
 
@@ -355,6 +356,12 @@ const string MOBILE_INTEGRATION_NAME_AGGREGATE = "aggregate"
 const string MOBILE_INTEGRATION_NAME_PROPERTY_ACCESS = "property_access"
 // END MOBILE INTEGRATION NAME CONSTANTS
 
+// BEGIN MOBILE LIVEVIEW PROTOCOL NAMES
+const string MOBILE_LIVEVIEW_PROTOCOL_NAME_RTSP = "rtsp"
+const string MOBILE_LIVEVIEW_PROTOCOL_NAME_UNKNOWN = "unknown"
+const string MOBILE_LIVEVIEW_PROTOCOL_NAME_WEBRTC = "webrtc"
+// END MOBILE LIVEVIEW PROTOCOL NAMES
+
 const i16 MOBILE_INVALID_OWNER_RSSI = -128
 
 enum MobileUserType {
@@ -573,7 +580,7 @@ enum MobileUnlockType {
   BIOMETRICS = 2
 }
 
-enum LiveViewConnectionState {
+enum WebRTCConnectionState {
   NEW = 1
   ICE_GATHERING_START = 2
   ICE_GATHERING_END = 3
@@ -584,6 +591,13 @@ enum LiveViewConnectionState {
   UPDATING_PEER_CONNECTION = 8
   CONNECTED = 9
   PEER_REMOVED_SESSION = 10
+}
+
+enum RTSPConnectionState {
+  NEW = 1
+  PEER_ADDED_SESSION = 2 // For RTSP this means we have an RTSP Url to connect to
+  CONNECTED = 3 // For RTSP, Connected only recorded once GStreamer reports it is PLAYING url
+  PEER_REMOVED_SESSION = 4
 }
 
 enum InstallNameStatus {
@@ -1105,9 +1119,11 @@ struct MobileLiveviewSessionFeedbackEvent {
   11: string app_class
   12: i32 session_count
   13: string integration_name
+  14: string protocol_name
 }
 
-struct MobileLiveviewSessionReportEvent {
+// 22-05-18 Log previously named MobileLiveviewSessionReportEvent
+struct MobileWebRTCSessionReportEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1137,6 +1153,25 @@ struct MobileLiveviewSessionReportEvent {
   27: string integration_name
 }
 
+struct MobileRTSPSessionReportEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string network_type
+  8: string session_id
+  9: string farthest_state
+  10: string termination_reason
+  11: i64 session_time_elapsed_seconds
+  12: bool local_connection
+  13: i64 connection_time_elapsed_seconds
+  14: string app_class
+  15: string peer_device_id
+  16: string integration_name
+}
+
 struct MobileLiveviewUsageReportEvent {
   1: string table_name
   2: i64 ts
@@ -1151,6 +1186,7 @@ struct MobileLiveviewUsageReportEvent {
   11: string integration_name
   12: bool landscape_used // Set if landscape viewing is used at all
   13: bool rotation_sensor_used // Only set when rotation sensor CHANGES orientation.
+  14: string protocol_name
 }
 
 struct MobileMeshNetworkEvent {
