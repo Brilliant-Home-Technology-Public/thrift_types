@@ -595,9 +595,10 @@ enum WebRTCConnectionState {
 
 enum RTSPConnectionState {
   NEW = 1
-  PEER_ADDED_SESSION = 2 // For RTSP this means we have an RTSP Url to connect to
-  CONNECTED = 3 // For RTSP, Connected only recorded once GStreamer reports it is PLAYING url
-  PEER_REMOVED_SESSION = 4
+  PEER_ADDED_SESSION = 2
+  CONNECTED = 3 // For RTSP, this means we have an RTSP Url to connect to
+  PLAYING = 4 // Fort RTSP, Playing is recorded once GStreamer reports it is PLAYING url
+  PEER_REMOVED_SESSION = 5
 }
 
 enum InstallNameStatus {
