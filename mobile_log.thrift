@@ -1171,6 +1171,7 @@ struct MobileRTSPSessionReportEvent {
   14: string app_class
   15: string peer_device_id
   16: string integration_name
+  17: i64 playing_time_elapsed_seconds
 }
 
 struct MobileLiveviewUsageReportEvent {
