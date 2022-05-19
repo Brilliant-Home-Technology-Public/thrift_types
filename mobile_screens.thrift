@@ -203,6 +203,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGIntegrationSetupComplete": "InstallationGuide", // Guide framework adds "IntegrationConfirm" modifer
   "IGMarkCompleteProgress": "CompleteIntegrationProgress",
   "IGMarkCompleteMatch": "MultipleDeviceTypes",
+  "IGInstallComplete": "InstallationCompleteScreen",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
@@ -278,6 +279,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
 
 const string MOBILE_OVERLAY_NAME_ABOUT = "About"
 const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
+const string MOBILE_OVERLAY_NAME_ADJUST_LED = "AdjustLED"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
@@ -327,6 +329,8 @@ const string MOBILE_OVERLAY_NAME_DISCONNECTED = "Disconnected"
 const string MOBILE_OVERLAY_NAME_DISCONNECTED_PARTIAL = "Disconnected:Partial"
 const string MOBILE_OVERLAY_NAME_EDIT_ROOMS = "EditRooms"
 const string MOBILE_OVERLAY_NAME_EMPTY_ROOM = "Rooms:Empty"
+const string MOBILE_OVERLAY_NAME_ENABLE_3P_DEVICES = "Enable3PDevices"
+const string MOBILE_OVERLAY_NAME_ENABLE_LIVE_VIEW = "EnableLiveView"
 const string MOBILE_OVERLAY_NAME_ENTER_ZIP_CODE = "EnterZipCode"
 const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
 const string MOBILE_OVERLAY_NAME_FAILED_COMPATIBILITY = "FailedCompatibility"
