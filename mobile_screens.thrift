@@ -276,6 +276,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeleteAccountCode": "PairV2:Login:Verification:DeleteAccount", // Making Android match iOS, which reuses the enter code screen for delete account
 }
 
+const string MOBILE_OVERLAY_NAME_ABOUT = "About"
 const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
@@ -350,7 +351,6 @@ const string MOBILE_OVERLAY_NAME_INSTALLATION_FEEDBACK = "InstallationFeedback"
 const string MOBILE_OVERLAY_NAME_INSTALLATION_RATING = "InstallationRating"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_LEAK_DETECTED = "AttentionNeeded:LeakDetected"
-const string MOBILE_OVERLAY_NAME_LEGAL = "Legal"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_BUSY = "LiveView:Disabled:Busy"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_OPERATOR = "LiveView:Disabled:Operator"
 const string MOBILE_OVERLAY_NAME_LIVE_VIEW_DISABLED_PHONE_UNSUPPORTED = "LiveView:Disabled:PhoneUnsupported"

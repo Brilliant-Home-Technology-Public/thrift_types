@@ -74,6 +74,7 @@ const string MOBILE_WEBRTC_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_webrtc_sess
 
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
+const string MOBILE_BUTTON_NAME_ABOUT = "about"
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
 const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
@@ -168,7 +169,6 @@ const string MOBILE_BUTTON_NAME_JOIN_ANOTHER_HOME = "join_another_home"
 const string MOBILE_BUTTON_NAME_LANDSCAPE = "landscape"
 const string MOBILE_BUTTON_NAME_LEARN_MORE = "learn_more"
 const string MOBILE_BUTTON_NAME_LED_PREFERENCES = "led_preferences"
-const string MOBILE_BUTTON_NAME_LEGAL = "legal"
 const string MOBILE_BUTTON_NAME_LIGHT_NOT_DIMMABLE = "light_not_dimmable"
 const string MOBILE_BUTTON_NAME_LINK_TO_BCC = "link_to_bcc"
 const string MOBILE_BUTTON_NAME_LIVE_CHAT = "live_chat"
