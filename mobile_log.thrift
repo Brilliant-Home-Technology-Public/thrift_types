@@ -658,7 +658,7 @@ struct MobileBLEProvisioningEvent {
   // "(SKIPPED)" indicates we did not attempt to set this property due to missing information.
   // Note this is not always an error case (e.g. not setting forwarding address for the load side switch)
   11: string configuration_state
-  12: i32 ble_firmware_version
+  12: i64 ble_firmware_version
   13: i64 time_elapsed_seconds
   14: i16 owner_rssi
   15: AddMeshResult add_mesh_result
