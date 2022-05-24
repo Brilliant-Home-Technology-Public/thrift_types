@@ -204,6 +204,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGMarkCompleteProgress": "CompleteIntegrationProgress",
   "IGMarkCompleteMatch": "MultipleDeviceTypes",
   "IGInstallComplete": "InstallationCompleteScreen",
+  "IGSkipForNowFullScreenOverlay": "IGSkipForNow",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
