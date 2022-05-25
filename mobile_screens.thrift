@@ -264,6 +264,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceDiscoverySpinner": "ThirdParty:DiscoverySpinner",
   "ThirdPartyAuthProgress": "ThirdParty:AccountLinkingProgress",
   "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess",
+  "ThirdPartyPartialSuccess": "ThirdParty:PartialSuccess",
   "ThirdPartySettings": "ThirdParty:Settings",
   "ThirdPartyInstructions": "ThirdParty:Instructions",
   "NestStructures": "GoogleNestHomes",
