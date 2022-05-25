@@ -207,6 +207,7 @@ enum GuideScreenType {
   MARK_INSTALLATION_COMPLETE_PROGRESS = 31
   MARK_INSTALLATION_COMPLETE_MATCH = 32
   INSTALLATION_HISTORY = 33
+  SKIP_FOR_NOW_LED_LEVEL = 34
 }
 
 struct GuideLoads {
@@ -369,6 +370,7 @@ const string MOBILE_GUIDE_FIELD_USER_IDENTIFIED_AS_LINE_PREFIX = "field_user_ide
 const string MOBILE_GUIDE_FIELD_USE_EXISTING_CONFIGURATION = "field_use_existing_configuration"
 const string MOBILE_GUIDE_FIELD_VERSION = "field_version"
 const string MOBILE_GUIDE_FIELD_WATTAGE_PREFIX = "field_wattage_"
+const string MOBILE_GUIDE_FIELD_WILL_ADJUST_LED = "field_will_adjust_led"
 
 const string MOBILE_GUIDE_OPTION_NOT_SURE = "not_sure"
 
@@ -448,6 +450,7 @@ const string MOBILE_GUIDE_SCREEN_RESTART_PLUG = "screen_restart_plug"
 const string MOBILE_GUIDE_SCREEN_ROOM_SELECTION = "screen_room_selection"
 const string MOBILE_GUIDE_SCREEN_SAFETY_BREAKER_CHECK = "screen_safety_breaker_check"
 const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
+const string MOBILE_GUIDE_SCREEN_SKIPFORNOW_LED_LEVEL_PREFIX = "screen_skipfornow_led_level_"
 const string MOBILE_GUIDE_SCREEN_SKIP_INSTALL = "screen_skip_install"
 const string MOBILE_GUIDE_SCREEN_SWITCH_PROVISIONING = "screen_switch_provisioning"
 const string MOBILE_GUIDE_SCREEN_SWITCH_WALLPLATE = "screen_switch_wallplate"
