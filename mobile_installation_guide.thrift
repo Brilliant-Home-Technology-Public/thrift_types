@@ -209,6 +209,7 @@ enum GuideScreenType {
   INSTALLATION_HISTORY = 33
   SKIP_FOR_NOW_LED_LEVEL = 34
   SKIP_FOR_NOW_ADD_THIRD_PARTY = 35
+  INSTALL_COMPLETE = 36
 }
 
 struct GuideLoads {
@@ -418,6 +419,7 @@ const string MOBILE_GUIDE_SCREEN_GANGBOX_MISSING = "screen_gangbox_missing"
 const string MOBILE_GUIDE_SCREEN_GANGBOX_VERSION = "screen_gangbox_version"
 const string MOBILE_GUIDE_SCREEN_HIGH_WATTAGE = "screen_high_wattage"
 const string MOBILE_GUIDE_SCREEN_INCOMPATIBLE_SWITCH = "screen_incompatible_switch"
+const string MOBILE_GUIDE_SCREEN_INSTALL_COMPLETE = "screen_install_complete"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PARTIAL_SUCCESS = "screen_installation_partial_success"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
