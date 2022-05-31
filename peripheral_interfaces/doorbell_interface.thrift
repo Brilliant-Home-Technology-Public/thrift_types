@@ -5,12 +5,14 @@ include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 include "../remote_media.thrift"
+include "../doorbell.thrift"
 
 struct DoorbellPeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
   3: remote_media.RemoteMediaSessions remote_sessions
   4: remote_media.RemoteStreamingConfiguration streaming_configuration
+  5: optional doorbell.DoorbellNotificationConfiguration notification_configuration
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
