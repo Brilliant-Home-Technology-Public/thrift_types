@@ -9,12 +9,10 @@ struct ShadePeripheralInterface {
   // Whether the shade can be set at intermediate
   // positions or must be either all up or all down
   1: bool continuous // To be deprecated by "capabilities" variable
-  2: i32 position // To be deprecated by "primary_position" variable
-
+  2: i32 position
   3: optional shade.ShadeCapabilities capabilities
-  4: optional i32 primary_position
-  5: optional i32 secondary_position
-  6: optional i32 tilt_position
+  4: optional i32 secondary_position
+  5: optional i32 tilt_position
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
