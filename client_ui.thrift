@@ -250,5 +250,5 @@ const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_PASSCODE = 
 ]
 
 const list<string> PROPERTY_MANAGED_DEVICES = [
-    message_bus.REMOTE_LOCK_IDENTIFIER,
+    message_bus.REMOTELOCK_IDENTIFIER,
 ]
