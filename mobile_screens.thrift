@@ -204,7 +204,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGMarkCompleteProgress": "CompleteIntegrationProgress",
   "IGMarkCompleteMatch": "MultipleDeviceTypes",
   "IGInstallComplete": "InstallationCompleteScreen",
-  "IGSkipForNowFullScreenOverlay": "IGSkipForNow",
+  "IGSkipForNowFullScreenOverlay": "SkipForNow",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
@@ -225,6 +225,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "InstallIntegrationSetupComplete": "InstallationGuide:IntegrationConfirm",
   "MarkInstallationCompleteProgress": "CompleteIntegrationProgress",
   "MarkInstallationCompleteMatch": "MultipleDeviceTypes",
+  "InstallComplete": "InstallationCompleteScreen",
+  "GuideSkipForNow": "SkipForNow",
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
