@@ -553,6 +553,7 @@ enum MobileSettingsDetail {
   AUDIO_SETTINGS = 5
   DISPLAY_SETTINGS = 6
   MOTION_SETTINGS = 7
+  MOTION_SENSITIVITY = 8
 }
 
 enum MobileToggleType {
