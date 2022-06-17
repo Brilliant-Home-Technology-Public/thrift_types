@@ -96,6 +96,7 @@ const string REMOTELOCK_IDENTIFIER = "remotelock"
 const string REMOTELOCK_CONFIG_IDENTIFIER = "remotelock_configuration"
 const string HUNTER_DOUGLAS_IDENTIFIER = "hunter_douglas"
 const string HUNTER_DOUGLAS_CONFIG_IDENTIFIER = "hunter_douglas_configuration"
+const string DEVICE_GROUPS_CONFIG_IDENTIFIER = "device_groups_configuration"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
@@ -272,6 +273,7 @@ enum PeripheralType {
   SECURITY_SYSTEM = 89,
   HUNTER_DOUGLAS_CONFIGURATION = 90,
   REMOTELOCK_CONFIGURATION = 91,
+  DEVICE_GROUPS_CONFIGURATION = 92,
 }
 
 enum PeripheralStatus {
