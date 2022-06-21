@@ -28,6 +28,7 @@ struct PeripheralFilter {
   3: optional map<string, string> expected_variable_states // all must match
   4: optional map<string, string> excluded_variable_states // any match is excluded
   5: optional set<message_bus.PeripheralType> peripheral_types // match any
+  6: optional set<string> group_ids // match any
 }
 
 struct SetVariablesAction {
