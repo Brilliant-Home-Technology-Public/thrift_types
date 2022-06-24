@@ -3,6 +3,7 @@ namespace java thrift_types.notification
 
 const string NOTIFICATION_VARIABLE_PREFIX = "notification:"
 const string BRILLIANT_DEVICE_NOTIFICATION_IDENTIFIER = "brilliant"
+const string PROPERTY_MANAGED_DEVICE_NOTIFICATION_IDENTIFIER = "property_managed_device"
 
 enum BrilliantNotificationType {
   UNKNOWN = 0,
