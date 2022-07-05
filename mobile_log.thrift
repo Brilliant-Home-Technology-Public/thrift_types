@@ -383,6 +383,7 @@ enum MobileAddDeviceFlowType {
   WORKS_WITH = 1
   DEVICE_LIST = 2
   POST_INSTALL = 3
+  DEEP_LINK = 4
 }
 
 enum MobileBLEDeviceType {
