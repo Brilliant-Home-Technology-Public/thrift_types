@@ -36,6 +36,13 @@ enum WeatherType {
   SNOWY = 4,
 }
 
+enum SkillAutoEnableStatus {
+  UNKNOWN = 0,
+  ALREADY_ENABLED = 1,
+  SUCCESSFULLY_LINKED = 2,
+  ERROR = 3,
+}
+
 struct AlexaIconData {
   1: string url
   2: string url_bb // url for black backgrounds
