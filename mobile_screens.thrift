@@ -274,6 +274,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WidgetControlSelection": "ArmStateWidgetVisibility",
   "WidgetPriority": "WidgetPriority",
   "WidgetConfigSuccess": "WidgetSummary",
+  "ThirdPartyLinkLanding": "ThirdParty:LinkLanding",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
