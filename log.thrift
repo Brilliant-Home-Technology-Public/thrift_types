@@ -301,6 +301,13 @@ struct GangboxLoadWarningTriggeredEvent {
   9: string screen_name
 }
 
+// BEGIN ALEXA REQUEST NAME CONSTANTS
+const string GET_ALEXA_API_ENDPOINT = "get_alexa_api_endpoint"
+const string RETRIEVE_HOME_SKILL = "retrieve_home_skill"
+const string GET_ALEXA_AUTH_CODE = "get_alexa_auth_code"
+const string ENABLE_HOME_SKILL = "enable_home_skill"
+// END ALEXA REQUEST NAME CONSTANTS
+
 // BEGIN HOMEKIT SERVICE TYPE CONSTANTS
 const string HOMEKIT_SWITCH_SERVICE_TYPE = "switch"
 const string HOMEKIT_LIGHT_SERVICE_TYPE = "light"
