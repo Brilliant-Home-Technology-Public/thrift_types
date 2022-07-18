@@ -163,6 +163,7 @@ const string EMBEDDED_SCENE_STRUCTURE_UPDATE_TABLE_NAME = "scene_structure_updat
 const string EMBEDDED_SWITCH_LOAD_TYPE_UPDATE_ERROR = "switch_load_type_update_error"
 const string EMBEDDED_SWITCH_COMPACT_COMM_PROTOCOL_SYNC_FAILURE = "switch_compact_comm_protocol_sync_failure"
 const string EMBEDDED_WAKEWORD_DETECTOR_VERSION_TABLE_NAME = "embedded_wakeword_detector_version"
+const string EMBEDDED_GROUP_UPDATE_TABLE_NAME = "group_update"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
