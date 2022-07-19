@@ -452,11 +452,14 @@ enum PinType {
   HOMEKIT = 17,
   BLANK = 18,
   SECURITY = 19,
+  ROOM = 20,
 }
 
 struct Pin {
   1: PinType type
+  // TODO: Rename id to scene_id
   2: optional string id
+  3: optional string room_id
 }
 
 struct PinnedOptionsConfig {
