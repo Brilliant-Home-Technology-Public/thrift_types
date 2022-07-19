@@ -12,6 +12,8 @@ const string NOT_APPLICABLE = "NOT_APPLICABLE" // Any string field can potential
 const string BRILLIANT_INTEGRATION_NAME = "Brilliant"
 const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
 const string SUPER_PROPERTY_NAME_USER_TYPE = "user_type"
+// UniquePeripheralID log format: "{device_id}{UNIQUE_PERIPHERAL_ID_DELIMITER}{peripheral_id}"
+const string UNIQUE_PERIPHERAL_ID_DELIMITER = "|"
 
 enum HomeType {
   UNKNOWN = 0

@@ -3,6 +3,8 @@ namespace java thrift_types.message_bus
 
 const string IDENTIFIER = "message_bus"
 
+// NOTE: Please do NOT include | in Device identifiers.
+// See cross_platform_log.UNIQUE_PERIPHERAL_ID_DELIMITER
 const string ALEXA_VOICE_IDENTIFIER = "voice_peripheral"
 const string ANALYTICS_IDENTIFIER = "analytics_peripheral"
 const string ART_CONFIG_IDENTIFIER = "art_config_peripheral"
