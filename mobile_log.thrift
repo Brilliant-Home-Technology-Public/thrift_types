@@ -56,6 +56,7 @@ const string MOBILE_RTSP_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_rtsp_session_
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
+const string MOBILE_SECURITY_DISARM_EVENT_TABLE_NAME = "mobile_security_disarm_event"
 const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobile_security_system_adjustment_attempt"
 const string MOBILE_SETTINGS_LEVEL_EVENT_TABLE_NAME = "mobile_settings_level"
 const string MOBILE_SETTINGS_TOGGLE_EVENT_TABLE_NAME = "mobile_settings_toggle"
@@ -575,6 +576,13 @@ enum MobileUnlockResult {
   FAILURE = 2
   LOCKED_OUT = 3
   CONFIRMED_NEW_PIN = 4 // Currently only logged for home passcode attempt
+}
+
+enum MobileSecurityDisarmResult {
+  SUCCESS = 1
+  PIN_FAILURE = 2 // Authorization validation failed
+  GENERIC_ERROR = 3 // Unspecified error such as network connectivity
+
 }
 
 enum MobilePasscodeContext {
@@ -1294,6 +1302,19 @@ struct MobileInstallSwitchConnectEvent {
   7: string user_id
   8: string app_class
   9: bool wallplate_attached
+}
+
+struct MobileSecurityDisarmEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: MobileSecurityDisarmResult disarm_result
+  8: string user_id
+  9: string app_class
+  10: string integration_name
 }
 
 struct MobileThirdPartyDeviceAddedEvent {
