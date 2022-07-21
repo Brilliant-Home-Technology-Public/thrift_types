@@ -16,3 +16,12 @@ enum IntercomState {
   LIVE_VIEW_TRANSMISSION = 9,
   UNAVAILABLE = 11 // temporarily disabled, likely due to not having gstreamer call permission
 }
+
+enum FlowType {
+  UNKNOWN = 0,
+  HOMEKIT_PAIRING = 1,
+}
+
+struct InitiateFlow {
+  1: FlowType flow_type
+}
