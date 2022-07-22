@@ -457,6 +457,7 @@ enum PinType {
   BLANK = 18,
   SECURITY = 19,
   ROOM = 20,
+  SINGLE_DEVICE = 21,
 }
 
 struct Pin {
@@ -464,6 +465,7 @@ struct Pin {
   // TODO: Rename id to scene_id
   2: optional string id
   3: optional string room_id
+  4: optional UniquePeripheralID unique_peripheral_id
 }
 
 struct PinnedOptionsConfig {
