@@ -592,6 +592,7 @@ enum MobilePasscodeContext {
   RESIDEO_SECURITY_ACTION = 4
   VERIFY_EMAIL = 5
   VERIFY_MULTIFACTOR_AUTHENTICATION = 6
+  SETUP_ALEXA = 7
 }
 
 enum MobileUnlockType {
