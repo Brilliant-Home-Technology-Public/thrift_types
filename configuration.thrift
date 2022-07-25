@@ -36,6 +36,10 @@ struct SetVariablesAction {
   2: PeripheralFilter peripheral_filter
 }
 
+struct ActionSet { 
+  1: list<SetVariablesAction> set_variables_actions
+}
+
 // Art Configuration
 
 const string ART_CONFIG_VARIABLE_PREFIX = "library:"
