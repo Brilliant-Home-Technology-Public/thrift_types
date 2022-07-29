@@ -99,6 +99,7 @@ const string REMOTELOCK_CONFIG_IDENTIFIER = "remotelock_configuration"
 const string HUNTER_DOUGLAS_IDENTIFIER = "hunter_douglas"
 const string HUNTER_DOUGLAS_CONFIG_IDENTIFIER = "hunter_douglas_configuration"
 const string DEVICE_GROUPS_CONFIG_IDENTIFIER = "device_groups_configuration"
+const string REQUEST_DISPATCHER_IDENTIFIER = "request_dispatcher"
 
 // Smartthings client id is a public id that all Brilliant requests use
 const string RING_CLIENT_ID = "brilliant_test"
