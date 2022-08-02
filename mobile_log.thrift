@@ -36,12 +36,10 @@ const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_ins
 const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide"
 const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_switch_connect"
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
-const string MOBILE_INSTALLATION_ENDED_EVENT_TABLE_NAME = "mobile_installation_ended"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 const string MOBILE_INSTALLATION_GROUP_DEVICE_ENDED_EVENT_TABLE_NAME = "mobile_installation_group_device_ended"
 const string MOBILE_INSTALLATION_GROUP_DEVICE_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_device_started"
 const string MOBILE_INSTALLATION_GROUP_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_group_feedback"
-const string MOBILE_INSTALLATION_STARTED_EVENT_TABLE_NAME = "mobile_installation_started"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
@@ -825,20 +823,6 @@ struct MobileInstallationConfigChangedEvent {
   11: string install_id
 }
 
-struct MobileInstallationEndedEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string screen_name
-  7: string user_id
-  8: string installation_device_type
-  9: string guide_version
-  10: string exit_section
-  11: string app_class
-}
-
 struct MobileInstallationFeedbackEvent {
   1: string table_name
   2: i64 ts
@@ -903,18 +887,6 @@ struct MobileInstallationGroupFeedbackEvent {
   6: string user_id
   7: string guide_version
   8: i32 rating
-  9: string app_class
-}
-
-struct MobileInstallationStartedEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string user_id
-  7: string installation_device_type
-  8: string guide_version
   9: string app_class
 }
 
