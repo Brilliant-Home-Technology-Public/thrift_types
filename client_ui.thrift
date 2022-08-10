@@ -252,3 +252,12 @@ const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_PASSCODE = 
 const list<string> PROPERTY_MANAGED_DEVICES = [
     message_bus.REMOTELOCK_IDENTIFIER,
 ]
+
+const configuration.PeripheralFilter ON_OFF_TOGGLE_PERIPHERAL_FILTER = {
+  "peripheral_types": [
+      message_bus.PeripheralType.OUTLET,
+      message_bus.PeripheralType.LIGHT,
+      message_bus.PeripheralType.GENERIC_ON_OFF
+  ],
+  "excluded_variable_states": {"low_wattage": "1"},
+}
