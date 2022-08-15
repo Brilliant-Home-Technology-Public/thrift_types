@@ -569,6 +569,9 @@ enum MobileToggleType {
   MY_POSITION = 5
   STOP = 6
   UP = 7
+  PRIMARY_ON = 8
+  SECONDARY_ON = 9
+  TILT = 10
 }
 
 enum MobileUnlockResult {
