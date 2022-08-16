@@ -27,6 +27,7 @@ enum BrilliantNotificationType {
   CONTROL_TRACKED_RELEASE_STAGES_DIFFER = 18,
   ALEXA_HOME_SKILL_AUTO_ENABLE = 19,
   SMARTTHINGS_API_MIGRATION = 20,
+  INTEGRATION_DEAUTHORIZED = 21,
 }
 
 enum BrilliantNotificationAction {
