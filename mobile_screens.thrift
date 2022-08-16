@@ -155,6 +155,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "SetHomePasscodeChapter": "SetHomePasscode",
   "SetHomePasscodeSuccess": "HomePasscodeSuccess",
   "MFLogin": "MFLogin",
+  "HomeSetupComplete": "HomeSetupComplete",
   // iOS
   "ChooseBuilding": "MFChooseBuilding",
   "ChooseUnit": "MFChooseUnit",
@@ -187,6 +188,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ScenesSelection": "ScenesSelection",
 
   // Installation Guide
+  "SkipInstall": "SkipInstallation",
   // iOS
   "IGHorizontal": "InstallationGuide",
   "IGVertical": "InstallationGuide",
@@ -227,6 +229,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MarkInstallationCompleteMatch": "MultipleDeviceTypes",
   "InstallComplete": "InstallationCompleteScreen",
   "GuideSkipForNow": "SkipForNow",
+  "GuideCircuitLoadIdentification": "CircuitLoadIdentification"
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
@@ -240,6 +243,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSetupForwarding": "Provisioning:ForwardingAddress",
   "DeviceSetupOwner": "Provisioning:Owner",
   "IGWarning": "Provisioning:Warning", // Use modifier to specify warning type
+  "ControlWarning": "Provisioning:Warning", // Use modifier to specify warning type
   // Android
   "SwitchProvisionProgress": "Provisioning", // Guide framework adds "SwitchProvisioning" modifier to match iOS
   "ControlProvisionProgress": "Provisioning", // Guide framework adds "ControlProvisioning" modifier to match iOS
@@ -267,6 +271,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceDiscoverySpinner": "ThirdParty:DiscoverySpinner",
   "ThirdPartyAuthProgress": "ThirdParty:AccountLinkingProgress",
   "ThirdPartyAuthSuccess": "ThirdParty:AccountLinkingSuccess",
+  "ThirdpartyAuthSuccess": "Thirdparty:AccountLinkingSuccess",
   "ThirdPartyPartialSuccess": "ThirdParty:PartialSuccess",
   "ThirdPartySettings": "ThirdParty:Settings",
   "ThirdPartyInstructions": "ThirdParty:Instructions",
