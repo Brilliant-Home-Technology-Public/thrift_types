@@ -60,6 +60,7 @@ const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobil
 const string MOBILE_SETTINGS_LEVEL_EVENT_TABLE_NAME = "mobile_settings_level"
 const string MOBILE_SETTINGS_TOGGLE_EVENT_TABLE_NAME = "mobile_settings_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
+const string MOBILE_SKYBELL_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_skybell_session_report"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
 const string MOBILE_THIRDPARTY_DEVICE_ADDED_EVENT_TABLE_NAME = "mobile_thirdparty_device_added"
 const string MOBILE_THIRDPARTY_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_overlay_button_tapped"
@@ -626,7 +627,15 @@ enum RTSPConnectionState {
   NEW = 1
   PEER_ADDED_SESSION = 2
   CONNECTED = 3 // For RTSP, this means we have an RTSP Url to connect to
-  PLAYING = 4 // Fort RTSP, Playing is recorded once GStreamer reports it is PLAYING url
+  PLAYING = 4 // For RTSP, Playing is recorded once GStreamer reports it is PLAYING url
+  PEER_REMOVED_SESSION = 5
+}
+
+enum SkybellConnectionState {
+  NEW = 1
+  PEER_ADDED_SESSION = 2
+  CONNECTED = 3 // For Skybell, this means we have host/port info to connect to
+  PLAYING = 4 // For Skybell, Playing is recorded once GStreamer reports it is PLAYING from the connection
   PEER_REMOVED_SESSION = 5
 }
 
@@ -1163,6 +1172,26 @@ struct MobileWebRTCSessionReportEvent {
 }
 
 struct MobileRTSPSessionReportEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string network_type
+  8: string session_id
+  9: string farthest_state
+  10: string termination_reason
+  11: i64 session_time_elapsed_seconds
+  12: bool local_connection
+  13: i64 connection_time_elapsed_seconds
+  14: string app_class
+  15: string peer_device_id
+  16: string integration_name
+  17: i64 playing_time_elapsed_seconds
+}
+
+struct MobileSkybellSessionReportEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
