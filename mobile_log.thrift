@@ -48,6 +48,7 @@ const string MOBILE_MESH_NETWORK_EVENT_TABLE_NAME = "mobile_mesh_network_event"
 const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
+const string MOBILE_PAGE_VIEW_EVENT_TABLE_NAME = "mobile_page_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
 const string MOBILE_PROVISIONING_CANCEL_EVENT_TABLE_NAME = "mobile_provisioning_cancel"
 const string MOBILE_RTSP_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_rtsp_session_report"
@@ -651,6 +652,7 @@ enum MobileSettingsToggleType {
   ACTIVATE_WITH_MOTION = 11
   DEACTIVATE_AFTER_NO_MOTION = 12
   MOTION_DEACTIVATE_TIME = 13
+  SHOW_FUTURE_UPDATES = 14
 }
 
 enum MobileSettingsLevelType {
@@ -1448,4 +1450,17 @@ struct MobileGangboxRevisionSelectionEvent {
   8: string app_class
   9: installation_template.InstallationDeviceType control_device_type
   10: string gangbox_revision
+}
+
+struct MobilePageViewEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string page_name
+  8: string user_id
+  9: string app_class
+  10: string version
 }

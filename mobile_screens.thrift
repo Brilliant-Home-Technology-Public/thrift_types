@@ -93,7 +93,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeleteHome": "DeleteHome",
   // Home Automation
   "HomeMotionSettings": "Automation:MotionSettingsOverview"
-  //FeatureCallouts
+  // FeatureCallouts
   "DemoPage": "NewFeaturesPage"
   "DemoSummary": "NewFeaturesSummary"
   "WhatsNewVersion": "NewFeaturesVersion"
