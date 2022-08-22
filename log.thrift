@@ -484,6 +484,7 @@ const string UI_BUTTON_NAME_HOME_FUNCTION = "home_function"
 const string UI_BUTTON_NAME_SCENE = "scene"
 const string UI_BUTTON_NAME_DEVICE = "device"
 const string UI_BUTTON_NAME_ROOM = "room"
+const string UI_BUTTON_NAME_PRIVACY_SETTINGS = "privacy_settings"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
