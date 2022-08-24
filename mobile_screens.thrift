@@ -291,6 +291,11 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeleteAccountCode": "PairV2:Login:Verification:DeleteAccount", // Making Android match iOS, which reuses the enter code screen for delete account
 }
 
+const string MOBILE_DEMO_PAGE_NAME_ADD_PARTNER_DEVICES = "Add3PDevicesUpdate"
+const string MOBILE_DEMO_PAGE_NAME_LIVE_VIEW = "LiveViewUpdate"
+const string MOBILE_DEMO_PAGE_NAME_UPDATED_SETTINGS = "SettingsUpdate"
+const string MOBILE_DEMO_PAGE_NAME_WHATS_NEW_SECTION = "WhatsNewUpdate"
+
 const string MOBILE_OVERLAY_NAME_ABOUT = "About"
 const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
 const string MOBILE_OVERLAY_NAME_ADJUST_LED = "AdjustLED"
