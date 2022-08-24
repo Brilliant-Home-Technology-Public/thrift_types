@@ -40,15 +40,20 @@ struct PeripheralIntegrity {
   2: PeripheralIntegrityType integrity_type
 }
 
-struct KnownPeripheralState {
+struct KnownState {
   1: i64 timestamp
-  2: optional map<string, i64> variable_timestamps
-  3: optional PeripheralIntegrity integrity
+  2: bool deleted
+  3: optional binary integrity_checksum
+}
+
+struct KnownPeripheralState {
+  1: KnownState peripheral_base_state
+  2: optional map<string, KnownState> known_variable_states
 }
 
 struct KnownDeviceState {
-  1: i64 timestamp
-  2: optional map<string, KnownPeripheralState> peripheral_states
+  1: KnownState device_base_state
+  2: optional map<string, KnownPeripheralState> known_peripheral_states
 }
 
 service RemoteBridgeService {
