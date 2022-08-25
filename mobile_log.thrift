@@ -741,6 +741,8 @@ struct MobileControlConfigurationEvent {
   // Number of devices controlling the load with the most controlling devices.
   19: i32 max_number_of_devices_for_load
   20: string gangbox_revision
+  21: string hardware_configuration_state // Variables set on Hardware Peripheral
+  22: string motion_configuration_state // Variables set on Motion Detection Config Peripheral
 }
 
 struct MobileCustomURLLaunchEvent {
