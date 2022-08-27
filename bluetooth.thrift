@@ -246,7 +246,7 @@ enum SwitchPropertyID {
   FADE_IN_START_LEVEL         = 0x4C,
   FADE_IN_MAX_HALF_CYCLES     = 0x4D,
   // USE ME NEXT              = 0x4E,
-  // USE ME NEXT              = 0x4F,
+  DCDC_REGULATOR_ENABLE       = 0x4F,
   MOTION_MEDIAN_FILTER_SIZE   = 0x50,
   FADE_OUT_FRACTION           = 0x51,
   FADE_OUT_END_LEVEL          = 0x52,
@@ -336,6 +336,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_FADE_OUT_FRACTION            = 0x701C,
   FLASH_HANDLE_FADE_OUT_END_LEVEL           = 0x701D,
   FLASH_HANDLE_FADE_OUT_MAX_HALF_CYCLES     = 0x701E,
+  FLASH_HANDLE_DCDC_REGULATOR_ENABLE        = 0x701F,
 }
 
 struct SwitchPropertySpec {
@@ -1146,6 +1147,17 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 0xFFFF,
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_FADE_OUT_MAX_HALF_CYCLES,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.DCDC_REGULATOR_ENABLE: {
+    "property_id": SwitchPropertyID.DCDC_REGULATOR_ENABLE,
+    "property_size": 1,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 0x01,
+    "property_type": MeshPropertyDataType.BOOL,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_DCDC_REGULATOR_ENABLE,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
