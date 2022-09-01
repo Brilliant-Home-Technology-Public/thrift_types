@@ -4,11 +4,13 @@ namespace java thrift_types.peripheral_interfaces.hunter_douglas_configuration_i
 include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
+include "../hunter_douglas.thrift"
 
 
 struct HunterDouglasConfigurationPeripheralInterface {
     1: string owner
     2: configuration.ThirdpartyIntegrationState thirdparty_integration_state
+    3: hunter_douglas.HunterDouglasGatewayInfos gateway_infos
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
