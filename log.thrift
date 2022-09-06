@@ -487,6 +487,7 @@ const string UI_BUTTON_NAME_ROOM = "room"
 const string UI_BUTTON_NAME_PRIVACY_SETTINGS = "privacy_settings"
 const string UI_BUTTON_NAME_ADD_PARTNER_DEVICES = "add_partner_device"
 const string UI_BUTTON_NAME_CREATE_GROUP = "create_group"
+const string UI_BUTTON_NAME_ADD_TO_HOME = "add_to_home"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
