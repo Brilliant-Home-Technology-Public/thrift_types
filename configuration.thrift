@@ -452,7 +452,7 @@ enum PinType {
   CAMERAS = 13,
   LOCKS = 14,
   DOORBELLS = 15,
-  ADD_DEVICE = 16,
+  ADD_TO_HOME = 16,
   HOMEKIT = 17,
   BLANK = 18,
   SECURITY = 19,
