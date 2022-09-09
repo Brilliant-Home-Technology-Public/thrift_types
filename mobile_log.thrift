@@ -277,6 +277,7 @@ const string MOBILE_BUTTON_NAME_UNASSIGN_FIXTURE = "unassign_fixture"
 const string MOBILE_BUTTON_NAME_UNMUTE = "unmute"
 const string MOBILE_BUTTON_NAME_UPLOAD_PHOTO_START = "upload_photo"
 const string MOBILE_BUTTON_NAME_VACANT_UNIT = "vacant_unit"
+const string MOBILE_BUTTON_NAME_VIEW_ACCESS_CREDENTIALS = "view_access_credentials"
 const string MOBILE_BUTTON_NAME_VIEW_ARTICLE = "view_article"
 const string MOBILE_BUTTON_NAME_VIEW_HOMES = "view_homes"
 const string MOBILE_BUTTON_NAME_VIEW_MOTION_DEVICE_SETTINGS = "view_motion_device_settings"
@@ -470,6 +471,7 @@ enum MobileErrorEventType {
   FAILED_DELETE_ACCOUNT_VERIFICATION = 29 // Request to validate code
   FAILED_DELETE_ACCOUNT_GET_HOMES = 30 // Request to get homes for delete account
   FAILED_DELETE_ACCOUNT = 31 // Request to actually delete account
+  FAILED_REMOTELOCK_ACCESS_CODES = 32
 }
 
 enum MobileEventDeviceType {
@@ -599,6 +601,7 @@ enum MobilePasscodeContext {
   VERIFY_EMAIL = 5
   VERIFY_MULTIFACTOR_AUTHENTICATION = 6
   SETUP_ALEXA = 7
+  PROPERTY_ACCESS = 8
 }
 
 enum MobileUnlockType {
