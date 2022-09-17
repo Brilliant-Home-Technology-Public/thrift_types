@@ -97,6 +97,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DemoPage": "NewFeaturesPage",
   "DemoSummary": "NewFeaturesSummary",
   "WhatsNewVersion": "NewFeaturesVersion",
+  "WhatsNewPage": "NewFeaturesPage",
+  "WhatsNewSummary": "NewFeaturesSummary",
   // Property Access
   "AccessCodes": "PropertyAccessCredentials",
 
