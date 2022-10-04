@@ -488,6 +488,18 @@ const string UI_BUTTON_NAME_PRIVACY_SETTINGS = "privacy_settings"
 const string UI_BUTTON_NAME_ADD_PARTNER_DEVICES = "add_partner_device"
 const string UI_BUTTON_NAME_CREATE_GROUP = "create_group"
 const string UI_BUTTON_NAME_ADD_TO_HOME = "add_to_home"
+const string UI_BUTTON_NAME_REMOVE_CONFIRM = "remove_confirm"
+const string UI_BUTTON_NAME_UPDATE_SCENE_ACTION = "update_scene_action"
+const string UI_BUTTON_NAME_LIGHTS = "lights"
+const string UI_BUTTON_NAME_ON_OFF_DEVICES = "on_off_devices"
+const string UI_BUTTON_NAME_BRILLIANT_DISPLAYS = "brilliant_displays"
+const string UI_BUTTON_NAME_SPEAKERS = "speakers"
+const string UI_BUTTON_NAME_THERMOSTATS = "thermostats"
+const string UI_BUTTON_NAME_SHADES = "shades"
+const string UI_BUTTON_NAME_LOCKS = "locks"
+const string UI_BUTTON_NAME_GARAGES = "garages"
+const string UI_BUTTON_NAME_ACCESS_PANELS = "access_panels"
+const string UI_BUTTON_NAME_SECURITY_SYSTEMS = "security_systems"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
