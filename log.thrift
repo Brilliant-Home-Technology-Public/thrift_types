@@ -500,6 +500,8 @@ const string UI_BUTTON_NAME_LOCKS = "locks"
 const string UI_BUTTON_NAME_GARAGES = "garages"
 const string UI_BUTTON_NAME_ACCESS_PANELS = "access_panels"
 const string UI_BUTTON_NAME_SECURITY_SYSTEMS = "security_systems"
+const string UI_BUTTON_NAME_BYPASS_AND_ARM = "bypass_and_arm"
+const string UI_BUTTON_NAME_SENSOR_STATUS = "sensor_status"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
