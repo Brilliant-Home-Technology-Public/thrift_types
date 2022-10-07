@@ -57,6 +57,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LocationTimeZoneChange": "TimeZone:Select",
   "MeshLEDSettings": "LEDPreferences",
   "LEDBrightness": "LEDPreferences",
+  "HomeAssistantsSettings": "HomeAssistantsSettings",
+  "WakewordSensitivity": "WakewordSensitivity",
 
   // Color
   "LightColor": "LightColor", // deprecated
@@ -289,6 +291,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WidgetPriority": "WidgetPriority",
   "WidgetConfigSuccess": "WidgetSummary",
   "ThirdPartyLinkLanding": "ThirdParty:LinkLanding",
+  "VirtualAssistantManagement": "VirtualAssistantManagement",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
@@ -300,6 +303,7 @@ const string MOBILE_DEMO_PAGE_NAME_ADD_PARTNER_DEVICES = "Add3PDevicesUpdate"
 const string MOBILE_DEMO_PAGE_NAME_LIVE_VIEW = "LiveViewUpdate"
 const string MOBILE_DEMO_PAGE_NAME_UPDATED_SETTINGS = "SettingsUpdate"
 const string MOBILE_DEMO_PAGE_NAME_WHATS_NEW_SECTION = "WhatsNewUpdate"
+const string MOBILE_PAGE_NAME_SKILL_TUTORIAL = "SkillTutorial"
 
 const string MOBILE_OVERLAY_NAME_ABOUT = "About"
 const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
@@ -394,6 +398,7 @@ const string MOBILE_OVERLAY_NAME_LIVE_VIEW_SURVEY = "LiveViewSurvey"
 const string MOBILE_OVERLAY_NAME_CONNECTION_LOADING = "ConnectionLoading"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_JAMMED = "Jammed"
 const string MOBILE_OVERLAY_NAME_LOCK_STATE_UNKNOWN = "Unknown"
+const string MOBILE_OVERLAY_NAME_LOG_OUT_AMAZON = "LogOutAmazon"
 const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperature"
 const string MOBILE_OVERLAY_NAME_MESH_CRITICAL_FIRMWARE_UPDATE = "MeshFirmwareUpdate:Critical"
 const string MOBILE_OVERLAY_NAME_MESH_FIRMWARE_UPDATE = "MeshFirmwareUpdate"

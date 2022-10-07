@@ -30,6 +30,7 @@ const string MOBILE_DEVICE_SETTINGS_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_dev
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_GANGBOX_REVISION_SELECTION_EVENT_TABLE_NAME = "mobile_gangbox_revision_selection"
+const string MOBILE_HOME_ASSISTANT_SETUP_EVENT_TABLE_NAME = "mobile_home_assistant_setup"
 const string MOBILE_HOME_PASSCODE_ATTEMPT_TABLE_NAME = "mobile_home_passcode_attempt"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
 const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
@@ -181,8 +182,10 @@ const string MOBILE_BUTTON_NAME_LOCATION_SHARE = "location_share"
 const string MOBILE_BUTTON_NAME_LOCK = "lock"
 const string MOBILE_BUTTON_NAME_LOCK_APP = "lock_app"
 const string MOBILE_BUTTON_NAME_LOG_IN = "log_in"
+const string MOBILE_BUTTON_NAME_LOG_IN_AMAZON = "log_in_amazon"
 const string MOBILE_BUTTON_NAME_LOG_IN_AS_AN_OPERATOR = "log_in_as_an_operator"
 const string MOBILE_BUTTON_NAME_LOG_OUT = "log_out"
+const string MOBILE_BUTTON_NAME_LOG_OUT_AMAZON = "log_out_amazon"
 const string MOBILE_BUTTON_NAME_MARK_COMPLETED = "mark_completed"
 const string MOBILE_BUTTON_NAME_MORE = "more"
 const string MOBILE_BUTTON_NAME_MOTION_RULES = "motion_rules"
@@ -367,8 +370,11 @@ const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
 
 // BEGIN MOBILE INTEGRATION NAME CONSTANTS
 // All integration names aside from brilliant are simply the virtual device id constants
-const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
+const string MOBILE_INTEGRATION_NAME_ALEXA = "alexa"
 const string MOBILE_INTEGRATION_NAME_AGGREGATE = "aggregate"
+const string MOBILE_INTEGRATION_NAME_BRILLIANT = "brilliant"
+const string MOBILE_INTEGRATION_NAME_GOOGLE_ASSISTANT = "google_assistant"
+const string MOBILE_INTEGRATION_NAME_HOMEKIT = "homekit"
 const string MOBILE_INTEGRATION_NAME_PROPERTY_ACCESS = "property_access"
 // END MOBILE INTEGRATION NAME CONSTANTS
 
@@ -669,6 +675,8 @@ enum MobileSettingsToggleType {
   DEACTIVATE_AFTER_NO_MOTION = 12
   MOTION_DEACTIVATE_TIME = 13
   SHOW_FUTURE_UPDATES = 14
+  ALEXA_ENABLED = 15
+  WAKEWORD_CHIME = 16
 }
 
 enum MobileSettingsLevelType {
@@ -677,6 +685,7 @@ enum MobileSettingsLevelType {
   BRIGHTNESS = 3
   LOW_MOTION_THRESHOLD = 4
   HIGH_MOTION_THRESHOLD = 5
+  WAKEWORD_SENSITIVITY = 6
 }
 
 // END LOGGING ENUMS
@@ -1501,4 +1510,17 @@ struct MobilePageViewEvent {
   8: string user_id
   9: string app_class
   10: string version
+}
+
+struct MobileHomeAssistantSetupEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string integration_name
+  10: bool success
 }
