@@ -16,7 +16,6 @@ const string LIFX_INTEGRATION_NAME = "LIFX"
 const string NEST_INTEGRATION_NAME = "Google Nest"
 const string REMOTELOCK_INTEGRATION_NAME = "RemoteLock"
 const string RING_INTEGRATION_NAME = "Ring"
-const string SALTO_KS_INTEGRATION_NAME = "Salto KS"
 const string SCHLAGE_INTEGRATION_NAME = "Schlage Encode"
 const string SMARTTHINGS_INTEGRATION_NAME = "SmartThings"
 const string SOMFY_INTEGRATION_NAME = "Somfy"
@@ -38,7 +37,6 @@ const map<string, string> THIRDPARTY_VIRTUAL_DEVICE_IDENTIFIER_TO_INTEGRATION_NA
 		message_bus.NEST_IDENTIFIER: NEST_INTEGRATION_NAME,
 		message_bus.REMOTELOCK_IDENTIFIER: REMOTELOCK_INTEGRATION_NAME,
 		message_bus.RING_VIRTUAL_DEVICE: RING_INTEGRATION_NAME,
-		message_bus.SALTO_KS_IDENTIFIER: SALTO_KS_INTEGRATION_NAME,
 		message_bus.SCHLAGE_IDENTIFIER: SCHLAGE_INTEGRATION_NAME,
 		message_bus.SMARTTHINGS_IDENTIFIER: SMARTTHINGS_INTEGRATION_NAME,
 		message_bus.SOMFY_IDENTIFIER: SOMFY_INTEGRATION_NAME,
@@ -188,13 +186,6 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
     },
     message_bus.PeripheralType.CLIMATE_SENSOR: {
         SupportType.DEVICES: true,
-        SupportType.SCENES: false,
-        SupportType.GESTURES: false,
-        SupportType.CAP_TOUCH: false,
-        SupportType.MOTION: false
-    },
-    message_bus.PeripheralType.SALTO_KS_IQ: {
-        SupportType.DEVICES: false,
         SupportType.SCENES: false,
         SupportType.GESTURES: false,
         SupportType.CAP_TOUCH: false,

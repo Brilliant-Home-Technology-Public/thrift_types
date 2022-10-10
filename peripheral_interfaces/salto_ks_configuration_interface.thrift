@@ -1,3 +1,4 @@
+// DEPRECATED
 namespace py thrift_types.peripheral_interfaces.salto_ks_configuration_interface
 namespace java thrift_types.peripheral_interfaces.salto_ks_configuration_interface
 

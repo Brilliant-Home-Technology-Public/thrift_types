@@ -1,3 +1,4 @@
+// DEPRECATED
 namespace py thrift_types.salto_ks
 namespace java thrift_types.salto_ks
 
