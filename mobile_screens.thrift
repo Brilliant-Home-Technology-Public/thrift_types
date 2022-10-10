@@ -94,11 +94,14 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Home Automation
   "HomeMotionSettings": "Automation:MotionSettingsOverview",
   // FeatureCallouts
-  "DemoPage": "NewFeaturesPage",
-  "DemoSummary": "NewFeaturesSummary",
+  "WhatsNewSummary": "NewFeaturesSummary",
   "WhatsNewVersion": "NewFeaturesVersion",
   // Property Access
   "AccessCodes": "PropertyAccessCredentials",
+  // iOS
+  "SwipeablePage": "SwipeablePage", // Use Modifier for usage type
+  // Android
+  "WhatsNewPage": "SwipeablePage:NewFeatures"
 
   // Help
   "Help": "Help",
