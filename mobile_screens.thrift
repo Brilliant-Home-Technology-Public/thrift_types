@@ -453,7 +453,6 @@ const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_CREATE_ERROR = "RoomSettings:Crea
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_NEW = "RoomSettings:New"
 const string MOBILE_OVERLAY_NAME_ROOM_SETTINGS_UPDATE_NAME_ERROR = "RoomSettings:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_ROOMS_DEMO_INFO = "Demo:Rooms"
-const string MOBILE_OVERLAY_NAME_SALTO_CODE_REQUIRED = "SaltoCodeRequired" // DEPRECATED
 const string MOBILE_OVERLAY_NAME_SCENES_DEMO_INFO = "Demo:Scenes"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_DELETE = "SceneAction:Delete"
 const string MOBILE_OVERLAY_NAME_SCENE_ACTION_MERGED = "SceneAction:Merged"
