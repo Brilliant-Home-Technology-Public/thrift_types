@@ -400,6 +400,11 @@ enum MobileAddDeviceFlowType {
   DEEP_LINK = 4
 }
 
+enum MobileDeviceSettingsFlowType {
+  DEVICE_SETTINGS = 1
+  HOME_ASSISTANTS = 2
+}
+
 enum MobileBLEDeviceType {
   BRILLIANT_SWITCH = 1
   BRILLIANT_PLUG = 2
