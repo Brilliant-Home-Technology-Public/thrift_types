@@ -292,6 +292,13 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WidgetConfigSuccess": "WidgetSummary",
   "ThirdPartyLinkLanding": "ThirdParty:LinkLanding",
   "VirtualAssistantManagement": "VirtualAssistantManagement",
+  "AlexaSetup": "AlexaSetup",
+  "AlexaDiscoverDevices": "AlexaDiscoverDevices",
+  "AlexaDownloadApp": "AlexaDownloadApp",
+  "AlexaSetupComplete": "AlexaSetupComplete",
+  // Android (iOS will use screenModifier)
+  "SkillTutorialPage": "SwipeablePage:SkillTutorial",
+  "AlexaSetupSkipForNow": "SkipForNow:AlexaSetupFailure",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
