@@ -768,6 +768,9 @@ struct MobileControlConfigurationEvent {
   20: string gangbox_revision
   21: string hardware_configuration_state // Variables set on Hardware Peripheral
   22: string motion_configuration_state // Variables set on Motion Detection Config Peripheral
+  // NOTE: For readability, CapTouchSliderConfigs and GestureConfigs are abbreviated
+  // and not serialized for this field.
+  23: string device_configuration_state // Variables set on Device Config Peripheral
 }
 
 struct MobileCustomURLLaunchEvent {
