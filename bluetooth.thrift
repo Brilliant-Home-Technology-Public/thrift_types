@@ -285,6 +285,7 @@ enum SwitchGesture {
   SLIDE                   = 0x02,
   TAP                     = 0x03,
   DOUBLE_TAP              = 0x04,
+  SLIDE_DONE              = 0x05,
 }
 
 enum MeshPropertyDataType {
@@ -1182,6 +1183,10 @@ const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
   },
   SwitchGesture.DOUBLE_TAP: {
     "property_id": SwitchGesture.DOUBLE_TAP,
+    "property_size": 0,
+  },
+  SwitchGesture.SLIDE_DONE: {
+    "property_id": SwitchGesture.SLIDE_DONE,
     "property_size": 0,
   },
 }
