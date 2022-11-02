@@ -18,7 +18,7 @@ struct UniquePeripheralID {
 const set<string> ALL_ROOM_IDS = ["ALL_ROOM_IDS"] // sentinel value
 
 struct PeripheralFilter {
-  // non-null fields are ANDed together
+  // non-null fields are ANDed together; null fields are not applied during filtering
 
   // peripherals conceptually can be a set, but some platforms (switch-ui) may not like sets of
   // structures.
