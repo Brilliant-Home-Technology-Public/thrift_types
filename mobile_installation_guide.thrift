@@ -123,15 +123,14 @@ enum GuideFieldType {
   STATIC_SUMMARY = 7 // Will display image, primary label, secondary label and options in summary box with checkmarks
   STATIC_SUMMARY_DESCRIPTION = 8 // Will display image, primary label, secondary label and options in summary box without checkmarks
   FREEFORM_TEXT = 9
-  SWITCH_GESTURE = 10
-  BLUETOOTH_STATUS = 11 // Bluetooth Icon and Status String
-  VERTICAL_CHECKBOX_QUESTION = 12
-  INSTALLS_REMAINING = 13
-  BOTTOM_SCREEN_FIELD = 14 // Configures UI pinned to bottom of screen on VerticalViewModel
-  SCREEN_CONFIGURATION = 15 // Used by custom screens to pass values
-  KEY_VALUE_LIST = 16 // Displays a key and value list from GuideOptions
-  STEP_INSTRUCTION = 17 // Displays a field that has a step number and maybe a key/value listing
-  LARGE_VERTICAL_OPTION_QUESTION = 18 // Displays a field with large image cells for users to answer a question
+  BLUETOOTH_STATUS = 10 // Bluetooth Icon and Status String
+  VERTICAL_CHECKBOX_QUESTION = 11
+  INSTALLS_REMAINING = 12
+  BOTTOM_SCREEN_FIELD = 13 // Configures UI pinned to bottom of screen on VerticalViewModel
+  SCREEN_CONFIGURATION = 14 // Used by custom screens to pass values
+  KEY_VALUE_LIST = 15 // Displays a key and value list from GuideOptions
+  STEP_INSTRUCTION = 16 // Displays a field that has a step number and maybe a key/value listing
+  LARGE_VERTICAL_OPTION_QUESTION = 17 // Displays a field with large image cells for users to answer a question
 }
 
 struct GuideOption {
