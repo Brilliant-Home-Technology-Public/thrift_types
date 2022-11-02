@@ -16,4 +16,5 @@ struct PositionCapability {
 struct ShadeCapabilities {
   1: map<PositionType, PositionCapability> supported_positions
   2: optional bool supports_favorite
+  3: optional bool stoppable = true
 }
