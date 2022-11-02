@@ -30,6 +30,8 @@ const string MOBILE_DEVICE_SETTINGS_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_dev
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_GANGBOX_REVISION_SELECTION_EVENT_TABLE_NAME = "mobile_gangbox_revision_selection"
+const string MOBILE_GROUP_LEVEL_EVENT_TABLE_NAME = "mobile_group_level"
+const string MOBILE_GROUP_TOGGLE_EVENT_TABLE_NAME = "mobile_group_toggle"
 const string MOBILE_HOME_ASSISTANT_SETUP_EVENT_TABLE_NAME = "mobile_home_assistant_setup"
 const string MOBILE_HOME_PASSCODE_ATTEMPT_TABLE_NAME = "mobile_home_passcode_attempt"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
@@ -392,6 +394,10 @@ const string MOBILE_LIVEVIEW_PROTOCOL_NAME_UNKNOWN = "unknown"
 const string MOBILE_LIVEVIEW_PROTOCOL_NAME_WEBRTC = "webrtc"
 const string MOBILE_LIVEVIEW_PROTOCOL_NAME_SKYBELL = "skybell"
 // END MOBILE LIVEVIEW PROTOCOL NAMES
+
+// BEGIN MOBILE GROUP ID CONSTANTS
+const string MOBILE_GROUP_ID_AGGREGATE = "aggregate"
+// END MOBILE GROUP ID CONSTANTS
 
 const i16 MOBILE_INVALID_OWNER_RSSI = -128
 
@@ -1541,4 +1547,38 @@ struct MobileHomeAssistantSetupEvent {
   8: string app_class
   9: string integration_name
   10: bool success
+}
+
+struct MobileGroupToggleEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string group_id
+  10: string unique_peripheral_ids
+  11: MobileEventSource source
+  12: MobileToggleType toggle_type
+  13: bool on
+  14: bool aggregate
+}
+
+struct MobileGroupLevelEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string group_id
+  10: string unique_peripheral_ids
+  11: MobileEventSource source
+  12: MobileLevelType level_type
+  13: i32 level
+  14: bool aggregate
 }
