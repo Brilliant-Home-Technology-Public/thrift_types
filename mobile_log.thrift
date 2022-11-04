@@ -401,6 +401,7 @@ enum MobileAddDeviceFlowType {
   DEVICE_LIST = 2
   POST_INSTALL = 3
   DEEP_LINK = 4
+  RELINK = 5
 }
 
 enum MobileDeviceSettingsFlowType {
