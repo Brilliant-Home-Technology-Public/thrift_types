@@ -3,6 +3,7 @@ namespace java thrift_types.peripheral_interfaces.hardware_interface
 
 include "../message_bus.thrift"
 include "../configuration.thrift"
+include "../crypto.thrift"
 include "../hardware.thrift"
 include "peripheral_interface.thrift"
 
@@ -29,6 +30,8 @@ struct HardwarePeripheralInterface {
   20: i32 alert_volume
   21: bool software_update_enabled
   22: i32 reset_all_settings_timeout_seconds
+  23: string software_integrity_challenge
+  24: crypto.SignedMessage software_integrity_challenge_response
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
