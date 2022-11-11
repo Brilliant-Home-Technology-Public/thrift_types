@@ -59,6 +59,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LEDBrightness": "LEDPreferences",
   "HomeAssistantsSettings": "HomeAssistantsSettings",
   "WakewordSensitivity": "WakewordSensitivity",
+  "ThirdPartyDeveloperSettings": "ThirdParty:DevMenu"
 
   // Color
   "LightColor": "LightColor", // deprecated
@@ -346,6 +347,7 @@ const string MOBILE_OVERLAY_NAME_CONTROL_SCAN_SWITCH_INSTALL = "ControlScanSwitc
 const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED = "CurrentDeviceDeauthed"
 const string MOBILE_OVERLAY_NAME_CURRENT_GANG_INFO = "CurrentGangInfo"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
+const string MOBILE_OVERLAY_NAME_DEAUTHORIZED_DEVICE = "DeauthorizedDevice"
 const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_ERROR = "DeleteAccountError"
 const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_CONFIRMATION = "DeleteAccountConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_DEVICE_CONFIRMATION = "DeleteDeviceConfirmation"
