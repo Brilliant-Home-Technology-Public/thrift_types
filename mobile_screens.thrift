@@ -241,7 +241,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MarkInstallationCompleteMatch": "MultipleDeviceTypes",
   "InstallComplete": "InstallationCompleteScreen",
   "GuideSkipForNow": "SkipForNow",
-  "GuideCircuitLoadIdentification": "CircuitLoadIdentification"
+  "GuideCircuitLoadIdentification": "CircuitLoadIdentification",
+  "GestureTutorialPage": "SwipeablePage:GestureTutorial", // iOS will use modifier
 
   // Control Configuration
   "ControlSelection": "ControlSelection"
