@@ -722,7 +722,7 @@ struct MobileBLEProvisioningEvent {
   // "(FAILURE)" indicates we attempted but did not succeed in setting the property
   // "(SKIPPED)" indicates we did not attempt to set this property due to missing information.
   // Note this is not always an error case (e.g. not setting forwarding address for the load side switch)
-  11: string configuration_state
+  11: string configuration_state // as of 221116 only contains set requests
   12: i64 ble_firmware_version
   13: i64 time_elapsed_seconds
   14: i16 owner_rssi
@@ -732,6 +732,7 @@ struct MobileBLEProvisioningEvent {
   18: string app_class
   19: bool is_free_pairing
   20: string provisioning_message_state
+  21: string configuration_requests // get property requests
 }
 
 struct MobileConnectivityEvent {
