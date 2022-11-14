@@ -55,6 +55,8 @@ enum SupportType {
   // TODO: Add Alexa
 }
 
+// If we add CAP_TOUCH support for another peripheral type, also update SwitchSliderSettingsScreen's
+// sliderCapabilitiesText to handle that type
 const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL_SUPPORT_DETAILS = {
   message_bus.PeripheralType.LIGHT: {
         SupportType.DEVICES: true,
