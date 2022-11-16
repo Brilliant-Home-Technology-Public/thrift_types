@@ -16,6 +16,7 @@ struct UniquePeripheralID {
 }
 
 const set<string> ALL_ROOM_IDS = ["ALL_ROOM_IDS"] // sentinel value
+const set<string> UNASSIGNED_ROOM_IDS = ["UNASSIGNED_ROOM_ID"] // Sentinel value, currently only supported in switch-ui
 
 struct PeripheralFilter {
   // non-null fields are ANDed together; null fields are not applied during filtering
