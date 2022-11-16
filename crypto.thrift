@@ -4,6 +4,8 @@ namespace java thrift_types.crypto
 enum AsymmetricKeyType {
   UNKNOWN = 0
   X25519 = 1
+  // Technically the same curve as above, but crypto libraries usually make it a separate type
+  ED25519 = 2
 }
 
 enum EncryptionAlgorithm {
