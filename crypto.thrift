@@ -26,3 +26,10 @@ struct EncryptedMessage {
   4: optional binary ciphertext
   5: optional binary nonce
 }
+
+struct SignedMessage {
+  1: optional PublicKey public_key
+  2: optional binary x509_certificate // DER-encoded
+  3: optional binary message
+  4: optional binary signature
+}
