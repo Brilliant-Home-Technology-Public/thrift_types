@@ -1204,6 +1204,7 @@ struct MobileWebRTCSessionReportEvent {
   25: string peer_device_id
   26: string remote_audio_params
   27: string integration_name
+  28: i64 session_workaround_delay_ms
 }
 
 struct MobileRTSPSessionReportEvent {
@@ -1224,6 +1225,7 @@ struct MobileRTSPSessionReportEvent {
   15: string peer_device_id
   16: string integration_name
   17: i64 playing_time_elapsed_seconds
+  18: i64 session_workaround_delay_ms
 }
 
 struct MobileSkybellSessionReportEvent {
@@ -1244,6 +1246,7 @@ struct MobileSkybellSessionReportEvent {
   15: string peer_device_id
   16: string integration_name
   17: i64 playing_time_elapsed_seconds
+  18: i64 session_workaround_delay_ms
 }
 
 struct MobileLiveviewUsageReportEvent {
