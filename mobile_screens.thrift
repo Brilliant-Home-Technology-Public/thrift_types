@@ -300,6 +300,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Android (iOS will use screenModifier)
   "SkillTutorialPage": "SwipeablePage:SkillTutorial",
   "AlexaSetupSkipForNow": "SkipForNow:AlexaSetupFailure",
+  "ThirdPartyOwner": "ControlSelection:ThirdParty",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",

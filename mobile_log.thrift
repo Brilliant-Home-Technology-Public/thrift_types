@@ -360,6 +360,7 @@ const string MOBILE_NAME_MODIFIER_SUCCESS = "Success"
 const string MOBILE_NAME_MODIFIER_SWITCH = "Switch"
 const string MOBILE_NAME_MODIFIER_TEMPLATE_LOAD_FAILED = "TemplateLoadFailed"
 const string MOBILE_NAME_MODIFIER_TEMPLATE_MISMATCH = "TemplateMismatch"
+const string MOBILE_NAME_MODIFIER_THIRD_PARTY = "ThirdParty"
 const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
 const string MOBILE_NAME_MODIFIER_USER_EXISTS = "BRLUserExists"
 // END NAME MODIFIERS
