@@ -166,6 +166,8 @@ const string EMBEDDED_WAKEWORD_DETECTOR_VERSION_TABLE_NAME = "embedded_wakeword_
 const string EMBEDDED_GROUP_UPDATE_TABLE_NAME = "group_update"
 const string EMBEDDED_ALEXA_AUTO_ENABLE_ATTEMPT_TABLE_NAME = "alexa_auto_enable_attempt"
 const string EMBEDDED_SWITCH_LOAD_TYPE_UPDATE_TABLE_NAME = "switch_load_type_update"
+const string EMBEDDED_SWITCH_LOAD_TYPE_INCONSISTENCY_TABLE_NAME = "switch_load_type_inconsistency"
+const string EMBEDDED_CAPTOUCH_AND_LOAD_CONNECTED_INCONSISTENCY_TABLE_NAME = "captouch_and_load_connected_inconsistency"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
