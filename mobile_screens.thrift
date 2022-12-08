@@ -90,6 +90,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "NoJoinedHomes": "MyHomes:Empty",
   "HomeSettings": "HomeSettings",
   "PrivacySettings": "PrivacySettings",
+  "RemoteVideoAccess": "RemoteVideoAccess",
+  "ChildLock": "ChildLock",
   "SwitchEnvironment": "SwitchEnvironment",
   "Troubleshoot": "Troubleshoot",
   "DeleteHomeEnterCode": "PairV2:Login:Verification:DeleteHome", // Making Android match iOS, which reuses the enter code screen for delete home
@@ -435,6 +437,7 @@ const string MOBILE_OVERLAY_NAME_OVERRIDE_DISPLAY_SETTINGS = "OverrideDisplaySet
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_PIN_UPDATED = "PinUpdated"
+const string MOBILE_OVERLAY_NAME_PRIVACY_SETTINGS_ERROR = "PrivacySettings:Error"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CODE_LOCATION = "Provisioning:WhereToFindCode"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CODE_READ_ERROR = "Provisioning:CodeReadError"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_CREATE_MESH_NETWORK = "Provisioning:CreateMesh"
