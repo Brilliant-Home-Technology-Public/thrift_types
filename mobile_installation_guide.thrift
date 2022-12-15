@@ -49,6 +49,12 @@ enum MeshProvisionStatus {
   COMPATIBILITY_CHECK = 37
   GENERIC_ERROR = 38
   MESH_PROVISION_COMPLETE = 49 // Switch has app key, netkey, and unicast address bound
+
+  // The following states are implemented to workaround a Switch firmware issue when re-provisioning switches.
+  REBOOT_PROVISIONED = 50 // Occurs after SETTING_PUBLISH_ADDRESS
+  SCANNING_FOR_PROVISIONED_AFTER_REBOOT = 51
+  SCAN_FOR_PROVISION_AFTER_REBOOT_TIMEOUT = 52
+  // If we successfully connect again, we move to MESH_PROVISION_COMPLETE
 }
 
 enum ControlConfigurationStatus {
