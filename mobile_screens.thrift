@@ -59,7 +59,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LEDBrightness": "LEDPreferences",
   "HomeAssistantsSettings": "HomeAssistantsSettings",
   "WakewordSensitivity": "WakewordSensitivity",
-  "ThirdPartyDeveloperSettings": "ThirdParty:DevMenu"
+  "HomeKitReset": "HomeKitReset",
+  "TroubleshootAssistants": "TroubleshootAssistants",
 
   // Color
   "LightColor": "LightColor", // deprecated
@@ -303,6 +304,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Android (iOS will use screenModifier)
   "SkillTutorialPage": "SwipeablePage:SkillTutorial",
   "AlexaSetupSkipForNow": "SkipForNow:AlexaSetupFailure",
+  "ThirdPartyDeveloperSettings": "ThirdParty:DevMenu",
   "ThirdPartyOwner": "ControlSelection:ThirdParty",
 
   // DeleteAccount
