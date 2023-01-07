@@ -25,35 +25,25 @@ struct Pong {
   2: i64 current_time
 }
 
-struct ReceiveUpdatedStateResponse {
-  1: map<string, message_bus.SubscriptionNotification> updated_states
-}
-
-enum PeripheralIntegrityType {
-  THRIFT_SERIALIZED_BINARY_HASH = 1,
-}
-
-// This struct represents an "integrity" computation for a peripheral.
-// It is comprised of the actual "integrity" value and how the value was computed.
-struct PeripheralIntegrity {
-  1: binary integrity_value
-  2: PeripheralIntegrityType integrity_type
-}
-
-struct KnownState {
+struct PeripheralCheckpoint {
   1: i64 timestamp
-  2: bool deleted
-  3: optional binary integrity_checksum
+  // MD5 sum of the Thrift-serialized structure
+  2: optional binary integrity_checksum
+  // Following two fields are for distributed virtual devices (e.g. ble_mesh)
+  3: optional string owning_device_id
+  4: optional i64 ownership_timestamp
 }
 
-struct KnownPeripheralState {
-  1: KnownState peripheral_base_state
-  2: optional map<string, KnownState> known_variable_states
+struct DeviceCheckpoint {
+  1: i64 timestamp
+  2: map<string, PeripheralCheckpoint> peripheral_checkpoints
+  // Following two fields are for non-distributed virtual devices
+  3: optional string relaying_device_id
+  4: optional i64 relay_timestamp
 }
 
-struct KnownDeviceState {
-  1: KnownState device_base_state
-  2: optional map<string, KnownPeripheralState> known_peripheral_states
+struct SynchronizeHomeResponse {
+  1: list<message_bus.SubscriptionNotification> device_updates
 }
 
 service RemoteBridgeService {
@@ -68,12 +58,9 @@ service RemoteBridgeService {
       1: message_bus.SubscriptionNotification notification,
   )
 
-  ReceiveUpdatedStateResponse receive_updated_state(
-      // The key should be the device id.
-      1: map<string, KnownDeviceState> known_states,
-      // Whether to only return information about the peripherals and variables requested,
-      // or all peripherals/variables for the provided devices.
-      2: bool targeted,
+  SynchronizeHomeResponse synchronize_home(
+      // Keyed by device ID
+      1: map<string, DeviceCheckpoint> known_devices,
   )
 
   Pong ping()
