@@ -280,6 +280,7 @@ const string MOBILE_BUTTON_NAME_SKIP_ZIP_CODE = "skip_zip_code"
 const string MOBILE_BUTTON_NAME_SLIDER_SETTINGS = "slider_settings"
 const string MOBILE_BUTTON_NAME_SOLID = "solid"
 const string MOBILE_BUTTON_NAME_STOP_SCENE = "stop_scene"
+const string MOBILE_BUTTON_NAME_SUBMIT = "submit"
 const string MOBILE_BUTTON_NAME_SUNRISE = "sunrise"
 const string MOBILE_BUTTON_NAME_SUNSET = "sunset"
 const string MOBILE_BUTTON_NAME_SWITCH_HOME = "switch_home"
@@ -511,6 +512,11 @@ enum MobileErrorEventType {
   FAILED_DELETE_ACCOUNT_GET_HOMES = 30 // Request to get homes for delete account
   FAILED_DELETE_ACCOUNT = 31 // Request to actually delete account
   FAILED_REMOTELOCK_ACCESS_CODES = 32
+  FAILED_SIGN_UP_ENTER_EMAIL = 33
+  FAILED_ACCOUNT_ENTER_CREDENTIALS = 34
+  FAILED_ACCOUNT_VERIFY_CODE = 35
+  FAILED_ACCOUNT_GET_HOMES = 36
+  FAILED_ACCOUNT_CONNECT_HOME = 37
 }
 
 enum MobileEventDeviceType {
