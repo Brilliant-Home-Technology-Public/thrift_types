@@ -6,3 +6,4 @@ const string HONEYWELL_TC2_EVENT_KEY_DOORBELL_PRESS = "honeywell_tc2:doorbell_pr
 const string HONEYWELL_TC2_EVENT_KEY_POLL_SYSTEM_STATUS = "honeywell_tc2:poll_system_status"
 const string HONEYWELL_TC2_EVENT_KEY_SWITCH_STATE = "honeywell_tc2:switch_state"
 const string HONEYWELL_TC2_EVENT_KEY_SWITCH_LEVEL = "honeywell_tc2:switch_level"
+const string HONEYWELL_TC2_EVENT_KEY_LOCK_STATE = "honeywell_tc2:lock_state"
