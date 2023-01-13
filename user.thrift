@@ -7,3 +7,7 @@ struct User {
   3: string given_name
   4: string family_name
 }
+
+struct Users {
+  1: list<User> users
+}

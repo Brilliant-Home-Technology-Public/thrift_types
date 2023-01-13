@@ -98,6 +98,7 @@ const string HUNTER_DOUGLAS_IDENTIFIER = "hunter_douglas"
 const string HUNTER_DOUGLAS_CONFIG_IDENTIFIER = "hunter_douglas_configuration"
 const string DEVICE_GROUPS_CONFIG_IDENTIFIER = "device_groups_configuration"
 const string REQUEST_DISPATCHER_IDENTIFIER = "request_dispatcher"
+const string HOME_DETAILS_IDENTIFIER = "home_details"
 const string SALTO_KS_IDENTIFIER = "salto_ks" // DEPRECATED
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration" // DEPRECATED
 
@@ -278,6 +279,7 @@ enum PeripheralType {
   REMOTELOCK_CONFIGURATION = 91,
   DEVICE_GROUPS_CONFIGURATION = 92,
   REQUEST_DISPATCHER = 93,
+  HOME_DETAILS = 94,
 }
 
 enum PeripheralStatus {
