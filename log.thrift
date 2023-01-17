@@ -167,6 +167,7 @@ const string EMBEDDED_GROUP_UPDATE_TABLE_NAME = "group_update"
 const string EMBEDDED_ALEXA_AUTO_ENABLE_ATTEMPT_TABLE_NAME = "alexa_auto_enable_attempt"
 const string EMBEDDED_SWITCH_LOAD_TYPE_UPDATE_TABLE_NAME = "switch_load_type_update"
 const string EMBEDDED_SWITCH_PROPERTY_INCONSISTENCY_TABLE_NAME = "switch_property_inconsistency"
+const string EMBEDDED_AUTOMATIC_SWITCH_PERIPHERAL_TYPE_UPDATE_TABLE_NAME = "automatic_switch_peripheral_type_update"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
