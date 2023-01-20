@@ -11,6 +11,7 @@ struct HoneywellTC2ConfigurationPeripheralInterface {
     2: i64 expiration_date
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
+    6: optional i32 service_type = -1
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
