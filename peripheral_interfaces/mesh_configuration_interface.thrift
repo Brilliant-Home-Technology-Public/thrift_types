@@ -18,6 +18,7 @@ struct MeshConfigurationPeripheralInterface {
   9: optional bool allow_background_dfu
   10: optional bool enable_dfu_relay_prepare
   11: optional bluetooth.BleMeshPollingParams ble_mesh_device_polling_params
+  12: optional bool enable_automatic_always_on_switch_with_on_off_load_fix
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
