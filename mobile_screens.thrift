@@ -32,6 +32,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LiveView": "LiveView",
   "SecuritySingle": "Devices:Security",
   "SecurityPin": "EnterPin",
+  "GroupDetail": "ListDevicesScreen:Group",
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",

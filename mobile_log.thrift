@@ -369,6 +369,10 @@ const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
 const string MOBILE_NAME_MODIFIER_USER_EXISTS = "BRLUserExists"
 // END NAME MODIFIERS
 
+// BEGIN MOBILE SCREEN PARAMETERS
+const string MOBILE_SCREEN_PARAMETER_GROUP_ID = "group_id"
+// END MOBILE SCREEN PARAMETERS
+
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS
 const string MOBILE_ERROR_REASON_STATUS_CODE = "Error status code"
 const string MOBILE_ERROR_REASON_INVALID_HEADERS = "Invalid headers"
@@ -1066,6 +1070,8 @@ struct MobileSceneExecutedEvent {
   8: string app_class
 }
 
+// NOTE: screen_parameters will be logged as a JSON string created
+// from a dictionary, default empty.
 struct MobileScreenViewEvent {
   1: string table_name
   2: i64 ts
@@ -1076,6 +1082,7 @@ struct MobileScreenViewEvent {
   7: string source_screen
   8: string user_id
   9: string app_class
+  10: string screen_parameters
 }
 
 struct MobileDeviceSettingsScreenViewEvent {
