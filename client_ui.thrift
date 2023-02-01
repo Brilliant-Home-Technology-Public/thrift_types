@@ -231,6 +231,17 @@ const list<configuration.SetVariablesAction> SCENE_ACTIONS_INCOMPATIBLE_WITH_ALE
             ],
         },
     },
+    {
+        "variables": {}, // any variable, any value
+        "peripheral_filter": {
+            "peripherals": [
+                {
+                    "device_id": message_bus.HONEYWELL_TC2_IDENTIFIER,
+                    "peripheral_id": message_bus.HONEYWELL_TC2_SCENE_CONFIG_IDENTIFIER,
+                },
+            ],
+        },
+    },
 ]
 
 const list<configuration.SetVariablesAction> SCENE_ACTIONS_REQUIRING_PASSCODE = [
