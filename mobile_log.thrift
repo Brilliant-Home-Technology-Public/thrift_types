@@ -806,6 +806,8 @@ struct MobileControlConfigurationEvent {
   // NOTE: For readability, CapTouchSliderConfigs and GestureConfigs are abbreviated
   // and not serialized for this field.
   23: string device_configuration_state // Variables set on Device Config Peripheral
+  24: string voice_configuration_state // Variables set on the Voice Config Peripheral
+  25: string art_configuration_state // Variables set on the Art Config Peripheral
 }
 
 struct MobileCustomURLLaunchEvent {
