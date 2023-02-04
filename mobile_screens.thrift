@@ -59,7 +59,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MeshLEDSettings": "LEDPreferences",
   "LEDBrightness": "LEDPreferences",
   "HomeAssistantsSettings": "HomeAssistantsSettings",
-  "WakewordSensitivity": "WakewordSensitivity",
+  "WakewordOptions": "WakewordOptions",
   "HomeKitReset": "HomeKitReset",
   "TroubleshootAssistants": "TroubleshootAssistants",
 
