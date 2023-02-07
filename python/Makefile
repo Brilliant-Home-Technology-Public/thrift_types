@@ -57,7 +57,8 @@ clean_py_gen:
 VENV = $(PWD)/env
 BIN_PIP = $(VENV)/bin/pip
 BIN_PYTHON = $(VENV)/bin/python
-PYTHON = python3.7
+PYTHON_MAJOR_MINOR_VERSION = $(shell cut -d . -f 1,2 $(REPO_ROOT)/.python-version)
+PYTHON = "python$(PYTHON_MAJOR_MINOR_VERSION)"
 
 
 $(VENV):
