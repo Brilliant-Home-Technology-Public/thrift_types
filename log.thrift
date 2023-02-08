@@ -170,6 +170,7 @@ const string EMBEDDED_SWITCH_PROPERTY_INCONSISTENCY_TABLE_NAME = "switch_propert
 const string EMBEDDED_AUTOMATIC_SWITCH_PERIPHERAL_TYPE_UPDATE_TABLE_NAME = "automatic_switch_peripheral_type_update"
 const string EMBEDDED_AUTOMATIC_SWITCH_LOAD_TYPE_UPDATE_TABLE_NAME = "automatic_switch_load_type_update"
 const string EMBEDDED_AUTOMATIC_SWITCH_SLIDER_CONFIG_SYNC_TABLE_NAME = "automatic_switch_slider_config_sync"
+const string EMBEDDED_SWITCH_DCDC_REGULATOR_ENABLE_FAILURE = "switch_dcdc_regulator_enable_failure"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
