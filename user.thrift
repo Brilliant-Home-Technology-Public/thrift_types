@@ -1,5 +1,6 @@
 namespace py thrift_types.user
 namespace java thrift_types.user
+namespace cpp thrift_types.user
 
 struct User {
   1: string user_id
