@@ -307,6 +307,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "AlexaSetupSkipForNow": "SkipForNow:AlexaSetupFailure",
   "ThirdPartyDeveloperSettings": "ThirdParty:DevMenu",
   "ThirdPartyOwner": "ControlSelection:ThirdParty",
+  "DoorbellPairDevices": "PairedDevice",
+  "DoorbellNotifications": "DoorbellChimeConfiguration",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
@@ -438,6 +440,8 @@ const string MOBILE_OVERLAY_NAME_OFFLINE_DEVICE = "OfflineDevice"
 const string MOBILE_OVERLAY_NAME_OPEN_SONOS = "OpenSonos"
 const string MOBILE_OVERLAY_NAME_OTHER_RECOMMENDATIONS = "OtherRecommendations"
 const string MOBILE_OVERLAY_NAME_OVERRIDE_DISPLAY_SETTINGS = "OverrideDisplaySettings"
+const string MOBILE_OVERLAY_NAME_PAIRED_DEVICE_DEAUTHORIZED = "PairedDevice:Deauthorized"
+const string MOBILE_OVERLAY_NAME_PAIRED_DEVICE_OFFLINE = "PairedDevice:Offline"
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_PIN_UPDATED = "PinUpdated"

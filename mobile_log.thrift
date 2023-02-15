@@ -28,6 +28,7 @@ const string MOBILE_DEVICE_NOTIFICATION_VIEW = "mobile_device_notification_view"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_DEVICE_SETTINGS_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_device_settings_button_tapped"
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
+const string MOBILE_DOORBELL_CONFIGURATION_EVENT_TABLE_NAME = "mobile_doorbell_configuration"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_GANGBOX_REVISION_SELECTION_EVENT_TABLE_NAME = "mobile_gangbox_revision_selection"
 const string MOBILE_GROUP_LEVEL_EVENT_TABLE_NAME = "mobile_group_level"
@@ -207,8 +208,10 @@ const string MOBILE_BUTTON_NAME_NO_QR_CODE = "no_qr_code"
 const string MOBILE_BUTTON_NAME_NO_TOOL = "no_tool"
 const string MOBILE_BUTTON_NAME_NOT_NOW = "not_now"
 const string MOBILE_BUTTON_NAME_OCCUPIED_UNIT = "occupied_unit"
+const string MOBILE_BUTTON_NAME_OFF = "off"
 const string MOBILE_BUTTON_NAME_OFFLINE_HELP = "offline_help"
 const string MOBILE_BUTTON_NAME_OK = "ok"
+const string MOBILE_BUTTON_NAME_ON = "on"
 const string MOBILE_BUTTON_NAME_OPEN_SONOS = "open_sonos"
 const string MOBILE_BUTTON_NAME_OPEN_SOURCE_LICENSES = "open_source_licenses"
 const string MOBILE_BUTTON_NAME_OPEN_SOURCE_COMPLIANCE = "open_source_compliance"
@@ -340,6 +343,7 @@ const string MOBILE_NAME_MODIFIER_INSTALLATION_GUIDE = "InstallationGuide"
 const string MOBILE_NAME_MODIFIER_INSTALLATION_COMPLETE = "InstallationComplete"
 const string MOBILE_NAME_MODIFIER_LIGHT_ON_OFF_CHECK = "LightOnOffCheck"
 const string MOBILE_NAME_MODIFIER_LOADING = "Loading"
+const string MOBILE_NAME_MODIFIER_LOCK = "Lock"
 const string MOBILE_NAME_MODIFIER_LOCK_SCREEN = "LockScreen"
 const string MOBILE_NAME_MODIFIER_LOG_IN_OPERATOR = "LogInOperator"
 const string MOBILE_NAME_MODIFIER_LOW_WATTAGE = "LowWattage"
@@ -356,6 +360,7 @@ const string MOBILE_NAME_MODIFIER_POST_INSTALL = "PostInstall"
 const string MOBILE_NAME_MODIFIER_RESET = "Reset"
 const string MOBILE_NAME_MODIFIER_RESIDEO_PIN = "ResideoPin"
 const string MOBILE_NAME_MODIFIER_SCENE_ACTION = "SceneAction"
+const string MOBILE_NAME_MODIFIER_SECURITY_SYSTEM = "SecuritySystem"
 const string MOBILE_NAME_MODIFIER_SIZE_ONE_GANG = "1G"
 const string MOBILE_NAME_MODIFIER_SIZE_TWO_GANG = "2G"
 const string MOBILE_NAME_MODIFIER_SIZE_THREE_GANG = "3G"
@@ -721,6 +726,13 @@ enum MobileSettingsLevelType {
   HIGH_MOTION_THRESHOLD = 5
   WAKEWORD_SENSITIVITY = 6
   ALEXA_GAIN = 7
+}
+
+enum MobileDoorbellConfigurationActionType {
+  NONE_PAIRED = 1
+  LOCK_PAIRED = 2
+  SECURITY_SYSTEM_PAIRED = 3
+  LOCK_SECURITY_PAIRED = 4
 }
 
 // END LOGGING ENUMS
@@ -1604,4 +1616,16 @@ struct MobileGroupLevelEvent {
   12: MobileLevelType level_type
   13: i32 level
   14: bool aggregate
+}
+
+struct MobileDoorbellConfigurationEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileDoorbellConfigurationActionType action_type
 }
