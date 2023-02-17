@@ -309,6 +309,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ThirdPartyOwner": "ControlSelection:ThirdParty",
   "DoorbellPairDevices": "PairedDevice",
   "DoorbellNotifications": "DoorbellChimeConfiguration",
+  "ChimeSetting": "ChimeSetting",
 
   // DeleteAccount
   "DeleteAccountExistingHomes": "ExistingHomes",
