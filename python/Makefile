@@ -22,7 +22,7 @@ PY_DUMMY_TARGETS := $(SOURCES:./%.thrift=$(PY_OUTPUT_DIR)/%.py_dummy_target)
 # The python thrift compiler automatically creates a thrift_types subdirectory even when we override
 # the output directory with -out
 PY_CFLAGS = -out $(dir $(PY_OUTPUT_DIR)) --gen py
-TWO_TO_THREE = python3 -m lib2to3
+TWO_TO_THREE = $(PYTHON) -m lib2to3
 TTTFLAGS = --write --no-diffs --nobackups
 
 # Disabling builtin rules to make make faster
@@ -58,7 +58,7 @@ VENV = $(PWD)/env
 BIN_PIP = $(VENV)/bin/pip
 BIN_PYTHON = $(VENV)/bin/python
 PYTHON_MAJOR_MINOR_VERSION = $(shell cut -d . -f 1,2 $(REPO_ROOT)/.python-version)
-PYTHON = "python$(PYTHON_MAJOR_MINOR_VERSION)"
+PYTHON ?= "python$(PYTHON_MAJOR_MINOR_VERSION)"
 
 
 $(VENV):
