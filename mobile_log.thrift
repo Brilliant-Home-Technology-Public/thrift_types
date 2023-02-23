@@ -818,6 +818,7 @@ struct MobileControlConfigurationEvent {
   23: string device_configuration_state // Variables set on Device Config Peripheral
   24: string voice_configuration_state // Variables set on the Voice Config Peripheral
   25: string art_configuration_state // Variables set on the Art Config Peripheral
+  26: i64 found_control_online_seconds // Seconds after SetAvailableHome that we hear control online. -1 is never.
 }
 
 struct MobileCustomURLLaunchEvent {
