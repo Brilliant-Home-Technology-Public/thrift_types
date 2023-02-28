@@ -418,6 +418,7 @@ enum MobileUserType {
   CONSUMER = 1
   MULTIFAMILY = 2
   DEMO = 3
+  CONSUMER_V2 = 4
 }
 
 enum MobileAddDeviceFlowType {
@@ -522,6 +523,7 @@ enum MobileErrorEventType {
   FAILED_ACCOUNT_VERIFY_CODE = 35
   FAILED_ACCOUNT_GET_HOMES = 36
   FAILED_ACCOUNT_CONNECT_HOME = 37
+  FAILED_ACCOUNT_REGISTER_APP = 38
 }
 
 enum MobileEventDeviceType {
