@@ -18,6 +18,12 @@ struct UniquePeripheralID {
 const set<string> ALL_ROOM_IDS = ["ALL_ROOM_IDS"] // sentinel value
 const set<string> UNASSIGNED_ROOM_IDS = ["UNASSIGNED_ROOM_ID"] // Sentinel value, currently only supported in switch-ui
 
+enum DeviceCapabilityType {
+  DEFAULT = 0
+  SCREEN_BRIGHTNESS = 1
+  SYSTEM_VOLUME = 2
+}
+
 struct PeripheralFilter {
   // non-null fields are ANDed together; null fields are not applied during filtering
 
@@ -106,6 +112,7 @@ struct CapTouchSliderConfig {
   3: string peripheral_id
   4: optional bool disable_tap
   5: optional string double_tap_scene_id
+  6: optional DeviceCapabilityType target_capability
 }
 
 // Gesture configuration
