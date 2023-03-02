@@ -144,6 +144,13 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
         SupportType.CAP_TOUCH: false,
         SupportType.MOTION: false
     },
+    message_bus.PeripheralType.HARDWARE: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: true,
+        SupportType.MOTION: false
+    },
     message_bus.PeripheralType.SHADE: {
         SupportType.DEVICES: true,
         SupportType.SCENES: true,
