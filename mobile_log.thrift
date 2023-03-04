@@ -1418,6 +1418,7 @@ struct MobileThirdPartyDeviceAddedEvent {
   9: string integration_name
   10: string flow_type
   11: bool common_area
+  12: MobileEventDeviceType device_type
 }
 
 struct MobileThirdPartyScreenViewEvent {
