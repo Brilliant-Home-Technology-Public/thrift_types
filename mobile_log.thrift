@@ -49,7 +49,6 @@ const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_livevie
 const string MOBILE_LIVEVIEW_SUPPORT_EVENT_TABLE_NAME = "mobile_liveview_support"
 const string MOBILE_LIVEVIEW_USAGE_REPORT_EVENT_TABLE_NAME = "mobile_liveview_usage_report"
 const string MOBILE_MESH_NETWORK_EVENT_TABLE_NAME = "mobile_mesh_network_event"
-const string MOBILE_OFFLINE_EVENT_TABLE_NAME = "mobile_offline"
 const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_button_tapped"
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PAGE_VIEW_EVENT_TABLE_NAME = "mobile_page_view"
@@ -578,11 +577,6 @@ enum MobileNotificationType {
   TOP_BANNER = 4
 }
 
-enum MobileOfflineStatus {
-  OFFLINE = 1
-  PARTIAL = 2
-}
-
 enum MobilePhotosAction {
   SELECT = 1
   SELECT_ALL = 2
@@ -988,17 +982,6 @@ struct MobileJoinedHomeEvent {
   5: string device_id
   6: string user_id
   7: string app_class
-}
-
-struct MobileOfflineEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string user_id
-  7: MobileOfflineStatus offline_status
-  8: string app_class
 }
 
 // NOTE:ONLY ADD FIELDS TO MobileOverlayButtonTappedEvent
