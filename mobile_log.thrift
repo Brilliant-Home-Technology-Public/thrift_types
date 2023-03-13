@@ -985,6 +985,7 @@ struct MobileJoinedHomeEvent {
   5: string device_id
   6: string user_id
   7: string app_class
+  8: MobileUserType user_type
 }
 
 // NOTE:ONLY ADD FIELDS TO MobileOverlayButtonTappedEvent
