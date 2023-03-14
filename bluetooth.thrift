@@ -17,6 +17,9 @@ const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
 // Gestures are sent with a special "gesture" property ID and do not utilize the
 // SwitchPropertyID scheme despite being part of the SWITCH_CONFIG_CLIENT model
 const string GESTURE_PROPERTY_ID = "gesture"
+const i64 SWITCH_MOTION_CONFIGURED_LOW_THRESHOLD = 20
+const i64 SWITCH_MOTION_NOT_CONFIGURED_LOW_THRESHOLD = 100
+const i64 SWITCH_MOTION_HIGH_THRESHOLD = 70
 
 // Application version constants
 const i64 SWITCH_DFU_TESTER_APP_VERSION = 4294967295
@@ -403,7 +406,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.MOTION_LOW_THRESHOLD: {
     "property_id": SwitchPropertyID.MOTION_LOW_THRESHOLD,
     "property_size": 1,
-    "default_value": 20,
+    "default_value": SWITCH_MOTION_CONFIGURED_LOW_THRESHOLD,
     "min_value": 0,
     "max_value": 100,
     "property_type": MeshPropertyDataType.UINT8,
@@ -414,7 +417,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
   SwitchPropertyID.MOTION_HIGH_THRESHOLD: {
     "property_id": SwitchPropertyID.MOTION_HIGH_THRESHOLD,
     "property_size": 1,
-    "default_value": 70,
+    "default_value": SWITCH_MOTION_HIGH_THRESHOLD,
     "min_value": 0,
     "max_value": 100,
     "property_type": MeshPropertyDataType.UINT8,
