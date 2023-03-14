@@ -52,6 +52,10 @@ Things that require a version update (AND MIGRATION):
   * Changing constant values is **OK-ISH**
   * Changing constant names is **DISCOURAGED**
   * Removing constants is **DISCOURAGED**
+* **Enum**
+  * Adding an enum with a negative value is **NOT OK**
+    * Swift and Java add a -1 to each enum, which relies on a thrift IDL rule that enum constants are non negative (so adding a constant of -1 will break the swift and java compliation)
+    * https://thrift.apache.org/docs/idl.html
 * **Interfaces**
   * Android/iOS Clients currently do not use PeripheralInterfaces
   * Server checks this to alert on missing variables in server owned peripherals. Variables should be added to the interface and thrift_types deployed to server before/in tandem with adding the actual variable
