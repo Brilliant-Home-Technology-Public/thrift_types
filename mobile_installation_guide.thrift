@@ -249,7 +249,7 @@ struct GuideSection {
 
 struct InstallationGuide {
   1: string version
-  2: installation_template.InstallationDeviceType device_type
+  2: installation_template.InstallationDevice device
   3: list<GuideSection> sections
 }
 
@@ -367,6 +367,7 @@ const string MOBILE_GUIDE_FIELD_MISSING_GANGBOX_PERIPHERAL_PREFIX = "field_missi
 const string MOBILE_GUIDE_FIELD_MULTIWAY_ALL_OTHER_DEVICES_INSTALLED = "field_multiway_all_other_devices_installed"
 const string MOBILE_GUIDE_FIELD_PRODUCT_SKU = "field_product_sku"
 const string MOBILE_GUIDE_FIELD_PRODUCT_TYPE = "field_product_type"
+const string MOBILE_GUIDE_FIELD_PRODUCT_VARIATION = "field_product_variation"
 const string MOBILE_GUIDE_FIELD_PROVISIONED_ADDRESS = "field_provisioned_address"
 const string MOBILE_GUIDE_FIELD_SERIALIZED_DEVICE_CONFIG_PERIPHERAL_ASSIGNMENT = "serialized_device_config_peripheral_assignment"
 const string MOBILE_GUIDE_FIELD_SERIALIZED_GANGBOX_CONFIG_PERIPHERAL_ASSIGNMENT = "serialized_gangbox_config_peripheral_assignment"
@@ -473,6 +474,8 @@ const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
 const string MOBILE_GUIDE_SECTION_CHECK_WIRING = "section_check_wiring"
 const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_BASE = "section_install_brilliant_base"
+const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_FACEPLATE = "section_install_brilliant_faceplate"
+const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_LOADLESS_BASE = "section_install_brilliant_loadless_base"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_SWITCH = "section_install_brilliant_switch"
 const string MOBILE_GUIDE_SECTION_INSTALL_THIRDPARTY_DEVICE = "section_install_thirdparty_device"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"

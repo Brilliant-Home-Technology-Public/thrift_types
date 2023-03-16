@@ -824,6 +824,7 @@ struct MobileControlConfigurationEvent {
   18: bool has_multiway_all_brilliant
   // Number of devices controlling the load with the most controlling devices.
   19: i32 max_number_of_devices_for_load
+  // This field is populated from message_bus (but does not affect configuration flow)
   20: string gangbox_revision
   21: string hardware_configuration_state // Variables set on Hardware Peripheral
   22: string motion_configuration_state // Variables set on Motion Detection Config Peripheral
@@ -833,6 +834,10 @@ struct MobileControlConfigurationEvent {
   24: string voice_configuration_state // Variables set on the Voice Config Peripheral
   25: string art_configuration_state // Variables set on the Art Config Peripheral
   26: i64 found_control_online_seconds // Seconds after SetAvailableHome that we hear control online. -1 is never.
+  // This field reflects user selection (and shown content).
+  27: installation_template.InstallationDeviceVariation control_device_variation
+  // This field is populated from message_bus (and dictates configuration flow)
+  28: bool has_loadless_base
 }
 
 struct MobileCustomURLLaunchEvent {

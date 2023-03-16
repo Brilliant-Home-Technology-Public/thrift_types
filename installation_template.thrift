@@ -39,6 +39,8 @@ enum InstallWattage {
   GREATER_THAN_500W = 12
 }
 
+// Note: Use InstallationDeviceVariation to specify things like gangboxV2
+// Loadless base, etc.
 enum InstallationDeviceType {
   ONE_GANG = 1
   TWO_GANG = 2
@@ -50,6 +52,18 @@ enum InstallationDeviceType {
   STANDARD_DIMMER = 8
   THERMOSTAT = 9
   LEAK_DETECTOR = 10
+}
+
+enum InstallationDeviceVariation {
+  UNSPECIFIED = 1
+  GANGBOX_V1 = 2
+  GANGBOX_V2 = 3
+  LOADLESS_BASE = 4
+}
+
+struct InstallationDevice {
+  1: InstallationDeviceType device_type
+  2: InstallationDeviceVariation device_variation
 }
 
 const string INSTALL_TEMPLATE_HONEYWELL_USERNAME_KEY = "honeywell_username"
