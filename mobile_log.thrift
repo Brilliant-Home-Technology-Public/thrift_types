@@ -352,11 +352,13 @@ const string MOBILE_NAME_MODIFIER_NEW_FEATURES = "NewFeatures"
 const string MOBILE_NAME_MODIFIER_NO_CONTROLS = "NoControls"
 const string MOBILE_NAME_MODIFIER_NO_DEVICES = "NoDevices"
 const string MOBILE_NAME_MODIFIER_NO_SCENES = "NoScenes"
+const string MOBILE_NAME_MODIFIER_OPERATOR = "Operator"
 const string MOBILE_NAME_MODIFIER_OVERLAY = "Overlay"
 const string MOBILE_NAME_MODIFIER_PAIR = "Pair"
 const string MOBILE_NAME_MODIFIER_PARTIAL = "Partial"
 const string MOBILE_NAME_MODIFIER_PLUG = "Plug"
 const string MOBILE_NAME_MODIFIER_POST_INSTALL = "PostInstall"
+const string MOBILE_NAME_MODIFIER_PROFILE = "Profile"
 const string MOBILE_NAME_MODIFIER_RESET = "Reset"
 const string MOBILE_NAME_MODIFIER_RESIDEO_PIN = "ResideoPin"
 const string MOBILE_NAME_MODIFIER_SCENE_ACTION = "SceneAction"
@@ -372,6 +374,7 @@ const string MOBILE_NAME_MODIFIER_TEMPLATE_LOAD_FAILED = "TemplateLoadFailed"
 const string MOBILE_NAME_MODIFIER_TEMPLATE_MISMATCH = "TemplateMismatch"
 const string MOBILE_NAME_MODIFIER_THIRD_PARTY = "ThirdParty"
 const string MOBILE_NAME_MODIFIER_UPDATE_NAME = "UpdateName"
+const string MOBILE_NAME_MODIFIER_USER = "User"
 const string MOBILE_NAME_MODIFIER_USER_EXISTS = "BRLUserExists"
 // END NAME MODIFIERS
 
@@ -713,6 +716,10 @@ enum MobileSettingsToggleType {
   SHOW_FUTURE_UPDATES = 14
   ALEXA_ENABLED = 15
   WAKEWORD_CHIME = 16
+  PIN = 17
+  BIO_AUTH = 18
+  BIO_AUTH_FACE = 19
+  BIO_AUTH_TOUCH = 20
 }
 
 enum MobileSettingsLevelType {

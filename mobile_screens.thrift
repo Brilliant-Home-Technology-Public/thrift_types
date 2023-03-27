@@ -69,10 +69,11 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ColorPicker": "ColorPicker",
 
   // Account
-  "EditAccount": "ProfileSettings",
-  "EditAccountEditSettings": "ProfileSettings",
+  "EditAccount": "AccountSettings",
+  "EditAccountEditSettings": "AccountSettings",
   "ResetPin": "EnterPin",
   "EditAccountResetPin": "EnterPin",
+  "AppLock": "AppLock",
 
   // Settings
   "DemoMode": "DemoMode",
