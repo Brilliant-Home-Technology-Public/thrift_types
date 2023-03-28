@@ -1210,6 +1210,22 @@ const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
   },
 }
 
+const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
+    SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS,
+    SwitchPropertyID.UUID,
+    SwitchPropertyID.FIRMWARE_VERSION,
+    SwitchPropertyID.REBOOT,
+    SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
+    SwitchPropertyID.DFU_LAST_TRANSFER_STATE,
+    SwitchPropertyID.DFU_LAST_RX_RESPONSE,
+    SwitchPropertyID.DFU_END_TRANSFER_REASON,
+    SwitchPropertyID.DFU_LAST_RX_PACKET,
+    SwitchPropertyID.HARDWARE_REVISION,
+    SwitchPropertyID.DFU_RELAY_ENABLED,
+    SwitchPropertyID.DFU_RELAY_APP_ID,
+    SwitchPropertyID.DFU_RELAY_APP_VERSION,
+]
+
 enum LoadWattageStatus {
   UNDETERMINED = 0,
   STANDARD = 1,
