@@ -182,6 +182,11 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MFChooseBuilding": "MFChooseBuilding",
   "MFChooseUnit": "MFChooseUnit",
 
+  // AccountLoginFlow
+  "AccountLogin": "AccountLogin",
+  "AccountVerifyCode": "AccountVerifyCode",
+  "AccountChooseHome": "AccountChooseHome",
+
   // Debug
   "Debug": "Debug",
   "DebugStats": "DebugStats",
