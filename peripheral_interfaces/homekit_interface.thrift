@@ -16,6 +16,8 @@ struct HomeKitPeripheralInterface {
   12: optional homekit.ExposedFixtures exposed_fixtures
   13: homekit.SetupInfo setup_info
   14: bool force_fetch_token
+  15: i32 cookie
+  16: i32 update_status
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
