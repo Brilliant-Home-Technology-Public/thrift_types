@@ -1214,6 +1214,7 @@ const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
     SwitchPropertyID.STATUS_LIGHT_MAX_BRIGHTNESS,
     SwitchPropertyID.UUID,
     SwitchPropertyID.FIRMWARE_VERSION,
+    SwitchPropertyID.POWER,
     SwitchPropertyID.REBOOT,
     SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
     SwitchPropertyID.HARDWARE_REVISION,
