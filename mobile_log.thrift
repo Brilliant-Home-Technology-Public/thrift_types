@@ -530,6 +530,7 @@ enum MobileErrorEventType {
   FAILED_ACCOUNT_CONNECT_HOME = 37
   FAILED_ACCOUNT_REGISTER_APP = 38
   FAILED_ACCOUNT_REFRESH_USER_AUTH = 39
+  SWITCH_COMPATIBILITY_CHECK_UNDETERMINED = 40 // Logged only if retry also fails
 }
 
 enum MobileEventDeviceType {
@@ -773,6 +774,8 @@ struct MobileBLEProvisioningEvent {
   19: bool is_free_pairing
   20: string provisioning_message_state
   21: string configuration_requests // get property requests
+  22: string compatibility_state // Contains values for high wattage and MLV initially set.
+  23: string compatibility_values // Contains readings that compatibility state was derived from
 }
 
 struct MobileConnectivityEvent {

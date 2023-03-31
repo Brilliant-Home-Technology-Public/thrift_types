@@ -258,6 +258,7 @@ enum CompatibilityCheckResult {
   GENERIC_ERROR = 2
   HIGH_WATTAGE = 3
   MAGNETIC_LOAD = 4
+  UNDETERMINED = 5 // Returned if even after retrying, unable to determine result.
 }
 
 enum CompatibilityCheckState {
@@ -267,6 +268,7 @@ enum CompatibilityCheckState {
   GET_SWITCH_LOAD_TYPE = 4
   GET_POWER = 5
   GET_CURRENT_ZERO_CROSS = 6
+  RETRY_CHECK = 7
 }
 
 const string MOBILE_GUIDE_COMPUTED_IMAGE_URL_WIRING_DIAGRAM = "COMPUTED_IMAGE_URL_WIRING_DIAGRAM"
