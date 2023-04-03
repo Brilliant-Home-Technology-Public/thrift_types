@@ -79,7 +79,9 @@ const string MOBILE_WEBRTC_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_webrtc_sess
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ABOUT = "about"
+const string MOBILE_BUTTON_NAME_ACCOUNT_LOG_IN = "account_log_in"
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
+const string MOBILE_BUTTON_NAME_ACCOUNT_SIGN_UP = "account_sign_up"
 const string MOBILE_BUTTON_NAME_ADD_DEVICE = "add_device"
 const string MOBILE_BUTTON_NAME_ADD_LOCATION = "add_location"
 const string MOBILE_BUTTON_NAME_ADD_NEW_DEVICES = "add_new_devices"
