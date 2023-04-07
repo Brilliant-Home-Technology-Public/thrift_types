@@ -1224,6 +1224,11 @@ const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
     SwitchPropertyID.DFU_RELAY_ENABLED,
     SwitchPropertyID.DFU_RELAY_APP_ID,
     SwitchPropertyID.DFU_RELAY_APP_VERSION,
+    SwitchPropertyID.DBG_BUF_SET_NEXT_TRIGGER,
+    SwitchPropertyID.DBG_BUF_AWAITING_NEXT_TRIGGER,
+    SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER,
+    SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX,
+    SwitchPropertyID.DBG_BUF_GET_CHUNK,
 ]
 
 enum LoadWattageStatus {
