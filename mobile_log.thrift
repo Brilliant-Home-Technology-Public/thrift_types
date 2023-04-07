@@ -531,6 +531,7 @@ enum MobileErrorEventType {
   FAILED_ACCOUNT_REGISTER_APP = 38
   FAILED_ACCOUNT_REFRESH_USER_AUTH = 39
   SWITCH_COMPATIBILITY_CHECK_UNDETERMINED = 40 // Logged only if retry also fails
+  FAILED_ACCOUNT_GET_USER_NAME = 41
 }
 
 enum MobileEventDeviceType {
