@@ -8,3 +8,6 @@ const string HONEYWELL_TC2_EVENT_KEY_SWITCH_STATE = "honeywell_tc2:switch_state"
 const string HONEYWELL_TC2_EVENT_KEY_SWITCH_LEVEL = "honeywell_tc2:switch_level"
 const string HONEYWELL_TC2_EVENT_KEY_LOCK_STATE = "honeywell_tc2:lock_state"
 const string HONEYWELL_TC2_EVENT_KEY_THERMOSTAT_STATE = "honeywell_tc2:thermostat_state"
+
+const string HONEYWELL_TC2_SKYBELL_DEVICE_CLASS = "WIFIDoorBell"
+const string HONEYWELL_TC2_VX_DOORBELL_DEVICE_CLASS = "VXDoorbell"
