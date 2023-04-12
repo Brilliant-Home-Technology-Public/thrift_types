@@ -92,6 +92,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ChooseJoinedHome": "MyHomes",
   "NoJoinedHomes": "MyHomes:Empty",
   "HomeSettings": "HomeSettings",
+  "HomeResident": "HomeSettings:DisplayUser"
   "PrivacySettings": "PrivacySettings",
   "RemoteVideoAccess": "RemoteVideoAccess",
   "ChildLock": "ChildLock",
@@ -364,6 +365,7 @@ const string MOBILE_OVERLAY_NAME_CONTROL_REMOVAL_UNSUPPORTED = "ControlRemoval:U
 const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
 const string MOBILE_OVERLAY_NAME_CONTROL_SCAN_SWITCH_INSTALL = "ControlScanSwitchInstall"
 const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED = "CurrentDeviceDeauthed"
+const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED_MF_RESIDENT = "CurrentDeviceDeauthed:MFResident"
 const string MOBILE_OVERLAY_NAME_CURRENT_GANG_INFO = "CurrentGangInfo"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
 const string MOBILE_OVERLAY_NAME_DEAUTHORIZED_DEVICE = "DeauthorizedDevice"
@@ -461,6 +463,7 @@ const string MOBILE_OVERLAY_NAME_OVERRIDE_DISPLAY_SETTINGS = "OverrideDisplaySet
 const string MOBILE_OVERLAY_NAME_PAIRED_DEVICE_DEAUTHORIZED = "PairedDevice:Deauthorized"
 const string MOBILE_OVERLAY_NAME_PAIRED_DEVICE_OFFLINE = "PairedDevice:Offline"
 const string MOBILE_OVERLAY_NAME_PASSCODE_RESET_FAILED = "PasscodeResetFailed"
+const string MOBILE_OVERLAY_NAME_PENDING_HOME_INVITE_MULTIFAMILY = "PendingHomeInvite:Multifamily"
 const string MOBILE_OVERLAY_NAME_PHOTOS_DEMO_INFO = "Demo:Photos"
 const string MOBILE_OVERLAY_NAME_PIN_UPDATED = "PinUpdated"
 const string MOBILE_OVERLAY_NAME_PRIVACY_SETTINGS_ERROR = "PrivacySettings:Error"
