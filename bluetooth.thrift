@@ -1203,6 +1203,7 @@ enum LoadWattageStatus {
   STANDARD = 1,
   HIGH = 2,
   PENDING = 3, // Used during control compatibility check
+  MEDIUM = 4, // Wattage is high enough to require mandatory fades but not safety disable mode
 }
 
 enum LoadMagneticStatus {
