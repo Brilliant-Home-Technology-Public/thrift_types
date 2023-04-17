@@ -480,6 +480,7 @@ const string MOBILE_OVERLAY_NAME_PROVISIONING_ERROR_TIMEOUT = "Provisioning:Time
 const string MOBILE_OVERLAY_NAME_PROVISIONING_ERROR_VENDOR = "Provisioning:Error:Vendor"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_NO_ONLINE_CONTROL = "ProvisioningNoOnlineControl"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_SUCCESS = "Provisioning:Success"
+const string MOBILE_OVERLAY_NAME_REASSIGN_SLIDERS = "ReassignSliders"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_REPROVISION_MESH_DEVICE_WARNING = "ReprovisionMeshDeviceWarning"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
