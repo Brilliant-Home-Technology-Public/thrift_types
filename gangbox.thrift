@@ -28,3 +28,6 @@ enum GangboxDeviceRevision {
   V1 = 1,
   V2 = 2,
 }
+
+// TODO: Update following more research
+const i32 SWITCH_MEDIUM_WATTAGE_MIN_DIM_SMOOTHING_DURATION_MS = 1000
