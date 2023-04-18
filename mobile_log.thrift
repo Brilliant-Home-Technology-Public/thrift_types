@@ -438,6 +438,7 @@ enum MobileAddDeviceFlowType {
 enum MobileDeviceSettingsFlowType {
   DEVICE_SETTINGS = 1
   HOME_ASSISTANTS = 2
+  SLIDER_SETTINGS = 3
 }
 
 enum MobileBLEDeviceType {
