@@ -34,7 +34,8 @@ struct PeripheralCheckpoint {
 
 struct DeviceCheckpoint {
   1: i64 timestamp
-  // The MD5 sum of the Thrift-serialized Device.
+  // The MD5 sum of the device fields (e.g. device_type) and the concatenation of the checksums for
+  // all of the Device's peripherals.
   2: binary integrity_checksum
   // Keyed by peripheral name.
   3: map<string, PeripheralCheckpoint> peripheral_checkpoints
