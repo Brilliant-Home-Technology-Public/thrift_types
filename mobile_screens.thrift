@@ -184,9 +184,16 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MFChooseUnit": "MFChooseUnit",
 
   // AccountLoginFlow
+  "SignUp": "SignUp",
   "AccountLogin": "AccountLogin",
   "AccountVerifyCode": "AccountVerifyCode",
   "AccountChooseHome": "AccountChooseHome",
+  // iOS will use modifiers
+  // Android
+  "AccountCreateHome": "PairV2:CreateHome:UserV2",
+  "AccountSetHomePasscode": "SetHomePasscode:UserV2",
+  "AccountSetupSuccess": "PairV2:SetupAccount:Success:UserV2",
+  "AccountJoinHomeSuccess": "PairV2:SetupAccount:Success:UserV2",
 
   // Debug
   "Debug": "Debug",
