@@ -183,16 +183,16 @@ enum BrilliantOpCode{
 
 enum SwitchPropertyID {
   RESERVED_FOR_FUTURE_USE     = 0x00,
-  ALWAYS_ON                   = 0x01,
-  DIMMABLE                    = 0x02,
+  ALWAYS_ON                   = 0x01, // DEPRECATED 2023-04
+  DIMMABLE                    = 0x02, // DEPRECATED 2023-04
   MINIMUM_DIM_LEVEL           = 0x03,
   MAXIMUM_DIM_LEVEL           = 0x04,
   MOTION_LOW_THRESHOLD        = 0x05,
   MOTION_HIGH_THRESHOLD       = 0x06,
   STATUS_LIGHT_MAX_BRIGHTNESS = 0x07,
   UNICAST_ADDRESS_FORWARDING  = 0x08,
-  MOTION_TO_TRIGGER_ON        = 0x09,
-  MOTION_TO_TRIGGER_OFF       = 0x0A,
+  MOTION_TO_TRIGGER_ON        = 0x09, // DEPRECATED
+  MOTION_TO_TRIGGER_OFF       = 0x0A, // DEPRECATED
   MOTION_SCORE                = 0x0B,
   MOTION_DETECTED             = 0x0C,
   TEMPERATURE                 = 0x0D,
@@ -200,13 +200,13 @@ enum SwitchPropertyID {
   FIRMWARE_VERSION            = 0x0F,
   API_VERSION                 = 0x10,
   CURRENT_ZERO_CROSS          = 0x11,
-  BREAK_DIMMING               = 0x12,
+  BREAK_DIMMING               = 0x12, // DEPRECATED
   POWER                       = 0x13,
-  POWER_THRESHOLD             = 0x14,
-  BREAK_CIRCUIT               = 0x15,
-  CURRENT_SENSE_ADC_DATA      = 0x16,
-  DEVICE_REVISION             = 0x17,
-  ERROR_STATUS                = 0x18,
+  POWER_THRESHOLD             = 0x14, // DEPRECATED
+  BREAK_CIRCUIT               = 0x15, // DEPRECATED
+  CURRENT_SENSE_ADC_DATA      = 0x16, // DEPRECATED
+  DEVICE_REVISION             = 0x17, // DEPRECATED
+  ERROR_STATUS                = 0x18, // DEPRECATED
   DOUBLE_TAP_ENABLED          = 0x19,
   SWITCH_LOAD_TYPE            = 0x1A,
   UNICAST_FORWARDING_GESTURES = 0x1B,
@@ -215,30 +215,30 @@ enum SwitchPropertyID {
   AMPS_SAFE_MAX_THRESHOLD     = 0x1E,
   TEMP_SAFE_MAX_THRESHOLD     = 0x1F,
   MOTION_MIN_SMPLS_BTW_UPDATE = 0x20,
-  DBG_LAST_CS_RESULT_STATUS   = 0x21,
-  DBG_COMPUTED_ZERO_POINT     = 0x22,
-  DBG_CYCLES_SINCE_ZC_SUCCESS = 0x23,
+  DBG_LAST_CS_RESULT_STATUS   = 0x21, // DEPRECATED 2023-04
+  DBG_COMPUTED_ZERO_POINT     = 0x22, // DEPRECATED 2023-04
+  DBG_CYCLES_SINCE_ZC_SUCCESS = 0x23, // DEPRECATED 2023-04
   TUNE_MAX_DEVIATION_IDL_ZERO = 0x24,
   TUNE_ZC_NUM_PT_FOR_NOISE_REDUCTION   = 0x25,
   TUNE_MAX_DEV_BETWEEN_RUNS            = 0x26,
   REBOOT                      = 0x27,
   ENABLE_FWID_PACKET_BROADCAST= 0x28,
-  DFU_LAST_TRANSFER_STATE     = 0x29,
-  DFU_LAST_RX_RESPONSE        = 0x2A,
-  DFU_END_TRANSFER_REASON     = 0x2B,
-  DFU_LAST_RX_PACKET          = 0x2C,
+  DFU_LAST_TRANSFER_STATE     = 0x29, // DEPRECATED 2023-04
+  DFU_LAST_RX_RESPONSE        = 0x2A, // DEPRECATED 2023-04
+  DFU_END_TRANSFER_REASON     = 0x2B, // DEPRECATED 2023-04
+  DFU_LAST_RX_PACKET          = 0x2C, // DEPRECATED 2023-04
   HARDWARE_REVISION           = 0x2D,
   CAPTOUCH_BTN00_TUNING_PARAM = 0x2E,
   CAPTOUCH_SLD00_TUNING_PARAM = 0x2F,
-  PROXY_HAS_ACTIVE_CONNS      = 0x30,
+  PROXY_HAS_ACTIVE_CONNS      = 0x30, // DEPRECATED 2023-04
   PROXY_DISCONNECT_ALL        = 0x31,
   REPLAY_CACHE_CLEAR          = 0x32,
-  REPLAY_CACHE_GET_NUM_ELEM   = 0x33,
-  REPLAY_CACHE_GET_CUR_IV     = 0x34,
-  REPLAY_CACHE_SET_GET_ELEM_IDX = 0x35,
-  REPLAY_CACHE_GET_ELEM_SRC   = 0x36,
-  REPLAY_CACHE_GET_ELEM_SEQ   = 0x37,
-  REPLAY_CACHE_GET_ELEM_IV    = 0x38,
+  REPLAY_CACHE_GET_NUM_ELEM   = 0x33, // DEPRECATED 2023-04
+  REPLAY_CACHE_GET_CUR_IV     = 0x34, // DEPRECATED 2023-04
+  REPLAY_CACHE_SET_GET_ELEM_IDX = 0x35 // DEPRECATED 2023-04
+  REPLAY_CACHE_GET_ELEM_SRC   = 0x36, // DEPRECATED 2023-04
+  REPLAY_CACHE_GET_ELEM_SEQ   = 0x37, // DEPRECATED 2023-04
+  REPLAY_CACHE_GET_ELEM_IV    = 0x38, // DEPRECATED 2023-04
   DFU_RELAY_ENABLED           = 0x40,
   DFU_RELAY_APP_ID            = 0x41,
   DFU_RELAY_APP_VERSION       = 0x42,
@@ -316,8 +316,8 @@ enum MeshPropertyDataType {
 
 enum SwitchPropertyFlashHandle {
   SWITCH_DIMMER_FLASH_HANDLE               = 0x7001,
-  FLASH_HANDLE_ALWAYS_ON                   = 0x7002,
-  FLASH_HANDLE_DIMMABLE                    = 0x7003,
+  FLASH_HANDLE_ALWAYS_ON                   = 0x7002, // DEPRECATED
+  FLASH_HANDLE_DIMMABLE                    = 0x7003, // DEPRECATED
   FLASH_HANDLE_MIN_DIM_LEVEL               = 0x7004,
   FLASH_HANDLE_MAX_DIM_LEVEL               = 0x7005,
   FLASH_HANDLE_MOTION_LOW_THRESHOLD        = 0x7006,
@@ -371,7 +371,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.BOOL,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_ALWAYS_ON,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DIMMABLE: {
     "property_id": SwitchPropertyID.DIMMABLE,
@@ -382,7 +382,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.BOOL,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_DIMMABLE,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.MINIMUM_DIM_LEVEL: {
     "property_id": SwitchPropertyID.MINIMUM_DIM_LEVEL,
@@ -719,7 +719,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DBG_COMPUTED_ZERO_POINT: {
     "property_id": SwitchPropertyID.DBG_COMPUTED_ZERO_POINT,
@@ -728,7 +728,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS: {
     "property_id": SwitchPropertyID.DBG_CYCLES_SINCE_ZC_SUCCESS,
@@ -737,7 +737,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO: {
     "property_id": SwitchPropertyID.TUNE_MAX_DEVIATION_IDL_ZERO,
@@ -791,7 +791,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DFU_LAST_RX_RESPONSE: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_RESPONSE,
@@ -800,7 +800,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT32,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DFU_END_TRANSFER_REASON: {
     "property_id": SwitchPropertyID.DFU_END_TRANSFER_REASON,
@@ -809,7 +809,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DFU_LAST_RX_PACKET: {
     "property_id": SwitchPropertyID.DFU_LAST_RX_PACKET,
@@ -817,7 +817,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8_ARRAY,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.HARDWARE_REVISION: {
     "property_id": SwitchPropertyID.HARDWARE_REVISION,
@@ -885,7 +885,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.BOOL,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.PROXY_DISCONNECT_ALL: {
     "property_id": SwitchPropertyID.PROXY_DISCONNECT_ALL,
@@ -918,7 +918,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.REPLAY_CACHE_GET_CUR_IV: {
     "property_id": SwitchPropertyID.REPLAY_CACHE_GET_CUR_IV,
@@ -929,7 +929,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT32,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.REPLAY_CACHE_SET_GET_ELEM_IDX: {
     "property_id": SwitchPropertyID.REPLAY_CACHE_SET_GET_ELEM_IDX,
@@ -940,7 +940,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SRC: {
     "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SRC,
@@ -951,7 +951,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SEQ: {
     "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_SEQ,
@@ -962,7 +962,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT32,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.REPLAY_CACHE_GET_ELEM_IV: {
     "property_id": SwitchPropertyID.REPLAY_CACHE_GET_ELEM_IV,
@@ -973,7 +973,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": FLASH_HANDLE_UNSET,
     "publish_config_type": PublishConfigType.DISABLED,
-    "deprecated": 0,
+    "deprecated": 1,
   },
   SwitchPropertyID.DFU_RELAY_ENABLED: {
     "property_id": SwitchPropertyID.DFU_RELAY_ENABLED,
