@@ -85,6 +85,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeLoginEnterCode": "HomePasscode:Verification:Reset",
   "HomePasscodeReset": "HomePasscode", // Use modifier for forgot passcode flow
   // Home Management
+  "AccountDisplay": "HomeSettings:DisplayUser",
   "HomeManagement": "HomeManagement",
   "HomeManagementDevices": "HomeManagement",
   "HomeManagementUpdateName": "HomeManagementUpdateName",
