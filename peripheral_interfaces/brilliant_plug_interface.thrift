@@ -14,7 +14,7 @@ struct BrilliantPlugPeripheralInterface {
   4: string peripheral_info_id
   5: i32 status_light_max_brightness
   6: bluetooth.MeshDeviceFirmware firmware_version
-  7: i32 api_version
+  7: optional i32 api_version // DEPRECATED
   8: configuration.PeripheralConfiguration peripheral_configuration
   9: optional bool enable_fwid_packet_broadcast
   10: optional mesh_dfu.MeshDfuPacket last_advertised_dfu_packet
