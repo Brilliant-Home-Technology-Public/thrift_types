@@ -96,6 +96,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeResident": "HomeSettings:DisplayUser"
   "PrivacySettings": "PrivacySettings",
   "RemoteVideoAccess": "RemoteVideoAccess",
+  "RemoveUserFromHome": "RemoveConfirm",
   "ChildLock": "ChildLock",
   "SwitchEnvironment": "SwitchEnvironment",
   "Troubleshoot": "Troubleshoot",
@@ -374,6 +375,7 @@ const string MOBILE_OVERLAY_NAME_CONTROL_REMOVED = "ControlRemoved"
 const string MOBILE_OVERLAY_NAME_CONTROL_SCAN_SWITCH_INSTALL = "ControlScanSwitchInstall"
 const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED = "CurrentDeviceDeauthed"
 const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED_MF_RESIDENT = "CurrentDeviceDeauthed:MFResident"
+const string MOBILE_OVERLAY_NAME_CURRENT_DEVICE_DEAUTHED_USER_V2 = "CurrentDeviceDeauthed:UserV2"
 const string MOBILE_OVERLAY_NAME_CURRENT_GANG_INFO = "CurrentGangInfo"
 const string MOBILE_OVERLAY_NAME_CUSTOM_ART_PROMPT = "CustomArtPrompt"
 const string MOBILE_OVERLAY_NAME_DEAUTHORIZED_DEVICE = "DeauthorizedDevice"
@@ -492,6 +494,9 @@ const string MOBILE_OVERLAY_NAME_PROVISIONING_ERROR_VENDOR = "Provisioning:Error
 const string MOBILE_OVERLAY_NAME_PROVISIONING_NO_ONLINE_CONTROL = "ProvisioningNoOnlineControl"
 const string MOBILE_OVERLAY_NAME_PROVISIONING_SUCCESS = "Provisioning:Success"
 const string MOBILE_OVERLAY_NAME_REASSIGN_SLIDERS = "ReassignSliders"
+const string MOBILE_OVERLAY_NAME_REMOVE_LAST_USER = "RemoveLastUser:Forbidden"
+const string MOBILE_OVERLAY_NAME_REMOVE_SUCCESS_SELF = "RemoveSuccess:Self"
+const string MOBILE_OVERLAY_NAME_REMOVE_SUCCESS_USER = "RemoveSuccess:UserV2"
 const string MOBILE_OVERLAY_NAME_RENAME_ROOM_ERROR = "RenameRoom:Error"
 const string MOBILE_OVERLAY_NAME_REPROVISION_MESH_DEVICE_WARNING = "ReprovisionMeshDeviceWarning"
 const string MOBILE_OVERLAY_NAME_RESET_NAME = "ResetName"
