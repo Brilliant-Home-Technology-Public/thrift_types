@@ -746,6 +746,22 @@ enum MobileDoorbellConfigurationActionType {
   LOCK_SECURITY_PAIRED = 4
 }
 
+enum MobileHouseholdUsersAction {
+  INVITE_USER = 1
+  REMOVE_USER = 2
+  REMOVE_SELF = 3
+  CANCEL_INVITE = 4
+}
+
+enum MobileHouseholdUsersStatus {
+  SUCCESS = 1
+  SUCCESS_ALREADY_ACCEPTED = 2
+  FAILURE_FORBIDDEN = 3
+  FAILURE_INVALID_EMAIL = 4
+  GENERAL_ERROR = 5
+  FAILURE_LAST_IN_HOME = 6
+}
+
 // END LOGGING ENUMS
 
 
@@ -1638,4 +1654,17 @@ struct MobileDoorbellConfigurationEvent {
   7: string user_id
   8: string app_class
   9: MobileDoorbellConfigurationActionType action_type
+}
+
+struct MobileHouseholdUsersEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: MobileHouseholdUsersAction household_users_action
+  10: MobileHouseholdUsersStatus household_users_status
 }
