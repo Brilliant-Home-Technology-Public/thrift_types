@@ -359,6 +359,7 @@ const string MOBILE_OVERLAY_NAME_BLUETOOTH_GENERIC_ERROR = "BluetoothGenericErro
 const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarning"
 const string MOBILE_OVERLAY_NAME_BIOMETRIC_ERROR = "BiometricError"
 const string MOBILE_OVERLAY_NAME_BYPASS_SENSOR = "BypassSensor"
+const string MOBILE_OVERLAY_NAME_CANCEL_INVITE = "CancelInvite"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CHANGE_MESH_OWNER = "ChangeMeshOwner"
 const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_ERROR = "CircuitLoadIdentification:WiringError"
