@@ -141,6 +141,7 @@ enum GuideFieldType {
   KEY_VALUE_LIST = 15 // Displays a key and value list from GuideOptions
   STEP_INSTRUCTION = 16 // Displays a field that has a step number and maybe a key/value listing
   LARGE_VERTICAL_OPTION_QUESTION = 17 // Displays a field with large image cells for users to answer a question
+  LARGE_HORIZONTAL_OPTION_QUESTION = 18 // Displays a field with half screen width image cells for users to answer a question
 }
 
 struct GuideOption {
@@ -362,6 +363,7 @@ const string MOBILE_GUIDE_FIELD_LOAD_CONTROLLED_BY_SWITCH_PREFIX = "field_load_c
 const string MOBILE_GUIDE_FIELD_LOAD_NAME_PREFIX = "field_load_name_"
 const string MOBILE_GUIDE_FIELD_LOAD_ROOM_IDS_PREFIX = "field_load_room_ids_"
 const string MOBILE_GUIDE_FIELD_LOAD_TYPE_PREFIX = "field_load_type_"
+const string MOBILE_GUIDE_FIELD_LOADLESS_INSTALL_METHOD = "field_loadless_install_method"
 const string MOBILE_GUIDE_FIELD_MAGNETIC_LOAD_PREFIX = "field_magnetic_load_"
 const string MOBILE_GUIDE_FIELD_MISSING_GANGBOX_PERIPHERAL_PREFIX = "field_missing_gangbox_peripheral_"
 const string MOBILE_GUIDE_FIELD_MULTIWAY_ALL_OTHER_DEVICES_INSTALLED = "field_multiway_all_other_devices_installed"
