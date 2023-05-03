@@ -174,6 +174,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "CreateHome": "PairV2:CreateHome",
   "SetHomePasscodeChapter": "SetHomePasscode",
   "SetHomePasscodeSuccess": "HomePasscodeSuccess",
+  "InviteHomeMembers": "InviteHomeMembers",
+  "SendInvites": "InviteHomeMembersList",
   "MFLogin": "MFLogin",
   "HomeSetupComplete": "HomeSetupComplete",
   // iOS
@@ -360,6 +362,7 @@ const string MOBILE_OVERLAY_NAME_BACK_ON_PROVISIONING = "Provisioning:ExitWarnin
 const string MOBILE_OVERLAY_NAME_BIOMETRIC_ERROR = "BiometricError"
 const string MOBILE_OVERLAY_NAME_BYPASS_SENSOR = "BypassSensor"
 const string MOBILE_OVERLAY_NAME_CANCEL_INVITE = "CancelInvite"
+const string MOBILE_OVERLAY_NAME_CANCEL_INVITE_SUCCESS = "CancelInvite:Success"
 const string MOBILE_OVERLAY_NAME_CANNOT_DELETE_ROOM = "DeleteRoom:CannotDelete"
 const string MOBILE_OVERLAY_NAME_CHANGE_MESH_OWNER = "ChangeMeshOwner"
 const string MOBILE_OVERLAY_NAME_CIRCUIT_LOAD_IDENTIFICATION_ERROR = "CircuitLoadIdentification:WiringError"
@@ -388,7 +391,6 @@ const string MOBILE_OVERLAY_NAME_DELETE_HOME_SUCCESS = "DeleteHomeSuccess"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_ERROR = "DeleteHomeError"
 const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION = "DeleteInstallation"
 const string MOBILE_OVERLAY_NAME_DELETE_INSTALLATION_ERROR = "DeleteInstallation:Error"
-const string MOBILE_OVERLAY_NAME_IS_THIS_LIGHT = "ThirdParty:IsThisLight"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM = "DeleteRoom"
 const string MOBILE_OVERLAY_NAME_DELETE_ROOM_ERROR = "DeleteRoom:Error"
 const string MOBILE_OVERLAY_NAME_DETECTING_DEVICES = "DetectingDevices"
@@ -408,6 +410,7 @@ const string MOBILE_OVERLAY_NAME_EMPTY_ROOM = "Rooms:Empty"
 const string MOBILE_OVERLAY_NAME_ENABLE_3P_DEVICES = "Enable3PDevices"
 const string MOBILE_OVERLAY_NAME_ENABLE_LIVE_VIEW = "EnableLiveView"
 const string MOBILE_OVERLAY_NAME_ENTER_ZIP_CODE = "EnterZipCode"
+const string MOBILE_OVERLAY_NAME_EXISTING_MEMBERS = "ExistingMembers"
 const string MOBILE_OVERLAY_NAME_EXIT_DEMO = "Demo:Exit"
 const string MOBILE_OVERLAY_NAME_FAILED_COMPATIBILITY = "FailedCompatibility"
 const string MOBILE_OVERLAY_NAME_FREE_PAIRING_NO_DEVICES = "FreePairing:NoDevices"
@@ -424,7 +427,8 @@ const string MOBILE_OVERLAY_NAME_HIGH_TEMPERATURE = "AttentionNeeded:HighTempera
 const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE = "HighWattage"
 const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE_LOAD = "HighWattageLoad"
 const string MOBILE_OVERLAY_NAME_HONEYWELL_SETUP_ERROR = "HoneywellSetupError"
-const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled"
+const string MOBILE_OVERLAY_NAME_HOME_INVITE_ACCEPT_CONFIRMATION = "HomeInviteAcceptConfirmation"
+const string MOBILE_OVERLAY_NAME_HOME_INVITE_DECLINE_CONFIRMATION = "HomeInviteDeclineConfirmation"
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETED = "Success:InstallCompleted"
@@ -438,6 +442,7 @@ const string MOBILE_OVERLAY_NAME_INSTALLATION_RATING = "InstallationRating"
 const string MOBILE_OVERLAY_NAME_INVALID_TOKEN = "InvalidToken"
 const string MOBILE_OVERLAY_NAME_INVITE_LIMIT = "InviteLimit"
 const string MOBILE_OVERLAY_NAME_INVITE_RESIDENT = "InviteResident"
+const string MOBILE_OVERLAY_NAME_IS_THIS_LIGHT = "ThirdParty:IsThisLight"
 const string MOBILE_OVERLAY_NAME_JOIN_ANOTHER_HOME = "JoinAnotherHome"
 const string MOBILE_OVERLAY_NAME_LEAK_DETECTED = "AttentionNeeded:LeakDetected"
 const string MOBILE_OVERLAY_NAME_LED_SUCCESS = "LEDSuccess"
@@ -457,6 +462,7 @@ const string MOBILE_OVERLAY_NAME_LOGGED_OUT_FROM_INACTIVITY = "LoggedOutFromInac
 const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperature"
 const string MOBILE_OVERLAY_NAME_MESH_CRITICAL_FIRMWARE_UPDATE = "MeshFirmwareUpdate:Critical"
 const string MOBILE_OVERLAY_NAME_MESH_FIRMWARE_UPDATE = "MeshFirmwareUpdate"
+const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled"
 const string MOBILE_OVERLAY_NAME_MF_HOMES_LISTING = "MFHomesListing"
 const string MOBILE_OVERLAY_NAME_MF_RESET_PIN = "MFResetPin"
 const string MOBILE_OVERLAY_NAME_MF_UNIT_OCCUPIED = "MFUnitOccupied"
