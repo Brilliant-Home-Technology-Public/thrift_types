@@ -37,5 +37,11 @@ enum GangboxDeviceRevision {
   V2 = 2,
 }
 
-// TODO: Update following more research
+// TODO: Remove once there are no longer any references
 const i32 SWITCH_MEDIUM_WATTAGE_MIN_DIM_SMOOTHING_DURATION_MS = 1000
+
+// Fade constants for switch
+// TODO: Update following more research
+const i32 SWITCH_200_TO_300_W_MIN_DIM_SMOOTHING_DURATION_MS = 2000
+const i32 SWITCH_300_TO_400_W_MIN_DIM_SMOOTHING_DURATION_MS = 3000
+const i32 SWITCH_400_W_AND_OVER_MIN_DIM_SMOOTHING_DURATION_MS = 5000
