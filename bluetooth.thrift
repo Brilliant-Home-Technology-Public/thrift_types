@@ -1225,6 +1225,7 @@ const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
     SwitchPropertyID.DBG_BUF_CUR_CONTENTS_TRIGGER,
     SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX,
     SwitchPropertyID.DBG_BUF_GET_CHUNK,
+    SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
 ]
 
 enum LoadWattageStatus {
