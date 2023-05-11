@@ -54,7 +54,6 @@ const string MOBILE_OVERLAY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_overlay_but
 const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PAGE_VIEW_EVENT_TABLE_NAME = "mobile_page_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
-const string MOBILE_PROVISIONING_CANCEL_EVENT_TABLE_NAME = "mobile_provisioning_cancel"
 const string MOBILE_RTSP_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_rtsp_session_report"
 const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
@@ -464,6 +463,7 @@ enum MobileBLEProvisioningEventStatus {
   ERROR_CONFIGURATION = 3 // Returned when an error during vendor message exchanges occurs
   ERROR_MESSAGE_BUS = 4 // Returned when an error in message bus setup occurs
   ERROR_BLUETOOTH = 5 // Returned when an error accessing bluetooth occurs
+  USER_CANCELED = 6 // User backed out / canceled. Previously logged as separate log (mobile_provisioning_canceled)
 }
 
 enum MobileControlConfigurationEventStatus {
@@ -472,6 +472,7 @@ enum MobileControlConfigurationEventStatus {
   ERROR_FINDING_CONTROL = 3 // Returned control is not found
   ERROR_WAITING_FOR_CONTROL_ONLINE = 4 // Returned when control is found but never comes online
   ERROR_CONFIGURATION = 5 // Returned when a blocking error occurs during configuration
+  USER_CANCELED = 6 // User backed out / canceled.
 }
 
 enum MobileLoadConfigurationStatus {
@@ -1346,17 +1347,6 @@ struct MobileMeshNetworkEvent {
   7: string app_class
   8: MobileMeshNetworkEventType network_event_type
   9: i64 modification_timestamp
-}
-
-struct MobileProvisioningCancelEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string user_id
-  7: string app_class
-  8: i64 time_elapsed_seconds
 }
 
 struct MobileLiveviewSupportEvent {

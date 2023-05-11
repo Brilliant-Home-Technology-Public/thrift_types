@@ -57,6 +57,10 @@ enum MeshProvisionStatus {
   CONNECTING_TO_PROVISIONED_AFTER_REBOOT = 53
   CONNECTED_TO_PROVISIONED_AFTER_REBOOT = 54
   // If we successfully connect again, we move to MESH_PROVISION_COMPLETE
+
+  USER_CANCELED = 55 // User exited the flow of their own volition
+  GENERIC_TIMEOUT = 56 // A generic timeout status for states that don't have their own timeouts.
+  MESH_CONFIGURATION_FETCH = 57 // Fetch app key and net key from message bus
 }
 
 enum ControlConfigurationStatus {
