@@ -518,6 +518,7 @@ const string UI_BUTTON_NAME_SENSOR_STATUS = "sensor_status"
 const string UI_BUTTON_NAME_SIREN = "siren"
 const string UI_BUTTON_NAME_ACTIVATE_SIREN = "activate_siren"
 const string UI_BUTTON_NAME_STOP_SIREN = "stop_siren"
+const string UI_BUTTON_NAME_SEE_DEVICE_GROUPS = "see_device_groups"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
