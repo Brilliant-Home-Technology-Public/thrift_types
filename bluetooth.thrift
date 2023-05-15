@@ -259,6 +259,8 @@ enum SwitchPropertyID {
   FADE_OUT_FRACTION           = 0x51,
   FADE_OUT_END_LEVEL          = 0x52,
   FADE_OUT_MAX_HALF_CYCLES    = 0x53,
+  POWER_THROTTLED             = 0x54,
+  POWER_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS = 0x55,
 }
 
 enum BreakCircuitStatus {
@@ -346,6 +348,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_FADE_OUT_END_LEVEL           = 0x701D,
   FLASH_HANDLE_FADE_OUT_MAX_HALF_CYCLES     = 0x701E,
   FLASH_HANDLE_DCDC_REGULATOR_ENABLE        = 0x701F,
+  FLASH_HANDLE_POWER_THROTTLE_MIN_CHANGES   = 0x7020,
 }
 
 struct SwitchPropertySpec {
@@ -1181,6 +1184,28 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
+  SwitchPropertyID.POWER_THROTTLED: {
+    "property_id": SwitchPropertyID.POWER_THROTTLED,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": FLASH_HANDLE_UNSET,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.POWER_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS: {
+    "property_id": SwitchPropertyID.POWER_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_POWER_THROTTLE_MIN_CHANGES,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  }
 }
 
 const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
