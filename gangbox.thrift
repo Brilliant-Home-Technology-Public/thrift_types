@@ -42,5 +42,13 @@ enum GangboxDeviceRevision {
 const i32 SWITCH_200_TO_300_W_MIN_DIM_SMOOTHING_DURATION_MS = 2000
 const i32 SWITCH_300_TO_400_W_MIN_DIM_SMOOTHING_DURATION_MS = 3000
 const i32 SWITCH_400_W_AND_OVER_MIN_DIM_SMOOTHING_DURATION_MS = 5000
-const i32 SWITCH_MAX_FADE_IN_START_LEVEL_ENFORCED_WATTAGE = 200
-const i32 SWITCH_MAX_FADE_IN_START_LEVEL_IF_ENFORCED = 100
+
+// There is a switch bug (CQ-8491) where very low fade out end levels and long fade durations can
+// cause a brief flash on/off at the end of a fade out. Since we want fade in start level to match
+// fade out end level and our general belief is that a level of 50 isn't noticeable for any loads,
+// we make 50 the minimum allowed fade in start level/fade out end level.
+const i32 SWITCH_MINIMUM_FADE_START_AND_END_LEVEL = 50
+const i32 SWITCH_150_TO_200W_MAX_FADE_START_AND_END_LEVEL = 200
+const i32 SWITCH_200_TO_250W_MAX_FADE_START_AND_END_LEVEL = 150
+const i32 SWITCH_250_TO_450W_MAX_FADE_START_AND_END_LEVEL = 125
+const i32 SWITCH_450W_AND_OVER_MAX_FADE_START_AND_END_LEVEL = 75
