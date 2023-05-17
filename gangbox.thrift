@@ -38,10 +38,9 @@ enum GangboxDeviceRevision {
 }
 
 // Fade constants for switch
-// TODO: Update following more research
-const i32 SWITCH_200_TO_300_W_MIN_DIM_SMOOTHING_DURATION_MS = 2000
-const i32 SWITCH_300_TO_400_W_MIN_DIM_SMOOTHING_DURATION_MS = 3000
-const i32 SWITCH_400_W_AND_OVER_MIN_DIM_SMOOTHING_DURATION_MS = 5000
+const i32 SWITCH_250_TO_300_W_MIN_DIM_SMOOTHING_DURATION_MS = 1000
+const i32 SWITCH_300_TO_450_W_MIN_DIM_SMOOTHING_DURATION_MS = 5000
+const i32 SWITCH_450_W_AND_OVER_MIN_DIM_SMOOTHING_DURATION_MS = 10000
 
 // There is a switch bug (CQ-8491) where very low fade out end levels and long fade durations can
 // cause a brief flash on/off at the end of a fade out. Since we want fade in start level to match
