@@ -25,11 +25,11 @@ struct LightPeripheralInterface {
   17: optional configuration.RoomAssignment room_assignment
   18: optional string ulid
   19: optional bool on_off_inverted
-  20: optional i32 current_sensed
+  20: optional i32 current_sensed // DEPRECATED
   21: optional bool break_circuit
   22: optional i32 current_zero_cross
   23: optional bool break_dimming
-  25: optional bool enable_current_sensed
+  25: optional bool enable_current_sensed // DEPRECATED
   26: optional bool enable_current_zero_cross
 }
 
