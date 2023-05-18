@@ -17,6 +17,7 @@ struct HomeConfigurationPeripheralInterface {
   8: optional configuration.Trigger control_software_update_poll_time
   9: optional configuration.Location location
   10: optional bool enable_mobile_configuration_setup
+  11: optional bool enable_gangbox_power_updates
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
