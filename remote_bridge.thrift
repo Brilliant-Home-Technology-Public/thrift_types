@@ -38,7 +38,7 @@ struct DeviceCheckpoint {
   // all of the Device's peripherals.
   2: binary integrity_checksum
   // Keyed by peripheral name.
-  3: map<string, PeripheralCheckpoint> peripheral_checkpoints
+  3: map<string, PeripheralCheckpoint> peripheral_checkpoints_by_name
 
   // The following two fields are for non-distributed virtual devices.
   // The ID of the Control that is responsible for relaying the virtual device.
