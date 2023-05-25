@@ -552,3 +552,10 @@ struct PeripheralGroup {
   1: optional list<GroupedPeripheralID> peripherals
   2: optional list<UniquePeripheralID> peripheral_ids
 }
+
+struct VariableNotificationConfiguration {
+  // Note: A configuration with noise_suppression_epsilon and noise_suppression_ratio both set to
+  // zero will result in no noise suppression.
+  1: i32 noise_suppression_epsilon
+  2: double noise_suppression_ratio
+}
