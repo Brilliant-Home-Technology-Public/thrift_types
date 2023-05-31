@@ -113,6 +113,7 @@ struct CapTouchSliderConfig {
   4: optional bool disable_tap
   5: optional string double_tap_scene_id
   6: optional DeviceCapabilityType target_capability
+  7: optional PeripheralFilter peripheral_filter
 }
 
 // Gesture configuration
