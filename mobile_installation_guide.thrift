@@ -224,6 +224,7 @@ enum GuideScreenType {
   SKIP_FOR_NOW_LED_LEVEL = 34
   SKIP_FOR_NOW_ADD_THIRD_PARTY = 35
   INSTALL_COMPLETE = 36
+  SKIP_FOR_NOW_RECONFIGURE_LOADLESS_SLIDERS = 37
 }
 
 struct GuideLoads {
@@ -467,6 +468,7 @@ const string MOBILE_GUIDE_SCREEN_SAFETY_BREAKER_CHECK = "screen_safety_breaker_c
 const string MOBILE_GUIDE_SCREEN_SAFETY_CHECK = "screen_safety_check"
 const string MOBILE_GUIDE_SCREEN_SKIP_FOR_NOW_ADD_THIRD_PARTY = "screen_skip_for_now_add_third_party"
 const string MOBILE_GUIDE_SCREEN_SKIP_FOR_NOW_LED_LEVEL_PREFIX = "screen_skip_for_now_led_level_"
+const string MOBILE_GUIDE_SCREEN_SKIP_FOR_NOW_RECONFIGURE_LOADLESS_SLIDERS = "screen_skip_for_now_reconfigure_loadless_sliders"
 const string MOBILE_GUIDE_SCREEN_SKIP_INSTALL = "screen_skip_install"
 const string MOBILE_GUIDE_SCREEN_SWITCH_PROVISIONING = "screen_switch_provisioning"
 const string MOBILE_GUIDE_SCREEN_SWITCH_WALLPLATE = "screen_switch_wallplate"
