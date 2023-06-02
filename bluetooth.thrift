@@ -1240,6 +1240,7 @@ const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
     SwitchPropertyID.UUID,
     SwitchPropertyID.FIRMWARE_VERSION,
     SwitchPropertyID.POWER,
+    SwitchPropertyID.AMPS_IN_MA,
     SwitchPropertyID.REBOOT,
     SwitchPropertyID.ENABLE_FWID_PACKET_BROADCAST,
     SwitchPropertyID.HARDWARE_REVISION,
@@ -1252,6 +1253,8 @@ const set<SwitchPropertyID> PLUG_SUPPORTED_PROPERTIES = [
     SwitchPropertyID.DBG_BUF_SET_READ_CHUNK_IDX,
     SwitchPropertyID.DBG_BUF_GET_CHUNK,
     SwitchPropertyID.USE_COMPACT_COMM_PROTOCOL_FOR_PUBLISHING_VARIABLE,
+    SwitchPropertyID.MILLIAMPS_THROTTLED,
+    SwitchPropertyID.MILLIAMPS_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS,
 ]
 
 enum LoadWattageStatus {
