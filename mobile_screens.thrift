@@ -436,6 +436,7 @@ const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETION_FAILED = "InstallCompletion:
 const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETION_PROMPT = "InstallCompletion:Prompt"
 const string MOBILE_OVERLAY_NAME_INSTALL_MISSING_INFO_BLOCK = "InstallSetup:MissingInfo:BlockUntilComplete"
 const string MOBILE_OVERLAY_NAME_INSTALL_MISSING_INFO_PROMPT = "InstallSetup:MissingInfo:PromptToEdit"
+const string MOBILE_OVERLAY_NAME_INSTALL_PENDING = "Success:InstallPending"
 const string MOBILE_OVERLAY_NAME_INSTALL_TEMPLATE_REFRESH_WARNING = "InstallTemplate:Refresh:Warning"
 const string MOBILE_OVERLAY_NAME_INSTALLATION_FEEDBACK = "InstallationFeedback"
 const string MOBILE_OVERLAY_NAME_INSTALLATION_RATING = "InstallationRating"
