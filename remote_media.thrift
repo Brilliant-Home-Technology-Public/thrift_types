@@ -45,6 +45,11 @@ struct SkybellStreamingConfiguration {
 }
 
 
+struct VXStreamingConfiguration {
+    1: string rtsp_push_url
+}
+
+
 struct RemoteMediaSession {
     // A unique identifier for this particular session.
     1: string session_id
@@ -59,6 +64,7 @@ struct RemoteMediaSession {
     5: optional list<IceCandidate> ice_candidates
     6: optional string rtsp_url
     7: optional SkybellStreamingConfiguration skybell_streaming_configuration
+    8: optional VXStreamingConfiguration vx_streaming_configuration
 }
 
 
@@ -96,7 +102,6 @@ enum RemoteStreamingAudioCodec {
 
 struct RemoteStreamingConfiguration {
     1: RemoteStreamingProtocol streaming_protocol
-    // below fields are only relevant if streaming_protocol is WEBRTC
     2: optional RemoteStreamingBundlePolicy bundle_policy
     3: optional list<RemoteStreamingAudioCodec> supported_audio_codecs
     4: optional bool two_way_audio_supported
