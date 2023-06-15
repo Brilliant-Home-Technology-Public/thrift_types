@@ -31,6 +31,7 @@ struct LightPeripheralInterface {
   23: optional bool break_dimming
   25: optional bool enable_current_sensed // DEPRECATED
   26: optional bool enable_current_zero_cross
+  27: optional configuration.VariableNotificationConfiguration power_variable_notification_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {

@@ -1,11 +1,13 @@
 namespace py thrift_types.peripheral_interfaces.generic_on_off_interface
 namespace java thrift_types.peripheral_interfaces.generic_on_off_interface
 
+include "../configuration.thrift"
 include "../message_bus.thrift"
 include "peripheral_interface.thrift"
 
 struct GenericOnOffPeripheralInterface {
   1: bool on
+  2: optional configuration.VariableNotificationConfiguration power_variable_notification_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
