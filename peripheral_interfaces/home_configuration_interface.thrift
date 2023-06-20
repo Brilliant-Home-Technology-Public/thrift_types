@@ -18,6 +18,7 @@ struct HomeConfigurationPeripheralInterface {
   9: optional configuration.Location location
   10: optional bool enable_mobile_configuration_setup
   11: optional bool enable_gangbox_power_updates
+  12: optional bool aa_testing_flag
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
