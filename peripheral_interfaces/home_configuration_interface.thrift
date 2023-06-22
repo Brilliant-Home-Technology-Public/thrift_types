@@ -20,6 +20,7 @@ struct HomeConfigurationPeripheralInterface {
   11: optional bool enable_gangbox_power_updates
   12: optional bool aa_testing_flag
   13: optional bool enable_switch_power_updates
+  14: optional bool enable_plug_power_updates
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
