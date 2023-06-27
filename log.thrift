@@ -174,6 +174,7 @@ const string EMBEDDED_SWITCH_DCDC_REGULATOR_ENABLE_FAILURE = "switch_dcdc_regula
 const string EMBEDDED_SWITCH_SET_LIGHT_MOTION_CONFIG_TABLE_NAME = "switch_set_light_motion_config_table_name"
 const string EMBEDDED_SWITCH_COMPATIBILITY_CHECK_ATTEMPT_TABLE_NAME = "switch_compatibility_check_attempt"
 const string EMBEDDED_SWITCH_SET_DIM_SMOOTHING_CONFIG_TABLE_NAME = "switch_set_dim_smoothing_config"
+const string EMBEDDED_GESTURE_CONFIGURATION_UPDATE_TABLE_NAME = "embedded_gesture_configuration_update"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
