@@ -1276,6 +1276,7 @@ struct MobileWebRTCSessionReportEvent {
   26: string remote_audio_params
   27: string integration_name
   28: i64 session_workaround_delay_ms
+  29: i64 ice_gathering_duration_ms // -1 is not started.
 }
 
 struct MobileRTSPSessionReportEvent {
