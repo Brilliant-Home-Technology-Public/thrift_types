@@ -10,6 +10,7 @@ struct RemoteBridgeInterface {
   2: optional remote_bridge.KnownRemoteDevices known_remote_devices
   3: optional i32 device_provisioning_ip_listen_port
   4: optional string relay_device
+  5: optional remote_bridge.SynchronizationMode synchronization_mode
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {

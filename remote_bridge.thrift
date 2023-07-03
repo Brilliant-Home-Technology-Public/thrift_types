@@ -54,6 +54,12 @@ struct Pong {
   2: i64 current_time
 }
 
+enum SynchronizationMode {
+  DEFAULT = 0
+  CHECKPOINTS_OPTIONAL = 1
+  CHECKPOINTS_REQUIRED = 2
+}
+
 service RemoteBridgeService {
   message_bus.SetVariableResponse forward_set_variables_request(
       1: string device_id,
