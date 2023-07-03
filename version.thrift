@@ -1,6 +1,11 @@
 namespace py thrift_types.version
 namespace java thrift_types.version
 
+// Following versions introduce synchronize_home() to RemoteBridge API.
+// Initially treated as experimental, with phased roll-out.
+const string VERSION_20230704 = "20230704"  // MUST send/receive synchronize_home()
+const string VERSION_20230702 = "20230702"  // MAY send/receive synchronize_home()
+
 // MOST RECENT VERSION:
 const string VERSION_20200923 = "20200923"
 
