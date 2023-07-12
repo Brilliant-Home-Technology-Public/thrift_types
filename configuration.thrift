@@ -126,7 +126,7 @@ enum GestureType {
 
 struct GestureConfig {
   1: GestureType gesture_type
-  2: optional string device_id # Empty string means the current device. None means all devices.
+  2: optional string device_id
   3: optional string peripheral_id
   4: optional PeripheralFilter peripheral_filter
 }
