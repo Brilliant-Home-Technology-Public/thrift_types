@@ -37,13 +37,15 @@ const string MOBILE_HOME_ASSISTANT_SETUP_EVENT_TABLE_NAME = "mobile_home_assista
 const string MOBILE_HOME_PASSCODE_ATTEMPT_TABLE_NAME = "mobile_home_passcode_attempt"
 const string MOBILE_HOUSEHOLD_USERS_EVENT_TABLE_NAME = "mobile_household_users"
 const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partner_scene"
-const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide"
-const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide"
+const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_V2_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide_v2"
+const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_V2_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide_v2"
 const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_switch_connect"
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
-const string MOBILE_INSTALLATION_GROUP_DEVICE_ENDED_EVENT_TABLE_NAME = "mobile_installation_group_device_ended"
-const string MOBILE_INSTALLATION_GROUP_DEVICE_STARTED_EVENT_TABLE_NAME = "mobile_installation_group_device_started"
+// V2 INSTALLATION_GROUP_DEVICE logs have are no longer logged once per load, rather once per physical device.
+// The end log is also logged on failure as well as success.
+const string MOBILE_INSTALLATION_GROUP_DEVICE_ENDED_V2_EVENT_TABLE_NAME = "mobile_installation_group_device_ended_v2"
+const string MOBILE_INSTALLATION_GROUP_DEVICE_STARTED_V2_EVENT_TABLE_NAME = "mobile_installation_group_device_started_v2"
 const string MOBILE_INSTALLATION_GROUP_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_group_feedback"
 const string MOBILE_JOINED_HOME_EVENT_TABLE_NAME = "mobile_joined_home"
 const string MOBILE_LIVEVIEW_SESSION_FEEDBACK_EVENT_TABLE_NAME = "mobile_liveview_session_feedback"
@@ -814,6 +816,7 @@ struct MobileBLEProvisioningEvent {
   21: string configuration_requests // get property requests
   22: string compatibility_state // Contains values for high wattage and MLV initially set.
   23: string compatibility_values // Contains readings that compatibility state was derived from
+  24: string install_device_id
 }
 
 struct MobileConnectivityEvent {
@@ -875,6 +878,7 @@ struct MobileControlConfigurationEvent {
   27: installation_template.InstallationDeviceVariation control_device_variation
   // This field is populated from message_bus (and dictates configuration flow)
   28: bool has_loadless_base
+  29: string install_device_id
 }
 
 struct MobileCustomURLLaunchEvent {
@@ -982,7 +986,7 @@ struct MobileInstallationFeedbackEvent {
   13: string app_class
 }
 
-struct MobileInstallationGroupDeviceStartedEvent {
+struct MobileInstallationGroupDeviceStartedV2Event {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -990,21 +994,24 @@ struct MobileInstallationGroupDeviceStartedEvent {
   5: string device_id
   6: string user_id
   7: string installation_device_type
-  8: string guide_version
-  9: string app_class
-  10: i32 load_index // This log is logged for each load (e.g. twice for a 2g with load index 0 and 1)
-  11: string light_type
-  12: string wattage_type
-  13: string installation_type // single_pole, multiway, outlet, outlet_controlled_light, etc.
-  14: bool dimmable
-  15: bool is_existing_device
-  16: bool first_time
-  18: string install_id
-  19: string load_id
-  20: string group_id
+  8: string installation_device_variation
+  9: string guide_version
+  10: string app_class
+  11: string install_device_id
+  // Note Groups are generated new every on each view of the overview page.
+  // Should have matching end log, but install_device_ids will appear in multiple groups.
+  12: string install_group_id 
+  13: string install_load_ids
+  14: string installation_types // single_pole, multiway, outlet, outlet_controlled_light, etc.
+  15: string control_device_id // Empty string if never installed previously
+  16: string ble_device_id // Empty string if never installed previously
+  17: i32 num_devices_in_group
+  18: bool skipped_installation
+  19: bool group_previously_completed
+  20: string previous_device_id // Empty string if never installed previously
 }
 
-struct MobileInstallationGroupDeviceEndedEvent {
+struct MobileInstallationGroupDeviceEndedV2Event {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1012,13 +1019,26 @@ struct MobileInstallationGroupDeviceEndedEvent {
   5: string device_id
   6: string user_id
   7: string installation_device_type
-  8: string guide_version
-  9: string app_class
-  10: i32 load_index // This log is logged for each load (e.g. twice for a 2g with load index 0 and 1)
-  11: string installation_type // single_pole, multiway, outlet, outlet_controlled_light, etc.
-  12: string install_id
-  13: string load_id
-  14: string group_id
+  8: string installation_device_variation
+  9: string guide_version
+  10: string app_class
+  11: string install_device_id
+  // Note Groups are generated new every on each view of the overview page.
+  // Should have matching start log, but install_device_ids will appear in multiple groups.
+  12: string install_group_id
+  13: string install_load_ids
+  14: string installation_types // for all loads, single_pole, multiway, outlet, outlet_controlled_light, etc.
+  15: bool success
+  16: string from_section
+  17: string completed_sections
+  18: i64 duration_seconds
+  19: string control_device_id // If succesfully installed, actual control device_id, otherwise empty string
+  20: string ble_device_id // If successfully installed, actual mesh device_id, otherwise empty string
+  21: i32 background_count // Estimate of how many times user backgrounded before ended.
+  22: bool group_previously_completed
+  23: string previous_device_id // If installed previously, previous control or ble device id.
+  24: i32 num_devices_in_group
+  25: bool skipped_installation
 }
 
 struct MobileInstallationGroupFeedbackEvent {
@@ -1384,7 +1404,7 @@ struct MobileHomePasscodeAttemptEvent {
   10: MobilePasscodeContext passcode_context
 }
 
-struct MobileInstallDeviceAddedToGuideEvent {
+struct MobileInstallDeviceAddedToGuideV2Event {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1395,11 +1415,15 @@ struct MobileInstallDeviceAddedToGuideEvent {
   8: string app_class
   9: InstallNameStatus name_status
   10: string installation_device_type
-  11: InstallEditType install_edit_type
-  12: bool name_exists_in_completed
+  11: string installation_device_variation
+  12: InstallEditType install_edit_type
+  13: bool name_exists_in_completed
+  14: string install_device_id
+  15: string install_load_ids
+  16: string installation_types // single_pole, multiway, outlet, outlet_controlled_light, etc.
 }
 
-struct MobileInstallLoadAddedToGuideEvent {
+struct MobileInstallLoadAddedToGuideV2Event {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1410,8 +1434,13 @@ struct MobileInstallLoadAddedToGuideEvent {
   8: string app_class
   9: InstallNameStatus name_status
   10: string installation_device_type
-  11: InstallEditType install_edit_type
-  12: bool name_exists_in_completed
+  11: string installation_device_variation
+  12: InstallEditType install_edit_type
+  13: bool name_exists_in_completed
+  14: string install_load_id
+  15: bool dimmable
+  16: string light_type
+  17: string wattage_type
 }
 
 struct MobileInstallSwitchConnectEvent {
