@@ -281,6 +281,7 @@ enum PeripheralType {
   DEVICE_GROUPS_CONFIGURATION = 92,
   REQUEST_DISPATCHER = 93,
   HOME_DETAILS = 94,
+  WATER_SHUTOFF_VALVE = 95,
 }
 
 enum PeripheralStatus {
