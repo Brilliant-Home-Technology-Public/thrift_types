@@ -22,7 +22,7 @@ struct HomeConfigurationPeripheralInterface {
   12: optional bool aa_testing_flag
   13: optional bool enable_switch_power_updates
   14: optional bool enable_plug_power_updates
-  15: thermostat.TemperatureUnits temperature_display_unit = thermostat.TemperatureUnits.FAHRENHEIT
+  15: optional thermostat.TemperatureUnits temperature_display_unit = thermostat.TemperatureUnits.FAHRENHEIT
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
