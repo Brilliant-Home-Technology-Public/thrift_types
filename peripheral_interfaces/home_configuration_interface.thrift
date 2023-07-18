@@ -4,6 +4,7 @@ namespace java thrift_types.peripheral_interfaces.home_configuration_interface
 include "../configuration.thrift"
 include "../message_bus.thrift"
 include "../user.thrift"
+include "../thermostat.thrift"
 include "peripheral_interface.thrift"
 
 struct HomeConfigurationPeripheralInterface {
@@ -21,6 +22,7 @@ struct HomeConfigurationPeripheralInterface {
   12: optional bool aa_testing_flag
   13: optional bool enable_switch_power_updates
   14: optional bool enable_plug_power_updates
+  15: thermostat.TemperatureUnits temperature_display_unit = thermostat.TemperatureUnits.FAHRENHEIT
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
