@@ -5,6 +5,7 @@ include "../configuration.thrift"
 include "../message_bus.thrift"
 include "../user.thrift"
 include "../thermostat.thrift"
+include "../thermostat.thrift"
 include "peripheral_interface.thrift"
 
 struct HomeConfigurationPeripheralInterface {
