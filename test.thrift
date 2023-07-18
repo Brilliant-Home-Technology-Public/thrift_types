@@ -15,6 +15,7 @@ struct ComplexStruct {
   6: list<list<i64>> nested_list_field
   7: optional binary binary_field
   8: optional map<binary, binary> binary_map
+  9: optional set<i64> set_field
 }
 
 service TestService {
