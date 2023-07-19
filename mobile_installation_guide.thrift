@@ -4,10 +4,10 @@ namespace java thrift_types.mobile_installation_guide
 include "installation_template.thrift"
 
 // MOST RECENT VERSION:
-const string MOBILE_GUIDE_VERSION_20190403 = "20190403"
+const string MOBILE_GUIDE_VERSION_20230714 = "20230714"
 
 // OLD VERSIONS:
-// NONE
+const string MOBILE_GUIDE_VERSION_20190403 = "20190403"
 
 const string MOBILE_MINIMUM_POST_INSTALL_CONTROL_VERSION = "v22.12.21"
 
