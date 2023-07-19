@@ -974,22 +974,6 @@ struct MobileInstallationConfigChangedEvent {
   11: string install_id
 }
 
-struct MobileInstallationFeedbackEvent {
-  1: string table_name
-  2: i64 ts
-  3: string device_model
-  4: string home_id
-  5: string device_id
-  6: string user_id
-  7: string installation_device_type
-  8: string guide_version
-  9: bool success
-  10: string helpfulness
-  11: string additional_help
-  12: string free_response // TO BE EVENTUALLY DEPRECATED
-  13: string app_class
-}
-
 struct MobileInstallationGroupDeviceStartedV2Event {
   1: string table_name
   2: i64 ts
