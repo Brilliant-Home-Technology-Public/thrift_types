@@ -333,6 +333,15 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeleteAccountExistingHomes": "ExistingHomes",
   "DeleteAccountConfirmation": "AccountDeletion",
   "DeleteAccountCode": "PairV2:Login:Verification:DeleteAccount", // Making Android match iOS, which reuses the enter code screen for delete account
+
+  // UserV2Migration
+  "MigrationPrompt": "MigrationPrompt",
+  "MigrationConfirmEmail": "MigrationConfirmEmail",
+  "MigrationEnterEmail": "MigrationEnterEmail",
+  "MigrationEnterPassword": "MigrationEnterPassword",
+  "MigrationVerifyCode": "MigrationVerifyCode",
+  "MigrationInviteAction": "MigrationInviteAction",
+  "MigrationSuccess": "MigrationSuccess",
 }
 
 const string MOBILE_DEMO_PAGE_NAME_ADD_PARTNER_DEVICES = "Add3PDevicesUpdate"
@@ -468,6 +477,11 @@ const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled
 const string MOBILE_OVERLAY_NAME_MF_HOMES_LISTING = "MFHomesListing"
 const string MOBILE_OVERLAY_NAME_MF_RESET_PIN = "MFResetPin"
 const string MOBILE_OVERLAY_NAME_MF_UNIT_OCCUPIED = "MFUnitOccupied"
+const string MOBILE_OVERLAY_NAME_MIGRATION_ERROR = "MigrationError"
+const string MOBILE_OVERLAY_NAME_MIGRATION_INVITE_NOT_SENT = "MigrationInviteNotSent"
+const string MOBILE_OVERLAY_NAME_MIGRATION_INVITE_PENDING = "MigrationInvitePending"
+const string MOBILE_OVERLAY_NAME_MIGRATION_REQUEST_ANOTHER_INVITE = "MigrationRequestAnotherInvite"
+const string MOBILE_OVERLAY_NAME_MIGRATION_REQUEST_INVITE_TO_V1_HOME = "MigrationRequestInviteToV1Home"
 const string MOBILE_OVERLAY_NAME_MISSING_CERTIFICATE = "MissingCertificate"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVED = "MobileRemoved"
 const string MOBILE_OVERLAY_NAME_MOBILE_REMOVAL_ERROR = "MobileRemoval:Error"
