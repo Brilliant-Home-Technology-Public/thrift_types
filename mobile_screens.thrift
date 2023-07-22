@@ -290,6 +290,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Install Device Setup
   "ActiveDeviceSetup": "ActiveDeviceSetup",
   "BRLDevicePicker": "BRLDevicePicker",
+  "BRLDeviceVariationPicker": "BRLDeviceVariationPicker",
   "AddDevice": "AddDevice",
   "AddLight": "AddLight",
   "SpecifyNumLights": "SpecifyNumLights",
