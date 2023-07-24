@@ -263,6 +263,7 @@ enum SwitchPropertyID {
   FADE_OUT_MAX_HALF_CYCLES    = 0x53,
   MILLIAMPS_THROTTLED         = 0x54,
   MILLIAMPS_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS = 0x55,
+  TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED = 0x56,
 }
 
 enum BreakCircuitStatus {
@@ -351,6 +352,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_FADE_OUT_MAX_HALF_CYCLES     = 0x701E,
   FLASH_HANDLE_DCDC_REGULATOR_ENABLE        = 0x701F,
   FLASH_HANDLE_MILLIAMPS_THROTTLE_MIN_CHANGES   = 0x7020,
+  FLASH_HANDLE_TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED  = 0x7021,
 }
 
 struct SwitchPropertySpec {
@@ -1207,7 +1209,18 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_MILLIAMPS_THROTTLE_MIN_CHANGES,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
-  }
+  },
+  SwitchPropertyID.TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED: {
+    "property_id": SwitchPropertyID.TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED,
+    "property_size": 1,
+    "default_value": 2,
+    "min_value": 0,
+    "max_value": 255,
+    "property_type": MeshPropertyDataType.UINT8,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
 }
 
 const map<SwitchGesture, SwitchPropertySpec> SWITCH_GESTURE_SPECS = {
