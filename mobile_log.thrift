@@ -997,6 +997,7 @@ struct MobileInstallationGroupDeviceStartedV2Event {
   18: bool skipped_installation
   19: bool group_previously_completed
   20: string previous_device_id // Empty string if never installed previously
+  21: string completed_sections // When starting, what sections have been recorded as complete already.
 }
 
 struct MobileInstallationGroupDeviceEndedV2Event {
