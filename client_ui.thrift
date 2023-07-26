@@ -206,8 +206,15 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
         SupportType.GESTURES: false,
         SupportType.CAP_TOUCH: false,
         SupportType.MOTION: false
-    }
+    },
     message_bus.PeripheralType.SECURITY_SYSTEM: {
+        SupportType.DEVICES: true,
+        SupportType.SCENES: true,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
+    message_bus.PeripheralType.WATER_SHUTOFF_VALVE: {
         SupportType.DEVICES: true,
         SupportType.SCENES: true,
         SupportType.GESTURES: false,
