@@ -1194,7 +1194,7 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 65535,
     "property_type": MeshPropertyDataType.UINT16,
     "flash_handle": FLASH_HANDLE_UNSET,
-    "publish_config_type": PublishConfigType.DISABLED,
+    "publish_config_type": PublishConfigType.PUBLISH_ON_DELTA,
     "deprecated": 0,
   },
   SwitchPropertyID.MILLIAMPS_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS: {
