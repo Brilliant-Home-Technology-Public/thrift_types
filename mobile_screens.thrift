@@ -32,7 +32,12 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "LiveView": "LiveView",
   "SecuritySingle": "Devices:Security",
   "SecurityPin": "EnterPin",
+
+  // Group Control
   "GroupDetail": "ListDevicesScreen:Group",
+  "DeviceGroupSettings": "DeviceGroupSettingsScreen",
+  "DeviceSelectionV2": "AddDevicesScreen",
+  "DeviceGroupCreationSuccess": "GroupCreatedScreen:Success",
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
@@ -356,6 +361,7 @@ const string MOBILE_PAGE_NAME_GESTURE_SLIDER = "Slider"
 const string MOBILE_PAGE_NAME_SKILL_TUTORIAL = "SkillTutorial"
 
 const string MOBILE_OVERLAY_NAME_ABOUT = "About"
+const string MOBILE_OVERLAY_NAME_ADD = "AddOverlay"
 const string MOBILE_OVERLAY_NAME_ADDITIONAL_ACCOUNTS = "AdditionalAccounts"
 const string MOBILE_OVERLAY_NAME_ADJUST_LED = "AdjustLED"
 const string MOBILE_OVERLAY_NAME_ADJUST_TEMPERATURE_RANGE = "AdjustTemperatureRange"
@@ -396,6 +402,7 @@ const string MOBILE_OVERLAY_NAME_DEAUTHORIZED_DEVICE = "DeauthorizedDevice"
 const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_ERROR = "DeleteAccountError"
 const string MOBILE_OVERLAY_NAME_DELETE_ACCOUNT_CONFIRMATION = "DeleteAccountConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_DEVICE_CONFIRMATION = "DeleteDeviceConfirmation"
+const string MOBILE_OVERLAY_NAME_DELETE_GROUP = "DeleteGroup"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_CONFIRMATION = "DeleteHomeConfirmation"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_SUCCESS = "DeleteHomeSuccess"
 const string MOBILE_OVERLAY_NAME_DELETE_HOME_ERROR = "DeleteHomeError"
