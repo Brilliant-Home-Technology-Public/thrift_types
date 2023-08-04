@@ -7,6 +7,7 @@ include "peripheral_interface.thrift"
 
 struct AlwaysOnPeripheralInterface {
   1: optional configuration.VariableNotificationConfiguration power_variable_notification_config
+  2: optional configuration.RoomAssignment room_assignment
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
