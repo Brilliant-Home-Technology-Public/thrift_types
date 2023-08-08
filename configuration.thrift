@@ -468,9 +468,11 @@ enum PinType {
   SECURITY = 19,
   ROOM = 20,
   SINGLE_DEVICE = 21,
-  // We do not actually show a home function shortcut for ON_OFF_DEVICES. This PinType
-  // is strictly used for grouping on/off devices for single device shortcut selection.
+  // We do not actually show a home function shortcut for ON_OFF_DEVICES or ALWAYS_ON_DEVICES. 
+  // These PinTypes are strictly used for grouping on/off devices and always-on devices, respectively, 
+  // for single device shortcut selection.
   ON_OFF_DEVICES = 22,
+  ALWAYS_ON_DEVICES = 23,
 }
 
 struct Pin {
