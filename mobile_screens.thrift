@@ -67,6 +67,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WakewordOptions": "WakewordOptions",
   "HomeKitReset": "HomeKitReset",
   "TroubleshootAssistants": "TroubleshootAssistants",
+  "LightFade": "FadeInFadeOut",
 
   // Color
   "LightColor": "LightColor", // deprecated
