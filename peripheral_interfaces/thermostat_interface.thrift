@@ -19,7 +19,6 @@ struct ThermostatPeripheralInterface {
   8: optional i32 target_temperature_low_f
   9: optional i32 target_temperature_high_f
   10: thermostat.TemperatureRanges temperature_ranges
-  11: optional thermostat.TemperatureUnits thirdparty_display_units
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
