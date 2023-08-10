@@ -28,6 +28,7 @@ const string MOBILE_DEVICE_NOTIFICATION_VIEW = "mobile_device_notification_view"
 const string MOBILE_DEVICE_SELECT_EVENT_TABLE_NAME = "mobile_device_select"
 const string MOBILE_DEVICE_SETTINGS_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_device_settings_button_tapped"
 const string MOBILE_DEVICE_SETTINGS_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_device_settings_screen_view"
+const string MOBILE_DIM_SMOOTHING_CONFIGURATION_EVENT_TABLE_NAME = "mobile_dim_smoothing_configuration_event"
 const string MOBILE_DOORBELL_CONFIGURATION_EVENT_TABLE_NAME = "mobile_doorbell_configuration"
 const string MOBILE_ERROR_EVENT_TABLE_NAME = "mobile_error"
 const string MOBILE_GANGBOX_REVISION_SELECTION_EVENT_TABLE_NAME = "mobile_gangbox_revision_selection"
@@ -799,6 +800,11 @@ enum MobileHouseholdUsersStatus {
   FAILURE_INVALID_EMAIL = 4
   GENERAL_ERROR = 5
   FAILURE_LAST_IN_HOME = 6
+}
+
+enum MobileDimSmoothingType {
+  FADE_IN = 1
+  FADE_OUT = 2
 }
 
 // END LOGGING ENUMS
@@ -1708,4 +1714,18 @@ struct MobileHouseholdUsersEvent {
   8: string app_class
   9: MobileHouseholdUsersAction household_users_action
   10: MobileHouseholdUsersStatus household_users_status
+}
+
+struct MobileDimSmoothingConfigurationEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string light_type
+  10: MobileDimSmoothingType dim_smoothing_type
+  11: i64 dim_smoothing_duration
 }
