@@ -40,7 +40,6 @@ enum BrilliantNotificationAction {
   SHOW_MESH_UPDATE_INFO = 4, // DEPRECATED
   CHOOSE_CONTROL_TRACKED_RELEASE_STAGE = 5,
   ALEXA_HOME_SKILL_AUTO_ENABLE = 6,
-  SHOW_POPUP = 7,
 }
 
 enum BrilliantNotificationDisplayType {
