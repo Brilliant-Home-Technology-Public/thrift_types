@@ -563,3 +563,8 @@ struct VariableNotificationConfiguration {
   1: i32 noise_suppression_epsilon
   2: double noise_suppression_ratio
 }
+
+struct LockableValue {
+  1: string value
+  2: bool locked
+}
