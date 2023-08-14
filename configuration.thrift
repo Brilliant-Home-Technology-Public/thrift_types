@@ -446,7 +446,7 @@ struct HueBridgeIntegrationStates {
 // switch-ui HomeScreen Pinned Options Config
 
 enum PinType {
-  EMPTY = 0,
+  UNCONFIGURED = 0,
   LIGHTS = 1,
   MUSIC = 2,
   CLIMATE = 3,
