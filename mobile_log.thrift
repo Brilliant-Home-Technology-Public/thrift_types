@@ -41,6 +41,7 @@ const string MOBILE_IMPORT_PARTNER_SCENE_EVENT_TABLE_NAME = "mobile_import_partn
 const string MOBILE_INSTALL_DEVICE_ADDED_TO_GUIDE_V2_EVENT_TABLE_NAME = "mobile_install_device_added_to_guide_v2"
 const string MOBILE_INSTALL_LOAD_ADDED_TO_GUIDE_V2_EVENT_TABLE_NAME = "mobile_install_load_added_to_guide_v2"
 const string MOBILE_INSTALL_SWITCH_CONNECT_EVENT_TABLE_NAME = "mobile_install_switch_connect"
+const string MOBILE_INSTALL_UNSUPPORTED_EVENT_TABLE_NAME = "mobile_install_unsupported"
 const string MOBILE_INSTALLATION_CONFIG_CHANGED_EVENT_TABLE_NAME = "mobile_installation_config_changed"
 const string MOBILE_INSTALLATION_FEEDBACK_EVENT_TABLE_NAME = "mobile_installation_feedback"
 // V2 INSTALLATION_GROUP_DEVICE logs have are no longer logged once per load, rather once per physical device.
@@ -1465,6 +1466,21 @@ struct MobileInstallSwitchConnectEvent {
   7: string user_id
   8: string app_class
   9: bool wallplate_attached
+}
+
+struct MobileInstallUnsupportedEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string unsupported_reason
+  10: bool dimmable
+  11: string light_type
+  12: string wattage_type
 }
 
 struct MobileSecurityDisarmEvent {
