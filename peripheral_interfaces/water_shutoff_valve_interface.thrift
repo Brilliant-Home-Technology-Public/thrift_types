@@ -10,6 +10,7 @@ struct WaterShutoffValvePeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
   3: water_shutoff_valve.WaterShutoffValveStatus valve_status
+  4: water_shutoff_valve.WaterLeakStatus leak_status
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
