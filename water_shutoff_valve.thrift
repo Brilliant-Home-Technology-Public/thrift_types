@@ -8,3 +8,10 @@ enum WaterShutoffValveStatus {
 	OPEN_FAILED = 3
 	CLOSE_FAILED = 4
 }
+
+enum WaterLeakStatus {
+	NO_LEAK = 0,
+	LEAK_DETECTED = 1,
+	NOT_AVAILABLE = 2,
+	ERROR = 3,
+}
