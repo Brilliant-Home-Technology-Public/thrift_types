@@ -166,7 +166,7 @@ struct BleMeshPollingParams {
 
 const BleMeshPollingParams DEFAULT_BLE_MESH_POLLING_PARAMS = {
   "var_poll_interval_sec_if_unset": 600,
-  "failed_polls_threshold": 5,
+  "failed_polls_threshold": 8,
 }
 
 struct ReplayProtection {
