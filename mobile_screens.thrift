@@ -36,7 +36,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // Group Control
   "GroupDetail": "ListDevicesScreen:Group",
   "DeviceGroupSettings": "DeviceGroupSettingsScreen",
-  "DeviceSelectionV2": "AddDevicesScreen",
+  "DeviceSelectionV2": "AddDevicesScreen", // iOS use modifier to specify group
+  "DeviceGroupSettingsDeviceSelectionV2": "AddDevicesScreen:Group", // Android
   "DeviceGroupCreationSuccess": "GroupCreatedScreen:Success",
 
   // Device Settings
