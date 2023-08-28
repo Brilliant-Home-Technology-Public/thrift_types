@@ -7,12 +7,12 @@ repositories {
 }
 
 android {
-    compileSdkVersion 28
+    namespace "tech.brilliant.brilliant"
+    compileSdkVersion 33
 
     defaultConfig {
-        multiDexEnabled true
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdkVersion 28
+        targetSdkVersion 33
     }
 
     buildTypes {
