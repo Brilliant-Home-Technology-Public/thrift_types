@@ -1,0 +1,31 @@
+name: Build Thrift
+run-name: ${{ github.event_name == 'push' && 'Build Thrift on Push' || 'Build Thrift on Dispatch' }} 
+on: [push, workflow_dispatch]
+env:
+  THIRDPARTY_BINARIES_ROOT: ~/brilliant/thirdparty-binaries
+jobs:
+  build_ios:
+    runs-on: [self-hosted, ios]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Pods
+        working-directory: swift
+        run: |
+          pod update
+          pod install
+      - name: Build Swift Files
+        run: make THIRDPARTY_BINARIES_DIR=${{ env.THIRDPARTY_BINARIES_ROOT }} -C swift
+      - name: Build BRL Module
+        run: make -C swift test_project_compilation
+  build_android:
+    runs-on: [self-hosted, android]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build Java Files
+        run: make THIRDPARTY_BINARIES_DIR=${{ env.THIRDPARTY_BINARIES_ROOT }} -C java
+      - name: Build BRL Module
+        run: make -C java test_project_compilation
+
+

@@ -35,64 +35,6 @@ pipeline {
             }
           }
         }
-        stage("swift") {
-          agent {label "iosbuilder"}
-          stages {
-            stage("Cleanup Old Environment") {
-              steps {
-                // Remove all untracked files and directories:
-                // -d = Clean untracked directories as well as files.
-                // -x = Also delete files that are usually ignored.
-                sh "git clean --force -d -x ./"
-              }
-            }
-            stage("Install pods") {
-              steps {
-                dir("swift") {
-                  sh "pod update"
-                  sh "pod install"
-                }
-              }
-            }
-            stage("Build Swift Files") {
-              steps {
-                sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C swift"
-              }
-            }
-            stage("Build BRL Module") {
-              steps {
-                sh "make -C swift test_project_compilation"
-              }
-            }
-          }
-        }
-        stage("java") {
-          agent {label "android"}
-          environment {
-            ANDROID_HOME = "/var/lib/jenkins/android"
-            GRADLE_USER_HOME = "/var/lib/jenkins/.gradle"
-          }
-          stages {
-            stage("Cleanup Old Environment") {
-              steps {
-                // Remove all untracked files and directories:
-                // -d = Clean untracked directories as well as files.
-                // -x = Also delete files that are usually ignored.
-                sh "git clean --force -d -x ./"
-              }
-            }
-            stage("Build Java Files") {
-              steps {
-                sh "make THRIFT_COMPILER=/usr/local/bin/thrift -C java"
-              }
-            }
-            stage("Build BRL Module") {
-              steps {
-                sh "make -C java test_project_compilation"
-              }
-            }
-          }
-        }
       }
     }
   }
