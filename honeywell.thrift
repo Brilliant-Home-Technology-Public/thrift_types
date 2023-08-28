@@ -8,3 +8,6 @@ const string HONEYWELL_HIGH_HUMIDITY_ALARM = "HighHumidity"
 const string HONEYWELL_WATER_LEAK_ALARM = "WaterLeak"
 const string HONEYWELL_LOW_BATTERY_ALARM = "LowBattery"
 const string HONEYWELL_CRITICAL_BATTERY_ALARM = "CriticalBattery"
+
+// Update Honeywell peripherals every 5 min
+const i32 HONEYWELL_POLL_INTERVAL_MS = 300000
