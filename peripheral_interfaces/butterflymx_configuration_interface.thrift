@@ -9,12 +9,12 @@ include "peripheral_interface.thrift"
 struct ButterflyMXConfigurationPeripheralInterface {
     1: string access_token
     2: i64 expiration_date
-    3: string refresh_token
+    3: optional string refresh_token // DEPRECATED
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
-    6: optional bool is_enabled
-    7: optional string sip_username
-    8: optional string sip_token
+    6: optional bool is_enabled // DEPRECATED
+    7: optional string sip_username // DEPRECATED
+    8: optional string sip_token // DEPRECATED
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
