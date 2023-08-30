@@ -53,7 +53,7 @@ struct TemperatureRanges {
 }
 
 enum TemperatureUnits {
-  UNKOWN = 0
+  UNKNOWN = 0
   FAHRENHEIT = 1
   CELSIUS = 2
 }
