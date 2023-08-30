@@ -119,7 +119,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   // iOS
   "SwipeablePage": "SwipeablePage", // Use Modifier for usage type
   // Android
-  "WhatsNewPage": "SwipeablePage:NewFeatures"
+  "WhatsNewPage": "SwipeablePage:NewFeatures",
+  "DisplayUnit": "DisplayUnit",
 
   // Help
   "Help": "Help",
@@ -580,6 +581,7 @@ const string MOBILE_OVERLAY_NAME_SWITCH_MOTION_SETTINGS_DCDC_SUCCESS = "SwitchMo
 const string MOBILE_OVERLAY_NAME_SWITCH_NEXT_STEPS = "SwitchNextSteps"
 const string MOBILE_OVERLAY_NAME_SWITCH_RESET = "SwitchReset"
 const string MOBILE_OVERLAY_NAME_SWITCH_SCAN_CONTROL_INSTALL = "SwitchScanControlInstall"
+const string MOBILE_OVERLAY_NAME_TEMPERATURE_UNIT_ERROR = "TemperatureUnitError"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_DEVICE_REQUEST = "ThirdParty:Request"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_ERROR = "ThirdParty:Error"
 const string MOBILE_OVERLAY_NAME_THIRD_PARTY_NOT_AUTHORIZED = "ThirdParty:NotAuthorized"
