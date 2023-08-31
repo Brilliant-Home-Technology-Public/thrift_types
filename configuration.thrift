@@ -94,6 +94,12 @@ const list<string> USER_HOME_ART_LIBRARY_TITLES = [
     UNASSISTED_TOURS_LIBRARY_TITLE,
 ]
 
+const i32 DEFAULT_ART_SHOW_TIME_MS = 10000
+
+struct ArtRotationConfig {
+  1: i32 show_time_ms
+}
+
 // Unassisted Tours Configuration
 
 struct UnassistedToursConfig {
