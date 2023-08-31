@@ -18,6 +18,7 @@ struct ArtConfigurationPeripheralInterface {
   10: optional configuration.LockScreenClimateConfig lock_screen_climate_config
   11: optional configuration.UniquePeripheralID security_system_peripheral_on_lock
   12: optional client_ui.ControlLockScreenWidgetConfiguration lock_screen_widget_configuration
+  13: optional configuration.ArtRotationConfig art_rotation_config
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
