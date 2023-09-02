@@ -194,6 +194,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "MFCreatePin": "EnterPin",
   "MFChooseBuilding": "MFChooseBuilding",
   "MFChooseUnit": "MFChooseUnit",
+  "SetTemperatureUnit" : "SetTemperatureUnit",
 
   // AccountLoginFlow
   "SignUp": "SignUp",
