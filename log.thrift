@@ -448,6 +448,7 @@ const string UI_BUTTON_NAME_VIEW_NEARBY_MESH_DEVICES = "view_nearby_mesh_devices
 const string UI_BUTTON_NAME_LOCK_MESH_DEVICE = "lock_mesh_device"
 const string UI_BUTTON_NAME_AUTO_MESH_DEVICE = "auto_mesh_device"
 const string UI_BUTTON_NAME_SLIDER_SETTINGS = "slider_settings"
+const string UI_BUTTON_NAME_ASSIGN_TO_GESTURE = "assign_to_gesture"
 const string UI_BUTTON_NAME_GET_SUPPORT = "get_support"
 const string UI_BUTTON_NAME_MY_POSITION = "my_position"
 const string UI_BUTTON_NAME_REVERSE_LOAD_ON = "reverse_load_on"
