@@ -264,6 +264,7 @@ enum SwitchPropertyID {
   MILLIAMPS_THROTTLED         = 0x54,
   MILLIAMPS_THROTTLE_MIN_CHANGE_PERCENT_AND_ABS = 0x55,
   TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED = 0x56,
+  SLIDE_OVERSHOOT_TO_TURN_OFF = 0x57,
 }
 
 enum BreakCircuitStatus {
@@ -353,6 +354,7 @@ enum SwitchPropertyFlashHandle {
   FLASH_HANDLE_DCDC_REGULATOR_ENABLE        = 0x701F,
   FLASH_HANDLE_MILLIAMPS_THROTTLE_MIN_CHANGES   = 0x7020,
   FLASH_HANDLE_TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED  = 0x7021,
+  FLASH_HANDLE_SLIDE_OVERSHOOT_TO_TURN_OFF  = 0x7022,
 }
 
 struct SwitchPropertySpec {
@@ -1218,6 +1220,17 @@ const map<SwitchPropertyID, SwitchPropertySpec> SWITCH_PROPERTY_SPECS = {
     "max_value": 255,
     "property_type": MeshPropertyDataType.UINT8,
     "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_TUNE_NUM_SIMILAR_CS_RUNS_REQUIRED,
+    "publish_config_type": PublishConfigType.DISABLED,
+    "deprecated": 0,
+  },
+  SwitchPropertyID.SLIDE_OVERSHOOT_TO_TURN_OFF: {
+    "property_id": SwitchPropertyID.SLIDE_OVERSHOOT_TO_TURN_OFF,
+    "property_size": 2,
+    "default_value": 0,
+    "min_value": 0,
+    "max_value": 65535,
+    "property_type": MeshPropertyDataType.UINT16,
+    "flash_handle": SwitchPropertyFlashHandle.FLASH_HANDLE_SLIDE_OVERSHOOT_TO_TURN_OFF,
     "publish_config_type": PublishConfigType.DISABLED,
     "deprecated": 0,
   },
