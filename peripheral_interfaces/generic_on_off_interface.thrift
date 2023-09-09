@@ -8,6 +8,7 @@ include "peripheral_interface.thrift"
 struct GenericOnOffPeripheralInterface {
   1: bool on
   2: optional configuration.VariableNotificationConfiguration power_variable_notification_config
+  3: optional configuration.RoomAssignment room_assignment
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
