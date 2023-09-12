@@ -449,6 +449,19 @@ struct HueBridgeIntegrationStates {
   1: map<string, ThirdpartyIntegrationState> integration_states
 }
 
+struct UserAccessToken {
+  1: string user_id
+  2: string access_token
+  3: i64 expiration_timestamp
+  4: ThirdpartyIntegrationState thirdparty_integration_state
+  5: i64 authorization_timestamp
+  6: optional i64 deletion_timestamp
+}
+
+struct UserAccessTokens {
+  1: map<string, UserAccessToken> user_access_tokens = {}
+}
+
 // switch-ui HomeScreen Pinned Options Config
 
 enum PinType {

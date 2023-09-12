@@ -15,6 +15,7 @@ struct ButterflyMXConfigurationPeripheralInterface {
     6: optional bool is_enabled // DEPRECATED
     7: optional string sip_username // DEPRECATED
     8: optional string sip_token // DEPRECATED
+    9: optional configuration.UserAccessTokens user_access_tokens
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
