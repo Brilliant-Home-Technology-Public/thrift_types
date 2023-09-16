@@ -23,7 +23,7 @@ const string SOMFY_MDNS_SERVICE_TYPE = "_kizbox._tcp.local."
 const string HUNTER_DOUGLAS_MDNS_SERVICE_TYPE = "_PowerView-G3._tcp.local."
 
 // Name for Hunter Douglas primary gateway
-const string HUNTER_DOUGLAS_PRIMARY_GATEWAY_NAME = "PowerView-G3._PowerView-G3._tcp.local"
+const string HUNTER_DOUGLAS_PRIMARY_GATEWAY_NAME = "PowerView-G3._PowerView-G3._tcp.local."
 
 // Attribute name for unique ID a Hue bridge returns for SSDP discovery
 const string HUE_BRIDGE_ID_ATTRIBUTE = "hue-bridgeid"
