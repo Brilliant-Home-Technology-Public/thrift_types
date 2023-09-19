@@ -492,6 +492,7 @@ enum PinType {
   // for single device shortcut selection.
   ON_OFF_DEVICES = 22,
   ALWAYS_ON_DEVICES = 23,
+  ENERGY = 24,
 }
 
 struct Pin {
