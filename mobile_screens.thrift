@@ -109,7 +109,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "Troubleshoot": "Troubleshoot",
   "DeleteHomeEnterCode": "PairV2:Login:Verification:DeleteHome", // Making Android match iOS, which reuses the enter code screen for delete home
   "DeleteHome": "DeleteHome",
-  "HomeDeviceGroups": "HomeDeviceGroups",
+  "HomeDeviceGroups": "HomeDeviceGroups", // IOS
+  "ViewDeviceGroups": "HomeDeviceGroups", // Android
   // Home Automation
   "HomeMotionSettings": "Automation:MotionSettingsOverview",
   // FeatureCallouts
