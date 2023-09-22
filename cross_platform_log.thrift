@@ -10,9 +10,11 @@ namespace java thrift_types.cross_platform_log
 
 const string NOT_APPLICABLE = "NOT_APPLICABLE" // Any string field can potentially use this value.
 const string BRILLIANT_INTEGRATION_NAME = "Brilliant"
+const string SUPER_PROPERTY_NAME_BUILDING_ID = "building_id"
+const string SUPER_PROPERTY_NAME_DEVICE_INSTANCE_ID = "device_instance_id"
 const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
+const string SUPER_PROPERTY_NAME_PROPERTY_ID = "property_id"
 const string SUPER_PROPERTY_NAME_USER_TYPE = "user_type"
-const string SUPER_PROPERTY_DEVICE_INSTANCE_ID = "device_instance_id"
 // UniquePeripheralID log format: "{device_id}{UNIQUE_PERIPHERAL_ID_DELIMITER}{peripheral_id}"
 const string UNIQUE_PERIPHERAL_ID_DELIMITER = "|"
 
