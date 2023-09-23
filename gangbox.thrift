@@ -1,6 +1,25 @@
 namespace py thrift_types.gangbox
 namespace java thrift_types.gangbox
 
+enum BrightnessCurve {
+  // The "simple curves" that follow straightforward mathematical equations
+  LINEAR_CURVE = 0,
+  QUADRATIC_CURVE = 1,
+  CUBIC_CURVE = 2,
+  EXPONENTIAL_CURVE = 3,
+
+  // An inherent problem with the non-linear "simple curves" is that they tend not to make progress
+  // at small user levels. This leads to two problems:
+  // 1) We'd like there to be a minimum rate of progress. Moving a 0-100 slider from 1 to 2 should
+  //    do *something*.
+  // 2) Because there is no progress, this makes the conversion from power_level to user_level
+  //    ambiguous because multiple user_levels map to a single power level.
+  // The "linear hybrid" family of curves rectify this by using a shallow slope linear curve until
+  // the parent simple curve is growing at fast enough rate to make progress.
+  // Convention: The enum values for linear hybrids are 10 + the underlying simple curve
+  CUBIC_LINEAR_HYBRID_CURVE = 12
+}
+
 enum EasingType {
   // Jump immediately to requested intensity values. This is useful during magnetic load detection
   // to ensure that the load is not set to any intermediate intensity levels.
