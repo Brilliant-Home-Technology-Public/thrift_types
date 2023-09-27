@@ -144,6 +144,7 @@ struct GestureConfigs {
 struct HueBridgeCredential {
   1: string ip_address
   2: string username
+  3: optional bool attempting_auth
 }
 
 struct HueBridgeCredentials {
