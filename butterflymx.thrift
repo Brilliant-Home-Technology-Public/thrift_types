@@ -7,6 +7,7 @@ const string BUTTERFLYMX_BUILDING_ID_PREFIX = "building"
 // Event keys
 const string EVENT_KEY_CALL_GUID = "butterflymx:call_guid"
 const string EVENT_KEY_CALL_STATUS = "butterflymx:call_status"
+const string EVENT_KEY_USER_ID = "butterflymx:user_id"
 
 // Status enum values
 // See https://apidocs.butterflymx.com/core/v3/production/index.html#current-user-status
