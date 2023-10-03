@@ -12,6 +12,7 @@ struct HoneywellConfigurationPeripheralInterface {
     3: string refresh_token
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
+    6: optional bool trigger_device_discovery
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
