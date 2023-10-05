@@ -502,7 +502,6 @@ const string MOBILE_GUIDE_URL_EXIT_INSTALLATION_NO_FEEDBACK = "brl://guide/exitI
 const string MOBILE_GUIDE_URL_FINISH_SCREEN = "brl://guide/finishScreen"
 const string MOBILE_GUIDE_URL_GO_TO_ARCHIVE = "brl://guide/goToArchive"
 const string MOBILE_GUIDE_URL_HELP = "brl://guide/help"
-const string MOBILE_GUIDE_URL_LIVE_CHAT = "brl://guide/liveChat"
 const string MOBILE_GUIDE_URL_NEXT = "brl://guide/next"
 const string MOBILE_GUIDE_URL_NOT_SURE = "brl://guide/notSure"
 const string MOBILE_GUIDE_URL_PRODUCT_SELECTION = "brl://guide/productSelection"
