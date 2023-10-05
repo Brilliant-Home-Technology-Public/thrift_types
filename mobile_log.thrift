@@ -546,7 +546,7 @@ enum AddMeshResult {
 enum MobileErrorEventType {
   FAILED_AUTHENTICATION_CODE_ENTRY = 1
   FAILED_DEVICE_DISCOVERY = 2
-  FAILED_SET_VARIABLE_REQUEST = 3
+  FAILED_SET_VARIABLE_REQUEST = 3 // 23.10.18 DEPRECATED, logged as MobileSetVariableRequestErrorEvent
   ERRORED_WEBSOCKET_CONNECTION = 4
   REMOTE_BRIDGE_RESPONSE_FAILURE = 5
   FAILED_KNOCK = 6
@@ -816,6 +816,13 @@ enum MobileHouseholdUsersStatus {
 enum MobileDimSmoothingType {
   FADE_IN = 1
   FADE_OUT = 2
+}
+
+enum MobileSetVariableRequestErrorType {
+  MOBILE_GENERAL_ERROR = 1 // Catch all error
+  MOBILE_GENERAL_REMOTE_BRIDGE_ERROR = 2 // Remote bridge catch all error
+  MOBILE_DEVICE_CONNECTION_UNAVAILABLE = 3 // Mobile did not have connection available
+  ERROR_RESPONSE = 4 // Received a response that had some error
 }
 
 // END LOGGING ENUMS
@@ -1188,6 +1195,22 @@ struct MobileScreenViewEvent {
   8: string user_id
   9: string app_class
   10: string screen_parameters
+}
+
+struct MobileSetVariableRequestErrorEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string user_id
+  7: string app_class
+  8: MobileSetVariableRequestErrorType set_variable_request_error_type
+  9: string status_code // Protocol.StatusCode in lowercase string format
+  10: string target_device_id // Processed device id
+  11: string target_peripheral_id
+  12: string target_variable_names // csv list of variable names.
+  13: string error_message // error message if relevant
 }
 
 struct MobileDeviceSettingsScreenViewEvent {
