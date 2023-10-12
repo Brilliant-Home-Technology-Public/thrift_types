@@ -618,6 +618,11 @@ const string MOBILE_OVERLAY_NAME_UNSUPPORTED_DEVICE_IN_GROUP_EDIT = "Unsupported
 const string MOBILE_OVERLAY_NAME_UNSUPPORTED_DEVICE_IN_GROUP_REMOVE = "UnsupportedDeviceInGroupRemove"
 const string MOBILE_OVERLAY_NAME_UPDATING_MESH_NETWORK = "UpdatingMeshNetwork"
 const string MOBILE_OVERLAY_NAME_VIEW_HOMES = "ViewHomes"
+const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_DETECTION_ERROR = "WaterShutoffValve:DetectionError"
+const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_LEAK_PROTECTED = "WaterShutoffValve:LeakProtected"
+const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_LEAK_PROTECTION_FAILED = "WaterShutoffValve:LeakProtectionFailed"
+const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_UNKNOWN_ERROR = "WaterShutoffValve:UnknownError"
+const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_VALVE_ERROR = "WaterShutoffValve:ValveError"
 const string MOBILE_OVERLAY_NAME_WHATS_NEW = "WhatsNew"
 const string MOBILE_OVERLAY_NAME_WRONG_GANG_CONTROL_INSTALL = "WrongGangControlInstall"
 
