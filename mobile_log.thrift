@@ -604,6 +604,7 @@ enum MobileEventDeviceType {
   CAMERA = 13
   SECURITY_SYSTEM = 14
   MOTION_CONTROL = 15
+  WATER_SHUTOFF_VALVE = 16
 }
 
 enum MobileEventSource {
@@ -686,6 +687,7 @@ enum MobileToggleType {
   PRIMARY_ON = 8
   SECONDARY_ON = 9
   TILT = 10
+  CLOSED = 11 // Water Shutoff Valve closed == on, open == off
 }
 
 enum MobileUnlockResult {
