@@ -56,6 +56,12 @@ enum GangboxDeviceRevision {
   V2 = 2,
 }
 
+const map<GangboxDeviceRevision, i32> GANGBOX_MINIMUM_PRECISELY_DISPLAYABLE_WATTAGES = {
+  GangboxDeviceRevision.DVT: 6,
+  GangboxDeviceRevision.V1: 6,
+  GangboxDeviceRevision.V2: 3
+}
+
 // Fade constants for switch
 const i32 SWITCH_250_TO_300_W_MIN_DIM_SMOOTHING_DURATION_MS = 1000
 const i32 SWITCH_300_TO_450_W_MIN_DIM_SMOOTHING_DURATION_MS = 5000
