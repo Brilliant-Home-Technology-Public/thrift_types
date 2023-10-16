@@ -39,6 +39,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceSelectionV2": "AddDevicesScreen", // iOS use modifier to specify group
   "DeviceGroupSettingsDeviceSelectionV2": "AddDevicesScreen:Group", // Android
   "DeviceGroupCreationSuccess": "GroupCreatedScreen:Success",
+  "GenericAction": "GenericAction", // iOS use modifier to specify action
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
@@ -381,6 +382,7 @@ const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_ENJOYING = "AppFeedback:Enjoying"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_SURVEY = "AppFeedback:Survey"
 const string MOBILE_OVERLAY_NAME_APP_FEEDBACK_THANKS = "AppFeedback:Thanks"
 const string MOBILE_OVERLAY_NAME_ARM_STATE_ACTIVE = "ArmStateActive"
+const string MOBILE_OVERLAY_NAME_ASSIGN_GROUP_TO_GESTURE_ERROR = "AssignGroupToGestureError"
 const string MOBILE_OVERLAY_NAME_ASSIGN_SLIDER = "AssignSlider"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED = "AttentionNeeded"
 const string MOBILE_OVERLAY_NAME_ATTENTION_NEEDED_MULTIPLE = "AttentionNeeded:Multiple"
