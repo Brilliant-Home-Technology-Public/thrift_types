@@ -40,6 +40,8 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "DeviceGroupSettingsDeviceSelectionV2": "AddDevicesScreen:Group", // Android
   "DeviceGroupCreationSuccess": "GroupCreatedScreen:Success",
   "GenericAction": "GenericAction", // iOS use modifier to specify action
+  "AssignDeviceGroup": "GenericAction:AssignDeviceGroup", // Android
+  "ControlSelectionForGroup": "ControlSelection:AssignDeviceGroup", // Android
 
   // Device Settings
   "DeviceSettings": "DeviceSettings",
@@ -279,7 +281,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GestureTutorialPage": "SwipeablePage:GestureTutorial", // iOS will use modifier
 
   // Control Configuration
-  "ControlSelection": "ControlSelection"
+  "ControlSelection": "ControlSelection" // iOS uses modifiers for selection type
 
   // Switch Provisioning
   "FreePairing": "BluetoothDevicesDetected",
