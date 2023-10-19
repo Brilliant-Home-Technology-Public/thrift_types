@@ -228,22 +228,15 @@ enum GuideScreenType {
   BRL_DEVICE_VARIATION_PICKER = 38
 }
 
-struct GuideLoads {
-  1: string identifier
-  2: string display_name
-  3: optional string image_url
-}
-
 struct GuideScreen {
   1: string identifier
   2: GuideScreenType screen_type
   3: string title // If the current page does not have a title override, this will be the title of the page
   4: optional string image_title // If the current page does not have a title override, this will replace the title of the page
   5: list<GuidePage> pages
-  6: optional list<GuideLoads> loads // If this is present, header will be displayed AND pages will be repeated per load
-  7: optional list<GuideRule> display_rules // Rules that must pass in order for the screen to display
-  8: optional list<GuideRule> validation_rules // Rules to check after every option selection
-  9: optional list<GuideRule> additional_rules // Rules to check after every option selection but does not halt progress
+  6: optional list<GuideRule> display_rules // Rules that must pass in order for the screen to display
+  7: optional list<GuideRule> validation_rules // Rules to check after every option selection
+  8: optional list<GuideRule> additional_rules // Rules to check after every option selection but does not halt progress
 }
 
 struct GuideSection {
