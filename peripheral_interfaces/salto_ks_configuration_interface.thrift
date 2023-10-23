@@ -10,7 +10,7 @@ include "peripheral_interface.thrift"
 struct SaltoKSConfigurationPeripheralInterface {
     1: string access_token
     2: i64 expiration_date
-    3: string refresh_token
+    3: optional string refresh_token // DEPRECATED
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
 }
