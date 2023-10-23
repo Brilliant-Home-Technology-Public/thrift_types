@@ -525,6 +525,8 @@ const string UI_BUTTON_NAME_SEE_DEVICE_GROUPS = "see_device_groups"
 const string UI_BUTTON_NAME_DEVICE_SETTINGS = "device_settings"
 const string UI_BUTTON_NAME_CELSIUS = "celsius"
 const string UI_BUTTON_NAME_FAHRENHEIT = "fahrenheit"
+const string UI_BUTTON_NAME_YES = "yes"
+const string UI_BUTTON_NAME_NO = "no"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
