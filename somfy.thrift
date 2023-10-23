@@ -18,6 +18,7 @@ const list<string> SOMFY_TILT_CAPABLE_KINDS = [
     "TiltOnlyVenetianBlind",
     "PositionableScreen",
     "PositionableVenetianBlind",
+    "UpDownBioclimaticPergola",
 ]
 
 // TODO (Aman): Remove SomfyAPIType
