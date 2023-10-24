@@ -59,27 +59,93 @@ enum MeshProvisionStatus {
   // If we successfully connect again, we move to MESH_PROVISION_COMPLETE
 
   USER_CANCELED = 55 // User exited the flow of their own volition
-  GENERIC_TIMEOUT = 56 // A generic timeout status for states that don't have their own timeouts.
   MESH_CONFIGURATION_FETCH = 57 // Fetch app key and net key from message bus
+
+  // DEPRECATED 10/2023
+  GENERIC_TIMEOUT = 56 // A generic timeout status for states that don't have their own timeouts.
 }
 
+const list<MeshProvisionStatus> MOBILE_MESH_PROVISION_STATUS_EXPECTED_ORDER = [
+  MeshProvisionStatus.NOT_STARTED,
+  MeshProvisionStatus.BLUETOOTH_UNSUPPORTED,
+  MeshProvisionStatus.BLUETOOTH_UNAUTHORIZED,
+  MeshProvisionStatus.BLUETOOTH_OFF,
+  MeshProvisionStatus.CREATING_NETWORK,
+  MeshProvisionStatus.ERROR_CREATING_NETWORK,
+  MeshProvisionStatus.PROVISIONING_SETUP_FAILED,
+  MeshProvisionStatus.PREPARING_FOR_PROVISIONING,
+  MeshProvisionStatus.ERROR_REMOVING_OLD_PERIPHERAL,
+  MeshProvisionStatus.SCANNING_FOR_UNPROVISIONED,
+  MeshProvisionStatus.SCAN_FOR_UNPROVISIONED_TIMEOUT,
+  MeshProvisionStatus.CONNECTING_TO_UNPROVISIONED,
+  MeshProvisionStatus.CONNECTED_TO_UNPROVISIONED,
+  MeshProvisionStatus.IDENTIFY_NODE,
+  MeshProvisionStatus.GETTING_UNICAST_ADDRESS,
+  MeshProvisionStatus.PROVISIONING_NODE,
+  MeshProvisionStatus.PROVISION_FAILED,
+  MeshProvisionStatus.PROVISIONING_COMPLETE,
+  MeshProvisionStatus.SCANNING_FOR_PROVISIONED,
+  MeshProvisionStatus.SCAN_FOR_PROVISION_TIMEOUT,
+  MeshProvisionStatus.CONNECTING_TO_PROVISIONED,
+  MeshProvisionStatus.CONNECTED_TO_PROVISIONED,
+  MeshProvisionStatus.VERIFYING_NET_KEY,
+  MeshProvisionStatus.VERIFYING_APP_KEY,
+  MeshProvisionStatus.BINDING_MODEL_APP_KEYS,
+  MeshProvisionStatus.SETTING_PUBLISH_ADDRESS,
+  MeshProvisionStatus.FIRMWARE_CHECK,
+  MeshProvisionStatus.REBOOT_PROVISIONED,
+  MeshProvisionStatus.SCANNING_FOR_PROVISIONED_AFTER_REBOOT,
+  MeshProvisionStatus.SCAN_FOR_PROVISION_AFTER_REBOOT_TIMEOUT,
+  MeshProvisionStatus.CONNECTING_TO_PROVISIONED_AFTER_REBOOT,
+  MeshProvisionStatus.CONNECTED_TO_PROVISIONED_AFTER_REBOOT,
+  MeshProvisionStatus.MESH_PROVISION_COMPLETE,
+  MeshProvisionStatus.COMPATIBILITY_CHECK,
+  MeshProvisionStatus.SETUP_TIMEOUT,
+  MeshProvisionStatus.SETUP_FAILED,
+  MeshProvisionStatus.SETUP_COMPLETE,
+  MeshProvisionStatus.AUTOMATIC_CONFIGURATION_PUSH,
+  MeshProvisionStatus.ADDING_TO_BRILLIANT_MESH,
+  MeshProvisionStatus.FAILED_TO_ADD_TO_BRILLIANT,
+  MeshProvisionStatus.SUCCESSFULLY_ADDED_TO_BRILLIANT,
+  MeshProvisionStatus.GENERIC_ERROR,
+  MeshProvisionStatus.USER_CANCELED
+]
+
 enum ControlConfigurationStatus {
-    NOT_STARTED = 1
-    ADD_TO_HOME = 2
-    FIND_CONTROL = 3
-    CONTROL_NAME_PUSH = 4 // Android now using CONTROL_CONFIG_PUSH instead
-    LOAD_NAME_PUSH = 5 // Android now using LOAD_CONFIG_PUSH instead
-    LOAD_ROOM_PUSH = 6 // Android now using LOAD_CONFIG_PUSH instead
-    COMPATIBILITY_CHECK = 7
-    GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG = 8
-    AUTO_DIMMABILITY_CHECK = 9
-    MANUAL_MIN_DIM_LEVEL_SET = 10
-    RECORD_MESH_ADDRESS = 11
-    CONTROL_ROOM_PUSH = 12 // Android now using CONTROL_CONFIG_PUSH instead
-    LOAD_CONFIG_PUSH = 13
-    CONTROL_CONFIG_PUSH = 14
-    SUCCESS = 15
+  NOT_STARTED = 1
+  ADD_TO_HOME = 2
+  FIND_CONTROL = 3
+  CONTROL_NAME_PUSH = 4 // Android now using CONTROL_CONFIG_PUSH instead
+  LOAD_NAME_PUSH = 5 // Android now using LOAD_CONFIG_PUSH instead
+  LOAD_ROOM_PUSH = 6 // Android now using LOAD_CONFIG_PUSH instead
+  COMPATIBILITY_CHECK = 7
+  GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG = 8
+  AUTO_DIMMABILITY_CHECK = 9
+  MANUAL_MIN_DIM_LEVEL_SET = 10
+  RECORD_MESH_ADDRESS = 11
+  CONTROL_ROOM_PUSH = 12 // Android now using CONTROL_CONFIG_PUSH instead
+  LOAD_CONFIG_PUSH = 13
+  CONTROL_CONFIG_PUSH = 14
+  SUCCESS = 15
 }
+
+const list<ControlConfigurationStatus> MOBILE_CONTROL_CONFIGURATION_STATUS_EXPECTED_ORDER = [
+  ControlConfigurationStatus.NOT_STARTED,
+  ControlConfigurationStatus.ADD_TO_HOME,
+  ControlConfigurationStatus.FIND_CONTROL,
+  ControlConfigurationStatus.CONTROL_NAME_PUSH,
+  ControlConfigurationStatus.LOAD_NAME_PUSH,
+  ControlConfigurationStatus.LOAD_ROOM_PUSH,
+  ControlConfigurationStatus.COMPATIBILITY_CHECK,
+  ControlConfigurationStatus.GANGBOX_PERIPHERAL_FINAL_AUTO_CONFIG,
+  ControlConfigurationStatus.AUTO_DIMMABILITY_CHECK,
+  ControlConfigurationStatus.MANUAL_MIN_DIM_LEVEL_SET,
+  ControlConfigurationStatus.RECORD_MESH_ADDRESS,
+  ControlConfigurationStatus.CONTROL_ROOM_PUSH,
+  ControlConfigurationStatus.LOAD_CONFIG_PUSH,
+  ControlConfigurationStatus.CONTROL_CONFIG_PUSH,
+  ControlConfigurationStatus.SUCCESS
+]
 
 struct GuideOverlay {
   1: string overlay_identifier
