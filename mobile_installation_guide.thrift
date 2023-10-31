@@ -402,6 +402,7 @@ const string MOBILE_GUIDE_FIELD_HAD_VENDOR_MESSAGE_ERROR = "field_had_vendor_mes
 const string MOBILE_GUIDE_FIELD_HAS_QR_CODE = "field_has_qr_code"
 const string MOBILE_GUIDE_FIELD_HAS_SUCCESSFULLY_PROVISIONED = "field_has_successfully_provisioned"
 const string MOBILE_GUIDE_FIELD_HIGH_WATTAGE_PREFIX = "field_high_wattage_"
+const string MOBILE_GUIDE_FIELD_HOME_NAME = "field_home_name"
 const string MOBILE_GUIDE_FIELD_IDENTIFY_LINE_LOAD_KNOWN_PREFIX = "field_identify_line_load_known_"
 const string MOBILE_GUIDE_FIELD_IDENTITY_LINE_IS_KNOWN_PREFIX = "field_identify_line_is_known_"
 const string MOBILE_GUIDE_FIELD_IDENTITY_LOAD_IS_KNOWN_PREFIX = "field_identify_load_is_known_"
