@@ -145,6 +145,7 @@ struct HueBridgeCredential {
   1: string ip_address
   2: string username
   3: optional bool attempting_auth
+  4: optional string bridge_name
 }
 
 struct HueBridgeCredentials {
