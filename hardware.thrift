@@ -88,3 +88,9 @@ struct FilesystemStatus {
   3: i64 inodes_used
   4: i64 inodes_total
 }
+
+enum SoC {
+  UNKNOWN = 0,
+  IMX6 = 1,
+  I350 = 2,
+}
