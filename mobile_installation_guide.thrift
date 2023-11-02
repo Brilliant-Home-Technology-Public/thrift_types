@@ -292,6 +292,7 @@ enum GuideScreenType {
   INSTALL_COMPLETE = 36
   SKIP_FOR_NOW_RECONFIGURE_LOADLESS_SLIDERS = 37
   BRL_DEVICE_VARIATION_PICKER = 38
+  UNIT_INSTALL_COMPLETE = 39
 }
 
 struct GuideScreen {
@@ -536,6 +537,7 @@ const string MOBILE_GUIDE_SCREEN_SWITCH_PROVISIONING = "screen_switch_provisioni
 const string MOBILE_GUIDE_SCREEN_SWITCH_WALLPLATE = "screen_switch_wallplate"
 const string MOBILE_GUIDE_SCREEN_TOOLS = "screen_tools"
 const string MOBILE_GUIDE_SCREEN_TROUBLESHOOTING_BASE = "screen_troubleshooting_base"
+const string MOBILE_GUIDE_SCREEN_UNIT_INSTALL_COMPLETE = "screen_unit_install_complete"
 const string MOBILE_GUIDE_SCREEN_USE_EXISTING_CONFIGURATION = "screen_use_existing_configuration"
 const string MOBILE_GUIDE_SCREEN_WIRE_PHOTOS = "screen_wire_photos"
 const string MOBILE_GUIDE_SCREEN_WIRE_CONTROL_PREFIX = "screen_wire_control_slider_index_display_"

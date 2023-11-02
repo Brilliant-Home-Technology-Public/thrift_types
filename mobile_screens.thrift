@@ -280,6 +280,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GuideSkipForNow": "SkipForNow",
   "GuideCircuitLoadIdentification": "CircuitLoadIdentification",
   "GestureTutorialPage": "SwipeablePage:GestureTutorial", // iOS will use modifier
+  "GuideUnitInstallComplete": "MFUnitInstallComplete",
 
   // Control Configuration
   "ControlSelection": "ControlSelection" // iOS uses modifiers for selection type
