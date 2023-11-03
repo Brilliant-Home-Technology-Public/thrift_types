@@ -32,6 +32,7 @@ struct HardwarePeripheralInterface {
   22: i32 reset_all_settings_timeout_seconds
   23: string software_integrity_challenge
   24: crypto.SignedMessage software_integrity_challenge_response
+  25: hardware.SoC soc
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
