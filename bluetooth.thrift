@@ -1300,6 +1300,12 @@ enum LoadMagneticStatus {
   PENDING = 3, // Used during control compatibility check
 }
 
+const map<string, string> SWITCH_INITIAL_VALUES_CONFIG_VAR_KEY_TO_VAR_NAME = {
+    "initial_wattage_status": "wattage_status",
+    "initial_magnetic_status": "magnetic_status",
+    "max_intensity_power_reading": "max_intensity_power_reading",
+}
+
 struct MeshDeviceFirmware {
   1: string firmware_version
   2: i64 application_version
