@@ -102,6 +102,7 @@ const string REQUEST_DISPATCHER_IDENTIFIER = "request_dispatcher"
 const string HOME_DETAILS_IDENTIFIER = "home_details"
 const string SCHNEIDER_IDENTIFIER = "schneider"
 const string SCHNEIDER_CONFIG_IDENTIFIER = "schneider_config"
+const string SOLAR_IDENTIFIER = "solar_peripheral"
 
 const string SALTO_KS_IDENTIFIER = "salto_ks" // DEPRECATED
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration" // DEPRECATED
