@@ -289,6 +289,7 @@ enum PeripheralType {
   HOME_DETAILS = 94,
   WATER_SHUTOFF_VALVE = 95,
   SCHNEIDER_CONFIGURATION = 96,
+  SOLAR = 97,
 }
 
 enum PeripheralStatus {
