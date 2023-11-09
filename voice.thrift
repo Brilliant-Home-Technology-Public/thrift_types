@@ -18,6 +18,7 @@ enum AlexaStatus {
   ALEXA_THINKING = 4,
   ALEXA_ERROR = 5,
   ALEXA_NOTIFICATION = 6,
+  ALEXA_DO_NOT_DISTURB = 7,
 }
 
 enum RenderTemplateType {
