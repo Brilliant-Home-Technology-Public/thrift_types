@@ -12,8 +12,8 @@ struct SmartthingsConfigurationPeripheralInterface {
     3: optional string refresh_token // DEPRECATED
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
-    6: string api_endpoint
-    7: optional i32 api_version
+    6: optional string api_endpoint // DEPRECATED
+    7: optional i32 api_version // DEPRECATED
     8: optional string installed_app_id
 }
 
