@@ -21,6 +21,7 @@ const string REMOTE_BRIDGE_MDNS_SERVICE_TYPE = "_brilliant._tcp.local."
 const string BOSE_ST_MDNS_SERVICE_TYPE = "_soundtouch._tcp.local."
 const string SOMFY_MDNS_SERVICE_TYPE = "_kizbox._tcp.local."
 const string HUNTER_DOUGLAS_MDNS_SERVICE_TYPE = "_PowerView-G3._tcp.local."
+const string PHILIPS_HUE_MDNS_SERVICE_TYPE = "_hue._tcp.local."
 
 // Name for Hunter Douglas primary gateway
 const string HUNTER_DOUGLAS_PRIMARY_GATEWAY_NAME = "PowerView-G3._PowerView-G3._tcp.local."
