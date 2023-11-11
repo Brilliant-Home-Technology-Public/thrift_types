@@ -220,6 +220,7 @@ struct GuideOption {
   3: optional string image_url
   4: optional list<GuideRule> display_rules // Logical statement reference field identifiers and option values
   5: optional string secondary_display_label
+  6: optional bool allows_copy
 }
 
 struct GuideField {
@@ -293,6 +294,8 @@ enum GuideScreenType {
   SKIP_FOR_NOW_RECONFIGURE_LOADLESS_SLIDERS = 37
   BRL_DEVICE_VARIATION_PICKER = 38
   UNIT_INSTALL_COMPLETE = 39
+  INTEGRATION_DEVICE_DISCOVERY = 40
+  CONFIRM_INTEGRATION_DEVICES = 41
 }
 
 struct GuideScreen {
@@ -464,6 +467,7 @@ const string MOBILE_GUIDE_OVERLAY_INSTALLATION_CHECK_TURN_LIGHT_ON = "overlay_in
 const string MOBILE_GUIDE_OVERLAY_TOOLS_WARNING = "overlay_tools_warning"
 const string MOBILE_GUIDE_OVERLAY_SWITCH_FREE_PAIRING_READY_TO_CONNECT = "overlay_free_pairing_ready_to_connect"
 const string MOBILE_GUIDE_OVERLAY_PLUG_FREE_PAIRING_READY_TO_CONNECT = "overlay_plug_free_pairing_ready_to_connect"
+const string MOBILE_GUIDE_OVERLAY_TEXT_COPIED = "overlay_text_copied"
 
 const string MOBILE_GUIDE_PARAM_KEY_ARTICLE_ID = "article_id"
 
@@ -472,6 +476,9 @@ const string MOBILE_GUIDE_SCREEN_BREAKER_QUESTION = "screen_breaker_question"
 const string MOBILE_GUIDE_SCREEN_BREAKER_IDENTIFICATION = "screen_breaker_identification"
 const string MOBILE_GUIDE_SCREEN_CIRCUIT_LOAD_IDENTIFICATION_PREFIX = "screen_circuit_load_identification_"
 const string MOBILE_GUIDE_SCREEN_COMPLETE_SETUP = "screen_complete_setup"
+const string MOBILE_GUIDE_SCREEN_CONFIGURE_LEAK_DETECTORS = "screen_configure_leak_detectors"
+const string MOBILE_GUIDE_SCREEN_CONFIGURE_THERMOSTATS = "screen_configure_thermostats"
+const string MOBILE_GUIDE_SCREEN_CONFIRM_INTEGRATION_DEVICES = "screen_confirm_integration_devices"
 const string MOBILE_GUIDE_SCREEN_CONNECT_DEVICES = "screen_connect_devices"
 const string MOBILE_GUIDE_SCREEN_CONTROL_PROVISIONING = "screen_control_provisioning"
 const string MOBILE_GUIDE_SCREEN_CONTROL_QR_CODE = "screen_control_qr_code"
@@ -501,6 +508,8 @@ const string MOBILE_GUIDE_SCREEN_INSTALLATION_PREP = "screen_installation_prep"
 const string MOBILE_GUIDE_SCREEN_INSTALLATION_SUCCESS = "screen_installation_success"
 const string MOBILE_GUIDE_SCREEN_INTEGRATION_BEGIN = "screen_integration_begin"
 const string MOBILE_GUIDE_SCREEN_INTEGRATION_CONFIRM = "screen_integration_confirm"
+const string MOBILE_GUIDE_SCREEN_INTEGRATION_DEVICE_DISCOVERY = "screen_integration_device_discovery"
+const string MOBILE_GUIDE_SCREEN_INTEGRATION_LOGIN = "screen_integration_login"
 const string MOBILE_GUIDE_SCREEN_INTEGRATION_LEAK_DETECTOR = "screen_leak_detector"
 const string MOBILE_GUIDE_SCREEN_INTEGRATION_SETUP_COMPLETE = "screen_integration_setup_complete"
 const string MOBILE_GUIDE_SCREEN_INTEGRATION_THERMOSTAT = "screen_integration_thermostat"
@@ -544,14 +553,19 @@ const string MOBILE_GUIDE_SCREEN_WIRE_CONTROL_PREFIX = "screen_wire_control_slid
 
 const string MOBILE_GUIDE_SECTION_ADD_DEVICES = "section_add_device"
 const string MOBILE_GUIDE_SECTION_CHECK_WIRING = "section_check_wiring"
+const string MOBILE_GUIDE_SECTION_CONFIGURE_LEAK_DETECTORS = "section_configure_leak_detectors"
+const string MOBILE_GUIDE_SECTION_CONFIGURE_THERMOSTATS = "section_configure_thermostats"
+const string MOBILE_GUIDE_SECTION_CONFIRM_INTEGRATION_DEVICES = "section_confirm_integration_devices"
 const string MOBILE_GUIDE_SECTION_COMPATIBILITY = "section_compatibility"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_BASE = "section_install_brilliant_base"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_FACEPLATE = "section_install_brilliant_faceplate"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_LOADLESS_BASE = "section_install_brilliant_loadless_base"
 const string MOBILE_GUIDE_SECTION_INSTALL_BRILLIANT_SWITCH = "section_install_brilliant_switch"
+const string MOBILE_GUIDE_SECTION_INSTALL_INTEGRATION_LOGIN = "section_install_integration_login"
 const string MOBILE_GUIDE_SECTION_INSTALL_THIRDPARTY_DEVICE = "section_install_thirdparty_device"
 const string MOBILE_GUIDE_SECTION_INSTALLATION_SUCCESS = "section_installation_success"
 const string MOBILE_GUIDE_SECTION_PROVISIONING = "section_provisioning"
+const string MOBILE_GUIDE_SECTION_SELECT_INTEGRATION_DEVICES = "section_select_integration_devices"
 const string MOBILE_GUIDE_SECTION_TEST_BRILLIANT_BASE = "section_test_brilliant_base"
 const string MOBILE_GUIDE_SECTION_TEST_BRILLIANT_SWITCH = "section_test_brilliant_switch"
 const string MOBILE_GUIDE_SECTION_TOOLS_AND_SAFETY = "section_tools_and_safety"
@@ -579,3 +593,5 @@ const string MOBILE_SECTION_GROUP_TEST = "section_group_test"
 const string MOBILE_SECTION_GROUP_UNINSTALL = "section_group_uninstall"
 
 const string MOBILE_GUIDE_CONSTANT_VERTICAL_CHECKBOX_OPTION_DELIMITER = ":"
+
+const string MOBILE_GUIDE_INTEGRATION_INSTALL_ID = "integration_install_id"
