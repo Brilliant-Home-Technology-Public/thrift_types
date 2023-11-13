@@ -17,6 +17,10 @@ const string SWITCH_CONFIG_PERIPHERAL_PREFIX = "switch_config:"
 // Gestures are sent with a special "gesture" property ID and do not utilize the
 // SwitchPropertyID scheme despite being part of the SWITCH_CONFIG_CLIENT model
 const string GESTURE_PROPERTY_ID = "gesture"
+// The OTA update status isn't tied to a mesh model, but we tie the ota_update_status variable
+// to this special property ID so that we can use the same peripheral state update flow that
+// regular properties use
+const string OTA_UPDATE_STATUS_PROPERTY_ID = "ota_update_status"
 const i64 SWITCH_MOTION_CONFIGURED_LOW_THRESHOLD = 20
 const i64 SWITCH_MOTION_NOT_CONFIGURED_LOW_THRESHOLD = 100
 const i64 SWITCH_MOTION_HIGH_THRESHOLD = 70
