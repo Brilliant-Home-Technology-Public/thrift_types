@@ -9,9 +9,9 @@ enum HomeHeatingType {
 }
 
 struct SolarConfiguration {
-  1: i32 average_monthly_energy_bill_dollars
-  2: double solar_array_size_kw
-  3: HomeHeatingType heating_type
-  4: bool has_ev
-  5: i32 projected_percent_energy_from_solar
+  1: optional i32 average_monthly_energy_bill_dollars
+  2: optional double solar_array_size_kw
+  3: optional HomeHeatingType heating_type
+  4: optional bool has_ev
+  5: optional i32 projected_percent_energy_from_solar
 }
