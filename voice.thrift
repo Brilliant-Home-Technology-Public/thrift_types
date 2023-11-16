@@ -101,3 +101,6 @@ struct AlexaAlerts {
   1: map<string, AlexaAlert> alerts
 }
 
+const i32 ALEXA_MINIMUM_LISTENING_LEVEL = 30
+const i32 ALEXA_OPTIMAL_LISTENING_LEVEL = 70
+
