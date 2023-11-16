@@ -1,6 +1,8 @@
 namespace py thrift_types.weather
 namespace java thrift_types.weather
 
+include "configuration.thrift"
+
 enum WeatherStatus {
   UNKNOWN = 0,
   GENERIC_DAY = 1,
@@ -17,3 +19,8 @@ enum WeatherStatus {
 }
 
 const i32 INVALID_TEMPERATURE_F = -460 # ~Zero Kelvin
+
+struct DayTimeSkyCover {
+  1: i32 percentage
+  2: configuration.CalendarDay day
+}
