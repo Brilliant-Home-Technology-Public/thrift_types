@@ -23,6 +23,7 @@ struct SetupInfo {
 const string INFIELD_HOMEKIT_AUTH_ENTITY_PPID = "244541-0003"
 const string JABIL_FACTORY_HOMEKIT_AUTH_ENTITY_PPID = "244541-0004"
 const string VTECH_FACTORY_HOMEKIT_AUTH_ENTITY_PPID = "244541-171532"
+const string VTECH_FACTORY_I350_HOMEKIT_AUTH_ENTITY_PPID = "244541-450610"
 const map<string, map<string, string>> PRODUCT_PLAN_DETAILS_BY_PPID = {
     JABIL_FACTORY_HOMEKIT_AUTH_ENTITY_PPID: {
         "product_data": "01651fe302eb7eac"
@@ -30,4 +31,7 @@ const map<string, map<string, string>> PRODUCT_PLAN_DETAILS_BY_PPID = {
     VTECH_FACTORY_HOMEKIT_AUTH_ENTITY_PPID: {
         "product_data": "01651fe3f3a8f263"
     },
+    VTECH_FACTORY_I350_HOMEKIT_AUTH_ENTITY_PPID: {
+        "product_data": "01651fe37928567c"
+    }
 }
