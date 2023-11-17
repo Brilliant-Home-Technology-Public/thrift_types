@@ -15,6 +15,7 @@ struct SmartthingsConfigurationPeripheralInterface {
     6: optional string api_endpoint // DEPRECATED
     7: optional i32 api_version // DEPRECATED
     8: optional string installed_app_id
+    9: optional bool trigger_device_discovery
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
