@@ -16,7 +16,7 @@ struct BuildingEntryPanelPeripheralInterface {
   7: string call_preview_image
   8: remote_media.MediaTransmission media_transmitted
   9: bool grant_access
-  10: i16 chime_count
+  10: i16 chime_setting
   11: message_bus.Event event
   12: optional bool grant_access_any_time
 }
