@@ -19,8 +19,18 @@ enum WeatherStatus {
 }
 
 const i32 INVALID_TEMPERATURE_F = -460 # ~Zero Kelvin
+const i32 INVALID_SKY_COVER_PERCENTAGE = -1
 
 struct DayTimeSkyCover {
   1: i32 percentage
   2: configuration.CalendarDay day
+}
+
+const DayTimeSkyCover INVALID_DAY_TIME_SKY_COVER = {
+    "percentage": INVALID_SKY_COVER_PERCENTAGE,
+    "day": {
+        "day_of_month": 1,
+        "month": configuration.Month.JAN,
+        "year": 1
+    },
 }
