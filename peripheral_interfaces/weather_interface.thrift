@@ -14,6 +14,7 @@ struct WeatherPeripheralInterface {
   6: i64 next_sunset_time_ms
   7: optional bool enable_updated_stale_logic
   8: weather.DayTimeSkyCover day_time_sky_cover
+  9: weather.DayTimeWeatherStatus day_time_weather_status
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
