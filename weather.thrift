@@ -39,3 +39,12 @@ const DayTimeSkyCover INVALID_DAY_TIME_SKY_COVER = {
         "year": 1
     },
 }
+
+const DayTimeWeatherStatus INVALID_DAY_TIME_WEATHER_STATUS = {
+    "weather_status": WeatherStatus.UNKNOWN,
+    "day": {
+        "day_of_month": 1,
+        "month": configuration.Month.JAN,
+        "year": 1
+    },
+}
