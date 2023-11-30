@@ -13,6 +13,7 @@ struct WeatherPeripheralInterface {
   5: i64 next_sunrise_time_ms
   6: i64 next_sunset_time_ms
   7: optional bool enable_updated_stale_logic
+  8: weather.DayTimeSkyCover day_time_sky_cover
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
