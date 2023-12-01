@@ -26,6 +26,11 @@ struct DayTimeSkyCover {
   2: configuration.CalendarDay day
 }
 
+struct DayTimeWeatherStatus {
+  1: WeatherStatus weather_status
+  2: configuration.CalendarDay day
+}
+
 const DayTimeSkyCover INVALID_DAY_TIME_SKY_COVER = {
     "percentage": INVALID_SKY_COVER_PERCENTAGE,
     "day": {
