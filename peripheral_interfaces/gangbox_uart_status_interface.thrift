@@ -15,6 +15,7 @@ struct GangboxUARTStatusPeripheralInterface {
   4: bool use_beta_firmware
   5: gangbox.GangboxDeviceRevision device_revision
   6: uart.UARTDeviceType device_type
+  7: string reboot
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
