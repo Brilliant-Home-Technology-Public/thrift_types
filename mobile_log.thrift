@@ -67,6 +67,7 @@ const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobil
 const string MOBILE_SETTINGS_LEVEL_EVENT_TABLE_NAME = "mobile_settings_level"
 const string MOBILE_SETTINGS_TOGGLE_EVENT_TABLE_NAME = "mobile_settings_toggle"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
+const string MOBILE_SLIDER_CONFIGURATION_UPDATE_EVENT_TABLE_NAME = "mobile_slider_configuration_update"
 const string MOBILE_SKYBELL_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_skybell_session_report"
 const string MOBILE_THIRDPARTY_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_thirdparty_button_tapped"
 const string MOBILE_THIRDPARTY_DEVICE_ADDED_EVENT_TABLE_NAME = "mobile_thirdparty_device_added"
@@ -612,6 +613,7 @@ enum MobileEventDeviceType {
   SECURITY_SYSTEM = 14
   MOTION_CONTROL = 15
   WATER_SHUTOFF_VALVE = 16
+  DEVICE_GROUP = 17
 }
 
 enum MobileEventSource {
@@ -1787,4 +1789,20 @@ struct MobileDimSmoothingConfigurationEvent {
   9: string light_type
   10: MobileDimSmoothingType dim_smoothing_type
   11: i64 dim_smoothing_duration
+}
+
+struct MobileSliderConfigurationUpdateEvent {
+  1: string table_name
+  2: i64 ts
+  3: string device_model
+  4: string home_id
+  5: string device_id
+  6: string screen_name
+  7: string user_id
+  8: string app_class
+  9: string slider_owner_device_id // The actual device_id that physically owns the slider.
+  10: string target_device_id // The processed device_id that indicates the target integration.
+  11: string target_device_type
+  12: i32 number_of_gangs
+  13: i32 slider_number
 }
