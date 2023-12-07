@@ -1,0 +1,2 @@
+namespace py thrift_types.factory_programming
+namespace java thrift_types.factory_programming
