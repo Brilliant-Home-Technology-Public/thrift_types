@@ -11,6 +11,7 @@ struct HunterDouglasConfigurationPeripheralInterface {
     1: string owner
     2: configuration.ThirdpartyIntegrationState thirdparty_integration_state
     3: optional hunter_douglas.HunterDouglasGatewayInfos gateway_infos
+    4: optional bool trigger_device_discovery
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
