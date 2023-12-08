@@ -19,7 +19,8 @@ struct SetupInfo {
 
 
 # These details can be found on mfi.apple.com.
-# Historically, we used the Jabil PPID for internally flashed devices.
+# We currently use VTech PPIDs for internally flashed devices (prior to 12/11/23 we used the Jabil
+# PPID).
 const string INFIELD_HOMEKIT_AUTH_ENTITY_PPID = "244541-0003"
 const string JABIL_FACTORY_HOMEKIT_AUTH_ENTITY_PPID = "244541-0004"
 const string VTECH_FACTORY_HOMEKIT_AUTH_ENTITY_PPID = "244541-171532"
