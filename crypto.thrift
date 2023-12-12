@@ -1,6 +1,9 @@
 namespace py thrift_types.crypto
 namespace java thrift_types.crypto
 
+# String representations of AsymmetricKeyTypes
+const string ED25519_KEY_TYPE = "ed25519"
+
 enum AsymmetricKeyType {
   UNKNOWN = 0
   X25519 = 1
