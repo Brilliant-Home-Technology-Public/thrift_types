@@ -896,6 +896,9 @@ struct MobileConnectivityEvent {
   12: i64 time_since_loading_ms
   // This is reset on every start()
   13: MobileConnectivityStatus farthest_status_in_session
+  14: i32 num_cloud_online_controls // Number of ONLINE controls devices reported by Cloud Remote Bridge
+  15: i32 num_cloud_known_controls // Number of controls reported by Cloud Remote Bridge
+  16: i64 last_updated_cloud_controls_ms // Timestamp of known devices variable used to compute cloud control variables
 }
 
 struct MobileControlConfigurationEvent {
