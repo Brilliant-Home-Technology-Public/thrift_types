@@ -256,6 +256,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "IGInstallComplete": "InstallationCompleteScreen",
   "IGSkipForNowFullScreenOverlay": "SkipForNow",
   "IGUnitInstallComplete": "MFUnitInstallComplete",
+  "IGDeviceDiscovery": "InstallationGuide:IntegrationDiscovery",
+  "IGConfirmIntegrations": "InstallationGuide:ConfirmIntegrations",
+  "IGIntegrationSetupFinish": "InstallationGuide:IntegrationSetupFinish",
   // Android
   "Horizontal": "InstallationGuide"
   "Vertical": "InstallationGuide",
@@ -281,6 +284,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "GuideCircuitLoadIdentification": "CircuitLoadIdentification",
   "GestureTutorialPage": "SwipeablePage:GestureTutorial", // iOS will use modifier
   "GuideUnitInstallComplete": "MFUnitInstallComplete",
+  "GuideDeviceDiscovery": "InstallationGuide:IntegrationDiscovery",
+  "GuideConfirmIntegrations": "InstallationGuide:ConfirmIntegrations",
+  "GuideIntegrationSetupFinish": "InstallationGuide:IntegrationSetupFinish",
 
   // Control Configuration
   "ControlSelection": "ControlSelection" // iOS uses modifiers for selection type
@@ -512,6 +518,9 @@ const string MOBILE_OVERLAY_NAME_MF_CURRENT_UNIT_OCCUPIED = "MFUnitOccupied:Curr
 const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled"
 const string MOBILE_OVERLAY_NAME_MF_HOMES_LISTING = "MFHomesListing"
 const string MOBILE_OVERLAY_NAME_MF_INSTALLATION_EDIT_DEVICE_NUMBER = "MFInstallationEditDeviceNumber"
+const string MOBILE_OVERLAY_NAME_MF_INTEGRATIONS_MISSING_DEVICES = "MFIntegrations:MissingDevices"
+const string MOBILE_OVERLAY_NAME_MF_INTEGRATIONS_OFFLINE_DEVICES = "MFIntegrations:OfflineDevices"
+const string MOBILE_OVERLAY_NAME_MF_INTEGRATIONS_UNEXPECTED_DEVICES = "MFIntegrations:UnexpectedDevices"
 const string MOBILE_OVERLAY_NAME_MF_RESET_PIN = "MFResetPin"
 const string MOBILE_OVERLAY_NAME_MF_UNIT_OCCUPIED = "MFUnitOccupied"
 const string MOBILE_OVERLAY_NAME_MIGRATION_ERROR = "MigrationError"
