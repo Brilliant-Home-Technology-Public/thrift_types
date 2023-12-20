@@ -542,9 +542,16 @@ enum MobileConnectivityStatus {
   // This is because direct connections are not sufficient since there are things
   // owned by cloud (like room names, and other things in configuration_virtual_device) that are needed.
 
-  CLOUD_CONNECTED = 1 // May or may not be connected directly to Brilliant Controls as well
+  // Note that iOS disabled Direct Connections in June 2022
+
+
+  // This status was previously just CLOUD_CONNECTED, renaming to continue use (name is logged in mixpanel)
+  // but enum value is used in CSV logs.
+  CLOUD_CONNECTED_WITH_ONLINE_CONTROLS = 1 // May or may not be connected directly to Brilliant Controls as well
   PARTIAL_CONNECTED = 2 // Connected directly to Brilliant Controls only and not cloud
-  DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directly
+  DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directlyA
+  CLOUD_CONNECTED_NO_CONTROLS = 4 // Cloud connected but no controls are known to cloud remote bridge
+  CLOUD_CONNECTED_NO_ONLINE_CONTROLS = 5 // Cloud connected but no controls are connected to cloud remote bridge
 }
 
 enum AddMeshResult {
