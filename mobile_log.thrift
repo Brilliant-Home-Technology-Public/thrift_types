@@ -1808,4 +1808,5 @@ struct MobileSliderConfigurationUpdateEvent {
   11: string target_device_type
   12: i32 number_of_gangs
   13: i32 slider_number
+  14: i32 number_of_sliders
 }
