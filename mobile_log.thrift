@@ -66,6 +66,7 @@ const string MOBILE_SECURITY_DISARM_EVENT_TABLE_NAME = "mobile_security_disarm_e
 const string MOBILE_SECURITY_SYSTEM_ADJUSTMENT_ATTEMPT_EVENT_TABLE_NAME = "mobile_security_system_adjustment_attempt"
 const string MOBILE_SETTINGS_LEVEL_EVENT_TABLE_NAME = "mobile_settings_level"
 const string MOBILE_SETTINGS_TOGGLE_EVENT_TABLE_NAME = "mobile_settings_toggle"
+const string MOBILE_SET_VARIABLE_REQUEST_ERROR_EVENT_TABLE_NAME = "mobile_set_variable_request_error"
 const string MOBILE_SIMPLE_BUTTON_TAPPED_EVENT_TABLE_NAME = "mobile_simple_button_tapped"
 const string MOBILE_SLIDER_CONFIGURATION_UPDATE_EVENT_TABLE_NAME = "mobile_slider_configuration_update"
 const string MOBILE_SKYBELL_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_skybell_session_report"
