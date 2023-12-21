@@ -10,7 +10,10 @@ namespace java thrift_types.cross_platform_log
 
 const string NOT_APPLICABLE = "NOT_APPLICABLE" // Any string field can potentially use this value.
 const string BRILLIANT_INTEGRATION_NAME = "Brilliant"
+// This connectivity status is likely app is awaiting connectivity.
+const string CONNECTIVITY_STATUS_UNDETERMINED = "undetermined"
 const string SUPER_PROPERTY_NAME_BUILDING_ID = "building_id"
+const string SUPER_PROPERTY_NAME_CURRENT_CONNECTIVITY_STATUS = "current_connectivity_status"
 const string SUPER_PROPERTY_NAME_DEVICE_INSTANCE_ID = "device_instance_id"
 const string SUPER_PROPERTY_NAME_HOME_TYPE = "home_type"
 const string SUPER_PROPERTY_NAME_PROPERTY_ID = "property_id"
