@@ -539,20 +539,23 @@ enum MobileLoadConfigurationStatus {
 }
 
 enum MobileConnectivityStatus {
-  // Primary goal connectivity status is CLOUD_CONNECTED, anything less is a sort of error mode
-  // This is because direct connections are not sufficient since there are things
-  // owned by cloud (like room names, and other things in configuration_virtual_device) that are needed.
-
+  // Primary goal connectivity status is CLOUD_CONNECTED_WITH_ONLINE_CONTROLS,
+  // anything less is a sort of error mode
   // Note that iOS disabled Direct Connections in June 2022
 
 
-  // This status was previously just CLOUD_CONNECTED, renaming to continue use (name is logged in mixpanel)
-  // but enum value is used in CSV logs.
-  CLOUD_CONNECTED_WITH_ONLINE_CONTROLS = 1 // May or may not be connected directly to Brilliant Controls as well
+  // `CLOUD_CONNECTED` used to be the ideal state, but the more granular
+  // values were updated in Jan 2024 to reflect the `known_remote_devices` variable
+  // on CloudRemoteBridge.
+  // In 24.01.10 and later, `CLOUD_CONNECTED` will only be used for the period where
+  // a websocket connection has been made but we have NOT heard an update to the known_remote_devices
+  // variable (which should update based on mobile app establishing a connection).
+  CLOUD_CONNECTED = 1 // Connected to CloudRemoteBridge (see note above)
   PARTIAL_CONNECTED = 2 // Connected directly to Brilliant Controls only and not cloud
-  DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directlyA
-  CLOUD_CONNECTED_NO_CONTROLS = 4 // Cloud connected but no controls are known to cloud remote bridge
-  CLOUD_CONNECTED_NO_ONLINE_CONTROLS = 5 // Cloud connected but no controls are connected to cloud remote bridge
+  DISCONNECTED = 3 // Not connected to Cloud nor Brilliant Controls directly
+  CLOUD_CONNECTED_NO_CONTROLS = 4 // Cloud connected, but no controls are known to cloud remote bridge
+  CLOUD_CONNECTED_NO_ONLINE_CONTROLS = 5 // Cloud connected, but no controls are connected to cloud remote bridge
+  CLOUD_CONNECTED_WITH_ONLINE_CONTROLS = 6 // Cloud connected, with known online controls
 }
 
 enum AddMeshResult {
