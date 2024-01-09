@@ -2,6 +2,7 @@ namespace py thrift_types.solar
 namespace java thrift_types.solar
 
 include "configuration.thrift"
+include "weather.thrift"
 
 enum HomeHeatingType {
   UNKNOWN = 0,
@@ -43,3 +44,14 @@ const double DEFAULT_SOLAR_ESTIMATE_LOSSES = 14.08
 const i32 DEFAULT_SOLAR_ESTIMATE_ARRAY_TYPE = 1
 const double DEFAULT_SOLAR_ESTIMATE_TILT = 20
 const double DEFAULT_SOLAR_ESTIMATE_AZIMUTH = 180
+
+struct DailySolarProduction {
+  1: configuration.CalendarDay day 
+  2: i32 production_percentage
+  3: double production_kwh
+  4: weather.WeatherStatus weather_status
+}
+
+struct SolarProduction {
+  1: list<DailySolarProduction> solar_production
+}
