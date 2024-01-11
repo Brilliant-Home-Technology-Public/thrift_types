@@ -665,6 +665,7 @@ enum MobileNotificationType {
   FULLSCREEN = 2 // May be implemented as an actual screen
   BOTTOM_DRAWER = 3
   TOP_BANNER = 4
+  IN_SCREEN = 5 // Not truly an overlay, used for in screen content like partialConnectivity banner.
 }
 
 enum MobilePhotosAction {
