@@ -556,6 +556,7 @@ enum MobileConnectivityStatus {
   CLOUD_CONNECTED_NO_CONTROLS = 4 // Cloud connected, but no controls are known to cloud remote bridge
   CLOUD_CONNECTED_NO_ONLINE_CONTROLS = 5 // Cloud connected, but no controls are connected to cloud remote bridge
   CLOUD_CONNECTED_WITH_ONLINE_CONTROLS = 6 // Cloud connected, with known online controls
+  LOADING = 7 // We are still attempting to connect to Cloud Remote Bridge (or have recently initiate a retry)
 }
 
 enum AddMeshResult {
