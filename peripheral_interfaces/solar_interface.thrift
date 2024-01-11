@@ -10,6 +10,7 @@ struct SolarPeripheralInterface {
   2: bool enable_estimated_solar_savings
   3: solar.SolarSavings estimated_total_solar_savings
   4: string reset_estimated_total_solar_savings
+  5: solar.MaxSolarProduction estimated_max_solar_production
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
