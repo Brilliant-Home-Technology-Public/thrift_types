@@ -517,6 +517,7 @@ const string MOBILE_OVERLAY_NAME_LOW_TEMPERATURE = "AttentionNeeded:LowTemperatu
 const string MOBILE_OVERLAY_NAME_MESH_CRITICAL_FIRMWARE_UPDATE = "MeshFirmwareUpdate:Critical"
 const string MOBILE_OVERLAY_NAME_MESH_FIRMWARE_UPDATE = "MeshFirmwareUpdate"
 const string MOBILE_OVERLAY_NAME_MF_CURRENT_UNIT_OCCUPIED = "MFUnitOccupied:CurrentUnit"
+const string MOBILE_OVERLAY_NAME_MF_ERROR_MISSING_INTEGRATION_ID = "MFError:MissingIntegrationId"
 const string MOBILE_OVERLAY_NAME_MF_HOME_ACCESS_DISABLED = "MFHomeAccessDisabled"
 const string MOBILE_OVERLAY_NAME_MF_HOMES_LISTING = "MFHomesListing"
 const string MOBILE_OVERLAY_NAME_MF_INSTALLATION_EDIT_DEVICE_NUMBER = "MFInstallationEditDeviceNumber"
