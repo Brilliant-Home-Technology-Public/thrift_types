@@ -23,3 +23,17 @@ struct SolarSavings {
   2: configuration.CalendarDay start_day
   3: configuration.CalendarDay end_day
 }
+
+struct MaxSolarProduction {
+  1: list<i32> daily_solar_production_kwh_by_month # Months are 0-indexed starting with January
+  2: configuration.CalendarDay last_day_polled
+}
+
+const MaxSolarProduction INVALID_MAX_SOLAR_PRODUCTION = {
+    "daily_solar_production_kwh_by_month": [],
+    "last_day_polled": {
+        "day_of_month": 1,
+        "month": configuration.Month.JAN,
+        "year": 1
+    },
+}
