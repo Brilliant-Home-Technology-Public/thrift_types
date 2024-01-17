@@ -8,6 +8,7 @@ include "peripheral_interface.thrift"
 struct SolarPeripheralInterface {
   1: solar.SolarConfiguration solar_configuration
   2: bool enable_estimated_solar_savings
+  3: solar.SolarSavings estimated_total_solar_savings
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
