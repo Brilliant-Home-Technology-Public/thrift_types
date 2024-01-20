@@ -13,11 +13,12 @@ struct HomeKitPeripheralInterface {
   8: bool adk_enabled
   10: bool restart
   11: bool token_exists
-  12: optional homekit.ExposedFixtures exposed_fixtures
+  12: homekit.ExposedFixtures exposed_fixtures
   13: homekit.SetupInfo setup_info
   14: bool force_fetch_token
   15: i32 cookie
   16: i32 update_status
+  17: string backup_ssid
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
