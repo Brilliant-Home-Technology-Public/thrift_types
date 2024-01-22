@@ -25,6 +25,20 @@ struct SolarSavings {
   3: configuration.CalendarDay end_day
 }
 
+const SolarSavings DEFAULT_SOLAR_SAVINGS = {
+    "total_savings_dollars": 0,
+    "start_day":  {
+        "day_of_month": 1,
+        "month": configuration.Month.JAN,
+        "year": 1
+    },
+    "end_day":  {
+        "day_of_month": 1,
+        "month": configuration.Month.JAN,
+        "year": 1
+    }
+}
+
 struct MaxSolarProduction {
   1: list<i32> daily_solar_production_kwh_by_month # Months are 0-indexed starting with January
   2: configuration.CalendarDay last_day_polled
