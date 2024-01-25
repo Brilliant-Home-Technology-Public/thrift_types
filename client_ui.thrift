@@ -230,6 +230,13 @@ const map<message_bus.PeripheralType, map<SupportType, bool>> CONTROL_PERIPHERAL
         SupportType.CAP_TOUCH: false,
         SupportType.MOTION: false
     },
+    message_bus.PeripheralType.OFFLINE_LOCK: {
+        SupportType.DEVICES: false,
+        SupportType.SCENES: false,
+        SupportType.GESTURES: false,
+        SupportType.CAP_TOUCH: false,
+        SupportType.MOTION: false
+    },
 }
 
 enum ControlLockScreenWidgetType {
