@@ -527,6 +527,9 @@ const string UI_BUTTON_NAME_CELSIUS = "celsius"
 const string UI_BUTTON_NAME_FAHRENHEIT = "fahrenheit"
 const string UI_BUTTON_NAME_YES = "yes"
 const string UI_BUTTON_NAME_NO = "no"
+const string UI_BUTTON_NAME_ADD_ARLO = "add_arlo"
+const string UI_BUTTON_NAME_ADD_LEVITON = "add_leviton"
+const string UI_BUTTON_NAME_ADD_LUTRON = "add_lutron"
 
 // NOTE:DO NOT ADD ANY FIELDS TO SimpleButtonTappedEvent STRUCT
 // If A ButtonTapped log needs another field, make a new struct
