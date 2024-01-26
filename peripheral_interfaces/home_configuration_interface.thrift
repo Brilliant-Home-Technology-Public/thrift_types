@@ -23,6 +23,7 @@ struct HomeConfigurationPeripheralInterface {
   13: optional bool enable_switch_power_updates
   14: optional bool enable_plug_power_updates
   15: optional thermostat.TemperatureUnits temperature_display_unit = thermostat.TemperatureUnits.FAHRENHEIT
+  16: optional bool proxy_alexa_token_refresh
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
