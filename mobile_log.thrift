@@ -85,6 +85,7 @@ const string MOBILE_WEBRTC_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_webrtc_sess
 // START: MOBILE BUTTON NAME CONSTANTS
 // KEEP ALPHABETIZED
 const string MOBILE_BUTTON_NAME_ABOUT = "about"
+const string MOBILE_BUTTON_NAME_ACCEPT_AND_CONTINUE = "accept_and_continue"
 const string MOBILE_BUTTON_NAME_ACCOUNT_LOG_IN = "account_log_in"
 const string MOBILE_BUTTON_NAME_ACCOUNT_SETTINGS = "account_settings"
 const string MOBILE_BUTTON_NAME_ACCOUNT_SIGN_UP = "account_sign_up"
@@ -195,6 +196,7 @@ const string MOBILE_BUTTON_NAME_HELP = "help"
 const string MOBILE_BUTTON_NAME_HELP_FAILED_COMPATIBILITY = "help_failed_compatibility"
 const string MOBILE_BUTTON_NAME_HELP_FIND_CODE = "help_find_code"
 const string MOBILE_BUTTON_NAME_HELP_HIGH_WATTAGE = "help_high_wattage"
+const string MOBILE_BUTTON_NAME_HELP_SECURITY_STATUS = "help_security_status"
 const string MOBILE_BUTTON_NAME_HIDE_DEVICE = "hide"
 const string MOBILE_BUTTON_NAME_HOME_CHOSEN = "home_chosen"
 const string MOBILE_BUTTON_NAME_HOME_PASSCODE_DISABLE = "disable_passcode"
