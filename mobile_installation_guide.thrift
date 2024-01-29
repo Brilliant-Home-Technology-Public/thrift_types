@@ -601,3 +601,10 @@ const string MOBILE_SECTION_GROUP_UNINSTALL = "section_group_uninstall"
 const string MOBILE_GUIDE_CONSTANT_VERTICAL_CHECKBOX_OPTION_DELIMITER = ":"
 
 const string MOBILE_GUIDE_INTEGRATION_INSTALL_ID = "integration_install_id"
+
+// Log state keys used to populate device_configuration_state in MobileControlConfigurationEvent
+const string MOBILE_GUIDE_LOG_STATE_KEY_SET_AVAILABLE_HOME = "set_available_home"
+const string MOBILE_GUIDE_LOG_STATE_KEY_EXPLICIT_SOFTWARE_INTEGRITY_CHECK = "explicit_software_integrity_check"
+const string MOBILE_GUIDE_LOG_STATE_KEY_DEVICE_CONFIG_PUSH = "device_config_push"
+const string MOBILE_GUIDE_LOG_STATE_KEY_PERIPHERAL_TYPE = "peripheral_type"
+const string MOBILE_GUIDE_LOG_STATE_KEY_MESH_ADDRESS = "mesh_address"
