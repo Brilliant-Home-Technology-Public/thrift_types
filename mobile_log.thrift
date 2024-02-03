@@ -499,6 +499,7 @@ enum MobileAddDeviceFlowType {
   RELINK = 5
   THIRD_PARTY_INSTRUCTIONS = 6
   MF_TEMPLATE_INSTALL = 7
+  PARTNER_SCENES = 8
 }
 
 enum MobileDeviceSettingsFlowType {
