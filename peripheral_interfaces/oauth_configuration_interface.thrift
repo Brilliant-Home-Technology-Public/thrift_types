@@ -24,6 +24,7 @@ struct OAuthConfigurationPeripheralInterface {
   16: string smartthings_client_id
   17: string tplink_api_key
   18: string tplink_client_id
+  19: string pvwatts_api_key
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
