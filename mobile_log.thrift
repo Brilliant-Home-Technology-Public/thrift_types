@@ -1305,6 +1305,7 @@ struct MobileImportPartnerSceneEvent {
   7: string partner_name
   8: string user_id
   9: string app_class
+  10: bool linked
 }
 
 // NOTE:DO NOT ADD ANY FIELDS TO MobileSimpleButtonTappedEvent

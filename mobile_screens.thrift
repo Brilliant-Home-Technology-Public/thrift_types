@@ -234,6 +234,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "ScenePartnerScenes": "AddPartnerScene",
   "SceneViewAction": "PartnerSceneAction",
   "ScenesSelection": "ScenesSelection",
+  "ScenePartnerAuth": "ThirdParty:ImportPartnerScene",
 
   // Installation Guide
   "SkipInstall": "SkipInstallation",
