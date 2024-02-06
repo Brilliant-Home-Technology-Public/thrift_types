@@ -108,13 +108,7 @@ const string SMARTTHINGS_SCENE_CONFIG_IDENTIFIER = "smartthings_scene_configurat
 const string SALTO_KS_IDENTIFIER = "salto_ks" // DEPRECATED
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration" // DEPRECATED
 
-// Smartthings client id is a public id that all Brilliant requests use
-const string RING_CLIENT_ID = "brilliant_test"
-const string SMARTTHINGS_CLIENT_ID = "0a64157f-1717-42b9-85d0-4aaa37ece72d"
 const string SONOS_API_KEY = "91c789f8-af21-4010-804e-c001ef651675"
-const string NEST_CLIENT_ID = "1858a5fc-a794-46f5-a619-318b5aac45b0"
-const string ECOBEE_CLIENT_ID = "p5QCDGdiJOHp7oRknVXzwpDEkeTRYTVy"
-const string AUGUST_CLIENT_ID = ""
 const string RING_VIRTUAL_DEVICE = "ring_virtual_device"
 const string CONFIGURATION_VIRTUAL_DEVICE = "configuration_virtual_device"
 const string CONFIGURATION_PERIPHERAL_ID_VARIABLE_NAME = "configuration_peripheral_id"
