@@ -104,6 +104,7 @@ const string SCHNEIDER_IDENTIFIER = "schneider"
 const string SCHNEIDER_CONFIG_IDENTIFIER = "schneider_config"
 const string SOLAR_IDENTIFIER = "solar_peripheral"
 const string SMARTTHINGS_SCENE_CONFIG_IDENTIFIER = "smartthings_scene_configuration"
+const string THIRDPARTY_DISCOVERY_IDENTIFIER = "thirdparty_discovery_peripheral"
 
 const string SALTO_KS_IDENTIFIER = "salto_ks" // DEPRECATED
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration" // DEPRECATED
@@ -286,6 +287,7 @@ enum PeripheralType {
   SCHNEIDER_CONFIGURATION = 96,
   SOLAR = 97,
   OFFLINE_LOCK = 98,
+  THIRDPARTY_DISCOVERY = 99,
 }
 
 enum PeripheralStatus {
