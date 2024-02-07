@@ -23,7 +23,6 @@ const string HONEYWELL_EVENT_KEY_LOW_BATTERY_ALERT = "honeywell:low_battery_aler
 const string HONEYWELL_EVENT_KEY_WATER_LEAK_ALERT = "honeywell:water_leak_alert"
 const string HONEYWELL_EVENT_KEY_FAN_MODE = "honeywell:fan_mode"
 const string HONEYWELL_EVENT_KEY_HVAC_MODE = "honeywell:hvac_mode"
-const string HONEYWELL_EVENT_KEY_AMBIENT_HUMIDITY = "honeywell:ambient_humidity"
 const string HONEYWELL_EVENT_KEY_AMBIENT_TEMPERATURE = "honeywell:ambient_temperature"
 const string HONEYWELL_EVENT_KEY_UNITS = "honeywell:units"
 const string HONEYWELL_EVENT_KEY_HEAT_SETPOINT = "honeywell:heat_setpoint"
