@@ -27,3 +27,4 @@ const string HONEYWELL_EVENT_KEY_AMBIENT_TEMPERATURE = "honeywell:ambient_temper
 const string HONEYWELL_EVENT_KEY_UNITS = "honeywell:units"
 const string HONEYWELL_EVENT_KEY_HEAT_SETPOINT = "honeywell:heat_setpoint"
 const string HONEYWELL_EVENT_KEY_COOL_SETPOINT = "honeywell:cool_setpoint"
+const string HONEYWELL_EVENT_KEY_NOTIFICATION_TYPE = "honeywell:notification_type"
