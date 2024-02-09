@@ -495,6 +495,7 @@ enum PinType {
   ON_OFF_DEVICES = 22,
   ALWAYS_ON_DEVICES = 23,
   ENERGY = 24,
+  POST_SOLAR_DEMO = 25,
 }
 
 struct Pin {
