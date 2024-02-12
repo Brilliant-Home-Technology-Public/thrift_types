@@ -4,6 +4,8 @@ namespace java thrift_types.solar
 include "configuration.thrift"
 include "weather.thrift"
 
+const string PVWATTS_API_PREFIX = "https://developer.nrel.gov/api/pvwatts/v8.json?"
+
 enum HomeHeatingType {
   UNKNOWN = 0,
   NONE = 1,
