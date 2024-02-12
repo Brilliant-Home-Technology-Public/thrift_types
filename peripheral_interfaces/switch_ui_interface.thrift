@@ -16,6 +16,7 @@ struct SwitchUiPeripheralInterface {
   8: configuration.HomeScreenConfig home_screen_config
   9: bool child_lock_enabled
   10: bool require_automatic_configuration
+  11: bool enable_post_solar_demo
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
