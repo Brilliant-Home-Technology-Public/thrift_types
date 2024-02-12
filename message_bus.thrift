@@ -117,6 +117,7 @@ const string PERIPHERAL_INFO_ID_VARIABLE_NAME = "peripheral_info_id"
 const string PROCESS_CONFIGURATION_VARIABLE_PREFIX = "process_config:"
 const string CLOUD_VIRTUAL_DEVICE = "cloud"
 const string BLE_MESH_VIRTUAL_DEVICE = "ble_mesh"
+const string PVWATTS_IDENTIFIER = "pvwatts"
 
 const string RELAY_DEVICE_VARIABLE_NAME = "relay_device"
 
