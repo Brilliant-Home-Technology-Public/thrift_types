@@ -175,6 +175,8 @@ const string EMBEDDED_SWITCH_COMPATIBILITY_CHECK_ATTEMPT_TABLE_NAME = "switch_co
 const string EMBEDDED_SWITCH_SET_DIM_SMOOTHING_CONFIG_TABLE_NAME = "switch_set_dim_smoothing_config"
 const string EMBEDDED_GESTURE_CONFIGURATION_UPDATE_TABLE_NAME = "embedded_gesture_configuration_update"
 const string EMBEDDED_SLIDER_CONFIGURATION_UPDATE_TABLE_NAME = "embedded_slider_configuration_update"
+const string EMBEDDED_ESTIMATED_SOLAR_SAVINGS_ENABLED = "estimated_solar_savings_enabled"
+const string EMBEDDED_ESTIMATED_SOLAR_SAVINGS_DISABLED = "estimated_solar_savings_disabled"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
