@@ -614,6 +614,7 @@ enum MobileErrorEventType {
   SWITCH_COMPATIBILITY_CHECK_UNDETERMINED = 40 // Logged only if retry also fails
   FAILED_ACCOUNT_GET_USER_NAME = 41
   COMMUNICATION_RESTART_TRIGGERED = 42
+  FAILED_WEB_API_REQUEST = 43
 }
 
 enum MobileEventDeviceType {
