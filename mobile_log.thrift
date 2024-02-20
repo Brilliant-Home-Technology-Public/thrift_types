@@ -892,6 +892,10 @@ struct MobileBLEProvisioningEvent {
   22: string compatibility_state // Contains values for high wattage and MLV initially set.
   23: string compatibility_values // Contains readings that compatibility state was derived from
   24: string install_device_id
+  25: i32 num_controls_in_home_at_start
+  26: i32 num_mesh_devices_in_home_at_start
+  27: i32 num_controls_in_home_at_end
+  28: i32 num_mesh_devices_in_home_at_end
 }
 
 struct MobileConnectivityEvent {
@@ -957,6 +961,10 @@ struct MobileControlConfigurationEvent {
   // This field is populated from message_bus (and dictates configuration flow)
   28: bool has_loadless_base
   29: string install_device_id
+  30: i32 num_controls_in_home_at_start
+  31: i32 num_mesh_devices_in_home_at_start
+  32: i32 num_controls_in_home_at_end
+  33: i32 num_mesh_devices_in_home_at_end
 }
 
 struct MobileCustomURLLaunchEvent {
@@ -1072,6 +1080,8 @@ struct MobileInstallationGroupDeviceStartedV2Event {
   19: bool group_previously_completed
   20: string previous_device_id // Empty string if never installed previously
   21: string completed_sections // When starting, what sections have been recorded as complete already.
+  22: i32 num_controls_in_home_at_start
+  23: i32 num_mesh_devices_in_home_at_start
 }
 
 struct MobileInstallationGroupDeviceEndedV2Event {
@@ -1102,6 +1112,10 @@ struct MobileInstallationGroupDeviceEndedV2Event {
   23: string previous_device_id // If installed previously, previous control or ble device id.
   24: i32 num_devices_in_group
   25: bool skipped_installation
+  26: i32 num_controls_in_home_at_start
+  27: i32 num_mesh_devices_in_home_at_start
+  28: i32 num_controls_in_home_at_end
+  29: i32 num_mesh_devices_in_home_at_end
 }
 
 struct MobileInstallationGroupFeedbackEvent {
