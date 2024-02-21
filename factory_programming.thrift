@@ -17,3 +17,6 @@ const set<string> I350_FACEPLATE_PRODUCT_CODE_SUFFIXES = [
 
 const string BRILLIANT_VENDOR_FACTORY_CODE = "BA" # Used when flashing controls internally
 const set<string> VTECH_VENDOR_FACTORY_CODES = ["VD", "VJ"]
+
+const string DEBUG_ENVIRONMENT_NAME = "debug"
+const string PRODUCTION_ENVIRONMENT_NAME = "production"
