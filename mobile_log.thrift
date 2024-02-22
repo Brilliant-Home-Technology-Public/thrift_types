@@ -1660,8 +1660,8 @@ struct MobileThirdPartyRequestEvent {
   7: string user_id
   8: string app_class
   9: string request_integration_name 
-  10: optional string request_product_name
-  11: optional string request_device_type
+  10: string request_product_name
+  11: string request_device_type
 }
 
 struct MobileSecuritySystemAdjustmentAttemptEvent {
