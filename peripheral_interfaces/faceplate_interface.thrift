@@ -15,6 +15,8 @@ struct FaceplatePeripheralInterface {
   8: bool led_on
   9: bool enable_pir_motion_score
   10: bool enable_lux
+  11: bool enable_screen_motion_detection
+  12: bool enable_light_motion_detection
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
