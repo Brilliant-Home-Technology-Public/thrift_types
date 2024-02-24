@@ -24,6 +24,7 @@ const string UNIQUE_PERIPHERAL_ID_DELIMITER = "|"
 enum HomeType {
   UNKNOWN = 0
   MULTIFAMILY = 1
+  MULTIFAMILY_HUBLESS = 2
 }
 
 enum PhysicalDeviceModel {
