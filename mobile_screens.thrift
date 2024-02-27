@@ -481,6 +481,7 @@ const string MOBILE_OVERLAY_NAME_HOME_INVITE_DECLINE_CONFIRMATION = "HomeInviteD
 const string MOBILE_OVERLAY_NAME_HOME_JOINED = "HomeJoined"
 const string MOBILE_OVERLAY_NAME_HOME_MANAGEMENT_UPDATE_NAME_ERROR = "HomeManagement:UpdateName:Error"
 const string MOBILE_OVERLAY_NAME_HONEYWELL_SETUP_ERROR = "HoneywellSetupError"
+const string MOBILE_OVERLAY_NAME_HUBLESS_SETUP_PARTNER_DEVICE = "Hubless:SetupPartnerDevice"
 const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETED = "Success:InstallCompleted"
 const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETION_FAILED = "InstallCompletion:Failed"
 const string MOBILE_OVERLAY_NAME_INSTALL_COMPLETION_PROMPT = "InstallCompletion:Prompt"
