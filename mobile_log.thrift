@@ -740,12 +740,13 @@ enum MobileSecurityDisarmResult {
 enum MobilePasscodeContext {
   REMOVE_DEVICE = 1
   PRIVACY_SETTINGS = 2
-  CHANGE_PASSCODE = 3
+  CHANGE_PASSCODE = 3 // Changing from existing passcode
   RESIDEO_SECURITY_ACTION = 4
   VERIFY_EMAIL = 5
   VERIFY_MULTIFACTOR_AUTHENTICATION = 6
   SETUP_ALEXA = 7
   PROPERTY_ACCESS = 8
+  SET_PASSCODE = 9 // Currently no home passcode
 }
 
 enum MobileUnlockType {
