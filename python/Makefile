@@ -64,6 +64,7 @@ PYTHON ?= "python$(PYTHON_MAJOR_MINOR_VERSION)"
 $(VENV):
 	$(PYTHON) -m venv "env"
 	"$(BIN_PIP)" install --upgrade pip
+	"$(BIN_PIP)" install --upgrade build
 	"$(BIN_PIP)" install wheel
 
 clean_env:
@@ -76,7 +77,7 @@ test_install_package: $(VENV) src/thrift_types
 	"$(BIN_PIP)" install $(PWD)
 
 wheel: $(VENV) src/thrift_types
-	"$(BIN_PYTHON)" setup.py sdist bdist_wheel
+	"$(BIN_PYTHON)" -m build
 
 
 ##################
