@@ -59,3 +59,15 @@ struct HostedNetwork {
   2: optional string passphrase
   3: optional binary vendor_elements
 }
+
+const map<string, string> REGULATORY_DOMAIN_VALUE_TO_DISPLAY_STRING = {
+  "US": "United States of America",
+  "CA": "Canada",
+  "00": "Other",
+}
+
+const list<string> REGULATORY_DOMAIN_VALUE_ORDER = [
+    "US",
+    "CA",
+    "00",
+]
