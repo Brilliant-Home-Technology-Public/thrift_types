@@ -970,6 +970,7 @@ struct MobileControlConfigurationEvent {
   31: i32 num_mesh_devices_in_home_at_start
   32: i32 num_controls_in_home_at_end
   33: i32 num_mesh_devices_in_home_at_end
+  34: string faceplate_soc
 }
 
 struct MobileCustomURLLaunchEvent {

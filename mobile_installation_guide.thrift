@@ -394,6 +394,7 @@ const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_OWNER_ID = "field_device_setup_owne
 const string MOBILE_GUIDE_FIELD_DEVICE_SETUP_OUTLET_CONTROLLED_LIGHT = "field_outlet_controlled_light"
 const string MOBILE_GUIDE_FIELD_DID_SELECT_RETURN_TO_WIRING = "field_did_select_return_to_wiring"
 const string MOBILE_GUIDE_FIELD_DIMMABLE_PREFIX = "field_dimmable_"
+const string MOBILE_GUIDE_FIELD_FACEPLATE_SOC = "field_faceplate_soc"
 const string MOBILE_GUIDE_FIELD_FADE_IN_REQUIRED_PREFIX = "field_fade_in_required_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_ADDRESS_PREFIX = "field_forwarding_address_"
 const string MOBILE_GUIDE_FIELD_FORWARDING_DEVICE_SETUP_ID_PREFIX = "field_forwarding_device_setup_id_"
