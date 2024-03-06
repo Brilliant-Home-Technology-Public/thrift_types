@@ -617,6 +617,7 @@ enum MobileErrorEventType {
   COMMUNICATION_RESTART_TRIGGERED = 42
   FAILED_WEB_API_REQUEST = 43
   FAILED_CONTROL_SOFTWARE_INTEGRITY_CHECK = 44
+  GENERIC_ERROR = 45 // To be used as a catch all for very uncommon / infrequent errors.
 }
 
 enum MobileEventDeviceType {
