@@ -72,6 +72,7 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "HomeKitReset": "HomeKitReset",
   "TroubleshootAssistants": "TroubleshootAssistants",
   "LightFade": "FadeInFadeOut",
+  "CountrySelection": "CountrySelection",
 
   // Color
   "LightColor": "LightColor", // deprecated
