@@ -10,9 +10,6 @@ const string HONEYWELL_WATER_LEAK_ALARM = "WaterLeak"
 const string HONEYWELL_LOW_BATTERY_ALARM = "LowBattery"
 const string HONEYWELL_CRITICAL_BATTERY_ALARM = "CriticalBattery"
 
-// Update Honeywell peripherals every 5 min
-const i32 HONEYWELL_POLL_INTERVAL_MS = 300000
-
 // Honeywell Notification Event Keys
 const string HONEYWELL_EVENT_KEY_HIGH_TEMPERATURE_ALERT = "honeywell:high_temperature_alert"
 const string HONEYWELL_EVENT_KEY_LOW_TEMPERATURE_ALERT = "honeywell:low_temperature_alert"
