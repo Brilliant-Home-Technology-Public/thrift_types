@@ -347,6 +347,7 @@ enum DeviceType {
   VIRTUAL = 3
   CLOUD = 4
   THIRDPARTY_VIRTUAL = 5
+  VIRTUAL_CONTROL = 6
 }
 
 struct Device {
