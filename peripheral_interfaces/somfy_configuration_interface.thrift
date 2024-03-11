@@ -9,6 +9,7 @@ struct SomfyConfigurationPeripheralInterface {
     1: somfy.SomfyCredentials credentials
     2: string owner
     3: somfy.SomfyIntegrationStates thirdparty_integration_states
+    4: optional bool trigger_device_discovery
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
