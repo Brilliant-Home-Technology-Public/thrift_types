@@ -59,7 +59,7 @@ const string MOBILE_OVERLAY_VIEW_EVENT_TABLE_NAME = "mobile_overlay_view"
 const string MOBILE_PAGE_VIEW_EVENT_TABLE_NAME = "mobile_page_view"
 const string MOBILE_PHOTOS_ACTION_EVENT_TABLE_NAME = "mobile_photos_action"
 const string MOBILE_RTSP_SESSION_REPORT_EVENT_TABLE_NAME = "mobile_rtsp_session_report"
-const string MOBILE_SCENE_EXECUTED_EVENT_TABLE_NAME = "mobile_scene_executed"
+const string MOBILE_SCENE_ACTION_EVENT_TABLE_NAME = "mobile_scene_action"
 const string MOBILE_SCREEN_VIEW_EVENT_TABLE_NAME = "mobile_screen_view"
 const string MOBILE_SECTION_EXPANSION_TOGGLE_EVENT_TABLE_NAME = "mobile_section_expansion_toggle"
 const string MOBILE_SECURITY_DISARM_EVENT_TABLE_NAME = "mobile_security_disarm_event"
@@ -445,6 +445,7 @@ const string MOBILE_NAME_MODIFIER_USER_V2 = "UserV2"
 
 // BEGIN MOBILE SCREEN PARAMETERS
 const string MOBILE_SCREEN_PARAMETER_GROUP_ID = "group_id"
+const string MOBILE_SCREEN_PARAMETER_SCENE_ID = "scene_id"
 // END MOBILE SCREEN PARAMETERS
 
 // BEGIN MOBILE ERROR SHORT REASON CONSTANTS
@@ -693,6 +694,13 @@ enum MobilePhotosConfigType {
   CONTROL = 1
   SHARED = 2
   ALL = 3
+}
+
+enum MobileSceneAction {
+  CREATE = 1
+  EDIT = 2
+  DELETE = 3
+  EXECUTE = 4
 }
 
 enum MobileSelectType {
@@ -1227,8 +1235,7 @@ struct MobilePhotosActionEvent {
   11: string app_class
 }
 
-
-struct MobileSceneExecutedEvent {
+struct MobileSceneActionEvent {
   1: string table_name
   2: i64 ts
   3: string device_model
@@ -1237,6 +1244,12 @@ struct MobileSceneExecutedEvent {
   6: string screen_name
   7: string user_id
   8: string app_class
+  9: MobileSceneAction scene_action
+  10: bool success
+  11: string scene_id
+  12: i32 num_actions
+  13: bool has_timer
+  14: bool has_partner_scene
 }
 
 // NOTE: screen_parameters will be logged as a JSON string created
