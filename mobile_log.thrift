@@ -458,6 +458,7 @@ const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_SAVE_ERROR = "State Manager
 const string MOBILE_ERROR_REASON_STATE_MANAGER_CACHE_CLEAR_ERROR = "State Manager Cache Clear Error"
 const string MOBILE_ERROR_REASON_CONTROL_ENDED = "ControlEnded"
 const string MOBILE_ERROR_REASON_NETWORK_CONNECTIVITY = "NetworkConnectivity"
+const string MOBILE_ERROR_REASON_UNKNOWN_PEER_STATUS = "UnknownPeerStatus"
 // END MOBILE ERROR SHORT REASON CONSTANTS
 
 // BEGIN MOBILE INTEGRATION NAME CONSTANTS
@@ -1429,6 +1430,7 @@ struct MobileWebRTCSessionReportEvent {
   27: string integration_name
   28: i64 session_workaround_delay_ms
   29: i64 ice_gathering_duration_ms // -1 is not started.
+  30: string peer_ice_candidates
 }
 
 struct MobileRTSPSessionReportEvent {
