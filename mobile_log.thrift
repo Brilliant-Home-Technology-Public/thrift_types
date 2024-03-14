@@ -910,6 +910,17 @@ struct MobileBLEProvisioningEvent {
   26: i32 num_mesh_devices_in_home_at_start
   27: i32 num_controls_in_home_at_end
   28: i32 num_mesh_devices_in_home_at_end
+  29: i64 scanning_unprovisioned_ts
+  30: i64 connecting_unprovisioned_ts
+  31: i64 connected_unprovisioned_ts
+  32: i64 scanning_provisioned_ts
+  33: i64 connecting_provisioned_ts
+  34: i64 connected_provisioned_ts
+  35: i64 scanning_provisioned_post_restart_ts
+  36: i64 connecting_provisioned_post_restart_ts
+  37: i64 connected_provisioned_post_restart_ts
+  38: i64 automatic_configuration_push_ts
+  39: i64 automatic_configuration_finished_ts // At this point we are waiting for user input
 }
 
 struct MobileConnectivityEvent {
