@@ -8,7 +8,9 @@ include "peripheral_interface.thrift"
 struct MobileConfigurationPeripheralInterface {
   1: string device_name
   2: string mobile_device_type
-  3: mobile_configuration.Profiles profiles
+  3: mobile_configuration.Profiles profiles // Deprecated, use user_id instead
+  4: string user_id
+  5: i64 allegion_mobilecredential_authorized_ms
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
