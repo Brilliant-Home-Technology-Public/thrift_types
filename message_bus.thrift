@@ -105,6 +105,8 @@ const string SCHNEIDER_CONFIG_IDENTIFIER = "schneider_config"
 const string SOLAR_IDENTIFIER = "solar_peripheral"
 const string SMARTTHINGS_SCENE_CONFIG_IDENTIFIER = "smartthings_scene_configuration"
 const string THIRDPARTY_DISCOVERY_IDENTIFIER = "thirdparty_discovery_peripheral"
+const string ENPHASE_IDENTIFIER = "enphase"
+const string ENPHASE_CONFIG_IDENTIFIER = "enphase_configuration"
 
 const string SALTO_KS_IDENTIFIER = "salto_ks" // DEPRECATED
 const string SALTO_KS_CONFIG_IDENTIFIER = "salto_ks_configuration" // DEPRECATED
@@ -153,6 +155,7 @@ const list<string> KNOWN_VIRTUAL_DEVICE_IDS = [
     REMOTELOCK_IDENTIFIER,
     HUNTER_DOUGLAS_IDENTIFIER,
     SCHNEIDER_IDENTIFIER,
+    ENPHASE_IDENTIFIER,
 ]
 
 const map<string, string> THIRDPARTY_VIRTUAL_DEVICE_IDS_TO_CONFIG_IDS = {
@@ -289,6 +292,7 @@ enum PeripheralType {
   SOLAR = 97,
   OFFLINE_LOCK = 98,
   THIRDPARTY_DISCOVERY = 99,
+  ENPHASE_CONFIGURATION = 100,
 }
 
 enum PeripheralStatus {
