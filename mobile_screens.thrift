@@ -25,8 +25,9 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "RoomSettings": "RoomSettings", // Use modifier to specify new or update name
   "NowPlaying": "NowPlaying",
   "MusicNowPlaying": "NowPlaying",
-  "Favorites": "Favorites",
+  "Favorites": "Favorites", // Deprecated on iOS
   "MusicFavorites": "Favorites",
+  "MySonos": "MySonos",
   "RemoveBrilliantControl": "RemoveDevice",
   "RemoveBrilliantDevice": "RemoveDevice",
   "LiveView": "LiveView",
