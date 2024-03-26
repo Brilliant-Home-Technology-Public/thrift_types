@@ -177,6 +177,7 @@ const string EMBEDDED_GESTURE_CONFIGURATION_UPDATE_TABLE_NAME = "embedded_gestur
 const string EMBEDDED_SLIDER_CONFIGURATION_UPDATE_TABLE_NAME = "embedded_slider_configuration_update"
 const string EMBEDDED_ESTIMATED_SOLAR_SAVINGS_ENABLED = "estimated_solar_savings_enabled"
 const string EMBEDDED_ESTIMATED_SOLAR_SAVINGS_DISABLED = "estimated_solar_savings_disabled"
+const string EMBEDDED_DEVICE_REVISION_V2_FACEPLATE_I350_DETECTED_TABLE_NAME = "device_revision_v2_faceplate_i350_detected"
 // END EMBEDDED (MESSAGE BUS/PERIPHERALS) TABLE NAMES
 
 // BEGIN EMBEDDED EVENT NAMES
