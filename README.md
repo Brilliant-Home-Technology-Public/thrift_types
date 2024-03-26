@@ -58,6 +58,8 @@ Things that require a version update (AND MIGRATION):
     * https://thrift.apache.org/docs/idl.html
 * **Interfaces**
   * Android/iOS Clients currently do not use PeripheralInterfaces
+    * iOS is unable to import the source files due to lack of namespacing (the `peripheral` variable collides)
+    * Android has source files imported but does not use.  
   * Server checks this to alert on missing variables in server owned peripherals. Variables should be added to the interface and thrift_types deployed to server before/in tandem with adding the actual variable
   * Any new variable to an existing peripheral interface for a peripheral that lives in server MUST initially be optional. After all homes have been migrated, this can potentially be made required.
   * RULES:
