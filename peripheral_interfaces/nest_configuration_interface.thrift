@@ -13,6 +13,7 @@ struct NestConfigurationPeripheralInterface {
     4: string owner
     5: configuration.ThirdpartyIntegrationState thirdparty_integration_state
     6: optional i32 api_version // DEPRECATED
+    7: optional bool trigger_device_discovery
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
