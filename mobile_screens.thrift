@@ -342,9 +342,10 @@ const map<string,string> MOBILE_SCREEN_NAME_MAP = {
   "WidgetConfigSuccess": "WidgetSummary",
   "ThirdPartyLinkLanding": "ThirdParty:LinkLanding",
   "VirtualAssistantManagement": "VirtualAssistantManagement",
-  "AlexaSetup": "AlexaSetup",
+  "AlexaAuthentication": "AlexaAuthentication",
+  "AlexaIntroduction": "AlexaIntroduction",
   "AlexaDiscoverDevices": "AlexaDiscoverDevices",
-  "AlexaDownloadApp": "AlexaDownloadApp",
+  "AlexaEducation": "AlexaEducation",
   "AlexaSetupComplete": "AlexaSetupComplete",
   // Android (iOS will use screenModifier)
   "SkillTutorialPage": "SwipeablePage:SkillTutorial",
@@ -673,4 +674,8 @@ const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_UNKNOWN_ERROR = "WaterShuto
 const string MOBILE_OVERLAY_NAME_WATER_SHUTOFF_VALVE_VALVE_ERROR = "WaterShutoffValve:ValveError"
 const string MOBILE_OVERLAY_NAME_WHATS_NEW = "WhatsNew"
 const string MOBILE_OVERLAY_NAME_WRONG_GANG_CONTROL_INSTALL = "WrongGangControlInstall"
+
+// These constants are used for manual screenShow calls
+// such as screens displayed by other SDKs outside our app's context.
+const string MOBILE_SCREEN_NAME_ALEXA_AUTHENTICATION = "AlexaAuthentication"
 
