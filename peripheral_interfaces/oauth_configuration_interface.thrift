@@ -7,7 +7,7 @@ include "peripheral_interface.thrift"
 
 struct OAuthConfigurationPeripheralInterface {
   // KEEP ALPHABETICAL
-  // NEXT ID: 38
+  // NEXT ID: 39
   1: string august_api_key
   2: string august_client_id
   20: string butterflymx_api_prefix
@@ -16,6 +16,7 @@ struct OAuthConfigurationPeripheralInterface {
   4: optional string butterflymx_environment_id // deleted
   9: string ecobee_client_id
   37: string enphase_api_key
+  38: string enphase_client_id
   5: string genie_api_key
   6: string genie_api_prefix
   7: string genie_client_id
