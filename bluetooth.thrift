@@ -47,6 +47,8 @@ const i64 SWITCH_DIM_SMOOTHING_APP_VERSION = 202209130
 const i64 SWITCH_POWER_UPDATES_APP_VERSION = 202308010
 const i64 PLUG_POWER_UPDATES_APP_VERSION = 202308010
 
+const i64 LATEST_FIRMWARE_VERSION = 202309261
+
 // We're using const bytes for unicast forwarding gestures rather than enums because we
 // bitwise OR their values.
 const byte UNICAST_FORWARDING_GESTURES_UNKNOWN = 0x00
