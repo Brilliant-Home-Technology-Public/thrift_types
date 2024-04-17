@@ -1440,6 +1440,7 @@ struct MobileWebRTCSessionReportEvent {
   28: i64 session_workaround_delay_ms
   29: i64 ice_gathering_duration_ms // -1 is not started.
   30: string peer_ice_candidates
+  31: string faceplate_soc
 }
 
 struct MobileRTSPSessionReportEvent {
