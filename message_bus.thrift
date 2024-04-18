@@ -294,6 +294,7 @@ enum PeripheralType {
   OFFLINE_LOCK = 98,
   THIRDPARTY_DISCOVERY = 99,
   ENPHASE_CONFIGURATION = 100,
+  HOME_ENERGY_SYSTEM = 101,
 }
 
 enum PeripheralStatus {
