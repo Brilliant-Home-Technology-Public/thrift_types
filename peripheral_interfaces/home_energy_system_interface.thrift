@@ -9,6 +9,7 @@ struct HomeEnergySystemPeripheralInterface {
   1: string display_name
   2: configuration.RoomAssignment room_assignment
   3: i32 solar_generation_today_wh
+  4: i32 solar_consumption_today_wh
 }
 
 const peripheral_interface.PeripheralInterface peripheral = {
