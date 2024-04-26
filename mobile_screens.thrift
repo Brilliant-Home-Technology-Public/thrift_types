@@ -477,6 +477,7 @@ const string MOBILE_OVERLAY_NAME_FOURWAY_INSTALL_WARNING = "FourwayInstallWarnin
 const string MOBILE_OVERLAY_NAME_GENERIC_ERROR = "GenericError"
 const string MOBILE_OVERLAY_NAME_GET_HOMES_ERROR = "GetHomesError"
 const string MOBILE_OVERLAY_NAME_GRANT_PHOTO_PERMISSIONS = "Photos:Upload:GrantPermission"
+const string MOBILE_OVERLAY_NAME_GROUP_SPEAKERS = "GroupSpeakers"
 const string MOBILE_OVERLAY_NAME_HIGH_HUMIDITY = "AttentionNeeded:HighHumidity"
 const string MOBILE_OVERLAY_NAME_HIGH_TEMPERATURE = "AttentionNeeded:HighTemperature"
 const string MOBILE_OVERLAY_NAME_HIGH_WATTAGE = "HighWattage"
